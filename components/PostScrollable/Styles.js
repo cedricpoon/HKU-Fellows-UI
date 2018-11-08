@@ -1,6 +1,6 @@
-import nbColor from "../../native-base-theme/variables/commonColor";
-import color from "../../theme/palette";
-import grid from "../../theme/grid"
+import nbColor from "hkufui/native-base-theme/variables/commonColor";
+import color from "hkufui/theme/palette";
+import grid from "hkufui/theme/grid"
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({

@@ -1,17 +1,20 @@
+import getTheme from 'hkufui/native-base-theme/components';
 import React, { Component } from 'react';
-import { Container, Header, Content } from 'native-base';
-import PostScrollable from './PostScrollable/PostScrollable';
-import posts from '../pseudo/database/posts.json';
+import { Container, Header, Content, StyleProvider } from 'native-base';
+import { PostScrollable } from 'hkufui/components';
+import posts from 'hkufui/pseudo/database/posts.json';
 
 export default class App extends Component {
   render() {
     return (
-      <Container>
-        <Header />
-        <Content>
-          <PostScrollable posts={posts} />
-        </Content>
-      </Container>
+      <StyleProvider style={getTheme()}>
+        <Container>
+          <Header />
+          <Content>
+            <PostScrollable posts={posts} />
+          </Content>
+        </Container>
+      </StyleProvider>
     );
   }
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import _ from 'enzyme-to-json';
 import PostScrollable from './PostScrollable';
 
 describe('Testing PostScrollable Component', () => {
@@ -8,6 +7,6 @@ describe('Testing PostScrollable Component', () => {
     const wrapper = shallow(
       <PostScrollable posts={[]} />
     );
-    expect(_(wrapper)).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
   });
 });

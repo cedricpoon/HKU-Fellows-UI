@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from "prop-types";
 import { List, ListItem, Body, Text, Icon } from 'native-base';
 
-import { localize } from '../../locale';
+import { localize } from 'hkufui/locale';
 import Post from './PostPreview/PostPreview';
 import styles from './Styles';
 

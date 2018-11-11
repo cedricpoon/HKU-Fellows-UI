@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { TouchableWithoutFeedback, View } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 
+import { setLayoutToState } from 'hkufui/components/helper';
 import styles from './Styles';
 
 class PopupMenu extends Component {
@@ -10,19 +11,15 @@ class PopupMenu extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { width: 0 }
-    this.setWidthToState = this.setWidthToState.bind(this);
-  }
-
-  setWidthToState(event) {
-    this.setState({
-      width: event.nativeEvent.layout.width
-    });
+    /* init width for first time rendering */
+    const _menu = {};
+    _menu['width'] = 0;
+    this.state = { menu: _menu };
   }
 
   render() {
     const { children, position, parentHeight, toggle, rightSided } = this.props;
-    const { width } = this.state;
+    const { menu } = this.state;
 
     const conceal = () => {
       this.menu.zoomOut(100).then(toggle);
@@ -43,13 +40,13 @@ class PopupMenu extends Component {
           style={[
             styles.menu,
             {
-              left: position - (rightSided ? width : 0),
+              left: position - (rightSided ? menu.width : 0),
               bottom: parentHeight + 10
             }
           ]}
           animation="zoomIn"
           duration={100}
-          onLayout={this.setWidthToState}
+          onLayout={setLayoutToState("menu", this)}
           ref={ref => { this.menu = ref }}
         >
           { children }

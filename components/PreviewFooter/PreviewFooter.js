@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Footer, FooterTab, Button, Icon, Text } from 'native-base';
+import { Footer, FooterTab, Button, Icon } from 'native-base';
 
-import PopupMenu from './PopupMenu/PopupMenu';
+import FilterPopup from './FilterPopup/FilterPopup';
+import { setLayoutToState } from 'hkufui/components/helper';
 import styles from './Styles';
 
 class PreviewFooter extends Component {
@@ -19,42 +20,17 @@ class PreviewFooter extends Component {
     }));
   }
 
-  setLayoutToState(key) {
-    return ((event) => {
-      let _state = {};
-      _state[key] = event.nativeEvent.layout;
-      this.setState(_state);
-    }).bind(this);
-  }
-
   renderFilterPopup() {
     const { filterLayout, showFilterPopup, footerLayout } = this.state;
 
     if (showFilterPopup) {
       return(
-        <PopupMenu
+        <FilterPopup
           position={filterLayout.x + filterLayout.width - 10}
           parentHeight={footerLayout.height}
           toggle={this.filterToggle}
           rightSided
-        >
-          <Button full transparent info iconRight>
-            <Text>From Moodle</Text>
-            <Icon name="at"></Icon>
-          </Button>
-          <Button full transparent success iconRight>
-            <Text>Latest Post</Text>
-            <Icon name="time"></Icon>
-          </Button>
-          <Button full transparent success iconRight>
-            <Text>Most Replied</Text>
-            <Icon name="undo"></Icon>
-          </Button>
-          <Button full transparent success iconRight>
-            <Text>Popularity</Text>
-            <Icon name="people"></Icon>
-          </Button>
-        </PopupMenu>
+        />
       );
     }
     return null;
@@ -62,7 +38,10 @@ class PreviewFooter extends Component {
 
   render() {
     return (
-      <Footer onLayout={this.setLayoutToState("footerLayout")} style={styles.footer}>
+      <Footer
+        onLayout={setLayoutToState("footerLayout", this)}
+        style={styles.footer}
+      >
         { this.renderFilterPopup() }
         <FooterTab>
           <Button>
@@ -76,7 +55,8 @@ class PreviewFooter extends Component {
           </Button>
           <Button
             onPress={this.filterToggle}
-            onLayout={this.setLayoutToState("filterLayout")}>
+            onLayout={setLayoutToState("filterLayout", this)}
+          >
             <Icon name="list"></Icon>
           </Button>
         </FooterTab>

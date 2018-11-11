@@ -31,4 +31,9 @@ class FilterPopup extends Component {
   }
 }
 
+FilterPopup.proptypes = {
+  /* Require PopupMenu proptypes */
+  ...PopupMenu.proptypes
+}
+
 export default FilterPopup;

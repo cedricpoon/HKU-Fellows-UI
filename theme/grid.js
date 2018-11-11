@@ -1,11 +1,19 @@
-const _ = 5;
+export const gridBase = 5;
 
-export default {
-  gridBase: _,
-  post: {
-    titleSize: _ * 4,
-    smallSize: _ * 3,
-    miniSize: _ * 2,
-    seperatorPadding: _ * 3
-  }
+export const post = {
+  titleSize: gridBase * 4,
+  smallSize: gridBase * 3,
+  miniSize: gridBase * 2,
+  seperatorPadding: gridBase * 3
+};
+
+export const footer = {
+  borderRadius: gridBase * 2,
+  shadowRadius: gridBase
+};
+
+export const header = {
+  iconMarginRight: gridBase * 3,
+  labelPadding: gridBase * 2,
+  labelMarginLeft: gridBase / 2
 }

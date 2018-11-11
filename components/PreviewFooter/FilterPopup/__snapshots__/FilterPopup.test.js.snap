@@ -26,7 +26,7 @@ ShallowWrapper {
         <Styled(Button)
           full={true}
           iconRight={true}
-          info={true}
+          success={true}
           transparent={true}
         >
           <Styled(Text)>
@@ -39,7 +39,7 @@ ShallowWrapper {
         <Styled(Button)
           full={true}
           iconRight={true}
-          success={true}
+          info={true}
           transparent={true}
         >
           <Styled(Text)>
@@ -52,7 +52,7 @@ ShallowWrapper {
         <Styled(Button)
           full={true}
           iconRight={true}
-          success={true}
+          info={true}
           transparent={true}
         >
           <Styled(Text)>
@@ -65,7 +65,7 @@ ShallowWrapper {
         <Styled(Button)
           full={true}
           iconRight={true}
-          success={true}
+          info={true}
           transparent={true}
         >
           <Styled(Text)>
@@ -96,7 +96,7 @@ ShallowWrapper {
           ],
           "full": true,
           "iconRight": true,
-          "info": true,
+          "success": true,
           "transparent": true,
           "virtual": undefined,
         },
@@ -144,7 +144,7 @@ ShallowWrapper {
           ],
           "full": true,
           "iconRight": true,
-          "success": true,
+          "info": true,
           "transparent": true,
           "virtual": undefined,
         },
@@ -192,7 +192,7 @@ ShallowWrapper {
           ],
           "full": true,
           "iconRight": true,
-          "success": true,
+          "info": true,
           "transparent": true,
           "virtual": undefined,
         },
@@ -240,7 +240,7 @@ ShallowWrapper {
           ],
           "full": true,
           "iconRight": true,
-          "success": true,
+          "info": true,
           "transparent": true,
           "virtual": undefined,
         },
@@ -286,7 +286,7 @@ ShallowWrapper {
           <Styled(Button)
             full={true}
             iconRight={true}
-            info={true}
+            success={true}
             transparent={true}
           >
             <Styled(Text)>
@@ -299,7 +299,7 @@ ShallowWrapper {
           <Styled(Button)
             full={true}
             iconRight={true}
-            success={true}
+            info={true}
             transparent={true}
           >
             <Styled(Text)>
@@ -312,7 +312,7 @@ ShallowWrapper {
           <Styled(Button)
             full={true}
             iconRight={true}
-            success={true}
+            info={true}
             transparent={true}
           >
             <Styled(Text)>
@@ -325,7 +325,7 @@ ShallowWrapper {
           <Styled(Button)
             full={true}
             iconRight={true}
-            success={true}
+            info={true}
             transparent={true}
           >
             <Styled(Text)>
@@ -356,7 +356,7 @@ ShallowWrapper {
             ],
             "full": true,
             "iconRight": true,
-            "info": true,
+            "success": true,
             "transparent": true,
             "virtual": undefined,
           },
@@ -404,7 +404,7 @@ ShallowWrapper {
             ],
             "full": true,
             "iconRight": true,
-            "success": true,
+            "info": true,
             "transparent": true,
             "virtual": undefined,
           },
@@ -452,7 +452,7 @@ ShallowWrapper {
             ],
             "full": true,
             "iconRight": true,
-            "success": true,
+            "info": true,
             "transparent": true,
             "virtual": undefined,
           },
@@ -500,7 +500,7 @@ ShallowWrapper {
             ],
             "full": true,
             "iconRight": true,
-            "success": true,
+            "info": true,
             "transparent": true,
             "virtual": undefined,
           },

@@ -3,6 +3,9 @@ import { Button, Icon, Text } from 'native-base';
 
 import PopupMenu from '../PopupMenu/PopupMenu';
 
+import { localize } from 'hkufui/locale';
+const locale = localize({ language: 'en', country: 'hk' });
+
 class FilterPopup extends Component {
 
   render() {
@@ -10,20 +13,20 @@ class FilterPopup extends Component {
 
     return(
       <PopupMenu { ...restProps } /* Proptypes handling on <PopupMenu /> */ >
-        <Button full transparent info iconRight>
-          <Text>From Moodle</Text>
+        <Button full transparent success iconRight>
+          <Text>{locale['footer.moodle']}</Text>
           <Icon name="at"></Icon>
         </Button>
-        <Button full transparent success iconRight>
-          <Text>Latest Post</Text>
+        <Button full transparent info iconRight>
+          <Text>{locale['footer.latestPost']}</Text>
           <Icon name="time"></Icon>
         </Button>
-        <Button full transparent success iconRight>
-          <Text>Most Replied</Text>
+        <Button full transparent info iconRight>
+          <Text>{locale['footer.mostReplied']}</Text>
           <Icon name="undo"></Icon>
         </Button>
-        <Button full transparent success iconRight>
-          <Text>Popularity</Text>
+        <Button full transparent info iconRight>
+          <Text>{locale['footer.popularity']}</Text>
           <Icon name="people"></Icon>
         </Button>
       </PopupMenu>

@@ -1,6 +1,7 @@
 import { StyleSheet, Dimensions } from 'react-native';
 
-import color from 'hkufui/theme/palette';
+import { logo } from 'hkufui/theme/palette';
+import { footer } from 'hkufui/theme/grid';
 
 export default StyleSheet.create({
   container: {
@@ -12,13 +13,13 @@ export default StyleSheet.create({
     zIndex: 2,
     position: 'absolute',
     backgroundColor: 'white',
-    borderRadius: 10,
+    borderRadius: footer.borderRadius,
     borderColor: 'lightgrey',
     borderWidth: 1,
-    shadowColor: color.logo.black,
+    shadowColor: logo.black,
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.2,
-    shadowRadius: 5
+    shadowRadius: footer.shadowRadius
   },
   outsider: {
     /* z-index in <PopupMenu /> */

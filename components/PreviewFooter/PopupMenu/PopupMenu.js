@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { TouchableWithoutFeedback, View } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 
-import { setLayoutToState } from 'hkufui/components/helper';
+import { mapLayoutToState } from 'hkufui/components/helper';
 import styles from './Styles';
 
 class PopupMenu extends Component {
@@ -46,7 +46,7 @@ class PopupMenu extends Component {
           ]}
           animation="zoomIn"
           duration={100}
-          onLayout={setLayoutToState("menu", this)}
+          onLayout={mapLayoutToState("menu", this)}
           ref={ref => { this.menu = ref }}
         >
           { children }

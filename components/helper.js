@@ -1,5 +1,5 @@
 /* Common method called by onLayout */
-export const setLayoutToState = (key, ref) => {
+export const mapLayoutToState = (key, ref) => {
   return ((event) => {
     let _state = {};
     _state[key] = event.nativeEvent.layout;

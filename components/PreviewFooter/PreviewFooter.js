@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Footer, FooterTab, Button, Icon } from 'native-base';
 
 import FilterPopup from './FilterPopup/FilterPopup';
-import { setLayoutToState } from 'hkufui/components/helper';
+import { mapLayoutToState } from 'hkufui/components/helper';
 import styles from './Styles';
 
 class PreviewFooter extends Component {
@@ -39,7 +39,7 @@ class PreviewFooter extends Component {
   render() {
     return (
       <Footer
-        onLayout={setLayoutToState("footerLayout", this)}
+        onLayout={mapLayoutToState("footerLayout", this)}
         style={styles.footer}
       >
         { this.renderFilterPopup() }
@@ -55,7 +55,7 @@ class PreviewFooter extends Component {
           </Button>
           <Button
             onPress={this.filterToggle}
-            onLayout={setLayoutToState("filterLayout", this)}
+            onLayout={mapLayoutToState("filterLayout", this)}
           >
             <Icon name="list"></Icon>
           </Button>

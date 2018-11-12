@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Footer, FooterTab, Button, Icon } from 'native-base';
+import { withNavigation } from 'react-navigation'
 
 import FilterPopup from './FilterPopup/FilterPopup';
 import { mapLayoutToState } from 'hkufui/components/helper';
@@ -26,10 +27,9 @@ class PreviewFooter extends Component {
     if (showFilterPopup) {
       return(
         <FilterPopup
-          position={filterLayout.x + filterLayout.width - 10}
+          position={filterLayout.x}
           parentHeight={footerLayout.height}
           toggle={this.filterToggle}
-          rightSided
         />
       );
     }
@@ -48,16 +48,22 @@ class PreviewFooter extends Component {
             <Icon name="menu" />
           </Button>
           <Button>
-            <Icon name="create" />
+            <Icon name="refresh" />
           </Button>
           <Button>
-            <Icon name="refresh" />
+            <Icon name="create" />
           </Button>
           <Button
             onPress={this.filterToggle}
+            onLongPress={this.filterToggle}
             onLayout={mapLayoutToState("filterLayout", this)}
           >
-            <Icon name="list"></Icon>
+            <Icon name="sort-variant" type="MaterialCommunityIcons"></Icon>
+          </Button>
+          <Button
+            onPress={()=>{ this.props.navigation.navigate('SelectCourse') }}
+          >
+            <Icon name="browsers" />
           </Button>
         </FooterTab>
       </Footer>
@@ -65,4 +71,4 @@ class PreviewFooter extends Component {
   }
 }
 
-export default PreviewFooter;
+export default withNavigation(PreviewFooter);

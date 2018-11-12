@@ -9,7 +9,8 @@ export const post = {
 
 export const footer = {
   borderRadius: gridBase * 2,
-  shadowRadius: gridBase
+  shadowRadius: gridBase,
+  popUpMargin: gridBase * 2
 };
 
 export const header = {

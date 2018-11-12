@@ -21,13 +21,4 @@ describe('Testing PopupMenu Component', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
-
-  it('renders as expected in right-sided with required props', () => {
-    const wrapper = shallow(
-      <PopupMenu position={0} toggle={() => {}} rightSided>
-        <View></View>
-      </PopupMenu>
-    );
-    expect(wrapper).toMatchSnapshot();
-  });
 });

@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
-import { TouchableWithoutFeedback, View } from 'react-native';
+import { TouchableWithoutFeedback, View, Dimensions } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 
 import { mapLayoutToState } from 'hkufui/components/helper';
 import styles from './Styles';
+import { footer } from 'hkufui/theme/grid';
 
 class PopupMenu extends Component {
 
@@ -12,17 +13,28 @@ class PopupMenu extends Component {
     super(props);
 
     /* init width for first time rendering */
-    const _menu = {};
-    _menu['width'] = 0;
-    this.state = { menu: _menu };
+    const _menuLayout = {};
+    _menuLayout['width'] = 0;
+    this.state = { menuLayout: _menuLayout };
   }
 
   render() {
-    const { children, position, parentHeight, toggle, rightSided } = this.props;
-    const { menu } = this.state;
+    const { children, position, parentHeight, toggle } = this.props;
+    const { menuLayout } = this.state;
 
     const conceal = () => {
       this.menu.zoomOut(100).then(toggle);
+    }
+
+    /* Calculate position */
+    const appendLeft = {};
+    const screenWidth = Dimensions.get('window').width
+    if (position <= 0) {
+      appendLeft.left = footer.popUpMargin;
+    } else if (position + menuLayout.width >= screenWidth) {
+      appendLeft.left = screenWidth - menuLayout.width - footer.popUpMargin;
+    } else {
+      appendLeft.left = position;
     }
 
     return(
@@ -40,13 +52,13 @@ class PopupMenu extends Component {
           style={[
             styles.menu,
             {
-              left: position - (rightSided ? menu.width : 0),
+              ...appendLeft,
               bottom: parentHeight + 10
             }
           ]}
           animation="zoomIn"
           duration={100}
-          onLayout={mapLayoutToState("menu", this)}
+          onLayout={mapLayoutToState("menuLayout", this)}
           ref={ref => { this.menu = ref }}
         >
           { children }
@@ -60,7 +72,6 @@ PopupMenu.propTypes = {
   children: PropTypes.node.isRequired,
   position: PropTypes.number.isRequired,
   parentHeight: PropTypes.number,
-  rightSided: PropTypes.bool,
   toggle: PropTypes.func.isRequired
 }
 

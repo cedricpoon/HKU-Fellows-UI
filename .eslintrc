@@ -14,5 +14,8 @@
         "plugin:react/recommended",
         "plugin:css-modules/recommended",
         "plugin:react-native/all"
-    ]
+    ],
+    "rules": {
+        "react/prop-types": ["error", { "ignore": ["navigation"] }]
+    }
 }

@@ -6,7 +6,5 @@ export default {
   "footer.latestPost": "Latest Post",
   "footer.mostReplied": "Most Replied",
   "footer.popularity": "Popularity",
-  "header.searchPlaceholder": "Search keywords or #hashtags",
-  "header.searchEmptyMessage": "Please input your query",
-  "header.searchEmptyConfirm": "Dismiss"
+  "header.searchPlaceholder": "Search keywords or #hashtags"
 }

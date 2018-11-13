@@ -4,7 +4,7 @@ import { ListItem, Left, Body, Right, Text, View, Icon } from 'native-base';
 import timeago from 'timeago.js';
 
 import { localize } from 'hkufui/locale';
-import { hotPost as hot } from 'hkufui/store';
+import { hotPost as hot } from 'hkufui/config';
 import styles from '../Styles';
 
 const locale = localize({ language: 'en', country: 'hk' });

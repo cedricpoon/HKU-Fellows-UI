@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Container, Content } from 'native-base';
 
 import { PostScrollable, PreviewFooter, PreviewHeader } from 'hkufui/components';
-import postList from 'hkufui/docs/postList.json';
+import postList from 'hkufui/pseudo/postList.json';
 
 class Preview extends Component {
 

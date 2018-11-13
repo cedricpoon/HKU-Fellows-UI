@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
-import { Header, Item, Input, Icon, Button, Right, Text, Toast } from 'native-base';
+import { Header, Item, Input, Icon, Button, Right, Text } from 'native-base';
 import { Keyboard } from 'react-native';
 
 import { localize } from 'hkufui/locale';
 const locale = localize({ language: 'en', country: 'hk' });
 
 import styles from './Styles'
-import { toastDuration } from 'hkufui/store';
 
 class PreviewHeader extends Component {
 
@@ -17,7 +16,6 @@ class PreviewHeader extends Component {
 
     this.searchBarOnFocus = this.searchBarOnFocus.bind(this);
     this.searchCancel = this.searchCancel.bind(this);
-    this.validation = this.validation.bind(this);
   }
 
   searchBarOnFocus() {
@@ -37,21 +35,6 @@ class PreviewHeader extends Component {
     }));
   }
 
-  validation(event) {
-    if (event.nativeEvent.text.length == 0) {
-      /* Empty searchBar */
-      Toast.show({
-        text: locale["header.searchEmptyMessage"],
-        buttonText: locale["header.searchEmptyConfirm"],
-        duration: toastDuration,
-      });
-
-      this.searchCancel();
-    } else {
-      /* Valid query */
-    }
-  }
-
   render() {
     const { location } = this.props;
     const { inputFocused } = this.state;
@@ -69,7 +52,7 @@ class PreviewHeader extends Component {
             returnKeyType="search"
             onFocus={this.searchBarOnFocus}
             ref={(ref) => { this.searchBar = ref }}
-            onSubmitEditing={this.validation}
+            enablesReturnKeyAutomatically
           />
 
           <Right style={styles.rightButtons}>

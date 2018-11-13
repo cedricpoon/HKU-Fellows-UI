@@ -46,8 +46,8 @@ ShallowWrapper {
           </Styled(Text)>
         </Styled(Button)>
         <Styled(Input)
+          enablesReturnKeyAutomatically={true}
           onFocus={[Function]}
-          onSubmitEditing={[Function]}
           placeholder="Search keywords or #hashtags"
           returnKeyType="search"
           style={
@@ -117,8 +117,8 @@ ShallowWrapper {
             </Styled(Text)>
           </Styled(Button)>,
           <Styled(Input)
+            enablesReturnKeyAutomatically={true}
             onFocus={[Function]}
-            onSubmitEditing={[Function]}
             placeholder="Search keywords or #hashtags"
             returnKeyType="search"
             style={
@@ -209,8 +209,8 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "enablesReturnKeyAutomatically": true,
             "onFocus": [Function],
-            "onSubmitEditing": [Function],
             "placeholder": "Search keywords or #hashtags",
             "returnKeyType": "search",
             "style": Object {
@@ -331,8 +331,8 @@ ShallowWrapper {
             </Styled(Text)>
           </Styled(Button)>
           <Styled(Input)
+            enablesReturnKeyAutomatically={true}
             onFocus={[Function]}
-            onSubmitEditing={[Function]}
             placeholder="Search keywords or #hashtags"
             returnKeyType="search"
             style={
@@ -402,8 +402,8 @@ ShallowWrapper {
               </Styled(Text)>
             </Styled(Button)>,
             <Styled(Input)
+              enablesReturnKeyAutomatically={true}
               onFocus={[Function]}
-              onSubmitEditing={[Function]}
               placeholder="Search keywords or #hashtags"
               returnKeyType="search"
               style={
@@ -494,8 +494,8 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
+              "enablesReturnKeyAutomatically": true,
               "onFocus": [Function],
-              "onSubmitEditing": [Function],
               "placeholder": "Search keywords or #hashtags",
               "returnKeyType": "search",
               "style": Object {

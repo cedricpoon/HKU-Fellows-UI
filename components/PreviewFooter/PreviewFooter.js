@@ -10,7 +10,7 @@ class PreviewFooter extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { showFilterPopup: false };
+    this.state = { showFilterPopup: false, footerLayout: { height: 0 } };
 
     this.filterToggle = this.filterToggle.bind(this);
   }
@@ -38,12 +38,11 @@ class PreviewFooter extends Component {
 
   render() {
     return (
-      <Footer
-        onLayout={mapLayoutToState("footerLayout", this)}
-        style={styles.footer}
-      >
+      <Footer style={styles.footer}>
         { this.renderFilterPopup() }
-        <FooterTab>
+        <FooterTab
+          onLayout={mapLayoutToState("footerLayout", this)}
+        >
           <Button>
             <Icon name="menu" />
           </Button>

@@ -37,4 +37,11 @@ describe('Testing PostPreview Component', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('renders as expected with required props and viewed', () => {
+    const wrapper = shallow(
+      <Post native timestamp={'2018-11-03 21:56:00'} replyNo={0} title={''} viewed />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });

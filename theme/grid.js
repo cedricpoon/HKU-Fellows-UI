@@ -1,7 +1,7 @@
 export const gridBase = 5;
 
 export const post = {
-  titleSize: gridBase * 4,
+  titleSize: gridBase * 3,
   smallSize: gridBase * 3,
   miniSize: gridBase * 2,
   seperatorPadding: gridBase * 3

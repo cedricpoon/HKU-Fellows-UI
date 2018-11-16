@@ -2,6 +2,7 @@
   "location": "COMP 4801",
   "posts": [
     {
+      "id": "0",
       "native": true,
       "solved": true,
       "primaryHashtag": "hashtag1",
@@ -13,14 +14,18 @@
       "subTitle": "Subtitle to be shown"
     },
     {
+      "id": "1",
       "native": false,
+      "viewed": true,
       "timestamp": "2018-11-03 21:56:00",
       "replyNo": 12,
       "title": "Topic from Moodle"
     },
     {
+      "id": "2",
       "native": true,
       "solved": true,
+      "viewed": true,
       "primaryHashtag": "hashtag1",
       "timestamp": "2018-10-22 14:00:12",
       "replyNo": 2,
@@ -29,6 +34,33 @@
       "subTitle": "Proin imperdiet arcu sed velit tincidunt, eu aliquet nunc volutpat. Vivamus bibendum turpis nisi, non porta lorem aliquet aliquet."
     },
     {
+      "id": "3",
+      "native": true,
+      "solved": false,
+      "viewed": true,
+      "primaryHashtag": "hashtag1",
+      "secondaryHashtag": "hashtag2",
+      "timestamp": "2016-06-10 12:12:12",
+      "replyNo": 12,
+      "temperature": 1,
+      "title": "Short title",
+      "subTitle": "Subtitle to be shown"
+    },
+    {
+      "id": "4",
+      "native": true,
+      "solved": false,
+      "viewed": true,
+      "primaryHashtag": "hashtag1",
+      "secondaryHashtag": "hashtag2",
+      "timestamp": "2016-06-10 12:12:12",
+      "replyNo": 12,
+      "temperature": 1,
+      "title": "Short title",
+      "subTitle": "Subtitle to be shown"
+    },
+    {
+      "id": "5",
       "native": true,
       "solved": false,
       "primaryHashtag": "hashtag1",
@@ -40,6 +72,7 @@
       "subTitle": "Subtitle to be shown"
     },
     {
+      "id": "6",
       "native": true,
       "solved": false,
       "primaryHashtag": "hashtag1",
@@ -51,6 +84,7 @@
       "subTitle": "Subtitle to be shown"
     },
     {
+      "id": "7",
       "native": true,
       "solved": false,
       "primaryHashtag": "hashtag1",
@@ -62,8 +96,10 @@
       "subTitle": "Subtitle to be shown"
     },
     {
+      "id": "8",
       "native": true,
       "solved": false,
+      "viewed": true,
       "primaryHashtag": "hashtag1",
       "secondaryHashtag": "hashtag2",
       "timestamp": "2016-06-10 12:12:12",
@@ -73,28 +109,7 @@
       "subTitle": "Subtitle to be shown"
     },
     {
-      "native": true,
-      "solved": false,
-      "primaryHashtag": "hashtag1",
-      "secondaryHashtag": "hashtag2",
-      "timestamp": "2016-06-10 12:12:12",
-      "replyNo": 12,
-      "temperature": 1,
-      "title": "Short title",
-      "subTitle": "Subtitle to be shown"
-    },
-    {
-      "native": true,
-      "solved": false,
-      "primaryHashtag": "hashtag1",
-      "secondaryHashtag": "hashtag2",
-      "timestamp": "2016-06-10 12:12:12",
-      "replyNo": 12,
-      "temperature": 1,
-      "title": "Short title",
-      "subTitle": "Subtitle to be shown"
-    },
-    {
+      "id": "9",
       "native": true,
       "solved": false,
       "primaryHashtag": "hashtag1",

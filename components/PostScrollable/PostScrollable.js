@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
-import { List, ListItem, Body, Text, Icon } from 'native-base';
+import { ListItem, Body, Text, Icon } from 'native-base';
+import { FlatList } from 'react-native';
 
 import { localize } from 'hkufui/locale';
 import Post from './PostPreview/PostPreview';
@@ -10,13 +11,15 @@ const locale = localize({ language: 'en', country: 'hk' });
 
 class PostScrollable extends Component {
 
-  renderPosts(posts) {
-    return posts.map((post, i) => (
+  keyExtractor = (item) => item.id;
+
+  renderPost({item}) {
+    return (
       <Post
-        key={i}
-        {...post}
+        id={item.id}
+        {...item}
       />
-    ));
+    );
   }
 
   renderEmpty() {
@@ -34,15 +37,20 @@ class PostScrollable extends Component {
   }
 
   render() {
-    return (
-      <List>
-        {this.props.posts.length > 0 ?
-          this.renderPosts(this.props.posts)
-        :
-          this.renderEmpty()
-        }
-      </List>
-    );
+    const { posts, ...restProps } = this.props
+
+    if (this.props.posts.length > 0) {
+      return (
+        <FlatList
+          data={posts}
+          keyExtractor={this.keyExtractor}
+          renderItem={this.renderPost}
+          {...restProps}
+        />
+      );
+    } else {
+      return this.renderEmpty();
+    }
   }
 }
 

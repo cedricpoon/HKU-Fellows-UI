@@ -40,7 +40,7 @@ class PreviewHeader extends Component {
     const { inputFocused } = this.state;
 
     return (
-      <Header searchBar>
+      <Header searchBar style={styles.header}>
         <Item rounded>
           <Button rounded style={styles.leftLabel}>
             <Text style={styles.leftLabelText}>{location}</Text>

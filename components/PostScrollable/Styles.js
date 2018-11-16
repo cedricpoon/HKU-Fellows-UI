@@ -13,6 +13,7 @@ export default StyleSheet.create({
   },
   badgeContainer: {
     width: post.seperatorPadding * 2,
+    flexDirection: 'column'
   },
   moodle: {
     color: logo.blue
@@ -29,10 +30,19 @@ export default StyleSheet.create({
   infoBar: {
     flexDirection: 'row'
   },
-  topBadge: {
-    color: logo.yellow,
+  badge: {
     fontSize: post.smallSize,
-    paddingLeft: gridBase * 1.5
+    paddingLeft: gridBase * 1.3,
+    paddingBottom: gridBase
+  },
+  subTitle: {
+    color: logo.black
+  },
+  viewed: {
+    color: 'lightgrey'
+  },
+  solved: {
+    color: logo.yellow
   },
   right: {
     justifyContent: 'flex-end'

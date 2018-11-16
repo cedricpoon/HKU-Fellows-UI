@@ -12,13 +12,27 @@ const locale = localize({ language: 'en', country: 'hk' });
 class PostPreview extends Component {
 
   render() {
-    const { native, solved, primaryHashtag, secondaryHashtag, timestamp, replyNo, temperature, title, subTitle } = this.props;
+    const {
+      native,
+      solved,
+      primaryHashtag,
+      secondaryHashtag,
+      timestamp,
+      replyNo,
+      temperature,
+      title,
+      subTitle,
+      viewed
+    } = this.props;
 
     return(
       <ListItem avatar style={styles.noMarginLeft}>
         <Left style={styles.badgeContainer}>
           {native && solved && (
-            <Icon style={styles.topBadge} type="MaterialCommunityIcons" name="lightbulb" />
+            <Icon style={[styles.badge, styles.solved]} type="MaterialCommunityIcons" name="checkbox-marked-circle-outline" />
+          )}
+          {viewed && (
+            <Icon style={[styles.badge, styles.viewed]} type="MaterialCommunityIcons" name="history" />
           )}
         </Left>
         <Body style={styles.noMarginLeft}>
@@ -41,7 +55,7 @@ class PostPreview extends Component {
           </View>
           <Text style={styles.mainText} numberOfLines={2}>{title}</Text>
           {subTitle && (
-            <Text note numberOfLines={1}>{subTitle}</Text>
+            <Text style={styles.subTitle} note numberOfLines={1}>{subTitle}</Text>
           )}
         </Body>
       </ListItem>
@@ -52,6 +66,7 @@ class PostPreview extends Component {
 PostPreview.propTypes = {
   native: PropTypes.bool.isRequired,
   solved: PropTypes.bool,
+  viewed: PropTypes.bool,
   primaryHashtag: PropTypes.string,
   secondaryHashtag: PropTypes.string,
   timestamp: PropTypes.string.isRequired,

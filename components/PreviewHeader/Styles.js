@@ -1,9 +1,13 @@
 import { StyleSheet } from 'react-native';
 
-import { header, gridBase } from 'hkufui/theme/grid';
+import { header, post } from 'hkufui/theme/grid';
 import { logo } from 'hkufui/theme/palette';
+import nbColor from 'hkufui/native-base-theme/variables/commonColor'
 
 export default StyleSheet.create({
+  header: {
+    backgroundColor: nbColor.toolbarDefaultBg
+  },
   leftLabel: {
     alignSelf: 'center',
     height: null,
@@ -13,10 +17,10 @@ export default StyleSheet.create({
   leftLabelText: {
     paddingLeft: header.labelPadding,
     paddingRight: header.labelPadding,
-    fontSize: gridBase * 2
+    fontSize: post.miniSize
   },
   input: {
-    fontSize: gridBase * 3,
+    fontSize: post.titleSize,
     top: 0
   },
   rightButtons: {

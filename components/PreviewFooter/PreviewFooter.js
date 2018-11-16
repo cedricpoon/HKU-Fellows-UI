@@ -57,7 +57,7 @@ class PreviewFooter extends Component {
             onLongPress={this.filterToggle}
             onLayout={mapLayoutToState("filterLayout", this)}
           >
-            <Icon name="sort-variant" type="MaterialCommunityIcons"></Icon>
+            <Icon name="funnel"></Icon>
           </Button>
           <Button
             onPress={()=>{ this.props.navigation.navigate('SelectCourse') }}

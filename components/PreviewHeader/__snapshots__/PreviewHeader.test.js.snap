@@ -84,6 +84,9 @@ ShallowWrapper {
         </Styled(Right)>
       </Styled(Item)>,
       "searchBar": true,
+      "style": Object {
+        "backgroundColor": "#F8F8F8",
+      },
       "virtual": undefined,
     },
     "ref": null,
@@ -369,6 +372,9 @@ ShallowWrapper {
           </Styled(Right)>
         </Styled(Item)>,
         "searchBar": true,
+        "style": Object {
+          "backgroundColor": "#F8F8F8",
+        },
         "virtual": undefined,
       },
       "ref": null,

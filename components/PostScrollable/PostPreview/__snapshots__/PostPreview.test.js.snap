@@ -27,6 +27,7 @@ ShallowWrapper {
         <Styled(Left)
           style={
             Object {
+              "flexDirection": "column",
               "width": 30,
             }
           }
@@ -171,7 +172,7 @@ ShallowWrapper {
             numberOfLines={2}
             style={
               Object {
-                "fontSize": 20,
+                "fontSize": 15,
                 "paddingBottom": 5,
               }
             }
@@ -192,14 +193,21 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": undefined,
+          "children": Array [
+            undefined,
+            undefined,
+          ],
           "style": Object {
+            "flexDirection": "column",
             "width": 30,
           },
           "virtual": undefined,
         },
         "ref": null,
-        "rendered": null,
+        "rendered": Array [
+          undefined,
+          undefined,
+        ],
         "type": [Function],
       },
       Object {
@@ -341,7 +349,7 @@ ShallowWrapper {
               numberOfLines={2}
               style={
                 Object {
-                  "fontSize": 20,
+                  "fontSize": 15,
                   "paddingBottom": 5,
                 }
               }
@@ -767,7 +775,7 @@ ShallowWrapper {
               "children": "",
               "numberOfLines": 2,
               "style": Object {
-                "fontSize": 20,
+                "fontSize": 15,
                 "paddingBottom": 5,
               },
               "virtual": undefined,
@@ -794,6 +802,7 @@ ShallowWrapper {
           <Styled(Left)
             style={
               Object {
+                "flexDirection": "column",
                 "width": 30,
               }
             }
@@ -938,7 +947,7 @@ ShallowWrapper {
               numberOfLines={2}
               style={
                 Object {
-                  "fontSize": 20,
+                  "fontSize": 15,
                   "paddingBottom": 5,
                 }
               }
@@ -959,14 +968,21 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": undefined,
+            "children": Array [
+              undefined,
+              undefined,
+            ],
             "style": Object {
+              "flexDirection": "column",
               "width": 30,
             },
             "virtual": undefined,
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Array [
+            undefined,
+            undefined,
+          ],
           "type": [Function],
         },
         Object {
@@ -1108,7 +1124,7 @@ ShallowWrapper {
                 numberOfLines={2}
                 style={
                   Object {
-                    "fontSize": 20,
+                    "fontSize": 15,
                     "paddingBottom": 5,
                   }
                 }
@@ -1534,7 +1550,7 @@ ShallowWrapper {
                 "children": "",
                 "numberOfLines": 2,
                 "style": Object {
-                  "fontSize": 20,
+                  "fontSize": 15,
                   "paddingBottom": 5,
                 },
                 "virtual": undefined,
@@ -1600,6 +1616,7 @@ ShallowWrapper {
         <Styled(Left)
           style={
             Object {
+              "flexDirection": "column",
               "width": 30,
             }
           }
@@ -1744,7 +1761,7 @@ ShallowWrapper {
             numberOfLines={2}
             style={
               Object {
-                "fontSize": 20,
+                "fontSize": 15,
                 "paddingBottom": 5,
               }
             }
@@ -1765,14 +1782,21 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": undefined,
+          "children": Array [
+            undefined,
+            undefined,
+          ],
           "style": Object {
+            "flexDirection": "column",
             "width": 30,
           },
           "virtual": undefined,
         },
         "ref": null,
-        "rendered": null,
+        "rendered": Array [
+          undefined,
+          undefined,
+        ],
         "type": [Function],
       },
       Object {
@@ -1914,7 +1938,7 @@ ShallowWrapper {
               numberOfLines={2}
               style={
                 Object {
-                  "fontSize": 20,
+                  "fontSize": 15,
                   "paddingBottom": 5,
                 }
               }
@@ -2340,7 +2364,7 @@ ShallowWrapper {
               "children": "",
               "numberOfLines": 2,
               "style": Object {
-                "fontSize": 20,
+                "fontSize": 15,
                 "paddingBottom": 5,
               },
               "virtual": undefined,
@@ -2367,6 +2391,7 @@ ShallowWrapper {
           <Styled(Left)
             style={
               Object {
+                "flexDirection": "column",
                 "width": 30,
               }
             }
@@ -2511,7 +2536,7 @@ ShallowWrapper {
               numberOfLines={2}
               style={
                 Object {
-                  "fontSize": 20,
+                  "fontSize": 15,
                   "paddingBottom": 5,
                 }
               }
@@ -2532,14 +2557,21 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": undefined,
+            "children": Array [
+              undefined,
+              undefined,
+            ],
             "style": Object {
+              "flexDirection": "column",
               "width": 30,
             },
             "virtual": undefined,
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Array [
+            undefined,
+            undefined,
+          ],
           "type": [Function],
         },
         Object {
@@ -2681,7 +2713,7 @@ ShallowWrapper {
                 numberOfLines={2}
                 style={
                   Object {
-                    "fontSize": 20,
+                    "fontSize": 15,
                     "paddingBottom": 5,
                   }
                 }
@@ -3107,7 +3139,7 @@ ShallowWrapper {
                 "children": "",
                 "numberOfLines": 2,
                 "style": Object {
-                  "fontSize": 20,
+                  "fontSize": 15,
                   "paddingBottom": 5,
                 },
                 "virtual": undefined,
@@ -3172,18 +3204,24 @@ ShallowWrapper {
         <Styled(Left)
           style={
             Object {
+              "flexDirection": "column",
               "width": 30,
             }
           }
         >
           <Styled(Icon)
-            name="lightbulb"
+            name="checkbox-marked-circle-outline"
             style={
-              Object {
-                "color": "#FFE22B",
-                "fontSize": 15,
-                "paddingLeft": 7.5,
-              }
+              Array [
+                Object {
+                  "fontSize": 15,
+                  "paddingBottom": 5,
+                  "paddingLeft": 6.5,
+                },
+                Object {
+                  "color": "#FFE22B",
+                },
+              ]
             }
             type="MaterialCommunityIcons"
           />
@@ -3328,7 +3366,7 @@ ShallowWrapper {
             numberOfLines={2}
             style={
               Object {
-                "fontSize": 20,
+                "fontSize": 15,
                 "paddingBottom": 5,
               }
             }
@@ -3349,41 +3387,58 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <Styled(Icon)
-            name="lightbulb"
-            style={
-              Object {
-                "color": "#FFE22B",
-                "fontSize": 15,
-                "paddingLeft": 7.5,
+          "children": Array [
+            <Styled(Icon)
+              name="checkbox-marked-circle-outline"
+              style={
+                Array [
+                  Object {
+                    "fontSize": 15,
+                    "paddingBottom": 5,
+                    "paddingLeft": 6.5,
+                  },
+                  Object {
+                    "color": "#FFE22B",
+                  },
+                ]
               }
-            }
-            type="MaterialCommunityIcons"
-          />,
+              type="MaterialCommunityIcons"
+            />,
+            undefined,
+          ],
           "style": Object {
+            "flexDirection": "column",
             "width": 30,
           },
           "virtual": undefined,
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "name": "lightbulb",
-            "style": Object {
-              "color": "#FFE22B",
-              "fontSize": 15,
-              "paddingLeft": 7.5,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "checkbox-marked-circle-outline",
+              "style": Array [
+                Object {
+                  "fontSize": 15,
+                  "paddingBottom": 5,
+                  "paddingLeft": 6.5,
+                },
+                Object {
+                  "color": "#FFE22B",
+                },
+              ],
+              "type": "MaterialCommunityIcons",
+              "virtual": undefined,
             },
-            "type": "MaterialCommunityIcons",
-            "virtual": undefined,
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
           },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
+          undefined,
+        ],
         "type": [Function],
       },
       Object {
@@ -3525,7 +3580,7 @@ ShallowWrapper {
               numberOfLines={2}
               style={
                 Object {
-                  "fontSize": 20,
+                  "fontSize": 15,
                   "paddingBottom": 5,
                 }
               }
@@ -3951,7 +4006,7 @@ ShallowWrapper {
               "children": "",
               "numberOfLines": 2,
               "style": Object {
-                "fontSize": 20,
+                "fontSize": 15,
                 "paddingBottom": 5,
               },
               "virtual": undefined,
@@ -3978,18 +4033,24 @@ ShallowWrapper {
           <Styled(Left)
             style={
               Object {
+                "flexDirection": "column",
                 "width": 30,
               }
             }
           >
             <Styled(Icon)
-              name="lightbulb"
+              name="checkbox-marked-circle-outline"
               style={
-                Object {
-                  "color": "#FFE22B",
-                  "fontSize": 15,
-                  "paddingLeft": 7.5,
-                }
+                Array [
+                  Object {
+                    "fontSize": 15,
+                    "paddingBottom": 5,
+                    "paddingLeft": 6.5,
+                  },
+                  Object {
+                    "color": "#FFE22B",
+                  },
+                ]
               }
               type="MaterialCommunityIcons"
             />
@@ -4134,7 +4195,7 @@ ShallowWrapper {
               numberOfLines={2}
               style={
                 Object {
-                  "fontSize": 20,
+                  "fontSize": 15,
                   "paddingBottom": 5,
                 }
               }
@@ -4155,41 +4216,58 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <Styled(Icon)
-              name="lightbulb"
-              style={
-                Object {
-                  "color": "#FFE22B",
-                  "fontSize": 15,
-                  "paddingLeft": 7.5,
+            "children": Array [
+              <Styled(Icon)
+                name="checkbox-marked-circle-outline"
+                style={
+                  Array [
+                    Object {
+                      "fontSize": 15,
+                      "paddingBottom": 5,
+                      "paddingLeft": 6.5,
+                    },
+                    Object {
+                      "color": "#FFE22B",
+                    },
+                  ]
                 }
-              }
-              type="MaterialCommunityIcons"
-            />,
+                type="MaterialCommunityIcons"
+              />,
+              undefined,
+            ],
             "style": Object {
+              "flexDirection": "column",
               "width": 30,
             },
             "virtual": undefined,
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "name": "lightbulb",
-              "style": Object {
-                "color": "#FFE22B",
-                "fontSize": 15,
-                "paddingLeft": 7.5,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "checkbox-marked-circle-outline",
+                "style": Array [
+                  Object {
+                    "fontSize": 15,
+                    "paddingBottom": 5,
+                    "paddingLeft": 6.5,
+                  },
+                  Object {
+                    "color": "#FFE22B",
+                  },
+                ],
+                "type": "MaterialCommunityIcons",
+                "virtual": undefined,
               },
-              "type": "MaterialCommunityIcons",
-              "virtual": undefined,
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
             },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
+            undefined,
+          ],
           "type": [Function],
         },
         Object {
@@ -4331,7 +4409,7 @@ ShallowWrapper {
                 numberOfLines={2}
                 style={
                   Object {
-                    "fontSize": 20,
+                    "fontSize": 15,
                     "paddingBottom": 5,
                   }
                 }
@@ -4757,7 +4835,7 @@ ShallowWrapper {
                 "children": "",
                 "numberOfLines": 2,
                 "style": Object {
-                  "fontSize": 20,
+                  "fontSize": 15,
                   "paddingBottom": 5,
                 },
                 "virtual": undefined,
@@ -4822,6 +4900,7 @@ ShallowWrapper {
         <Styled(Left)
           style={
             Object {
+              "flexDirection": "column",
               "width": 30,
             }
           }
@@ -4966,7 +5045,7 @@ ShallowWrapper {
             numberOfLines={2}
             style={
               Object {
-                "fontSize": 20,
+                "fontSize": 15,
                 "paddingBottom": 5,
               }
             }
@@ -4988,14 +5067,21 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": undefined,
+          "children": Array [
+            undefined,
+            undefined,
+          ],
           "style": Object {
+            "flexDirection": "column",
             "width": 30,
           },
           "virtual": undefined,
         },
         "ref": null,
-        "rendered": null,
+        "rendered": Array [
+          undefined,
+          undefined,
+        ],
         "type": [Function],
       },
       Object {
@@ -5137,7 +5223,7 @@ ShallowWrapper {
               numberOfLines={2}
               style={
                 Object {
-                  "fontSize": 20,
+                  "fontSize": 15,
                   "paddingBottom": 5,
                 }
               }
@@ -5563,7 +5649,7 @@ ShallowWrapper {
               "children": "",
               "numberOfLines": 2,
               "style": Object {
-                "fontSize": 20,
+                "fontSize": 15,
                 "paddingBottom": 5,
               },
               "virtual": undefined,
@@ -5590,6 +5676,7 @@ ShallowWrapper {
           <Styled(Left)
             style={
               Object {
+                "flexDirection": "column",
                 "width": 30,
               }
             }
@@ -5734,7 +5821,7 @@ ShallowWrapper {
               numberOfLines={2}
               style={
                 Object {
-                  "fontSize": 20,
+                  "fontSize": 15,
                   "paddingBottom": 5,
                 }
               }
@@ -5756,14 +5843,21 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": undefined,
+            "children": Array [
+              undefined,
+              undefined,
+            ],
             "style": Object {
+              "flexDirection": "column",
               "width": 30,
             },
             "virtual": undefined,
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Array [
+            undefined,
+            undefined,
+          ],
           "type": [Function],
         },
         Object {
@@ -5905,7 +5999,7 @@ ShallowWrapper {
                 numberOfLines={2}
                 style={
                   Object {
-                    "fontSize": 20,
+                    "fontSize": 15,
                     "paddingBottom": 5,
                   }
                 }
@@ -6331,7 +6425,7 @@ ShallowWrapper {
                 "children": "",
                 "numberOfLines": 2,
                 "style": Object {
-                  "fontSize": 20,
+                  "fontSize": 15,
                   "paddingBottom": 5,
                 },
                 "virtual": undefined,
@@ -6396,6 +6490,7 @@ ShallowWrapper {
         <Styled(Left)
           style={
             Object {
+              "flexDirection": "column",
               "width": 30,
             }
           }
@@ -6542,7 +6637,7 @@ ShallowWrapper {
             numberOfLines={2}
             style={
               Object {
-                "fontSize": 20,
+                "fontSize": 15,
                 "paddingBottom": 5,
               }
             }
@@ -6563,14 +6658,21 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": undefined,
+          "children": Array [
+            undefined,
+            undefined,
+          ],
           "style": Object {
+            "flexDirection": "column",
             "width": 30,
           },
           "virtual": undefined,
         },
         "ref": null,
-        "rendered": null,
+        "rendered": Array [
+          undefined,
+          undefined,
+        ],
         "type": [Function],
       },
       Object {
@@ -6714,7 +6816,7 @@ ShallowWrapper {
               numberOfLines={2}
               style={
                 Object {
-                  "fontSize": 20,
+                  "fontSize": 15,
                   "paddingBottom": 5,
                 }
               }
@@ -7144,7 +7246,7 @@ ShallowWrapper {
               "children": "",
               "numberOfLines": 2,
               "style": Object {
-                "fontSize": 20,
+                "fontSize": 15,
                 "paddingBottom": 5,
               },
               "virtual": undefined,
@@ -7171,6 +7273,7 @@ ShallowWrapper {
           <Styled(Left)
             style={
               Object {
+                "flexDirection": "column",
                 "width": 30,
               }
             }
@@ -7317,7 +7420,7 @@ ShallowWrapper {
               numberOfLines={2}
               style={
                 Object {
-                  "fontSize": 20,
+                  "fontSize": 15,
                   "paddingBottom": 5,
                 }
               }
@@ -7338,14 +7441,21 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": undefined,
+            "children": Array [
+              undefined,
+              undefined,
+            ],
             "style": Object {
+              "flexDirection": "column",
               "width": 30,
             },
             "virtual": undefined,
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Array [
+            undefined,
+            undefined,
+          ],
           "type": [Function],
         },
         Object {
@@ -7489,7 +7599,7 @@ ShallowWrapper {
                 numberOfLines={2}
                 style={
                   Object {
-                    "fontSize": 20,
+                    "fontSize": 15,
                     "paddingBottom": 5,
                   }
                 }
@@ -7919,7 +8029,1703 @@ ShallowWrapper {
                 "children": "",
                 "numberOfLines": 2,
                 "style": Object {
-                  "fontSize": 20,
+                  "fontSize": 15,
+                  "paddingBottom": 5,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "",
+              "type": [Function],
+            },
+            undefined,
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing PostPreview Component renders as expected with required props and viewed 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PostPreview
+    native={true}
+    replyNo={0}
+    timestamp="2018-11-03 21:56:00"
+    title=""
+    viewed={true}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "avatar": true,
+      "children": Array [
+        <Styled(Left)
+          style={
+            Object {
+              "flexDirection": "column",
+              "width": 30,
+            }
+          }
+        >
+          <Styled(Icon)
+            name="history"
+            style={
+              Array [
+                Object {
+                  "fontSize": 15,
+                  "paddingBottom": 5,
+                  "paddingLeft": 6.5,
+                },
+                Object {
+                  "color": "lightgrey",
+                },
+              ]
+            }
+            type="MaterialCommunityIcons"
+          />
+        </Styled(Left)>,
+        <Styled(Body)
+          style={
+            Object {
+              "marginLeft": 0,
+            }
+          }
+        >
+          <Styled(ViewNB)
+            style={
+              Array [
+                Object {
+                  "flexDirection": "row",
+                },
+              ]
+            }
+          >
+            <Styled(Text)
+              style={
+                Array [
+                  Object {
+                    "fontSize": 10,
+                    "paddingBottom": 5,
+                    "paddingRight": 5,
+                    "paddingTop": 5,
+                  },
+                  Object {
+                    "color": "#4BBC89",
+                  },
+                ]
+              }
+            >
+              #undefined
+            </Styled(Text)>
+            <Styled(Right)
+              style={
+                Array [
+                  Object {
+                    "justifyContent": "flex-end",
+                  },
+                  Object {
+                    "flexDirection": "row",
+                  },
+                ]
+              }
+            >
+              <Styled(Icon)
+                name="md-time"
+                style={
+                  Array [
+                    Object {
+                      "fontSize": 10,
+                      "paddingBottom": 5,
+                      "paddingRight": 5,
+                      "paddingTop": 5,
+                    },
+                    Object {
+                      "color": "#808080",
+                    },
+                  ]
+                }
+              />
+              <Styled(Text)
+                note={true}
+                style={
+                  Object {
+                    "fontSize": 10,
+                    "paddingBottom": 5,
+                    "paddingRight": 5,
+                    "paddingTop": 5,
+                  }
+                }
+              >
+                1 week ago
+              </Styled(Text)>
+              <Styled(Icon)
+                name="chat"
+                style={
+                  Array [
+                    Object {
+                      "fontSize": 10,
+                      "paddingBottom": 5,
+                      "paddingRight": 5,
+                      "paddingTop": 5,
+                    },
+                    Object {
+                      "color": "#808080",
+                    },
+                  ]
+                }
+                type="Entypo"
+              />
+              <Styled(Text)
+                note={true}
+                style={
+                  Object {
+                    "fontSize": 10,
+                    "paddingBottom": 5,
+                    "paddingRight": 5,
+                    "paddingTop": 5,
+                  }
+                }
+              >
+                0
+              </Styled(Text)>
+              <Styled(Icon)
+                name="ios-flame"
+                style={
+                  Array [
+                    Object {
+                      "fontSize": 10,
+                      "paddingBottom": 5,
+                      "paddingRight": 5,
+                      "paddingTop": 5,
+                    },
+                    false,
+                  ]
+                }
+              />
+              <Styled(Text)
+                style={
+                  Array [
+                    Object {
+                      "fontSize": 10,
+                      "paddingBottom": 5,
+                      "paddingRight": 5,
+                      "paddingTop": 5,
+                    },
+                    Object {
+                      "paddingRight": 15,
+                    },
+                    false,
+                  ]
+                }
+              />
+            </Styled(Right)>
+          </Styled(ViewNB)>
+          <Styled(Text)
+            numberOfLines={2}
+            style={
+              Object {
+                "fontSize": 15,
+                "paddingBottom": 5,
+              }
+            }
+          >
+            
+          </Styled(Text)>
+        </Styled(Body)>,
+      ],
+      "style": Object {
+        "marginLeft": 0,
+      },
+      "virtual": undefined,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            undefined,
+            <Styled(Icon)
+              name="history"
+              style={
+                Array [
+                  Object {
+                    "fontSize": 15,
+                    "paddingBottom": 5,
+                    "paddingLeft": 6.5,
+                  },
+                  Object {
+                    "color": "lightgrey",
+                  },
+                ]
+              }
+              type="MaterialCommunityIcons"
+            />,
+          ],
+          "style": Object {
+            "flexDirection": "column",
+            "width": 30,
+          },
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          undefined,
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "history",
+              "style": Array [
+                Object {
+                  "fontSize": 15,
+                  "paddingBottom": 5,
+                  "paddingLeft": 6.5,
+                },
+                Object {
+                  "color": "lightgrey",
+                },
+              ],
+              "type": "MaterialCommunityIcons",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(ViewNB)
+              style={
+                Array [
+                  Object {
+                    "flexDirection": "row",
+                  },
+                ]
+              }
+            >
+              <Styled(Text)
+                style={
+                  Array [
+                    Object {
+                      "fontSize": 10,
+                      "paddingBottom": 5,
+                      "paddingRight": 5,
+                      "paddingTop": 5,
+                    },
+                    Object {
+                      "color": "#4BBC89",
+                    },
+                  ]
+                }
+              >
+                #undefined
+              </Styled(Text)>
+              <Styled(Right)
+                style={
+                  Array [
+                    Object {
+                      "justifyContent": "flex-end",
+                    },
+                    Object {
+                      "flexDirection": "row",
+                    },
+                  ]
+                }
+              >
+                <Styled(Icon)
+                  name="md-time"
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 10,
+                        "paddingBottom": 5,
+                        "paddingRight": 5,
+                        "paddingTop": 5,
+                      },
+                      Object {
+                        "color": "#808080",
+                      },
+                    ]
+                  }
+                />
+                <Styled(Text)
+                  note={true}
+                  style={
+                    Object {
+                      "fontSize": 10,
+                      "paddingBottom": 5,
+                      "paddingRight": 5,
+                      "paddingTop": 5,
+                    }
+                  }
+                >
+                  1 week ago
+                </Styled(Text)>
+                <Styled(Icon)
+                  name="chat"
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 10,
+                        "paddingBottom": 5,
+                        "paddingRight": 5,
+                        "paddingTop": 5,
+                      },
+                      Object {
+                        "color": "#808080",
+                      },
+                    ]
+                  }
+                  type="Entypo"
+                />
+                <Styled(Text)
+                  note={true}
+                  style={
+                    Object {
+                      "fontSize": 10,
+                      "paddingBottom": 5,
+                      "paddingRight": 5,
+                      "paddingTop": 5,
+                    }
+                  }
+                >
+                  0
+                </Styled(Text)>
+                <Styled(Icon)
+                  name="ios-flame"
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 10,
+                        "paddingBottom": 5,
+                        "paddingRight": 5,
+                        "paddingTop": 5,
+                      },
+                      false,
+                    ]
+                  }
+                />
+                <Styled(Text)
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 10,
+                        "paddingBottom": 5,
+                        "paddingRight": 5,
+                        "paddingTop": 5,
+                      },
+                      Object {
+                        "paddingRight": 15,
+                      },
+                      false,
+                    ]
+                  }
+                />
+              </Styled(Right)>
+            </Styled(ViewNB)>,
+            <Styled(Text)
+              numberOfLines={2}
+              style={
+                Object {
+                  "fontSize": 15,
+                  "paddingBottom": 5,
+                }
+              }
+            >
+              
+            </Styled(Text)>,
+            undefined,
+          ],
+          "style": Object {
+            "marginLeft": 0,
+          },
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <Styled(Text)
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 10,
+                        "paddingBottom": 5,
+                        "paddingRight": 5,
+                        "paddingTop": 5,
+                      },
+                      Object {
+                        "color": "#4BBC89",
+                      },
+                    ]
+                  }
+                >
+                  #undefined
+                </Styled(Text)>,
+                <Styled(Right)
+                  style={
+                    Array [
+                      Object {
+                        "justifyContent": "flex-end",
+                      },
+                      Object {
+                        "flexDirection": "row",
+                      },
+                    ]
+                  }
+                >
+                  <Styled(Icon)
+                    name="md-time"
+                    style={
+                      Array [
+                        Object {
+                          "fontSize": 10,
+                          "paddingBottom": 5,
+                          "paddingRight": 5,
+                          "paddingTop": 5,
+                        },
+                        Object {
+                          "color": "#808080",
+                        },
+                      ]
+                    }
+                  />
+                  <Styled(Text)
+                    note={true}
+                    style={
+                      Object {
+                        "fontSize": 10,
+                        "paddingBottom": 5,
+                        "paddingRight": 5,
+                        "paddingTop": 5,
+                      }
+                    }
+                  >
+                    1 week ago
+                  </Styled(Text)>
+                  <Styled(Icon)
+                    name="chat"
+                    style={
+                      Array [
+                        Object {
+                          "fontSize": 10,
+                          "paddingBottom": 5,
+                          "paddingRight": 5,
+                          "paddingTop": 5,
+                        },
+                        Object {
+                          "color": "#808080",
+                        },
+                      ]
+                    }
+                    type="Entypo"
+                  />
+                  <Styled(Text)
+                    note={true}
+                    style={
+                      Object {
+                        "fontSize": 10,
+                        "paddingBottom": 5,
+                        "paddingRight": 5,
+                        "paddingTop": 5,
+                      }
+                    }
+                  >
+                    0
+                  </Styled(Text)>
+                  <Styled(Icon)
+                    name="ios-flame"
+                    style={
+                      Array [
+                        Object {
+                          "fontSize": 10,
+                          "paddingBottom": 5,
+                          "paddingRight": 5,
+                          "paddingTop": 5,
+                        },
+                        false,
+                      ]
+                    }
+                  />
+                  <Styled(Text)
+                    style={
+                      Array [
+                        Object {
+                          "fontSize": 10,
+                          "paddingBottom": 5,
+                          "paddingRight": 5,
+                          "paddingTop": 5,
+                        },
+                        Object {
+                          "paddingRight": 15,
+                        },
+                        false,
+                      ]
+                    }
+                  />
+                </Styled(Right)>,
+              ],
+              "style": Array [
+                Object {
+                  "flexDirection": "row",
+                },
+              ],
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "#undefined",
+                  "style": Array [
+                    Object {
+                      "fontSize": 10,
+                      "paddingBottom": 5,
+                      "paddingRight": 5,
+                      "paddingTop": 5,
+                    },
+                    Object {
+                      "color": "#4BBC89",
+                    },
+                  ],
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": "#undefined",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <Styled(Icon)
+                      name="md-time"
+                      style={
+                        Array [
+                          Object {
+                            "fontSize": 10,
+                            "paddingBottom": 5,
+                            "paddingRight": 5,
+                            "paddingTop": 5,
+                          },
+                          Object {
+                            "color": "#808080",
+                          },
+                        ]
+                      }
+                    />,
+                    <Styled(Text)
+                      note={true}
+                      style={
+                        Object {
+                          "fontSize": 10,
+                          "paddingBottom": 5,
+                          "paddingRight": 5,
+                          "paddingTop": 5,
+                        }
+                      }
+                    >
+                      1 week ago
+                    </Styled(Text)>,
+                    <Styled(Icon)
+                      name="chat"
+                      style={
+                        Array [
+                          Object {
+                            "fontSize": 10,
+                            "paddingBottom": 5,
+                            "paddingRight": 5,
+                            "paddingTop": 5,
+                          },
+                          Object {
+                            "color": "#808080",
+                          },
+                        ]
+                      }
+                      type="Entypo"
+                    />,
+                    <Styled(Text)
+                      note={true}
+                      style={
+                        Object {
+                          "fontSize": 10,
+                          "paddingBottom": 5,
+                          "paddingRight": 5,
+                          "paddingTop": 5,
+                        }
+                      }
+                    >
+                      0
+                    </Styled(Text)>,
+                    <Styled(Icon)
+                      name="ios-flame"
+                      style={
+                        Array [
+                          Object {
+                            "fontSize": 10,
+                            "paddingBottom": 5,
+                            "paddingRight": 5,
+                            "paddingTop": 5,
+                          },
+                          false,
+                        ]
+                      }
+                    />,
+                    <Styled(Text)
+                      style={
+                        Array [
+                          Object {
+                            "fontSize": 10,
+                            "paddingBottom": 5,
+                            "paddingRight": 5,
+                            "paddingTop": 5,
+                          },
+                          Object {
+                            "paddingRight": 15,
+                          },
+                          false,
+                        ]
+                      }
+                    />,
+                  ],
+                  "style": Array [
+                    Object {
+                      "justifyContent": "flex-end",
+                    },
+                    Object {
+                      "flexDirection": "row",
+                    },
+                  ],
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "name": "md-time",
+                      "style": Array [
+                        Object {
+                          "fontSize": 10,
+                          "paddingBottom": 5,
+                          "paddingRight": 5,
+                          "paddingTop": 5,
+                        },
+                        Object {
+                          "color": "#808080",
+                        },
+                      ],
+                      "virtual": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "1 week ago",
+                      "note": true,
+                      "style": Object {
+                        "fontSize": 10,
+                        "paddingBottom": 5,
+                        "paddingRight": 5,
+                        "paddingTop": 5,
+                      },
+                      "virtual": undefined,
+                    },
+                    "ref": null,
+                    "rendered": "1 week ago",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "name": "chat",
+                      "style": Array [
+                        Object {
+                          "fontSize": 10,
+                          "paddingBottom": 5,
+                          "paddingRight": 5,
+                          "paddingTop": 5,
+                        },
+                        Object {
+                          "color": "#808080",
+                        },
+                      ],
+                      "type": "Entypo",
+                      "virtual": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": 0,
+                      "note": true,
+                      "style": Object {
+                        "fontSize": 10,
+                        "paddingBottom": 5,
+                        "paddingRight": 5,
+                        "paddingTop": 5,
+                      },
+                      "virtual": undefined,
+                    },
+                    "ref": null,
+                    "rendered": 0,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "name": "ios-flame",
+                      "style": Array [
+                        Object {
+                          "fontSize": 10,
+                          "paddingBottom": 5,
+                          "paddingRight": 5,
+                          "paddingTop": 5,
+                        },
+                        false,
+                      ],
+                      "virtual": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": undefined,
+                      "style": Array [
+                        Object {
+                          "fontSize": 10,
+                          "paddingBottom": 5,
+                          "paddingRight": 5,
+                          "paddingTop": 5,
+                        },
+                        Object {
+                          "paddingRight": 15,
+                        },
+                        false,
+                      ],
+                      "virtual": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "",
+              "numberOfLines": 2,
+              "style": Object {
+                "fontSize": 15,
+                "paddingBottom": 5,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": "",
+            "type": [Function],
+          },
+          undefined,
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "avatar": true,
+        "children": Array [
+          <Styled(Left)
+            style={
+              Object {
+                "flexDirection": "column",
+                "width": 30,
+              }
+            }
+          >
+            <Styled(Icon)
+              name="history"
+              style={
+                Array [
+                  Object {
+                    "fontSize": 15,
+                    "paddingBottom": 5,
+                    "paddingLeft": 6.5,
+                  },
+                  Object {
+                    "color": "lightgrey",
+                  },
+                ]
+              }
+              type="MaterialCommunityIcons"
+            />
+          </Styled(Left)>,
+          <Styled(Body)
+            style={
+              Object {
+                "marginLeft": 0,
+              }
+            }
+          >
+            <Styled(ViewNB)
+              style={
+                Array [
+                  Object {
+                    "flexDirection": "row",
+                  },
+                ]
+              }
+            >
+              <Styled(Text)
+                style={
+                  Array [
+                    Object {
+                      "fontSize": 10,
+                      "paddingBottom": 5,
+                      "paddingRight": 5,
+                      "paddingTop": 5,
+                    },
+                    Object {
+                      "color": "#4BBC89",
+                    },
+                  ]
+                }
+              >
+                #undefined
+              </Styled(Text)>
+              <Styled(Right)
+                style={
+                  Array [
+                    Object {
+                      "justifyContent": "flex-end",
+                    },
+                    Object {
+                      "flexDirection": "row",
+                    },
+                  ]
+                }
+              >
+                <Styled(Icon)
+                  name="md-time"
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 10,
+                        "paddingBottom": 5,
+                        "paddingRight": 5,
+                        "paddingTop": 5,
+                      },
+                      Object {
+                        "color": "#808080",
+                      },
+                    ]
+                  }
+                />
+                <Styled(Text)
+                  note={true}
+                  style={
+                    Object {
+                      "fontSize": 10,
+                      "paddingBottom": 5,
+                      "paddingRight": 5,
+                      "paddingTop": 5,
+                    }
+                  }
+                >
+                  1 week ago
+                </Styled(Text)>
+                <Styled(Icon)
+                  name="chat"
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 10,
+                        "paddingBottom": 5,
+                        "paddingRight": 5,
+                        "paddingTop": 5,
+                      },
+                      Object {
+                        "color": "#808080",
+                      },
+                    ]
+                  }
+                  type="Entypo"
+                />
+                <Styled(Text)
+                  note={true}
+                  style={
+                    Object {
+                      "fontSize": 10,
+                      "paddingBottom": 5,
+                      "paddingRight": 5,
+                      "paddingTop": 5,
+                    }
+                  }
+                >
+                  0
+                </Styled(Text)>
+                <Styled(Icon)
+                  name="ios-flame"
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 10,
+                        "paddingBottom": 5,
+                        "paddingRight": 5,
+                        "paddingTop": 5,
+                      },
+                      false,
+                    ]
+                  }
+                />
+                <Styled(Text)
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 10,
+                        "paddingBottom": 5,
+                        "paddingRight": 5,
+                        "paddingTop": 5,
+                      },
+                      Object {
+                        "paddingRight": 15,
+                      },
+                      false,
+                    ]
+                  }
+                />
+              </Styled(Right)>
+            </Styled(ViewNB)>
+            <Styled(Text)
+              numberOfLines={2}
+              style={
+                Object {
+                  "fontSize": 15,
+                  "paddingBottom": 5,
+                }
+              }
+            >
+              
+            </Styled(Text)>
+          </Styled(Body)>,
+        ],
+        "style": Object {
+          "marginLeft": 0,
+        },
+        "virtual": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              undefined,
+              <Styled(Icon)
+                name="history"
+                style={
+                  Array [
+                    Object {
+                      "fontSize": 15,
+                      "paddingBottom": 5,
+                      "paddingLeft": 6.5,
+                    },
+                    Object {
+                      "color": "lightgrey",
+                    },
+                  ]
+                }
+                type="MaterialCommunityIcons"
+              />,
+            ],
+            "style": Object {
+              "flexDirection": "column",
+              "width": 30,
+            },
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            undefined,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "history",
+                "style": Array [
+                  Object {
+                    "fontSize": 15,
+                    "paddingBottom": 5,
+                    "paddingLeft": 6.5,
+                  },
+                  Object {
+                    "color": "lightgrey",
+                  },
+                ],
+                "type": "MaterialCommunityIcons",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Styled(ViewNB)
+                style={
+                  Array [
+                    Object {
+                      "flexDirection": "row",
+                    },
+                  ]
+                }
+              >
+                <Styled(Text)
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 10,
+                        "paddingBottom": 5,
+                        "paddingRight": 5,
+                        "paddingTop": 5,
+                      },
+                      Object {
+                        "color": "#4BBC89",
+                      },
+                    ]
+                  }
+                >
+                  #undefined
+                </Styled(Text)>
+                <Styled(Right)
+                  style={
+                    Array [
+                      Object {
+                        "justifyContent": "flex-end",
+                      },
+                      Object {
+                        "flexDirection": "row",
+                      },
+                    ]
+                  }
+                >
+                  <Styled(Icon)
+                    name="md-time"
+                    style={
+                      Array [
+                        Object {
+                          "fontSize": 10,
+                          "paddingBottom": 5,
+                          "paddingRight": 5,
+                          "paddingTop": 5,
+                        },
+                        Object {
+                          "color": "#808080",
+                        },
+                      ]
+                    }
+                  />
+                  <Styled(Text)
+                    note={true}
+                    style={
+                      Object {
+                        "fontSize": 10,
+                        "paddingBottom": 5,
+                        "paddingRight": 5,
+                        "paddingTop": 5,
+                      }
+                    }
+                  >
+                    1 week ago
+                  </Styled(Text)>
+                  <Styled(Icon)
+                    name="chat"
+                    style={
+                      Array [
+                        Object {
+                          "fontSize": 10,
+                          "paddingBottom": 5,
+                          "paddingRight": 5,
+                          "paddingTop": 5,
+                        },
+                        Object {
+                          "color": "#808080",
+                        },
+                      ]
+                    }
+                    type="Entypo"
+                  />
+                  <Styled(Text)
+                    note={true}
+                    style={
+                      Object {
+                        "fontSize": 10,
+                        "paddingBottom": 5,
+                        "paddingRight": 5,
+                        "paddingTop": 5,
+                      }
+                    }
+                  >
+                    0
+                  </Styled(Text)>
+                  <Styled(Icon)
+                    name="ios-flame"
+                    style={
+                      Array [
+                        Object {
+                          "fontSize": 10,
+                          "paddingBottom": 5,
+                          "paddingRight": 5,
+                          "paddingTop": 5,
+                        },
+                        false,
+                      ]
+                    }
+                  />
+                  <Styled(Text)
+                    style={
+                      Array [
+                        Object {
+                          "fontSize": 10,
+                          "paddingBottom": 5,
+                          "paddingRight": 5,
+                          "paddingTop": 5,
+                        },
+                        Object {
+                          "paddingRight": 15,
+                        },
+                        false,
+                      ]
+                    }
+                  />
+                </Styled(Right)>
+              </Styled(ViewNB)>,
+              <Styled(Text)
+                numberOfLines={2}
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "paddingBottom": 5,
+                  }
+                }
+              >
+                
+              </Styled(Text)>,
+              undefined,
+            ],
+            "style": Object {
+              "marginLeft": 0,
+            },
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <Styled(Text)
+                    style={
+                      Array [
+                        Object {
+                          "fontSize": 10,
+                          "paddingBottom": 5,
+                          "paddingRight": 5,
+                          "paddingTop": 5,
+                        },
+                        Object {
+                          "color": "#4BBC89",
+                        },
+                      ]
+                    }
+                  >
+                    #undefined
+                  </Styled(Text)>,
+                  <Styled(Right)
+                    style={
+                      Array [
+                        Object {
+                          "justifyContent": "flex-end",
+                        },
+                        Object {
+                          "flexDirection": "row",
+                        },
+                      ]
+                    }
+                  >
+                    <Styled(Icon)
+                      name="md-time"
+                      style={
+                        Array [
+                          Object {
+                            "fontSize": 10,
+                            "paddingBottom": 5,
+                            "paddingRight": 5,
+                            "paddingTop": 5,
+                          },
+                          Object {
+                            "color": "#808080",
+                          },
+                        ]
+                      }
+                    />
+                    <Styled(Text)
+                      note={true}
+                      style={
+                        Object {
+                          "fontSize": 10,
+                          "paddingBottom": 5,
+                          "paddingRight": 5,
+                          "paddingTop": 5,
+                        }
+                      }
+                    >
+                      1 week ago
+                    </Styled(Text)>
+                    <Styled(Icon)
+                      name="chat"
+                      style={
+                        Array [
+                          Object {
+                            "fontSize": 10,
+                            "paddingBottom": 5,
+                            "paddingRight": 5,
+                            "paddingTop": 5,
+                          },
+                          Object {
+                            "color": "#808080",
+                          },
+                        ]
+                      }
+                      type="Entypo"
+                    />
+                    <Styled(Text)
+                      note={true}
+                      style={
+                        Object {
+                          "fontSize": 10,
+                          "paddingBottom": 5,
+                          "paddingRight": 5,
+                          "paddingTop": 5,
+                        }
+                      }
+                    >
+                      0
+                    </Styled(Text)>
+                    <Styled(Icon)
+                      name="ios-flame"
+                      style={
+                        Array [
+                          Object {
+                            "fontSize": 10,
+                            "paddingBottom": 5,
+                            "paddingRight": 5,
+                            "paddingTop": 5,
+                          },
+                          false,
+                        ]
+                      }
+                    />
+                    <Styled(Text)
+                      style={
+                        Array [
+                          Object {
+                            "fontSize": 10,
+                            "paddingBottom": 5,
+                            "paddingRight": 5,
+                            "paddingTop": 5,
+                          },
+                          Object {
+                            "paddingRight": 15,
+                          },
+                          false,
+                        ]
+                      }
+                    />
+                  </Styled(Right)>,
+                ],
+                "style": Array [
+                  Object {
+                    "flexDirection": "row",
+                  },
+                ],
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "#undefined",
+                    "style": Array [
+                      Object {
+                        "fontSize": 10,
+                        "paddingBottom": 5,
+                        "paddingRight": 5,
+                        "paddingTop": 5,
+                      },
+                      Object {
+                        "color": "#4BBC89",
+                      },
+                    ],
+                    "virtual": undefined,
+                  },
+                  "ref": null,
+                  "rendered": "#undefined",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      <Styled(Icon)
+                        name="md-time"
+                        style={
+                          Array [
+                            Object {
+                              "fontSize": 10,
+                              "paddingBottom": 5,
+                              "paddingRight": 5,
+                              "paddingTop": 5,
+                            },
+                            Object {
+                              "color": "#808080",
+                            },
+                          ]
+                        }
+                      />,
+                      <Styled(Text)
+                        note={true}
+                        style={
+                          Object {
+                            "fontSize": 10,
+                            "paddingBottom": 5,
+                            "paddingRight": 5,
+                            "paddingTop": 5,
+                          }
+                        }
+                      >
+                        1 week ago
+                      </Styled(Text)>,
+                      <Styled(Icon)
+                        name="chat"
+                        style={
+                          Array [
+                            Object {
+                              "fontSize": 10,
+                              "paddingBottom": 5,
+                              "paddingRight": 5,
+                              "paddingTop": 5,
+                            },
+                            Object {
+                              "color": "#808080",
+                            },
+                          ]
+                        }
+                        type="Entypo"
+                      />,
+                      <Styled(Text)
+                        note={true}
+                        style={
+                          Object {
+                            "fontSize": 10,
+                            "paddingBottom": 5,
+                            "paddingRight": 5,
+                            "paddingTop": 5,
+                          }
+                        }
+                      >
+                        0
+                      </Styled(Text)>,
+                      <Styled(Icon)
+                        name="ios-flame"
+                        style={
+                          Array [
+                            Object {
+                              "fontSize": 10,
+                              "paddingBottom": 5,
+                              "paddingRight": 5,
+                              "paddingTop": 5,
+                            },
+                            false,
+                          ]
+                        }
+                      />,
+                      <Styled(Text)
+                        style={
+                          Array [
+                            Object {
+                              "fontSize": 10,
+                              "paddingBottom": 5,
+                              "paddingRight": 5,
+                              "paddingTop": 5,
+                            },
+                            Object {
+                              "paddingRight": 15,
+                            },
+                            false,
+                          ]
+                        }
+                      />,
+                    ],
+                    "style": Array [
+                      Object {
+                        "justifyContent": "flex-end",
+                      },
+                      Object {
+                        "flexDirection": "row",
+                      },
+                    ],
+                    "virtual": undefined,
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "name": "md-time",
+                        "style": Array [
+                          Object {
+                            "fontSize": 10,
+                            "paddingBottom": 5,
+                            "paddingRight": 5,
+                            "paddingTop": 5,
+                          },
+                          Object {
+                            "color": "#808080",
+                          },
+                        ],
+                        "virtual": undefined,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "1 week ago",
+                        "note": true,
+                        "style": Object {
+                          "fontSize": 10,
+                          "paddingBottom": 5,
+                          "paddingRight": 5,
+                          "paddingTop": 5,
+                        },
+                        "virtual": undefined,
+                      },
+                      "ref": null,
+                      "rendered": "1 week ago",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "name": "chat",
+                        "style": Array [
+                          Object {
+                            "fontSize": 10,
+                            "paddingBottom": 5,
+                            "paddingRight": 5,
+                            "paddingTop": 5,
+                          },
+                          Object {
+                            "color": "#808080",
+                          },
+                        ],
+                        "type": "Entypo",
+                        "virtual": undefined,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": 0,
+                        "note": true,
+                        "style": Object {
+                          "fontSize": 10,
+                          "paddingBottom": 5,
+                          "paddingRight": 5,
+                          "paddingTop": 5,
+                        },
+                        "virtual": undefined,
+                      },
+                      "ref": null,
+                      "rendered": 0,
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "name": "ios-flame",
+                        "style": Array [
+                          Object {
+                            "fontSize": 10,
+                            "paddingBottom": 5,
+                            "paddingRight": 5,
+                            "paddingTop": 5,
+                          },
+                          false,
+                        ],
+                        "virtual": undefined,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": undefined,
+                        "style": Array [
+                          Object {
+                            "fontSize": 10,
+                            "paddingBottom": 5,
+                            "paddingRight": 5,
+                            "paddingTop": 5,
+                          },
+                          Object {
+                            "paddingRight": 15,
+                          },
+                          false,
+                        ],
+                        "virtual": undefined,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                  ],
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "",
+                "numberOfLines": 2,
+                "style": Object {
+                  "fontSize": 15,
                   "paddingBottom": 5,
                 },
                 "virtual": undefined,

@@ -11,8 +11,6 @@ const locale = localize({ language: 'en', country: 'hk' });
 
 class PostScrollable extends Component {
 
-  keyExtractor = (item) => item.id;
-
   renderPost({item}) {
     return (
       <Post
@@ -43,7 +41,7 @@ class PostScrollable extends Component {
       return (
         <FlatList
           data={posts}
-          keyExtractor={this.keyExtractor}
+          keyExtractor={item => item.id}
           renderItem={this.renderPost}
           {...restProps}
         />

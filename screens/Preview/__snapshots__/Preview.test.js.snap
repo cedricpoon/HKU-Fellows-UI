@@ -18,7 +18,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <PreviewHeader
+        <withNavigation(PreviewHeader)
           location="COMP 4801"
         />,
         <Styled(Content)>
@@ -450,7 +450,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <PreviewHeader
+          <withNavigation(PreviewHeader)
             location="COMP 4801"
           />,
           <Styled(Content)>

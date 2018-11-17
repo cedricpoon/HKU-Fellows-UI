@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
-import { Text } from 'native-base';
+import { Container } from 'native-base';
+
+import { Header } from 'hkufui/components'
 
 class SelectCourse extends Component {
 
   render() {
     return (
-      <Text>SelectCourse</Text>
+      <Container>
+        <Header title='Courses' backable />
+      </Container>
     );
   }
 }

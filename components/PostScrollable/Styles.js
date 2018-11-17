@@ -1,6 +1,6 @@
 import nbColor from "hkufui/native-base-theme/variables/commonColor";
 import { logo } from "hkufui/theme/palette";
-import { post, gridBase } from "hkufui/theme/grid"
+import { post, gridBase, fontSize } from "hkufui/theme/grid"
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
@@ -12,7 +12,7 @@ export default StyleSheet.create({
     marginLeft: 0
   },
   badgeContainer: {
-    width: post.seperatorPadding * 2,
+    width: post.badgeContainerWidth,
     flexDirection: 'column'
   },
   moodle: {
@@ -31,8 +31,8 @@ export default StyleSheet.create({
     flexDirection: 'row'
   },
   badge: {
-    fontSize: post.smallSize,
-    paddingLeft: gridBase * 1.3,
+    fontSize: fontSize.smallSize,
+    paddingLeft: gridBase,
     paddingBottom: gridBase
   },
   subTitle: {
@@ -42,7 +42,7 @@ export default StyleSheet.create({
     color: 'lightgrey'
   },
   solved: {
-    color: logo.yellow
+    color: logo.dimmed.yellow
   },
   right: {
     justifyContent: 'flex-end'
@@ -51,11 +51,11 @@ export default StyleSheet.create({
     paddingRight: post.seperatorPadding
   },
   mainText: {
-    fontSize: post.titleSize,
+    fontSize: fontSize.titleSize,
     paddingBottom: gridBase
   },
   subText: {
-    fontSize: post.miniSize,
+    fontSize: fontSize.miniSize,
     paddingBottom: gridBase,
     paddingTop: gridBase,
     paddingRight: gridBase

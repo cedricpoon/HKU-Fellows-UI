@@ -3,3 +3,4 @@ User Interface of HKU Fellows
 ## Work In Progress
 ### Course
 - [ ] Layout & Design
+- [ ] State control mechanism (i.e. Redux)

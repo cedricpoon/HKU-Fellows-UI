@@ -3216,10 +3216,10 @@ ShallowWrapper {
                 Object {
                   "fontSize": 15,
                   "paddingBottom": 5,
-                  "paddingLeft": 6.5,
+                  "paddingLeft": 5,
                 },
                 Object {
-                  "color": "#FFE22B",
+                  "color": "#E5CB26",
                 },
               ]
             }
@@ -3395,10 +3395,10 @@ ShallowWrapper {
                   Object {
                     "fontSize": 15,
                     "paddingBottom": 5,
-                    "paddingLeft": 6.5,
+                    "paddingLeft": 5,
                   },
                   Object {
-                    "color": "#FFE22B",
+                    "color": "#E5CB26",
                   },
                 ]
               }
@@ -3424,10 +3424,10 @@ ShallowWrapper {
                 Object {
                   "fontSize": 15,
                   "paddingBottom": 5,
-                  "paddingLeft": 6.5,
+                  "paddingLeft": 5,
                 },
                 Object {
-                  "color": "#FFE22B",
+                  "color": "#E5CB26",
                 },
               ],
               "type": "MaterialCommunityIcons",
@@ -4045,10 +4045,10 @@ ShallowWrapper {
                   Object {
                     "fontSize": 15,
                     "paddingBottom": 5,
-                    "paddingLeft": 6.5,
+                    "paddingLeft": 5,
                   },
                   Object {
-                    "color": "#FFE22B",
+                    "color": "#E5CB26",
                   },
                 ]
               }
@@ -4224,10 +4224,10 @@ ShallowWrapper {
                     Object {
                       "fontSize": 15,
                       "paddingBottom": 5,
-                      "paddingLeft": 6.5,
+                      "paddingLeft": 5,
                     },
                     Object {
-                      "color": "#FFE22B",
+                      "color": "#E5CB26",
                     },
                   ]
                 }
@@ -4253,10 +4253,10 @@ ShallowWrapper {
                   Object {
                     "fontSize": 15,
                     "paddingBottom": 5,
-                    "paddingLeft": 6.5,
+                    "paddingLeft": 5,
                   },
                   Object {
-                    "color": "#FFE22B",
+                    "color": "#E5CB26",
                   },
                 ],
                 "type": "MaterialCommunityIcons",
@@ -8106,7 +8106,7 @@ ShallowWrapper {
                 Object {
                   "fontSize": 15,
                   "paddingBottom": 5,
-                  "paddingLeft": 6.5,
+                  "paddingLeft": 5,
                 },
                 Object {
                   "color": "lightgrey",
@@ -8286,7 +8286,7 @@ ShallowWrapper {
                   Object {
                     "fontSize": 15,
                     "paddingBottom": 5,
-                    "paddingLeft": 6.5,
+                    "paddingLeft": 5,
                   },
                   Object {
                     "color": "lightgrey",
@@ -8315,7 +8315,7 @@ ShallowWrapper {
                 Object {
                   "fontSize": 15,
                   "paddingBottom": 5,
-                  "paddingLeft": 6.5,
+                  "paddingLeft": 5,
                 },
                 Object {
                   "color": "lightgrey",
@@ -8935,7 +8935,7 @@ ShallowWrapper {
                   Object {
                     "fontSize": 15,
                     "paddingBottom": 5,
-                    "paddingLeft": 6.5,
+                    "paddingLeft": 5,
                   },
                   Object {
                     "color": "lightgrey",
@@ -9115,7 +9115,7 @@ ShallowWrapper {
                     Object {
                       "fontSize": 15,
                       "paddingBottom": 5,
-                      "paddingLeft": 6.5,
+                      "paddingLeft": 5,
                     },
                     Object {
                       "color": "lightgrey",
@@ -9144,7 +9144,7 @@ ShallowWrapper {
                   Object {
                     "fontSize": 15,
                     "paddingBottom": 5,
-                    "paddingLeft": 6.5,
+                    "paddingLeft": 5,
                   },
                   Object {
                     "color": "lightgrey",

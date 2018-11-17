@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from "prop-types";
 import { Header, Item, Input, Icon, Button, Right, Text } from 'native-base';
 import { Keyboard } from 'react-native';
+import { withNavigation } from 'react-navigation'
 
 import { localize } from 'hkufui/locale';
 const locale = localize({ language: 'en', country: 'hk' });
@@ -42,7 +43,13 @@ class PreviewHeader extends Component {
     return (
       <Header searchBar style={styles.header}>
         <Item rounded>
-          <Button rounded style={styles.leftLabel}>
+          <Button
+            rounded
+            style={styles.leftLabel}
+            onPress={() => {
+              this.props.navigation.navigate('SelectCourse');
+            }}
+          >
             <Text style={styles.leftLabelText}>{location}</Text>
           </Button>
 
@@ -77,4 +84,4 @@ PreviewHeader.propTypes = {
   location: PropTypes.string.isRequired
 };
 
-export default PreviewHeader;
+export default withNavigation(PreviewHeader);

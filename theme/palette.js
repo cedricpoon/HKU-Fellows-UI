@@ -4,5 +4,8 @@ export const logo = {
   blue: '#3B96DC',
   yellow: '#FFE22B',
   brown: '#685A5C',
-  black : '#4E4A47'
+  black : '#4E4A47',
+  dimmed: {
+    yellow: '#E5CB26'
+  }
 };

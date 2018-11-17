@@ -6,7 +6,7 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <PostPreview
     native={true}
     replyNo={0}
-    timestamp="2018-11-03 21:56:00"
+    timestamp=""
     title=""
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -104,7 +104,7 @@ ShallowWrapper {
                   }
                 }
               >
-                1 week ago
+                just now
               </Styled(Text)>
               <Styled(Icon)
                 name="chat"
@@ -281,7 +281,7 @@ ShallowWrapper {
                     }
                   }
                 >
-                  1 week ago
+                  just now
                 </Styled(Text)>
                 <Styled(Icon)
                   name="chat"
@@ -427,7 +427,7 @@ ShallowWrapper {
                       }
                     }
                   >
-                    1 week ago
+                    just now
                   </Styled(Text)>
                   <Styled(Icon)
                     name="chat"
@@ -556,7 +556,7 @@ ShallowWrapper {
                         }
                       }
                     >
-                      1 week ago
+                      just now
                     </Styled(Text)>,
                     <Styled(Icon)
                       name="chat"
@@ -659,7 +659,7 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "class",
                     "props": Object {
-                      "children": "1 week ago",
+                      "children": "just now",
                       "note": true,
                       "style": Object {
                         "fontSize": 10,
@@ -670,7 +670,7 @@ ShallowWrapper {
                       "virtual": undefined,
                     },
                     "ref": null,
-                    "rendered": "1 week ago",
+                    "rendered": "just now",
                     "type": [Function],
                   },
                   Object {
@@ -879,7 +879,7 @@ ShallowWrapper {
                     }
                   }
                 >
-                  1 week ago
+                  just now
                 </Styled(Text)>
                 <Styled(Icon)
                   name="chat"
@@ -1056,7 +1056,7 @@ ShallowWrapper {
                       }
                     }
                   >
-                    1 week ago
+                    just now
                   </Styled(Text)>
                   <Styled(Icon)
                     name="chat"
@@ -1202,7 +1202,7 @@ ShallowWrapper {
                         }
                       }
                     >
-                      1 week ago
+                      just now
                     </Styled(Text)>
                     <Styled(Icon)
                       name="chat"
@@ -1331,7 +1331,7 @@ ShallowWrapper {
                           }
                         }
                       >
-                        1 week ago
+                        just now
                       </Styled(Text)>,
                       <Styled(Icon)
                         name="chat"
@@ -1434,7 +1434,7 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "class",
                       "props": Object {
-                        "children": "1 week ago",
+                        "children": "just now",
                         "note": true,
                         "style": Object {
                           "fontSize": 10,
@@ -1445,7 +1445,7 @@ ShallowWrapper {
                         "virtual": undefined,
                       },
                       "ref": null,
-                      "rendered": "1 week ago",
+                      "rendered": "just now",
                       "type": [Function],
                     },
                     Object {
@@ -1595,7 +1595,7 @@ ShallowWrapper {
     primaryHashtag=""
     replyNo={0}
     secondaryHashtag=""
-    timestamp="2018-11-03 21:56:00"
+    timestamp=""
     title=""
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -1693,7 +1693,7 @@ ShallowWrapper {
                   }
                 }
               >
-                1 week ago
+                just now
               </Styled(Text)>
               <Styled(Icon)
                 name="chat"
@@ -1870,7 +1870,7 @@ ShallowWrapper {
                     }
                   }
                 >
-                  1 week ago
+                  just now
                 </Styled(Text)>
                 <Styled(Icon)
                   name="chat"
@@ -2016,7 +2016,7 @@ ShallowWrapper {
                       }
                     }
                   >
-                    1 week ago
+                    just now
                   </Styled(Text)>
                   <Styled(Icon)
                     name="chat"
@@ -2145,7 +2145,7 @@ ShallowWrapper {
                         }
                       }
                     >
-                      1 week ago
+                      just now
                     </Styled(Text)>,
                     <Styled(Icon)
                       name="chat"
@@ -2248,7 +2248,7 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "class",
                     "props": Object {
-                      "children": "1 week ago",
+                      "children": "just now",
                       "note": true,
                       "style": Object {
                         "fontSize": 10,
@@ -2259,7 +2259,7 @@ ShallowWrapper {
                       "virtual": undefined,
                     },
                     "ref": null,
-                    "rendered": "1 week ago",
+                    "rendered": "just now",
                     "type": [Function],
                   },
                   Object {
@@ -2468,7 +2468,7 @@ ShallowWrapper {
                     }
                   }
                 >
-                  1 week ago
+                  just now
                 </Styled(Text)>
                 <Styled(Icon)
                   name="chat"
@@ -2645,7 +2645,7 @@ ShallowWrapper {
                       }
                     }
                   >
-                    1 week ago
+                    just now
                   </Styled(Text)>
                   <Styled(Icon)
                     name="chat"
@@ -2791,7 +2791,7 @@ ShallowWrapper {
                         }
                       }
                     >
-                      1 week ago
+                      just now
                     </Styled(Text)>
                     <Styled(Icon)
                       name="chat"
@@ -2920,7 +2920,7 @@ ShallowWrapper {
                           }
                         }
                       >
-                        1 week ago
+                        just now
                       </Styled(Text)>,
                       <Styled(Icon)
                         name="chat"
@@ -3023,7 +3023,7 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "class",
                       "props": Object {
-                        "children": "1 week ago",
+                        "children": "just now",
                         "note": true,
                         "style": Object {
                           "fontSize": 10,
@@ -3034,7 +3034,7 @@ ShallowWrapper {
                         "virtual": undefined,
                       },
                       "ref": null,
-                      "rendered": "1 week ago",
+                      "rendered": "just now",
                       "type": [Function],
                     },
                     Object {
@@ -3183,7 +3183,7 @@ ShallowWrapper {
     native={true}
     replyNo={0}
     solved={true}
-    timestamp="2018-11-03 21:56:00"
+    timestamp=""
     title=""
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -3298,7 +3298,7 @@ ShallowWrapper {
                   }
                 }
               >
-                1 week ago
+                just now
               </Styled(Text)>
               <Styled(Icon)
                 name="chat"
@@ -3512,7 +3512,7 @@ ShallowWrapper {
                     }
                   }
                 >
-                  1 week ago
+                  just now
                 </Styled(Text)>
                 <Styled(Icon)
                   name="chat"
@@ -3658,7 +3658,7 @@ ShallowWrapper {
                       }
                     }
                   >
-                    1 week ago
+                    just now
                   </Styled(Text)>
                   <Styled(Icon)
                     name="chat"
@@ -3787,7 +3787,7 @@ ShallowWrapper {
                         }
                       }
                     >
-                      1 week ago
+                      just now
                     </Styled(Text)>,
                     <Styled(Icon)
                       name="chat"
@@ -3890,7 +3890,7 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "class",
                     "props": Object {
-                      "children": "1 week ago",
+                      "children": "just now",
                       "note": true,
                       "style": Object {
                         "fontSize": 10,
@@ -3901,7 +3901,7 @@ ShallowWrapper {
                       "virtual": undefined,
                     },
                     "ref": null,
-                    "rendered": "1 week ago",
+                    "rendered": "just now",
                     "type": [Function],
                   },
                   Object {
@@ -4127,7 +4127,7 @@ ShallowWrapper {
                     }
                   }
                 >
-                  1 week ago
+                  just now
                 </Styled(Text)>
                 <Styled(Icon)
                   name="chat"
@@ -4341,7 +4341,7 @@ ShallowWrapper {
                       }
                     }
                   >
-                    1 week ago
+                    just now
                   </Styled(Text)>
                   <Styled(Icon)
                     name="chat"
@@ -4487,7 +4487,7 @@ ShallowWrapper {
                         }
                       }
                     >
-                      1 week ago
+                      just now
                     </Styled(Text)>
                     <Styled(Icon)
                       name="chat"
@@ -4616,7 +4616,7 @@ ShallowWrapper {
                           }
                         }
                       >
-                        1 week ago
+                        just now
                       </Styled(Text)>,
                       <Styled(Icon)
                         name="chat"
@@ -4719,7 +4719,7 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "class",
                       "props": Object {
-                        "children": "1 week ago",
+                        "children": "just now",
                         "note": true,
                         "style": Object {
                           "fontSize": 10,
@@ -4730,7 +4730,7 @@ ShallowWrapper {
                         "virtual": undefined,
                       },
                       "ref": null,
-                      "rendered": "1 week ago",
+                      "rendered": "just now",
                       "type": [Function],
                     },
                     Object {
@@ -4879,7 +4879,7 @@ ShallowWrapper {
     native={true}
     replyNo={0}
     subTitle=""
-    timestamp="2018-11-03 21:56:00"
+    timestamp=""
     title=""
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -4977,7 +4977,7 @@ ShallowWrapper {
                   }
                 }
               >
-                1 week ago
+                just now
               </Styled(Text)>
               <Styled(Icon)
                 name="chat"
@@ -5155,7 +5155,7 @@ ShallowWrapper {
                     }
                   }
                 >
-                  1 week ago
+                  just now
                 </Styled(Text)>
                 <Styled(Icon)
                   name="chat"
@@ -5301,7 +5301,7 @@ ShallowWrapper {
                       }
                     }
                   >
-                    1 week ago
+                    just now
                   </Styled(Text)>
                   <Styled(Icon)
                     name="chat"
@@ -5430,7 +5430,7 @@ ShallowWrapper {
                         }
                       }
                     >
-                      1 week ago
+                      just now
                     </Styled(Text)>,
                     <Styled(Icon)
                       name="chat"
@@ -5533,7 +5533,7 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "class",
                     "props": Object {
-                      "children": "1 week ago",
+                      "children": "just now",
                       "note": true,
                       "style": Object {
                         "fontSize": 10,
@@ -5544,7 +5544,7 @@ ShallowWrapper {
                       "virtual": undefined,
                     },
                     "ref": null,
-                    "rendered": "1 week ago",
+                    "rendered": "just now",
                     "type": [Function],
                   },
                   Object {
@@ -5753,7 +5753,7 @@ ShallowWrapper {
                     }
                   }
                 >
-                  1 week ago
+                  just now
                 </Styled(Text)>
                 <Styled(Icon)
                   name="chat"
@@ -5931,7 +5931,7 @@ ShallowWrapper {
                       }
                     }
                   >
-                    1 week ago
+                    just now
                   </Styled(Text)>
                   <Styled(Icon)
                     name="chat"
@@ -6077,7 +6077,7 @@ ShallowWrapper {
                         }
                       }
                     >
-                      1 week ago
+                      just now
                     </Styled(Text)>
                     <Styled(Icon)
                       name="chat"
@@ -6206,7 +6206,7 @@ ShallowWrapper {
                           }
                         }
                       >
-                        1 week ago
+                        just now
                       </Styled(Text)>,
                       <Styled(Icon)
                         name="chat"
@@ -6309,7 +6309,7 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "class",
                       "props": Object {
-                        "children": "1 week ago",
+                        "children": "just now",
                         "note": true,
                         "style": Object {
                           "fontSize": 10,
@@ -6320,7 +6320,7 @@ ShallowWrapper {
                         "virtual": undefined,
                       },
                       "ref": null,
-                      "rendered": "1 week ago",
+                      "rendered": "just now",
                       "type": [Function],
                     },
                     Object {
@@ -6469,7 +6469,7 @@ ShallowWrapper {
     native={true}
     replyNo={0}
     temperature={0}
-    timestamp="2018-11-03 21:56:00"
+    timestamp=""
     title=""
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -6567,7 +6567,7 @@ ShallowWrapper {
                   }
                 }
               >
-                1 week ago
+                just now
               </Styled(Text)>
               <Styled(Icon)
                 name="chat"
@@ -6746,7 +6746,7 @@ ShallowWrapper {
                     }
                   }
                 >
-                  1 week ago
+                  just now
                 </Styled(Text)>
                 <Styled(Icon)
                   name="chat"
@@ -6894,7 +6894,7 @@ ShallowWrapper {
                       }
                     }
                   >
-                    1 week ago
+                    just now
                   </Styled(Text)>
                   <Styled(Icon)
                     name="chat"
@@ -7025,7 +7025,7 @@ ShallowWrapper {
                         }
                       }
                     >
-                      1 week ago
+                      just now
                     </Styled(Text)>,
                     <Styled(Icon)
                       name="chat"
@@ -7130,7 +7130,7 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "class",
                     "props": Object {
-                      "children": "1 week ago",
+                      "children": "just now",
                       "note": true,
                       "style": Object {
                         "fontSize": 10,
@@ -7141,7 +7141,7 @@ ShallowWrapper {
                       "virtual": undefined,
                     },
                     "ref": null,
-                    "rendered": "1 week ago",
+                    "rendered": "just now",
                     "type": [Function],
                   },
                   Object {
@@ -7350,7 +7350,7 @@ ShallowWrapper {
                     }
                   }
                 >
-                  1 week ago
+                  just now
                 </Styled(Text)>
                 <Styled(Icon)
                   name="chat"
@@ -7529,7 +7529,7 @@ ShallowWrapper {
                       }
                     }
                   >
-                    1 week ago
+                    just now
                   </Styled(Text)>
                   <Styled(Icon)
                     name="chat"
@@ -7677,7 +7677,7 @@ ShallowWrapper {
                         }
                       }
                     >
-                      1 week ago
+                      just now
                     </Styled(Text)>
                     <Styled(Icon)
                       name="chat"
@@ -7808,7 +7808,7 @@ ShallowWrapper {
                           }
                         }
                       >
-                        1 week ago
+                        just now
                       </Styled(Text)>,
                       <Styled(Icon)
                         name="chat"
@@ -7913,7 +7913,7 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "class",
                       "props": Object {
-                        "children": "1 week ago",
+                        "children": "just now",
                         "note": true,
                         "style": Object {
                           "fontSize": 10,
@@ -7924,7 +7924,7 @@ ShallowWrapper {
                         "virtual": undefined,
                       },
                       "ref": null,
-                      "rendered": "1 week ago",
+                      "rendered": "just now",
                       "type": [Function],
                     },
                     Object {
@@ -8072,7 +8072,7 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <PostPreview
     native={true}
     replyNo={0}
-    timestamp="2018-11-03 21:56:00"
+    timestamp=""
     title=""
     viewed={true}
   />,
@@ -8188,7 +8188,7 @@ ShallowWrapper {
                   }
                 }
               >
-                1 week ago
+                just now
               </Styled(Text)>
               <Styled(Icon)
                 name="chat"
@@ -8402,7 +8402,7 @@ ShallowWrapper {
                     }
                   }
                 >
-                  1 week ago
+                  just now
                 </Styled(Text)>
                 <Styled(Icon)
                   name="chat"
@@ -8548,7 +8548,7 @@ ShallowWrapper {
                       }
                     }
                   >
-                    1 week ago
+                    just now
                   </Styled(Text)>
                   <Styled(Icon)
                     name="chat"
@@ -8677,7 +8677,7 @@ ShallowWrapper {
                         }
                       }
                     >
-                      1 week ago
+                      just now
                     </Styled(Text)>,
                     <Styled(Icon)
                       name="chat"
@@ -8780,7 +8780,7 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "class",
                     "props": Object {
-                      "children": "1 week ago",
+                      "children": "just now",
                       "note": true,
                       "style": Object {
                         "fontSize": 10,
@@ -8791,7 +8791,7 @@ ShallowWrapper {
                       "virtual": undefined,
                     },
                     "ref": null,
-                    "rendered": "1 week ago",
+                    "rendered": "just now",
                     "type": [Function],
                   },
                   Object {
@@ -9017,7 +9017,7 @@ ShallowWrapper {
                     }
                   }
                 >
-                  1 week ago
+                  just now
                 </Styled(Text)>
                 <Styled(Icon)
                   name="chat"
@@ -9231,7 +9231,7 @@ ShallowWrapper {
                       }
                     }
                   >
-                    1 week ago
+                    just now
                   </Styled(Text)>
                   <Styled(Icon)
                     name="chat"
@@ -9377,7 +9377,7 @@ ShallowWrapper {
                         }
                       }
                     >
-                      1 week ago
+                      just now
                     </Styled(Text)>
                     <Styled(Icon)
                       name="chat"
@@ -9506,7 +9506,7 @@ ShallowWrapper {
                           }
                         }
                       >
-                        1 week ago
+                        just now
                       </Styled(Text)>,
                       <Styled(Icon)
                         name="chat"
@@ -9609,7 +9609,7 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "class",
                       "props": Object {
-                        "children": "1 week ago",
+                        "children": "just now",
                         "note": true,
                         "style": Object {
                           "fontSize": 10,
@@ -9620,7 +9620,7 @@ ShallowWrapper {
                         "virtual": undefined,
                       },
                       "ref": null,
-                      "rendered": "1 week ago",
+                      "rendered": "just now",
                       "type": [Function],
                     },
                     Object {

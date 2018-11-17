@@ -22,3 +22,9 @@ export const headerPreview = {
   labelPadding: gridBase * 2,
   labelMarginLeft: gridBase / 2
 }
+
+export const course = {
+  accordionPaddingLeft: gridBase * 2,
+  accordionMarginLeft: gridBase * 3,
+  headerPadding: gridBase * 2
+}

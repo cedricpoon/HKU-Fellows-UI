@@ -6,5 +6,6 @@ export default {
   "footer.latestPost": "Latest Post",
   "footer.mostReplied": "Most Replied",
   "footer.popularity": "Popularity",
-  "header.searchPlaceholder": "Search keywords or #hashtags"
+  "header.searchPlaceholder": "Search keywords or #hashtags",
+  "header.course": "Courses"
 }

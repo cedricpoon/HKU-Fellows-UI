@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
-import { Container } from 'native-base';
+import { Container, Content } from 'native-base';
 
-import { Header } from 'hkufui/components'
+import { Header, CourseScrollable } from 'hkufui/components'
+import { localize } from 'hkufui/locale';
+
+const locale = localize({ language: 'en', country: 'hk' });
 
 class SelectCourse extends Component {
 
   render() {
     return (
       <Container>
-        <Header title='Courses' backable />
+        <Header title={locale['header.course']} backable />
+        <Content padder>
+          <CourseScrollable />
+        </Content>
       </Container>
     );
   }

@@ -6,16 +6,19 @@
     },
     "plugins": [
         "react",
-        "react-native",
-        "css-modules"
+        "react-native"
     ],
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
-        "plugin:css-modules/recommended",
         "plugin:react-native/all"
     ],
     "rules": {
         "react/prop-types": ["error", { "ignore": ["navigation"] }]
+    },
+    "settings": {
+        "react": {
+          "version": "latest",
+        }
     }
 }

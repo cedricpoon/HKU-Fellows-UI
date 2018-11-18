@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 import * as Animatable from 'react-native-animatable';
 import { Text, Accordion, View, Icon as NBIcon } from 'native-base';
 

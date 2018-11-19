@@ -3,6 +3,7 @@ import { Container, Content } from 'native-base';
 
 import { Header, CourseScrollable } from 'hkufui/components'
 import { localize } from 'hkufui/locale';
+import courseList from 'hkufui/mock/private/courses.json';
 
 const locale = localize({ language: 'en', country: 'hk' });
 
@@ -13,7 +14,7 @@ class SelectCourse extends Component {
       <Container>
         <Header title={locale['header.course']} backable />
         <Content padder>
-          <CourseScrollable />
+          <CourseScrollable list={courseList} />
         </Content>
       </Container>
     );

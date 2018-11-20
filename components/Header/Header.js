@@ -7,7 +7,7 @@ import styles from './Styles';
 
 class Header extends Component {
   render() {
-    const { title, backable, ...restProps } = this.props;
+    const { title, backable, rightIcon, onRightPress, ...restProps } = this.props;
 
     return (
       <NBHeader {...restProps} >
@@ -26,16 +26,27 @@ class Header extends Component {
             <Text>{title}</Text>
           </Title>
         </Body>
-        <Right>
-        </Right>
+        {rightIcon && (
+          <Right>
+            <Button transparent onPress={onRightPress}>
+              <Icon name={rightIcon} style={styles.rightIcon} />
+            </Button>
+          </Right>
+        )}
       </NBHeader>
     );
   }
 }
 
+Header.defaultProps = {
+  onRightPress: () => {}
+};
+
 Header.propTypes = {
   title: PropTypes.string.isRequired,
-  backable: PropTypes.bool
-}
+  backable: PropTypes.bool,
+  rightIcon: PropTypes.string,
+  onRightPress: PropTypes.func
+};
 
 export default withNavigation(Header);

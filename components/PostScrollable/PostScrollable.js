@@ -11,7 +11,7 @@ const locale = localize({ language: 'en', country: 'hk' });
 
 class PostScrollable extends Component {
 
-  renderPost({item}) {
+  _renderPost({item}) {
     return (
       <Post
         id={item.id}
@@ -20,7 +20,7 @@ class PostScrollable extends Component {
     );
   }
 
-  renderEmpty() {
+  _renderEmpty() {
     return (
       <ListItem itemDivider>
         <Body style={styles.noPost}>
@@ -42,12 +42,12 @@ class PostScrollable extends Component {
         <FlatList
           data={posts}
           keyExtractor={item => item.id}
-          renderItem={this.renderPost}
+          renderItem={this._renderPost}
           {...restProps}
         />
       );
     } else {
-      return this.renderEmpty();
+      return this._renderEmpty();
     }
   }
 }

@@ -10,5 +10,8 @@ export default StyleSheet.create({
   },
   back: {
     color: logo.black
+  },
+  rightIcon: {
+    color: logo.red
   }
 });

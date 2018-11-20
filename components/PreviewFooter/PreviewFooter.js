@@ -21,7 +21,7 @@ class PreviewFooter extends Component {
     }));
   }
 
-  renderFilterPopup() {
+  _renderFilterPopup() {
     const { filterLayout, showFilterPopup, footerLayout } = this.state;
 
     if (showFilterPopup) {
@@ -39,7 +39,7 @@ class PreviewFooter extends Component {
   render() {
     return (
       <Footer style={styles.footer}>
-        { this.renderFilterPopup() }
+        { this._renderFilterPopup() }
         <FooterTab
           onLayout={mapLayoutToState("footerLayout", this)}
         >

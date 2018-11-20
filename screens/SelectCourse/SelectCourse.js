@@ -12,9 +12,19 @@ class SelectCourse extends Component {
   render() {
     return (
       <Container>
-        <Header title={locale['header.course']} backable />
+        <Header
+          title={locale['header.course']}
+          backable
+          rightIcon='arrow-dropup'
+          onRightPress={() => {
+            this.courseScrollable.collapseAll();
+          }}
+        />
         <Content padder>
-          <CourseScrollable list={courseList} />
+          <CourseScrollable
+            list={courseList}
+            ref={ref => this.courseScrollable = ref}
+          />
         </Content>
       </Container>
     );

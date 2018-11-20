@@ -11,16 +11,11 @@ const Icon = Animatable.createAnimatableComponent(NBIcon);
 
 const bouncyIconDuration = 1500;
 
-export const fadeInDuration = 100;
-
 class CourseScrollable extends Component {
 
   constructor(props) {
     super(props);
 
-    this.state = {
-      fadeIn: new Animated.Value(0)
-    };
     this._renderHeader = this._renderHeader.bind(this);
     this._renderContent = this._renderContent.bind(this);
     this.collapseAll = this.collapseAll.bind(this);
@@ -30,23 +25,13 @@ class CourseScrollable extends Component {
     this._rootAccordion.setSelected(-1);
   }
 
-  componentDidMount (){
-    Animated.timing(this.state.fadeIn, {
-      toValue: 1,
-      duration : fadeInDuration
-    }).start();
-  }
-
   _renderHeader({title, inner}, expanded) {
 
     const activeStyle = inner ? styles.active : styles.exoActive;
 
     return (
       <Animated.View
-        style={[
-          styles.header,
-          { opacity: this.state.fadeIn }
-        ]}
+        style={styles.header}
       >
         <Text style={[
           styles.headerText,

@@ -23,7 +23,6 @@ ShallowWrapper {
           onRef={[Function]}
           onRightPress={[Function]}
           rightIcon="arrow-dropup"
-          subtitle="Engineering / Computer Science"
           title="Courses"
         />,
         <Styled(Content)
@@ -197,7 +196,6 @@ ShallowWrapper {
           "onRef": [Function],
           "onRightPress": [Function],
           "rightIcon": "arrow-dropup",
-          "subtitle": "Engineering / Computer Science",
           "title": "Courses",
         },
         "ref": null,
@@ -542,7 +540,6 @@ ShallowWrapper {
             onRef={[Function]}
             onRightPress={[Function]}
             rightIcon="arrow-dropup"
-            subtitle="Engineering / Computer Science"
             title="Courses"
           />,
           <Styled(Content)
@@ -716,7 +713,6 @@ ShallowWrapper {
             "onRef": [Function],
             "onRightPress": [Function],
             "rightIcon": "arrow-dropup",
-            "subtitle": "Engineering / Computer Science",
             "title": "Courses",
           },
           "ref": null,

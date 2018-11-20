@@ -5,7 +5,9 @@ import PropTypes from 'prop-types';
 import { withNavigation } from 'react-navigation';
 
 import styles from '../Styles';
-import { fadeInDuration } from '../CourseScrollable';
+
+const fadeInDuration = 150;
+const fadeInDelay = 50;
 
 class CourseLink extends Component {
 
@@ -20,7 +22,9 @@ class CourseLink extends Component {
   componentDidMount() {
     Animated.timing(this.state.fadeIn, {
       toValue: 1,
-      duration : fadeInDuration
+      delay: fadeInDelay,
+      duration : fadeInDuration,
+      useNativeDriver: true
     }).start();
   }
 

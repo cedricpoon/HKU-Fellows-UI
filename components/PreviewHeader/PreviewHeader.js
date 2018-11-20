@@ -15,7 +15,7 @@ class PreviewHeader extends Component {
     super(props);
     this.state = { inputFocused: false };
 
-    this.searchBarOnFocus = this.searchBarOnFocus.bind(this);
+    this._searchBarOnFocus = this._searchBarOnFocus.bind(this);
     this.searchCancel = this.searchCancel.bind(this);
   }
 
@@ -26,8 +26,8 @@ class PreviewHeader extends Component {
   }
 
   searchCancel() {
-    this.searchBar._root.blur();
-    this.searchBar._root.clear();
+    this._searchBar._root.blur();
+    this._searchBar._root.clear();
 
     Keyboard.dismiss();
 
@@ -57,8 +57,8 @@ class PreviewHeader extends Component {
             placeholder={`${locale['header.searchPlaceholder']}`}
             style={styles.input}
             returnKeyType="search"
-            onFocus={this.searchBarOnFocus}
-            ref={(ref) => { this.searchBar = ref }}
+            onFocus={this._searchBarOnFocus}
+            ref={(ref) => { this._searchBar = ref }}
             enablesReturnKeyAutomatically
           />
 

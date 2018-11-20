@@ -14,18 +14,17 @@ class SelectCourse extends Component {
       <Container>
         <Header
           title={locale['header.course']}
-          subtitle='Engineering / Computer Science'
           backable
           rightIcon='arrow-dropup'
           onRightPress={() => {
-            this.courseScrollable.collapseAll();
+            this._courseScrollable.collapseAll();
           }}
-          onRef={ref => this.header = ref}
+          onRef={ref => this._header = ref}
         />
         <Content padder>
           <CourseScrollable
             list={courseList}
-            ref={ref => this.courseScrollable = ref}
+            ref={ref => this._courseScrollable = ref}
           />
         </Content>
       </Container>

@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
-import { Header as NBHeader, Left, Body, Right, Button, Icon, Title, Subtitle as NBSubtitle } from 'native-base';
+import { Header as NBHeader, Left, Body, Right, Button, Icon, Title as NBTitle, Subtitle as NBSubtitle } from 'native-base';
 import { withNavigation } from 'react-navigation';
 import * as Animatable from 'react-native-animatable';
 
 import styles from './Styles';
 
 const Subtitle = Animatable.createAnimatableComponent(NBSubtitle);
+const Title = Animatable.createAnimatableComponent(NBTitle);
+
+const subtitleAnimationDuration = 500;
 
 class Header extends Component {
 
@@ -17,10 +20,25 @@ class Header extends Component {
     this.setSubtitle = this.setSubtitle.bind(this);
   }
 
-  setSubtitle(subtitle) {
+  setSubtitle(subtitle = null) {
     this.setState({
       subtitle: subtitle
     });
+  }
+
+  componentWillUpdate() {
+    if (this.state.subtitle === null) {
+      this._title.pulse(subtitleAnimationDuration);
+    }
+  }
+
+  componentDidUpdate() {
+    if (this._subtitle) {
+      this._subtitle.pulse(subtitleAnimationDuration);
+    }
+    if (this.state.subtitle === null) {
+      this._title.pulse(subtitleAnimationDuration);
+    }
   }
 
   render() {
@@ -47,11 +65,15 @@ class Header extends Component {
           )}
         </Left>
         <Body>
-          <Title style={styles.title}>
+          <Title style={styles.title} ref={ref => { this._title=ref }}>
             {title}
           </Title>
           {subtitle && (
-            <Subtitle style={styles.subtitle} numberOfLines={1}>
+            <Subtitle
+              ref={ref => { this._subtitle = ref }}
+              style={styles.subtitle}
+              numberOfLines={1}
+            >
               {subtitle}
             </Subtitle>
           )}
@@ -69,7 +91,8 @@ class Header extends Component {
 }
 
 Header.defaultProps = {
-  onRightPress: () => {}
+  onRightPress: () => {},
+  subtitle: null
 };
 
 Header.propTypes = {

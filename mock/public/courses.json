@@ -1,0 +1,119 @@
+[
+  {
+    "id": "engg",
+    "title": "Engineering",
+    "children": [
+      {
+        "id": "comp",
+        "title": "Computer Science",
+        "links": [
+          {
+            "id":"comp1117",
+            "title":"COMP1117",
+            "description": "Computer programming"
+          },
+          {
+            "id":"comp2119",
+            "title":"COMP2119",
+            "description": "Introduction to data structures and algorithms"
+          },
+          {
+            "id":"comp2121",
+            "title":"COMP2121",
+            "description": "Discrete mathematics"
+          },
+          {
+            "id":"comp2123",
+            "title":"COMP2123",
+            "description": "Programming technologies and tools"
+          },
+          {
+            "id":"comp3230",
+            "title":"COMP3230",
+            "description": "Principles of operating systems"
+          },
+          {
+            "id":"comp3231",
+            "title":"COMP3231",
+            "description": "Computer architecture"
+          },
+          {
+            "id":"comp3258",
+            "title":"COMP3258",
+            "description": "Functional programming"
+          },
+          {
+            "id":"comp3270",
+            "title":"COMP3270",
+            "description": "Artificial intelligenece"
+          },
+          {
+            "id":"comp3271",
+            "title":"COMP3271",
+            "description": "Computer graphics"
+          },
+          {
+            "id":"comp3278",
+            "title":"COMP3278",
+            "description": "Introduction to database management systems"
+          },
+          {
+            "id":"comp3297",
+            "title":"COMP3297",
+            "description": "Software engineering"
+          },
+          {
+            "id":"comp3317",
+            "title":"COMP3317",
+            "description": "Computer vision"
+          },
+          {
+            "id":"comp3322",
+            "title":"COMP3322",
+            "description": "Modern Technologies on World Wide Web"
+          },
+          {
+            "id":"comp3351",
+            "title":"COMP3351",
+            "description": "Advanced algorithm analysis"
+          },
+          {
+            "id":"comp3353",
+            "title":"COMP3353",
+            "description": "Bioinformatics"
+          },
+          {
+            "id":"comp3354",
+            "title":"COMP3354",
+            "description": "Statistical Learning"
+          },
+          {
+            "id":"comp3355",
+            "title":"COMP3355",
+            "description": "Cyber Security"
+          },
+          {
+            "id":"comp3412",
+            "title":"COMP3412",
+            "description": "Internship"
+          },
+          {
+            "id":"comp4801",
+            "title":"COMP4801FY",
+            "description": "Final year project"
+          },
+          {
+            "id":"comp4804",
+            "title":"COMP4804",
+            "description": "Computing and Data Analytics Project"
+          },
+          {
+            "id":"comp480",
+            "title":"COMP4805",
+            "description": "Project"
+          }
+        ]
+      }
+    ]
+  }
+]

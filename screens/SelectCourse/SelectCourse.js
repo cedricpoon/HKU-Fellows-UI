@@ -3,7 +3,7 @@ import { Container, Content } from 'native-base';
 
 import { Header, CourseScrollable } from 'hkufui/components'
 import { localize } from 'hkufui/locale';
-import courseList from 'hkufui/mock/private/courses.json';
+import courseList from 'hkufui/mock/public/courses.json';
 
 const locale = localize({ language: 'en', country: 'hk' });
 

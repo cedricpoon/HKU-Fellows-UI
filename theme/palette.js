@@ -9,6 +9,7 @@ export const logo = {
     green: '#CBEBDD'
   },
   dimmed: {
-    yellow: '#E5CB26'
+    yellow: '#E5CB26',
+    green: '#20503A'
   }
 };

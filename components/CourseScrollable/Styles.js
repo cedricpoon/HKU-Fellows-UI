@@ -35,7 +35,7 @@ export default StyleSheet.create({
   },
   linkDescription: {
     color: logo.black,
-    fontSize: fontSize.smallSize
+    fontSize: fontSize.titleSize
   },
   linkLeft: {
     flex: 0,

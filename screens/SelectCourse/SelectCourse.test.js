@@ -5,7 +5,7 @@ import SelectCourse from './SelectCourse';
 describe('Testing SelectCourse Screen', () => {
   it('renders as expected', () => {
     const wrapper = shallow(
-      <SelectCourse />
+      <SelectCourse courses={[]} />
     );
     expect(wrapper).toMatchSnapshot();
   });

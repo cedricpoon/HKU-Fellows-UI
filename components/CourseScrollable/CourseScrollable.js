@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import * as Animatable from 'react-native-animatable';
 import { Text, Accordion, View, Icon as NBIcon } from 'native-base';
-import { FlatList, Animated } from 'react-native';
+import { FlatList } from 'react-native';
 
 import CourseLink from './CourseLink/CourseLink';
 import styles from './Styles';
@@ -30,13 +30,17 @@ class CourseScrollable extends Component {
     const activeStyle = inner ? styles.active : styles.exoActive;
 
     return (
-      <Animated.View
+      <View
         style={styles.header}
       >
-        <Text style={[
-          styles.headerText,
-          expanded && activeStyle
-        ]}>
+        <Text
+          style={[
+            styles.title,
+            styles.headerText,
+            expanded && activeStyle
+          ]}
+          numberOfLines={1}
+        >
           {title}
         </Text>
         {expanded
@@ -48,7 +52,7 @@ class CourseScrollable extends Component {
               name="arrow-up"
             />
           : <Icon style={styles.headerText} name="arrow-down" />}
-      </Animated.View>
+      </View>
     );
   }
 

@@ -5,7 +5,7 @@ import Preview from './Preview';
 describe('Testing Preview Screen', () => {
   it('renders as expected', () => {
     const wrapper = shallow(
-      <Preview />
+      <Preview posts={[]} />
     );
     expect(wrapper).toMatchSnapshot();
   });

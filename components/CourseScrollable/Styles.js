@@ -14,6 +14,9 @@ export default StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center"
   },
+  title: {
+    flex: 0.95
+  },
   content: {
     paddingLeft: course.accordionPaddingLeft,
     marginLeft: course.accordionMarginLeft,
@@ -42,7 +45,8 @@ export default StyleSheet.create({
     paddingRight: gridBase
   },
   linkRight: {
-    flex: 0.05
+    flex: 0.05,
+    textAlign: 'center'
   },
   linkChevron: {
     color: logo.black

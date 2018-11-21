@@ -23,7 +23,7 @@ class PopupMenu extends Component {
     const { menuLayout } = this.state;
 
     const conceal = () => {
-      this.menu.zoomOut(100).then(toggle);
+      this._menu.zoomOut(100).then(toggle);
     }
 
     /* Calculate position */
@@ -59,7 +59,7 @@ class PopupMenu extends Component {
           animation="zoomIn"
           duration={100}
           onLayout={mapLayoutToState("menuLayout", this)}
-          ref={ref => { this.menu = ref }}
+          ref={ref => { this._menu = ref }}
         >
           { children }
         </Animatable.View>

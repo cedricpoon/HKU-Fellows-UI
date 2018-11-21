@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing Preview Screen renders as expected 1`] = `
+exports[`Testing SelectCourse Screen renders as expected 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Preview
-    posts={Array []}
+  Symbol(enzyme.__unrendered__): <SelectCourse
+    courses={Array []}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -20,15 +20,20 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <withNavigation(PreviewHeader)
-          location="COMP 4801"
+        <withNavigation(Header)
+          backable={true}
+          onRef={[Function]}
+          onRightPress={[Function]}
+          rightIcon="arrow-dropup"
+          title="Courses"
         />,
-        <Styled(Content)>
-          <PostScrollable
-            posts={Array []}
+        <Styled(Content)
+          padder={true}
+        >
+          <CourseScrollable
+            list={Array []}
           />
         </Styled(Content)>,
-        <withNavigation(PreviewFooter) />,
       ],
       "virtual": undefined,
     },
@@ -39,7 +44,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "location": "COMP 4801",
+          "backable": true,
+          "onRef": [Function],
+          "onRightPress": [Function],
+          "rightIcon": "arrow-dropup",
+          "title": "Courses",
         },
         "ref": null,
         "rendered": null,
@@ -50,9 +59,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <PostScrollable
-            posts={Array []}
+          "children": <CourseScrollable
+            list={Array []}
           />,
+          "padder": true,
           "virtual": undefined,
         },
         "ref": null,
@@ -61,21 +71,12 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "posts": Array [],
+            "list": Array [],
           },
-          "ref": null,
+          "ref": [Function],
           "rendered": null,
           "type": [Function],
         },
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
         "type": [Function],
       },
     ],
@@ -88,15 +89,20 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <withNavigation(PreviewHeader)
-            location="COMP 4801"
+          <withNavigation(Header)
+            backable={true}
+            onRef={[Function]}
+            onRightPress={[Function]}
+            rightIcon="arrow-dropup"
+            title="Courses"
           />,
-          <Styled(Content)>
-            <PostScrollable
-              posts={Array []}
+          <Styled(Content)
+            padder={true}
+          >
+            <CourseScrollable
+              list={Array []}
             />
           </Styled(Content)>,
-          <withNavigation(PreviewFooter) />,
         ],
         "virtual": undefined,
       },
@@ -107,7 +113,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "location": "COMP 4801",
+            "backable": true,
+            "onRef": [Function],
+            "onRightPress": [Function],
+            "rightIcon": "arrow-dropup",
+            "title": "Courses",
           },
           "ref": null,
           "rendered": null,
@@ -118,9 +128,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <PostScrollable
-              posts={Array []}
+            "children": <CourseScrollable
+              list={Array []}
             />,
+            "padder": true,
             "virtual": undefined,
           },
           "ref": null,
@@ -129,21 +140,12 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "posts": Array [],
+              "list": Array [],
             },
-            "ref": null,
+            "ref": [Function],
             "rendered": null,
             "type": [Function],
           },
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
           "type": [Function],
         },
       ],

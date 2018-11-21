@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest",
-    "update-snapshot": "jest --updateSnapshot"
+    "test": "jest && npm run lint",
+    "lint": "eslint .",
+    "updateSnapshot": "jest --updateSnapshot"
   },
   "dependencies": {
     "native-base": "^2.8.1",
@@ -21,7 +22,6 @@
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
     "eslint": "^5.8.0",
-    "eslint-plugin-css-modules": "^2.10.0",
     "eslint-plugin-react": "^7.11.1",
     "eslint-plugin-react-native": "^3.5.0",
     "jest": "23.6.0",

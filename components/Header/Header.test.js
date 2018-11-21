@@ -16,4 +16,18 @@ describe('Testing Header Component', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('renders as expected with subtitle', () => {
+    const wrapper = shallow(
+      <Header title="Header" subtitle="None" />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('renders as expected with right button', () => {
+    const wrapper = shallow(
+      <Header title="Header" rightIcon="arrow-dropup" onRightPress={() => {}} />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });

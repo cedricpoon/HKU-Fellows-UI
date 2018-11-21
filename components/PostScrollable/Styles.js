@@ -31,7 +31,7 @@ export default StyleSheet.create({
     flexDirection: 'row'
   },
   badge: {
-    fontSize: fontSize.smallSize,
+    fontSize: fontSize.titleSize,
     paddingLeft: gridBase,
     paddingBottom: gridBase
   },

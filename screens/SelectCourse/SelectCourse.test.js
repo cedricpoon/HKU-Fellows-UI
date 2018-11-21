@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Preview from './Preview';
+import SelectCourse from './SelectCourse';
 
-describe('Testing Preview Screen', () => {
+describe('Testing SelectCourse Screen', () => {
   it('renders as expected', () => {
     const wrapper = shallow(
-      <Preview posts={[]} />
+      <SelectCourse courses={[]} />
     );
     expect(wrapper).toMatchSnapshot();
   });

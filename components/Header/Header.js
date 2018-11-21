@@ -1,17 +1,60 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
-import { Header as NBHeader, Left, Body, Right, Button, Icon, Title, Text } from 'native-base';
+import { Header as NBHeader, Left, Body, Right, Button, Icon, Title as NBTitle, Subtitle as NBSubtitle } from 'native-base';
 import { withNavigation } from 'react-navigation';
+import * as Animatable from 'react-native-animatable';
 
 import styles from './Styles';
 
+const Subtitle = Animatable.createAnimatableComponent(NBSubtitle);
+const Title = Animatable.createAnimatableComponent(NBTitle);
+
+const subtitleAnimationDuration = 500;
+
 class Header extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = { subtitle: this.props.subtitle };
+    this.setSubtitle = this.setSubtitle.bind(this);
+  }
+
+  setSubtitle(subtitle = null) {
+    this.setState({
+      subtitle: subtitle
+    });
+  }
+
+  componentWillUpdate() {
+    if (this.state.subtitle === null) {
+      this._title.pulse(subtitleAnimationDuration);
+    }
+  }
+
+  componentDidUpdate() {
+    if (this._subtitle) {
+      this._subtitle.pulse(subtitleAnimationDuration);
+    }
+    if (this.state.subtitle === null) {
+      this._title.pulse(subtitleAnimationDuration);
+    }
+  }
+
   render() {
-    const { title, backable, ...restProps } = this.props;
+    const {
+      title,
+      backable,
+      rightIcon,
+      onRightPress,
+      ...restProps
+    } = this.props;
+
+    const { subtitle } = this.state;
 
     return (
       <NBHeader {...restProps} >
-        <Left>
+        <Left style={styles.buttonGroup}>
           { backable && (
             <Button
               transparent
@@ -22,20 +65,42 @@ class Header extends Component {
           )}
         </Left>
         <Body>
-          <Title style={styles.title}>
-            <Text>{title}</Text>
+          <Title style={styles.title} ref={ref => { this._title=ref }}>
+            {title}
           </Title>
+          {subtitle && (
+            <Subtitle
+              ref={ref => { this._subtitle = ref }}
+              style={styles.subtitle}
+              numberOfLines={1}
+            >
+              {subtitle}
+            </Subtitle>
+          )}
         </Body>
-        <Right>
-        </Right>
+        {rightIcon && (
+          <Right style={styles.buttonGroup}>
+            <Button transparent onPress={onRightPress}>
+              <Icon name={rightIcon} style={styles.rightIcon} />
+            </Button>
+          </Right>
+        )}
       </NBHeader>
     );
   }
 }
 
+Header.defaultProps = {
+  onRightPress: () => {},
+  subtitle: null
+};
+
 Header.propTypes = {
   title: PropTypes.string.isRequired,
-  backable: PropTypes.bool
-}
+  subtitle: PropTypes.string,
+  backable: PropTypes.bool,
+  rightIcon: PropTypes.string,
+  onRightPress: PropTypes.func
+};
 
 export default withNavigation(Header);

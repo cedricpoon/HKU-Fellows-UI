@@ -5,7 +5,11 @@ export const logo = {
   yellow: '#FFE22B',
   brown: '#685A5C',
   black : '#4E4A47',
+  brighten: {
+    green: '#CBEBDD'
+  },
   dimmed: {
-    yellow: '#E5CB26'
+    yellow: '#E5CB26',
+    green: '#20503A'
   }
 };

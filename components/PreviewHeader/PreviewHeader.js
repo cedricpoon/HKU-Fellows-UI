@@ -26,8 +26,8 @@ class PreviewHeader extends Component {
   }
 
   searchCancel() {
-    this.searchBar._root.blur();
-    this.searchBar._root.clear();
+    this._searchBar._root.blur();
+    this._searchBar._root.clear();
 
     Keyboard.dismiss();
 
@@ -58,7 +58,7 @@ class PreviewHeader extends Component {
             style={styles.input}
             returnKeyType="search"
             onFocus={this.searchBarOnFocus}
-            ref={(ref) => { this.searchBar = ref }}
+            ref={(ref) => { this._searchBar = ref }}
             enablesReturnKeyAutomatically
           />
 

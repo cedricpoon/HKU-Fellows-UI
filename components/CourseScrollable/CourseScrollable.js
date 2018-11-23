@@ -70,7 +70,7 @@ class CourseScrollable extends Component {
             data={links}
             keyExtractor={item => item.id}
             renderItem={({item}) => (
-              <CourseLink {...item} />
+              <CourseLink {...item} onItemPress={this.props.onItemPressHandler({item})} />
             )}
           />
         )}
@@ -104,8 +104,13 @@ class CourseScrollable extends Component {
   }
 }
 
+CourseScrollable.defaultProps = {
+  onItemPressHandler: () => { return () => {}; }
+};
+
 CourseScrollable.propTypes = {
-  list: PropTypes.array.isRequired
+  list: PropTypes.array.isRequired,
+  onItemPressHandler: PropTypes.func
 };
 
 export default CourseScrollable;

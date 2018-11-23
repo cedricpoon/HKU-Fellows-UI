@@ -1,6 +1,6 @@
 import { createMaterialTopTabNavigator } from 'react-navigation';
 
-import { Preview, SelectCourse } from 'hkufui/screens';
+import { Preview, SelectCourse } from 'hkufui/src/screens';
 
 export default createMaterialTopTabNavigator(
   {

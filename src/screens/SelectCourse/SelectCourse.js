@@ -1,16 +1,27 @@
 import React, { Component } from 'react';
 import { Container, Content } from 'native-base';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
 import { Header, CourseScrollable } from 'hkufui/components'
 import { localize } from 'hkufui/locale';
-import courses from 'hkufui/mock/public/courses'
+import courses from 'hkufui/mock/public/courses';
+
+import { onUpdateLocation } from './handleActions';
+
 
 const locale = localize({ language: 'en', country: 'hk' });
 
-class SelectCourse extends Component {
+export class SelectCourse extends Component {
   render() {
-    const { courses } = this.props;
+    const { courses, onUpdateLocation } = this.props;
+
+    const onItemPressHandler = ({item}) => {
+      return () => {
+        /* set current course code in format /[a-z]{4}\d{4}/ */
+        onUpdateLocation(item.id);
+      };
+    };
 
     return (
       <Container>
@@ -26,6 +37,7 @@ class SelectCourse extends Component {
         <Content padder>
           <CourseScrollable
             list={courses}
+            onItemPressHandler={onItemPressHandler}
             ref={ref => this._courseScrollable = ref}
           />
         </Content>
@@ -40,7 +52,15 @@ SelectCourse.defaultProps = {
 }
 
 SelectCourse.propTypes = {
-  courses: PropTypes.arrayOf(PropTypes.object).isRequired
+  courses: PropTypes.arrayOf(PropTypes.object).isRequired,
+  onUpdateLocation: PropTypes.func.isRequired
 }
 
-export default SelectCourse;
+const mapDispatchToProps = dispatch => ({
+  onUpdateLocation: courseId => dispatch(onUpdateLocation(courseId))
+})
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(SelectCourse);

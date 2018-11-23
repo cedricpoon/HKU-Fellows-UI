@@ -1,10 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing SelectCourse Screen renders as expected 1`] = `
+exports[`Testing SelectCourse Screen renders as expected with defaultProps 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <SelectCourse
     courses={Array []}
+    onUpdateLocation={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -32,6 +33,7 @@ ShallowWrapper {
         >
           <CourseScrollable
             list={Array []}
+            onItemPressHandler={[Function]}
           />
         </Styled(Content)>,
       ],
@@ -61,6 +63,7 @@ ShallowWrapper {
         "props": Object {
           "children": <CourseScrollable
             list={Array []}
+            onItemPressHandler={[Function]}
           />,
           "padder": true,
           "virtual": undefined,
@@ -72,6 +75,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "list": Array [],
+            "onItemPressHandler": [Function],
           },
           "ref": [Function],
           "rendered": null,
@@ -101,6 +105,7 @@ ShallowWrapper {
           >
             <CourseScrollable
               list={Array []}
+              onItemPressHandler={[Function]}
             />
           </Styled(Content)>,
         ],
@@ -130,6 +135,7 @@ ShallowWrapper {
           "props": Object {
             "children": <CourseScrollable
               list={Array []}
+              onItemPressHandler={[Function]}
             />,
             "padder": true,
             "virtual": undefined,
@@ -141,6 +147,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "list": Array [],
+              "onItemPressHandler": [Function],
             },
             "ref": [Function],
             "rendered": null,

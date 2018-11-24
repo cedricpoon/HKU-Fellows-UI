@@ -5,7 +5,8 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <CourseScrollable
     list={Array []}
-    onItemPressHandler={[Function]}
+    onItemPressWrapper={[Function]}
+    onSetSelectCourseIndex={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -22,7 +23,8 @@ ShallowWrapper {
     "props": Object {
       "dataArray": Array [],
       "keyExtractor": [Function],
-      "onItemPressHandler": [Function],
+      "onItemPressWrapper": [Function],
+      "onSetSelectCourseIndex": [Function],
       "renderContent": [Function],
       "renderHeader": [Function],
       "style": Object {
@@ -41,7 +43,8 @@ ShallowWrapper {
       "props": Object {
         "dataArray": Array [],
         "keyExtractor": [Function],
-        "onItemPressHandler": [Function],
+        "onItemPressWrapper": [Function],
+        "onSetSelectCourseIndex": [Function],
         "renderContent": [Function],
         "renderHeader": [Function],
         "style": Object {
@@ -73,12 +76,13 @@ ShallowWrapper {
 }
 `;
 
-exports[`Testing CourseScrollable Component renders as expected with course list and onItemPressHandler 1`] = `
+exports[`Testing CourseScrollable Component renders as expected with course list and events 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <CourseScrollable
     list={Array []}
-    onItemPressHandler={[Function]}
+    onItemPressWrapper={[Function]}
+    onSetSelectCourseIndex={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -95,7 +99,8 @@ ShallowWrapper {
     "props": Object {
       "dataArray": Array [],
       "keyExtractor": [Function],
-      "onItemPressHandler": [Function],
+      "onItemPressWrapper": [Function],
+      "onSetSelectCourseIndex": [Function],
       "renderContent": [Function],
       "renderHeader": [Function],
       "style": Object {
@@ -114,7 +119,8 @@ ShallowWrapper {
       "props": Object {
         "dataArray": Array [],
         "keyExtractor": [Function],
-        "onItemPressHandler": [Function],
+        "onItemPressWrapper": [Function],
+        "onSetSelectCourseIndex": [Function],
         "renderContent": [Function],
         "renderHeader": [Function],
         "style": Object {

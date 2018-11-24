@@ -9,7 +9,7 @@ import {
 import initialState from './globalState';
 
 const reducers = combineReducers({
-  SelectCourseActionHandler
+  location: SelectCourseActionHandler
 });
 
 const store = createStore(

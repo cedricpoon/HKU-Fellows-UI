@@ -21,4 +21,11 @@ describe('Testing CourseLink Component', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('renders as expected in bottomMost with required props and onItemPress', () => {
+    const wrapper = shallow(
+      <CourseLink {...defaultProps} onItemPress={() => {}} bottomMost />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });

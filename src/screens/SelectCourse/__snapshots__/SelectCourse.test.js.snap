@@ -5,6 +5,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <SelectCourse
     courses={Array []}
+    onSetSelectCourseIndex={[Function]}
     onUpdateLocation={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -33,7 +34,8 @@ ShallowWrapper {
         >
           <CourseScrollable
             list={Array []}
-            onItemPressHandler={[Function]}
+            onItemPressWrapper={[Function]}
+            onSetSelectCourseIndex={[Function]}
           />
         </Styled(Content)>,
       ],
@@ -63,7 +65,8 @@ ShallowWrapper {
         "props": Object {
           "children": <CourseScrollable
             list={Array []}
-            onItemPressHandler={[Function]}
+            onItemPressWrapper={[Function]}
+            onSetSelectCourseIndex={[Function]}
           />,
           "padder": true,
           "virtual": undefined,
@@ -75,7 +78,8 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "list": Array [],
-            "onItemPressHandler": [Function],
+            "onItemPressWrapper": [Function],
+            "onSetSelectCourseIndex": [Function],
           },
           "ref": [Function],
           "rendered": null,
@@ -105,7 +109,8 @@ ShallowWrapper {
           >
             <CourseScrollable
               list={Array []}
-              onItemPressHandler={[Function]}
+              onItemPressWrapper={[Function]}
+              onSetSelectCourseIndex={[Function]}
             />
           </Styled(Content)>,
         ],
@@ -135,7 +140,8 @@ ShallowWrapper {
           "props": Object {
             "children": <CourseScrollable
               list={Array []}
-              onItemPressHandler={[Function]}
+              onItemPressWrapper={[Function]}
+              onSetSelectCourseIndex={[Function]}
             />,
             "padder": true,
             "virtual": undefined,
@@ -147,7 +153,8 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "list": Array [],
-              "onItemPressHandler": [Function],
+              "onItemPressWrapper": [Function],
+              "onSetSelectCourseIndex": [Function],
             },
             "ref": [Function],
             "rendered": null,

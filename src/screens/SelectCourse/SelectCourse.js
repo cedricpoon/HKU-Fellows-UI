@@ -7,19 +7,17 @@ import { Header, CourseScrollable } from 'hkufui/components'
 import { localize } from 'hkufui/locale';
 import courses from 'hkufui/mock/public/courses';
 
-import { onUpdateLocation } from './handleActions';
-
+import { onUpdateLocation, onSetSelectCourseIndex } from './handleActions';
 
 const locale = localize({ language: 'en', country: 'hk' });
 
 export class SelectCourse extends Component {
   render() {
-    const { courses, onUpdateLocation } = this.props;
+    const { courses, onUpdateLocation, onSetSelectCourseIndex } = this.props;
 
-    const onItemPressHandler = ({item}) => {
+    const onItemPressWrapper = ({item}) => {
       return () => {
-        /* set current course code in format /[a-z]{4}\d{4}/ */
-        onUpdateLocation(item.id);
+        onUpdateLocation({item});
       };
     };
 
@@ -37,7 +35,8 @@ export class SelectCourse extends Component {
         <Content padder>
           <CourseScrollable
             list={courses}
-            onItemPressHandler={onItemPressHandler}
+            onItemPressWrapper={onItemPressWrapper}
+            onSetSelectCourseIndex={onSetSelectCourseIndex}
             ref={ref => this._courseScrollable = ref}
           />
         </Content>
@@ -53,11 +52,13 @@ SelectCourse.defaultProps = {
 
 SelectCourse.propTypes = {
   courses: PropTypes.arrayOf(PropTypes.object).isRequired,
-  onUpdateLocation: PropTypes.func.isRequired
+  onUpdateLocation: PropTypes.func.isRequired,
+  onSetSelectCourseIndex: PropTypes.func.isRequired
 }
 
 const mapDispatchToProps = dispatch => ({
-  onUpdateLocation: courseId => dispatch(onUpdateLocation(courseId))
+  onUpdateLocation: ({item}) => dispatch(onUpdateLocation({item})),
+  onSetSelectCourseIndex: (array) => dispatch(onSetSelectCourseIndex(array))
 })
 
 export default connect(

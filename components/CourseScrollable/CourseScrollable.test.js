@@ -7,9 +7,11 @@ describe('Testing CourseScrollable Component', () => {
     list: []
   };
 
-  const emptyOnItemPressHandler = () => {
+  const emptyOnItemPressWrapper = () => {
     return () => {};
   };
+
+  const emptyOnSetSelectCourseIndex = () => {};
 
   it('renders as expected with course list', () => {
     const wrapper = shallow(
@@ -18,9 +20,13 @@ describe('Testing CourseScrollable Component', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('renders as expected with course list and onItemPressHandler', () => {
+  it('renders as expected with course list and events', () => {
     const wrapper = shallow(
-      <CourseScrollable {...defaultProps} onItemPressHandler={emptyOnItemPressHandler} />
+      <CourseScrollable
+        onItemPressWrapper={emptyOnItemPressWrapper}
+        onSetSelectCourseIndex={emptyOnSetSelectCourseIndex}
+        {...defaultProps}
+      />
     );
     expect(wrapper).toMatchSnapshot();
   });

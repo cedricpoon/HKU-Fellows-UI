@@ -3,8 +3,49 @@ import {
   getCoursePathByIndex
 } from './helper';
 
+const dummyCourses = [{ id: 'a', title: 'A', children: [{ id: 'b', title: 'B' }] }];
+const nestedCourse = [
+  {
+    id: 'a',
+    title: 'A',
+    children: [
+      {
+        id: 'b',
+        title: 'B',
+        children: [
+          {
+            id: 'c',
+            title: 'C',
+            children: [
+              {
+                id: 'd',
+                title: 'D'
+              }
+            ]
+          }
+        ]
+      },
+      {
+        id: 'b2',
+        title: 'B2',
+        children: [
+          {
+            id: 'c2',
+            title: 'C2',
+            children: [
+              {
+                id: 'd2',
+                title: 'D2'
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+];
+
 describe('Testing getCoursePathByIndex(courses, parentId, index)', () => {
-  const dummyCourses = [{ id: 'a', title: 'A', children: [{ id: 'b', title: 'B' }] }];
 
   it('returns empty array with empty courses', () => {
     expect(getCoursePathByIndex([], '', 0)).toEqual([]);
@@ -23,13 +64,21 @@ describe('Testing getCoursePathByIndex(courses, parentId, index)', () => {
     ]);
   });
 
+  it('returns path with deep nested index', () => {
+    expect(getCoursePathByIndex(nestedCourse, 'c2', 0)).toEqual([
+      { id: 'a', title: 'A'},
+      { id: 'b2', title: 'B2'},
+      { id: 'c2', title: 'C2'},
+      { id: 'd2', title: 'D2'}
+    ]);
+  });
+
   it('returns empty array with failed query', () => {
     expect(getCoursePathByIndex([], 'c', 0)).toEqual([]);
   });
 });
 
 describe('Testing getCoursePathById(courses, id)', () => {
-  const dummyCourses = [{ id: 'a', title: 'A', children: [{ id: 'b', title: 'B' }] }];
 
   it('returns empty array with empty courses', () => {
     expect(getCoursePathById([], '')).toEqual([]);
@@ -43,12 +92,21 @@ describe('Testing getCoursePathById(courses, id)', () => {
   });
 
   it('returns path with first level index', () => {
-    expect(getCoursePathByIndex(dummyCourses, 'a')).toEqual([
+    expect(getCoursePathById(dummyCourses, 'a')).toEqual([
       { id: 'a', title: 'A'}
     ]);
   });
 
+  it('returns path with deep nested index', () => {
+    expect(getCoursePathById(nestedCourse, 'd2')).toEqual([
+      { id: 'a', title: 'A'},
+      { id: 'b2', title: 'B2'},
+      { id: 'c2', title: 'C2'},
+      { id: 'd2', title: 'D2'}
+    ]);
+  });
+
   it('returns empty array with failed query', () => {
-    expect(getCoursePathByIndex([], 'c')).toEqual([]);
+    expect(getCoursePathById([], 'c')).toEqual([]);
   });
 })

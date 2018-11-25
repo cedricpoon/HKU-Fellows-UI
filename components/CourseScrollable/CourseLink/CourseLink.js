@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ListItem, Text, Left, Right, Icon, Content } from 'native-base';
+import { ListItem, Text, Left, Right, Icon, Content, View } from 'native-base';
 import { Animated } from 'react-native';
 import PropTypes from 'prop-types';
 import { withNavigation } from 'react-navigation';
@@ -31,7 +31,7 @@ class CourseLink extends Component {
   render() {
     const { title, description, onItemPress, bottomMost } = this.props;
 
-    return (
+    const context = (
       <Animated.View style={{ opacity: this.state.fadeIn }}>
         <ListItem
           style={[styles.linkItem, !bottomMost && styles.linkItemNonBottomMost]}
@@ -56,6 +56,15 @@ class CourseLink extends Component {
         </ListItem>
       </Animated.View>
     );
+
+    if (bottomMost)
+      return (context);
+    else
+      return (
+        <View style={styles.content}>
+          {context}
+        </View>
+      );
   }
 }
 

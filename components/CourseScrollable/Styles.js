@@ -33,10 +33,9 @@ export default StyleSheet.create({
     color: logo.blue
   },
   linkItemNonBottomMost: {
-    paddingLeft: course.headerPadding + course.accordionPaddingLeft,
-    marginLeft: course.accordionMarginLeft,
-    borderBottomWidth: 0,
-    borderLeftWidth: 1,
+    paddingLeft: course.headerPadding,
+    marginLeft: 0,
+    borderBottomWidth: 0
   },
   linkItem: {
     paddingVertical: course.headerPadding,

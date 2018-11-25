@@ -1,9 +1,13 @@
-import { createStore, combineReducers } from "redux";
+import { createStore, combineReducers } from 'redux';
+import { persistStore, persistReducer } from 'redux-persist'
+import storage from 'redux-persist/lib/storage'
+
+import { persistStoreKey } from 'hkufui/config';
 
 /* import all action handlers */
 import {
   SelectCourseActionHandler
-} from "../screens";
+} from '../screens/reducers';
 
 // global initial state
 import initialState from './globalState';
@@ -12,11 +16,16 @@ const reducers = combineReducers({
   location: SelectCourseActionHandler
 });
 
-const store = createStore(
-  reducers,
+const persistedReducer = persistReducer({
+  key: persistStoreKey,
+  storage,
+}, reducers);
+
+export const store = createStore(
+  persistedReducer,
   initialState,
   /* for react native inspector */
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
-export default store;
+export const persistor = persistStore(store);

@@ -1,6 +1,7 @@
 import {
   getCoursePathById,
-  getCoursePathByIndex
+  getCoursePathByIndex,
+  getIndexByBreadcrumb
 } from './helper';
 
 const dummyCourses = [{ id: 'a', title: 'A', children: [{ id: 'b', title: 'B' }] }];
@@ -110,3 +111,14 @@ describe('Testing getCoursePathById(courses, id)', () => {
     expect(getCoursePathById([], 'c')).toEqual([]);
   });
 })
+
+describe('Testing getIndexByBreadcrumb(courses, breadcrumb, pid)', () => {
+
+  it('returns undefined with empty breadcrumb', () => {
+    expect(getIndexByBreadcrumb(dummyCourses, [], '')).toBeUndefined();
+  });
+
+  it('returns index with breadcrumb', () => {
+    expect(getIndexByBreadcrumb(dummyCourses, [{id: 'a', title: 'A'}], '')).toBe(0);
+  });
+});

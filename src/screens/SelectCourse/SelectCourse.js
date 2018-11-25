@@ -8,10 +8,19 @@ import { localize } from 'hkufui/locale';
 import courses from 'hkufui/mock/public/courses';
 
 import { onUpdateLocation, onSetSelectCourseIndex } from './handleActions';
+import { formBreadcrumbString } from './helper';
 
 const locale = localize({ language: 'en', country: 'hk' });
 
 export class SelectCourse extends Component {
+  componentDidUpdate() {
+    const { breadcrumb } = this.props;
+
+    this._header.setSubtitle(
+      formBreadcrumbString(breadcrumb)
+    );
+  }
+
   render() {
     const { courses, onUpdateLocation, onSetSelectCourseIndex } = this.props;
 
@@ -47,13 +56,15 @@ export class SelectCourse extends Component {
 
 /* Mocking mapStateToProps */
 SelectCourse.defaultProps = {
-  courses: courses
+  courses: courses,
+  breadcrumb: []
 }
 
 SelectCourse.propTypes = {
   courses: PropTypes.arrayOf(PropTypes.object).isRequired,
   onUpdateLocation: PropTypes.func.isRequired,
-  onSetSelectCourseIndex: PropTypes.func.isRequired
+  onSetSelectCourseIndex: PropTypes.func.isRequired,
+  breadcrumb: PropTypes.array
 }
 
 const mapDispatchToProps = dispatch => ({
@@ -61,7 +72,11 @@ const mapDispatchToProps = dispatch => ({
   onSetSelectCourseIndex: (array) => dispatch(onSetSelectCourseIndex(array))
 })
 
+const mapStateToProps = state => ({
+  breadcrumb: state.location.breadcrumb
+});
+
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(SelectCourse);

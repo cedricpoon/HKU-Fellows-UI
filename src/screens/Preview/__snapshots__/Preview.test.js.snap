@@ -4,6 +4,7 @@ exports[`Testing Preview Screen renders as expected 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Preview
+    location=""
     posts={Array []}
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -21,7 +22,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <withNavigation(PreviewHeader)
-          location="COMP 4801"
+          location=""
         />,
         <Styled(Content)>
           <PostScrollable
@@ -39,7 +40,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "location": "COMP 4801",
+          "location": "",
         },
         "ref": null,
         "rendered": null,
@@ -89,7 +90,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <withNavigation(PreviewHeader)
-            location="COMP 4801"
+            location=""
           />,
           <Styled(Content)>
             <PostScrollable
@@ -107,7 +108,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "location": "COMP 4801",
+            "location": "",
           },
           "ref": null,
           "rendered": null,

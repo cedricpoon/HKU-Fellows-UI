@@ -131,7 +131,8 @@ class CourseScrollable extends Component {
         renderHeader={this._renderHeader}
         ref={ref => {
           this._rootAccordion = ref;
-          ref.setSelected = this._setSelectedWrapper(ref, '');
+          if (ref)
+            ref.setSelected = this._setSelectedWrapper(ref, '');
         }}
         {...restProps}
       />

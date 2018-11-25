@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
-import { Header as NBHeader, Left, Body, Right, Button, Icon, Title as NBTitle, Subtitle as NBSubtitle } from 'native-base';
+import { Header as NBHeader, Left, Body, Right, Button, Icon, Title, Subtitle as NBSubtitle } from 'native-base';
 import { withNavigation } from 'react-navigation';
 import * as Animatable from 'react-native-animatable';
 
 import styles from './Styles';
 
 const Subtitle = Animatable.createAnimatableComponent(NBSubtitle);
-const Title = Animatable.createAnimatableComponent(NBTitle);
 
 const subtitleAnimationDuration = 500;
 
@@ -26,18 +25,9 @@ class Header extends Component {
     });
   }
 
-  componentWillUpdate() {
-    if (this.state.subtitle === null) {
-      this._title.pulse(subtitleAnimationDuration);
-    }
-  }
-
   componentDidUpdate() {
     if (this._subtitle) {
       this._subtitle.pulse(subtitleAnimationDuration);
-    }
-    if (this.state.subtitle === null) {
-      this._title.pulse(subtitleAnimationDuration);
     }
   }
 

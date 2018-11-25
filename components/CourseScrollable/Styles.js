@@ -36,7 +36,7 @@ export default StyleSheet.create({
     paddingLeft: course.headerPadding + course.accordionPaddingLeft,
     marginLeft: course.accordionMarginLeft,
     borderBottomWidth: 0,
-    borderLeftWidth: 2,
+    borderLeftWidth: 1,
   },
   linkItem: {
     paddingVertical: course.headerPadding,

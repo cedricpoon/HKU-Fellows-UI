@@ -15,4 +15,11 @@ describe('Testing SelectCourse Screen', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('renders as expected with defaultProps and breadcrumb', () => {
+    const wrapper = shallow(
+      <SelectCourse {...defaultProps} breadcrumb={[]} />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });

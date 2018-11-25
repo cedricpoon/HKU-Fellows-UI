@@ -29,12 +29,12 @@ class CourseLink extends Component {
   }
 
   render() {
-    const { title, description, onItemPress } = this.props;
+    const { title, description, onItemPress, bottomMost } = this.props;
 
     return (
       <Animated.View style={{ opacity: this.state.fadeIn }}>
         <ListItem
-          style={styles.linkItem}
+          style={[styles.linkItem, !bottomMost && styles.linkItemNonBottomMost]}
           onPress={() => {
             onItemPress();
             this.props.navigation.goBack();
@@ -66,7 +66,8 @@ CourseLink.defaultProps = {
 CourseLink.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  onItemPress: PropTypes.func
+  onItemPress: PropTypes.func,
+  bottomMost: PropTypes.bool
 };
 
 export default withNavigation(CourseLink);

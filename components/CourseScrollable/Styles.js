@@ -32,6 +32,12 @@ export default StyleSheet.create({
   active: {
     color: logo.blue
   },
+  linkItemNonBottomMost: {
+    paddingLeft: course.headerPadding + course.accordionPaddingLeft,
+    marginLeft: course.accordionMarginLeft,
+    borderBottomWidth: 0,
+    borderLeftWidth: 1,
+  },
   linkItem: {
     paddingVertical: course.headerPadding,
     paddingRight: course.headerPadding
@@ -45,8 +51,7 @@ export default StyleSheet.create({
     paddingRight: gridBase
   },
   linkRight: {
-    flex: 0.05,
-    textAlign: 'center'
+    flex: 0.05
   },
   linkChevron: {
     color: logo.black

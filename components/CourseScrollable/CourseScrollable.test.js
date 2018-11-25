@@ -7,9 +7,26 @@ describe('Testing CourseScrollable Component', () => {
     list: []
   };
 
+  const emptyOnItemPressWrapper = () => {
+    return () => {};
+  };
+
+  const emptyOnSetSelectCourseIndex = () => {};
+
   it('renders as expected with course list', () => {
     const wrapper = shallow(
       <CourseScrollable {...defaultProps} />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('renders as expected with course list and events', () => {
+    const wrapper = shallow(
+      <CourseScrollable
+        onItemPressWrapper={emptyOnItemPressWrapper}
+        onSetSelectCourseIndex={emptyOnSetSelectCourseIndex}
+        {...defaultProps}
+      />
     );
     expect(wrapper).toMatchSnapshot();
   });

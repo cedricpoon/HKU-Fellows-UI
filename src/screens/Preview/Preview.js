@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import { Container, Content } from 'native-base';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
 import { PostScrollable, PreviewFooter, PreviewHeader } from 'hkufui/components';
 import posts from 'hkufui/mock/public/posts'
 
-class Preview extends Component {
+export class Preview extends Component {
   render() {
-    const { posts } = this.props;
+    const { posts, location } = this.props;
 
     return (
       <Container>
-        <PreviewHeader location='COMP 4801' />
+        <PreviewHeader location={location} />
         <Content>
           <PostScrollable posts={posts} />
         </Content>
@@ -23,11 +24,17 @@ class Preview extends Component {
 
 /* Mocking mapStateToProps */
 Preview.defaultProps = {
-  posts: posts
+  posts: posts,
+  location: ''
 }
 
 Preview.propTypes = {
   posts: PropTypes.arrayOf(PropTypes.object).isRequired,
+  location: PropTypes.string
 }
 
-export default Preview;
+const mapStateToProps = state => ({
+  location: state.location.courseTitle
+});
+
+export default connect(mapStateToProps)(Preview);

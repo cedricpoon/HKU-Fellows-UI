@@ -16,13 +16,19 @@ export class SelectCourse extends Component {
   componentDidUpdate() {
     const { breadcrumb } = this.props;
 
-    this._header.setSubtitle(
-      formBreadcrumbString(breadcrumb)
-    );
+    // check if header did mount
+    if (this._header)
+      this._header.setSubtitle(
+        formBreadcrumbString(breadcrumb)
+      );
+  }
+
+  componentDidMount() {
+    this.componentDidUpdate();
   }
 
   render() {
-    const { courses, onUpdateLocation, onSetSelectCourseIndex } = this.props;
+    const { courses, onUpdateLocation, onSetSelectCourseIndex, breadcrumb } = this.props;
 
     const onItemPressWrapper = ({item}) => {
       return () => {
@@ -47,6 +53,7 @@ export class SelectCourse extends Component {
             onItemPressWrapper={onItemPressWrapper}
             onSetSelectCourseIndex={onSetSelectCourseIndex}
             ref={ref => this._courseScrollable = ref}
+            expandedList={breadcrumb}
           />
         </Content>
       </Container>

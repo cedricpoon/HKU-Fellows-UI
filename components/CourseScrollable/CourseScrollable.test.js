@@ -30,4 +30,11 @@ describe('Testing CourseScrollable Component', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('renders as expected with course list and default expanded settings', () => {
+    const wrapper = shallow(
+      <CourseScrollable {...defaultProps} expandedList={[]} />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });

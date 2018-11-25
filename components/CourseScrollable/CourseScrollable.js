@@ -6,7 +6,11 @@ import { FlatList } from 'react-native';
 
 import CourseLink from './CourseLink/CourseLink';
 import styles from './Styles';
-import { getCoursePathByIndex, getCoursePathById } from './helper';
+import {
+  getCoursePathByIndex,
+  getCoursePathById,
+  getIndexByBreadcrumb
+} from './helper';
 
 const Icon = Animatable.createAnimatableComponent(NBIcon);
 
@@ -16,6 +20,8 @@ class CourseScrollable extends Component {
 
   constructor(props) {
     super(props);
+
+    this.state = { mounted: false }
 
     this._renderHeader = this._renderHeader.bind(this);
     this._renderContent = this._renderContent.bind(this);
@@ -76,6 +82,9 @@ class CourseScrollable extends Component {
   }
 
   _renderContent({children, links, id}) {
+    const { onItemPressWrapper, list, expandedList } = this.props;
+    const { mounted } = this.state;
+
     if (children) {
       children.forEach((elem) => {
         elem.inner = true
@@ -92,16 +101,21 @@ class CourseScrollable extends Component {
             keyExtractor={item => item.id}
             renderItem={({item}) => (
               <CourseLink
-                onItemPress={this.props.onItemPressWrapper({item})}
+                onItemPress={onItemPressWrapper({item})}
                 bottomMost={!children}
                 {...item}
               />
             )}
+            ref={ref => {
+              if (ref)
+                ref.componentDidUpdate = () => this.setState({ mounted: true });
+            }}
           />
         )}
         {children && (
           <Accordion
             dataArray={children}
+            expanded={!mounted && getIndexByBreadcrumb(list, expandedList, id)}
             /* first child id as list key */
             listKey={children[0].id}
             keyExtractor={item => item.id}
@@ -120,11 +134,13 @@ class CourseScrollable extends Component {
   }
 
   render() {
-    const { list, ...restProps } = this.props;
+    const { list, expandedList } = this.props;
+    const { mounted } = this.state;
 
     return (
       <Accordion
         dataArray={list}
+        expanded={!mounted && getIndexByBreadcrumb(list, expandedList, '')}
         keyExtractor={item => item.id}
         style={styles.accordion}
         renderContent={this._renderContent}
@@ -134,7 +150,6 @@ class CourseScrollable extends Component {
           if (ref)
             ref.setSelected = this._setSelectedWrapper(ref, '');
         }}
-        {...restProps}
       />
     );
   }
@@ -142,13 +157,15 @@ class CourseScrollable extends Component {
 
 CourseScrollable.defaultProps = {
   onItemPressWrapper: () => { return () => {}; },
-  onSetSelectCourseIndex: () => {}
+  onSetSelectCourseIndex: () => {},
+  expandedList: []
 };
 
 CourseScrollable.propTypes = {
   list: PropTypes.array.isRequired,
   onItemPressWrapper: PropTypes.func,
-  onSetSelectCourseIndex: PropTypes.func
+  onSetSelectCourseIndex: PropTypes.func,
+  expandedList: PropTypes.array
 };
 
 export default CourseScrollable;

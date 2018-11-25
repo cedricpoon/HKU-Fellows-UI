@@ -6,3 +6,4 @@ User Interface of HKU Fellows
 - [ ] Reloading
 - [ ] Loading more posts
 - [ ] PostPreview onPressing
+- [ ] Async load/save store

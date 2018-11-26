@@ -42,6 +42,8 @@ class PreviewHeader extends Component {
     const { location } = this.props;
     const { inputFocused } = this.state;
 
+    const inputIcon = location === '' ? 'arrow-dropright' : 'search'
+
     return (
       <Header searchBar style={styles.header}>
         <Item rounded>
@@ -80,7 +82,7 @@ class PreviewHeader extends Component {
               disabled={!inputFocused}
               onPress={this.searchCancel}
             >
-              <Icon name={inputFocused ? "close-circle" : "search"} style={styles.rightIcon} />
+              <Icon name={inputFocused ? "close-circle" : inputIcon} style={styles.rightIcon} />
             </Button>
           </Right>
 

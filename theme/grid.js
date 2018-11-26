@@ -8,7 +8,8 @@ export const fontSize = {
 export const post = {
   newLinePadding: gridBase * 2,
   seperatorPadding: gridBase * 3,
-  badgeContainerWidth: gridBase * 6
+  badgeContainerWidth: gridBase * 6,
+  placeholderVerticalMargin: gridBase * 5
 };
 
 export const footer = {

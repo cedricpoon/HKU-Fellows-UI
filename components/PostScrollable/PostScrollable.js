@@ -1,13 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
-import { Body, Text, Icon, View } from 'native-base';
 import { FlatList } from 'react-native';
 
-import { localize } from 'hkufui/locale';
 import Post from './PostPreview/PostPreview';
-import styles from './Styles';
-
-const locale = localize({ language: 'en', country: 'hk' });
 
 class PostScrollable extends Component {
 
@@ -17,20 +12,6 @@ class PostScrollable extends Component {
         id={item.id}
         {...item}
       />
-    );
-  }
-
-  _renderEmpty() {
-    return (
-      <View style={styles.placeholder}>
-        <Body style={styles.noPost}>
-          <Text>{locale['post.noPostTitle']}</Text>
-          <Text note style={styles.paddingTop}>
-            {locale['post.noPostContent']}
-            <Icon name="md-paper" style={[styles.mainText, styles.note]} />
-          </Text>
-        </Body>
-      </View>
     );
   }
 
@@ -47,7 +28,7 @@ class PostScrollable extends Component {
         />
       );
     } else {
-      return this._renderEmpty();
+      return null;
     }
   }
 }

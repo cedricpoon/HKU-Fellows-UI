@@ -14,7 +14,7 @@ export class Preview extends Component {
       <Container>
         <PreviewHeader location={location} />
         <Content>
-          <PostScrollable posts={posts} />
+          <PostScrollable posts={[]} />
         </Content>
         <PreviewFooter />
       </Container>

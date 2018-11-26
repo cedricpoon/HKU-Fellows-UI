@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
-import { ListItem, Body, Text, Icon } from 'native-base';
+import { Body, Text, Icon, View } from 'native-base';
 import { FlatList } from 'react-native';
 
 import { localize } from 'hkufui/locale';
@@ -22,15 +22,15 @@ class PostScrollable extends Component {
 
   _renderEmpty() {
     return (
-      <ListItem itemDivider>
+      <View style={styles.placeholder}>
         <Body style={styles.noPost}>
           <Text>{locale['post.noPostTitle']}</Text>
-          <Text note>
+          <Text note style={styles.paddingTop}>
             {locale['post.noPostContent']}
             <Icon name="md-paper" style={[styles.mainText, styles.note]} />
           </Text>
         </Body>
-      </ListItem>
+      </View>
     );
   }
 

@@ -4,7 +4,9 @@ import { Header, Item, Input, Icon, Button, Right, Text } from 'native-base';
 import { Keyboard } from 'react-native';
 import { withNavigation } from 'react-navigation'
 
+import { displayName as appName } from 'hkufui/app.json';
 import { localize } from 'hkufui/locale';
+
 const locale = localize({ language: 'en', country: 'hk' });
 
 import styles from './Styles'
@@ -50,16 +52,24 @@ class PreviewHeader extends Component {
               this.props.navigation.navigate('SelectCourse');
             }}
           >
-            <Text style={styles.leftLabelText}>{location}</Text>
+            <Text style={styles.leftLabelText}>
+              {location !== '' ? location : appName}
+            </Text>
           </Button>
 
           <Input
-            placeholder={`${locale['header.searchPlaceholder']}`}
+            placeholder={
+              location !== '' ?
+                `${locale['header.searchPlaceholder']}`
+              :
+                `${locale['header.noCoursePlaceholder']}`
+            }
             style={styles.input}
             returnKeyType="search"
             onFocus={this.searchBarOnFocus}
             ref={(ref) => { this._searchBar = ref }}
             enablesReturnKeyAutomatically
+            disabled={location === ''}
           />
 
           <Right style={styles.rightButtons}>

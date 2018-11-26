@@ -36,7 +36,9 @@ ShallowWrapper {
             subHeadline="Enjoy your peer learning journey with us"
           />
         </Styled(Content)>,
-        <withNavigation(PreviewFooter) />,
+        <withNavigation(PreviewFooter)
+          muted={true}
+        />,
       ],
       "virtual": undefined,
     },
@@ -93,7 +95,9 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
-        "props": Object {},
+        "props": Object {
+          "muted": true,
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -123,7 +127,9 @@ ShallowWrapper {
               subHeadline="Enjoy your peer learning journey with us"
             />
           </Styled(Content)>,
-          <withNavigation(PreviewFooter) />,
+          <withNavigation(PreviewFooter)
+            muted={true}
+          />,
         ],
         "virtual": undefined,
       },
@@ -180,7 +186,9 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {},
+          "props": Object {
+            "muted": true,
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],

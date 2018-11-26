@@ -49,7 +49,7 @@ export class Preview extends Component {
         <Content>
           {this._renderContext.bind(this)()}
         </Content>
-        <PreviewFooter />
+        <PreviewFooter muted={location === ''} />
       </Container>
     );
   }

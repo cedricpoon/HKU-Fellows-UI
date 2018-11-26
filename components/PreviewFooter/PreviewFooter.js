@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Footer, FooterTab, Button, Icon } from 'native-base';
+import PropTypes from 'prop-types';
 import { withNavigation } from 'react-navigation';
 
 import FilterPopup from './FilterPopup/FilterPopup';
@@ -37,6 +38,8 @@ class PreviewFooter extends Component {
   }
 
   render() {
+    const { muted } = this.props;
+
     return (
       <Footer style={styles.footer}>
         { this._renderFilterPopup() }
@@ -46,19 +49,25 @@ class PreviewFooter extends Component {
           <Button>
             <Icon name="menu" />
           </Button>
-          <Button>
-            <Icon name="refresh" />
-          </Button>
-          <Button>
-            <Icon name="create" />
-          </Button>
-          <Button
-            onPress={this.filterToggle}
-            onLongPress={this.filterToggle}
-            onLayout={mapLayoutToState("filterLayout", this)}
-          >
-            <Icon name="funnel"></Icon>
-          </Button>
+          {!muted && (
+            <Button>
+              <Icon name="refresh" />
+            </Button>
+          )}
+          {!muted && (
+            <Button>
+              <Icon name="create" />
+            </Button>
+          )}
+          {!muted && (
+            <Button
+              onPress={this.filterToggle}
+              onLongPress={this.filterToggle}
+              onLayout={mapLayoutToState("filterLayout", this)}
+            >
+              <Icon name="funnel"></Icon>
+            </Button>
+          )}
           <Button
             onPress={()=>{ this.props.navigation.navigate('SelectCourse') }}
           >
@@ -68,6 +77,10 @@ class PreviewFooter extends Component {
       </Footer>
     );
   }
+}
+
+PreviewFooter.propTypes = {
+  muted: PropTypes.bool
 }
 
 export default withNavigation(PreviewFooter);

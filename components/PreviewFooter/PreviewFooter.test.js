@@ -9,4 +9,11 @@ describe('Testing PreviewFooter Component', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('renders in muted', () => {
+    const wrapper = shallow(
+      <PreviewFooter muted />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });

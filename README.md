@@ -2,7 +2,7 @@
 User Interface of HKU Fellows
 ## Work In Progress
 ### PostScrollable
-- [ ] Placeholder
+- [x] Placeholder
 - [ ] Reloading
 - [ ] Loading more posts
 - [ ] PostPreview onPressing

@@ -7,3 +7,5 @@ export { default as PreviewHeader } from './PreviewHeader/PreviewHeader';
 export { default as Header } from './Header/Header';
 
 export { default as CourseScrollable } from './CourseScrollable/CourseScrollable';
+
+export { default as PostPlaceholder } from './PostScrollable/PostPlaceholder/PostPlaceholder';

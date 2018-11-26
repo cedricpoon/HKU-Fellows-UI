@@ -25,11 +25,20 @@ ShallowWrapper {
           location=""
         />,
         <Styled(Content)>
-          <PostScrollable
-            posts={Array []}
+          <PostPlaceholder
+            headline="Welcome to HKU Fellows"
+            headlineColor="green"
+            icon={
+              Object {
+                "name": "md-book",
+              }
+            }
+            subHeadline="Enjoy your peer learning journey with us"
           />
         </Styled(Content)>,
-        <withNavigation(PreviewFooter) />,
+        <withNavigation(PreviewFooter)
+          muted={true}
+        />,
       ],
       "virtual": undefined,
     },
@@ -51,8 +60,15 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <PostScrollable
-            posts={Array []}
+          "children": <PostPlaceholder
+            headline="Welcome to HKU Fellows"
+            headlineColor="green"
+            icon={
+              Object {
+                "name": "md-book",
+              }
+            }
+            subHeadline="Enjoy your peer learning journey with us"
           />,
           "virtual": undefined,
         },
@@ -62,7 +78,12 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "posts": Array [],
+            "headline": "Welcome to HKU Fellows",
+            "headlineColor": "green",
+            "icon": Object {
+              "name": "md-book",
+            },
+            "subHeadline": "Enjoy your peer learning journey with us",
           },
           "ref": null,
           "rendered": null,
@@ -74,7 +95,9 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
-        "props": Object {},
+        "props": Object {
+          "muted": true,
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -93,11 +116,20 @@ ShallowWrapper {
             location=""
           />,
           <Styled(Content)>
-            <PostScrollable
-              posts={Array []}
+            <PostPlaceholder
+              headline="Welcome to HKU Fellows"
+              headlineColor="green"
+              icon={
+                Object {
+                  "name": "md-book",
+                }
+              }
+              subHeadline="Enjoy your peer learning journey with us"
             />
           </Styled(Content)>,
-          <withNavigation(PreviewFooter) />,
+          <withNavigation(PreviewFooter)
+            muted={true}
+          />,
         ],
         "virtual": undefined,
       },
@@ -119,8 +151,15 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <PostScrollable
-              posts={Array []}
+            "children": <PostPlaceholder
+              headline="Welcome to HKU Fellows"
+              headlineColor="green"
+              icon={
+                Object {
+                  "name": "md-book",
+                }
+              }
+              subHeadline="Enjoy your peer learning journey with us"
             />,
             "virtual": undefined,
           },
@@ -130,7 +169,12 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "posts": Array [],
+              "headline": "Welcome to HKU Fellows",
+              "headlineColor": "green",
+              "icon": Object {
+                "name": "md-book",
+              },
+              "subHeadline": "Enjoy your peer learning journey with us",
             },
             "ref": null,
             "rendered": null,
@@ -142,7 +186,9 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {},
+          "props": Object {
+            "muted": true,
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],

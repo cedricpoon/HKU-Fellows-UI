@@ -4,10 +4,6 @@ import { post, gridBase, fontSize } from "hkufui/theme/grid"
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
-  noPost: {
-    alignItems:'center',
-    justifyContent:'center'
-  },
   noMarginLeft: {
     marginLeft: 0
   },

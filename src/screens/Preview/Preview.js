@@ -57,7 +57,7 @@ export class Preview extends Component {
 
 /* Mocking mapStateToProps */
 Preview.defaultProps = {
-  posts: [],
+  posts: posts,
   location: ''
 }
 

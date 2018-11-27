@@ -1,4 +1,5 @@
-import { post } from "hkufui/theme/grid"
+import nbColor from "hkufui/native-base-theme/variables/commonColor";
+import { post } from 'hkufui/theme/grid'
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
@@ -7,7 +8,12 @@ export default StyleSheet.create({
   },
   subHeadline: {
     flexDirection: 'row',
-    flex: 1,
-    paddingTop: post.newLinePadding
+    marginTop: post.newLineMargin
+  },
+  button: {
+    borderColor: nbColor.listNoteColor,
+    alignSelf: 'center',
+    marginTop: post.newLineMargin * 2,
+    height: null
   }
 });

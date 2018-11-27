@@ -4,6 +4,8 @@ export default {
   'post.noPostContent': 'Feel free to raise the first post',
   'post.noCourseTitle': 'Welcome to HKU Fellows',
   'post.noCourseContent': 'Enjoy your peer learning journey with us',
+  'post.loadErrorTitle': 'Load Failure',
+  'post.loadErrorContent': 'Oops! We hope a page refresh helps',
 
   'footer.moodle': 'From Moodle',
   'footer.latestPost': 'Latest Post',

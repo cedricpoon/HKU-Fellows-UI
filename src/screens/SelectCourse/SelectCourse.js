@@ -8,6 +8,7 @@ import { localize } from 'hkufui/locale';
 import courses from 'hkufui/mock/public/courses';
 
 import { onUpdateLocation, onSetSelectCourseIndex } from './handleActions';
+import { singleFetchPosts } from '../Preview/PostPreviewLoader/loadPosts';
 import { formBreadcrumbString } from './helper';
 
 const locale = localize({ language: 'en', country: 'hk' });
@@ -28,11 +29,16 @@ export class SelectCourse extends Component {
   }
 
   render() {
-    const { courses, onUpdateLocation, onSetSelectCourseIndex, breadcrumb } = this.props;
+    const {
+      courses,
+      onUpdateLocationAndLoadPost,
+      onSetSelectCourseIndex,
+      breadcrumb
+    } = this.props;
 
     const onItemPressWrapper = ({item}) => {
       return () => {
-        onUpdateLocation({item});
+        onUpdateLocationAndLoadPost(item);
       };
     };
 
@@ -69,13 +75,13 @@ SelectCourse.defaultProps = {
 
 SelectCourse.propTypes = {
   courses: PropTypes.arrayOf(PropTypes.object).isRequired,
-  onUpdateLocation: PropTypes.func.isRequired,
+  onUpdateLocationAndLoadPost: PropTypes.func.isRequired,
   onSetSelectCourseIndex: PropTypes.func.isRequired,
   breadcrumb: PropTypes.array
 }
 
 const mapDispatchToProps = dispatch => ({
-  onUpdateLocation: ({item}) => dispatch(onUpdateLocation({item})),
+  onUpdateLocationAndLoadPost: (item) => dispatch(singleFetchPosts(onUpdateLocation(item))),
   onSetSelectCourseIndex: (array) => dispatch(onSetSelectCourseIndex(array))
 })
 

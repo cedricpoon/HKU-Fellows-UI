@@ -1,3 +1,9 @@
 export const UPDATE_LOCATION = "UPDATE_LOCATION";
 
 export const SET_SELECT_COURSE_INDEX = "SET_SELECT_COURSE_INDEX";
+
+export const LOAD_POSTS = "LOAD_POSTS";
+
+export const FILL_POSTS = "FILL_POSTS";
+
+export const LOAD_POSTS_FAILED = "LOAD_POSTS_FAILED";

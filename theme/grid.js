@@ -6,7 +6,7 @@ export const fontSize = {
 }
 
 export const post = {
-  newLinePadding: gridBase * 2,
+  newLineMargin: gridBase * 2,
   seperatorPadding: gridBase * 3,
   badgeContainerWidth: gridBase * 6,
   placeholderVerticalMargin: gridBase * 5

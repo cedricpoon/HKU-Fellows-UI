@@ -5,7 +5,6 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Preview
     location=""
-    posts={Array []}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -25,16 +24,7 @@ ShallowWrapper {
           location=""
         />,
         <Styled(Content)>
-          <PostPlaceholder
-            headline="Welcome to HKU Fellows"
-            headlineColor="green"
-            icon={
-              Object {
-                "name": "md-book",
-              }
-            }
-            subHeadline="Enjoy your peer learning journey with us"
-          />
+          <Connect(PostPreviewLoader) />
         </Styled(Content)>,
         <withNavigation(PreviewFooter)
           muted={true}
@@ -60,16 +50,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <PostPlaceholder
-            headline="Welcome to HKU Fellows"
-            headlineColor="green"
-            icon={
-              Object {
-                "name": "md-book",
-              }
-            }
-            subHeadline="Enjoy your peer learning journey with us"
-          />,
+          "children": <Connect(PostPreviewLoader) />,
           "virtual": undefined,
         },
         "ref": null,
@@ -77,14 +58,7 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {
-            "headline": "Welcome to HKU Fellows",
-            "headlineColor": "green",
-            "icon": Object {
-              "name": "md-book",
-            },
-            "subHeadline": "Enjoy your peer learning journey with us",
-          },
+          "props": Object {},
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -116,16 +90,7 @@ ShallowWrapper {
             location=""
           />,
           <Styled(Content)>
-            <PostPlaceholder
-              headline="Welcome to HKU Fellows"
-              headlineColor="green"
-              icon={
-                Object {
-                  "name": "md-book",
-                }
-              }
-              subHeadline="Enjoy your peer learning journey with us"
-            />
+            <Connect(PostPreviewLoader) />
           </Styled(Content)>,
           <withNavigation(PreviewFooter)
             muted={true}
@@ -151,16 +116,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <PostPlaceholder
-              headline="Welcome to HKU Fellows"
-              headlineColor="green"
-              icon={
-                Object {
-                  "name": "md-book",
-                }
-              }
-              subHeadline="Enjoy your peer learning journey with us"
-            />,
+            "children": <Connect(PostPreviewLoader) />,
             "virtual": undefined,
           },
           "ref": null,
@@ -168,14 +124,7 @@ ShallowWrapper {
             "instance": null,
             "key": undefined,
             "nodeType": "class",
-            "props": Object {
-              "headline": "Welcome to HKU Fellows",
-              "headlineColor": "green",
-              "icon": Object {
-                "name": "md-book",
-              },
-              "subHeadline": "Enjoy your peer learning journey with us",
-            },
+            "props": Object {},
             "ref": null,
             "rendered": null,
             "type": [Function],

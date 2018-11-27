@@ -24,9 +24,9 @@ describe('Testing PostPlaceholder Component', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('renders as expected with subHeadline and icon', () => {
+  it('renders as expected with subHeadline and icon and button', () => {
     const wrapper = shallow(
-      <PostPlaceholder headline='' subHeadline='' icon={{name:'apps'}} />
+      <PostPlaceholder headline='' subHeadline='' icon={{name:'apps'}} button={{text: ''}} />
     );
     expect(wrapper).toMatchSnapshot();
   });

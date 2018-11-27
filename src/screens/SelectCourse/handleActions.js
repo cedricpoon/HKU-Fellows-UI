@@ -1,28 +1,32 @@
-import * as types from "hkufui/src/constants/actionTypes";
+import { UPDATE_LOCATION, SET_SELECT_COURSE_INDEX } from "hkufui/src/constants/actionTypes";
 
-export const onUpdateLocation = ({item}) => ({
-  type: types.UPDATE_LOCATION,
-  courseId: item.id,
-  courseTitle: item.title
+export const onUpdateLocation = (item) => ({
+  type: UPDATE_LOCATION,
+  payload: {
+    courseId: item.id,
+    courseTitle: item.title
+  }
 });
 
 export const onSetSelectCourseIndex = (array) => ({
-  type: types.SET_SELECT_COURSE_INDEX,
-  breadcrumb: array
+  type: SET_SELECT_COURSE_INDEX,
+  payload: {
+    breadcrumb: array
+  }
 });
 
 const handleActions = (state = {}, action = {}) => {
   switch (action.type) {
-    case types.UPDATE_LOCATION:
+    case UPDATE_LOCATION:
       return {
         ...state,
-        courseId: action.courseId,
-        courseTitle: action.courseTitle
+        courseId: action.payload.courseId,
+        courseTitle: action.payload.courseTitle
       }
-    case types.SET_SELECT_COURSE_INDEX:
+    case SET_SELECT_COURSE_INDEX:
       return {
         ...state,
-        breadcrumb: action.breadcrumb
+        breadcrumb: action.payload.breadcrumb
       }
     default:
       return state;

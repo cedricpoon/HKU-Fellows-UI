@@ -13,3 +13,5 @@ export const logo = {
     green: '#20503A'
   }
 };
+
+export const seperator = '#eee';

@@ -1,35 +1,38 @@
 import React from 'react';
 import PropTypes from "prop-types";
-import { Body, Text, Icon, View } from 'native-base';
+import { Body, Text, Icon, View, Button } from 'native-base';
 
 import styles from './Styles';
 import peerStyles from '../PostPreview/Styles';
 
 class PostPlaceholder extends React.Component {
   render() {
-    const { headline, subHeadline, icon, headlineColor } = this.props;
+    const { headline, subHeadline, icon, headlineColor, button } = this.props;
 
     return (
-      <View style={styles.placeholder}>
-        <Body>
-          <Text style={{color: headlineColor}}>{headline}</Text>
-          {subHeadline && (
-            <View style={styles.subHeadline}>
-              <Text note>
-                {subHeadline}
-              </Text>
-              {icon && (
-                <Icon
-                  name={icon.name}
-                  type={icon.type}
-                  active={icon.active}
-                  style={[peerStyles.badge, peerStyles.note]}
-                />
-              )}
-            </View>
-          )}
-        </Body>
-      </View>
+      <Body style={styles.placeholder}>
+        <Text style={{color: headlineColor}}>{headline}</Text>
+        {subHeadline && (
+          <View style={styles.subHeadline}>
+            <Text note>
+              {subHeadline}
+            </Text>
+            {icon && (
+              <Icon
+                name={icon.name}
+                type={icon.type}
+                active={icon.active}
+                style={[peerStyles.badge, peerStyles.note]}
+              />
+            )}
+          </View>
+        )}
+        {button && (
+          <Button bordered style={styles.button} onPress={button.onPress}>
+            <Text note>{button.text}</Text>
+          </Button>
+        )}
+      </Body>
     );
   }
 }
@@ -42,6 +45,10 @@ PostPlaceholder.propTypes = {
     name: PropTypes.string.isRequired,
     type: PropTypes.string,
     active: PropTypes.bool
+  }),
+  button: PropTypes.shape({
+    text: PropTypes.string.isRequired,
+    onPress: PropTypes.func
   })
 }
 

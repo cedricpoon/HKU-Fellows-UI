@@ -1,3 +1,5 @@
+import { STILL } from 'hkufui/src/constants/loadStatus';
+
 export default {
   location: {
     /* comp4801 */
@@ -6,5 +8,11 @@ export default {
     courseTitle: '',
     /* [{id: engg, title: engineering}] */
     breadcrumb: []
+  },
+  posts: {
+    /* refer to mock/../posts */
+    posts: [],
+    /* OK, FAIL, LOADING, STILL */
+    status: STILL
   }
 }

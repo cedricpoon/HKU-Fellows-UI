@@ -5,7 +5,7 @@ import { SelectCourse } from './SelectCourse';
 describe('Testing SelectCourse Screen', () => {
   const defaultProps = {
     courses: [],
-    onUpdateLocation: () => {},
+    onUpdateLocationAndLoadPost: () => {},
     onSetSelectCourseIndex: () => {}
   }
 

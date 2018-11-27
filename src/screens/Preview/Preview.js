@@ -27,7 +27,6 @@ export class Preview extends Component {
   }
 }
 
-/* Mocking mapStateToProps */
 Preview.defaultProps = {
   location: ''
 }

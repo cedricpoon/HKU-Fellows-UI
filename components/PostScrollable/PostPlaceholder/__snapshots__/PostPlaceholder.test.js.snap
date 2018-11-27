@@ -20,7 +20,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <Styled(Body)>
+      "children": Array [
         <Styled(Text)
           style={
             Object {
@@ -29,15 +29,39 @@ ShallowWrapper {
           }
         >
           
-        </Styled(Text)>
-      </Styled(Body)>,
+        </Styled(Text)>,
+        undefined,
+        undefined,
+      ],
       "style": Object {
         "marginVertical": 25,
       },
       "virtual": undefined,
     },
     "ref": null,
-    "rendered": Object {
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "",
+          "style": Object {
+            "color": "green",
+          },
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": "",
+        "type": [Function],
+      },
+      undefined,
+      undefined,
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
       "instance": null,
       "key": undefined,
       "nodeType": "class",
@@ -53,7 +77,11 @@ ShallowWrapper {
             
           </Styled(Text)>,
           undefined,
+          undefined,
         ],
+        "style": Object {
+          "marginVertical": 25,
+        },
         "virtual": undefined,
       },
       "ref": null,
@@ -74,74 +102,8 @@ ShallowWrapper {
           "type": [Function],
         },
         undefined,
+        undefined,
       ],
-      "type": [Function],
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": <Styled(Body)>
-          <Styled(Text)
-            style={
-              Object {
-                "color": "green",
-              }
-            }
-          >
-            
-          </Styled(Text)>
-        </Styled(Body)>,
-        "style": Object {
-          "marginVertical": 25,
-        },
-        "virtual": undefined,
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <Styled(Text)
-              style={
-                Object {
-                  "color": "green",
-                }
-              }
-            >
-              
-            </Styled(Text)>,
-            undefined,
-          ],
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "",
-              "style": Object {
-                "color": "green",
-              },
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": "",
-            "type": [Function],
-          },
-          undefined,
-        ],
-        "type": [Function],
-      },
       "type": [Function],
     },
   ],
@@ -184,7 +146,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <Styled(Body)>
+      "children": Array [
         <Styled(Text)
           style={
             Object {
@@ -193,15 +155,39 @@ ShallowWrapper {
           }
         >
           
-        </Styled(Text)>
-      </Styled(Body)>,
+        </Styled(Text)>,
+        undefined,
+        undefined,
+      ],
       "style": Object {
         "marginVertical": 25,
       },
       "virtual": undefined,
     },
     "ref": null,
-    "rendered": Object {
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "",
+          "style": Object {
+            "color": undefined,
+          },
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": "",
+        "type": [Function],
+      },
+      undefined,
+      undefined,
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
       "instance": null,
       "key": undefined,
       "nodeType": "class",
@@ -217,7 +203,11 @@ ShallowWrapper {
             
           </Styled(Text)>,
           undefined,
+          undefined,
         ],
+        "style": Object {
+          "marginVertical": 25,
+        },
         "virtual": undefined,
       },
       "ref": null,
@@ -238,74 +228,8 @@ ShallowWrapper {
           "type": [Function],
         },
         undefined,
+        undefined,
       ],
-      "type": [Function],
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": <Styled(Body)>
-          <Styled(Text)
-            style={
-              Object {
-                "color": undefined,
-              }
-            }
-          >
-            
-          </Styled(Text)>
-        </Styled(Body)>,
-        "style": Object {
-          "marginVertical": 25,
-        },
-        "virtual": undefined,
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <Styled(Text)
-              style={
-                Object {
-                  "color": undefined,
-                }
-              }
-            >
-              
-            </Styled(Text)>,
-            undefined,
-          ],
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "",
-              "style": Object {
-                "color": undefined,
-              },
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": "",
-            "type": [Function],
-          },
-          undefined,
-        ],
-        "type": [Function],
-      },
       "type": [Function],
     },
   ],
@@ -349,7 +273,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <Styled(Body)>
+      "children": Array [
         <Styled(Text)
           style={
             Object {
@@ -358,16 +282,39 @@ ShallowWrapper {
           }
         >
           
-        </Styled(Text)>
-        
-      </Styled(Body)>,
+        </Styled(Text)>,
+        "",
+        undefined,
+      ],
       "style": Object {
         "marginVertical": 25,
       },
       "virtual": undefined,
     },
     "ref": null,
-    "rendered": Object {
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "",
+          "style": Object {
+            "color": undefined,
+          },
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": "",
+        "type": [Function],
+      },
+      "",
+      undefined,
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
       "instance": null,
       "key": undefined,
       "nodeType": "class",
@@ -383,7 +330,11 @@ ShallowWrapper {
             
           </Styled(Text)>,
           "",
+          undefined,
         ],
+        "style": Object {
+          "marginVertical": 25,
+        },
         "virtual": undefined,
       },
       "ref": null,
@@ -404,75 +355,8 @@ ShallowWrapper {
           "type": [Function],
         },
         "",
+        undefined,
       ],
-      "type": [Function],
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": <Styled(Body)>
-          <Styled(Text)
-            style={
-              Object {
-                "color": undefined,
-              }
-            }
-          >
-            
-          </Styled(Text)>
-          
-        </Styled(Body)>,
-        "style": Object {
-          "marginVertical": 25,
-        },
-        "virtual": undefined,
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <Styled(Text)
-              style={
-                Object {
-                  "color": undefined,
-                }
-              }
-            >
-              
-            </Styled(Text)>,
-            "",
-          ],
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "",
-              "style": Object {
-                "color": undefined,
-              },
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": "",
-            "type": [Function],
-          },
-          "",
-        ],
-        "type": [Function],
-      },
       "type": [Function],
     },
   ],
@@ -496,10 +380,15 @@ ShallowWrapper {
 }
 `;
 
-exports[`Testing PostPlaceholder Component renders as expected with subHeadline and icon 1`] = `
+exports[`Testing PostPlaceholder Component renders as expected with subHeadline and icon and button 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PostPlaceholder
+    button={
+      Object {
+        "text": "",
+      }
+    }
     headline=""
     icon={
       Object {
@@ -521,7 +410,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <Styled(Body)>
+      "children": Array [
         <Styled(Text)
           style={
             Object {
@@ -530,16 +419,90 @@ ShallowWrapper {
           }
         >
           
-        </Styled(Text)>
-        
-      </Styled(Body)>,
+        </Styled(Text)>,
+        "",
+        <Styled(Button)
+          bordered={true}
+          style={
+            Object {
+              "alignSelf": "center",
+              "borderColor": "#808080",
+              "height": null,
+              "marginTop": 20,
+            }
+          }
+        >
+          <Styled(Text)
+            note={true}
+          >
+            
+          </Styled(Text)>
+        </Styled(Button)>,
+      ],
       "style": Object {
         "marginVertical": 25,
       },
       "virtual": undefined,
     },
     "ref": null,
-    "rendered": Object {
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "",
+          "style": Object {
+            "color": undefined,
+          },
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": "",
+        "type": [Function],
+      },
+      "",
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "bordered": true,
+          "children": <Styled(Text)
+            note={true}
+          >
+            
+          </Styled(Text)>,
+          "onPress": undefined,
+          "style": Object {
+            "alignSelf": "center",
+            "borderColor": "#808080",
+            "height": null,
+            "marginTop": 20,
+          },
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "",
+            "note": true,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": "",
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
       "instance": null,
       "key": undefined,
       "nodeType": "class",
@@ -555,7 +518,27 @@ ShallowWrapper {
             
           </Styled(Text)>,
           "",
+          <Styled(Button)
+            bordered={true}
+            style={
+              Object {
+                "alignSelf": "center",
+                "borderColor": "#808080",
+                "height": null,
+                "marginTop": 20,
+              }
+            }
+          >
+            <Styled(Text)
+              note={true}
+            >
+              
+            </Styled(Text)>
+          </Styled(Button)>,
         ],
+        "style": Object {
+          "marginVertical": 25,
+        },
         "virtual": undefined,
       },
       "ref": null,
@@ -576,75 +559,43 @@ ShallowWrapper {
           "type": [Function],
         },
         "",
-      ],
-      "type": [Function],
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": <Styled(Body)>
-          <Styled(Text)
-            style={
-              Object {
-                "color": undefined,
-              }
-            }
-          >
-            
-          </Styled(Text)>
-          
-        </Styled(Body)>,
-        "style": Object {
-          "marginVertical": 25,
-        },
-        "virtual": undefined,
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <Styled(Text)
-              style={
-                Object {
-                  "color": undefined,
-                }
-              }
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "bordered": true,
+            "children": <Styled(Text)
+              note={true}
             >
               
             </Styled(Text)>,
-            "",
-          ],
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
+            "onPress": undefined,
+            "style": Object {
+              "alignSelf": "center",
+              "borderColor": "#808080",
+              "height": null,
+              "marginTop": 20,
+            },
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
             "instance": null,
             "key": undefined,
             "nodeType": "class",
             "props": Object {
               "children": "",
-              "style": Object {
-                "color": undefined,
-              },
+              "note": true,
               "virtual": undefined,
             },
             "ref": null,
             "rendered": "",
             "type": [Function],
           },
-          "",
-        ],
-        "type": [Function],
-      },
+          "type": [Function],
+        },
+      ],
       "type": [Function],
     },
   ],

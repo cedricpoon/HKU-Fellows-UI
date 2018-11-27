@@ -7,7 +7,7 @@ ShallowWrapper {
     breadcrumb={Array []}
     courses={Array []}
     onSetSelectCourseIndex={[Function]}
-    onUpdateLocation={[Function]}
+    onUpdateLocationAndLoadPost={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -200,7 +200,7 @@ ShallowWrapper {
     breadcrumb={Array []}
     courses={Array []}
     onSetSelectCourseIndex={[Function]}
-    onUpdateLocation={[Function]}
+    onUpdateLocationAndLoadPost={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

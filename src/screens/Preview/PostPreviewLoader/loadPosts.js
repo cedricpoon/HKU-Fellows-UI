@@ -16,14 +16,15 @@ export function singleFetchPosts(callforth) {
 export function fetchPosts() {
   const latency = Math.floor(Math.random() * 5 + 1) * 1000;
   const failed = Math.floor(Math.random() * 5 + 1) === 5;
+  const empty = Math.floor(Math.random() * 5 + 1) === 5;
 
   return (dispatch) => {
     dispatch(onLoad());
 
-    // mocking of fetch from WebAPI, 2s delay
+    // mocking of fetch from WebAPI
     setTimeout(() => {
       if (!failed)
-        dispatch(onFill(postList));
+        dispatch(onFill(empty ? [] : postList));
       else
         dispatch(onFail());
     }, latency);

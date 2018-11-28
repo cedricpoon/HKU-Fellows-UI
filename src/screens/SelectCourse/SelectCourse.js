@@ -8,7 +8,7 @@ import { localize } from 'hkufui/locale';
 import courses from 'hkufui/mock/public/courses';
 
 import { onUpdateLocation, onSetSelectCourseIndex } from './handleActions';
-import { singleFetchPosts } from '../Preview/PostPreviewLoader/loadPosts';
+import { fetchPostsSafe } from '../Preview/PostPreviewLoader/loadPosts';
 import { formBreadcrumbString } from './helper';
 
 const locale = localize({ language: 'en', country: 'hk' });
@@ -81,7 +81,7 @@ SelectCourse.propTypes = {
 }
 
 const mapDispatchToProps = dispatch => ({
-  onUpdateLocationAndLoadPost: (item) => dispatch(singleFetchPosts(onUpdateLocation(item))),
+  onUpdateLocationAndLoadPost: (item) => dispatch(fetchPostsSafe(onUpdateLocation(item))),
   onSetSelectCourseIndex: (array) => dispatch(onSetSelectCourseIndex(array))
 })
 

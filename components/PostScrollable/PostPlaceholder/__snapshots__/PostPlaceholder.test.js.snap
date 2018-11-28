@@ -20,6 +20,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
+      "animation": "fadeIn",
       "children": Array [
         <Styled(Text)
           style={
@@ -33,10 +34,21 @@ ShallowWrapper {
         undefined,
         undefined,
       ],
+      "delay": 0,
+      "direction": "normal",
+      "duration": 250,
+      "easing": undefined,
+      "iterationCount": 1,
+      "iterationDelay": 0,
+      "onAnimationBegin": [Function],
+      "onAnimationEnd": [Function],
+      "onTransitionBegin": [Function],
+      "onTransitionEnd": [Function],
       "style": Object {
         "marginVertical": 25,
       },
-      "virtual": undefined,
+      "transition": undefined,
+      "useNativeDriver": false,
     },
     "ref": null,
     "rendered": Array [
@@ -66,6 +78,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
+        "animation": "fadeIn",
         "children": Array [
           <Styled(Text)
             style={
@@ -79,10 +92,21 @@ ShallowWrapper {
           undefined,
           undefined,
         ],
+        "delay": 0,
+        "direction": "normal",
+        "duration": 250,
+        "easing": undefined,
+        "iterationCount": 1,
+        "iterationDelay": 0,
+        "onAnimationBegin": [Function],
+        "onAnimationEnd": [Function],
+        "onTransitionBegin": [Function],
+        "onTransitionEnd": [Function],
         "style": Object {
           "marginVertical": 25,
         },
-        "virtual": undefined,
+        "transition": undefined,
+        "useNativeDriver": false,
       },
       "ref": null,
       "rendered": Array [
@@ -146,6 +170,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
+      "animation": "fadeIn",
       "children": Array [
         <Styled(Text)
           style={
@@ -159,10 +184,21 @@ ShallowWrapper {
         undefined,
         undefined,
       ],
+      "delay": 0,
+      "direction": "normal",
+      "duration": 250,
+      "easing": undefined,
+      "iterationCount": 1,
+      "iterationDelay": 0,
+      "onAnimationBegin": [Function],
+      "onAnimationEnd": [Function],
+      "onTransitionBegin": [Function],
+      "onTransitionEnd": [Function],
       "style": Object {
         "marginVertical": 25,
       },
-      "virtual": undefined,
+      "transition": undefined,
+      "useNativeDriver": false,
     },
     "ref": null,
     "rendered": Array [
@@ -192,6 +228,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
+        "animation": "fadeIn",
         "children": Array [
           <Styled(Text)
             style={
@@ -205,10 +242,21 @@ ShallowWrapper {
           undefined,
           undefined,
         ],
+        "delay": 0,
+        "direction": "normal",
+        "duration": 250,
+        "easing": undefined,
+        "iterationCount": 1,
+        "iterationDelay": 0,
+        "onAnimationBegin": [Function],
+        "onAnimationEnd": [Function],
+        "onTransitionBegin": [Function],
+        "onTransitionEnd": [Function],
         "style": Object {
           "marginVertical": 25,
         },
-        "virtual": undefined,
+        "transition": undefined,
+        "useNativeDriver": false,
       },
       "ref": null,
       "rendered": Array [
@@ -273,6 +321,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
+      "animation": "fadeIn",
       "children": Array [
         <Styled(Text)
           style={
@@ -286,10 +335,21 @@ ShallowWrapper {
         "",
         undefined,
       ],
+      "delay": 0,
+      "direction": "normal",
+      "duration": 250,
+      "easing": undefined,
+      "iterationCount": 1,
+      "iterationDelay": 0,
+      "onAnimationBegin": [Function],
+      "onAnimationEnd": [Function],
+      "onTransitionBegin": [Function],
+      "onTransitionEnd": [Function],
       "style": Object {
         "marginVertical": 25,
       },
-      "virtual": undefined,
+      "transition": undefined,
+      "useNativeDriver": false,
     },
     "ref": null,
     "rendered": Array [
@@ -319,6 +379,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
+        "animation": "fadeIn",
         "children": Array [
           <Styled(Text)
             style={
@@ -332,10 +393,21 @@ ShallowWrapper {
           "",
           undefined,
         ],
+        "delay": 0,
+        "direction": "normal",
+        "duration": 250,
+        "easing": undefined,
+        "iterationCount": 1,
+        "iterationDelay": 0,
+        "onAnimationBegin": [Function],
+        "onAnimationEnd": [Function],
+        "onTransitionBegin": [Function],
+        "onTransitionEnd": [Function],
         "style": Object {
           "marginVertical": 25,
         },
-        "virtual": undefined,
+        "transition": undefined,
+        "useNativeDriver": false,
       },
       "ref": null,
       "rendered": Array [
@@ -410,6 +482,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
+      "animation": "fadeIn",
       "children": Array [
         <Styled(Text)
           style={
@@ -439,10 +512,21 @@ ShallowWrapper {
           </Styled(Text)>
         </Styled(Button)>,
       ],
+      "delay": 0,
+      "direction": "normal",
+      "duration": 250,
+      "easing": undefined,
+      "iterationCount": 1,
+      "iterationDelay": 0,
+      "onAnimationBegin": [Function],
+      "onAnimationEnd": [Function],
+      "onTransitionBegin": [Function],
+      "onTransitionEnd": [Function],
       "style": Object {
         "marginVertical": 25,
       },
-      "virtual": undefined,
+      "transition": undefined,
+      "useNativeDriver": false,
     },
     "ref": null,
     "rendered": Array [
@@ -507,6 +591,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
+        "animation": "fadeIn",
         "children": Array [
           <Styled(Text)
             style={
@@ -536,10 +621,21 @@ ShallowWrapper {
             </Styled(Text)>
           </Styled(Button)>,
         ],
+        "delay": 0,
+        "direction": "normal",
+        "duration": 250,
+        "easing": undefined,
+        "iterationCount": 1,
+        "iterationDelay": 0,
+        "onAnimationBegin": [Function],
+        "onAnimationEnd": [Function],
+        "onTransitionBegin": [Function],
+        "onTransitionEnd": [Function],
         "style": Object {
           "marginVertical": 25,
         },
-        "virtual": undefined,
+        "transition": undefined,
+        "useNativeDriver": false,
       },
       "ref": null,
       "rendered": Array [

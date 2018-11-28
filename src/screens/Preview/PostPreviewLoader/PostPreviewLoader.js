@@ -23,8 +23,9 @@ const locale = localize({ language: 'en', country: 'hk' });
 const LOADER_GROUP_HEIGHT = 80;
 const EST_HEADER_HEIGHT = 65;
 const EST_FOOTER_HEIGHT = 55;
-const LIGHTER_COLOR = '#eeeeee';
-const DARKER_COLOR = '#dddddd';
+const PLACEHOLDER_DURATION = 1000;
+const LIGHTER_COLOR = '#eee';
+const DARKER_COLOR = '#ddd';
 
 export class PostPreviewLoader extends Component {
 
@@ -72,8 +73,8 @@ export class PostPreviewLoader extends Component {
     return(
       <PlaceholderContainer
         animatedComponent={this._renderGradient()}
-        duration={1000}
-        delay={1000}
+        duration={PLACEHOLDER_DURATION}
+        delay={PLACEHOLDER_DURATION}
       >
         {context}
       </PlaceholderContainer>
@@ -84,7 +85,9 @@ export class PostPreviewLoader extends Component {
     const { posts, location, status, onFetchPosts } = this.props;
 
     if (posts && posts.length > 0 && status === OK) {
-      return (<PostScrollable posts={posts} />);
+      return (
+        <PostScrollable posts={posts} />
+      );
     } else if (location === '' && status === STILL) {
       return (
         <PostPlaceholder

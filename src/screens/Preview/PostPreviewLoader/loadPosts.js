@@ -6,8 +6,11 @@ import postList from 'hkufui/mock/public/posts';
 export function fetchPostsSafe(callforth) {
   return (dispatch, getState) => {
     const { posts } = getState();
+
     if (posts && posts.status !== status.LOADING) {
-      dispatch(callforth);
+      if (callforth) {
+        dispatch(callforth);
+      }
       dispatch(fetchPosts());
     }
   };

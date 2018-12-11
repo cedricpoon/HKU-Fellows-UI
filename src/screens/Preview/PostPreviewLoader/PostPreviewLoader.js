@@ -1,18 +1,12 @@
 import React, { Component } from 'react';
 import { Dimensions } from 'react-native';
 import { View } from 'native-base';
-import {
-  PlaceholderContainer,
-  Placeholder
-} from 'react-native-loading-placeholder';
+import { PlaceholderContainer, Placeholder } from 'react-native-loading-placeholder';
 import LinearGradient from 'react-native-linear-gradient';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import {
-  PostScrollable,
-  PostPlaceholder
-} from 'hkufui/components';
+import { PostScrollable, PostPlaceholder } from 'hkufui/components';
 import { OK, FAIL, LOADING, STILL } from 'hkufui/src/constants/loadStatus';
 import { fetchPosts } from './loadPosts';
 import { localize } from 'hkufui/locale';

@@ -1,12 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { Preview } from './Preview';
-import { STILL } from 'hkufui/src/constants/loadStatus';
 
 describe('Testing Preview Screen', () => {
   const defaultProps = {
-    onLoadPost: () => {},
-    status: STILL
+    onLoadPost: () => {}
   };
 
   it('renders as expected', () => {

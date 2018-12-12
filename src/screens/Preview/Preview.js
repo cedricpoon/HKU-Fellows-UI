@@ -1,41 +1,63 @@
 import React, { Component } from 'react';
-import { Container, Content } from 'native-base';
+import { RefreshControl, TouchableWithoutFeedback } from 'react-native';
+import { Container } from 'native-base';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 import { PreviewFooter, PreviewHeader } from 'hkufui/components';
 import PostPreviewLoader from './PostPreviewLoader/PostPreviewLoader'
 
-import { OK, FAIL, LOADING, STILL } from 'hkufui/src/constants/loadStatus';
 import { fetchPostsSafe } from './PostPreviewLoader/loadPosts';
 
+import styles from './Styles';
+
 export class Preview extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { willRefresh: false };
+
+    this._refresh = this._refresh.bind(this);
+    this._requestPullRefresh = this._requestPullRefresh.bind(this);
+    this._pullRefresh = this._pullRefresh.bind(this);
+  }
 
   _refresh() {
     this.props.onLoadPost();
   }
 
-  componentDidUpdate() {
-    if (this.props.status === LOADING) {
-      this._content._root.scrollToPosition(0, 0, false);
+  _requestPullRefresh() {
+    this.setState({ willRefresh: true });
+  }
+
+  _pullRefresh() {
+    if (this.state.willRefresh) {
+      this._refresh();
+      this.setState({ willRefresh: false });
     }
   }
 
   render() {
-    const { location, status } = this.props;
+    const { location } = this.props;
 
     return (
       <Container>
         <PreviewHeader location={location} />
-        <Content
-          ref={ref => { this._content = ref }}
-          scrollEnabled={status !== LOADING}
-        >
-          <PostPreviewLoader />
-        </Content>
+        <TouchableWithoutFeedback onPressOut={this._pullRefresh}>
+          <PostPreviewLoader
+            refreshControl={
+              <RefreshControl
+                refreshing={false}
+                onRefresh={this._requestPullRefresh}
+                tintColor='transparent'
+                style={styles.refreshControl}
+              />
+            }
+          />
+        </TouchableWithoutFeedback>
         <PreviewFooter
           muted={location === ''}
-          onRefresh={this._refresh.bind(this)}
+          onRefresh={this._refresh}
         />
       </Container>
     );
@@ -48,13 +70,11 @@ Preview.defaultProps = {
 
 Preview.propTypes = {
   location: PropTypes.string,
-  onLoadPost: PropTypes.func.isRequired,
-  status: PropTypes.oneOf([ OK, FAIL, LOADING, STILL ]).isRequired,
+  onLoadPost: PropTypes.func.isRequired
 }
 
 const mapStateToProps = state => ({
-  location: state.location.courseTitle,
-  status: state.posts.status
+  location: state.location.courseTitle
 });
 
 const mapDispatchToProps = dispatch => ({

@@ -6,7 +6,6 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Preview
     location=""
     onLoadPost={[Function]}
-    status="STILL"
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -25,11 +24,24 @@ ShallowWrapper {
         <withNavigation(PreviewHeader)
           location=""
         />,
-        <Styled(Content)
-          scrollEnabled={true}
+        <TouchableWithoutFeedback
+          onPressOut={[Function]}
         >
-          <Connect(PostPreviewLoader) />
-        </Styled(Content)>,
+          <Connect(PostPreviewLoader)
+            refreshControl={
+              <RefreshControlMock
+                onRefresh={[Function]}
+                refreshing={false}
+                style={
+                  Object {
+                    "backgroundColor": "#4E4A47",
+                  }
+                }
+                tintColor="transparent"
+              />
+            }
+          />
+        </TouchableWithoutFeedback>,
         <withNavigation(PreviewFooter)
           muted={true}
           onRefresh={[Function]}
@@ -55,16 +67,39 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <Connect(PostPreviewLoader) />,
-          "scrollEnabled": true,
-          "virtual": undefined,
+          "children": <Connect(PostPreviewLoader)
+            refreshControl={
+              <RefreshControlMock
+                onRefresh={[Function]}
+                refreshing={false}
+                style={
+                  Object {
+                    "backgroundColor": "#4E4A47",
+                  }
+                }
+                tintColor="transparent"
+              />
+            }
+          />,
+          "onPressOut": [Function],
         },
-        "ref": [Function],
+        "ref": null,
         "rendered": Object {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {},
+          "props": Object {
+            "refreshControl": <RefreshControlMock
+              onRefresh={[Function]}
+              refreshing={false}
+              style={
+                Object {
+                  "backgroundColor": "#4E4A47",
+                }
+              }
+              tintColor="transparent"
+            />,
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -96,11 +131,24 @@ ShallowWrapper {
           <withNavigation(PreviewHeader)
             location=""
           />,
-          <Styled(Content)
-            scrollEnabled={true}
+          <TouchableWithoutFeedback
+            onPressOut={[Function]}
           >
-            <Connect(PostPreviewLoader) />
-          </Styled(Content)>,
+            <Connect(PostPreviewLoader)
+              refreshControl={
+                <RefreshControlMock
+                  onRefresh={[Function]}
+                  refreshing={false}
+                  style={
+                    Object {
+                      "backgroundColor": "#4E4A47",
+                    }
+                  }
+                  tintColor="transparent"
+                />
+              }
+            />
+          </TouchableWithoutFeedback>,
           <withNavigation(PreviewFooter)
             muted={true}
             onRefresh={[Function]}
@@ -126,16 +174,39 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <Connect(PostPreviewLoader) />,
-            "scrollEnabled": true,
-            "virtual": undefined,
+            "children": <Connect(PostPreviewLoader)
+              refreshControl={
+                <RefreshControlMock
+                  onRefresh={[Function]}
+                  refreshing={false}
+                  style={
+                    Object {
+                      "backgroundColor": "#4E4A47",
+                    }
+                  }
+                  tintColor="transparent"
+                />
+              }
+            />,
+            "onPressOut": [Function],
           },
-          "ref": [Function],
+          "ref": null,
           "rendered": Object {
             "instance": null,
             "key": undefined,
             "nodeType": "class",
-            "props": Object {},
+            "props": Object {
+              "refreshControl": <RefreshControlMock
+                onRefresh={[Function]}
+                refreshing={false}
+                style={
+                  Object {
+                    "backgroundColor": "#4E4A47",
+                  }
+                }
+                tintColor="transparent"
+              />,
+            },
             "ref": null,
             "rendered": null,
             "type": [Function],

@@ -9,3 +9,5 @@ export { default as Header } from './Header/Header';
 export { default as CourseScrollable } from './CourseScrollable/CourseScrollable';
 
 export { default as PostPlaceholder } from './PostScrollable/PostPlaceholder/PostPlaceholder';
+
+export { default as PostLoadIndicator } from './PostLoadIndicator/PostLoadIndicator';

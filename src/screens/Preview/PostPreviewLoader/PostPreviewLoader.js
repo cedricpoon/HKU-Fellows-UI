@@ -1,25 +1,13 @@
 import React, { Component } from 'react';
-import { Dimensions } from 'react-native';
-import { View } from 'native-base';
-import { PlaceholderContainer, Placeholder } from 'react-native-loading-placeholder';
-import LinearGradient from 'react-native-linear-gradient';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import { PostScrollable, PostPlaceholder } from 'hkufui/components';
+import { PostScrollable, PostPlaceholder, PostLoadIndicator } from 'hkufui/components';
 import { OK, FAIL, LOADING, STILL } from 'hkufui/src/constants/loadStatus';
 import { fetchPosts } from './loadPosts';
 import { localize } from 'hkufui/locale';
-import styles from './Styles';
 
 const locale = localize({ language: 'en', country: 'hk' });
-
-const LOADER_GROUP_HEIGHT = 80;
-const EST_HEADER_HEIGHT = 65;
-const EST_FOOTER_HEIGHT = 55;
-const PLACEHOLDER_DURATION = 1000;
-const LIGHTER_COLOR = '#eee';
-const DARKER_COLOR = '#ddd';
 
 export class PostPreviewLoader extends Component {
 
@@ -32,55 +20,15 @@ export class PostPreviewLoader extends Component {
     }
   }
 
-  _renderGradient() {
-    return (
-      <LinearGradient
-        colors={[LIGHTER_COLOR, DARKER_COLOR, LIGHTER_COLOR]}
-        start={{ x: 1.0, y: 0.0 }}
-        end={{ x: 0.0, y: 0.0 }}
-        style={styles.gradient}
-      />
-    );
-  }
-
-  _renderLoadPlaceholder() {
-    const { height } = Dimensions.get('window');
-    let context = [];
-
-    for (let i = 0; i < height - EST_FOOTER_HEIGHT - EST_HEADER_HEIGHT; i += LOADER_GROUP_HEIGHT) {
-      context.push(
-        <View key={i} style={styles.placeholderGroup}>
-          <Placeholder
-            style={[styles.placeholder, styles.placeholderShort]}
-          />
-          <Placeholder
-            style={[styles.placeholder, styles.placeholderLong]}
-          />
-          <Placeholder
-            style={[styles.placeholder, styles.placeholderLong]}
-          />
-        </View>
-      );
-      context.push(<View key={`${i}s`} style={styles.hr}></View>);
-    }
-
-    return(
-      <PlaceholderContainer
-        animatedComponent={this._renderGradient()}
-        duration={PLACEHOLDER_DURATION}
-        delay={PLACEHOLDER_DURATION}
-      >
-        {context}
-      </PlaceholderContainer>
-    );
-  }
-
   render() {
-    const { posts, location, status, onFetchPosts } = this.props;
+    const { posts, location, status, onFetchPosts, ...restProps } = this.props;
 
     if (posts && posts.length > 0 && status === OK) {
       return (
-        <PostScrollable posts={posts} />
+        <PostScrollable
+          posts={posts}
+          {...restProps}
+        />
       );
     } else if (location === '' && status === STILL) {
       return (
@@ -111,7 +59,9 @@ export class PostPreviewLoader extends Component {
         />
       );
     } else {
-      return (this._renderLoadPlaceholder());
+      return (
+        <PostLoadIndicator />
+      );
     }
   }
 }

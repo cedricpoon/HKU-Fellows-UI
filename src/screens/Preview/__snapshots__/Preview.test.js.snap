@@ -5,6 +5,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Preview
     location=""
+    onLoadPost={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -23,11 +24,21 @@ ShallowWrapper {
         <withNavigation(PreviewHeader)
           location=""
         />,
-        <Styled(Content)>
-          <Connect(PostPreviewLoader) />
-        </Styled(Content)>,
+        <TouchableWithoutFeedback
+          onPressOut={[Function]}
+        >
+          <Connect(PostPreviewLoader)
+            refreshControl={
+              <RefreshControlMock
+                onRefresh={[Function]}
+                refreshing={false}
+              />
+            }
+          />
+        </TouchableWithoutFeedback>,
         <withNavigation(PreviewFooter)
           muted={true}
+          onRefresh={[Function]}
         />,
       ],
       "virtual": undefined,
@@ -50,15 +61,27 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <Connect(PostPreviewLoader) />,
-          "virtual": undefined,
+          "children": <Connect(PostPreviewLoader)
+            refreshControl={
+              <RefreshControlMock
+                onRefresh={[Function]}
+                refreshing={false}
+              />
+            }
+          />,
+          "onPressOut": [Function],
         },
         "ref": null,
         "rendered": Object {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {},
+          "props": Object {
+            "refreshControl": <RefreshControlMock
+              onRefresh={[Function]}
+              refreshing={false}
+            />,
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -71,6 +94,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "muted": true,
+          "onRefresh": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -89,11 +113,21 @@ ShallowWrapper {
           <withNavigation(PreviewHeader)
             location=""
           />,
-          <Styled(Content)>
-            <Connect(PostPreviewLoader) />
-          </Styled(Content)>,
+          <TouchableWithoutFeedback
+            onPressOut={[Function]}
+          >
+            <Connect(PostPreviewLoader)
+              refreshControl={
+                <RefreshControlMock
+                  onRefresh={[Function]}
+                  refreshing={false}
+                />
+              }
+            />
+          </TouchableWithoutFeedback>,
           <withNavigation(PreviewFooter)
             muted={true}
+            onRefresh={[Function]}
           />,
         ],
         "virtual": undefined,
@@ -116,15 +150,27 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <Connect(PostPreviewLoader) />,
-            "virtual": undefined,
+            "children": <Connect(PostPreviewLoader)
+              refreshControl={
+                <RefreshControlMock
+                  onRefresh={[Function]}
+                  refreshing={false}
+                />
+              }
+            />,
+            "onPressOut": [Function],
           },
           "ref": null,
           "rendered": Object {
             "instance": null,
             "key": undefined,
             "nodeType": "class",
-            "props": Object {},
+            "props": Object {
+              "refreshControl": <RefreshControlMock
+                onRefresh={[Function]}
+                refreshing={false}
+              />,
+            },
             "ref": null,
             "rendered": null,
             "type": [Function],
@@ -137,6 +183,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "muted": true,
+            "onRefresh": [Function],
           },
           "ref": null,
           "rendered": null,

@@ -3,20 +3,23 @@ import * as status from 'hkufui/src/constants/loadStatus';
 
 import postList from 'hkufui/mock/public/posts';
 
-export function singleFetchPosts(callforth) {
+export function fetchPostsSafe(callforth) {
   return (dispatch, getState) => {
     const { posts } = getState();
+
     if (posts && posts.status !== status.LOADING) {
-      dispatch(callforth);
+      if (callforth) {
+        dispatch(callforth);
+      }
       dispatch(fetchPosts());
     }
   };
 }
 
 export function fetchPosts() {
-  const latency = Math.floor(Math.random() * 5 + 1) * 1000;
-  const failed = Math.floor(Math.random() * 5 + 1) === 5;
-  const empty = Math.floor(Math.random() * 5 + 1) === 5;
+  const latency = Math.floor(Math.random() * 5 + 1) * 200;
+  const failed = Math.floor(Math.random() * 50 + 1) === 50;
+  const empty = Math.floor(Math.random() * 50 + 1) === 50;
 
   return (dispatch) => {
     dispatch(onLoad());

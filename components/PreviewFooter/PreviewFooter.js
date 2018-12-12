@@ -38,7 +38,7 @@ class PreviewFooter extends Component {
   }
 
   render() {
-    const { muted } = this.props;
+    const { muted, onRefresh } = this.props;
 
     return (
       <Footer style={styles.footer}>
@@ -50,7 +50,7 @@ class PreviewFooter extends Component {
             <Icon name="menu" />
           </Button>
           {!muted && (
-            <Button>
+            <Button onPress={onRefresh}>
               <Icon name="refresh" />
             </Button>
           )}
@@ -80,7 +80,8 @@ class PreviewFooter extends Component {
 }
 
 PreviewFooter.propTypes = {
-  muted: PropTypes.bool
+  muted: PropTypes.bool,
+  onRefresh: PropTypes.func.isRequired
 }
 
 export default withNavigation(PreviewFooter);

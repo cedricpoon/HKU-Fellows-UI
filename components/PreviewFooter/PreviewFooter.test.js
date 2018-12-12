@@ -3,16 +3,18 @@ import { shallow } from 'enzyme';
 import PreviewFooter from './PreviewFooter';
 
 describe('Testing PreviewFooter Component', () => {
-  it('renders as expected', () => {
+  const required = { onRefresh: () => {} };
+
+  it('renders as expected with requiredProps', () => {
     const wrapper = shallow(
-      <PreviewFooter />
+      <PreviewFooter {...required} />
     );
     expect(wrapper).toMatchSnapshot();
   });
 
   it('renders in muted', () => {
     const wrapper = shallow(
-      <PreviewFooter muted />
+      <PreviewFooter muted {...required} />
     );
     expect(wrapper).toMatchSnapshot();
   });

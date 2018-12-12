@@ -1,9 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing PreviewFooter Component renders as expected 1`] = `
+exports[`Testing PreviewFooter Component renders as expected with requiredProps 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <withNavigation(PreviewFooter) />,
+  Symbol(enzyme.__unrendered__): <withNavigation(PreviewFooter)
+    onRefresh={[Function]}
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -87,6 +89,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <withNavigation(PreviewFooter)
     muted={true}
+    onRefresh={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

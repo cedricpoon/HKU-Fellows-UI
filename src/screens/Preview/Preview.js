@@ -9,8 +9,6 @@ import PostPreviewLoader from './PostPreviewLoader/PostPreviewLoader'
 
 import { fetchPostsSafe } from './PostPreviewLoader/loadPosts';
 
-import styles from './Styles';
-
 export class Preview extends Component {
   constructor(props) {
     super(props);
@@ -49,8 +47,6 @@ export class Preview extends Component {
               <RefreshControl
                 refreshing={false}
                 onRefresh={this._requestPullRefresh}
-                tintColor='transparent'
-                style={styles.refreshControl}
               />
             }
           />

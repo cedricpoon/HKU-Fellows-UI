@@ -15,7 +15,7 @@ export default {
     posts: [],
     /* OK, FAIL, LOADING, STILL */
     status: STILL,
-    /* BLAND, EXPANDING */
+    /* BLAND, EXPANDING, HALT */
     subStatus: BLAND
   }
 }

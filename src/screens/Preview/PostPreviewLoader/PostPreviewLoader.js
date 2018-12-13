@@ -60,7 +60,7 @@ export class PostPreviewLoader extends Component {
       );
     } else {
       return (
-        <PostLoadIndicator />
+        <PostLoadIndicator multiple />
       );
     }
   }

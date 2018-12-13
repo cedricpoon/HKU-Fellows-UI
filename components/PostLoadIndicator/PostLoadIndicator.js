@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { Dimensions } from 'react-native';
-import { View, Content } from 'native-base';
-import * as Animatable from 'react-native-animatable';
-import { PlaceholderContainer, Placeholder } from 'react-native-loading-placeholder';
+import PropTypes from 'prop-types';
+import { Content } from 'native-base';
+import { PlaceholderContainer } from 'react-native-loading-placeholder';
 import LinearGradient from 'react-native-linear-gradient';
+
+import BarIndicator from './BarIndicator/BarIndicator';
 
 import styles from './Styles';
 import * as consts from './Constants';
-
-const Wrapper = Animatable.createAnimatableComponent(View);
 
 class PostLoadIndicator extends Component {
 
@@ -24,37 +24,23 @@ class PostLoadIndicator extends Component {
   }
 
   render() {
+    const { multiple, ...restProps } = this.props;
     const { height } = Dimensions.get('window');
     let context = [];
 
-    for (let i = 0; i < height - consts.EST_FOOTER_HEIGHT - consts.EST_HEADER_HEIGHT; i += consts.LOADER_GROUP_HEIGHT) {
+    if (multiple) {
+      for (let i = 0; i < height - consts.EST_FOOTER_HEIGHT - consts.EST_HEADER_HEIGHT; i += consts.LOADER_GROUP_HEIGHT) {
+        context.push(
+          <BarIndicator
+            key={i}
+            delay={(i / consts.LOADER_GROUP_HEIGHT + 1) * consts.DELAY_BASE}
+            {...restProps}
+          />
+        );
+      }
+    } else {
       context.push(
-        <Wrapper
-          key={i}
-          style={styles.placeholderGroup}
-          animation='fadeIn'
-          duration={250}
-          delay={(i / consts.LOADER_GROUP_HEIGHT + 1) * consts.FADE_IN_DURATION}
-        >
-          <Placeholder
-            style={[styles.placeholder, styles.placeholderShort]}
-          />
-          <Placeholder
-            style={[styles.placeholder, styles.placeholderLong]}
-          />
-          <Placeholder
-            style={[styles.placeholder, styles.placeholderLong]}
-          />
-        </Wrapper>
-      );
-      context.push(
-        <Wrapper
-          key={`${i}s`}
-          style={styles.hr}
-          animation='fadeIn'
-          duration={250}
-          delay={(i / consts.LOADER_GROUP_HEIGHT + 1) * consts.FADE_IN_DURATION}
-        />
+        <BarIndicator key={0} {...restProps} />
       );
     }
 
@@ -70,6 +56,10 @@ class PostLoadIndicator extends Component {
       </Content>
     );
   }
+}
+
+PostLoadIndicator.propTypes = {
+  multiple: PropTypes.bool
 }
 
 export default PostLoadIndicator;

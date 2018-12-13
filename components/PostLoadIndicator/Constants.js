@@ -2,7 +2,9 @@ import { placeholder } from 'hkufui/theme/palette';
 
 export const LOADER_GROUP_HEIGHT = 80;
 
-export const FADE_IN_DURATION = 40;
+export { FADE_IN_DURATION } from '../PostScrollable/Constants';
+
+export const DELAY_BASE = 40;
 
 export const EST_HEADER_HEIGHT = 65;
 

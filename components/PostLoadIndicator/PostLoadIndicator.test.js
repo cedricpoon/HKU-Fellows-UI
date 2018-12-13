@@ -9,4 +9,11 @@ describe('Testing PostLoadIndicator Component', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('renders as expected in multiple', () => {
+    const wrapper = shallow(
+      <PostLoadIndicator multiple />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });

@@ -4,9 +4,10 @@ import { Container } from 'native-base';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import { PreviewFooter, PreviewHeader } from 'hkufui/components';
+import { PreviewFooter, PreviewHeader, PostLoadIndicator } from 'hkufui/components';
 import PostPreviewLoader from './PostPreviewLoader/PostPreviewLoader'
 
+import { BLAND, EXPANDING, HALT } from 'hkufui/src/constants/expandStatus';
 import { fetchPostsSafe } from './PostPreviewLoader/loadPosts';
 import { fetchExpansion } from './expandPosts';
 
@@ -23,6 +24,7 @@ export class Preview extends Component {
     this._loadMore = this._loadMore.bind(this);
     this._scrollInit = this._scrollInit.bind(this);
     this._scrollableUnmount = this._scrollableUnmount.bind(this);
+    this._renderListFooter = this._renderListFooter.bind(this)
   }
 
   _refresh() {
@@ -43,6 +45,28 @@ export class Preview extends Component {
     this.setState({ isReady: false });
   }
 
+  _renderRefreshControl() {
+    return(
+      <RefreshControl
+        refreshing={false}
+        onRefresh={this._refresh}
+        tintColor={circularTint}
+      />
+    );
+  }
+
+  _renderListFooter() {
+    const { expandStatus } = this.props;
+
+    if (expandStatus === EXPANDING) {
+      return (
+        <PostLoadIndicator stalled />
+      );
+    }
+
+    return null;
+  }
+
   render() {
     const { location } = this.props;
 
@@ -54,13 +78,8 @@ export class Preview extends Component {
           onScroll={this._scrollInit}
           onUnmount={this._scrollableUnmount}
           onEndReachedThreshold={SCROLLABLE_END_REACH_THRESHOLD}
-          refreshControl={
-            <RefreshControl
-              refreshing={false}
-              onRefresh={this._refresh}
-              tintColor={circularTint}
-            />
-          }
+          refreshControl={this._renderRefreshControl()}
+          ListFooterComponent={this._renderListFooter}
         />
         <PreviewFooter
           muted={location === ''}
@@ -78,11 +97,13 @@ Preview.defaultProps = {
 Preview.propTypes = {
   location: PropTypes.string,
   onLoadPost: PropTypes.func.isRequired,
-  onLoadMore: PropTypes.func.isRequired
+  onLoadMore: PropTypes.func.isRequired,
+  expandStatus: PropTypes.oneOf([ BLAND, EXPANDING, HALT ]).isRequired
 }
 
 const mapStateToProps = state => ({
-  location: state.location.courseTitle
+  location: state.location.courseTitle,
+  expandStatus: state.posts.subStatus
 });
 
 const mapDispatchToProps = dispatch => ({

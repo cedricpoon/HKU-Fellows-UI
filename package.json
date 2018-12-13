@@ -19,6 +19,7 @@
     "react-native-loading-placeholder": "0.0.6",
     "react-navigation": "^2.18.3",
     "react-redux": "^5.1.1",
+    "reduce-reducers": "^0.4.3",
     "redux": "^4.0.1",
     "redux-persist": "^5.10.0",
     "redux-thunk": "^2.3.0",

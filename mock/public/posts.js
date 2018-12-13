@@ -1,6 +1,11 @@
-[
+const id = function () {
+  // From gordonbrander, https://gist.github.com/gordonbrander/2230317
+  return '_' + Math.random().toString(36).substr(2, 9);
+};
+
+export default () => [
   {
-    "id": "0",
+    "id": id(),
     "native": true,
     "solved": true,
     "primaryHashtag": "hashtag1",
@@ -12,7 +17,7 @@
     "subTitle": "Subtitle to be shown"
   },
   {
-    "id": "1",
+    "id": id(),
     "native": false,
     "viewed": true,
     "timestamp": "2018-11-03 21:56:00",
@@ -20,7 +25,7 @@
     "title": "Topic from Moodle"
   },
   {
-    "id": "2",
+    "id": id(),
     "native": true,
     "solved": true,
     "viewed": true,
@@ -32,7 +37,7 @@
     "subTitle": "Proin imperdiet arcu sed velit tincidunt, eu aliquet nunc volutpat. Vivamus bibendum turpis nisi, non porta lorem aliquet aliquet."
   },
   {
-    "id": "3",
+    "id": id(),
     "native": true,
     "solved": false,
     "viewed": true,
@@ -45,7 +50,7 @@
     "subTitle": "Subtitle to be shown"
   },
   {
-    "id": "4",
+    "id": id(),
     "native": true,
     "solved": false,
     "viewed": true,
@@ -58,7 +63,7 @@
     "subTitle": "Subtitle to be shown"
   },
   {
-    "id": "5",
+    "id": id(),
     "native": true,
     "solved": false,
     "primaryHashtag": "hashtag1",
@@ -70,7 +75,7 @@
     "subTitle": "Subtitle to be shown"
   },
   {
-    "id": "6",
+    "id": id(),
     "native": true,
     "solved": false,
     "primaryHashtag": "hashtag1",
@@ -82,7 +87,7 @@
     "subTitle": "Subtitle to be shown"
   },
   {
-    "id": "7",
+    "id": id(),
     "native": true,
     "solved": false,
     "primaryHashtag": "hashtag1",
@@ -94,7 +99,7 @@
     "subTitle": "Subtitle to be shown"
   },
   {
-    "id": "8",
+    "id": id(),
     "native": true,
     "solved": false,
     "viewed": true,
@@ -107,7 +112,7 @@
     "subTitle": "Subtitle to be shown"
   },
   {
-    "id": "9",
+    "id": id(),
     "native": true,
     "solved": false,
     "primaryHashtag": "hashtag1",

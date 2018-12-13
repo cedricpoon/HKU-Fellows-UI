@@ -1,4 +1,5 @@
 import { STILL } from 'hkufui/src/constants/loadStatus';
+import { BLAND } from 'hkufui/src/constants/expandStatus';
 
 export default {
   location: {
@@ -13,6 +14,8 @@ export default {
     /* refer to mock/../posts */
     posts: [],
     /* OK, FAIL, LOADING, STILL */
-    status: STILL
+    status: STILL,
+    /* BLAND, EXPANDING */
+    subStatus: BLAND
   }
 }

@@ -7,3 +7,9 @@ export const LOAD_POSTS = "LOAD_POSTS";
 export const FILL_POSTS = "FILL_POSTS";
 
 export const LOAD_POSTS_FAILED = "LOAD_POSTS_FAILED";
+
+export const EXPANDING_POSTS = "EXPANDING_POSTS";
+
+export const EXPANDED_POSTS = "EXPANDED_POSTS";
+
+export const LAST_POST = "LAST_POST";

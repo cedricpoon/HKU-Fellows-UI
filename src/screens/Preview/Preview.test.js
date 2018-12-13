@@ -4,7 +4,8 @@ import { Preview } from './Preview';
 
 describe('Testing Preview Screen', () => {
   const defaultProps = {
-    onLoadPost: () => {}
+    onLoadPost: () => {},
+    onLoadMore: () => {}
   };
 
   it('renders as expected', () => {

@@ -5,7 +5,7 @@ import * as Animatable from 'react-native-animatable';
 
 import styles from './Styles';
 import peerStyles from '../PostPreview/Styles';
-import { FADE_IN_DURATION } from '../PostScrollable';
+import { FADE_IN_DURATION } from '../Constants';
 
 const Body = Animatable.createAnimatableComponent(NBBody);
 

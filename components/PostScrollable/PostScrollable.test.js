@@ -9,4 +9,11 @@ describe('Testing PostScrollable Component', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('renders as expected with onUnmount event', () => {
+    const wrapper = shallow(
+      <PostScrollable posts={[]} onUnmount={() => {}} />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });

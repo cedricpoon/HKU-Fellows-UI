@@ -15,3 +15,10 @@ export const logo = {
 };
 
 export const seperator = '#eee';
+
+export const circularTint = '#ddd';
+
+export const placeholder = {
+  lighter: '#eee',
+  darker: '#ddd'
+}

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from "prop-types";
 import { ListItem, Left, Body, Right, Text, View, Icon } from 'native-base';
 import timeago from 'timeago.js';
@@ -9,7 +9,7 @@ import styles from './Styles';
 
 const locale = localize({ language: 'en', country: 'hk' });
 
-class PostPreview extends Component {
+class PostPreview extends PureComponent {
 
   render() {
     const {
@@ -53,10 +53,14 @@ class PostPreview extends Component {
               <Text style={[styles.subText, styles.last, temperature > hot && styles.active]}>{native ? temperature : 0}</Text>
             </Right>
           </View>
-          <Text style={styles.mainText} numberOfLines={2}>{title}</Text>
-          {subTitle && (
-            <Text style={styles.subTitle} note numberOfLines={1}>{subTitle}</Text>
-          )}
+          <Text style={styles.mainText} numberOfLines={1}>{title}</Text>
+          <Text
+            style={subTitle ? styles.subTitle : styles.noSubtitle}
+            note
+            numberOfLines={1}
+          >
+            {subTitle ? subTitle : locale['post.noSubtitle']}
+          </Text>
         </Body>
       </ListItem>
     );

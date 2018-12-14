@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from "prop-types";
 import * as Animatable from 'react-native-animatable';
 import { FlatList as RNFlatList } from 'react-native';
@@ -8,7 +8,7 @@ import * as consts from './Constants';
 
 const FlatList = Animatable.createAnimatableComponent(RNFlatList);
 
-class PostScrollable extends Component {
+class PostScrollable extends PureComponent {
 
   _renderPost({item}) {
     return (

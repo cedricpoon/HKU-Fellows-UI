@@ -12,7 +12,7 @@ import { fetchPostsSafe } from './PostPreviewLoader/loadPosts';
 import { fetchExpansion } from './expandPosts';
 
 import { circularTint } from 'hkufui/theme/palette';
-import { SCROLLABLE_END_REACH_THRESHOLD } from './Constants';
+import { SCROLLABLE_END_REACH_THRESHOLD, ITEM_HEIGHT } from './Constants';
 
 export class Preview extends Component {
   constructor(props) {
@@ -80,6 +80,10 @@ export class Preview extends Component {
           onEndReachedThreshold={SCROLLABLE_END_REACH_THRESHOLD}
           refreshControl={this._renderRefreshControl()}
           ListFooterComponent={this._renderListFooter}
+          removeClippedSubviews={true}
+          getItemLayout={(data, index) => (
+            {length: ITEM_HEIGHT, offset: ITEM_HEIGHT * index, index}
+          )}
         />
         <PreviewFooter
           muted={location === ''}

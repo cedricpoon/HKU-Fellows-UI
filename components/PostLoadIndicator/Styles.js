@@ -6,7 +6,7 @@ export default StyleSheet.create({
   placeholderGroup: {
     marginLeft: gridBase * 7,
     marginTop: gridBase,
-    marginBottom: gridBase * 2,
+    marginBottom: gridBase * 2 + 1.5 /* 1.5 as complement to actual 82.5 height */,
     marginRight: gridBase * 4
   },
   placeholder: {

@@ -36,7 +36,7 @@ export class Preview extends Component {
   }
 
   _loadMore() {
-    if (this.state.isReady) {
+    if (this.state.isReady && this.props.expandStatus !== HALT) {
       this.props.onLoadMore();
     }
   }
@@ -62,6 +62,9 @@ export class Preview extends Component {
       return (
         <PostLoadIndicator stalled />
       );
+    } else if (expandStatus === HALT) {
+      /* no more post footer */
+      return null;
     }
 
     return null;
@@ -74,10 +77,10 @@ export class Preview extends Component {
       <Container>
         <PreviewHeader location={location} />
         <PostPreviewLoader
-          onEndReached={this._loadMore}
           onScroll={this._scrollInit}
           onUnmount={this._scrollableUnmount}
           onEndReachedThreshold={SCROLLABLE_END_REACH_THRESHOLD}
+          onEndReached={this._loadMore}
           refreshControl={this._renderRefreshControl()}
           ListFooterComponent={this._renderListFooter}
           removeClippedSubviews={true}

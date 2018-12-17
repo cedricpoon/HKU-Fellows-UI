@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { RefreshControl } from 'react-native';
-import { Container } from 'native-base';
+import { Container, Text } from 'native-base';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
@@ -10,9 +10,13 @@ import PostPreviewLoader from './PostPreviewLoader/PostPreviewLoader'
 import { BLAND, EXPANDING, HALT } from 'hkufui/src/constants/expandStatus';
 import { fetchPostsSafe } from './PostPreviewLoader/loadPosts';
 import { fetchExpansion } from './expandPosts';
+import styles from './Styles';
 
 import { circularTint } from 'hkufui/theme/palette';
+import { localize } from 'hkufui/locale';
 import { SCROLLABLE_END_REACH_THRESHOLD, ITEM_HEIGHT } from './Constants';
+
+const locale = localize({ language: 'en', country: 'hk' });
 
 export class Preview extends Component {
   constructor(props) {
@@ -36,7 +40,7 @@ export class Preview extends Component {
   }
 
   _loadMore() {
-    if (this.state.isReady && this.props.expandStatus !== HALT) {
+    if (this.state.isReady && this.props.expandStatus === BLAND) {
       this.props.onLoadMore();
     }
   }
@@ -59,15 +63,14 @@ export class Preview extends Component {
     const { expandStatus } = this.props;
 
     if (expandStatus === EXPANDING) {
-      return (
-        <PostLoadIndicator stalled />
-      );
-    } else if (expandStatus === HALT) {
-      /* no more post footer */
-      return null;
+      return (<PostLoadIndicator stalled />);
     }
-
-    return null;
+    /* no more post footer */
+    return (
+      <Text note style={styles.copyright}>
+        {locale['post.copyright']}
+      </Text>
+    );
   }
 
   render() {

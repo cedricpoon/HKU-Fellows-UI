@@ -19,8 +19,8 @@ export function fetchPostsSafe(callforth) {
 
 export function fetchPosts() {
   const latency = Math.floor(Math.random() * 5 + 1) * 200;
-  const failed = Math.floor(Math.random() * 50 + 1) === 50;
-  const empty = Math.floor(Math.random() * 50 + 1) === 50;
+  const failed = Math.floor(Math.random() * 50 + 1) === 1;
+  const empty = Math.floor(Math.random() * 20 + 1) === 1;
 
   return (dispatch) => {
     dispatch(onLoad());

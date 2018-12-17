@@ -6,7 +6,7 @@ import getPosts from 'hkufui/mock/public/posts';
 
 export function fetchExpansion() {
   const latency = Math.floor(Math.random() * 5 + 1) * 200;
-  const last = true;
+  const last = Math.floor(Math.random() * 10 + 1) === 1;
 
   return (dispatch, getState) => {
     dispatch(onExpanding());

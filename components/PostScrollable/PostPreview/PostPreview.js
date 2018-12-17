@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from "prop-types";
 import { ListItem, Left, Body, Right, Text, View, Icon } from 'native-base';
-import timeago from 'timeago.js';
+import { format } from 'timeago.js';
 
 import { localize } from 'hkufui/locale';
 import { hotPost as hot } from 'hkufui/config';
@@ -46,7 +46,7 @@ class PostPreview extends PureComponent {
             </Text>
             <Right style={[styles.right, styles.infoBar]}>
               <Icon style={[styles.subText, styles.note]} name="md-time" />
-              <Text note style={styles.subText}>{timeago().format(timestamp)}</Text>
+              <Text note style={styles.subText}>{format(timestamp)}</Text>
               <Icon style={[styles.subText, styles.note]} type="Entypo" name="chat" />
               <Text note style={styles.subText}>{replyNo}</Text>
               <Icon style={[styles.subText, temperature > hot && styles.active]} name="ios-flame" />

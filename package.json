@@ -5,7 +5,9 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "ios": "react-native run-ios",
-    "iPhone8": "react-native run-ios --simulator 'iPhone 8'",
+    "ios-small": "react-native run-ios --simulator 'iPhone 4s'",
+    "ios-medium": "react-native run-ios --simulator 'iPhone 8'",
+    "ios-large": "react-native run-ios --simulator 'iPhone XS Max'",
     "test": "jest && npm run lint",
     "lint": "eslint .",
     "updateSnapshot": "jest --updateSnapshot"
@@ -19,10 +21,11 @@
     "react-native-loading-placeholder": "0.0.6",
     "react-navigation": "^2.18.3",
     "react-redux": "^5.1.1",
+    "reduce-reducers": "^0.4.3",
     "redux": "^4.0.1",
     "redux-persist": "^5.10.0",
     "redux-thunk": "^2.3.0",
-    "timeago.js": "^4.0.0-beta.1"
+    "timeago.js": "^4.0.0-beta.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",

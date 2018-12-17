@@ -1,7 +1,8 @@
 import { FILL_POSTS, LOAD_POSTS, LOAD_POSTS_FAILED } from "hkufui/src/constants/actionTypes";
 import * as status from 'hkufui/src/constants/loadStatus';
+import { BLAND } from 'hkufui/src/constants/expandStatus';
 
-import postList from 'hkufui/mock/public/posts';
+import getPosts from 'hkufui/mock/public/posts';
 
 export function fetchPostsSafe(callforth) {
   return (dispatch, getState) => {
@@ -18,8 +19,8 @@ export function fetchPostsSafe(callforth) {
 
 export function fetchPosts() {
   const latency = Math.floor(Math.random() * 5 + 1) * 200;
-  const failed = Math.floor(Math.random() * 50 + 1) === 50;
-  const empty = Math.floor(Math.random() * 50 + 1) === 50;
+  const failed = Math.floor(Math.random() * 50 + 1) === 1;
+  const empty = Math.floor(Math.random() * 20 + 1) === 1;
 
   return (dispatch) => {
     dispatch(onLoad());
@@ -27,7 +28,7 @@ export function fetchPosts() {
     // mocking of fetch from WebAPI
     setTimeout(() => {
       if (!failed)
-        dispatch(onFill(empty ? [] : postList));
+        dispatch(onFill(empty ? [] : getPosts()));
       else
         dispatch(onFail());
     }, latency);
@@ -61,6 +62,7 @@ const handleLoadPosts = (state = {}, action = {}) => {
       return {
         ...state,
         status: status.LOADING,
+        subStatus: BLAND,
         posts: []
       }
     case LOAD_POSTS_FAILED:

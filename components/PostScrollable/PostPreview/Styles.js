@@ -34,6 +34,9 @@ export default StyleSheet.create({
   subTitle: {
     color: logo.black
   },
+  noSubtitle: {
+    color: 'lightgrey'
+  },
   viewed: {
     color: 'lightgrey'
   },

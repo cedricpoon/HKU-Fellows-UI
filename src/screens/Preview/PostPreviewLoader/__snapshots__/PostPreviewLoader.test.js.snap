@@ -176,7 +176,9 @@ ShallowWrapper {
     "instance": null,
     "key": undefined,
     "nodeType": "class",
-    "props": Object {},
+    "props": Object {
+      "multiple": true,
+    },
     "ref": null,
     "rendered": null,
     "type": [Function],
@@ -186,7 +188,9 @@ ShallowWrapper {
       "instance": null,
       "key": undefined,
       "nodeType": "class",
-      "props": Object {},
+      "props": Object {
+        "multiple": true,
+      },
       "ref": null,
       "rendered": null,
       "type": [Function],

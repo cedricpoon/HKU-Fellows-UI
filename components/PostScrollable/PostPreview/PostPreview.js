@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from "prop-types";
 import { ListItem, Left, Body, Right, Text, View, Icon } from 'native-base';
-import timeago from 'timeago.js';
+import { format } from 'timeago.js';
 
 import { localize } from 'hkufui/locale';
 import { hotPost as hot } from 'hkufui/config';
@@ -9,7 +9,7 @@ import styles from './Styles';
 
 const locale = localize({ language: 'en', country: 'hk' });
 
-class PostPreview extends Component {
+class PostPreview extends PureComponent {
 
   render() {
     const {
@@ -46,17 +46,21 @@ class PostPreview extends Component {
             </Text>
             <Right style={[styles.right, styles.infoBar]}>
               <Icon style={[styles.subText, styles.note]} name="md-time" />
-              <Text note style={styles.subText}>{timeago().format(timestamp)}</Text>
+              <Text note style={styles.subText}>{format(timestamp)}</Text>
               <Icon style={[styles.subText, styles.note]} type="Entypo" name="chat" />
               <Text note style={styles.subText}>{replyNo}</Text>
               <Icon style={[styles.subText, temperature > hot && styles.active]} name="ios-flame" />
               <Text style={[styles.subText, styles.last, temperature > hot && styles.active]}>{native ? temperature : 0}</Text>
             </Right>
           </View>
-          <Text style={styles.mainText} numberOfLines={2}>{title}</Text>
-          {subTitle && (
-            <Text style={styles.subTitle} note numberOfLines={1}>{subTitle}</Text>
-          )}
+          <Text style={styles.mainText} numberOfLines={1}>{title}</Text>
+          <Text
+            style={subTitle ? styles.subTitle : styles.noSubtitle}
+            note
+            numberOfLines={1}
+          >
+            {subTitle ? subTitle : locale['post.noSubtitle']}
+          </Text>
         </Body>
       </ListItem>
     );

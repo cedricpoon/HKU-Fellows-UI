@@ -1,13 +1,14 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from "prop-types";
 import * as Animatable from 'react-native-animatable';
 import { FlatList as RNFlatList } from 'react-native';
 
 import Post from './PostPreview/PostPreview';
+import * as consts from './Constants';
 
 const FlatList = Animatable.createAnimatableComponent(RNFlatList);
 
-class PostScrollable extends Component {
+class PostScrollable extends PureComponent {
 
   _renderPost({item}) {
     return (
@@ -16,6 +17,12 @@ class PostScrollable extends Component {
         {...item}
       />
     );
+  }
+
+  componentWillUnmount() {
+    if (this.props.onUnmount) {
+      this.props.onUnmount();
+    }
   }
 
   render() {
@@ -28,7 +35,7 @@ class PostScrollable extends Component {
           keyExtractor={item => item.id}
           renderItem={this._renderPost}
           animation='fadeIn'
-          duration={FADE_IN_DURATION}
+          duration={consts.FADE_IN_DURATION}
           {...restProps}
         />
       );
@@ -39,9 +46,8 @@ class PostScrollable extends Component {
 }
 
 PostScrollable.propTypes = {
-  posts: PropTypes.array.isRequired
+  posts: PropTypes.array.isRequired,
+  onUnmount: PropTypes.func
 };
-
-export const FADE_IN_DURATION = 250;
 
 export default PostScrollable;

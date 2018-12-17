@@ -5,9 +5,11 @@ export default {
   'post.noPostButton': 'Compose',
   'post.noCourseTitle': 'Welcome to HKU Fellows',
   'post.noCourseContent': 'Enjoy your peer learning journey with us',
+  'post.noSubtitle': '- No Subtitle -',
   'post.loadErrorTitle': 'Load Failure',
   'post.loadErrorContent': 'Oops! We hope a page refresh helps',
   'post.loadErrorButton': 'Refresh',
+  'post.copyright': '© 2018 HKU Fellows. All Rights Reserved.',
 
   'footer.moodle': 'From Moodle',
   'footer.latestPost': 'Latest Post',

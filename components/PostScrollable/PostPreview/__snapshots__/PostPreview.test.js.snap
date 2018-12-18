@@ -4,6 +4,7 @@ exports[`Testing PostPreview Component renders as expected with required props 1
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PostPreview
+    id="id"
     native={true}
     replyNo={0}
     timestamp=""
@@ -192,6 +193,7 @@ ShallowWrapper {
           </Styled(Text)>
         </Styled(Body)>,
       ],
+      "onPress": [Function],
       "style": Object {
         "marginLeft": 0,
       },
@@ -1004,6 +1006,7 @@ ShallowWrapper {
             </Styled(Text)>
           </Styled(Body)>,
         ],
+        "onPress": [Function],
         "style": Object {
           "marginLeft": 0,
         },
@@ -1665,6 +1668,7 @@ exports[`Testing PostPreview Component renders as expected with required props a
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PostPreview
+    id="id"
     native={true}
     primaryHashtag=""
     replyNo={0}
@@ -1855,6 +1859,7 @@ ShallowWrapper {
           </Styled(Text)>
         </Styled(Body)>,
       ],
+      "onPress": [Function],
       "style": Object {
         "marginLeft": 0,
       },
@@ -2667,6 +2672,7 @@ ShallowWrapper {
             </Styled(Text)>
           </Styled(Body)>,
         ],
+        "onPress": [Function],
         "style": Object {
           "marginLeft": 0,
         },
@@ -3328,6 +3334,7 @@ exports[`Testing PostPreview Component renders as expected with required props a
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PostPreview
+    id="id"
     native={true}
     replyNo={0}
     solved={true}
@@ -3534,6 +3541,7 @@ ShallowWrapper {
           </Styled(Text)>
         </Styled(Body)>,
       ],
+      "onPress": [Function],
       "style": Object {
         "marginLeft": 0,
       },
@@ -4400,6 +4408,7 @@ ShallowWrapper {
             </Styled(Text)>
           </Styled(Body)>,
         ],
+        "onPress": [Function],
         "style": Object {
           "marginLeft": 0,
         },
@@ -5098,6 +5107,7 @@ exports[`Testing PostPreview Component renders as expected with required props a
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PostPreview
+    id="id"
     native={true}
     replyNo={0}
     subTitle=""
@@ -5287,6 +5297,7 @@ ShallowWrapper {
           </Styled(Text)>
         </Styled(Body)>,
       ],
+      "onPress": [Function],
       "style": Object {
         "marginLeft": 0,
       },
@@ -6099,6 +6110,7 @@ ShallowWrapper {
             </Styled(Text)>
           </Styled(Body)>,
         ],
+        "onPress": [Function],
         "style": Object {
           "marginLeft": 0,
         },
@@ -6760,6 +6772,7 @@ exports[`Testing PostPreview Component renders as expected with required props a
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PostPreview
+    id="id"
     native={true}
     replyNo={0}
     temperature={0}
@@ -6951,6 +6964,7 @@ ShallowWrapper {
           </Styled(Text)>
         </Styled(Body)>,
       ],
+      "onPress": [Function],
       "style": Object {
         "marginLeft": 0,
       },
@@ -7771,6 +7785,7 @@ ShallowWrapper {
             </Styled(Text)>
           </Styled(Body)>,
         ],
+        "onPress": [Function],
         "style": Object {
           "marginLeft": 0,
         },
@@ -8438,6 +8453,7 @@ exports[`Testing PostPreview Component renders as expected with required props a
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PostPreview
+    id="id"
     native={true}
     replyNo={0}
     timestamp=""
@@ -8644,6 +8660,7 @@ ShallowWrapper {
           </Styled(Text)>
         </Styled(Body)>,
       ],
+      "onPress": [Function],
       "style": Object {
         "marginLeft": 0,
       },
@@ -9510,6 +9527,7 @@ ShallowWrapper {
             </Styled(Text)>
           </Styled(Body)>,
         ],
+        "onPress": [Function],
         "style": Object {
           "marginLeft": 0,
         },

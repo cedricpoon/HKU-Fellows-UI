@@ -23,7 +23,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <withNavigation(PreviewHeader)
+        <PreviewHeader
           location=""
         />,
         <Connect(PostPreviewLoader)
@@ -42,7 +42,7 @@ ShallowWrapper {
           }
           removeClippedSubviews={true}
         />,
-        <withNavigation(PreviewFooter)
+        <PreviewFooter
           muted={true}
           onRefresh={[Function]}
         />,
@@ -106,7 +106,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <withNavigation(PreviewHeader)
+          <PreviewHeader
             location=""
           />,
           <Connect(PostPreviewLoader)
@@ -125,7 +125,7 @@ ShallowWrapper {
             }
             removeClippedSubviews={true}
           />,
-          <withNavigation(PreviewFooter)
+          <PreviewFooter
             muted={true}
             onRefresh={[Function]}
           />,
@@ -226,7 +226,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <withNavigation(PreviewHeader)
+        <PreviewHeader
           location=""
         />,
         <Connect(PostPreviewLoader)
@@ -245,7 +245,7 @@ ShallowWrapper {
           }
           removeClippedSubviews={true}
         />,
-        <withNavigation(PreviewFooter)
+        <PreviewFooter
           muted={true}
           onRefresh={[Function]}
         />,
@@ -309,7 +309,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <withNavigation(PreviewHeader)
+          <PreviewHeader
             location=""
           />,
           <Connect(PostPreviewLoader)
@@ -328,7 +328,7 @@ ShallowWrapper {
             }
             removeClippedSubviews={true}
           />,
-          <withNavigation(PreviewFooter)
+          <PreviewFooter
             muted={true}
             onRefresh={[Function]}
           />,
@@ -429,7 +429,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <withNavigation(PreviewHeader)
+        <PreviewHeader
           location=""
         />,
         <Connect(PostPreviewLoader)
@@ -448,7 +448,7 @@ ShallowWrapper {
           }
           removeClippedSubviews={true}
         />,
-        <withNavigation(PreviewFooter)
+        <PreviewFooter
           muted={true}
           onRefresh={[Function]}
         />,
@@ -512,7 +512,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <withNavigation(PreviewHeader)
+          <PreviewHeader
             location=""
           />,
           <Connect(PostPreviewLoader)
@@ -531,7 +531,7 @@ ShallowWrapper {
             }
             removeClippedSubviews={true}
           />,
-          <withNavigation(PreviewFooter)
+          <PreviewFooter
             muted={true}
             onRefresh={[Function]}
           />,

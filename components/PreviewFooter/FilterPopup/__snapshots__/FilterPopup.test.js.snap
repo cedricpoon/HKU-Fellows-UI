@@ -7,7 +7,7 @@ ShallowWrapper {
     position={0}
     toggle={[Function]}
   >
-    <Component />
+    <View />
   </FilterPopup>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

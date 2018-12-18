@@ -7,7 +7,7 @@ ShallowWrapper {
     position={0}
     toggle={[Function]}
   >
-    <Component />
+    <View />
   </PopupMenu>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -26,7 +26,7 @@ ShallowWrapper {
         <TouchableWithoutFeedback
           onPress={[Function]}
         >
-          <Component
+          <View
             style={
               Array [
                 Object {
@@ -43,7 +43,7 @@ ShallowWrapper {
             }
           />
         </TouchableWithoutFeedback>,
-        <withAnimatable(Component)
+        <withAnimatable(View)
           animation="zoomIn"
           delay={0}
           direction="normal"
@@ -80,8 +80,8 @@ ShallowWrapper {
           }
           useNativeDriver={false}
         >
-          <Component />
-        </withAnimatable(Component)>,
+          <View />
+        </withAnimatable(View)>,
       ],
       "style": Object {
         "zIndex": 2,
@@ -94,7 +94,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <Component
+          "children": <View
             style={
               Array [
                 Object {
@@ -143,7 +143,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "animation": "zoomIn",
-          "children": <Component />,
+          "children": <View />,
           "delay": 0,
           "direction": "normal",
           "duration": 100,
@@ -204,7 +204,7 @@ ShallowWrapper {
           <TouchableWithoutFeedback
             onPress={[Function]}
           >
-            <Component
+            <View
               style={
                 Array [
                   Object {
@@ -221,7 +221,7 @@ ShallowWrapper {
               }
             />
           </TouchableWithoutFeedback>,
-          <withAnimatable(Component)
+          <withAnimatable(View)
             animation="zoomIn"
             delay={0}
             direction="normal"
@@ -258,8 +258,8 @@ ShallowWrapper {
             }
             useNativeDriver={false}
           >
-            <Component />
-          </withAnimatable(Component)>,
+            <View />
+          </withAnimatable(View)>,
         ],
         "style": Object {
           "zIndex": 2,
@@ -272,7 +272,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <Component
+            "children": <View
               style={
                 Array [
                   Object {
@@ -321,7 +321,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "animation": "zoomIn",
-            "children": <Component />,
+            "children": <View />,
             "delay": 0,
             "direction": "normal",
             "duration": 100,
@@ -401,7 +401,7 @@ ShallowWrapper {
     position={0}
     toggle={[Function]}
   >
-    <Component />
+    <View />
   </PopupMenu>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -420,7 +420,7 @@ ShallowWrapper {
         <TouchableWithoutFeedback
           onPress={[Function]}
         >
-          <Component
+          <View
             style={
               Array [
                 Object {
@@ -437,7 +437,7 @@ ShallowWrapper {
             }
           />
         </TouchableWithoutFeedback>,
-        <withAnimatable(Component)
+        <withAnimatable(View)
           animation="zoomIn"
           delay={0}
           direction="normal"
@@ -474,8 +474,8 @@ ShallowWrapper {
           }
           useNativeDriver={false}
         >
-          <Component />
-        </withAnimatable(Component)>,
+          <View />
+        </withAnimatable(View)>,
       ],
       "style": Object {
         "zIndex": 2,
@@ -488,7 +488,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <Component
+          "children": <View
             style={
               Array [
                 Object {
@@ -537,7 +537,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "animation": "zoomIn",
-          "children": <Component />,
+          "children": <View />,
           "delay": 0,
           "direction": "normal",
           "duration": 100,
@@ -598,7 +598,7 @@ ShallowWrapper {
           <TouchableWithoutFeedback
             onPress={[Function]}
           >
-            <Component
+            <View
               style={
                 Array [
                   Object {
@@ -615,7 +615,7 @@ ShallowWrapper {
               }
             />
           </TouchableWithoutFeedback>,
-          <withAnimatable(Component)
+          <withAnimatable(View)
             animation="zoomIn"
             delay={0}
             direction="normal"
@@ -652,8 +652,8 @@ ShallowWrapper {
             }
             useNativeDriver={false}
           >
-            <Component />
-          </withAnimatable(Component)>,
+            <View />
+          </withAnimatable(View)>,
         ],
         "style": Object {
           "zIndex": 2,
@@ -666,7 +666,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <Component
+            "children": <View
               style={
                 Array [
                   Object {
@@ -715,7 +715,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "animation": "zoomIn",
-            "children": <Component />,
+            "children": <View />,
             "delay": 0,
             "direction": "normal",
             "duration": 100,

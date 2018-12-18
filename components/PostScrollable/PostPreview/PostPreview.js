@@ -3,13 +3,22 @@ import PropTypes from "prop-types";
 import { ListItem, Left, Body, Right, Text, View, Icon } from 'native-base';
 import { format } from 'timeago.js';
 
+import NavigationService from 'hkufui/src/navigation/NavigationService';
 import { localize } from 'hkufui/locale';
-import { hotPost as hot } from 'hkufui/config';
+import { hotPostMinIndex as hot } from 'hkufui/config';
 import styles from './Styles';
 
 const locale = localize({ language: 'en', country: 'hk' });
 
 class PostPreview extends PureComponent {
+
+  _onPress() {
+    const { id } = this.props;
+    /* dive into post */
+    NavigationService.navigate('Post', {
+      postId: id
+    });
+  }
 
   render() {
     const {
@@ -26,7 +35,7 @@ class PostPreview extends PureComponent {
     } = this.props;
 
     return(
-      <ListItem avatar style={styles.noMarginLeft}>
+      <ListItem avatar style={styles.noMarginLeft} onPress={this._onPress.bind(this)}>
         <Left style={styles.badgeContainer}>
           {native && solved && (
             <Icon style={[styles.badge, styles.solved]} type="MaterialCommunityIcons" name="checkbox-marked-circle-outline" />
@@ -68,6 +77,7 @@ class PostPreview extends PureComponent {
 }
 
 PostPreview.propTypes = {
+  id: PropTypes.string.isRequired,
   native: PropTypes.bool.isRequired,
   solved: PropTypes.bool,
   viewed: PropTypes.bool,

@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from "prop-types";
 import { Header, Item, Input, Icon, Button, Right, Text } from 'native-base';
 import { Keyboard } from 'react-native';
-import { withNavigation } from 'react-navigation'
 
+import NavigationService from 'hkufui/src/navigation/NavigationService';
 import { displayName as appName } from 'hkufui/app.json';
 import { localize } from 'hkufui/locale';
 
@@ -51,7 +51,7 @@ class PreviewHeader extends Component {
             rounded
             style={styles.leftLabel}
             onPress={() => {
-              this.props.navigation.navigate('SelectCourse');
+              NavigationService.navigate('SelectCourse');
             }}
           >
             <Text style={styles.leftLabelText}>
@@ -96,4 +96,4 @@ PreviewHeader.propTypes = {
   location: PropTypes.string.isRequired
 };
 
-export default withNavigation(PreviewHeader);
+export default PreviewHeader;

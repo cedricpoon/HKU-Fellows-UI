@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Footer, FooterTab, Button, Icon } from 'native-base';
 import PropTypes from 'prop-types';
-import { withNavigation } from 'react-navigation';
 
+import NavigationService from 'hkufui/src/navigation/NavigationService';
 import FilterPopup from './FilterPopup/FilterPopup';
 import { mapLayoutToState } from 'hkufui/components/helper';
 import styles from './Styles';
@@ -69,7 +69,7 @@ class PreviewFooter extends Component {
             </Button>
           )}
           <Button
-            onPress={()=>{ this.props.navigation.navigate('SelectCourse') }}
+            onPress={()=>{ NavigationService.navigate('SelectCourse') }}
           >
             <Icon name="albums" />
           </Button>
@@ -84,4 +84,4 @@ PreviewFooter.propTypes = {
   onRefresh: PropTypes.func.isRequired
 }
 
-export default withNavigation(PreviewFooter);
+export default PreviewFooter;

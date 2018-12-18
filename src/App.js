@@ -1,26 +1,13 @@
 import getTheme from 'hkufui/native-base-theme/components';
 import React, { Component } from 'react';
 import { StyleProvider, Root } from 'native-base';
-import { createStackNavigator } from 'react-navigation';
 import { Provider as RXProvider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react'
 
-import { Landing } from 'hkufui/src/screens';
-import { store, persistor } from './store';
+import AppContainer from './navigation/AppContainer';
+import NavigationService from './navigation/NavigationService';
 
-const AppNav = createStackNavigator(
-  {
-    Landing: {
-      screen: Landing,
-      navigationOptions: {
-        header: null
-      }
-    }
-  },
-  {
-    initialRouteName: 'Landing'
-  }
-);
+import { store, persistor } from './store';
 
 export default class App extends Component {
   render() {
@@ -29,7 +16,11 @@ export default class App extends Component {
         <PersistGate loading={null} persistor={persistor}>
           <Root>
             <StyleProvider style={getTheme()}>
-              <AppNav />
+              <AppContainer
+                ref={navigatorRef => {
+                  NavigationService.setTopLevelNavigator(navigatorRef);
+                }}
+              />
             </StyleProvider>
           </Root>
         </PersistGate>

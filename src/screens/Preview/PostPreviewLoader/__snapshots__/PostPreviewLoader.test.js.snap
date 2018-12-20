@@ -244,7 +244,7 @@ ShallowWrapper {
       },
       "headline": "No Posts Yet",
       "icon": Object {
-        "name": "paper",
+        "name": "md-paper",
       },
       "subHeadline": "Feel free to raise the first post",
     },
@@ -263,7 +263,7 @@ ShallowWrapper {
         },
         "headline": "No Posts Yet",
         "icon": Object {
-          "name": "paper",
+          "name": "md-paper",
         },
         "subHeadline": "Feel free to raise the first post",
       },

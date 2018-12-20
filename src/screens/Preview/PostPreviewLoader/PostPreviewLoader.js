@@ -44,7 +44,7 @@ export class PostPreviewLoader extends Component {
         <PostPlaceholder
           headline={locale['post.noPostTitle']}
           subHeadline={locale['post.noPostContent']}
-          icon={{name: 'paper'}}
+          icon={{name: 'md-paper'}}
           button={{text: locale['post.noPostButton']}}
         />
       );

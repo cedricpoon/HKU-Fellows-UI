@@ -15,11 +15,11 @@ class FilterPopup extends Component {
       <PopupMenu { ...restProps } /* Proptypes handling on <PopupMenu /> */ >
         <Button full transparent info iconRight>
           <Text>{locale['footer.moodle']}</Text>
-          <Icon name="at"></Icon>
+          <Icon name="link" type="MaterialIcons"></Icon>
         </Button>
         <Button full transparent success iconRight>
           <Text>{locale['footer.latestPost']}</Text>
-          <Icon name="time"></Icon>
+          <Icon name="clock-fast" type="MaterialCommunityIcons"></Icon>
         </Button>
         <Button full transparent success iconRight>
           <Text>{locale['footer.mostReplied']}</Text>
@@ -27,7 +27,7 @@ class FilterPopup extends Component {
         </Button>
         <Button full transparent success iconRight>
           <Text>{locale['footer.popularity']}</Text>
-          <Icon name="people"></Icon>
+          <Icon name="people" type="MaterialIcons"></Icon>
         </Button>
       </PopupMenu>
     );

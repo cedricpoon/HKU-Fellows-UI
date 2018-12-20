@@ -82,7 +82,7 @@ class PreviewHeader extends Component {
               disabled={!inputFocused}
               onPress={this.searchCancel}
             >
-              <Icon name={inputFocused ? "close-circle" : inputIcon} style={styles.rightIcon} />
+              <Icon name={inputFocused ? "close-circle-outline" : inputIcon} style={styles.rightIcon} />
             </Button>
           </Right>
 

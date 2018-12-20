@@ -47,16 +47,16 @@ class PreviewFooter extends Component {
           onLayout={mapLayoutToState("footerLayout", this)}
         >
           <Button>
-            <Icon name="menu" />
+            <Icon name="menu" type="MaterialIcons" />
           </Button>
           {!muted && (
             <Button onPress={onRefresh}>
-              <Icon name="refresh" />
+              <Icon name="refresh" type="MaterialIcons" />
             </Button>
           )}
           {!muted && (
             <Button>
-              <Icon name="create" />
+              <Icon name="add" type="MaterialIcons" />
             </Button>
           )}
           {!muted && (
@@ -65,13 +65,13 @@ class PreviewFooter extends Component {
               onLongPress={this.filterToggle}
               onLayout={mapLayoutToState("filterLayout", this)}
             >
-              <Icon name="funnel"></Icon>
+              <Icon name="sort-descending" type="MaterialCommunityIcons"></Icon>
             </Button>
           )}
           <Button
             onPress={()=>{ NavigationService.navigate('SelectCourse') }}
           >
-            <Icon name="albums" />
+            <Icon name="library-books" type="MaterialIcons" />
           </Button>
         </FooterTab>
       </Footer>

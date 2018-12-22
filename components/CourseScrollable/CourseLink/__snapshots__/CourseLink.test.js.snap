@@ -3,7 +3,7 @@
 exports[`Testing CourseLink Component renders as expected in bottomMost with required props and onItemPress 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <withNavigation(CourseLink)
+  Symbol(enzyme.__unrendered__): <CourseLink
     bottomMost={true}
     description="None"
     onItemPress={[Function]}
@@ -20,59 +20,573 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "class",
     "props": Object {
-      "children": [Function],
-    },
-    "ref": null,
-    "rendered": [Function],
-    "type": Object {
-      "$$typeof": Symbol(react.context),
-      "_calculateChangedBits": null,
-      "_context": Object {
-        "$$typeof": Symbol(react.context),
-        "Consumer": [Circular],
-        "Provider": Object {
-          "$$typeof": Symbol(react.provider),
-          "_context": [Circular],
-        },
-        "_calculateChangedBits": null,
-        "_currentRenderer": null,
-        "_currentRenderer2": null,
-        "_currentValue": undefined,
-        "_currentValue2": undefined,
-        "_threadCount": 0,
+      "children": <Styled(ListItem)
+        onPress={[Function]}
+        style={
+          Array [
+            Object {
+              "paddingRight": 10,
+              "paddingVertical": 10,
+            },
+            false,
+          ]
+        }
+      >
+        <Styled(Left)
+          style={
+            Object {
+              "flex": 0,
+              "paddingRight": 5,
+            }
+          }
+        >
+          <Styled(Text)
+            numberOfLines={1}
+            style={
+              Object {
+                "fontSize": 15,
+              }
+            }
+          >
+            CourseLink
+          </Styled(Text)>
+        </Styled(Left)>
+        <Styled(Content)>
+          <Styled(Text)
+            numberOfLines={1}
+            style={
+              Array [
+                Object {
+                  "color": "#4E4A47",
+                  "fontSize": 15,
+                },
+              ]
+            }
+          >
+            None
+          </Styled(Text)>
+        </Styled(Content)>
+        <Styled(Right)
+          style={
+            Object {
+              "flex": 0.05,
+            }
+          }
+        >
+          <Styled(Icon)
+            name="arrow-forward"
+            style={
+              Array [
+                Object {
+                  "fontSize": 15,
+                },
+                Object {
+                  "color": "#4E4A47",
+                },
+              ]
+            }
+          />
+        </Styled(Right)>
+      </Styled(ListItem)>,
+      "style": Object {
+        "opacity": 0,
       },
     },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Styled(Left)
+            style={
+              Object {
+                "flex": 0,
+                "paddingRight": 5,
+              }
+            }
+          >
+            <Styled(Text)
+              numberOfLines={1}
+              style={
+                Object {
+                  "fontSize": 15,
+                }
+              }
+            >
+              CourseLink
+            </Styled(Text)>
+          </Styled(Left)>,
+          <Styled(Content)>
+            <Styled(Text)
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "color": "#4E4A47",
+                    "fontSize": 15,
+                  },
+                ]
+              }
+            >
+              None
+            </Styled(Text)>
+          </Styled(Content)>,
+          <Styled(Right)
+            style={
+              Object {
+                "flex": 0.05,
+              }
+            }
+          >
+            <Styled(Icon)
+              name="arrow-forward"
+              style={
+                Array [
+                  Object {
+                    "fontSize": 15,
+                  },
+                  Object {
+                    "color": "#4E4A47",
+                  },
+                ]
+              }
+            />
+          </Styled(Right)>,
+        ],
+        "onPress": [Function],
+        "style": Array [
+          Object {
+            "paddingRight": 10,
+            "paddingVertical": 10,
+          },
+          false,
+        ],
+        "virtual": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Styled(Text)
+              numberOfLines={1}
+              style={
+                Object {
+                  "fontSize": 15,
+                }
+              }
+            >
+              CourseLink
+            </Styled(Text)>,
+            "style": Object {
+              "flex": 0,
+              "paddingRight": 5,
+            },
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "CourseLink",
+              "numberOfLines": 1,
+              "style": Object {
+                "fontSize": 15,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": "CourseLink",
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Styled(Text)
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "color": "#4E4A47",
+                    "fontSize": 15,
+                  },
+                ]
+              }
+            >
+              None
+            </Styled(Text)>,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "None",
+              "numberOfLines": 1,
+              "style": Array [
+                Object {
+                  "color": "#4E4A47",
+                  "fontSize": 15,
+                },
+              ],
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": "None",
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Styled(Icon)
+              name="arrow-forward"
+              style={
+                Array [
+                  Object {
+                    "fontSize": 15,
+                  },
+                  Object {
+                    "color": "#4E4A47",
+                  },
+                ]
+              }
+            />,
+            "style": Object {
+              "flex": 0.05,
+            },
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "arrow-forward",
+              "style": Array [
+                Object {
+                  "fontSize": 15,
+                },
+                Object {
+                  "color": "#4E4A47",
+                },
+              ],
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "class",
       "props": Object {
-        "children": [Function],
-      },
-      "ref": null,
-      "rendered": [Function],
-      "type": Object {
-        "$$typeof": Symbol(react.context),
-        "_calculateChangedBits": null,
-        "_context": Object {
-          "$$typeof": Symbol(react.context),
-          "Consumer": [Circular],
-          "Provider": Object {
-            "$$typeof": Symbol(react.provider),
-            "_context": [Circular],
-          },
-          "_calculateChangedBits": null,
-          "_currentRenderer": null,
-          "_currentRenderer2": null,
-          "_currentValue": undefined,
-          "_currentValue2": undefined,
-          "_threadCount": 0,
+        "children": <Styled(ListItem)
+          onPress={[Function]}
+          style={
+            Array [
+              Object {
+                "paddingRight": 10,
+                "paddingVertical": 10,
+              },
+              false,
+            ]
+          }
+        >
+          <Styled(Left)
+            style={
+              Object {
+                "flex": 0,
+                "paddingRight": 5,
+              }
+            }
+          >
+            <Styled(Text)
+              numberOfLines={1}
+              style={
+                Object {
+                  "fontSize": 15,
+                }
+              }
+            >
+              CourseLink
+            </Styled(Text)>
+          </Styled(Left)>
+          <Styled(Content)>
+            <Styled(Text)
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "color": "#4E4A47",
+                    "fontSize": 15,
+                  },
+                ]
+              }
+            >
+              None
+            </Styled(Text)>
+          </Styled(Content)>
+          <Styled(Right)
+            style={
+              Object {
+                "flex": 0.05,
+              }
+            }
+          >
+            <Styled(Icon)
+              name="arrow-forward"
+              style={
+                Array [
+                  Object {
+                    "fontSize": 15,
+                  },
+                  Object {
+                    "color": "#4E4A47",
+                  },
+                ]
+              }
+            />
+          </Styled(Right)>
+        </Styled(ListItem)>,
+        "style": Object {
+          "opacity": 0,
         },
       },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(Left)
+              style={
+                Object {
+                  "flex": 0,
+                  "paddingRight": 5,
+                }
+              }
+            >
+              <Styled(Text)
+                numberOfLines={1}
+                style={
+                  Object {
+                    "fontSize": 15,
+                  }
+                }
+              >
+                CourseLink
+              </Styled(Text)>
+            </Styled(Left)>,
+            <Styled(Content)>
+              <Styled(Text)
+                numberOfLines={1}
+                style={
+                  Array [
+                    Object {
+                      "color": "#4E4A47",
+                      "fontSize": 15,
+                    },
+                  ]
+                }
+              >
+                None
+              </Styled(Text)>
+            </Styled(Content)>,
+            <Styled(Right)
+              style={
+                Object {
+                  "flex": 0.05,
+                }
+              }
+            >
+              <Styled(Icon)
+                name="arrow-forward"
+                style={
+                  Array [
+                    Object {
+                      "fontSize": 15,
+                    },
+                    Object {
+                      "color": "#4E4A47",
+                    },
+                  ]
+                }
+              />
+            </Styled(Right)>,
+          ],
+          "onPress": [Function],
+          "style": Array [
+            Object {
+              "paddingRight": 10,
+              "paddingVertical": 10,
+            },
+            false,
+          ],
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Text)
+                numberOfLines={1}
+                style={
+                  Object {
+                    "fontSize": 15,
+                  }
+                }
+              >
+                CourseLink
+              </Styled(Text)>,
+              "style": Object {
+                "flex": 0,
+                "paddingRight": 5,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "CourseLink",
+                "numberOfLines": 1,
+                "style": Object {
+                  "fontSize": 15,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "CourseLink",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Text)
+                numberOfLines={1}
+                style={
+                  Array [
+                    Object {
+                      "color": "#4E4A47",
+                      "fontSize": 15,
+                    },
+                  ]
+                }
+              >
+                None
+              </Styled(Text)>,
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "None",
+                "numberOfLines": 1,
+                "style": Array [
+                  Object {
+                    "color": "#4E4A47",
+                    "fontSize": 15,
+                  },
+                ],
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "None",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Icon)
+                name="arrow-forward"
+                style={
+                  Array [
+                    Object {
+                      "fontSize": 15,
+                    },
+                    Object {
+                      "color": "#4E4A47",
+                    },
+                  ]
+                }
+              />,
+              "style": Object {
+                "flex": 0.05,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "arrow-forward",
+                "style": Array [
+                  Object {
+                    "fontSize": 15,
+                  },
+                  Object {
+                    "color": "#4E4A47",
+                  },
+                ],
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {
@@ -98,8 +612,9 @@ ShallowWrapper {
 exports[`Testing CourseLink Component renders as expected with required props 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <withNavigation(CourseLink)
+  Symbol(enzyme.__unrendered__): <CourseLink
     description="None"
+    onItemPress={[Function]}
     title="CourseLink"
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -113,59 +628,781 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "class",
     "props": Object {
-      "children": [Function],
+      "children": <AnimatedComponent
+        style={
+          Object {
+            "opacity": 0,
+          }
+        }
+      >
+        <Styled(ListItem)
+          onPress={[Function]}
+          style={
+            Array [
+              Object {
+                "paddingRight": 10,
+                "paddingVertical": 10,
+              },
+              Object {
+                "borderBottomWidth": 0,
+                "marginLeft": 0,
+                "paddingLeft": 10,
+              },
+            ]
+          }
+        >
+          <Styled(Left)
+            style={
+              Object {
+                "flex": 0,
+                "paddingRight": 5,
+              }
+            }
+          >
+            <Styled(Text)
+              numberOfLines={1}
+              style={
+                Object {
+                  "fontSize": 15,
+                }
+              }
+            >
+              CourseLink
+            </Styled(Text)>
+          </Styled(Left)>
+          <Styled(Content)>
+            <Styled(Text)
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "color": "#4E4A47",
+                    "fontSize": 15,
+                  },
+                ]
+              }
+            >
+              None
+            </Styled(Text)>
+          </Styled(Content)>
+          <Styled(Right)
+            style={
+              Object {
+                "flex": 0.05,
+              }
+            }
+          >
+            <Styled(Icon)
+              name="arrow-forward"
+              style={
+                Array [
+                  Object {
+                    "fontSize": 15,
+                  },
+                  Object {
+                    "color": "#4E4A47",
+                  },
+                ]
+              }
+            />
+          </Styled(Right)>
+        </Styled(ListItem)>
+      </AnimatedComponent>,
+      "style": Object {
+        "borderColor": "lightgray",
+        "borderLeftWidth": 1,
+        "marginLeft": 15,
+        "paddingLeft": 10,
+      },
+      "virtual": undefined,
     },
     "ref": null,
-    "rendered": [Function],
-    "type": Object {
-      "$$typeof": Symbol(react.context),
-      "_calculateChangedBits": null,
-      "_context": Object {
-        "$$typeof": Symbol(react.context),
-        "Consumer": [Circular],
-        "Provider": Object {
-          "$$typeof": Symbol(react.provider),
-          "_context": [Circular],
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <Styled(ListItem)
+          onPress={[Function]}
+          style={
+            Array [
+              Object {
+                "paddingRight": 10,
+                "paddingVertical": 10,
+              },
+              Object {
+                "borderBottomWidth": 0,
+                "marginLeft": 0,
+                "paddingLeft": 10,
+              },
+            ]
+          }
+        >
+          <Styled(Left)
+            style={
+              Object {
+                "flex": 0,
+                "paddingRight": 5,
+              }
+            }
+          >
+            <Styled(Text)
+              numberOfLines={1}
+              style={
+                Object {
+                  "fontSize": 15,
+                }
+              }
+            >
+              CourseLink
+            </Styled(Text)>
+          </Styled(Left)>
+          <Styled(Content)>
+            <Styled(Text)
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "color": "#4E4A47",
+                    "fontSize": 15,
+                  },
+                ]
+              }
+            >
+              None
+            </Styled(Text)>
+          </Styled(Content)>
+          <Styled(Right)
+            style={
+              Object {
+                "flex": 0.05,
+              }
+            }
+          >
+            <Styled(Icon)
+              name="arrow-forward"
+              style={
+                Array [
+                  Object {
+                    "fontSize": 15,
+                  },
+                  Object {
+                    "color": "#4E4A47",
+                  },
+                ]
+              }
+            />
+          </Styled(Right)>
+        </Styled(ListItem)>,
+        "style": Object {
+          "opacity": 0,
         },
-        "_calculateChangedBits": null,
-        "_currentRenderer": null,
-        "_currentRenderer2": null,
-        "_currentValue": undefined,
-        "_currentValue2": undefined,
-        "_threadCount": 0,
       },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(Left)
+              style={
+                Object {
+                  "flex": 0,
+                  "paddingRight": 5,
+                }
+              }
+            >
+              <Styled(Text)
+                numberOfLines={1}
+                style={
+                  Object {
+                    "fontSize": 15,
+                  }
+                }
+              >
+                CourseLink
+              </Styled(Text)>
+            </Styled(Left)>,
+            <Styled(Content)>
+              <Styled(Text)
+                numberOfLines={1}
+                style={
+                  Array [
+                    Object {
+                      "color": "#4E4A47",
+                      "fontSize": 15,
+                    },
+                  ]
+                }
+              >
+                None
+              </Styled(Text)>
+            </Styled(Content)>,
+            <Styled(Right)
+              style={
+                Object {
+                  "flex": 0.05,
+                }
+              }
+            >
+              <Styled(Icon)
+                name="arrow-forward"
+                style={
+                  Array [
+                    Object {
+                      "fontSize": 15,
+                    },
+                    Object {
+                      "color": "#4E4A47",
+                    },
+                  ]
+                }
+              />
+            </Styled(Right)>,
+          ],
+          "onPress": [Function],
+          "style": Array [
+            Object {
+              "paddingRight": 10,
+              "paddingVertical": 10,
+            },
+            Object {
+              "borderBottomWidth": 0,
+              "marginLeft": 0,
+              "paddingLeft": 10,
+            },
+          ],
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Text)
+                numberOfLines={1}
+                style={
+                  Object {
+                    "fontSize": 15,
+                  }
+                }
+              >
+                CourseLink
+              </Styled(Text)>,
+              "style": Object {
+                "flex": 0,
+                "paddingRight": 5,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "CourseLink",
+                "numberOfLines": 1,
+                "style": Object {
+                  "fontSize": 15,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "CourseLink",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Text)
+                numberOfLines={1}
+                style={
+                  Array [
+                    Object {
+                      "color": "#4E4A47",
+                      "fontSize": 15,
+                    },
+                  ]
+                }
+              >
+                None
+              </Styled(Text)>,
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "None",
+                "numberOfLines": 1,
+                "style": Array [
+                  Object {
+                    "color": "#4E4A47",
+                    "fontSize": 15,
+                  },
+                ],
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "None",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Icon)
+                name="arrow-forward"
+                style={
+                  Array [
+                    Object {
+                      "fontSize": 15,
+                    },
+                    Object {
+                      "color": "#4E4A47",
+                    },
+                  ]
+                }
+              />,
+              "style": Object {
+                "flex": 0.05,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "arrow-forward",
+                "style": Array [
+                  Object {
+                    "fontSize": 15,
+                  },
+                  Object {
+                    "color": "#4E4A47",
+                  },
+                ],
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
     },
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "class",
       "props": Object {
-        "children": [Function],
+        "children": <AnimatedComponent
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        >
+          <Styled(ListItem)
+            onPress={[Function]}
+            style={
+              Array [
+                Object {
+                  "paddingRight": 10,
+                  "paddingVertical": 10,
+                },
+                Object {
+                  "borderBottomWidth": 0,
+                  "marginLeft": 0,
+                  "paddingLeft": 10,
+                },
+              ]
+            }
+          >
+            <Styled(Left)
+              style={
+                Object {
+                  "flex": 0,
+                  "paddingRight": 5,
+                }
+              }
+            >
+              <Styled(Text)
+                numberOfLines={1}
+                style={
+                  Object {
+                    "fontSize": 15,
+                  }
+                }
+              >
+                CourseLink
+              </Styled(Text)>
+            </Styled(Left)>
+            <Styled(Content)>
+              <Styled(Text)
+                numberOfLines={1}
+                style={
+                  Array [
+                    Object {
+                      "color": "#4E4A47",
+                      "fontSize": 15,
+                    },
+                  ]
+                }
+              >
+                None
+              </Styled(Text)>
+            </Styled(Content)>
+            <Styled(Right)
+              style={
+                Object {
+                  "flex": 0.05,
+                }
+              }
+            >
+              <Styled(Icon)
+                name="arrow-forward"
+                style={
+                  Array [
+                    Object {
+                      "fontSize": 15,
+                    },
+                    Object {
+                      "color": "#4E4A47",
+                    },
+                  ]
+                }
+              />
+            </Styled(Right)>
+          </Styled(ListItem)>
+        </AnimatedComponent>,
+        "style": Object {
+          "borderColor": "lightgray",
+          "borderLeftWidth": 1,
+          "marginLeft": 15,
+          "paddingLeft": 10,
+        },
+        "virtual": undefined,
       },
       "ref": null,
-      "rendered": [Function],
-      "type": Object {
-        "$$typeof": Symbol(react.context),
-        "_calculateChangedBits": null,
-        "_context": Object {
-          "$$typeof": Symbol(react.context),
-          "Consumer": [Circular],
-          "Provider": Object {
-            "$$typeof": Symbol(react.provider),
-            "_context": [Circular],
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <Styled(ListItem)
+            onPress={[Function]}
+            style={
+              Array [
+                Object {
+                  "paddingRight": 10,
+                  "paddingVertical": 10,
+                },
+                Object {
+                  "borderBottomWidth": 0,
+                  "marginLeft": 0,
+                  "paddingLeft": 10,
+                },
+              ]
+            }
+          >
+            <Styled(Left)
+              style={
+                Object {
+                  "flex": 0,
+                  "paddingRight": 5,
+                }
+              }
+            >
+              <Styled(Text)
+                numberOfLines={1}
+                style={
+                  Object {
+                    "fontSize": 15,
+                  }
+                }
+              >
+                CourseLink
+              </Styled(Text)>
+            </Styled(Left)>
+            <Styled(Content)>
+              <Styled(Text)
+                numberOfLines={1}
+                style={
+                  Array [
+                    Object {
+                      "color": "#4E4A47",
+                      "fontSize": 15,
+                    },
+                  ]
+                }
+              >
+                None
+              </Styled(Text)>
+            </Styled(Content)>
+            <Styled(Right)
+              style={
+                Object {
+                  "flex": 0.05,
+                }
+              }
+            >
+              <Styled(Icon)
+                name="arrow-forward"
+                style={
+                  Array [
+                    Object {
+                      "fontSize": 15,
+                    },
+                    Object {
+                      "color": "#4E4A47",
+                    },
+                  ]
+                }
+              />
+            </Styled(Right)>
+          </Styled(ListItem)>,
+          "style": Object {
+            "opacity": 0,
           },
-          "_calculateChangedBits": null,
-          "_currentRenderer": null,
-          "_currentRenderer2": null,
-          "_currentValue": undefined,
-          "_currentValue2": undefined,
-          "_threadCount": 0,
         },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Styled(Left)
+                style={
+                  Object {
+                    "flex": 0,
+                    "paddingRight": 5,
+                  }
+                }
+              >
+                <Styled(Text)
+                  numberOfLines={1}
+                  style={
+                    Object {
+                      "fontSize": 15,
+                    }
+                  }
+                >
+                  CourseLink
+                </Styled(Text)>
+              </Styled(Left)>,
+              <Styled(Content)>
+                <Styled(Text)
+                  numberOfLines={1}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#4E4A47",
+                        "fontSize": 15,
+                      },
+                    ]
+                  }
+                >
+                  None
+                </Styled(Text)>
+              </Styled(Content)>,
+              <Styled(Right)
+                style={
+                  Object {
+                    "flex": 0.05,
+                  }
+                }
+              >
+                <Styled(Icon)
+                  name="arrow-forward"
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 15,
+                      },
+                      Object {
+                        "color": "#4E4A47",
+                      },
+                    ]
+                  }
+                />
+              </Styled(Right)>,
+            ],
+            "onPress": [Function],
+            "style": Array [
+              Object {
+                "paddingRight": 10,
+                "paddingVertical": 10,
+              },
+              Object {
+                "borderBottomWidth": 0,
+                "marginLeft": 0,
+                "paddingLeft": 10,
+              },
+            ],
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Styled(Text)
+                  numberOfLines={1}
+                  style={
+                    Object {
+                      "fontSize": 15,
+                    }
+                  }
+                >
+                  CourseLink
+                </Styled(Text)>,
+                "style": Object {
+                  "flex": 0,
+                  "paddingRight": 5,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "CourseLink",
+                  "numberOfLines": 1,
+                  "style": Object {
+                    "fontSize": 15,
+                  },
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": "CourseLink",
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Styled(Text)
+                  numberOfLines={1}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#4E4A47",
+                        "fontSize": 15,
+                      },
+                    ]
+                  }
+                >
+                  None
+                </Styled(Text)>,
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "None",
+                  "numberOfLines": 1,
+                  "style": Array [
+                    Object {
+                      "color": "#4E4A47",
+                      "fontSize": 15,
+                    },
+                  ],
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": "None",
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Styled(Icon)
+                  name="arrow-forward"
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 15,
+                      },
+                      Object {
+                        "color": "#4E4A47",
+                      },
+                    ]
+                  }
+                />,
+                "style": Object {
+                  "flex": 0.05,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "name": "arrow-forward",
+                  "style": Array [
+                    Object {
+                      "fontSize": 15,
+                    },
+                    Object {
+                      "color": "#4E4A47",
+                    },
+                  ],
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
       },
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {
@@ -191,7 +1428,7 @@ ShallowWrapper {
 exports[`Testing CourseLink Component renders as expected with required props and onItemPress 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <withNavigation(CourseLink)
+  Symbol(enzyme.__unrendered__): <CourseLink
     description="None"
     onItemPress={[Function]}
     title="CourseLink"
@@ -207,59 +1444,781 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "class",
     "props": Object {
-      "children": [Function],
+      "children": <AnimatedComponent
+        style={
+          Object {
+            "opacity": 0,
+          }
+        }
+      >
+        <Styled(ListItem)
+          onPress={[Function]}
+          style={
+            Array [
+              Object {
+                "paddingRight": 10,
+                "paddingVertical": 10,
+              },
+              Object {
+                "borderBottomWidth": 0,
+                "marginLeft": 0,
+                "paddingLeft": 10,
+              },
+            ]
+          }
+        >
+          <Styled(Left)
+            style={
+              Object {
+                "flex": 0,
+                "paddingRight": 5,
+              }
+            }
+          >
+            <Styled(Text)
+              numberOfLines={1}
+              style={
+                Object {
+                  "fontSize": 15,
+                }
+              }
+            >
+              CourseLink
+            </Styled(Text)>
+          </Styled(Left)>
+          <Styled(Content)>
+            <Styled(Text)
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "color": "#4E4A47",
+                    "fontSize": 15,
+                  },
+                ]
+              }
+            >
+              None
+            </Styled(Text)>
+          </Styled(Content)>
+          <Styled(Right)
+            style={
+              Object {
+                "flex": 0.05,
+              }
+            }
+          >
+            <Styled(Icon)
+              name="arrow-forward"
+              style={
+                Array [
+                  Object {
+                    "fontSize": 15,
+                  },
+                  Object {
+                    "color": "#4E4A47",
+                  },
+                ]
+              }
+            />
+          </Styled(Right)>
+        </Styled(ListItem)>
+      </AnimatedComponent>,
+      "style": Object {
+        "borderColor": "lightgray",
+        "borderLeftWidth": 1,
+        "marginLeft": 15,
+        "paddingLeft": 10,
+      },
+      "virtual": undefined,
     },
     "ref": null,
-    "rendered": [Function],
-    "type": Object {
-      "$$typeof": Symbol(react.context),
-      "_calculateChangedBits": null,
-      "_context": Object {
-        "$$typeof": Symbol(react.context),
-        "Consumer": [Circular],
-        "Provider": Object {
-          "$$typeof": Symbol(react.provider),
-          "_context": [Circular],
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <Styled(ListItem)
+          onPress={[Function]}
+          style={
+            Array [
+              Object {
+                "paddingRight": 10,
+                "paddingVertical": 10,
+              },
+              Object {
+                "borderBottomWidth": 0,
+                "marginLeft": 0,
+                "paddingLeft": 10,
+              },
+            ]
+          }
+        >
+          <Styled(Left)
+            style={
+              Object {
+                "flex": 0,
+                "paddingRight": 5,
+              }
+            }
+          >
+            <Styled(Text)
+              numberOfLines={1}
+              style={
+                Object {
+                  "fontSize": 15,
+                }
+              }
+            >
+              CourseLink
+            </Styled(Text)>
+          </Styled(Left)>
+          <Styled(Content)>
+            <Styled(Text)
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "color": "#4E4A47",
+                    "fontSize": 15,
+                  },
+                ]
+              }
+            >
+              None
+            </Styled(Text)>
+          </Styled(Content)>
+          <Styled(Right)
+            style={
+              Object {
+                "flex": 0.05,
+              }
+            }
+          >
+            <Styled(Icon)
+              name="arrow-forward"
+              style={
+                Array [
+                  Object {
+                    "fontSize": 15,
+                  },
+                  Object {
+                    "color": "#4E4A47",
+                  },
+                ]
+              }
+            />
+          </Styled(Right)>
+        </Styled(ListItem)>,
+        "style": Object {
+          "opacity": 0,
         },
-        "_calculateChangedBits": null,
-        "_currentRenderer": null,
-        "_currentRenderer2": null,
-        "_currentValue": undefined,
-        "_currentValue2": undefined,
-        "_threadCount": 0,
       },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(Left)
+              style={
+                Object {
+                  "flex": 0,
+                  "paddingRight": 5,
+                }
+              }
+            >
+              <Styled(Text)
+                numberOfLines={1}
+                style={
+                  Object {
+                    "fontSize": 15,
+                  }
+                }
+              >
+                CourseLink
+              </Styled(Text)>
+            </Styled(Left)>,
+            <Styled(Content)>
+              <Styled(Text)
+                numberOfLines={1}
+                style={
+                  Array [
+                    Object {
+                      "color": "#4E4A47",
+                      "fontSize": 15,
+                    },
+                  ]
+                }
+              >
+                None
+              </Styled(Text)>
+            </Styled(Content)>,
+            <Styled(Right)
+              style={
+                Object {
+                  "flex": 0.05,
+                }
+              }
+            >
+              <Styled(Icon)
+                name="arrow-forward"
+                style={
+                  Array [
+                    Object {
+                      "fontSize": 15,
+                    },
+                    Object {
+                      "color": "#4E4A47",
+                    },
+                  ]
+                }
+              />
+            </Styled(Right)>,
+          ],
+          "onPress": [Function],
+          "style": Array [
+            Object {
+              "paddingRight": 10,
+              "paddingVertical": 10,
+            },
+            Object {
+              "borderBottomWidth": 0,
+              "marginLeft": 0,
+              "paddingLeft": 10,
+            },
+          ],
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Text)
+                numberOfLines={1}
+                style={
+                  Object {
+                    "fontSize": 15,
+                  }
+                }
+              >
+                CourseLink
+              </Styled(Text)>,
+              "style": Object {
+                "flex": 0,
+                "paddingRight": 5,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "CourseLink",
+                "numberOfLines": 1,
+                "style": Object {
+                  "fontSize": 15,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "CourseLink",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Text)
+                numberOfLines={1}
+                style={
+                  Array [
+                    Object {
+                      "color": "#4E4A47",
+                      "fontSize": 15,
+                    },
+                  ]
+                }
+              >
+                None
+              </Styled(Text)>,
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "None",
+                "numberOfLines": 1,
+                "style": Array [
+                  Object {
+                    "color": "#4E4A47",
+                    "fontSize": 15,
+                  },
+                ],
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "None",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Icon)
+                name="arrow-forward"
+                style={
+                  Array [
+                    Object {
+                      "fontSize": 15,
+                    },
+                    Object {
+                      "color": "#4E4A47",
+                    },
+                  ]
+                }
+              />,
+              "style": Object {
+                "flex": 0.05,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "arrow-forward",
+                "style": Array [
+                  Object {
+                    "fontSize": 15,
+                  },
+                  Object {
+                    "color": "#4E4A47",
+                  },
+                ],
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
     },
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "class",
       "props": Object {
-        "children": [Function],
+        "children": <AnimatedComponent
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        >
+          <Styled(ListItem)
+            onPress={[Function]}
+            style={
+              Array [
+                Object {
+                  "paddingRight": 10,
+                  "paddingVertical": 10,
+                },
+                Object {
+                  "borderBottomWidth": 0,
+                  "marginLeft": 0,
+                  "paddingLeft": 10,
+                },
+              ]
+            }
+          >
+            <Styled(Left)
+              style={
+                Object {
+                  "flex": 0,
+                  "paddingRight": 5,
+                }
+              }
+            >
+              <Styled(Text)
+                numberOfLines={1}
+                style={
+                  Object {
+                    "fontSize": 15,
+                  }
+                }
+              >
+                CourseLink
+              </Styled(Text)>
+            </Styled(Left)>
+            <Styled(Content)>
+              <Styled(Text)
+                numberOfLines={1}
+                style={
+                  Array [
+                    Object {
+                      "color": "#4E4A47",
+                      "fontSize": 15,
+                    },
+                  ]
+                }
+              >
+                None
+              </Styled(Text)>
+            </Styled(Content)>
+            <Styled(Right)
+              style={
+                Object {
+                  "flex": 0.05,
+                }
+              }
+            >
+              <Styled(Icon)
+                name="arrow-forward"
+                style={
+                  Array [
+                    Object {
+                      "fontSize": 15,
+                    },
+                    Object {
+                      "color": "#4E4A47",
+                    },
+                  ]
+                }
+              />
+            </Styled(Right)>
+          </Styled(ListItem)>
+        </AnimatedComponent>,
+        "style": Object {
+          "borderColor": "lightgray",
+          "borderLeftWidth": 1,
+          "marginLeft": 15,
+          "paddingLeft": 10,
+        },
+        "virtual": undefined,
       },
       "ref": null,
-      "rendered": [Function],
-      "type": Object {
-        "$$typeof": Symbol(react.context),
-        "_calculateChangedBits": null,
-        "_context": Object {
-          "$$typeof": Symbol(react.context),
-          "Consumer": [Circular],
-          "Provider": Object {
-            "$$typeof": Symbol(react.provider),
-            "_context": [Circular],
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <Styled(ListItem)
+            onPress={[Function]}
+            style={
+              Array [
+                Object {
+                  "paddingRight": 10,
+                  "paddingVertical": 10,
+                },
+                Object {
+                  "borderBottomWidth": 0,
+                  "marginLeft": 0,
+                  "paddingLeft": 10,
+                },
+              ]
+            }
+          >
+            <Styled(Left)
+              style={
+                Object {
+                  "flex": 0,
+                  "paddingRight": 5,
+                }
+              }
+            >
+              <Styled(Text)
+                numberOfLines={1}
+                style={
+                  Object {
+                    "fontSize": 15,
+                  }
+                }
+              >
+                CourseLink
+              </Styled(Text)>
+            </Styled(Left)>
+            <Styled(Content)>
+              <Styled(Text)
+                numberOfLines={1}
+                style={
+                  Array [
+                    Object {
+                      "color": "#4E4A47",
+                      "fontSize": 15,
+                    },
+                  ]
+                }
+              >
+                None
+              </Styled(Text)>
+            </Styled(Content)>
+            <Styled(Right)
+              style={
+                Object {
+                  "flex": 0.05,
+                }
+              }
+            >
+              <Styled(Icon)
+                name="arrow-forward"
+                style={
+                  Array [
+                    Object {
+                      "fontSize": 15,
+                    },
+                    Object {
+                      "color": "#4E4A47",
+                    },
+                  ]
+                }
+              />
+            </Styled(Right)>
+          </Styled(ListItem)>,
+          "style": Object {
+            "opacity": 0,
           },
-          "_calculateChangedBits": null,
-          "_currentRenderer": null,
-          "_currentRenderer2": null,
-          "_currentValue": undefined,
-          "_currentValue2": undefined,
-          "_threadCount": 0,
         },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Styled(Left)
+                style={
+                  Object {
+                    "flex": 0,
+                    "paddingRight": 5,
+                  }
+                }
+              >
+                <Styled(Text)
+                  numberOfLines={1}
+                  style={
+                    Object {
+                      "fontSize": 15,
+                    }
+                  }
+                >
+                  CourseLink
+                </Styled(Text)>
+              </Styled(Left)>,
+              <Styled(Content)>
+                <Styled(Text)
+                  numberOfLines={1}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#4E4A47",
+                        "fontSize": 15,
+                      },
+                    ]
+                  }
+                >
+                  None
+                </Styled(Text)>
+              </Styled(Content)>,
+              <Styled(Right)
+                style={
+                  Object {
+                    "flex": 0.05,
+                  }
+                }
+              >
+                <Styled(Icon)
+                  name="arrow-forward"
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 15,
+                      },
+                      Object {
+                        "color": "#4E4A47",
+                      },
+                    ]
+                  }
+                />
+              </Styled(Right)>,
+            ],
+            "onPress": [Function],
+            "style": Array [
+              Object {
+                "paddingRight": 10,
+                "paddingVertical": 10,
+              },
+              Object {
+                "borderBottomWidth": 0,
+                "marginLeft": 0,
+                "paddingLeft": 10,
+              },
+            ],
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Styled(Text)
+                  numberOfLines={1}
+                  style={
+                    Object {
+                      "fontSize": 15,
+                    }
+                  }
+                >
+                  CourseLink
+                </Styled(Text)>,
+                "style": Object {
+                  "flex": 0,
+                  "paddingRight": 5,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "CourseLink",
+                  "numberOfLines": 1,
+                  "style": Object {
+                    "fontSize": 15,
+                  },
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": "CourseLink",
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Styled(Text)
+                  numberOfLines={1}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#4E4A47",
+                        "fontSize": 15,
+                      },
+                    ]
+                  }
+                >
+                  None
+                </Styled(Text)>,
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "None",
+                  "numberOfLines": 1,
+                  "style": Array [
+                    Object {
+                      "color": "#4E4A47",
+                      "fontSize": 15,
+                    },
+                  ],
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": "None",
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Styled(Icon)
+                  name="arrow-forward"
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 15,
+                      },
+                      Object {
+                        "color": "#4E4A47",
+                      },
+                    ]
+                  }
+                />,
+                "style": Object {
+                  "flex": 0.05,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "name": "arrow-forward",
+                  "style": Array [
+                    Object {
+                      "fontSize": 15,
+                    },
+                    Object {
+                      "color": "#4E4A47",
+                    },
+                  ],
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
       },
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {

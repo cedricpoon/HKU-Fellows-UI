@@ -23,11 +23,12 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <withNavigation(Header)
+        <Header
           backable={true}
           onRef={[Function]}
           onRightPress={[Function]}
           rightIcon="arrow-dropup"
+          subtitle={null}
           title="Courses"
         />,
         <Styled(Content)
@@ -54,6 +55,7 @@ ShallowWrapper {
           "onRef": [Function],
           "onRightPress": [Function],
           "rightIcon": "arrow-dropup",
+          "subtitle": null,
           "title": "Courses",
         },
         "ref": null,
@@ -101,11 +103,12 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <withNavigation(Header)
+          <Header
             backable={true}
             onRef={[Function]}
             onRightPress={[Function]}
             rightIcon="arrow-dropup"
+            subtitle={null}
             title="Courses"
           />,
           <Styled(Content)
@@ -132,6 +135,7 @@ ShallowWrapper {
             "onRef": [Function],
             "onRightPress": [Function],
             "rightIcon": "arrow-dropup",
+            "subtitle": null,
             "title": "Courses",
           },
           "ref": null,
@@ -216,11 +220,12 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <withNavigation(Header)
+        <Header
           backable={true}
           onRef={[Function]}
           onRightPress={[Function]}
           rightIcon="arrow-dropup"
+          subtitle={null}
           title="Courses"
         />,
         <Styled(Content)
@@ -247,6 +252,7 @@ ShallowWrapper {
           "onRef": [Function],
           "onRightPress": [Function],
           "rightIcon": "arrow-dropup",
+          "subtitle": null,
           "title": "Courses",
         },
         "ref": null,
@@ -294,11 +300,12 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <withNavigation(Header)
+          <Header
             backable={true}
             onRef={[Function]}
             onRightPress={[Function]}
             rightIcon="arrow-dropup"
+            subtitle={null}
             title="Courses"
           />,
           <Styled(Content)
@@ -325,6 +332,7 @@ ShallowWrapper {
             "onRef": [Function],
             "onRightPress": [Function],
             "rightIcon": "arrow-dropup",
+            "subtitle": null,
             "title": "Courses",
           },
           "ref": null,

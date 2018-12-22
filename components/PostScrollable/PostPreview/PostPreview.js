@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { ListItem, Left, Body, Right, Text, View, Icon } from 'native-base';
 import { format } from 'timeago.js';
 
-import NavigationService from 'hkufui/src/navigation/NavigationService';
+import NavigationService from 'hkufui/src/NavigationService';
 import { localize } from 'hkufui/locale';
 import { hotPostMinIndex as hot } from 'hkufui/config';
 import styles from './Styles';

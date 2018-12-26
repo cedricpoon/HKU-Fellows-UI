@@ -51,7 +51,7 @@ export class SelectCourse extends Component {
           onRightPress={() => {
             this._courseScrollable.collapseAll();
           }}
-          onRef={ref => this._header = ref}
+          ref={ref => this._header = ref}
         />
         <Content padder>
           <CourseScrollable

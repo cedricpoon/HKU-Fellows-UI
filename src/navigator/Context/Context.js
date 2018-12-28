@@ -4,7 +4,7 @@ import { Landing } from 'hkufui/src/navigator';
 
 export default createDrawerNavigator(
   {
-    Landing: Landing,
+    Landing: Landing
   },
   {
     initialRouteName: 'Landing'

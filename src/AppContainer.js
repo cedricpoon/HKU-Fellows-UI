@@ -1,5 +1,5 @@
 import { createStackNavigator, createAppContainer } from 'react-navigation';
-import { Post } from './screens';
+import { Post, Login } from './screens';
 import { Context } from './navigator';
 
 const topLevelNavigator = createStackNavigator(
@@ -10,12 +10,18 @@ const topLevelNavigator = createStackNavigator(
         header: null
       }
     },
+    Login: {
+      screen: Login,
+      navigationOptions: {
+        header: null
+      }
+    },
     Post: {
       screen: Post
     }
   },
   {
-    initialRouteName: 'Context'
+    initialRouteName: 'Login'
   }
 );
 

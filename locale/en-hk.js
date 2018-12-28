@@ -18,5 +18,10 @@ export default {
 
   'header.searchPlaceholder': 'Search keywords or #hashtags',
   'header.noCoursePlaceholder': 'Swipe left to choose course',
-  'header.course': 'Courses'
+  'header.course': 'Courses',
+
+  'login.username': 'HKU Portal UID',
+  'login.password': 'HKU Portal PIN',
+  'login.button': 'Login',
+  'login.declaration': '**Your HKU Portal PIN will not be saved in our database'
 }

@@ -6,7 +6,8 @@ export const logo = {
   brown: '#685A5C',
   black : '#4E4A47',
   brighten: {
-    green: '#CBEBDD'
+    green: '#CBEBDD',
+    blue: '#B0D5F1'
   },
   dimmed: {
     yellow: '#E5CB26',
@@ -14,11 +15,13 @@ export const logo = {
   }
 };
 
-export const seperator = '#eee';
+const grayscale = ['#ddd', '#eee'];
 
-export const circularTint = '#ddd';
+export const seperator = grayscale.slice(-1)[0];
+
+export const circularTint = grayscale.slice(-2)[0];
 
 export const placeholder = {
-  lighter: '#eee',
-  darker: '#ddd'
+  lighter: grayscale.slice(-1)[0],
+  darker: grayscale.slice(-2)[0]
 }

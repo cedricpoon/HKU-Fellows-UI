@@ -25,7 +25,6 @@ ShallowWrapper {
       "children": Array [
         <Header
           backable={true}
-          onRef={[Function]}
           onRightPress={[Function]}
           rightIcon="arrow-dropup"
           subtitle={null}
@@ -52,13 +51,12 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "backable": true,
-          "onRef": [Function],
           "onRightPress": [Function],
           "rightIcon": "arrow-dropup",
           "subtitle": null,
           "title": "Courses",
         },
-        "ref": null,
+        "ref": [Function],
         "rendered": null,
         "type": [Function],
       },
@@ -105,7 +103,6 @@ ShallowWrapper {
         "children": Array [
           <Header
             backable={true}
-            onRef={[Function]}
             onRightPress={[Function]}
             rightIcon="arrow-dropup"
             subtitle={null}
@@ -132,13 +129,12 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "backable": true,
-            "onRef": [Function],
             "onRightPress": [Function],
             "rightIcon": "arrow-dropup",
             "subtitle": null,
             "title": "Courses",
           },
-          "ref": null,
+          "ref": [Function],
           "rendered": null,
           "type": [Function],
         },
@@ -222,7 +218,6 @@ ShallowWrapper {
       "children": Array [
         <Header
           backable={true}
-          onRef={[Function]}
           onRightPress={[Function]}
           rightIcon="arrow-dropup"
           subtitle={null}
@@ -249,13 +244,12 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "backable": true,
-          "onRef": [Function],
           "onRightPress": [Function],
           "rightIcon": "arrow-dropup",
           "subtitle": null,
           "title": "Courses",
         },
-        "ref": null,
+        "ref": [Function],
         "rendered": null,
         "type": [Function],
       },
@@ -302,7 +296,6 @@ ShallowWrapper {
         "children": Array [
           <Header
             backable={true}
-            onRef={[Function]}
             onRightPress={[Function]}
             rightIcon="arrow-dropup"
             subtitle={null}
@@ -329,13 +322,12 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "backable": true,
-            "onRef": [Function],
             "onRightPress": [Function],
             "rightIcon": "arrow-dropup",
             "subtitle": null,
             "title": "Courses",
           },
-          "ref": null,
+          "ref": [Function],
           "rendered": null,
           "type": [Function],
         },

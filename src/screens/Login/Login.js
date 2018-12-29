@@ -1,60 +1,60 @@
 import React, { Component } from 'react';
-import { Platform, Image, Dimensions } from 'react-native';
-import { Container, Form, Item, Label, Input, Text, Button, Icon, View } from 'native-base';
+import { Container, Toast } from 'native-base';
 import { withNavigation } from 'react-navigation';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
-import background from './background';
-import styles from './Styles';
+import { LoginForm } from 'hkufui/components';
 import { localize } from 'hkufui/locale';
+import { onLogin } from './authenticate';
+import { ALERT_DURATION } from './Constants';
 
 const locale = localize({ language: 'en', country: 'hk' });
+
+const alert = (message) => {
+  Toast.show({
+    text: message,
+    buttonText: locale['toast.dismiss'],
+    type: 'danger',
+    duration: ALERT_DURATION
+  });
+}
 
 export class Login extends Component {
   constructor(props) {
     super(props);
+    this._redirect = this._redirect.bind(this);
+  }
+
+  _redirect() {
+    const { credential, navigation } = this.props;
+
+    const loggedIn = credential && Object.keys(credential).length !== 0;
+    // logged in page redirection
+    if (loggedIn) {
+      navigation.navigate('Context');
+    }
+  }
+
+  componentDidMount() {
+    this._redirect();
+  }
+
+  componentDidUpdate() {
+    this._redirect();
   }
 
   render() {
-    const deviceHeight = Dimensions.get('window').height;
-    const deviceWidth = Dimensions.get('window').width;
+    const { onLogin, credential } = this.props;
+
+    const loggingIn = credential && Object.keys(credential).length === 0;
 
     return (
-      <Container style={styles.fullPageContainer}>
-        <View style={styles.inputForm}>
-          <Form>
-            <Item floatingLabel>
-              <Label><Text note style={styles.placeholder}>{locale['login.username']}</Text></Label>
-              <Input
-                autoCorrect={false}
-                keyboardType={Platform.OS === 'android' ? 'email-address' : 'ascii-capable'}
-              />
-            </Item>
-            <Item floatingLabel error>
-              <Label><Text note style={styles.placeholder}>{locale['login.password']}</Text></Label>
-              <Input secureTextEntry />
-              <Icon name='exclamationcircleo' type='AntDesign' />
-            </Item>
-            <Item style={styles.noBorderItem}>
-              <Label>
-                <Text style={[styles.declaration, styles.placeholder]}>
-                  {locale['login.declaration']}
-                </Text>
-              </Label>
-            </Item>
-          </Form>
-          <Button block iconRight transparent dark style={styles.submit}>
-            <Text>{locale['login.button']}</Text>
-            <Icon name='login' type='AntDesign' />
-          </Button>
-        </View>
-        <Image
-          source={{uri: background}}
-          style={[
-            { width: deviceWidth, height: deviceHeight },
-            styles.backdrop
-          ]}
-          resizeMode='repeat'
+      <Container>
+        <LoginForm
+          alert={alert}
+          onLogin={onLogin}
+          loggingIn={loggingIn}
         />
       </Container>
     );
@@ -62,15 +62,21 @@ export class Login extends Component {
 }
 
 Login.propTypes = {
-
+  onLogin: PropTypes.func.isRequired,
+  credential: PropTypes.object
 }
 
-const mapStateToProps = () => ({
-
+const mapStateToProps = state => ({
+  credential: state.credential
 });
 
-const mapDispatchToProps = () => ({
-
+const mapDispatchToProps = dispatch => ({
+  onLogin: ({ username, password }) => {dispatch(
+    onLogin(
+      { username, password },
+      alert
+    )
+  )}
 })
 
 export default withNavigation(connect(

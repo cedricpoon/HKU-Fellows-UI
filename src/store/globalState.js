@@ -17,5 +17,7 @@ export default {
     status: STILL,
     /* BLAND, EXPANDING, HALT */
     subStatus: BLAND
-  }
+  },
+  /* user login credential */
+  credential: null
 }

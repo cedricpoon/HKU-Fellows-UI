@@ -23,5 +23,12 @@ export default {
   'login.username': 'HKU Portal UID',
   'login.password': 'HKU Portal PIN',
   'login.button': 'Login',
-  'login.declaration': '**Your HKU Portal PIN will not be saved in our database'
+  'login.declaration': '**Your PIN will NOT be saved in our database',
+  'login.errorMsgPrefix': 'Oops! We cannot login now.',
+  'login.failureMsg': 'Your UID / PIN is incorrect.',
+  'login.missingParam': 'Please enter UID and PIN.',
+
+  'fetch.noNetwork': 'Server is not connected.',
+
+  'toast.dismiss': 'Dismiss'
 }

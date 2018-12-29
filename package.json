@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
+    "start-dev": "NODE_ENV=development npm start -- --reset-cache",
     "ios": "react-native run-ios",
     "ios-small": "react-native run-ios --simulator 'iPhone 4s'",
     "ios-medium": "react-native run-ios --simulator 'iPhone 8'",
@@ -31,6 +32,7 @@
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "babel-jest": "23.6.0",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.3",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
     "eslint": "^5.11.0",

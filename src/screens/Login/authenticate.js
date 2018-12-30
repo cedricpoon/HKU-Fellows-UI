@@ -28,11 +28,15 @@ export function onLogin({ username, password }, alert) {
         });
       } else {
         // failure
-        const error = res.status === 401 ?
-          locale['login.failureMsg']
-        :
-          `${locale['login.errorMsgPrefix']} ${res.status}`
-        ;
+        let error = `${locale['login.errorMsgPrefix']} ${res.status}`;
+        switch(res.status) {
+          case 401:
+            error = locale['login.failureMsg'];
+            break;
+          case 421:
+            error = locale['login.laterMsg'];
+            break;
+        }
         alert(error);
         dispatch({ type: LOGIN_ERROR });
       }

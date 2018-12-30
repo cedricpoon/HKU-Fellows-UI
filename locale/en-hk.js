@@ -26,6 +26,7 @@ export default {
   'login.declaration': '**Your PIN will NOT be saved in our database',
   'login.errorMsgPrefix': 'Oops! We cannot login now.',
   'login.failureMsg': 'Your UID / PIN is incorrect.',
+  'login.laterMsg': 'Your account has been locked for 30 minutes.',
   'login.missingParam': 'Please enter UID and PIN.',
 
   'fetch.noNetwork': 'Server is not connected.',

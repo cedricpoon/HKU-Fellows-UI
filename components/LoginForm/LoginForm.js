@@ -99,7 +99,7 @@ export class LoginForm extends Component {
           </Form>
           <Button block iconRight transparent dark
             style={styles.submit}
-            onPress={this._validate}
+            onPressIn={this._validate}
             disabled={loggingIn}
           >
             <Text>{locale['login.button']}</Text>

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { Platform, Image, Dimensions, Keyboard } from 'react-native';
-import { Form, Item, Label, Input, Text, Button, Icon, View } from 'native-base';
+import { Platform, Image, Dimensions, Keyboard, KeyboardAvoidingView } from 'react-native';
+import { Form, Item, Label, Input, Text, Button, Icon, View, Spinner } from 'native-base';
 import PropTypes from 'prop-types';
 
-import background from './background';
+import background from './resources/background';
 import styles from './Styles';
 import { localize } from 'hkufui/locale';
+import Logo from './Logo/Logo';
 
 const locale = localize({ language: 'en', country: 'hk' });
 
@@ -65,9 +66,10 @@ export class LoginForm extends Component {
     const deviceWidth = Dimensions.get('window').width;
 
     return (
-      <View style={styles.fullPageContainer}>
+      <KeyboardAvoidingView style={styles.fullPageContainer} behavior="padding" enabled>
         <View style={styles.inputForm}>
-          <Form>
+          <Logo />
+          <Form style={styles.fullWidth}>
             <Item floatingLabel error={!validity.username}>
               <Label><Text note style={styles.placeholder}>{locale['login.username']}</Text></Label>
               <Input
@@ -97,14 +99,18 @@ export class LoginForm extends Component {
               </Label>
             </Item>
           </Form>
-          <Button block iconRight transparent dark
-            style={styles.submit}
-            onPressIn={this._validate}
-            disabled={loggingIn}
-          >
-            <Text>{locale['login.button']}</Text>
-            <Icon name='login' type='AntDesign' />
-          </Button>
+          { loggingIn ? (
+            <Spinner style={styles.submit} inverse size='small' />
+          ) : (
+            <Button block iconRight transparent dark
+              style={styles.submit}
+              onPress={this._validate}
+              disabled={loggingIn}
+            >
+              <Text>{locale['login.button']}</Text>
+              <Icon name='login' type='AntDesign' />
+            </Button>
+          ) }
         </View>
         <Image
           source={{ uri: background }}
@@ -114,7 +120,7 @@ export class LoginForm extends Component {
           ]}
           resizeMode='repeat'
         />
-      </View>
+      </KeyboardAvoidingView>
     );
   }
 }

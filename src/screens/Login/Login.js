@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Toast } from 'native-base';
-import { withNavigation } from 'react-navigation';
+import { withNavigation, StackActions, NavigationActions } from 'react-navigation';
+
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
@@ -20,6 +21,8 @@ const alert = (message) => {
   });
 }
 
+const isAuthenticated = (credential) => credential && Object.keys(credential).length !== 0;
+
 export class Login extends Component {
   constructor(props) {
     super(props);
@@ -29,10 +32,12 @@ export class Login extends Component {
   _redirect() {
     const { credential, navigation } = this.props;
 
-    const loggedIn = credential && Object.keys(credential).length !== 0;
-    // logged in page redirection
-    if (loggedIn) {
-      navigation.navigate('Context');
+    if (isAuthenticated(credential)) {
+      const resetAction = StackActions.reset({
+        index: 0,
+        actions: [NavigationActions.navigate({ routeName: 'Context' })],
+      });
+      navigation.dispatch(resetAction);
     }
   }
 
@@ -48,6 +53,11 @@ export class Login extends Component {
     const { onLogin, credential } = this.props;
 
     const loggingIn = credential && Object.keys(credential).length === 0;
+
+    if (isAuthenticated(credential)) {
+      // prevent displaying login screen
+      return null;
+    }
 
     return (
       <Container>

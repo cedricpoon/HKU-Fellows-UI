@@ -1,6 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 import { logo } from 'hkufui/theme/palette';
+import { gridBase as base } from 'hkufui/theme/grid';
 import { fontSize } from 'hkufui/theme/grid'
 
 export default StyleSheet.create({
@@ -9,12 +10,17 @@ export default StyleSheet.create({
     justifyContent: 'center'
   },
   inputForm: {
-    paddingHorizontal: 30,
-    paddingBottom: 60,
-    zIndex: 2
+    paddingHorizontal: base * 6,
+    paddingBottom: base * 6,
+    zIndex: 2,
+    alignItems: 'center'
+  },
+  fullWidth: {
+    width: '100%'
   },
   submit: {
-    marginTop: 30,
+    marginTop: base * 6,
+    height: base * 9
   },
   declaration: {
     fontSize: fontSize.miniSize,
@@ -25,7 +31,7 @@ export default StyleSheet.create({
   },
   noBorderItem: {
     borderBottomWidth: 0,
-    marginTop: 15
+    marginTop: base * 3
   },
   backdrop: {
     position: 'absolute',

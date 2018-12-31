@@ -17,12 +17,12 @@ export default () => [
     "subTitle": "Subtitle to be shown"
   },
   {
-    "id": id(),
+    "id": 'mod000000',
     "native": false,
-    "viewed": true,
     "timestamp": "2018-11-03 21:56:00",
     "replyNo": 12,
-    "title": "Topic from Moodle"
+    "title": "Topic from Moodle",
+    "subTitle": "Forum name"
   },
   {
     "id": id(),

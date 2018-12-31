@@ -40,7 +40,7 @@ class PostPreview extends PureComponent {
           {native && solved && (
             <Icon style={[styles.badge, styles.solved]} type="MaterialCommunityIcons" name="checkbox-marked-circle-outline" />
           )}
-          {viewed && (
+          {native && viewed && (
             <Icon style={[styles.badge, styles.viewed]} type="MaterialCommunityIcons" name="history" />
           )}
         </Left>

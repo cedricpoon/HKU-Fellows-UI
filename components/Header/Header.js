@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
 import { Header as NBHeader, Left, Body, Right, Button, Icon, Title, Subtitle as NBSubtitle } from 'native-base';
-import { withNavigation } from 'react-navigation';
 import * as Animatable from 'react-native-animatable';
 
+import NavigationService from 'hkufui/src/NavigationService';
 import styles from './Styles';
 
 const Subtitle = Animatable.createAnimatableComponent(NBSubtitle);
@@ -27,7 +27,7 @@ class Header extends Component {
 
   componentDidUpdate() {
     if (this._subtitle) {
-      this._subtitle.pulse(subtitleAnimationDuration);
+      this._subtitle.pulse(subtitleAnimationDuration); // eslint-disable-line react/prop-types
     }
   }
 
@@ -48,7 +48,7 @@ class Header extends Component {
           { backable && (
             <Button
               transparent
-              onPress={() => { this.props.navigation.goBack(); }}
+              onPress={() => { NavigationService.goBack(); }}
             >
               <Icon style={styles.back} name="arrow-dropleft"/>
             </Button>
@@ -93,4 +93,4 @@ Header.propTypes = {
   onRightPress: PropTypes.func
 };
 
-export default withNavigation(Header);
+export default Header;

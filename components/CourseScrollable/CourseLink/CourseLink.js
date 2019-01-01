@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { ListItem, Text, Left, Right, Icon, Content, View } from 'native-base';
 import { Animated } from 'react-native';
 import PropTypes from 'prop-types';
-import { withNavigation } from 'react-navigation';
+import NavigationService from 'hkufui/src/NavigationService';
 
 import styles from '../Styles';
 
@@ -23,8 +23,7 @@ class CourseLink extends Component {
     Animated.timing(this.state.fadeIn, {
       toValue: 1,
       delay: fadeInDelay,
-      duration : fadeInDuration,
-      useNativeDriver: true
+      duration : fadeInDuration
     }).start();
   }
 
@@ -37,7 +36,7 @@ class CourseLink extends Component {
           style={[styles.linkItem, !bottomMost && styles.linkItemNonBottomMost]}
           onPress={() => {
             onItemPress();
-            this.props.navigation.goBack();
+            NavigationService.goBack();
           }}
         >
           <Left style={styles.linkLeft}>
@@ -79,4 +78,4 @@ CourseLink.propTypes = {
   bottomMost: PropTypes.bool
 };
 
-export default withNavigation(CourseLink);
+export default CourseLink;

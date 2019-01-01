@@ -4,8 +4,8 @@ import { StyleProvider, Root } from 'native-base';
 import { Provider as RXProvider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react'
 
-import AppContainer from './navigation/AppContainer';
-import NavigationService from './navigation/NavigationService';
+import AppContainer from './AppContainer';
+import NavigationService from './NavigationService';
 
 import { store, persistor } from './store';
 

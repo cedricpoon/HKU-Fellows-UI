@@ -19,9 +19,7 @@ export class SelectCourse extends Component {
 
     // check if header did mount
     if (this._header)
-      this._header.setSubtitle(
-        formBreadcrumbString(breadcrumb)
-      );
+      this._header.setSubtitle(formBreadcrumbString(breadcrumb)); // eslint-disable-line react/prop-types
   }
 
   componentDidMount() {
@@ -51,7 +49,7 @@ export class SelectCourse extends Component {
           onRightPress={() => {
             this._courseScrollable.collapseAll();
           }}
-          onRef={ref => this._header = ref}
+          ref={ref => this._header = ref}
         />
         <Content padder>
           <CourseScrollable

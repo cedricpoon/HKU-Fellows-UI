@@ -18,5 +18,18 @@ export default {
 
   'header.searchPlaceholder': 'Search keywords or #hashtags',
   'header.noCoursePlaceholder': 'Swipe left to choose course',
-  'header.course': 'Courses'
+  'header.course': 'Courses',
+
+  'login.username': 'HKU Portal UID',
+  'login.password': 'HKU Portal PIN',
+  'login.button': 'Login',
+  'login.declaration': '**Your PIN will NOT be saved in our database',
+  'login.errorMsgPrefix': 'Oops! We cannot login now.',
+  'login.failureMsg': 'Your UID / PIN is incorrect.',
+  'login.laterMsg': 'Your account has been locked for 30 minutes.',
+  'login.missingParam': 'Please enter UID and PIN.',
+
+  'fetch.noNetwork': 'Server is not connected.',
+
+  'toast.dismiss': 'Dismiss'
 }

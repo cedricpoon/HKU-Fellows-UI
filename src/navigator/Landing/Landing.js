@@ -9,6 +9,7 @@ export default createMaterialTopTabNavigator(
   },
   {
     initialRouteName: 'Preview',
+    drawerLabel: 'Landing',
     tabBarOptions: {
       renderIndicator: () => null,
       showLabel: false,

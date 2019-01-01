@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Footer, FooterTab, Button, Icon } from 'native-base';
 import PropTypes from 'prop-types';
 
-import NavigationService from 'hkufui/src/navigation/NavigationService';
+import NavigationService from 'hkufui/src/NavigationService';
 import FilterPopup from './FilterPopup/FilterPopup';
 import { mapLayoutToState } from 'hkufui/components/helper';
 import styles from './Styles';
@@ -46,7 +46,7 @@ class PreviewFooter extends Component {
         <FooterTab
           onLayout={mapLayoutToState("footerLayout", this)}
         >
-          <Button>
+          <Button onPress={NavigationService.openDrawer}>
             <Icon name="menu" type="MaterialIcons" />
           </Button>
           {!muted && (

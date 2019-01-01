@@ -13,3 +13,9 @@ export const EXPANDING_POSTS = "EXPANDING_POSTS";
 export const EXPANDED_POSTS = "EXPANDED_POSTS";
 
 export const LAST_POST = "LAST_POST";
+
+export const LOGIN_ERROR = "LOGIN_ERROR";
+
+export const LOGGED_IN = "LOGGED_IN";
+
+export const LOGGING_IN = "LOGGING_IN";

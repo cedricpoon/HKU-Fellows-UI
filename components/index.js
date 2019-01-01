@@ -11,3 +11,5 @@ export { default as CourseScrollable } from './CourseScrollable/CourseScrollable
 export { default as PostPlaceholder } from './PostScrollable/PostPlaceholder/PostPlaceholder';
 
 export { default as PostLoadIndicator } from './PostLoadIndicator/PostLoadIndicator';
+
+export { default as LoginForm } from './LoginForm/LoginForm';

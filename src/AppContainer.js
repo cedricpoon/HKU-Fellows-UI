@@ -1,10 +1,17 @@
 import { createStackNavigator, createAppContainer } from 'react-navigation';
-import { Landing, Post } from 'hkufui/src/screens';
+import { Post, Login } from './screens';
+import { Context } from './navigator';
 
 const topLevelNavigator = createStackNavigator(
   {
-    Landing: {
-      screen: Landing,
+    Context: {
+      screen: Context,
+      navigationOptions: {
+        header: null
+      }
+    },
+    Login: {
+      screen: Login,
       navigationOptions: {
         header: null
       }
@@ -14,7 +21,7 @@ const topLevelNavigator = createStackNavigator(
     }
   },
   {
-    initialRouteName: 'Landing'
+    initialRouteName: 'Login'
   }
 );
 

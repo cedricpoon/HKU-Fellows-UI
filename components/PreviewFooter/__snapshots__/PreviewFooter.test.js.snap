@@ -24,7 +24,9 @@ ShallowWrapper {
         <Styled(FooterTab)
           onLayout={[Function]}
         >
-          <Styled(Button)>
+          <Styled(Button)
+            onPress={[Function]}
+          >
             <Styled(Icon)
               name="menu"
               type="MaterialIcons"
@@ -78,7 +80,9 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
-            <Styled(Button)>
+            <Styled(Button)
+              onPress={[Function]}
+            >
               <Styled(Icon)
                 name="menu"
                 type="MaterialIcons"
@@ -131,6 +135,7 @@ ShallowWrapper {
                 name="menu"
                 type="MaterialIcons"
               />,
+              "onPress": [Function],
               "virtual": undefined,
             },
             "ref": null,
@@ -279,7 +284,9 @@ ShallowWrapper {
           <Styled(FooterTab)
             onLayout={[Function]}
           >
-            <Styled(Button)>
+            <Styled(Button)
+              onPress={[Function]}
+            >
               <Styled(Icon)
                 name="menu"
                 type="MaterialIcons"
@@ -333,7 +340,9 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
-              <Styled(Button)>
+              <Styled(Button)
+                onPress={[Function]}
+              >
                 <Styled(Icon)
                   name="menu"
                   type="MaterialIcons"
@@ -386,6 +395,7 @@ ShallowWrapper {
                   name="menu"
                   type="MaterialIcons"
                 />,
+                "onPress": [Function],
                 "virtual": undefined,
               },
               "ref": null,
@@ -569,7 +579,9 @@ ShallowWrapper {
         <Styled(FooterTab)
           onLayout={[Function]}
         >
-          <Styled(Button)>
+          <Styled(Button)
+            onPress={[Function]}
+          >
             <Styled(Icon)
               name="menu"
               type="MaterialIcons"
@@ -599,7 +611,9 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
-            <Styled(Button)>
+            <Styled(Button)
+              onPress={[Function]}
+            >
               <Styled(Icon)
                 name="menu"
                 type="MaterialIcons"
@@ -631,6 +645,7 @@ ShallowWrapper {
                 name="menu"
                 type="MaterialIcons"
               />,
+              "onPress": [Function],
               "virtual": undefined,
             },
             "ref": null,
@@ -697,7 +712,9 @@ ShallowWrapper {
           <Styled(FooterTab)
             onLayout={[Function]}
           >
-            <Styled(Button)>
+            <Styled(Button)
+              onPress={[Function]}
+            >
               <Styled(Icon)
                 name="menu"
                 type="MaterialIcons"
@@ -727,7 +744,9 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
-              <Styled(Button)>
+              <Styled(Button)
+                onPress={[Function]}
+              >
                 <Styled(Icon)
                   name="menu"
                   type="MaterialIcons"
@@ -759,6 +778,7 @@ ShallowWrapper {
                   name="menu"
                   type="MaterialIcons"
                 />,
+                "onPress": [Function],
                 "virtual": undefined,
               },
               "ref": null,

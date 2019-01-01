@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Header, Item, Input, Icon, Button, Right, Text } from 'native-base';
 import { Keyboard } from 'react-native';
 
-import NavigationService from 'hkufui/src/navigation/NavigationService';
+import NavigationService from 'hkufui/src/NavigationService';
 import { displayName as appName } from 'hkufui/app.json';
 import { localize } from 'hkufui/locale';
 

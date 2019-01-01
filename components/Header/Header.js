@@ -27,7 +27,7 @@ class Header extends Component {
 
   componentDidUpdate() {
     if (this._subtitle) {
-      this._subtitle.pulse(subtitleAnimationDuration);
+      this._subtitle.pulse(subtitleAnimationDuration); // eslint-disable-line react/prop-types
     }
   }
 

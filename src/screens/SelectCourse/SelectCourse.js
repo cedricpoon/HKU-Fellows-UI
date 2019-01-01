@@ -19,9 +19,7 @@ export class SelectCourse extends Component {
 
     // check if header did mount
     if (this._header)
-      this._header.setSubtitle(
-        formBreadcrumbString(breadcrumb)
-      );
+      this._header.setSubtitle(formBreadcrumbString(breadcrumb)); // eslint-disable-line react/prop-types
   }
 
   componentDidMount() {

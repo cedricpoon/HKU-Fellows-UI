@@ -21,17 +21,26 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
+      "behavior": "padding",
       "children": Array [
         <Styled(ViewNB)
           style={
             Object {
-              "paddingBottom": 60,
+              "alignItems": "center",
+              "paddingBottom": 30,
               "paddingHorizontal": 30,
               "zIndex": 2,
             }
           }
         >
-          <Styled(Form)>
+          <Logo />
+          <Styled(Form)
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
             <Styled(Item)
               error={false}
               floatingLabel={true}
@@ -102,27 +111,16 @@ ShallowWrapper {
               </Styled(Label)>
             </Styled(Item)>
           </Styled(Form)>
-          <Styled(Button)
-            block={true}
-            dark={true}
-            disabled={true}
-            iconRight={true}
-            onPress={[Function]}
+          <Styled(Spinner)
+            inverse={true}
+            size="small"
             style={
               Object {
+                "height": 45,
                 "marginTop": 30,
               }
             }
-            transparent={true}
-          >
-            <Styled(Text)>
-              Login
-            </Styled(Text)>
-            <Styled(Icon)
-              name="login"
-              type="AntDesign"
-            />
-          </Styled(Button)>
+          />
         </Styled(ViewNB)>,
         <Component
           resizeMode="repeat"
@@ -145,11 +143,12 @@ ShallowWrapper {
           }
         />,
       ],
+      "enabled": true,
+      "keyboardVerticalOffset": 0,
       "style": Object {
         "flex": 1,
         "justifyContent": "center",
       },
-      "virtual": undefined,
     },
     "ref": null,
     "rendered": Array [
@@ -159,7 +158,14 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
-            <Styled(Form)>
+            <Logo />,
+            <Styled(Form)
+              style={
+                Object {
+                  "width": "100%",
+                }
+              }
+            >
               <Styled(Item)
                 error={false}
                 floatingLabel={true}
@@ -230,30 +236,20 @@ ShallowWrapper {
                 </Styled(Label)>
               </Styled(Item)>
             </Styled(Form)>,
-            <Styled(Button)
-              block={true}
-              dark={true}
-              disabled={true}
-              iconRight={true}
-              onPress={[Function]}
+            <Styled(Spinner)
+              inverse={true}
+              size="small"
               style={
                 Object {
+                  "height": 45,
                   "marginTop": 30,
                 }
               }
-              transparent={true}
-            >
-              <Styled(Text)>
-                Login
-              </Styled(Text)>
-              <Styled(Icon)
-                name="login"
-                type="AntDesign"
-              />
-            </Styled(Button)>,
+            />,
           ],
           "style": Object {
-            "paddingBottom": 60,
+            "alignItems": "center",
+            "paddingBottom": 30,
             "paddingHorizontal": 30,
             "zIndex": 2,
           },
@@ -261,6 +257,15 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -337,6 +342,9 @@ ShallowWrapper {
                   </Styled(Label)>
                 </Styled(Item)>,
               ],
+              "style": Object {
+                "width": "100%",
+              },
               "virtual": undefined,
             },
             "ref": null,
@@ -594,54 +602,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "block": true,
-              "children": Array [
-                <Styled(Text)>
-                  Login
-                </Styled(Text)>,
-                <Styled(Icon)
-                  name="login"
-                  type="AntDesign"
-                />,
-              ],
-              "dark": true,
-              "disabled": true,
-              "iconRight": true,
-              "onPress": [Function],
+              "inverse": true,
+              "size": "small",
               "style": Object {
+                "height": 45,
                 "marginTop": 30,
               },
-              "transparent": true,
               "virtual": undefined,
             },
             "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "Login",
-                  "virtual": undefined,
-                },
-                "ref": null,
-                "rendered": "Login",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "name": "login",
-                  "type": "AntDesign",
-                  "virtual": undefined,
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-            ],
+            "rendered": null,
             "type": [Function],
           },
         ],
@@ -680,17 +650,26 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
+        "behavior": "padding",
         "children": Array [
           <Styled(ViewNB)
             style={
               Object {
-                "paddingBottom": 60,
+                "alignItems": "center",
+                "paddingBottom": 30,
                 "paddingHorizontal": 30,
                 "zIndex": 2,
               }
             }
           >
-            <Styled(Form)>
+            <Logo />
+            <Styled(Form)
+              style={
+                Object {
+                  "width": "100%",
+                }
+              }
+            >
               <Styled(Item)
                 error={false}
                 floatingLabel={true}
@@ -761,27 +740,16 @@ ShallowWrapper {
                 </Styled(Label)>
               </Styled(Item)>
             </Styled(Form)>
-            <Styled(Button)
-              block={true}
-              dark={true}
-              disabled={true}
-              iconRight={true}
-              onPress={[Function]}
+            <Styled(Spinner)
+              inverse={true}
+              size="small"
               style={
                 Object {
+                  "height": 45,
                   "marginTop": 30,
                 }
               }
-              transparent={true}
-            >
-              <Styled(Text)>
-                Login
-              </Styled(Text)>
-              <Styled(Icon)
-                name="login"
-                type="AntDesign"
-              />
-            </Styled(Button)>
+            />
           </Styled(ViewNB)>,
           <Component
             resizeMode="repeat"
@@ -804,11 +772,12 @@ ShallowWrapper {
             }
           />,
         ],
+        "enabled": true,
+        "keyboardVerticalOffset": 0,
         "style": Object {
           "flex": 1,
           "justifyContent": "center",
         },
-        "virtual": undefined,
       },
       "ref": null,
       "rendered": Array [
@@ -818,7 +787,14 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
-              <Styled(Form)>
+              <Logo />,
+              <Styled(Form)
+                style={
+                  Object {
+                    "width": "100%",
+                  }
+                }
+              >
                 <Styled(Item)
                   error={false}
                   floatingLabel={true}
@@ -889,30 +865,20 @@ ShallowWrapper {
                   </Styled(Label)>
                 </Styled(Item)>
               </Styled(Form)>,
-              <Styled(Button)
-                block={true}
-                dark={true}
-                disabled={true}
-                iconRight={true}
-                onPress={[Function]}
+              <Styled(Spinner)
+                inverse={true}
+                size="small"
                 style={
                   Object {
+                    "height": 45,
                     "marginTop": 30,
                   }
                 }
-                transparent={true}
-              >
-                <Styled(Text)>
-                  Login
-                </Styled(Text)>
-                <Styled(Icon)
-                  name="login"
-                  type="AntDesign"
-                />
-              </Styled(Button)>,
+              />,
             ],
             "style": Object {
-              "paddingBottom": 60,
+              "alignItems": "center",
+              "paddingBottom": 30,
               "paddingHorizontal": 30,
               "zIndex": 2,
             },
@@ -920,6 +886,15 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             Object {
               "instance": null,
               "key": undefined,
@@ -996,6 +971,9 @@ ShallowWrapper {
                     </Styled(Label)>
                   </Styled(Item)>,
                 ],
+                "style": Object {
+                  "width": "100%",
+                },
                 "virtual": undefined,
               },
               "ref": null,
@@ -1253,54 +1231,16 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "block": true,
-                "children": Array [
-                  <Styled(Text)>
-                    Login
-                  </Styled(Text)>,
-                  <Styled(Icon)
-                    name="login"
-                    type="AntDesign"
-                  />,
-                ],
-                "dark": true,
-                "disabled": true,
-                "iconRight": true,
-                "onPress": [Function],
+                "inverse": true,
+                "size": "small",
                 "style": Object {
+                  "height": 45,
                   "marginTop": 30,
                 },
-                "transparent": true,
                 "virtual": undefined,
               },
               "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": "Login",
-                    "virtual": undefined,
-                  },
-                  "ref": null,
-                  "rendered": "Login",
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "name": "login",
-                    "type": "AntDesign",
-                    "virtual": undefined,
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-              ],
+              "rendered": null,
               "type": [Function],
             },
           ],
@@ -1374,17 +1314,26 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
+      "behavior": "padding",
       "children": Array [
         <Styled(ViewNB)
           style={
             Object {
-              "paddingBottom": 60,
+              "alignItems": "center",
+              "paddingBottom": 30,
               "paddingHorizontal": 30,
               "zIndex": 2,
             }
           }
         >
-          <Styled(Form)>
+          <Logo />
+          <Styled(Form)
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
             <Styled(Item)
               error={false}
               floatingLabel={true}
@@ -1462,6 +1411,7 @@ ShallowWrapper {
             onPress={[Function]}
             style={
               Object {
+                "height": 45,
                 "marginTop": 30,
               }
             }
@@ -1497,11 +1447,12 @@ ShallowWrapper {
           }
         />,
       ],
+      "enabled": true,
+      "keyboardVerticalOffset": 0,
       "style": Object {
         "flex": 1,
         "justifyContent": "center",
       },
-      "virtual": undefined,
     },
     "ref": null,
     "rendered": Array [
@@ -1511,7 +1462,14 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
-            <Styled(Form)>
+            <Logo />,
+            <Styled(Form)
+              style={
+                Object {
+                  "width": "100%",
+                }
+              }
+            >
               <Styled(Item)
                 error={false}
                 floatingLabel={true}
@@ -1589,6 +1547,7 @@ ShallowWrapper {
               onPress={[Function]}
               style={
                 Object {
+                  "height": 45,
                   "marginTop": 30,
                 }
               }
@@ -1604,7 +1563,8 @@ ShallowWrapper {
             </Styled(Button)>,
           ],
           "style": Object {
-            "paddingBottom": 60,
+            "alignItems": "center",
+            "paddingBottom": 30,
             "paddingHorizontal": 30,
             "zIndex": 2,
           },
@@ -1612,6 +1572,15 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -1688,6 +1657,9 @@ ShallowWrapper {
                   </Styled(Label)>
                 </Styled(Item)>,
               ],
+              "style": Object {
+                "width": "100%",
+              },
               "virtual": undefined,
             },
             "ref": null,
@@ -1960,6 +1932,7 @@ ShallowWrapper {
               "iconRight": true,
               "onPress": [Function],
               "style": Object {
+                "height": 45,
                 "marginTop": 30,
               },
               "transparent": true,
@@ -2031,17 +2004,26 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
+        "behavior": "padding",
         "children": Array [
           <Styled(ViewNB)
             style={
               Object {
-                "paddingBottom": 60,
+                "alignItems": "center",
+                "paddingBottom": 30,
                 "paddingHorizontal": 30,
                 "zIndex": 2,
               }
             }
           >
-            <Styled(Form)>
+            <Logo />
+            <Styled(Form)
+              style={
+                Object {
+                  "width": "100%",
+                }
+              }
+            >
               <Styled(Item)
                 error={false}
                 floatingLabel={true}
@@ -2119,6 +2101,7 @@ ShallowWrapper {
               onPress={[Function]}
               style={
                 Object {
+                  "height": 45,
                   "marginTop": 30,
                 }
               }
@@ -2154,11 +2137,12 @@ ShallowWrapper {
             }
           />,
         ],
+        "enabled": true,
+        "keyboardVerticalOffset": 0,
         "style": Object {
           "flex": 1,
           "justifyContent": "center",
         },
-        "virtual": undefined,
       },
       "ref": null,
       "rendered": Array [
@@ -2168,7 +2152,14 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
-              <Styled(Form)>
+              <Logo />,
+              <Styled(Form)
+                style={
+                  Object {
+                    "width": "100%",
+                  }
+                }
+              >
                 <Styled(Item)
                   error={false}
                   floatingLabel={true}
@@ -2246,6 +2237,7 @@ ShallowWrapper {
                 onPress={[Function]}
                 style={
                   Object {
+                    "height": 45,
                     "marginTop": 30,
                   }
                 }
@@ -2261,7 +2253,8 @@ ShallowWrapper {
               </Styled(Button)>,
             ],
             "style": Object {
-              "paddingBottom": 60,
+              "alignItems": "center",
+              "paddingBottom": 30,
               "paddingHorizontal": 30,
               "zIndex": 2,
             },
@@ -2269,6 +2262,15 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             Object {
               "instance": null,
               "key": undefined,
@@ -2345,6 +2347,9 @@ ShallowWrapper {
                     </Styled(Label)>
                   </Styled(Item)>,
                 ],
+                "style": Object {
+                  "width": "100%",
+                },
                 "virtual": undefined,
               },
               "ref": null,
@@ -2617,6 +2622,7 @@ ShallowWrapper {
                 "iconRight": true,
                 "onPress": [Function],
                 "style": Object {
+                  "height": 45,
                   "marginTop": 30,
                 },
                 "transparent": true,

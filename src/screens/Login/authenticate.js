@@ -22,7 +22,7 @@ export function onLogin({ username, password }, alert) {
         dispatch({
           type: LOGGED_IN,
           payload: {
-            userId: username,
+            userId: username.toLowerCase(),
             ...res.payload
           }
         });

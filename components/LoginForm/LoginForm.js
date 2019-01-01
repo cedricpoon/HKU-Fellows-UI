@@ -74,6 +74,7 @@ export class LoginForm extends Component {
               <Label><Text note style={styles.placeholder}>{locale['login.username']}</Text></Label>
               <Input
                 autoCorrect={false}
+                autoCapitalize = 'none'
                 keyboardType={Platform.OS === 'android' ? 'email-address' : 'ascii-capable'}
                 onChangeText={this._handleChangeWrapper('username')}
               />

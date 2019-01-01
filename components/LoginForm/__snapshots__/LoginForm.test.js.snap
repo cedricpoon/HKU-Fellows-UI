@@ -58,6 +58,7 @@ ShallowWrapper {
                 </Styled(Text)>
               </Styled(Label)>
               <Styled(Input)
+                autoCapitalize="none"
                 autoCorrect={false}
                 keyboardType="ascii-capable"
                 onChangeText={[Function]}
@@ -183,6 +184,7 @@ ShallowWrapper {
                   </Styled(Text)>
                 </Styled(Label)>
                 <Styled(Input)
+                  autoCapitalize="none"
                   autoCorrect={false}
                   keyboardType="ascii-capable"
                   onChangeText={[Function]}
@@ -289,6 +291,7 @@ ShallowWrapper {
                     </Styled(Text)>
                   </Styled(Label)>
                   <Styled(Input)
+                    autoCapitalize="none"
                     autoCorrect={false}
                     keyboardType="ascii-capable"
                     onChangeText={[Function]}
@@ -368,6 +371,7 @@ ShallowWrapper {
                       </Styled(Text)>
                     </Styled(Label)>,
                     <Styled(Input)
+                      autoCapitalize="none"
                       autoCorrect={false}
                       keyboardType="ascii-capable"
                       onChangeText={[Function]}
@@ -421,6 +425,7 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "class",
                     "props": Object {
+                      "autoCapitalize": "none",
                       "autoCorrect": false,
                       "keyboardType": "ascii-capable",
                       "onChangeText": [Function],
@@ -687,6 +692,7 @@ ShallowWrapper {
                   </Styled(Text)>
                 </Styled(Label)>
                 <Styled(Input)
+                  autoCapitalize="none"
                   autoCorrect={false}
                   keyboardType="ascii-capable"
                   onChangeText={[Function]}
@@ -812,6 +818,7 @@ ShallowWrapper {
                     </Styled(Text)>
                   </Styled(Label)>
                   <Styled(Input)
+                    autoCapitalize="none"
                     autoCorrect={false}
                     keyboardType="ascii-capable"
                     onChangeText={[Function]}
@@ -918,6 +925,7 @@ ShallowWrapper {
                       </Styled(Text)>
                     </Styled(Label)>
                     <Styled(Input)
+                      autoCapitalize="none"
                       autoCorrect={false}
                       keyboardType="ascii-capable"
                       onChangeText={[Function]}
@@ -997,6 +1005,7 @@ ShallowWrapper {
                         </Styled(Text)>
                       </Styled(Label)>,
                       <Styled(Input)
+                        autoCapitalize="none"
                         autoCorrect={false}
                         keyboardType="ascii-capable"
                         onChangeText={[Function]}
@@ -1050,6 +1059,7 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "class",
                       "props": Object {
+                        "autoCapitalize": "none",
                         "autoCorrect": false,
                         "keyboardType": "ascii-capable",
                         "onChangeText": [Function],
@@ -1351,6 +1361,7 @@ ShallowWrapper {
                 </Styled(Text)>
               </Styled(Label)>
               <Styled(Input)
+                autoCapitalize="none"
                 autoCorrect={false}
                 keyboardType="ascii-capable"
                 onChangeText={[Function]}
@@ -1487,6 +1498,7 @@ ShallowWrapper {
                   </Styled(Text)>
                 </Styled(Label)>
                 <Styled(Input)
+                  autoCapitalize="none"
                   autoCorrect={false}
                   keyboardType="ascii-capable"
                   onChangeText={[Function]}
@@ -1604,6 +1616,7 @@ ShallowWrapper {
                     </Styled(Text)>
                   </Styled(Label)>
                   <Styled(Input)
+                    autoCapitalize="none"
                     autoCorrect={false}
                     keyboardType="ascii-capable"
                     onChangeText={[Function]}
@@ -1683,6 +1696,7 @@ ShallowWrapper {
                       </Styled(Text)>
                     </Styled(Label)>,
                     <Styled(Input)
+                      autoCapitalize="none"
                       autoCorrect={false}
                       keyboardType="ascii-capable"
                       onChangeText={[Function]}
@@ -1736,6 +1750,7 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "class",
                     "props": Object {
+                      "autoCapitalize": "none",
                       "autoCorrect": false,
                       "keyboardType": "ascii-capable",
                       "onChangeText": [Function],
@@ -2041,6 +2056,7 @@ ShallowWrapper {
                   </Styled(Text)>
                 </Styled(Label)>
                 <Styled(Input)
+                  autoCapitalize="none"
                   autoCorrect={false}
                   keyboardType="ascii-capable"
                   onChangeText={[Function]}
@@ -2177,6 +2193,7 @@ ShallowWrapper {
                     </Styled(Text)>
                   </Styled(Label)>
                   <Styled(Input)
+                    autoCapitalize="none"
                     autoCorrect={false}
                     keyboardType="ascii-capable"
                     onChangeText={[Function]}
@@ -2294,6 +2311,7 @@ ShallowWrapper {
                       </Styled(Text)>
                     </Styled(Label)>
                     <Styled(Input)
+                      autoCapitalize="none"
                       autoCorrect={false}
                       keyboardType="ascii-capable"
                       onChangeText={[Function]}
@@ -2373,6 +2391,7 @@ ShallowWrapper {
                         </Styled(Text)>
                       </Styled(Label)>,
                       <Styled(Input)
+                        autoCapitalize="none"
                         autoCorrect={false}
                         keyboardType="ascii-capable"
                         onChangeText={[Function]}
@@ -2426,6 +2445,7 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "class",
                       "props": Object {
+                        "autoCapitalize": "none",
                         "autoCorrect": false,
                         "keyboardType": "ascii-capable",
                         "onChangeText": [Function],

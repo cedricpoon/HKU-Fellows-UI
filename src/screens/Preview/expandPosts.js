@@ -2,7 +2,7 @@ import { EXPANDING_POSTS, EXPANDED_POSTS, LAST_POST } from 'hkufui/src/constants
 import { onFill } from './PostPreviewLoader/loadPosts';
 import * as status from 'hkufui/src/constants/expandStatus';
 
-import getPosts from 'hkufui/mock/public/posts';
+import getPosts from 'hkufui/static/posts';
 
 export function fetchExpansion() {
   const latency = Math.floor(Math.random() * 5 + 1) * 200;

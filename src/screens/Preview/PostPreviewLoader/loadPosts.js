@@ -2,7 +2,7 @@ import { FILL_POSTS, LOAD_POSTS, LOAD_POSTS_FAILED } from "hkufui/src/constants/
 import * as status from 'hkufui/src/constants/loadStatus';
 import { BLAND } from 'hkufui/src/constants/expandStatus';
 
-import getPosts from 'hkufui/mock/public/posts';
+import getPosts from 'hkufui/static/posts';
 
 export function fetchPostsSafe(callforth) {
   return (dispatch, getState) => {

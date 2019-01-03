@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
 import { LoginForm } from 'hkufui/components';
 import { localize } from 'hkufui/locale';
 import { login } from 'hkufui/config/webapi';
-import { onLogin } from './authenticate';
+import { onLogin, onClear } from './authenticate';
 import { ALERT_DURATION } from './Constants';
 
 const locale = localize({ language: 'en', country: 'hk' });
@@ -43,6 +43,8 @@ export class Login extends Component {
   }
 
   componentDidMount() {
+    if (!isAuthenticated(this.props.credential))
+      this.props.onClearCredential();
     this._redirect();
   }
 
@@ -74,7 +76,8 @@ export class Login extends Component {
 
 Login.propTypes = {
   onLogin: PropTypes.func.isRequired,
-  credential: PropTypes.object
+  credential: PropTypes.object,
+  onClearCredential: PropTypes.func.isRequired
 }
 
 const mapStateToProps = state => ({
@@ -88,7 +91,8 @@ const mapDispatchToProps = dispatch => ({
       alert,
       path: login.password
     })
-  )}
+  )},
+  onClearCredential: () => { dispatch(onClear()) }
 })
 
 export default withNavigation(connect(

@@ -49,6 +49,12 @@ export function onLogin({ credential, alert, path }) {
   };
 }
 
+export function onClear() {
+  return (dispatch) => {
+    dispatch({ type: LOGIN_ERROR });
+  };
+}
+
 const handleExpandPosts = (state = {}, action = {}) => {
   switch (action.type) {
     case LOGGING_IN:

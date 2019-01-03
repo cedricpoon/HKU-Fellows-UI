@@ -16,7 +16,9 @@ export default {
     /* OK, FAIL, LOADING, STILL */
     status: STILL,
     /* BLAND, EXPANDING, HALT */
-    subStatus: BLAND
+    subStatus: BLAND,
+    /* index from /post/:courseId/:index */
+    index: 1
   },
   /* user login credential */
   credential: null

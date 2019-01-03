@@ -1,30 +1,45 @@
 import { EXPANDING_POSTS, EXPANDED_POSTS, LAST_POST } from 'hkufui/src/constants/actionTypes';
-import { onFill } from './PostPreviewLoader/loadPosts';
 import * as status from 'hkufui/src/constants/expandStatus';
+import { login } from 'hkufui/config/webapi';
 
-import getPosts from 'hkufui/static/posts';
+import { onLogin } from '../Login/authenticate';
+import { onFill, retrievePosts } from './PostPreviewLoader/loadPosts';
+
+async function invokeRetrieving(dispatch, getState) {
+  const { credential, posts } = getState();
+
+  try {
+    const res = await retrievePosts(dispatch, getState);
+    if (res.status === 200 || res.status === 204) {
+      // successful return
+      if (res.payload.length > 0) {
+        dispatch(onFill(posts.posts.concat(res.payload)));
+        dispatch(onExpanded());
+      } else {
+        dispatch(onLast());
+      }
+    } else {
+      // failure
+      switch(res.status) {
+        case 408:
+          // refresh token
+          await dispatch(onLogin({
+            credential: { username: credential.userId, passphrase: credential.passphrase },
+            path: login.passphrase
+          }));
+      }
+      throw new Error();
+    }
+  } catch (error) {
+    // try retrieve posts again
+    invokeRetrieving(dispatch, getState);
+  }
+}
 
 export function fetchExpansion() {
-  const latency = Math.floor(Math.random() * 5 + 1) * 200;
-  const last = Math.floor(Math.random() * 10 + 1) === 1;
-
   return (dispatch, getState) => {
     dispatch(onExpanding());
-
-    // mocking of fetch from WebAPI
-    setTimeout(() => {
-      const { posts } = getState();
-
-      // check if modifying postList (Reloading page, navigating location etc.)
-      if (posts.subStatus !== status.BLAND) {
-        if (!last) {
-          dispatch(onFill(posts.posts.concat(getPosts())));
-          dispatch(onExpanded());
-        } else {
-          dispatch(onLast());
-        }
-      }
-    }, latency);
+    invokeRetrieving(dispatch, getState);
   };
 }
 
@@ -45,6 +60,7 @@ const handleExpandPosts = (state = {}, action = {}) => {
     case EXPANDING_POSTS:
       return {
         ...state,
+        index: state.index + 1,
         subStatus: status.EXPANDING
       }
     case EXPANDED_POSTS:

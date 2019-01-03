@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "start-dev": "NODE_ENV=development npm start -- --reset-cache",
+    "dev": "NODE_ENV=development npm start -- --reset-cache",
     "ios": "react-native run-ios",
     "ios-small": "react-native run-ios --simulator 'iPhone 4s'",
     "ios-medium": "react-native run-ios --simulator 'iPhone 8'",

@@ -1,8 +1,58 @@
 import { FILL_POSTS, LOAD_POSTS, LOAD_POSTS_FAILED } from "hkufui/src/constants/actionTypes";
 import * as status from 'hkufui/src/constants/loadStatus';
 import { BLAND } from 'hkufui/src/constants/expandStatus';
+import { link, post } from 'hkufui/config/webapi';
+import { login } from 'hkufui/config/webapi';
 
-import getPosts from 'hkufui/static/posts';
+import { onLogin } from '../../Login/authenticate';
+
+export async function retrievePosts(dispatch, getState) {
+  const { location, credential, posts } = getState();
+
+  const response = await fetch(link(post({ code: location.courseId, index: posts.index })), {
+    method: 'POST',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      username: credential.userId,
+      token: credential.token,
+      moodleKey: credential.moodleKey
+    }),
+  });
+  const res = await response.json();
+  return res;
+}
+
+async function invokeRetrieving(dispatch, getState) {
+  const { credential } = getState();
+
+  try {
+    const res = await retrievePosts(dispatch, getState);
+    if (res.status === 200 || res.status === 204) {
+      // successful return
+      dispatch(onFill(res.payload));
+    } else {
+      // failure
+      switch(res.status) {
+        case 408:
+          // refresh token
+          await dispatch(onLogin({
+            credential: { username: credential.userId, passphrase: credential.passphrase },
+            path: login.passphrase
+          }));
+          // try retrieve posts again
+          invokeRetrieving(dispatch, getState);
+          break;
+        default:
+          dispatch(onFail());
+      }
+    }
+  } catch (error) {
+    dispatch(onFail());
+  }
+}
 
 export function fetchPostsSafe(callforth) {
   return (dispatch, getState) => {
@@ -18,20 +68,9 @@ export function fetchPostsSafe(callforth) {
 }
 
 export function fetchPosts() {
-  const latency = Math.floor(Math.random() * 5 + 1) * 200;
-  const failed = Math.floor(Math.random() * 50 + 1) === 1;
-  const empty = Math.floor(Math.random() * 20 + 1) === 1;
-
-  return (dispatch) => {
+  return async (dispatch, getState) => {
     dispatch(onLoad());
-
-    // mocking of fetch from WebAPI
-    setTimeout(() => {
-      if (!failed)
-        dispatch(onFill(empty ? [] : getPosts()));
-      else
-        dispatch(onFail());
-    }, latency);
+    invokeRetrieving(dispatch, getState);
   };
 }
 
@@ -63,7 +102,8 @@ const handleLoadPosts = (state = {}, action = {}) => {
         ...state,
         status: status.LOADING,
         subStatus: BLAND,
-        posts: []
+        posts: [],
+        index: 1
       }
     case LOAD_POSTS_FAILED:
       return {

@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 
 import { Header, CourseScrollable } from 'hkufui/components'
 import { localize } from 'hkufui/locale';
-import courses from 'hkufui/mock/public/courses';
+import courses from 'hkufui/static/courses';
 
 import { onUpdateLocation, onSetSelectCourseIndex } from './handleActions';
 import { fetchPostsSafe } from '../Preview/PostPreviewLoader/loadPosts';

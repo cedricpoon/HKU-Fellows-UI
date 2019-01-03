@@ -10,4 +10,6 @@ export const login = {
   validate: '/login/validate'
 }
 
+export const post = ({ code, index }) => `/post/${code}/${index}`;
+
 export const link = (path) => `${protocol}://${baseUrl}${path}`

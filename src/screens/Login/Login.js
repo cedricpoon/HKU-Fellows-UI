@@ -7,6 +7,7 @@ import PropTypes from 'prop-types';
 
 import { LoginForm } from 'hkufui/components';
 import { localize } from 'hkufui/locale';
+import { login } from 'hkufui/config/webapi';
 import { onLogin } from './authenticate';
 import { ALERT_DURATION } from './Constants';
 
@@ -81,11 +82,12 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  onLogin: ({ username, password }) => {dispatch(
-    onLogin(
-      { username, password },
-      alert
-    )
+  onLogin: ({ username, password }) => { dispatch(
+    onLogin({
+      credential: { username, password },
+      alert,
+      path: login.password
+    })
   )}
 })
 

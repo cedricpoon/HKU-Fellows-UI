@@ -17,7 +17,7 @@ export default () => [
     "subTitle": "Subtitle to be shown"
   },
   {
-    "id": 'mod000000',
+    "id": id(),
     "native": false,
     "timestamp": "2018-11-03 21:56:00",
     "replyNo": 12,

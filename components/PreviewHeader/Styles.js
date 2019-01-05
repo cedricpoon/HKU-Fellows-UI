@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-import { headerPreview as header, fontSize } from 'hkufui/theme/grid';
+import { header, fontSize, gridBase } from 'hkufui/theme/grid';
 import { logo } from 'hkufui/theme/palette';
 import nbColor from 'hkufui/native-base-theme/variables/commonColor'
 
@@ -12,7 +12,7 @@ export default StyleSheet.create({
     alignSelf: 'center',
     height: null,
     backgroundColor: logo.black,
-    marginLeft: header.labelMarginLeft
+    marginLeft: gridBase / 2
   },
   leftLabelText: {
     paddingLeft: header.labelPadding,
@@ -28,6 +28,6 @@ export default StyleSheet.create({
   },
   rightIcon: {
     marginLeft: 0,
-    marginRight: header.iconMarginRight
+    marginRight: gridBase * 3
   }
 });

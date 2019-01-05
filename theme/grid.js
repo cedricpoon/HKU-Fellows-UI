@@ -18,10 +18,8 @@ export const footer = {
   popUpMargin: gridBase * 2
 };
 
-export const headerPreview = {
-  iconMarginRight: gridBase * 3,
-  labelPadding: gridBase * 2,
-  labelMarginLeft: gridBase / 2
+export const header = {
+  labelPadding: gridBase * 2
 }
 
 export const course = {

@@ -64,6 +64,7 @@ ShallowWrapper {
       ],
       "style": Object {
         "height": "auto",
+        "paddingBottom": 0.5,
       },
       "subtitle": null,
       "virtual": undefined,
@@ -238,6 +239,7 @@ ShallowWrapper {
         ],
         "style": Object {
           "height": "auto",
+          "paddingBottom": 0.5,
         },
         "subtitle": null,
         "virtual": undefined,
@@ -451,6 +453,7 @@ ShallowWrapper {
       ],
       "style": Object {
         "height": "auto",
+        "paddingBottom": 0.5,
       },
       "subtitle": null,
       "virtual": undefined,
@@ -625,6 +628,7 @@ ShallowWrapper {
         ],
         "style": Object {
           "height": "auto",
+          "paddingBottom": 0.5,
         },
         "subtitle": null,
         "virtual": undefined,
@@ -845,6 +849,7 @@ ShallowWrapper {
       ],
       "style": Object {
         "height": "auto",
+        "paddingBottom": 0.5,
       },
       "subtitle": "None",
       "virtual": undefined,
@@ -1032,6 +1037,7 @@ ShallowWrapper {
         ],
         "style": Object {
           "height": "auto",
+          "paddingBottom": 0.5,
         },
         "subtitle": "None",
         "virtual": undefined,
@@ -1257,6 +1263,7 @@ ShallowWrapper {
       ],
       "style": Object {
         "height": "auto",
+        "paddingBottom": 0.5,
       },
       "subtitle": "None",
       "virtual": undefined,
@@ -1444,6 +1451,7 @@ ShallowWrapper {
         ],
         "style": Object {
           "height": "auto",
+          "paddingBottom": 0.5,
         },
         "subtitle": "None",
         "virtual": undefined,
@@ -1647,6 +1655,7 @@ ShallowWrapper {
       ],
       "style": Object {
         "height": "auto",
+        "paddingBottom": 0.5,
       },
       "subtitle": null,
       "virtual": undefined,
@@ -1761,6 +1770,7 @@ ShallowWrapper {
         ],
         "style": Object {
           "height": "auto",
+          "paddingBottom": 0.5,
         },
         "subtitle": null,
         "virtual": undefined,

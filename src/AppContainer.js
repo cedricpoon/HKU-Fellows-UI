@@ -4,24 +4,13 @@ import { Context } from './navigator';
 
 const topLevelNavigator = createStackNavigator(
   {
-    Context: {
-      screen: Context,
-      navigationOptions: {
-        header: null
-      }
-    },
-    Login: {
-      screen: Login,
-      navigationOptions: {
-        header: null
-      }
-    },
-    Post: {
-      screen: Post
-    }
+    Context: Context,
+    Login: Login,
+    Post: Post
   },
   {
-    initialRouteName: 'Login'
+    initialRouteName: 'Login',
+    headerMode: 'none'
   }
 );
 

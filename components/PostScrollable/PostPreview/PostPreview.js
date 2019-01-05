@@ -16,7 +16,7 @@ class PostPreview extends PureComponent {
     const { id } = this.props;
     /* dive into post */
     NavigationService.navigate('Post', {
-      postId: id
+      topicId: id
     });
   }
 

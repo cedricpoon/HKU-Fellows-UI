@@ -2,7 +2,7 @@ import { EXPANDING_POSTS, EXPANDED_POSTS, LAST_POST } from 'hkufui/src/constants
 import * as status from 'hkufui/src/constants/expandStatus';
 import { login } from 'hkufui/config/webapi';
 
-import { onLogin } from '../Login/authenticate';
+import { onLogin, onClear } from '../Login/authenticate';
 import { onFill, retrievePosts } from './PostPreviewLoader/loadPosts';
 
 async function invokeRetrieving(dispatch, getState) {
@@ -27,6 +27,10 @@ async function invokeRetrieving(dispatch, getState) {
             credential: { username: credential.userId, passphrase: credential.passphrase },
             path: login.passphrase
           }));
+          break;
+        case 401:
+          dispatch(onClear());
+          break;
       }
       throw new Error();
     }

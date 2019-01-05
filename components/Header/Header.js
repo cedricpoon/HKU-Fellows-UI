@@ -37,14 +37,16 @@ class Header extends Component {
       backable,
       rightIcon,
       onRightPress,
+      subtitleNumberOfLines,
+      titleNumberOfLines,
       ...restProps
     } = this.props;
 
     const { subtitle } = this.state;
 
     return (
-      <NBHeader {...restProps} >
-        <Left style={styles.buttonGroup}>
+      <NBHeader {...restProps} style={styles.header} >
+        <Left>
           { backable && (
             <Button
               transparent
@@ -54,27 +56,31 @@ class Header extends Component {
             </Button>
           )}
         </Left>
-        <Body>
-          <Title style={styles.title} ref={ref => { this._title=ref }}>
+        <Body style={styles.context}>
+          <Title
+            style={styles.title}
+            ref={ref => { this._title=ref }}
+            numberOfLines={titleNumberOfLines}
+          >
             {title}
           </Title>
           {subtitle && (
             <Subtitle
               ref={ref => { this._subtitle = ref }}
               style={styles.subtitle}
-              numberOfLines={1}
+              numberOfLines={subtitleNumberOfLines}
             >
               {subtitle}
             </Subtitle>
           )}
         </Body>
+        <Right>
         {rightIcon && (
-          <Right style={styles.buttonGroup}>
-            <Button transparent onPress={onRightPress}>
-              <Icon name={rightIcon} style={styles.rightIcon} />
-            </Button>
-          </Right>
+          <Button transparent onPress={onRightPress}>
+            <Icon name={rightIcon} style={styles.rightIcon} />
+          </Button>
         )}
+        </Right>
       </NBHeader>
     );
   }
@@ -82,12 +88,16 @@ class Header extends Component {
 
 Header.defaultProps = {
   onRightPress: () => {},
-  subtitle: null
+  subtitle: null,
+  titleNumberOfLines: 1,
+  subtitleNumberOfLines: 1,
 };
 
 Header.propTypes = {
   title: PropTypes.string.isRequired,
+  titleNumberOfLines: PropTypes.number,
   subtitle: PropTypes.string,
+  subtitleNumberOfLines: PropTypes.number,
   backable: PropTypes.bool,
   rightIcon: PropTypes.string,
   onRightPress: PropTypes.func

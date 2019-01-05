@@ -28,7 +28,9 @@ ShallowWrapper {
           onRightPress={[Function]}
           rightIcon="arrow-dropup"
           subtitle={null}
+          subtitleNumberOfLines={1}
           title="Courses"
+          titleNumberOfLines={1}
         />,
         <Styled(Content)
           padder={true}
@@ -54,7 +56,9 @@ ShallowWrapper {
           "onRightPress": [Function],
           "rightIcon": "arrow-dropup",
           "subtitle": null,
+          "subtitleNumberOfLines": 1,
           "title": "Courses",
+          "titleNumberOfLines": 1,
         },
         "ref": [Function],
         "rendered": null,
@@ -106,7 +110,9 @@ ShallowWrapper {
             onRightPress={[Function]}
             rightIcon="arrow-dropup"
             subtitle={null}
+            subtitleNumberOfLines={1}
             title="Courses"
+            titleNumberOfLines={1}
           />,
           <Styled(Content)
             padder={true}
@@ -132,7 +138,9 @@ ShallowWrapper {
             "onRightPress": [Function],
             "rightIcon": "arrow-dropup",
             "subtitle": null,
+            "subtitleNumberOfLines": 1,
             "title": "Courses",
+            "titleNumberOfLines": 1,
           },
           "ref": [Function],
           "rendered": null,
@@ -221,7 +229,9 @@ ShallowWrapper {
           onRightPress={[Function]}
           rightIcon="arrow-dropup"
           subtitle={null}
+          subtitleNumberOfLines={1}
           title="Courses"
+          titleNumberOfLines={1}
         />,
         <Styled(Content)
           padder={true}
@@ -247,7 +257,9 @@ ShallowWrapper {
           "onRightPress": [Function],
           "rightIcon": "arrow-dropup",
           "subtitle": null,
+          "subtitleNumberOfLines": 1,
           "title": "Courses",
+          "titleNumberOfLines": 1,
         },
         "ref": [Function],
         "rendered": null,
@@ -299,7 +311,9 @@ ShallowWrapper {
             onRightPress={[Function]}
             rightIcon="arrow-dropup"
             subtitle={null}
+            subtitleNumberOfLines={1}
             title="Courses"
+            titleNumberOfLines={1}
           />,
           <Styled(Content)
             padder={true}
@@ -325,7 +339,9 @@ ShallowWrapper {
             "onRightPress": [Function],
             "rightIcon": "arrow-dropup",
             "subtitle": null,
+            "subtitleNumberOfLines": 1,
             "title": "Courses",
+            "titleNumberOfLines": 1,
           },
           "ref": [Function],
           "rendered": null,

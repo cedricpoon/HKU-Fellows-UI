@@ -24,6 +24,13 @@ describe('Testing Header Component', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it('renders as expected with subtitle and regarding line numbers', () => {
+    const wrapper = shallow(
+      <Header title="Header" subtitle="None" titleNumberOfLines={2} subtitleNumberOfLines={2} />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
+
   it('renders as expected with right button', () => {
     const wrapper = shallow(
       <Header title="Header" rightIcon="arrow-dropup" onRightPress={() => {}} />

@@ -18,7 +18,9 @@ export default {
     /* BLAND, EXPANDING, HALT */
     subStatus: BLAND,
     /* index from /post/:courseId/:index */
-    index: 1
+    index: 1,
+    /* timeframe for locking select in backend */
+    timeframe: null,
   },
   /* user login credential */
   credential: null

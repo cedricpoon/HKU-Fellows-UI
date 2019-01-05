@@ -4,13 +4,19 @@ import { fontSize, gridBase } from 'hkufui/theme/grid'
 import { logo } from 'hkufui/theme/palette';
 
 export default StyleSheet.create({
+  header: {
+    height: 'auto',
+    paddingBottom: 5
+  },
   title: {
     fontSize: fontSize.titleSize,
-    fontWeight: 'normal'
+    fontWeight: 'normal',
+    textAlign: 'justify'
   },
   subtitle: {
     color: logo.brown,
-    paddingTop: gridBase
+    paddingTop: gridBase,
+    textAlign: 'justify'
   },
   back: {
     color: logo.black
@@ -18,7 +24,7 @@ export default StyleSheet.create({
   rightIcon: {
     color: logo.red
   },
-  buttonGroup: {
-    flex: 0.2
+  context: {
+    flex: 4
   }
 });

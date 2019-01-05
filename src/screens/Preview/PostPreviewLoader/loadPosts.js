@@ -4,12 +4,16 @@ import { BLAND } from 'hkufui/src/constants/expandStatus';
 import { link, post } from 'hkufui/config/webapi';
 import { login } from 'hkufui/config/webapi';
 
-import { onLogin } from '../../Login/authenticate';
+import { onLogin, onClear } from '../../Login/authenticate';
 
 export async function retrievePosts(dispatch, getState) {
   const { location, credential, posts } = getState();
 
-  const response = await fetch(link(post({ code: location.courseId, index: posts.index })), {
+  const response = await fetch(link(post({
+    code: location.courseId,
+    index: posts.index ,
+    time: posts.timeframe,
+  })), {
     method: 'POST',
     headers: {
       Accept: 'application/json',
@@ -44,6 +48,10 @@ async function invokeRetrieving(dispatch, getState) {
           }));
           // try retrieve posts again
           invokeRetrieving(dispatch, getState);
+          break;
+        case 401:
+          dispatch(onClear());
+          dispatch(onFail());
           break;
         default:
           dispatch(onFail());
@@ -103,6 +111,7 @@ const handleLoadPosts = (state = {}, action = {}) => {
         status: status.LOADING,
         subStatus: BLAND,
         posts: [],
+        timeframe: Date.now(),
         index: 1
       }
     case LOAD_POSTS_FAILED:

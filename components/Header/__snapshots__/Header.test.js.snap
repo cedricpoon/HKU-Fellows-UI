@@ -7,7 +7,9 @@ ShallowWrapper {
     backable={true}
     onRightPress={[Function]}
     subtitle={null}
+    subtitleNumberOfLines={1}
     title="Header"
+    titleNumberOfLines={1}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -23,13 +25,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <Styled(Left)
-          style={
-            Object {
-              "flex": 0.2,
-            }
-          }
-        >
+        <Styled(Left)>
           <Styled(Button)
             onPress={[Function]}
             transparent={true}
@@ -44,20 +40,32 @@ ShallowWrapper {
             />
           </Styled(Button)>
         </Styled(Left)>,
-        <Styled(Body)>
+        <Styled(Body)
+          style={
+            Object {
+              "flex": 4,
+            }
+          }
+        >
           <Styled(Title)
+            numberOfLines={1}
             style={
               Object {
                 "fontSize": 15,
                 "fontWeight": "normal",
+                "textAlign": "justify",
               }
             }
           >
             Header
           </Styled(Title)>
         </Styled(Body)>,
-        undefined,
+        <Styled(Right) />,
       ],
+      "style": Object {
+        "height": "auto",
+        "paddingBottom": 5,
+      },
       "subtitle": null,
       "virtual": undefined,
     },
@@ -81,9 +89,6 @@ ShallowWrapper {
               }
             />
           </Styled(Button)>,
-          "style": Object {
-            "flex": 0.2,
-          },
           "virtual": undefined,
         },
         "ref": null,
@@ -131,10 +136,12 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <Styled(Title)
+              numberOfLines={1}
               style={
                 Object {
                   "fontSize": 15,
                   "fontWeight": "normal",
+                  "textAlign": "justify",
                 }
               }
             >
@@ -142,6 +149,9 @@ ShallowWrapper {
             </Styled(Title)>,
             null,
           ],
+          "style": Object {
+            "flex": 4,
+          },
           "virtual": undefined,
         },
         "ref": null,
@@ -152,9 +162,11 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": "Header",
+              "numberOfLines": 1,
               "style": Object {
                 "fontSize": 15,
                 "fontWeight": "normal",
+                "textAlign": "justify",
               },
               "virtual": undefined,
             },
@@ -166,7 +178,18 @@ ShallowWrapper {
         ],
         "type": [Function],
       },
-      undefined,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": undefined,
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
     ],
     "type": [Function],
   },
@@ -177,13 +200,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <Styled(Left)
-            style={
-              Object {
-                "flex": 0.2,
-              }
-            }
-          >
+          <Styled(Left)>
             <Styled(Button)
               onPress={[Function]}
               transparent={true}
@@ -198,20 +215,32 @@ ShallowWrapper {
               />
             </Styled(Button)>
           </Styled(Left)>,
-          <Styled(Body)>
+          <Styled(Body)
+            style={
+              Object {
+                "flex": 4,
+              }
+            }
+          >
             <Styled(Title)
+              numberOfLines={1}
               style={
                 Object {
                   "fontSize": 15,
                   "fontWeight": "normal",
+                  "textAlign": "justify",
                 }
               }
             >
               Header
             </Styled(Title)>
           </Styled(Body)>,
-          undefined,
+          <Styled(Right) />,
         ],
+        "style": Object {
+          "height": "auto",
+          "paddingBottom": 5,
+        },
         "subtitle": null,
         "virtual": undefined,
       },
@@ -235,9 +264,6 @@ ShallowWrapper {
                 }
               />
             </Styled(Button)>,
-            "style": Object {
-              "flex": 0.2,
-            },
             "virtual": undefined,
           },
           "ref": null,
@@ -285,10 +311,12 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <Styled(Title)
+                numberOfLines={1}
                 style={
                   Object {
                     "fontSize": 15,
                     "fontWeight": "normal",
+                    "textAlign": "justify",
                   }
                 }
               >
@@ -296,6 +324,9 @@ ShallowWrapper {
               </Styled(Title)>,
               null,
             ],
+            "style": Object {
+              "flex": 4,
+            },
             "virtual": undefined,
           },
           "ref": null,
@@ -306,9 +337,11 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": "Header",
+                "numberOfLines": 1,
                 "style": Object {
                   "fontSize": 15,
                   "fontWeight": "normal",
+                  "textAlign": "justify",
                 },
                 "virtual": undefined,
               },
@@ -320,7 +353,18 @@ ShallowWrapper {
           ],
           "type": [Function],
         },
-        undefined,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": undefined,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
       ],
       "type": [Function],
     },
@@ -352,7 +396,9 @@ ShallowWrapper {
     onRightPress={[Function]}
     rightIcon="arrow-dropup"
     subtitle={null}
+    subtitleNumberOfLines={1}
     title="Header"
+    titleNumberOfLines={1}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -368,32 +414,28 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <Styled(Left)
+        <Styled(Left) />,
+        <Styled(Body)
           style={
             Object {
-              "flex": 0.2,
+              "flex": 4,
             }
           }
-        />,
-        <Styled(Body)>
+        >
           <Styled(Title)
+            numberOfLines={1}
             style={
               Object {
                 "fontSize": 15,
                 "fontWeight": "normal",
+                "textAlign": "justify",
               }
             }
           >
             Header
           </Styled(Title)>
         </Styled(Body)>,
-        <Styled(Right)
-          style={
-            Object {
-              "flex": 0.2,
-            }
-          }
-        >
+        <Styled(Right)>
           <Styled(Button)
             onPress={[Function]}
             transparent={true}
@@ -409,6 +451,10 @@ ShallowWrapper {
           </Styled(Button)>
         </Styled(Right)>,
       ],
+      "style": Object {
+        "height": "auto",
+        "paddingBottom": 5,
+      },
       "subtitle": null,
       "virtual": undefined,
     },
@@ -420,9 +466,6 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": undefined,
-          "style": Object {
-            "flex": 0.2,
-          },
           "virtual": undefined,
         },
         "ref": null,
@@ -436,10 +479,12 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <Styled(Title)
+              numberOfLines={1}
               style={
                 Object {
                   "fontSize": 15,
                   "fontWeight": "normal",
+                  "textAlign": "justify",
                 }
               }
             >
@@ -447,6 +492,9 @@ ShallowWrapper {
             </Styled(Title)>,
             null,
           ],
+          "style": Object {
+            "flex": 4,
+          },
           "virtual": undefined,
         },
         "ref": null,
@@ -457,9 +505,11 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": "Header",
+              "numberOfLines": 1,
               "style": Object {
                 "fontSize": 15,
                 "fontWeight": "normal",
+                "textAlign": "justify",
               },
               "virtual": undefined,
             },
@@ -489,9 +539,6 @@ ShallowWrapper {
               }
             />
           </Styled(Button)>,
-          "style": Object {
-            "flex": 0.2,
-          },
           "virtual": undefined,
         },
         "ref": null,
@@ -542,32 +589,28 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <Styled(Left)
+          <Styled(Left) />,
+          <Styled(Body)
             style={
               Object {
-                "flex": 0.2,
+                "flex": 4,
               }
             }
-          />,
-          <Styled(Body)>
+          >
             <Styled(Title)
+              numberOfLines={1}
               style={
                 Object {
                   "fontSize": 15,
                   "fontWeight": "normal",
+                  "textAlign": "justify",
                 }
               }
             >
               Header
             </Styled(Title)>
           </Styled(Body)>,
-          <Styled(Right)
-            style={
-              Object {
-                "flex": 0.2,
-              }
-            }
-          >
+          <Styled(Right)>
             <Styled(Button)
               onPress={[Function]}
               transparent={true}
@@ -583,6 +626,10 @@ ShallowWrapper {
             </Styled(Button)>
           </Styled(Right)>,
         ],
+        "style": Object {
+          "height": "auto",
+          "paddingBottom": 5,
+        },
         "subtitle": null,
         "virtual": undefined,
       },
@@ -594,9 +641,6 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": undefined,
-            "style": Object {
-              "flex": 0.2,
-            },
             "virtual": undefined,
           },
           "ref": null,
@@ -610,10 +654,12 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <Styled(Title)
+                numberOfLines={1}
                 style={
                   Object {
                     "fontSize": 15,
                     "fontWeight": "normal",
+                    "textAlign": "justify",
                   }
                 }
               >
@@ -621,6 +667,9 @@ ShallowWrapper {
               </Styled(Title)>,
               null,
             ],
+            "style": Object {
+              "flex": 4,
+            },
             "virtual": undefined,
           },
           "ref": null,
@@ -631,9 +680,11 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": "Header",
+                "numberOfLines": 1,
                 "style": Object {
                   "fontSize": 15,
                   "fontWeight": "normal",
+                  "textAlign": "justify",
                 },
                 "virtual": undefined,
               },
@@ -663,9 +714,6 @@ ShallowWrapper {
                 }
               />
             </Styled(Button)>,
-            "style": Object {
-              "flex": 0.2,
-            },
             "virtual": undefined,
           },
           "ref": null,
@@ -736,7 +784,9 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Header
     onRightPress={[Function]}
     subtitle="None"
+    subtitleNumberOfLines={1}
     title="Header"
+    titleNumberOfLines={1}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -752,19 +802,21 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <Styled(Left)
+        <Styled(Left) />,
+        <Styled(Body)
           style={
             Object {
-              "flex": 0.2,
+              "flex": 4,
             }
           }
-        />,
-        <Styled(Body)>
+        >
           <Styled(Title)
+            numberOfLines={1}
             style={
               Object {
                 "fontSize": 15,
                 "fontWeight": "normal",
+                "textAlign": "justify",
               }
             }
           >
@@ -784,6 +836,7 @@ ShallowWrapper {
               Object {
                 "color": "#685A5C",
                 "paddingTop": 5,
+                "textAlign": "justify",
               }
             }
             useNativeDriver={false}
@@ -791,8 +844,12 @@ ShallowWrapper {
             None
           </withAnimatable(Styled(Subtitle))>
         </Styled(Body)>,
-        undefined,
+        <Styled(Right) />,
       ],
+      "style": Object {
+        "height": "auto",
+        "paddingBottom": 5,
+      },
       "subtitle": "None",
       "virtual": undefined,
     },
@@ -804,9 +861,6 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": undefined,
-          "style": Object {
-            "flex": 0.2,
-          },
           "virtual": undefined,
         },
         "ref": null,
@@ -820,10 +874,12 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <Styled(Title)
+              numberOfLines={1}
               style={
                 Object {
                   "fontSize": 15,
                   "fontWeight": "normal",
+                  "textAlign": "justify",
                 }
               }
             >
@@ -843,6 +899,7 @@ ShallowWrapper {
                 Object {
                   "color": "#685A5C",
                   "paddingTop": 5,
+                  "textAlign": "justify",
                 }
               }
               useNativeDriver={false}
@@ -850,6 +907,9 @@ ShallowWrapper {
               None
             </withAnimatable(Styled(Subtitle))>,
           ],
+          "style": Object {
+            "flex": 4,
+          },
           "virtual": undefined,
         },
         "ref": null,
@@ -860,9 +920,11 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": "Header",
+              "numberOfLines": 1,
               "style": Object {
                 "fontSize": 15,
                 "fontWeight": "normal",
+                "textAlign": "justify",
               },
               "virtual": undefined,
             },
@@ -891,6 +953,7 @@ ShallowWrapper {
               "style": Object {
                 "color": "#685A5C",
                 "paddingTop": 5,
+                "textAlign": "justify",
               },
               "transition": undefined,
               "useNativeDriver": false,
@@ -902,7 +965,18 @@ ShallowWrapper {
         ],
         "type": [Function],
       },
-      undefined,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": undefined,
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
     ],
     "type": [Function],
   },
@@ -913,19 +987,21 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <Styled(Left)
+          <Styled(Left) />,
+          <Styled(Body)
             style={
               Object {
-                "flex": 0.2,
+                "flex": 4,
               }
             }
-          />,
-          <Styled(Body)>
+          >
             <Styled(Title)
+              numberOfLines={1}
               style={
                 Object {
                   "fontSize": 15,
                   "fontWeight": "normal",
+                  "textAlign": "justify",
                 }
               }
             >
@@ -945,6 +1021,7 @@ ShallowWrapper {
                 Object {
                   "color": "#685A5C",
                   "paddingTop": 5,
+                  "textAlign": "justify",
                 }
               }
               useNativeDriver={false}
@@ -952,8 +1029,12 @@ ShallowWrapper {
               None
             </withAnimatable(Styled(Subtitle))>
           </Styled(Body)>,
-          undefined,
+          <Styled(Right) />,
         ],
+        "style": Object {
+          "height": "auto",
+          "paddingBottom": 5,
+        },
         "subtitle": "None",
         "virtual": undefined,
       },
@@ -965,9 +1046,6 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": undefined,
-            "style": Object {
-              "flex": 0.2,
-            },
             "virtual": undefined,
           },
           "ref": null,
@@ -981,10 +1059,12 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <Styled(Title)
+                numberOfLines={1}
                 style={
                   Object {
                     "fontSize": 15,
                     "fontWeight": "normal",
+                    "textAlign": "justify",
                   }
                 }
               >
@@ -1004,6 +1084,7 @@ ShallowWrapper {
                   Object {
                     "color": "#685A5C",
                     "paddingTop": 5,
+                    "textAlign": "justify",
                   }
                 }
                 useNativeDriver={false}
@@ -1011,6 +1092,9 @@ ShallowWrapper {
                 None
               </withAnimatable(Styled(Subtitle))>,
             ],
+            "style": Object {
+              "flex": 4,
+            },
             "virtual": undefined,
           },
           "ref": null,
@@ -1021,9 +1105,11 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": "Header",
+                "numberOfLines": 1,
                 "style": Object {
                   "fontSize": 15,
                   "fontWeight": "normal",
+                  "textAlign": "justify",
                 },
                 "virtual": undefined,
               },
@@ -1052,6 +1138,7 @@ ShallowWrapper {
                 "style": Object {
                   "color": "#685A5C",
                   "paddingTop": 5,
+                  "textAlign": "justify",
                 },
                 "transition": undefined,
                 "useNativeDriver": false,
@@ -1063,7 +1150,426 @@ ShallowWrapper {
           ],
           "type": [Function],
         },
-        undefined,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": undefined,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing Header Component renders as expected with subtitle and regarding line numbers 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Header
+    onRightPress={[Function]}
+    subtitle="None"
+    subtitleNumberOfLines={2}
+    title="Header"
+    titleNumberOfLines={2}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <Styled(Left) />,
+        <Styled(Body)
+          style={
+            Object {
+              "flex": 4,
+            }
+          }
+        >
+          <Styled(Title)
+            numberOfLines={2}
+            style={
+              Object {
+                "fontSize": 15,
+                "fontWeight": "normal",
+                "textAlign": "justify",
+              }
+            }
+          >
+            Header
+          </Styled(Title)>
+          <withAnimatable(Styled(Subtitle))
+            delay={0}
+            direction="normal"
+            iterationCount={1}
+            iterationDelay={0}
+            numberOfLines={2}
+            onAnimationBegin={[Function]}
+            onAnimationEnd={[Function]}
+            onTransitionBegin={[Function]}
+            onTransitionEnd={[Function]}
+            style={
+              Object {
+                "color": "#685A5C",
+                "paddingTop": 5,
+                "textAlign": "justify",
+              }
+            }
+            useNativeDriver={false}
+          >
+            None
+          </withAnimatable(Styled(Subtitle))>
+        </Styled(Body)>,
+        <Styled(Right) />,
+      ],
+      "style": Object {
+        "height": "auto",
+        "paddingBottom": 5,
+      },
+      "subtitle": "None",
+      "virtual": undefined,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": undefined,
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(Title)
+              numberOfLines={2}
+              style={
+                Object {
+                  "fontSize": 15,
+                  "fontWeight": "normal",
+                  "textAlign": "justify",
+                }
+              }
+            >
+              Header
+            </Styled(Title)>,
+            <withAnimatable(Styled(Subtitle))
+              delay={0}
+              direction="normal"
+              iterationCount={1}
+              iterationDelay={0}
+              numberOfLines={2}
+              onAnimationBegin={[Function]}
+              onAnimationEnd={[Function]}
+              onTransitionBegin={[Function]}
+              onTransitionEnd={[Function]}
+              style={
+                Object {
+                  "color": "#685A5C",
+                  "paddingTop": 5,
+                  "textAlign": "justify",
+                }
+              }
+              useNativeDriver={false}
+            >
+              None
+            </withAnimatable(Styled(Subtitle))>,
+          ],
+          "style": Object {
+            "flex": 4,
+          },
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Header",
+              "numberOfLines": 2,
+              "style": Object {
+                "fontSize": 15,
+                "fontWeight": "normal",
+                "textAlign": "justify",
+              },
+              "virtual": undefined,
+            },
+            "ref": [Function],
+            "rendered": "Header",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "animation": undefined,
+              "children": "None",
+              "delay": 0,
+              "direction": "normal",
+              "duration": undefined,
+              "easing": undefined,
+              "iterationCount": 1,
+              "iterationDelay": 0,
+              "numberOfLines": 2,
+              "onAnimationBegin": [Function],
+              "onAnimationEnd": [Function],
+              "onTransitionBegin": [Function],
+              "onTransitionEnd": [Function],
+              "style": Object {
+                "color": "#685A5C",
+                "paddingTop": 5,
+                "textAlign": "justify",
+              },
+              "transition": undefined,
+              "useNativeDriver": false,
+            },
+            "ref": [Function],
+            "rendered": "None",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": undefined,
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Styled(Left) />,
+          <Styled(Body)
+            style={
+              Object {
+                "flex": 4,
+              }
+            }
+          >
+            <Styled(Title)
+              numberOfLines={2}
+              style={
+                Object {
+                  "fontSize": 15,
+                  "fontWeight": "normal",
+                  "textAlign": "justify",
+                }
+              }
+            >
+              Header
+            </Styled(Title)>
+            <withAnimatable(Styled(Subtitle))
+              delay={0}
+              direction="normal"
+              iterationCount={1}
+              iterationDelay={0}
+              numberOfLines={2}
+              onAnimationBegin={[Function]}
+              onAnimationEnd={[Function]}
+              onTransitionBegin={[Function]}
+              onTransitionEnd={[Function]}
+              style={
+                Object {
+                  "color": "#685A5C",
+                  "paddingTop": 5,
+                  "textAlign": "justify",
+                }
+              }
+              useNativeDriver={false}
+            >
+              None
+            </withAnimatable(Styled(Subtitle))>
+          </Styled(Body)>,
+          <Styled(Right) />,
+        ],
+        "style": Object {
+          "height": "auto",
+          "paddingBottom": 5,
+        },
+        "subtitle": "None",
+        "virtual": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": undefined,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Styled(Title)
+                numberOfLines={2}
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "fontWeight": "normal",
+                    "textAlign": "justify",
+                  }
+                }
+              >
+                Header
+              </Styled(Title)>,
+              <withAnimatable(Styled(Subtitle))
+                delay={0}
+                direction="normal"
+                iterationCount={1}
+                iterationDelay={0}
+                numberOfLines={2}
+                onAnimationBegin={[Function]}
+                onAnimationEnd={[Function]}
+                onTransitionBegin={[Function]}
+                onTransitionEnd={[Function]}
+                style={
+                  Object {
+                    "color": "#685A5C",
+                    "paddingTop": 5,
+                    "textAlign": "justify",
+                  }
+                }
+                useNativeDriver={false}
+              >
+                None
+              </withAnimatable(Styled(Subtitle))>,
+            ],
+            "style": Object {
+              "flex": 4,
+            },
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Header",
+                "numberOfLines": 2,
+                "style": Object {
+                  "fontSize": 15,
+                  "fontWeight": "normal",
+                  "textAlign": "justify",
+                },
+                "virtual": undefined,
+              },
+              "ref": [Function],
+              "rendered": "Header",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "animation": undefined,
+                "children": "None",
+                "delay": 0,
+                "direction": "normal",
+                "duration": undefined,
+                "easing": undefined,
+                "iterationCount": 1,
+                "iterationDelay": 0,
+                "numberOfLines": 2,
+                "onAnimationBegin": [Function],
+                "onAnimationEnd": [Function],
+                "onTransitionBegin": [Function],
+                "onTransitionEnd": [Function],
+                "style": Object {
+                  "color": "#685A5C",
+                  "paddingTop": 5,
+                  "textAlign": "justify",
+                },
+                "transition": undefined,
+                "useNativeDriver": false,
+              },
+              "ref": [Function],
+              "rendered": "None",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": undefined,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
       ],
       "type": [Function],
     },
@@ -1094,7 +1600,9 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Header
     onRightPress={[Function]}
     subtitle={null}
+    subtitleNumberOfLines={1}
     title="Header"
+    titleNumberOfLines={1}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -1110,27 +1618,33 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <Styled(Left)
+        <Styled(Left) />,
+        <Styled(Body)
           style={
             Object {
-              "flex": 0.2,
+              "flex": 4,
             }
           }
-        />,
-        <Styled(Body)>
+        >
           <Styled(Title)
+            numberOfLines={1}
             style={
               Object {
                 "fontSize": 15,
                 "fontWeight": "normal",
+                "textAlign": "justify",
               }
             }
           >
             Header
           </Styled(Title)>
         </Styled(Body)>,
-        undefined,
+        <Styled(Right) />,
       ],
+      "style": Object {
+        "height": "auto",
+        "paddingBottom": 5,
+      },
       "subtitle": null,
       "virtual": undefined,
     },
@@ -1142,9 +1656,6 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": undefined,
-          "style": Object {
-            "flex": 0.2,
-          },
           "virtual": undefined,
         },
         "ref": null,
@@ -1158,10 +1669,12 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <Styled(Title)
+              numberOfLines={1}
               style={
                 Object {
                   "fontSize": 15,
                   "fontWeight": "normal",
+                  "textAlign": "justify",
                 }
               }
             >
@@ -1169,6 +1682,9 @@ ShallowWrapper {
             </Styled(Title)>,
             null,
           ],
+          "style": Object {
+            "flex": 4,
+          },
           "virtual": undefined,
         },
         "ref": null,
@@ -1179,9 +1695,11 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": "Header",
+              "numberOfLines": 1,
               "style": Object {
                 "fontSize": 15,
                 "fontWeight": "normal",
+                "textAlign": "justify",
               },
               "virtual": undefined,
             },
@@ -1193,7 +1711,18 @@ ShallowWrapper {
         ],
         "type": [Function],
       },
-      undefined,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": undefined,
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
     ],
     "type": [Function],
   },
@@ -1204,27 +1733,33 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <Styled(Left)
+          <Styled(Left) />,
+          <Styled(Body)
             style={
               Object {
-                "flex": 0.2,
+                "flex": 4,
               }
             }
-          />,
-          <Styled(Body)>
+          >
             <Styled(Title)
+              numberOfLines={1}
               style={
                 Object {
                   "fontSize": 15,
                   "fontWeight": "normal",
+                  "textAlign": "justify",
                 }
               }
             >
               Header
             </Styled(Title)>
           </Styled(Body)>,
-          undefined,
+          <Styled(Right) />,
         ],
+        "style": Object {
+          "height": "auto",
+          "paddingBottom": 5,
+        },
         "subtitle": null,
         "virtual": undefined,
       },
@@ -1236,9 +1771,6 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": undefined,
-            "style": Object {
-              "flex": 0.2,
-            },
             "virtual": undefined,
           },
           "ref": null,
@@ -1252,10 +1784,12 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <Styled(Title)
+                numberOfLines={1}
                 style={
                   Object {
                     "fontSize": 15,
                     "fontWeight": "normal",
+                    "textAlign": "justify",
                   }
                 }
               >
@@ -1263,6 +1797,9 @@ ShallowWrapper {
               </Styled(Title)>,
               null,
             ],
+            "style": Object {
+              "flex": 4,
+            },
             "virtual": undefined,
           },
           "ref": null,
@@ -1273,9 +1810,11 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": "Header",
+                "numberOfLines": 1,
                 "style": Object {
                   "fontSize": 15,
                   "fontWeight": "normal",
+                  "textAlign": "justify",
                 },
                 "virtual": undefined,
               },
@@ -1287,7 +1826,18 @@ ShallowWrapper {
           ],
           "type": [Function],
         },
-        undefined,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": undefined,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
       ],
       "type": [Function],
     },

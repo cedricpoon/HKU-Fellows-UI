@@ -64,7 +64,6 @@ ShallowWrapper {
       ],
       "style": Object {
         "height": "auto",
-        "paddingBottom": 5,
       },
       "subtitle": null,
       "virtual": undefined,
@@ -239,7 +238,6 @@ ShallowWrapper {
         ],
         "style": Object {
           "height": "auto",
-          "paddingBottom": 5,
         },
         "subtitle": null,
         "virtual": undefined,
@@ -453,7 +451,6 @@ ShallowWrapper {
       ],
       "style": Object {
         "height": "auto",
-        "paddingBottom": 5,
       },
       "subtitle": null,
       "virtual": undefined,
@@ -628,7 +625,6 @@ ShallowWrapper {
         ],
         "style": Object {
           "height": "auto",
-          "paddingBottom": 5,
         },
         "subtitle": null,
         "virtual": undefined,
@@ -835,6 +831,7 @@ ShallowWrapper {
             style={
               Object {
                 "color": "#685A5C",
+                "marginBottom": 5,
                 "paddingTop": 5,
                 "textAlign": "justify",
               }
@@ -848,7 +845,6 @@ ShallowWrapper {
       ],
       "style": Object {
         "height": "auto",
-        "paddingBottom": 5,
       },
       "subtitle": "None",
       "virtual": undefined,
@@ -898,6 +894,7 @@ ShallowWrapper {
               style={
                 Object {
                   "color": "#685A5C",
+                  "marginBottom": 5,
                   "paddingTop": 5,
                   "textAlign": "justify",
                 }
@@ -952,6 +949,7 @@ ShallowWrapper {
               "onTransitionEnd": [Function],
               "style": Object {
                 "color": "#685A5C",
+                "marginBottom": 5,
                 "paddingTop": 5,
                 "textAlign": "justify",
               },
@@ -1020,6 +1018,7 @@ ShallowWrapper {
               style={
                 Object {
                   "color": "#685A5C",
+                  "marginBottom": 5,
                   "paddingTop": 5,
                   "textAlign": "justify",
                 }
@@ -1033,7 +1032,6 @@ ShallowWrapper {
         ],
         "style": Object {
           "height": "auto",
-          "paddingBottom": 5,
         },
         "subtitle": "None",
         "virtual": undefined,
@@ -1083,6 +1081,7 @@ ShallowWrapper {
                 style={
                   Object {
                     "color": "#685A5C",
+                    "marginBottom": 5,
                     "paddingTop": 5,
                     "textAlign": "justify",
                   }
@@ -1137,6 +1136,7 @@ ShallowWrapper {
                 "onTransitionEnd": [Function],
                 "style": Object {
                   "color": "#685A5C",
+                  "marginBottom": 5,
                   "paddingTop": 5,
                   "textAlign": "justify",
                 },
@@ -1243,6 +1243,7 @@ ShallowWrapper {
             style={
               Object {
                 "color": "#685A5C",
+                "marginBottom": 5,
                 "paddingTop": 5,
                 "textAlign": "justify",
               }
@@ -1256,7 +1257,6 @@ ShallowWrapper {
       ],
       "style": Object {
         "height": "auto",
-        "paddingBottom": 5,
       },
       "subtitle": "None",
       "virtual": undefined,
@@ -1306,6 +1306,7 @@ ShallowWrapper {
               style={
                 Object {
                   "color": "#685A5C",
+                  "marginBottom": 5,
                   "paddingTop": 5,
                   "textAlign": "justify",
                 }
@@ -1360,6 +1361,7 @@ ShallowWrapper {
               "onTransitionEnd": [Function],
               "style": Object {
                 "color": "#685A5C",
+                "marginBottom": 5,
                 "paddingTop": 5,
                 "textAlign": "justify",
               },
@@ -1428,6 +1430,7 @@ ShallowWrapper {
               style={
                 Object {
                   "color": "#685A5C",
+                  "marginBottom": 5,
                   "paddingTop": 5,
                   "textAlign": "justify",
                 }
@@ -1441,7 +1444,6 @@ ShallowWrapper {
         ],
         "style": Object {
           "height": "auto",
-          "paddingBottom": 5,
         },
         "subtitle": "None",
         "virtual": undefined,
@@ -1491,6 +1493,7 @@ ShallowWrapper {
                 style={
                   Object {
                     "color": "#685A5C",
+                    "marginBottom": 5,
                     "paddingTop": 5,
                     "textAlign": "justify",
                   }
@@ -1545,6 +1548,7 @@ ShallowWrapper {
                 "onTransitionEnd": [Function],
                 "style": Object {
                   "color": "#685A5C",
+                  "marginBottom": 5,
                   "paddingTop": 5,
                   "textAlign": "justify",
                 },
@@ -1643,7 +1647,6 @@ ShallowWrapper {
       ],
       "style": Object {
         "height": "auto",
-        "paddingBottom": 5,
       },
       "subtitle": null,
       "virtual": undefined,
@@ -1758,7 +1761,6 @@ ShallowWrapper {
         ],
         "style": Object {
           "height": "auto",
-          "paddingBottom": 5,
         },
         "subtitle": null,
         "virtual": undefined,

@@ -6,7 +6,7 @@ import { logo } from 'hkufui/theme/palette';
 export default StyleSheet.create({
   header: {
     height: 'auto',
-    paddingBottom: 0.5
+    paddingBottom: 0.5 // compensation on diff with PreviewHeader
   },
   title: {
     fontSize: fontSize.titleSize,

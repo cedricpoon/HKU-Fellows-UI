@@ -29,6 +29,9 @@ export default {
   'login.laterMsg': 'Your account has been locked for 30 minutes.',
   'login.missingParam': 'Please enter UID and PIN.',
 
+  'drawer.landing': 'Browse Courses / Posts',
+  'drawer.logout': 'Log out',
+
   'fetch.noNetwork': 'Server is not connected.',
 
   'toast.dismiss': 'Dismiss'

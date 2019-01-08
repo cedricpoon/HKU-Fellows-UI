@@ -36,7 +36,9 @@ async function invokeRetrieving(dispatch, getState) {
     const res = await retrievePosts(dispatch, getState);
     if (res.status === 200 || res.status === 204) {
       // successful return
-      dispatch(onFill(res.payload));
+      if (credential) {
+        dispatch(onFill(res.payload));
+      }
     } else {
       // failure
       switch(res.status) {

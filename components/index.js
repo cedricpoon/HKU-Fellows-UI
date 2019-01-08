@@ -13,3 +13,5 @@ export { default as PostPlaceholder } from './PostScrollable/PostPlaceholder/Pos
 export { default as PostLoadIndicator } from './PostLoadIndicator/PostLoadIndicator';
 
 export { default as LoginForm } from './LoginForm/LoginForm';
+
+export { default as Drawer } from './Drawer/Drawer';

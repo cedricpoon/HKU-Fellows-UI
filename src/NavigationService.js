@@ -1,6 +1,6 @@
 // NavigationService.js
 
-import { NavigationActions } from 'react-navigation';
+import { NavigationActions, StackActions } from 'react-navigation';
 import { DrawerActions } from 'react-navigation-drawer';
 
 let _navigator;
@@ -26,9 +26,23 @@ function openDrawer() {
   _navigator.dispatch(DrawerActions.openDrawer());
 }
 
+function reset(routeName, params, navigator) {
+  const resetAction = StackActions.reset({
+    index: 0,
+    actions: [NavigationActions.navigate({ routeName, params })],
+  });
+  // in case _navigator is not yet ready, provide navigator
+  if (!navigator) {
+    _navigator.dispatch(resetAction);
+  } else {
+    navigator.dispatch(resetAction);
+  }
+}
+
 export default {
   navigate,
   setTopLevelNavigator,
   goBack,
-  openDrawer
+  openDrawer,
+  reset
 };

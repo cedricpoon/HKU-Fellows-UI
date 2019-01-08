@@ -19,3 +19,5 @@ export const LOGIN_ERROR = "LOGIN_ERROR";
 export const LOGGED_IN = "LOGGED_IN";
 
 export const LOGGING_IN = "LOGGING_IN";
+
+export const LOGOUT = "LOGOUT";

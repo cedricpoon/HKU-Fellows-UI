@@ -55,7 +55,7 @@ export function onClear() {
   };
 }
 
-const handleExpandPosts = (state = {}, action = {}) => {
+export default (state = {}, action = {}) => {
   switch (action.type) {
     case LOGGING_IN:
       return {}; // empty object as logging in
@@ -70,5 +70,3 @@ const handleExpandPosts = (state = {}, action = {}) => {
       return state;
   }
 };
-
-export default handleExpandPosts;

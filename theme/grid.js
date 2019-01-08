@@ -27,3 +27,7 @@ export const course = {
   accordionMarginLeft: gridBase * 3,
   headerPadding: gridBase * 2
 }
+
+export const drawer = {
+  iconSize: gridBase * 4,
+}

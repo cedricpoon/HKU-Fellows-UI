@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Toast } from 'native-base';
-import { withNavigation, StackActions, NavigationActions } from 'react-navigation';
+import { withNavigation } from 'react-navigation';
 
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -8,7 +8,9 @@ import PropTypes from 'prop-types';
 import { LoginForm } from 'hkufui/components';
 import { localize } from 'hkufui/locale';
 import { login } from 'hkufui/config/webapi';
-import { onLogin, onClear } from './authenticate';
+import NavigationService from 'hkufui/src/NavigationService';
+import { onLogin } from './authenticate';
+import { onLogout } from 'hkufui/src/navigator/Context/DrawerMenu/drawerAction';
 import { ALERT_DURATION } from './Constants';
 
 const locale = localize({ language: 'en', country: 'hk' });
@@ -34,17 +36,13 @@ export class Login extends Component {
     const { credential, navigation } = this.props;
 
     if (isAuthenticated(credential)) {
-      const resetAction = StackActions.reset({
-        index: 0,
-        actions: [NavigationActions.navigate({ routeName: 'Context' })],
-      });
-      navigation.dispatch(resetAction);
+      NavigationService.reset('Context', null, navigation);
     }
   }
 
   componentDidMount() {
     if (!isAuthenticated(this.props.credential))
-      this.props.onClearCredential();
+      this.props.onLogout();
     this._redirect();
   }
 
@@ -77,7 +75,7 @@ export class Login extends Component {
 Login.propTypes = {
   onLogin: PropTypes.func.isRequired,
   credential: PropTypes.object,
-  onClearCredential: PropTypes.func.isRequired
+  onLogout: PropTypes.func.isRequired
 }
 
 const mapStateToProps = state => ({
@@ -92,7 +90,7 @@ const mapDispatchToProps = dispatch => ({
       path: login.password
     })
   )},
-  onClearCredential: () => { dispatch(onClear()) }
+  onLogout: () => { dispatch(onLogout()) }
 })
 
 export default withNavigation(connect(

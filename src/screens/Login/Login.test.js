@@ -5,7 +5,7 @@ import { Login } from './Login';
 describe('Testing Login Screen', () => {
   const requiredProps = {
     onLogin: () => {},
-    onClearCredential: () => {}
+    onLogout: () => {}
   }
 
   it('renders as expected', () => {

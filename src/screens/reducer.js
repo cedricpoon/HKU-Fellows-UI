@@ -5,21 +5,35 @@ import { LOGOUT } from 'hkufui/src/constants/actionTypes';
 import initState from 'hkufui/src/store/globalState';
 
 import SelectCourseActionHandler from './SelectCourse/handleActions';
-
 import LoadPostsHandler from './Preview/PostPreviewLoader/loadPosts';
-
 import ExpandPostsHandler from './Preview/expandPosts';
-
 import Authentication from './Login/authenticate';
 
-const appReducer = combineReducers({
-  location: SelectCourseActionHandler,
-  posts: reduceReducers(
-    LoadPostsHandler,
-    ExpandPostsHandler
-  ),
-  credential: Authentication
-});
+const ruleReducer = (state, action) => {
+  // logged in rule middleware
+  const loggedIn = (handleAction) => {
+    return (innerState = {}, innerAction = {}) => {
+      if (state.credential) {
+        return handleAction(innerState, innerAction);
+      } else {
+        // state unchanged
+        return innerState;
+      }
+    };
+  };
+
+  // main application reducers
+  const appReducer = combineReducers({
+    location: loggedIn(SelectCourseActionHandler),
+    posts: loggedIn(reduceReducers(
+      LoadPostsHandler,
+      ExpandPostsHandler
+    )),
+    credential: Authentication
+  });
+
+  return appReducer(state, action);
+};
 
 // root reducer
 export default (state, action) => {
@@ -27,6 +41,6 @@ export default (state, action) => {
     case LOGOUT:
       return initState; // clear store
     default:
-      return appReducer(state, action);
+      return ruleReducer(state, action);
   }
 }

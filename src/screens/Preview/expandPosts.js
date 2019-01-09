@@ -11,14 +11,12 @@ async function invokeRetrieving(dispatch, getState) {
   try {
     const res = await retrievePosts(dispatch, getState);
     if (res.status === 200 || res.status === 204) {
-      if (credential) {
-        // successful return
-        if (res.payload.length > 0) {
-          dispatch(onFill(posts.posts.concat(res.payload)));
-          dispatch(onExpanded());
-        } else {
-          dispatch(onLast());
-        }
+      // successful return
+      if (res.payload.length > 0) {
+        dispatch(onFill(posts.posts.concat(res.payload)));
+        dispatch(onExpanded());
+      } else {
+        dispatch(onLast());
       }
     } else {
       // failure

@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-import { fontSize } from 'hkufui/theme/grid';
+import { fontSize, gridBase } from 'hkufui/theme/grid';
 import { logo } from 'hkufui/theme/palette';
 
 export default StyleSheet.create({
@@ -9,12 +9,19 @@ export default StyleSheet.create({
     fontSize: fontSize.titleSize
   },
   color: {
-    color: logo.green
+    color: logo.dimmed.green
   },
   container: {
     flex: 1
   },
-  scrollBar: {
-    flex: 1
+  wrapper: {
+    zIndex: 1,
+  },
+  items: {
+    alignItems: 'flex-start',
+    margin: gridBase * 4
+  },
+  backdrop: {
+    zIndex: 0
   }
 });

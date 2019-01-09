@@ -34,7 +34,6 @@ export default StyleSheet.create({
     marginTop: base * 3
   },
   backdrop: {
-    position: 'absolute',
     zIndex: 1
   }
 });

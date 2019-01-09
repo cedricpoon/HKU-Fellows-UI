@@ -1,12 +1,13 @@
 import React, { PureComponent } from 'react';
 import Svg,{ Path, G, Line, Polyline, Ellipse } from 'react-native-svg';
-
-import { SIZE } from './Constants';
+import PropTypes from 'prop-types';
 
 class Logo extends PureComponent {
   render() {
+    const { size, ...restProps } = this.props;
+
     return (
-      <Svg width={SIZE} height={SIZE} viewBox="0 0 500 512">
+      <Svg width={size} height={size} viewBox="0 0 500 512" {...restProps}>
         <Path fill="#4BBFB3" d="M475.866,365.865C491.338,332.573,500,295.323,500,256C500,114.615,388.071,0,250,0S0,114.615,0,256
           s111.929,256,250,256c32.332,0,63.229-6.285,91.593-17.727L475.866,365.865z"/>
         <Path fill="#248477" d="M432.7,366.322c-57.858,11.609-96.37,67.233-88.879,126.269l131.787-126.269
@@ -23,6 +24,10 @@ class Logo extends PureComponent {
       </Svg>
     );
   }
+}
+
+Logo.propTypes = {
+  size: PropTypes.number.isRequired
 }
 
 export default Logo;

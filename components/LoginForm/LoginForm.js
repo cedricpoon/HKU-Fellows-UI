@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import { Platform, Image, Dimensions, Keyboard, KeyboardAvoidingView } from 'react-native';
+import { Platform, Keyboard, KeyboardAvoidingView } from 'react-native';
 import { Form, Item, Label, Input, Text, Button, Icon, View, Spinner } from 'native-base';
 import PropTypes from 'prop-types';
 
-import background from './resources/background';
+import Logo from '../Logo/Logo';
+import Backdrop from '../Backdrop/Backdrop';
+
+import { LOGO_SIZE } from './Constants';
 import styles from './Styles';
 import { localize } from 'hkufui/locale';
-import Logo from './Logo/Logo';
 
 const locale = localize({ language: 'en', country: 'hk' });
 
@@ -62,13 +64,10 @@ export class LoginForm extends Component {
     const { validity } = this.state;
     const { loggingIn } = this.props;
 
-    const deviceHeight = Dimensions.get('window').height;
-    const deviceWidth = Dimensions.get('window').width;
-
     return (
       <KeyboardAvoidingView style={styles.fullPageContainer} behavior="padding" enabled>
         <View style={styles.inputForm}>
-          <Logo />
+          <Logo size={LOGO_SIZE} />
           <Form style={styles.fullWidth}>
             <Item floatingLabel error={!validity.username}>
               <Label><Text note style={styles.placeholder}>{locale['login.username']}</Text></Label>
@@ -113,14 +112,7 @@ export class LoginForm extends Component {
             </Button>
           ) }
         </View>
-        <Image
-          source={{ uri: background }}
-          style={[
-            { width: deviceWidth, height: deviceHeight },
-            styles.backdrop
-          ]}
-          resizeMode='repeat'
-        />
+        <Backdrop style={styles.backdrop} />
       </KeyboardAvoidingView>
     );
   }

@@ -9,7 +9,7 @@
     "ios-small": "react-native run-ios --simulator 'iPhone 4s'",
     "ios-medium": "react-native run-ios --simulator 'iPhone 8'",
     "ios-large": "react-native run-ios --simulator 'iPhone XS Max'",
-    "test": "jest && npm run lint",
+    "test": "jest --runInBand && npm run lint",
     "lint": "eslint .",
     "updateSnapshot": "jest --updateSnapshot"
   },
@@ -38,7 +38,7 @@
     "enzyme-adapter-react-16": "^1.7.1",
     "eslint": "^5.12.0",
     "eslint-plugin-react": "^7.12.3",
-    "eslint-plugin-react-native": "^3.5.0",
+    "eslint-plugin-react-native": "^3.6.0",
     "jest": "23.6.0",
     "metro-react-native-babel-preset": "0.51.0",
     "react-dom": "^16.7.0",

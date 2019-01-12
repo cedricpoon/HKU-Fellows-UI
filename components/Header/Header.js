@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
-import { Header as NBHeader, Left, Body, Right, Button, Icon, Title, Subtitle as NBSubtitle } from 'native-base';
+import { Left, Body, Right, Button, Icon, Title, Subtitle as NBSubtitle } from 'native-base';
+import { Header as NBHeader } from 'hkufui/native-base-fork/Header';
 import * as Animatable from 'react-native-animatable';
 
 import NavigationService from 'hkufui/src/NavigationService';
@@ -11,7 +12,6 @@ const Subtitle = Animatable.createAnimatableComponent(NBSubtitle);
 const subtitleAnimationDuration = 500;
 
 class Header extends Component {
-
   constructor(props) {
     super(props);
 
@@ -45,7 +45,7 @@ class Header extends Component {
     const { subtitle } = this.state;
 
     return (
-      <NBHeader {...restProps} style={styles.header} >
+      <NBHeader {...restProps} style={styles.header}>
         <Left>
           { backable && (
             <Button

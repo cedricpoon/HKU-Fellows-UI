@@ -51,7 +51,8 @@ export function onLogin({ credential, alert, path }) {
 
 export function onClear() {
   return (dispatch) => {
-    dispatch({ type: LOGIN_ERROR });
+    // LOGGING_IN to pass rule loggedIn() in reducer
+    dispatch({ type: LOGGING_IN });
   };
 }
 

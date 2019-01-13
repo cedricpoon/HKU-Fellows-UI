@@ -37,10 +37,11 @@ class Header extends Component {
       backable,
       rightIcon,
       onRightPress,
+      rightStyle,
       ...restProps
     } = this.props;
 
-    const { subtitle } = this.state;
+    const { subtitle } = this.state.subtitle ? this.state : this.props;
 
     return (
       <NBHeader {...restProps} style={styles.header}>
@@ -50,7 +51,7 @@ class Header extends Component {
               transparent
               onPress={() => { NavigationService.goBack(); }}
             >
-              <Icon style={styles.back} name="arrow-dropleft"/>
+              <Icon style={styles.button} name="arrow-dropleft"/>
             </Button>
           )}
         </Left>
@@ -78,7 +79,7 @@ class Header extends Component {
         <Right>
         {rightIcon && (
           <Button transparent onPress={onRightPress}>
-            <Icon name={rightIcon} style={styles.rightIcon} />
+            <Icon name={rightIcon} style={rightStyle} />
           </Button>
         )}
         </Right>
@@ -90,6 +91,7 @@ class Header extends Component {
 Header.defaultProps = {
   onRightPress: () => {},
   subtitle: null,
+  rightStyle: styles.button
 };
 
 const contextProptypes = {
@@ -103,6 +105,7 @@ Header.propTypes = {
   subtitle: PropTypes.shape(contextProptypes),
   backable: PropTypes.bool,
   rightIcon: PropTypes.string,
+  rightStyle: Icon.propTypes.style,
   onRightPress: PropTypes.func
 };
 

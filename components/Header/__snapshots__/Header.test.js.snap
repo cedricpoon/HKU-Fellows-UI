@@ -1,11 +1,416 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Testing Header Component has right style 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Header
+    onRightPress={[Function]}
+    rightIcon="arrow-dropup"
+    rightStyle={Object {}}
+    subtitle={null}
+    title={
+      Object {
+        "context": "header",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <Styled(Left) />,
+        <Styled(Body)
+          style={
+            Object {
+              "flex": 4,
+            }
+          }
+        >
+          <Styled(Title)
+            numberOfLines={1}
+            style={
+              Array [
+                Object {
+                  "fontSize": undefined,
+                  "fontWeight": "normal",
+                  "marginBottom": 5,
+                  "textAlign": "justify",
+                },
+                Object {
+                  "fontSize": undefined,
+                },
+              ]
+            }
+          >
+            header
+          </Styled(Title)>
+        </Styled(Body)>,
+        <Styled(Right)>
+          <Styled(Button)
+            onPress={[Function]}
+            transparent={true}
+          >
+            <Styled(Icon)
+              name="arrow-dropup"
+              style={Object {}}
+            />
+          </Styled(Button)>
+        </Styled(Right)>,
+      ],
+      "style": Object {
+        "height": "auto",
+        "paddingBottom": 0.5,
+      },
+      "subtitle": null,
+      "virtual": undefined,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": undefined,
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(Title)
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "fontSize": undefined,
+                    "fontWeight": "normal",
+                    "marginBottom": 5,
+                    "textAlign": "justify",
+                  },
+                  Object {
+                    "fontSize": undefined,
+                  },
+                ]
+              }
+            >
+              header
+            </Styled(Title)>,
+            null,
+          ],
+          "style": Object {
+            "flex": 4,
+          },
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "header",
+              "numberOfLines": 1,
+              "style": Array [
+                Object {
+                  "fontSize": undefined,
+                  "fontWeight": "normal",
+                  "marginBottom": 5,
+                  "textAlign": "justify",
+                },
+                Object {
+                  "fontSize": undefined,
+                },
+              ],
+              "virtual": undefined,
+            },
+            "ref": [Function],
+            "rendered": "header",
+            "type": [Function],
+          },
+          null,
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <Styled(Button)
+            onPress={[Function]}
+            transparent={true}
+          >
+            <Styled(Icon)
+              name="arrow-dropup"
+              style={Object {}}
+            />
+          </Styled(Button)>,
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Styled(Icon)
+              name="arrow-dropup"
+              style={Object {}}
+            />,
+            "onPress": [Function],
+            "transparent": true,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "arrow-dropup",
+              "style": Object {},
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Styled(Left) />,
+          <Styled(Body)
+            style={
+              Object {
+                "flex": 4,
+              }
+            }
+          >
+            <Styled(Title)
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "fontSize": undefined,
+                    "fontWeight": "normal",
+                    "marginBottom": 5,
+                    "textAlign": "justify",
+                  },
+                  Object {
+                    "fontSize": undefined,
+                  },
+                ]
+              }
+            >
+              header
+            </Styled(Title)>
+          </Styled(Body)>,
+          <Styled(Right)>
+            <Styled(Button)
+              onPress={[Function]}
+              transparent={true}
+            >
+              <Styled(Icon)
+                name="arrow-dropup"
+                style={Object {}}
+              />
+            </Styled(Button)>
+          </Styled(Right)>,
+        ],
+        "style": Object {
+          "height": "auto",
+          "paddingBottom": 0.5,
+        },
+        "subtitle": null,
+        "virtual": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": undefined,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Styled(Title)
+                numberOfLines={1}
+                style={
+                  Array [
+                    Object {
+                      "fontSize": undefined,
+                      "fontWeight": "normal",
+                      "marginBottom": 5,
+                      "textAlign": "justify",
+                    },
+                    Object {
+                      "fontSize": undefined,
+                    },
+                  ]
+                }
+              >
+                header
+              </Styled(Title)>,
+              null,
+            ],
+            "style": Object {
+              "flex": 4,
+            },
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "header",
+                "numberOfLines": 1,
+                "style": Array [
+                  Object {
+                    "fontSize": undefined,
+                    "fontWeight": "normal",
+                    "marginBottom": 5,
+                    "textAlign": "justify",
+                  },
+                  Object {
+                    "fontSize": undefined,
+                  },
+                ],
+                "virtual": undefined,
+              },
+              "ref": [Function],
+              "rendered": "header",
+              "type": [Function],
+            },
+            null,
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Styled(Button)
+              onPress={[Function]}
+              transparent={true}
+            >
+              <Styled(Icon)
+                name="arrow-dropup"
+                style={Object {}}
+              />
+            </Styled(Button)>,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Icon)
+                name="arrow-dropup"
+                style={Object {}}
+              />,
+              "onPress": [Function],
+              "transparent": true,
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "arrow-dropup",
+                "style": Object {},
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
 exports[`Testing Header Component renders as expected with back button 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header
     backable={true}
     onRightPress={[Function]}
+    rightStyle={
+      Object {
+        "color": "#E03A00",
+      }
+    }
     subtitle={null}
     title={
       Object {
@@ -56,6 +461,7 @@ ShallowWrapper {
                 Object {
                   "fontSize": undefined,
                   "fontWeight": "normal",
+                  "marginBottom": 5,
                   "textAlign": "justify",
                 },
                 Object {
@@ -149,6 +555,7 @@ ShallowWrapper {
                   Object {
                     "fontSize": undefined,
                     "fontWeight": "normal",
+                    "marginBottom": 5,
                     "textAlign": "justify",
                   },
                   Object {
@@ -179,6 +586,7 @@ ShallowWrapper {
                 Object {
                   "fontSize": undefined,
                   "fontWeight": "normal",
+                  "marginBottom": 5,
                   "textAlign": "justify",
                 },
                 Object {
@@ -246,6 +654,7 @@ ShallowWrapper {
                   Object {
                     "fontSize": undefined,
                     "fontWeight": "normal",
+                    "marginBottom": 5,
                     "textAlign": "justify",
                   },
                   Object {
@@ -339,6 +748,7 @@ ShallowWrapper {
                     Object {
                       "fontSize": undefined,
                       "fontWeight": "normal",
+                      "marginBottom": 5,
                       "textAlign": "justify",
                     },
                     Object {
@@ -369,6 +779,7 @@ ShallowWrapper {
                   Object {
                     "fontSize": undefined,
                     "fontWeight": "normal",
+                    "marginBottom": 5,
                     "textAlign": "justify",
                   },
                   Object {
@@ -427,6 +838,11 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Header
     onRightPress={[Function]}
     rightIcon="arrow-dropup"
+    rightStyle={
+      Object {
+        "color": "#E03A00",
+      }
+    }
     subtitle={null}
     title={
       Object {
@@ -463,6 +879,7 @@ ShallowWrapper {
                 Object {
                   "fontSize": undefined,
                   "fontWeight": "normal",
+                  "marginBottom": 5,
                   "textAlign": "justify",
                 },
                 Object {
@@ -524,6 +941,7 @@ ShallowWrapper {
                   Object {
                     "fontSize": undefined,
                     "fontWeight": "normal",
+                    "marginBottom": 5,
                     "textAlign": "justify",
                   },
                   Object {
@@ -554,6 +972,7 @@ ShallowWrapper {
                 Object {
                   "fontSize": undefined,
                   "fontWeight": "normal",
+                  "marginBottom": 5,
                   "textAlign": "justify",
                 },
                 Object {
@@ -653,6 +1072,7 @@ ShallowWrapper {
                   Object {
                     "fontSize": undefined,
                     "fontWeight": "normal",
+                    "marginBottom": 5,
                     "textAlign": "justify",
                   },
                   Object {
@@ -714,6 +1134,7 @@ ShallowWrapper {
                     Object {
                       "fontSize": undefined,
                       "fontWeight": "normal",
+                      "marginBottom": 5,
                       "textAlign": "justify",
                     },
                     Object {
@@ -744,6 +1165,7 @@ ShallowWrapper {
                   Object {
                     "fontSize": undefined,
                     "fontWeight": "normal",
+                    "marginBottom": 5,
                     "textAlign": "justify",
                   },
                   Object {
@@ -847,6 +1269,11 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header
     onRightPress={[Function]}
+    rightStyle={
+      Object {
+        "color": "#E03A00",
+      }
+    }
     subtitle={
       Object {
         "context": "header",
@@ -887,6 +1314,7 @@ ShallowWrapper {
                 Object {
                   "fontSize": undefined,
                   "fontWeight": "normal",
+                  "marginBottom": 5,
                   "textAlign": "justify",
                 },
                 Object {
@@ -911,7 +1339,6 @@ ShallowWrapper {
               Object {
                 "color": "#685A5C",
                 "marginBottom": 5,
-                "paddingTop": 5,
                 "textAlign": "justify",
               }
             }
@@ -958,6 +1385,7 @@ ShallowWrapper {
                   Object {
                     "fontSize": undefined,
                     "fontWeight": "normal",
+                    "marginBottom": 5,
                     "textAlign": "justify",
                   },
                   Object {
@@ -982,7 +1410,6 @@ ShallowWrapper {
                 Object {
                   "color": "#685A5C",
                   "marginBottom": 5,
-                  "paddingTop": 5,
                   "textAlign": "justify",
                 }
               }
@@ -1009,6 +1436,7 @@ ShallowWrapper {
                 Object {
                   "fontSize": undefined,
                   "fontWeight": "normal",
+                  "marginBottom": 5,
                   "textAlign": "justify",
                 },
                 Object {
@@ -1042,7 +1470,6 @@ ShallowWrapper {
               "style": Object {
                 "color": "#685A5C",
                 "marginBottom": 5,
-                "paddingTop": 5,
                 "textAlign": "justify",
               },
               "transition": undefined,
@@ -1092,6 +1519,7 @@ ShallowWrapper {
                   Object {
                     "fontSize": undefined,
                     "fontWeight": "normal",
+                    "marginBottom": 5,
                     "textAlign": "justify",
                   },
                   Object {
@@ -1116,7 +1544,6 @@ ShallowWrapper {
                 Object {
                   "color": "#685A5C",
                   "marginBottom": 5,
-                  "paddingTop": 5,
                   "textAlign": "justify",
                 }
               }
@@ -1163,6 +1590,7 @@ ShallowWrapper {
                     Object {
                       "fontSize": undefined,
                       "fontWeight": "normal",
+                      "marginBottom": 5,
                       "textAlign": "justify",
                     },
                     Object {
@@ -1187,7 +1615,6 @@ ShallowWrapper {
                   Object {
                     "color": "#685A5C",
                     "marginBottom": 5,
-                    "paddingTop": 5,
                     "textAlign": "justify",
                   }
                 }
@@ -1214,6 +1641,7 @@ ShallowWrapper {
                   Object {
                     "fontSize": undefined,
                     "fontWeight": "normal",
+                    "marginBottom": 5,
                     "textAlign": "justify",
                   },
                   Object {
@@ -1247,7 +1675,6 @@ ShallowWrapper {
                 "style": Object {
                   "color": "#685A5C",
                   "marginBottom": 5,
-                  "paddingTop": 5,
                   "textAlign": "justify",
                 },
                 "transition": undefined,
@@ -1301,6 +1728,11 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header
     onRightPress={[Function]}
+    rightStyle={
+      Object {
+        "color": "#E03A00",
+      }
+    }
     subtitle={
       Object {
         "context": "header",
@@ -1343,6 +1775,7 @@ ShallowWrapper {
                 Object {
                   "fontSize": undefined,
                   "fontWeight": "normal",
+                  "marginBottom": 5,
                   "textAlign": "justify",
                 },
                 Object {
@@ -1367,7 +1800,6 @@ ShallowWrapper {
               Object {
                 "color": "#685A5C",
                 "marginBottom": 5,
-                "paddingTop": 5,
                 "textAlign": "justify",
               }
             }
@@ -1415,6 +1847,7 @@ ShallowWrapper {
                   Object {
                     "fontSize": undefined,
                     "fontWeight": "normal",
+                    "marginBottom": 5,
                     "textAlign": "justify",
                   },
                   Object {
@@ -1439,7 +1872,6 @@ ShallowWrapper {
                 Object {
                   "color": "#685A5C",
                   "marginBottom": 5,
-                  "paddingTop": 5,
                   "textAlign": "justify",
                 }
               }
@@ -1466,6 +1898,7 @@ ShallowWrapper {
                 Object {
                   "fontSize": undefined,
                   "fontWeight": "normal",
+                  "marginBottom": 5,
                   "textAlign": "justify",
                 },
                 Object {
@@ -1499,7 +1932,6 @@ ShallowWrapper {
               "style": Object {
                 "color": "#685A5C",
                 "marginBottom": 5,
-                "paddingTop": 5,
                 "textAlign": "justify",
               },
               "transition": undefined,
@@ -1549,6 +1981,7 @@ ShallowWrapper {
                   Object {
                     "fontSize": undefined,
                     "fontWeight": "normal",
+                    "marginBottom": 5,
                     "textAlign": "justify",
                   },
                   Object {
@@ -1573,7 +2006,6 @@ ShallowWrapper {
                 Object {
                   "color": "#685A5C",
                   "marginBottom": 5,
-                  "paddingTop": 5,
                   "textAlign": "justify",
                 }
               }
@@ -1621,6 +2053,7 @@ ShallowWrapper {
                     Object {
                       "fontSize": undefined,
                       "fontWeight": "normal",
+                      "marginBottom": 5,
                       "textAlign": "justify",
                     },
                     Object {
@@ -1645,7 +2078,6 @@ ShallowWrapper {
                   Object {
                     "color": "#685A5C",
                     "marginBottom": 5,
-                    "paddingTop": 5,
                     "textAlign": "justify",
                   }
                 }
@@ -1672,6 +2104,7 @@ ShallowWrapper {
                   Object {
                     "fontSize": undefined,
                     "fontWeight": "normal",
+                    "marginBottom": 5,
                     "textAlign": "justify",
                   },
                   Object {
@@ -1705,7 +2138,6 @@ ShallowWrapper {
                 "style": Object {
                   "color": "#685A5C",
                   "marginBottom": 5,
-                  "paddingTop": 5,
                   "textAlign": "justify",
                 },
                 "transition": undefined,
@@ -1759,6 +2191,11 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header
     onRightPress={[Function]}
+    rightStyle={
+      Object {
+        "color": "#E03A00",
+      }
+    }
     subtitle={null}
     title={
       Object {
@@ -1795,6 +2232,7 @@ ShallowWrapper {
                 Object {
                   "fontSize": undefined,
                   "fontWeight": "normal",
+                  "marginBottom": 5,
                   "textAlign": "justify",
                 },
                 Object {
@@ -1842,6 +2280,7 @@ ShallowWrapper {
                   Object {
                     "fontSize": undefined,
                     "fontWeight": "normal",
+                    "marginBottom": 5,
                     "textAlign": "justify",
                   },
                   Object {
@@ -1872,6 +2311,7 @@ ShallowWrapper {
                 Object {
                   "fontSize": undefined,
                   "fontWeight": "normal",
+                  "marginBottom": 5,
                   "textAlign": "justify",
                 },
                 Object {
@@ -1925,6 +2365,7 @@ ShallowWrapper {
                   Object {
                     "fontSize": undefined,
                     "fontWeight": "normal",
+                    "marginBottom": 5,
                     "textAlign": "justify",
                   },
                   Object {
@@ -1972,6 +2413,7 @@ ShallowWrapper {
                     Object {
                       "fontSize": undefined,
                       "fontWeight": "normal",
+                      "marginBottom": 5,
                       "textAlign": "justify",
                     },
                     Object {
@@ -2002,6 +2444,7 @@ ShallowWrapper {
                   Object {
                     "fontSize": undefined,
                     "fontWeight": "normal",
+                    "marginBottom": 5,
                     "textAlign": "justify",
                   },
                   Object {

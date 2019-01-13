@@ -1,44 +1,45 @@
 import React, { Component } from 'react';
-import { Text, Container } from 'native-base';
+import { Text, Container, Content } from 'native-base';
 import { withNavigation } from 'react-navigation';
 import { connect } from 'react-redux';
 
-import { Header } from 'hkufui/components';
-import styles from './Styles';
+import { Header, PostFooter } from 'hkufui/components';
 
 export class Post extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { title: '' };
   }
 
   componentDidMount() {
     const { navigation } = this.props;
+    /* all props from <PostPreview /> has been passed */
     this.setState({
-      topicId: navigation.getParam('topicId', 'Undefined')
+      ...navigation.state.params
     });
   }
 
   render() {
-    const { topicId } = this.state;
+    const { id, title, subTitle } = this.state;
 
     return (
       <Container>
         <Header
           title={{
-            context: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat feugiat mauris ut tristique.',
-            numberOfLines: 4,
-            size: styles.title.fontSize
+            context: title,
+            numberOfLines: 4
           }}
-          subtitle={{
-            context: 'Nulla vulputate, diam nec feugiat facilisis, justo dolor convallis ligula, eu placerat nulla lacus a ante.',
+          subtitle={subTitle && {
+            context: subTitle,
             numberOfLines: 3
           }}
           backable
+          rightIcon='more'
         />
-        <Text>
-          TopicId: {topicId}
-        </Text>
+        <Content>
+          <Text>{id}</Text>
+        </Content>
+        <PostFooter firstPage />
       </Container>
     );
   }

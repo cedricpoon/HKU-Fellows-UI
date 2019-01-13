@@ -11,22 +11,19 @@ export default StyleSheet.create({
   title: {
     fontSize: fontSize.title,
     fontWeight: 'normal',
-    textAlign: 'justify'
+    textAlign: 'justify',
+    marginBottom: gridBase,
   },
   titleRegularSize: {
     fontSize: fontSize.titleSize
   },
   subtitle: {
     color: logo.brown,
-    paddingTop: gridBase,
     textAlign: 'justify',
     marginBottom: gridBase
   },
-  back: {
+  button: {
     color: logo.black
-  },
-  rightIcon: {
-    color: logo.red
   },
   context: {
     flex: 4

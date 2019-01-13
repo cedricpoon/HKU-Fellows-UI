@@ -27,6 +27,11 @@ ShallowWrapper {
           backable={true}
           onRightPress={[Function]}
           rightIcon="arrow-dropup"
+          rightStyle={
+            Object {
+              "color": "#E03A00",
+            }
+          }
           subtitle={null}
           title={
             Object {
@@ -57,6 +62,9 @@ ShallowWrapper {
           "backable": true,
           "onRightPress": [Function],
           "rightIcon": "arrow-dropup",
+          "rightStyle": Object {
+            "color": "#E03A00",
+          },
           "subtitle": null,
           "title": Object {
             "context": "Courses",
@@ -111,6 +119,11 @@ ShallowWrapper {
             backable={true}
             onRightPress={[Function]}
             rightIcon="arrow-dropup"
+            rightStyle={
+              Object {
+                "color": "#E03A00",
+              }
+            }
             subtitle={null}
             title={
               Object {
@@ -141,6 +154,9 @@ ShallowWrapper {
             "backable": true,
             "onRightPress": [Function],
             "rightIcon": "arrow-dropup",
+            "rightStyle": Object {
+              "color": "#E03A00",
+            },
             "subtitle": null,
             "title": Object {
               "context": "Courses",
@@ -232,6 +248,11 @@ ShallowWrapper {
           backable={true}
           onRightPress={[Function]}
           rightIcon="arrow-dropup"
+          rightStyle={
+            Object {
+              "color": "#E03A00",
+            }
+          }
           subtitle={null}
           title={
             Object {
@@ -262,6 +283,9 @@ ShallowWrapper {
           "backable": true,
           "onRightPress": [Function],
           "rightIcon": "arrow-dropup",
+          "rightStyle": Object {
+            "color": "#E03A00",
+          },
           "subtitle": null,
           "title": Object {
             "context": "Courses",
@@ -316,6 +340,11 @@ ShallowWrapper {
             backable={true}
             onRightPress={[Function]}
             rightIcon="arrow-dropup"
+            rightStyle={
+              Object {
+                "color": "#E03A00",
+              }
+            }
             subtitle={null}
             title={
               Object {
@@ -346,6 +375,9 @@ ShallowWrapper {
             "backable": true,
             "onRightPress": [Function],
             "rightIcon": "arrow-dropup",
+            "rightStyle": Object {
+              "color": "#E03A00",
+            },
             "subtitle": null,
             "title": Object {
               "context": "Courses",

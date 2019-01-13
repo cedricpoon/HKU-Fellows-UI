@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Icon, Text } from 'native-base';
 
-import PopupMenu from '../PopupMenu/PopupMenu';
+import PopupMenu from '../../PopupMenu/PopupMenu';
 
 import { localize } from 'hkufui/locale';
 const locale = localize({ language: 'en', country: 'hk' });

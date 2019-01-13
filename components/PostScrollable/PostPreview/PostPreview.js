@@ -13,10 +13,9 @@ const locale = localize({ language: 'en', country: 'hk' });
 class PostPreview extends PureComponent {
 
   _onPress() {
-    const { id } = this.props;
-    /* dive into post */
+    /* dive into post with all props */
     NavigationService.navigate('Post', {
-      topicId: id
+      ...this.props
     });
   }
 

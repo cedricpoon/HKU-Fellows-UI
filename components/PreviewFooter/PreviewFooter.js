@@ -71,7 +71,7 @@ class PreviewFooter extends Component {
           <Button
             onPress={()=>{ NavigationService.navigate('SelectCourse') }}
           >
-            <Icon name="library-books" type="MaterialIcons" />
+            <Icon name="view-list" type="MaterialIcons" />
           </Button>
         </FooterTab>
       </Footer>

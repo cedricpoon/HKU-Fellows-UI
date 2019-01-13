@@ -9,7 +9,8 @@
     "ios-small": "react-native run-ios --simulator 'iPhone 4s'",
     "ios-medium": "react-native run-ios --simulator 'iPhone 8'",
     "ios-large": "react-native run-ios --simulator 'iPhone XS Max'",
-    "test": "jest --runInBand && npm run lint",
+    "test": "jest && npm run lint",
+    "test-in-band": "jest --runInBand && npm run lint",
     "lint": "eslint .",
     "updateSnapshot": "jest --updateSnapshot"
   },

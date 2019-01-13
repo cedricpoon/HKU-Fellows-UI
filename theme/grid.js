@@ -2,6 +2,7 @@ export const gridBase = 5;
 
 export const fontSize = {
   titleSize: gridBase * 3,
+  semiTitleSize: gridBase * 2.5,
   miniSize: gridBase * 2
 }
 

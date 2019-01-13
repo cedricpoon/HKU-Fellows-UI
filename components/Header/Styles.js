@@ -9,9 +9,12 @@ export default StyleSheet.create({
     paddingBottom: 0.5 // compensation on diff with PreviewHeader
   },
   title: {
-    fontSize: fontSize.titleSize,
+    fontSize: fontSize.title,
     fontWeight: 'normal',
     textAlign: 'justify'
+  },
+  titleRegularSize: {
+    fontSize: fontSize.titleSize
   },
   subtitle: {
     color: logo.brown,

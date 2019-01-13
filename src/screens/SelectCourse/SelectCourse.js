@@ -17,9 +17,10 @@ export class SelectCourse extends Component {
   componentDidUpdate() {
     const { breadcrumb } = this.props;
 
+    const subtitle = formBreadcrumbString(breadcrumb);
     // check if header did mount
     if (this._header)
-      this._header.setSubtitle(formBreadcrumbString(breadcrumb)); // eslint-disable-line react/prop-types
+      this._header.setSubtitle(subtitle ? { context: subtitle } : null); // eslint-disable-line react/prop-types
   }
 
   componentDidMount() {
@@ -43,7 +44,7 @@ export class SelectCourse extends Component {
     return (
       <Container>
         <Header
-          title={locale['header.course']}
+          title={{ context: locale['header.course'] }}
           backable
           rightIcon='arrow-dropup'
           onRightPress={() => {

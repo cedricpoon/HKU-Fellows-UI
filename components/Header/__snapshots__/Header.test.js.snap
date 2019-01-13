@@ -7,9 +7,11 @@ ShallowWrapper {
     backable={true}
     onRightPress={[Function]}
     subtitle={null}
-    subtitleNumberOfLines={1}
-    title="Header"
-    titleNumberOfLines={1}
+    title={
+      Object {
+        "context": "header",
+      }
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -50,14 +52,19 @@ ShallowWrapper {
           <Styled(Title)
             numberOfLines={1}
             style={
-              Object {
-                "fontSize": 15,
-                "fontWeight": "normal",
-                "textAlign": "justify",
-              }
+              Array [
+                Object {
+                  "fontSize": undefined,
+                  "fontWeight": "normal",
+                  "textAlign": "justify",
+                },
+                Object {
+                  "fontSize": undefined,
+                },
+              ]
             }
           >
-            Header
+            header
           </Styled(Title)>
         </Styled(Body)>,
         <Styled(Right) />,
@@ -138,14 +145,19 @@ ShallowWrapper {
             <Styled(Title)
               numberOfLines={1}
               style={
-                Object {
-                  "fontSize": 15,
-                  "fontWeight": "normal",
-                  "textAlign": "justify",
-                }
+                Array [
+                  Object {
+                    "fontSize": undefined,
+                    "fontWeight": "normal",
+                    "textAlign": "justify",
+                  },
+                  Object {
+                    "fontSize": undefined,
+                  },
+                ]
               }
             >
-              Header
+              header
             </Styled(Title)>,
             null,
           ],
@@ -161,17 +173,22 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": "Header",
+              "children": "header",
               "numberOfLines": 1,
-              "style": Object {
-                "fontSize": 15,
-                "fontWeight": "normal",
-                "textAlign": "justify",
-              },
+              "style": Array [
+                Object {
+                  "fontSize": undefined,
+                  "fontWeight": "normal",
+                  "textAlign": "justify",
+                },
+                Object {
+                  "fontSize": undefined,
+                },
+              ],
               "virtual": undefined,
             },
             "ref": [Function],
-            "rendered": "Header",
+            "rendered": "header",
             "type": [Function],
           },
           null,
@@ -225,14 +242,19 @@ ShallowWrapper {
             <Styled(Title)
               numberOfLines={1}
               style={
-                Object {
-                  "fontSize": 15,
-                  "fontWeight": "normal",
-                  "textAlign": "justify",
-                }
+                Array [
+                  Object {
+                    "fontSize": undefined,
+                    "fontWeight": "normal",
+                    "textAlign": "justify",
+                  },
+                  Object {
+                    "fontSize": undefined,
+                  },
+                ]
               }
             >
-              Header
+              header
             </Styled(Title)>
           </Styled(Body)>,
           <Styled(Right) />,
@@ -313,14 +335,19 @@ ShallowWrapper {
               <Styled(Title)
                 numberOfLines={1}
                 style={
-                  Object {
-                    "fontSize": 15,
-                    "fontWeight": "normal",
-                    "textAlign": "justify",
-                  }
+                  Array [
+                    Object {
+                      "fontSize": undefined,
+                      "fontWeight": "normal",
+                      "textAlign": "justify",
+                    },
+                    Object {
+                      "fontSize": undefined,
+                    },
+                  ]
                 }
               >
-                Header
+                header
               </Styled(Title)>,
               null,
             ],
@@ -336,17 +363,22 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": "Header",
+                "children": "header",
                 "numberOfLines": 1,
-                "style": Object {
-                  "fontSize": 15,
-                  "fontWeight": "normal",
-                  "textAlign": "justify",
-                },
+                "style": Array [
+                  Object {
+                    "fontSize": undefined,
+                    "fontWeight": "normal",
+                    "textAlign": "justify",
+                  },
+                  Object {
+                    "fontSize": undefined,
+                  },
+                ],
                 "virtual": undefined,
               },
               "ref": [Function],
-              "rendered": "Header",
+              "rendered": "header",
               "type": [Function],
             },
             null,
@@ -396,9 +428,11 @@ ShallowWrapper {
     onRightPress={[Function]}
     rightIcon="arrow-dropup"
     subtitle={null}
-    subtitleNumberOfLines={1}
-    title="Header"
-    titleNumberOfLines={1}
+    title={
+      Object {
+        "context": "header",
+      }
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -425,14 +459,19 @@ ShallowWrapper {
           <Styled(Title)
             numberOfLines={1}
             style={
-              Object {
-                "fontSize": 15,
-                "fontWeight": "normal",
-                "textAlign": "justify",
-              }
+              Array [
+                Object {
+                  "fontSize": undefined,
+                  "fontWeight": "normal",
+                  "textAlign": "justify",
+                },
+                Object {
+                  "fontSize": undefined,
+                },
+              ]
             }
           >
-            Header
+            header
           </Styled(Title)>
         </Styled(Body)>,
         <Styled(Right)>
@@ -481,14 +520,19 @@ ShallowWrapper {
             <Styled(Title)
               numberOfLines={1}
               style={
-                Object {
-                  "fontSize": 15,
-                  "fontWeight": "normal",
-                  "textAlign": "justify",
-                }
+                Array [
+                  Object {
+                    "fontSize": undefined,
+                    "fontWeight": "normal",
+                    "textAlign": "justify",
+                  },
+                  Object {
+                    "fontSize": undefined,
+                  },
+                ]
               }
             >
-              Header
+              header
             </Styled(Title)>,
             null,
           ],
@@ -504,17 +548,22 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": "Header",
+              "children": "header",
               "numberOfLines": 1,
-              "style": Object {
-                "fontSize": 15,
-                "fontWeight": "normal",
-                "textAlign": "justify",
-              },
+              "style": Array [
+                Object {
+                  "fontSize": undefined,
+                  "fontWeight": "normal",
+                  "textAlign": "justify",
+                },
+                Object {
+                  "fontSize": undefined,
+                },
+              ],
               "virtual": undefined,
             },
             "ref": [Function],
-            "rendered": "Header",
+            "rendered": "header",
             "type": [Function],
           },
           null,
@@ -600,14 +649,19 @@ ShallowWrapper {
             <Styled(Title)
               numberOfLines={1}
               style={
-                Object {
-                  "fontSize": 15,
-                  "fontWeight": "normal",
-                  "textAlign": "justify",
-                }
+                Array [
+                  Object {
+                    "fontSize": undefined,
+                    "fontWeight": "normal",
+                    "textAlign": "justify",
+                  },
+                  Object {
+                    "fontSize": undefined,
+                  },
+                ]
               }
             >
-              Header
+              header
             </Styled(Title)>
           </Styled(Body)>,
           <Styled(Right)>
@@ -656,14 +710,19 @@ ShallowWrapper {
               <Styled(Title)
                 numberOfLines={1}
                 style={
-                  Object {
-                    "fontSize": 15,
-                    "fontWeight": "normal",
-                    "textAlign": "justify",
-                  }
+                  Array [
+                    Object {
+                      "fontSize": undefined,
+                      "fontWeight": "normal",
+                      "textAlign": "justify",
+                    },
+                    Object {
+                      "fontSize": undefined,
+                    },
+                  ]
                 }
               >
-                Header
+                header
               </Styled(Title)>,
               null,
             ],
@@ -679,17 +738,22 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": "Header",
+                "children": "header",
                 "numberOfLines": 1,
-                "style": Object {
-                  "fontSize": 15,
-                  "fontWeight": "normal",
-                  "textAlign": "justify",
-                },
+                "style": Array [
+                  Object {
+                    "fontSize": undefined,
+                    "fontWeight": "normal",
+                    "textAlign": "justify",
+                  },
+                  Object {
+                    "fontSize": undefined,
+                  },
+                ],
                 "virtual": undefined,
               },
               "ref": [Function],
-              "rendered": "Header",
+              "rendered": "header",
               "type": [Function],
             },
             null,
@@ -783,10 +847,16 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header
     onRightPress={[Function]}
-    subtitle="None"
-    subtitleNumberOfLines={1}
-    title="Header"
-    titleNumberOfLines={1}
+    subtitle={
+      Object {
+        "context": "header",
+      }
+    }
+    title={
+      Object {
+        "context": "header",
+      }
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -813,14 +883,19 @@ ShallowWrapper {
           <Styled(Title)
             numberOfLines={1}
             style={
-              Object {
-                "fontSize": 15,
-                "fontWeight": "normal",
-                "textAlign": "justify",
-              }
+              Array [
+                Object {
+                  "fontSize": undefined,
+                  "fontWeight": "normal",
+                  "textAlign": "justify",
+                },
+                Object {
+                  "fontSize": undefined,
+                },
+              ]
             }
           >
-            Header
+            header
           </Styled(Title)>
           <withAnimatable(Styled(Subtitle))
             delay={0}
@@ -842,7 +917,7 @@ ShallowWrapper {
             }
             useNativeDriver={false}
           >
-            None
+            header
           </withAnimatable(Styled(Subtitle))>
         </Styled(Body)>,
         <Styled(Right) />,
@@ -851,7 +926,9 @@ ShallowWrapper {
         "height": "auto",
         "paddingBottom": 0.5,
       },
-      "subtitle": "None",
+      "subtitle": Object {
+        "context": "header",
+      },
       "virtual": undefined,
     },
     "ref": null,
@@ -877,14 +954,19 @@ ShallowWrapper {
             <Styled(Title)
               numberOfLines={1}
               style={
-                Object {
-                  "fontSize": 15,
-                  "fontWeight": "normal",
-                  "textAlign": "justify",
-                }
+                Array [
+                  Object {
+                    "fontSize": undefined,
+                    "fontWeight": "normal",
+                    "textAlign": "justify",
+                  },
+                  Object {
+                    "fontSize": undefined,
+                  },
+                ]
               }
             >
-              Header
+              header
             </Styled(Title)>,
             <withAnimatable(Styled(Subtitle))
               delay={0}
@@ -906,7 +988,7 @@ ShallowWrapper {
               }
               useNativeDriver={false}
             >
-              None
+              header
             </withAnimatable(Styled(Subtitle))>,
           ],
           "style": Object {
@@ -921,17 +1003,22 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": "Header",
+              "children": "header",
               "numberOfLines": 1,
-              "style": Object {
-                "fontSize": 15,
-                "fontWeight": "normal",
-                "textAlign": "justify",
-              },
+              "style": Array [
+                Object {
+                  "fontSize": undefined,
+                  "fontWeight": "normal",
+                  "textAlign": "justify",
+                },
+                Object {
+                  "fontSize": undefined,
+                },
+              ],
               "virtual": undefined,
             },
             "ref": [Function],
-            "rendered": "Header",
+            "rendered": "header",
             "type": [Function],
           },
           Object {
@@ -940,7 +1027,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "animation": undefined,
-              "children": "None",
+              "children": "header",
               "delay": 0,
               "direction": "normal",
               "duration": undefined,
@@ -962,7 +1049,7 @@ ShallowWrapper {
               "useNativeDriver": false,
             },
             "ref": [Function],
-            "rendered": "None",
+            "rendered": "header",
             "type": [Function],
           },
         ],
@@ -1001,14 +1088,19 @@ ShallowWrapper {
             <Styled(Title)
               numberOfLines={1}
               style={
-                Object {
-                  "fontSize": 15,
-                  "fontWeight": "normal",
-                  "textAlign": "justify",
-                }
+                Array [
+                  Object {
+                    "fontSize": undefined,
+                    "fontWeight": "normal",
+                    "textAlign": "justify",
+                  },
+                  Object {
+                    "fontSize": undefined,
+                  },
+                ]
               }
             >
-              Header
+              header
             </Styled(Title)>
             <withAnimatable(Styled(Subtitle))
               delay={0}
@@ -1030,7 +1122,7 @@ ShallowWrapper {
               }
               useNativeDriver={false}
             >
-              None
+              header
             </withAnimatable(Styled(Subtitle))>
           </Styled(Body)>,
           <Styled(Right) />,
@@ -1039,7 +1131,9 @@ ShallowWrapper {
           "height": "auto",
           "paddingBottom": 0.5,
         },
-        "subtitle": "None",
+        "subtitle": Object {
+          "context": "header",
+        },
         "virtual": undefined,
       },
       "ref": null,
@@ -1065,14 +1159,19 @@ ShallowWrapper {
               <Styled(Title)
                 numberOfLines={1}
                 style={
-                  Object {
-                    "fontSize": 15,
-                    "fontWeight": "normal",
-                    "textAlign": "justify",
-                  }
+                  Array [
+                    Object {
+                      "fontSize": undefined,
+                      "fontWeight": "normal",
+                      "textAlign": "justify",
+                    },
+                    Object {
+                      "fontSize": undefined,
+                    },
+                  ]
                 }
               >
-                Header
+                header
               </Styled(Title)>,
               <withAnimatable(Styled(Subtitle))
                 delay={0}
@@ -1094,7 +1193,7 @@ ShallowWrapper {
                 }
                 useNativeDriver={false}
               >
-                None
+                header
               </withAnimatable(Styled(Subtitle))>,
             ],
             "style": Object {
@@ -1109,17 +1208,22 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": "Header",
+                "children": "header",
                 "numberOfLines": 1,
-                "style": Object {
-                  "fontSize": 15,
-                  "fontWeight": "normal",
-                  "textAlign": "justify",
-                },
+                "style": Array [
+                  Object {
+                    "fontSize": undefined,
+                    "fontWeight": "normal",
+                    "textAlign": "justify",
+                  },
+                  Object {
+                    "fontSize": undefined,
+                  },
+                ],
                 "virtual": undefined,
               },
               "ref": [Function],
-              "rendered": "Header",
+              "rendered": "header",
               "type": [Function],
             },
             Object {
@@ -1128,7 +1232,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "animation": undefined,
-                "children": "None",
+                "children": "header",
                 "delay": 0,
                 "direction": "normal",
                 "duration": undefined,
@@ -1150,7 +1254,7 @@ ShallowWrapper {
                 "useNativeDriver": false,
               },
               "ref": [Function],
-              "rendered": "None",
+              "rendered": "header",
               "type": [Function],
             },
           ],
@@ -1197,10 +1301,18 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header
     onRightPress={[Function]}
-    subtitle="None"
-    subtitleNumberOfLines={2}
-    title="Header"
-    titleNumberOfLines={2}
+    subtitle={
+      Object {
+        "context": "header",
+        "numberOfLines": 2,
+      }
+    }
+    title={
+      Object {
+        "context": "header",
+        "numberOfLines": 2,
+      }
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -1227,14 +1339,19 @@ ShallowWrapper {
           <Styled(Title)
             numberOfLines={2}
             style={
-              Object {
-                "fontSize": 15,
-                "fontWeight": "normal",
-                "textAlign": "justify",
-              }
+              Array [
+                Object {
+                  "fontSize": undefined,
+                  "fontWeight": "normal",
+                  "textAlign": "justify",
+                },
+                Object {
+                  "fontSize": undefined,
+                },
+              ]
             }
           >
-            Header
+            header
           </Styled(Title)>
           <withAnimatable(Styled(Subtitle))
             delay={0}
@@ -1256,7 +1373,7 @@ ShallowWrapper {
             }
             useNativeDriver={false}
           >
-            None
+            header
           </withAnimatable(Styled(Subtitle))>
         </Styled(Body)>,
         <Styled(Right) />,
@@ -1265,7 +1382,10 @@ ShallowWrapper {
         "height": "auto",
         "paddingBottom": 0.5,
       },
-      "subtitle": "None",
+      "subtitle": Object {
+        "context": "header",
+        "numberOfLines": 2,
+      },
       "virtual": undefined,
     },
     "ref": null,
@@ -1291,14 +1411,19 @@ ShallowWrapper {
             <Styled(Title)
               numberOfLines={2}
               style={
-                Object {
-                  "fontSize": 15,
-                  "fontWeight": "normal",
-                  "textAlign": "justify",
-                }
+                Array [
+                  Object {
+                    "fontSize": undefined,
+                    "fontWeight": "normal",
+                    "textAlign": "justify",
+                  },
+                  Object {
+                    "fontSize": undefined,
+                  },
+                ]
               }
             >
-              Header
+              header
             </Styled(Title)>,
             <withAnimatable(Styled(Subtitle))
               delay={0}
@@ -1320,7 +1445,7 @@ ShallowWrapper {
               }
               useNativeDriver={false}
             >
-              None
+              header
             </withAnimatable(Styled(Subtitle))>,
           ],
           "style": Object {
@@ -1335,17 +1460,22 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": "Header",
+              "children": "header",
               "numberOfLines": 2,
-              "style": Object {
-                "fontSize": 15,
-                "fontWeight": "normal",
-                "textAlign": "justify",
-              },
+              "style": Array [
+                Object {
+                  "fontSize": undefined,
+                  "fontWeight": "normal",
+                  "textAlign": "justify",
+                },
+                Object {
+                  "fontSize": undefined,
+                },
+              ],
               "virtual": undefined,
             },
             "ref": [Function],
-            "rendered": "Header",
+            "rendered": "header",
             "type": [Function],
           },
           Object {
@@ -1354,7 +1484,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "animation": undefined,
-              "children": "None",
+              "children": "header",
               "delay": 0,
               "direction": "normal",
               "duration": undefined,
@@ -1376,7 +1506,7 @@ ShallowWrapper {
               "useNativeDriver": false,
             },
             "ref": [Function],
-            "rendered": "None",
+            "rendered": "header",
             "type": [Function],
           },
         ],
@@ -1415,14 +1545,19 @@ ShallowWrapper {
             <Styled(Title)
               numberOfLines={2}
               style={
-                Object {
-                  "fontSize": 15,
-                  "fontWeight": "normal",
-                  "textAlign": "justify",
-                }
+                Array [
+                  Object {
+                    "fontSize": undefined,
+                    "fontWeight": "normal",
+                    "textAlign": "justify",
+                  },
+                  Object {
+                    "fontSize": undefined,
+                  },
+                ]
               }
             >
-              Header
+              header
             </Styled(Title)>
             <withAnimatable(Styled(Subtitle))
               delay={0}
@@ -1444,7 +1579,7 @@ ShallowWrapper {
               }
               useNativeDriver={false}
             >
-              None
+              header
             </withAnimatable(Styled(Subtitle))>
           </Styled(Body)>,
           <Styled(Right) />,
@@ -1453,7 +1588,10 @@ ShallowWrapper {
           "height": "auto",
           "paddingBottom": 0.5,
         },
-        "subtitle": "None",
+        "subtitle": Object {
+          "context": "header",
+          "numberOfLines": 2,
+        },
         "virtual": undefined,
       },
       "ref": null,
@@ -1479,14 +1617,19 @@ ShallowWrapper {
               <Styled(Title)
                 numberOfLines={2}
                 style={
-                  Object {
-                    "fontSize": 15,
-                    "fontWeight": "normal",
-                    "textAlign": "justify",
-                  }
+                  Array [
+                    Object {
+                      "fontSize": undefined,
+                      "fontWeight": "normal",
+                      "textAlign": "justify",
+                    },
+                    Object {
+                      "fontSize": undefined,
+                    },
+                  ]
                 }
               >
-                Header
+                header
               </Styled(Title)>,
               <withAnimatable(Styled(Subtitle))
                 delay={0}
@@ -1508,7 +1651,7 @@ ShallowWrapper {
                 }
                 useNativeDriver={false}
               >
-                None
+                header
               </withAnimatable(Styled(Subtitle))>,
             ],
             "style": Object {
@@ -1523,17 +1666,22 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": "Header",
+                "children": "header",
                 "numberOfLines": 2,
-                "style": Object {
-                  "fontSize": 15,
-                  "fontWeight": "normal",
-                  "textAlign": "justify",
-                },
+                "style": Array [
+                  Object {
+                    "fontSize": undefined,
+                    "fontWeight": "normal",
+                    "textAlign": "justify",
+                  },
+                  Object {
+                    "fontSize": undefined,
+                  },
+                ],
                 "virtual": undefined,
               },
               "ref": [Function],
-              "rendered": "Header",
+              "rendered": "header",
               "type": [Function],
             },
             Object {
@@ -1542,7 +1690,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "animation": undefined,
-                "children": "None",
+                "children": "header",
                 "delay": 0,
                 "direction": "normal",
                 "duration": undefined,
@@ -1564,7 +1712,7 @@ ShallowWrapper {
                 "useNativeDriver": false,
               },
               "ref": [Function],
-              "rendered": "None",
+              "rendered": "header",
               "type": [Function],
             },
           ],
@@ -1612,9 +1760,11 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Header
     onRightPress={[Function]}
     subtitle={null}
-    subtitleNumberOfLines={1}
-    title="Header"
-    titleNumberOfLines={1}
+    title={
+      Object {
+        "context": "header",
+      }
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -1641,14 +1791,19 @@ ShallowWrapper {
           <Styled(Title)
             numberOfLines={1}
             style={
-              Object {
-                "fontSize": 15,
-                "fontWeight": "normal",
-                "textAlign": "justify",
-              }
+              Array [
+                Object {
+                  "fontSize": undefined,
+                  "fontWeight": "normal",
+                  "textAlign": "justify",
+                },
+                Object {
+                  "fontSize": undefined,
+                },
+              ]
             }
           >
-            Header
+            header
           </Styled(Title)>
         </Styled(Body)>,
         <Styled(Right) />,
@@ -1683,14 +1838,19 @@ ShallowWrapper {
             <Styled(Title)
               numberOfLines={1}
               style={
-                Object {
-                  "fontSize": 15,
-                  "fontWeight": "normal",
-                  "textAlign": "justify",
-                }
+                Array [
+                  Object {
+                    "fontSize": undefined,
+                    "fontWeight": "normal",
+                    "textAlign": "justify",
+                  },
+                  Object {
+                    "fontSize": undefined,
+                  },
+                ]
               }
             >
-              Header
+              header
             </Styled(Title)>,
             null,
           ],
@@ -1706,17 +1866,22 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": "Header",
+              "children": "header",
               "numberOfLines": 1,
-              "style": Object {
-                "fontSize": 15,
-                "fontWeight": "normal",
-                "textAlign": "justify",
-              },
+              "style": Array [
+                Object {
+                  "fontSize": undefined,
+                  "fontWeight": "normal",
+                  "textAlign": "justify",
+                },
+                Object {
+                  "fontSize": undefined,
+                },
+              ],
               "virtual": undefined,
             },
             "ref": [Function],
-            "rendered": "Header",
+            "rendered": "header",
             "type": [Function],
           },
           null,
@@ -1756,14 +1921,19 @@ ShallowWrapper {
             <Styled(Title)
               numberOfLines={1}
               style={
-                Object {
-                  "fontSize": 15,
-                  "fontWeight": "normal",
-                  "textAlign": "justify",
-                }
+                Array [
+                  Object {
+                    "fontSize": undefined,
+                    "fontWeight": "normal",
+                    "textAlign": "justify",
+                  },
+                  Object {
+                    "fontSize": undefined,
+                  },
+                ]
               }
             >
-              Header
+              header
             </Styled(Title)>
           </Styled(Body)>,
           <Styled(Right) />,
@@ -1798,14 +1968,19 @@ ShallowWrapper {
               <Styled(Title)
                 numberOfLines={1}
                 style={
-                  Object {
-                    "fontSize": 15,
-                    "fontWeight": "normal",
-                    "textAlign": "justify",
-                  }
+                  Array [
+                    Object {
+                      "fontSize": undefined,
+                      "fontWeight": "normal",
+                      "textAlign": "justify",
+                    },
+                    Object {
+                      "fontSize": undefined,
+                    },
+                  ]
                 }
               >
-                Header
+                header
               </Styled(Title)>,
               null,
             ],
@@ -1821,17 +1996,22 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": "Header",
+                "children": "header",
                 "numberOfLines": 1,
-                "style": Object {
-                  "fontSize": 15,
-                  "fontWeight": "normal",
-                  "textAlign": "justify",
-                },
+                "style": Array [
+                  Object {
+                    "fontSize": undefined,
+                    "fontWeight": "normal",
+                    "textAlign": "justify",
+                  },
+                  Object {
+                    "fontSize": undefined,
+                  },
+                ],
                 "virtual": undefined,
               },
               "ref": [Function],
-              "rendered": "Header",
+              "rendered": "header",
               "type": [Function],
             },
             null,

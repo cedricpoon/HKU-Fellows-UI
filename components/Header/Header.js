@@ -37,8 +37,6 @@ class Header extends Component {
       backable,
       rightIcon,
       onRightPress,
-      subtitleNumberOfLines,
-      titleNumberOfLines,
       ...restProps
     } = this.props;
 
@@ -58,19 +56,22 @@ class Header extends Component {
         </Left>
         <Body style={styles.context}>
           <Title
-            style={styles.title}
+            style={[
+              styles.title,
+              { fontSize: title.size }
+            ]}
             ref={ref => { this._title=ref }}
-            numberOfLines={titleNumberOfLines}
+            numberOfLines={title.numberOfLines || 1}
           >
-            {title}
+            {title.context}
           </Title>
           {subtitle && (
             <Subtitle
               ref={ref => { this._subtitle = ref }}
               style={styles.subtitle}
-              numberOfLines={subtitleNumberOfLines}
+              numberOfLines={subtitle.numberOfLines || 1}
             >
-              {subtitle}
+              {subtitle.context}
             </Subtitle>
           )}
         </Body>
@@ -89,15 +90,17 @@ class Header extends Component {
 Header.defaultProps = {
   onRightPress: () => {},
   subtitle: null,
-  titleNumberOfLines: 1,
-  subtitleNumberOfLines: 1,
 };
 
+const contextProptypes = {
+  context: PropTypes.string.isRequired,
+  numberOfLines: PropTypes.number,
+  size: PropTypes.number
+}
+
 Header.propTypes = {
-  title: PropTypes.string.isRequired,
-  titleNumberOfLines: PropTypes.number,
-  subtitle: PropTypes.string,
-  subtitleNumberOfLines: PropTypes.number,
+  title: PropTypes.shape(contextProptypes).isRequired,
+  subtitle: PropTypes.shape(contextProptypes),
   backable: PropTypes.bool,
   rightIcon: PropTypes.string,
   onRightPress: PropTypes.func

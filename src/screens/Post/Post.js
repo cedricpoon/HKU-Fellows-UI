@@ -4,6 +4,7 @@ import { withNavigation } from 'react-navigation';
 import { connect } from 'react-redux';
 
 import { Header } from 'hkufui/components';
+import styles from './Styles';
 
 export class Post extends Component {
   constructor(props) {
@@ -24,10 +25,15 @@ export class Post extends Component {
     return (
       <Container>
         <Header
-          title='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat feugiat mauris ut tristique.'
-          titleNumberOfLines={3}
-          subtitle='Nulla vulputate, diam nec feugiat facilisis, justo dolor convallis ligula, eu placerat nulla lacus a ante.'
-          subtitleNumberOfLines={2}
+          title={{
+            context: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat feugiat mauris ut tristique.',
+            numberOfLines: 4,
+            size: styles.title.fontSize
+          }}
+          subtitle={{
+            context: 'Nulla vulputate, diam nec feugiat facilisis, justo dolor convallis ligula, eu placerat nulla lacus a ante.',
+            numberOfLines: 3
+          }}
           backable
         />
         <Text>

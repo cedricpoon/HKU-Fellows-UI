@@ -37,7 +37,7 @@ ShallowWrapper {
         </Styled(Button)>
         <Styled(Button)>
           <Styled(Icon)
-            name="message-reply"
+            name="comment-text"
             type="MaterialCommunityIcons"
           />
         </Styled(Button)>
@@ -74,7 +74,7 @@ ShallowWrapper {
           </Styled(Button)>,
           <Styled(Button)>
             <Styled(Icon)
-              name="message-reply"
+              name="comment-text"
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>,
@@ -151,7 +151,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": <Styled(Icon)
-              name="message-reply"
+              name="comment-text"
               type="MaterialCommunityIcons"
             />,
             "virtual": undefined,
@@ -162,7 +162,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "name": "message-reply",
+              "name": "comment-text",
               "type": "MaterialCommunityIcons",
               "virtual": undefined,
             },
@@ -228,7 +228,7 @@ ShallowWrapper {
           </Styled(Button)>
           <Styled(Button)>
             <Styled(Icon)
-              name="message-reply"
+              name="comment-text"
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>
@@ -265,7 +265,7 @@ ShallowWrapper {
             </Styled(Button)>,
             <Styled(Button)>
               <Styled(Icon)
-                name="message-reply"
+                name="comment-text"
                 type="MaterialCommunityIcons"
               />
             </Styled(Button)>,
@@ -342,7 +342,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": <Styled(Icon)
-                name="message-reply"
+                name="comment-text"
                 type="MaterialCommunityIcons"
               />,
               "virtual": undefined,
@@ -353,7 +353,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "name": "message-reply",
+                "name": "comment-text",
                 "type": "MaterialCommunityIcons",
                 "virtual": undefined,
               },
@@ -448,7 +448,7 @@ ShallowWrapper {
         </Styled(Button)>
         <Styled(Button)>
           <Styled(Icon)
-            name="message-reply"
+            name="comment-text"
             type="MaterialCommunityIcons"
           />
         </Styled(Button)>
@@ -482,7 +482,7 @@ ShallowWrapper {
           </Styled(Button)>,
           <Styled(Button)>
             <Styled(Icon)
-              name="message-reply"
+              name="comment-text"
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>,
@@ -559,7 +559,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": <Styled(Icon)
-              name="message-reply"
+              name="comment-text"
               type="MaterialCommunityIcons"
             />,
             "virtual": undefined,
@@ -570,7 +570,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "name": "message-reply",
+              "name": "comment-text",
               "type": "MaterialCommunityIcons",
               "virtual": undefined,
             },
@@ -633,7 +633,7 @@ ShallowWrapper {
           </Styled(Button)>
           <Styled(Button)>
             <Styled(Icon)
-              name="message-reply"
+              name="comment-text"
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>
@@ -667,7 +667,7 @@ ShallowWrapper {
             </Styled(Button)>,
             <Styled(Button)>
               <Styled(Icon)
-                name="message-reply"
+                name="comment-text"
                 type="MaterialCommunityIcons"
               />
             </Styled(Button)>,
@@ -744,7 +744,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": <Styled(Icon)
-                name="message-reply"
+                name="comment-text"
                 type="MaterialCommunityIcons"
               />,
               "virtual": undefined,
@@ -755,7 +755,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "name": "message-reply",
+                "name": "comment-text",
                 "type": "MaterialCommunityIcons",
                 "virtual": undefined,
               },

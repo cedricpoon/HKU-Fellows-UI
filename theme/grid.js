@@ -13,6 +13,11 @@ export const post = {
   placeholderVerticalMargin: gridBase * 5
 };
 
+export const icon = {
+  width: gridBase * 5,
+  textAlign: 'center'
+}
+
 export const footer = {
   borderRadius: gridBase * 2,
   shadowRadius: gridBase,

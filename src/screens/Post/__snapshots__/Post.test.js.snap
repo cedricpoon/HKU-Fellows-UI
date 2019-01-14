@@ -61,6 +61,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "native": undefined,
           "onRef": [Function],
           "parentHeight": 0,
           "position": Object {
@@ -170,6 +171,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "native": undefined,
             "onRef": [Function],
             "parentHeight": 0,
             "position": Object {

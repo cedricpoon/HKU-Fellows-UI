@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import PopupMenu from '../../PopupMenu/PopupMenu';
 
 import { localize } from 'hkufui/locale';
+import styles from 'hkufui/theme/Styles';
 const locale = localize({ language: 'en', country: 'hk' });
 
 class FilterPopup extends Component {
@@ -17,21 +18,21 @@ class FilterPopup extends Component {
         ref={onRef}
         { ...restProps }
       >
-        <Button full transparent info iconRight>
+        <Button transparent info iconLeft>
+          <Icon name="link" type="MaterialIcons" style={styles.icon}></Icon>
           <Text>{locale['footer.moodle']}</Text>
-          <Icon name="link" type="MaterialIcons"></Icon>
         </Button>
-        <Button full transparent success iconRight>
+        <Button transparent success iconLeft>
+          <Icon name="clock-fast" type="MaterialCommunityIcons" style={styles.icon}></Icon>
           <Text>{locale['footer.latestPost']}</Text>
-          <Icon name="clock-fast" type="MaterialCommunityIcons"></Icon>
         </Button>
-        <Button full transparent success iconRight>
+        <Button transparent success iconLeft>
+          <Icon name="undo" style={styles.icon}></Icon>
           <Text>{locale['footer.mostReplied']}</Text>
-          <Icon name="undo"></Icon>
         </Button>
-        <Button full transparent success iconRight>
+        <Button transparent success iconLeft>
+          <Icon name="people" type="MaterialIcons" style={styles.icon}></Icon>
           <Text>{locale['footer.popularity']}</Text>
-          <Icon name="people" type="MaterialIcons"></Icon>
         </Button>
       </PopupMenu>
     );

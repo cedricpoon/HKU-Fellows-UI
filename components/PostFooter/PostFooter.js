@@ -16,7 +16,7 @@ class PostFooter extends Component {
             <Icon name="share-variant" type="MaterialCommunityIcons" />
           </Button>
           <Button>
-            <Icon name="message-reply" type="MaterialCommunityIcons" />
+            <Icon name="comment-text" type="MaterialCommunityIcons" />
           </Button>
           <Button>
             <Icon name="arrow-right" type="MaterialCommunityIcons" />

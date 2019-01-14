@@ -30,59 +30,79 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Styled(Button)
-          full={true}
-          iconRight={true}
+          iconLeft={true}
           info={true}
           transparent={true}
         >
+          <Styled(Icon)
+            name="link"
+            style={
+              Object {
+                "textAlign": "center",
+                "width": 25,
+              }
+            }
+            type="MaterialIcons"
+          />
           <Styled(Text)>
             From Moodle
           </Styled(Text)>
-          <Styled(Icon)
-            name="link"
-            type="MaterialIcons"
-          />
         </Styled(Button)>,
         <Styled(Button)
-          full={true}
-          iconRight={true}
+          iconLeft={true}
           success={true}
           transparent={true}
         >
+          <Styled(Icon)
+            name="clock-fast"
+            style={
+              Object {
+                "textAlign": "center",
+                "width": 25,
+              }
+            }
+            type="MaterialCommunityIcons"
+          />
           <Styled(Text)>
             Latest Post
           </Styled(Text)>
-          <Styled(Icon)
-            name="clock-fast"
-            type="MaterialCommunityIcons"
-          />
         </Styled(Button)>,
         <Styled(Button)
-          full={true}
-          iconRight={true}
+          iconLeft={true}
           success={true}
           transparent={true}
         >
+          <Styled(Icon)
+            name="undo"
+            style={
+              Object {
+                "textAlign": "center",
+                "width": 25,
+              }
+            }
+          />
           <Styled(Text)>
             Most Replied
           </Styled(Text)>
-          <Styled(Icon)
-            name="undo"
-          />
         </Styled(Button)>,
         <Styled(Button)
-          full={true}
-          iconRight={true}
+          iconLeft={true}
           success={true}
           transparent={true}
         >
+          <Styled(Icon)
+            name="people"
+            style={
+              Object {
+                "textAlign": "center",
+                "width": 25,
+              }
+            }
+            type="MaterialIcons"
+          />
           <Styled(Text)>
             Popularity
           </Styled(Text)>
-          <Styled(Icon)
-            name="people"
-            type="MaterialIcons"
-          />
         </Styled(Button)>,
       ],
       "position": Object {
@@ -99,22 +119,44 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
+            <Styled(Icon)
+              name="link"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
+              type="MaterialIcons"
+            />,
             <Styled(Text)>
               From Moodle
             </Styled(Text)>,
-            <Styled(Icon)
-              name="link"
-              type="MaterialIcons"
-            />,
           ],
-          "full": true,
-          "iconRight": true,
+          "iconLeft": true,
           "info": true,
           "transparent": true,
           "virtual": undefined,
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "link",
+              "style": Object {
+                "textAlign": "center",
+                "width": 25,
+              },
+              "type": "MaterialIcons",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -127,19 +169,6 @@ ShallowWrapper {
             "rendered": "From Moodle",
             "type": [Function],
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "name": "link",
-              "type": "MaterialIcons",
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
         ],
         "type": [Function],
       },
@@ -149,22 +178,44 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
+            <Styled(Icon)
+              name="clock-fast"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
+              type="MaterialCommunityIcons"
+            />,
             <Styled(Text)>
               Latest Post
             </Styled(Text)>,
-            <Styled(Icon)
-              name="clock-fast"
-              type="MaterialCommunityIcons"
-            />,
           ],
-          "full": true,
-          "iconRight": true,
+          "iconLeft": true,
           "success": true,
           "transparent": true,
           "virtual": undefined,
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "clock-fast",
+              "style": Object {
+                "textAlign": "center",
+                "width": 25,
+              },
+              "type": "MaterialCommunityIcons",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -177,19 +228,6 @@ ShallowWrapper {
             "rendered": "Latest Post",
             "type": [Function],
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "name": "clock-fast",
-              "type": "MaterialCommunityIcons",
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
         ],
         "type": [Function],
       },
@@ -199,21 +237,42 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
+            <Styled(Icon)
+              name="undo"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
+            />,
             <Styled(Text)>
               Most Replied
             </Styled(Text)>,
-            <Styled(Icon)
-              name="undo"
-            />,
           ],
-          "full": true,
-          "iconRight": true,
+          "iconLeft": true,
           "success": true,
           "transparent": true,
           "virtual": undefined,
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "undo",
+              "style": Object {
+                "textAlign": "center",
+                "width": 25,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -226,18 +285,6 @@ ShallowWrapper {
             "rendered": "Most Replied",
             "type": [Function],
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "name": "undo",
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
         ],
         "type": [Function],
       },
@@ -247,16 +294,21 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
+            <Styled(Icon)
+              name="people"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
+              type="MaterialIcons"
+            />,
             <Styled(Text)>
               Popularity
             </Styled(Text)>,
-            <Styled(Icon)
-              name="people"
-              type="MaterialIcons"
-            />,
           ],
-          "full": true,
-          "iconRight": true,
+          "iconLeft": true,
           "success": true,
           "transparent": true,
           "virtual": undefined,
@@ -268,11 +320,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": "Popularity",
+              "name": "people",
+              "style": Object {
+                "textAlign": "center",
+                "width": 25,
+              },
+              "type": "MaterialIcons",
               "virtual": undefined,
             },
             "ref": null,
-            "rendered": "Popularity",
+            "rendered": null,
             "type": [Function],
           },
           Object {
@@ -280,12 +337,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "name": "people",
-              "type": "MaterialIcons",
+              "children": "Popularity",
               "virtual": undefined,
             },
             "ref": null,
-            "rendered": null,
+            "rendered": "Popularity",
             "type": [Function],
           },
         ],
@@ -302,59 +358,79 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Styled(Button)
-            full={true}
-            iconRight={true}
+            iconLeft={true}
             info={true}
             transparent={true}
           >
+            <Styled(Icon)
+              name="link"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
+              type="MaterialIcons"
+            />
             <Styled(Text)>
               From Moodle
             </Styled(Text)>
-            <Styled(Icon)
-              name="link"
-              type="MaterialIcons"
-            />
           </Styled(Button)>,
           <Styled(Button)
-            full={true}
-            iconRight={true}
+            iconLeft={true}
             success={true}
             transparent={true}
           >
+            <Styled(Icon)
+              name="clock-fast"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
+              type="MaterialCommunityIcons"
+            />
             <Styled(Text)>
               Latest Post
             </Styled(Text)>
-            <Styled(Icon)
-              name="clock-fast"
-              type="MaterialCommunityIcons"
-            />
           </Styled(Button)>,
           <Styled(Button)
-            full={true}
-            iconRight={true}
+            iconLeft={true}
             success={true}
             transparent={true}
           >
+            <Styled(Icon)
+              name="undo"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
+            />
             <Styled(Text)>
               Most Replied
             </Styled(Text)>
-            <Styled(Icon)
-              name="undo"
-            />
           </Styled(Button)>,
           <Styled(Button)
-            full={true}
-            iconRight={true}
+            iconLeft={true}
             success={true}
             transparent={true}
           >
+            <Styled(Icon)
+              name="people"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
+              type="MaterialIcons"
+            />
             <Styled(Text)>
               Popularity
             </Styled(Text)>
-            <Styled(Icon)
-              name="people"
-              type="MaterialIcons"
-            />
           </Styled(Button)>,
         ],
         "position": Object {
@@ -371,22 +447,44 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
+              <Styled(Icon)
+                name="link"
+                style={
+                  Object {
+                    "textAlign": "center",
+                    "width": 25,
+                  }
+                }
+                type="MaterialIcons"
+              />,
               <Styled(Text)>
                 From Moodle
               </Styled(Text)>,
-              <Styled(Icon)
-                name="link"
-                type="MaterialIcons"
-              />,
             ],
-            "full": true,
-            "iconRight": true,
+            "iconLeft": true,
             "info": true,
             "transparent": true,
             "virtual": undefined,
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "link",
+                "style": Object {
+                  "textAlign": "center",
+                  "width": 25,
+                },
+                "type": "MaterialIcons",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             Object {
               "instance": null,
               "key": undefined,
@@ -399,19 +497,6 @@ ShallowWrapper {
               "rendered": "From Moodle",
               "type": [Function],
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "name": "link",
-                "type": "MaterialIcons",
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
           ],
           "type": [Function],
         },
@@ -421,22 +506,44 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
+              <Styled(Icon)
+                name="clock-fast"
+                style={
+                  Object {
+                    "textAlign": "center",
+                    "width": 25,
+                  }
+                }
+                type="MaterialCommunityIcons"
+              />,
               <Styled(Text)>
                 Latest Post
               </Styled(Text)>,
-              <Styled(Icon)
-                name="clock-fast"
-                type="MaterialCommunityIcons"
-              />,
             ],
-            "full": true,
-            "iconRight": true,
+            "iconLeft": true,
             "success": true,
             "transparent": true,
             "virtual": undefined,
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "clock-fast",
+                "style": Object {
+                  "textAlign": "center",
+                  "width": 25,
+                },
+                "type": "MaterialCommunityIcons",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             Object {
               "instance": null,
               "key": undefined,
@@ -449,19 +556,6 @@ ShallowWrapper {
               "rendered": "Latest Post",
               "type": [Function],
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "name": "clock-fast",
-                "type": "MaterialCommunityIcons",
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
           ],
           "type": [Function],
         },
@@ -471,21 +565,42 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
+              <Styled(Icon)
+                name="undo"
+                style={
+                  Object {
+                    "textAlign": "center",
+                    "width": 25,
+                  }
+                }
+              />,
               <Styled(Text)>
                 Most Replied
               </Styled(Text)>,
-              <Styled(Icon)
-                name="undo"
-              />,
             ],
-            "full": true,
-            "iconRight": true,
+            "iconLeft": true,
             "success": true,
             "transparent": true,
             "virtual": undefined,
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "undo",
+                "style": Object {
+                  "textAlign": "center",
+                  "width": 25,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             Object {
               "instance": null,
               "key": undefined,
@@ -498,18 +613,6 @@ ShallowWrapper {
               "rendered": "Most Replied",
               "type": [Function],
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "name": "undo",
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
           ],
           "type": [Function],
         },
@@ -519,16 +622,21 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
+              <Styled(Icon)
+                name="people"
+                style={
+                  Object {
+                    "textAlign": "center",
+                    "width": 25,
+                  }
+                }
+                type="MaterialIcons"
+              />,
               <Styled(Text)>
                 Popularity
               </Styled(Text)>,
-              <Styled(Icon)
-                name="people"
-                type="MaterialIcons"
-              />,
             ],
-            "full": true,
-            "iconRight": true,
+            "iconLeft": true,
             "success": true,
             "transparent": true,
             "virtual": undefined,
@@ -540,11 +648,16 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": "Popularity",
+                "name": "people",
+                "style": Object {
+                  "textAlign": "center",
+                  "width": 25,
+                },
+                "type": "MaterialIcons",
                 "virtual": undefined,
               },
               "ref": null,
-              "rendered": "Popularity",
+              "rendered": null,
               "type": [Function],
             },
             Object {
@@ -552,12 +665,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "name": "people",
-                "type": "MaterialIcons",
+                "children": "Popularity",
                 "virtual": undefined,
               },
               "ref": null,
-              "rendered": null,
+              "rendered": "Popularity",
               "type": [Function],
             },
           ],
@@ -616,59 +728,79 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Styled(Button)
-          full={true}
-          iconRight={true}
+          iconLeft={true}
           info={true}
           transparent={true}
         >
+          <Styled(Icon)
+            name="link"
+            style={
+              Object {
+                "textAlign": "center",
+                "width": 25,
+              }
+            }
+            type="MaterialIcons"
+          />
           <Styled(Text)>
             From Moodle
           </Styled(Text)>
-          <Styled(Icon)
-            name="link"
-            type="MaterialIcons"
-          />
         </Styled(Button)>,
         <Styled(Button)
-          full={true}
-          iconRight={true}
+          iconLeft={true}
           success={true}
           transparent={true}
         >
+          <Styled(Icon)
+            name="clock-fast"
+            style={
+              Object {
+                "textAlign": "center",
+                "width": 25,
+              }
+            }
+            type="MaterialCommunityIcons"
+          />
           <Styled(Text)>
             Latest Post
           </Styled(Text)>
-          <Styled(Icon)
-            name="clock-fast"
-            type="MaterialCommunityIcons"
-          />
         </Styled(Button)>,
         <Styled(Button)
-          full={true}
-          iconRight={true}
+          iconLeft={true}
           success={true}
           transparent={true}
         >
+          <Styled(Icon)
+            name="undo"
+            style={
+              Object {
+                "textAlign": "center",
+                "width": 25,
+              }
+            }
+          />
           <Styled(Text)>
             Most Replied
           </Styled(Text)>
-          <Styled(Icon)
-            name="undo"
-          />
         </Styled(Button)>,
         <Styled(Button)
-          full={true}
-          iconRight={true}
+          iconLeft={true}
           success={true}
           transparent={true}
         >
+          <Styled(Icon)
+            name="people"
+            style={
+              Object {
+                "textAlign": "center",
+                "width": 25,
+              }
+            }
+            type="MaterialIcons"
+          />
           <Styled(Text)>
             Popularity
           </Styled(Text)>
-          <Styled(Icon)
-            name="people"
-            type="MaterialIcons"
-          />
         </Styled(Button)>,
       ],
       "position": Object {
@@ -685,22 +817,44 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
+            <Styled(Icon)
+              name="link"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
+              type="MaterialIcons"
+            />,
             <Styled(Text)>
               From Moodle
             </Styled(Text)>,
-            <Styled(Icon)
-              name="link"
-              type="MaterialIcons"
-            />,
           ],
-          "full": true,
-          "iconRight": true,
+          "iconLeft": true,
           "info": true,
           "transparent": true,
           "virtual": undefined,
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "link",
+              "style": Object {
+                "textAlign": "center",
+                "width": 25,
+              },
+              "type": "MaterialIcons",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -713,19 +867,6 @@ ShallowWrapper {
             "rendered": "From Moodle",
             "type": [Function],
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "name": "link",
-              "type": "MaterialIcons",
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
         ],
         "type": [Function],
       },
@@ -735,22 +876,44 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
+            <Styled(Icon)
+              name="clock-fast"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
+              type="MaterialCommunityIcons"
+            />,
             <Styled(Text)>
               Latest Post
             </Styled(Text)>,
-            <Styled(Icon)
-              name="clock-fast"
-              type="MaterialCommunityIcons"
-            />,
           ],
-          "full": true,
-          "iconRight": true,
+          "iconLeft": true,
           "success": true,
           "transparent": true,
           "virtual": undefined,
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "clock-fast",
+              "style": Object {
+                "textAlign": "center",
+                "width": 25,
+              },
+              "type": "MaterialCommunityIcons",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -763,19 +926,6 @@ ShallowWrapper {
             "rendered": "Latest Post",
             "type": [Function],
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "name": "clock-fast",
-              "type": "MaterialCommunityIcons",
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
         ],
         "type": [Function],
       },
@@ -785,21 +935,42 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
+            <Styled(Icon)
+              name="undo"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
+            />,
             <Styled(Text)>
               Most Replied
             </Styled(Text)>,
-            <Styled(Icon)
-              name="undo"
-            />,
           ],
-          "full": true,
-          "iconRight": true,
+          "iconLeft": true,
           "success": true,
           "transparent": true,
           "virtual": undefined,
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "undo",
+              "style": Object {
+                "textAlign": "center",
+                "width": 25,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -812,18 +983,6 @@ ShallowWrapper {
             "rendered": "Most Replied",
             "type": [Function],
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "name": "undo",
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
         ],
         "type": [Function],
       },
@@ -833,16 +992,21 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
+            <Styled(Icon)
+              name="people"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
+              type="MaterialIcons"
+            />,
             <Styled(Text)>
               Popularity
             </Styled(Text)>,
-            <Styled(Icon)
-              name="people"
-              type="MaterialIcons"
-            />,
           ],
-          "full": true,
-          "iconRight": true,
+          "iconLeft": true,
           "success": true,
           "transparent": true,
           "virtual": undefined,
@@ -854,11 +1018,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": "Popularity",
+              "name": "people",
+              "style": Object {
+                "textAlign": "center",
+                "width": 25,
+              },
+              "type": "MaterialIcons",
               "virtual": undefined,
             },
             "ref": null,
-            "rendered": "Popularity",
+            "rendered": null,
             "type": [Function],
           },
           Object {
@@ -866,12 +1035,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "name": "people",
-              "type": "MaterialIcons",
+              "children": "Popularity",
               "virtual": undefined,
             },
             "ref": null,
-            "rendered": null,
+            "rendered": "Popularity",
             "type": [Function],
           },
         ],
@@ -888,59 +1056,79 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Styled(Button)
-            full={true}
-            iconRight={true}
+            iconLeft={true}
             info={true}
             transparent={true}
           >
+            <Styled(Icon)
+              name="link"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
+              type="MaterialIcons"
+            />
             <Styled(Text)>
               From Moodle
             </Styled(Text)>
-            <Styled(Icon)
-              name="link"
-              type="MaterialIcons"
-            />
           </Styled(Button)>,
           <Styled(Button)
-            full={true}
-            iconRight={true}
+            iconLeft={true}
             success={true}
             transparent={true}
           >
+            <Styled(Icon)
+              name="clock-fast"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
+              type="MaterialCommunityIcons"
+            />
             <Styled(Text)>
               Latest Post
             </Styled(Text)>
-            <Styled(Icon)
-              name="clock-fast"
-              type="MaterialCommunityIcons"
-            />
           </Styled(Button)>,
           <Styled(Button)
-            full={true}
-            iconRight={true}
+            iconLeft={true}
             success={true}
             transparent={true}
           >
+            <Styled(Icon)
+              name="undo"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
+            />
             <Styled(Text)>
               Most Replied
             </Styled(Text)>
-            <Styled(Icon)
-              name="undo"
-            />
           </Styled(Button)>,
           <Styled(Button)
-            full={true}
-            iconRight={true}
+            iconLeft={true}
             success={true}
             transparent={true}
           >
+            <Styled(Icon)
+              name="people"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
+              type="MaterialIcons"
+            />
             <Styled(Text)>
               Popularity
             </Styled(Text)>
-            <Styled(Icon)
-              name="people"
-              type="MaterialIcons"
-            />
           </Styled(Button)>,
         ],
         "position": Object {
@@ -957,22 +1145,44 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
+              <Styled(Icon)
+                name="link"
+                style={
+                  Object {
+                    "textAlign": "center",
+                    "width": 25,
+                  }
+                }
+                type="MaterialIcons"
+              />,
               <Styled(Text)>
                 From Moodle
               </Styled(Text)>,
-              <Styled(Icon)
-                name="link"
-                type="MaterialIcons"
-              />,
             ],
-            "full": true,
-            "iconRight": true,
+            "iconLeft": true,
             "info": true,
             "transparent": true,
             "virtual": undefined,
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "link",
+                "style": Object {
+                  "textAlign": "center",
+                  "width": 25,
+                },
+                "type": "MaterialIcons",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             Object {
               "instance": null,
               "key": undefined,
@@ -985,19 +1195,6 @@ ShallowWrapper {
               "rendered": "From Moodle",
               "type": [Function],
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "name": "link",
-                "type": "MaterialIcons",
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
           ],
           "type": [Function],
         },
@@ -1007,22 +1204,44 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
+              <Styled(Icon)
+                name="clock-fast"
+                style={
+                  Object {
+                    "textAlign": "center",
+                    "width": 25,
+                  }
+                }
+                type="MaterialCommunityIcons"
+              />,
               <Styled(Text)>
                 Latest Post
               </Styled(Text)>,
-              <Styled(Icon)
-                name="clock-fast"
-                type="MaterialCommunityIcons"
-              />,
             ],
-            "full": true,
-            "iconRight": true,
+            "iconLeft": true,
             "success": true,
             "transparent": true,
             "virtual": undefined,
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "clock-fast",
+                "style": Object {
+                  "textAlign": "center",
+                  "width": 25,
+                },
+                "type": "MaterialCommunityIcons",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             Object {
               "instance": null,
               "key": undefined,
@@ -1035,19 +1254,6 @@ ShallowWrapper {
               "rendered": "Latest Post",
               "type": [Function],
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "name": "clock-fast",
-                "type": "MaterialCommunityIcons",
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
           ],
           "type": [Function],
         },
@@ -1057,21 +1263,42 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
+              <Styled(Icon)
+                name="undo"
+                style={
+                  Object {
+                    "textAlign": "center",
+                    "width": 25,
+                  }
+                }
+              />,
               <Styled(Text)>
                 Most Replied
               </Styled(Text)>,
-              <Styled(Icon)
-                name="undo"
-              />,
             ],
-            "full": true,
-            "iconRight": true,
+            "iconLeft": true,
             "success": true,
             "transparent": true,
             "virtual": undefined,
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "undo",
+                "style": Object {
+                  "textAlign": "center",
+                  "width": 25,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             Object {
               "instance": null,
               "key": undefined,
@@ -1084,18 +1311,6 @@ ShallowWrapper {
               "rendered": "Most Replied",
               "type": [Function],
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "name": "undo",
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
           ],
           "type": [Function],
         },
@@ -1105,16 +1320,21 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
+              <Styled(Icon)
+                name="people"
+                style={
+                  Object {
+                    "textAlign": "center",
+                    "width": 25,
+                  }
+                }
+                type="MaterialIcons"
+              />,
               <Styled(Text)>
                 Popularity
               </Styled(Text)>,
-              <Styled(Icon)
-                name="people"
-                type="MaterialIcons"
-              />,
             ],
-            "full": true,
-            "iconRight": true,
+            "iconLeft": true,
             "success": true,
             "transparent": true,
             "virtual": undefined,
@@ -1126,11 +1346,16 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": "Popularity",
+                "name": "people",
+                "style": Object {
+                  "textAlign": "center",
+                  "width": 25,
+                },
+                "type": "MaterialIcons",
                 "virtual": undefined,
               },
               "ref": null,
-              "rendered": "Popularity",
+              "rendered": null,
               "type": [Function],
             },
             Object {
@@ -1138,12 +1363,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "name": "people",
-                "type": "MaterialIcons",
+                "children": "Popularity",
                 "virtual": undefined,
               },
               "ref": null,
-              "rendered": null,
+              "rendered": "Popularity",
               "type": [Function],
             },
           ],

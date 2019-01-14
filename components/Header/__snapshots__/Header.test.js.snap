@@ -58,6 +58,7 @@ ShallowWrapper {
         </Styled(Body)>,
         <Styled(Right)>
           <Styled(Button)
+            onLongPress={[Function]}
             onPress={[Function]}
             transparent={true}
           >
@@ -158,6 +159,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": <Styled(Button)
+            onLongPress={[Function]}
             onPress={[Function]}
             transparent={true}
           >
@@ -178,6 +180,7 @@ ShallowWrapper {
               name="arrow-dropup"
               style={Object {}}
             />,
+            "onLongPress": [Function],
             "onPress": [Function],
             "transparent": true,
             "virtual": undefined,
@@ -240,6 +243,7 @@ ShallowWrapper {
           </Styled(Body)>,
           <Styled(Right)>
             <Styled(Button)
+              onLongPress={[Function]}
               onPress={[Function]}
               transparent={true}
             >
@@ -340,6 +344,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": <Styled(Button)
+              onLongPress={[Function]}
               onPress={[Function]}
               transparent={true}
             >
@@ -360,6 +365,7 @@ ShallowWrapper {
                 name="arrow-dropup"
                 style={Object {}}
               />,
+              "onLongPress": [Function],
               "onPress": [Function],
               "transparent": true,
               "virtual": undefined,
@@ -906,6 +912,7 @@ ShallowWrapper {
         </Styled(Body)>,
         <Styled(Right)>
           <Styled(Button)
+            onLongPress={[Function]}
             onPress={[Function]}
             transparent={true}
           >
@@ -1010,6 +1017,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": <Styled(Button)
+            onLongPress={[Function]}
             onPress={[Function]}
             transparent={true}
           >
@@ -1038,6 +1046,7 @@ ShallowWrapper {
                 }
               }
             />,
+            "onLongPress": [Function],
             "onPress": [Function],
             "transparent": true,
             "virtual": undefined,
@@ -1102,6 +1111,7 @@ ShallowWrapper {
           </Styled(Body)>,
           <Styled(Right)>
             <Styled(Button)
+              onLongPress={[Function]}
               onPress={[Function]}
               transparent={true}
             >
@@ -1206,6 +1216,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": <Styled(Button)
+              onLongPress={[Function]}
               onPress={[Function]}
               transparent={true}
             >
@@ -1234,6 +1245,7 @@ ShallowWrapper {
                   }
                 }
               />,
+              "onLongPress": [Function],
               "onPress": [Function],
               "transparent": true,
               "virtual": undefined,

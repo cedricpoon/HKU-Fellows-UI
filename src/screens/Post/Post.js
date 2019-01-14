@@ -23,7 +23,7 @@ export class Post extends Component {
   }
 
   _renderHeaderMenu() {
-    const { headerLayout } = this.state;
+    const { headerLayout, native } = this.state;
     const { width } = Dimensions.get("window");
 
     return (
@@ -31,6 +31,7 @@ export class Post extends Component {
         position={{ x: width, y: headerLayout.y }}
         parentHeight={headerLayout.height}
         onRef={ref => this._popup = ref}
+        native={native}
       />
     );
   }

@@ -32,6 +32,9 @@ export default {
   'drawer.landing': 'Browse Courses / Posts',
   'drawer.logout': 'Log out',
 
+  'header.notifications': 'Notifications',
+  'header.abuse': 'Report Abuse',
+
   'fetch.noNetwork': 'Server is not connected.',
 
   'toast.dismiss': 'Dismiss'

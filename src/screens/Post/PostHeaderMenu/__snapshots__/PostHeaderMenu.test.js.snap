@@ -28,20 +28,46 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <Styled(Button)
-        full={true}
-        iconRight={true}
-        info={true}
-        transparent={true}
-      >
-        <Styled(Text)>
-          From Moodle
-        </Styled(Text)>
-        <Styled(Icon)
-          name="link"
-          type="MaterialIcons"
-        />
-      </Styled(Button)>,
+      "children": Array [
+        <Styled(Button)
+          disabled={true}
+          iconLeft={true}
+          transparent={true}
+        >
+          <Styled(Icon)
+            name="notifications"
+            style={
+              Object {
+                "textAlign": "center",
+                "width": 25,
+              }
+            }
+            type="MaterialIcons"
+          />
+          <Styled(Text)>
+            Notifications
+          </Styled(Text)>
+        </Styled(Button)>,
+        <Styled(Button)
+          danger={true}
+          iconLeft={true}
+          transparent={true}
+        >
+          <Styled(Icon)
+            name="report"
+            style={
+              Object {
+                "textAlign": "center",
+                "width": 25,
+              }
+            }
+            type="MaterialIcons"
+          />
+          <Styled(Text)>
+            Report Abuse
+          </Styled(Text)>
+        </Styled(Button)>,
+      ],
       "position": Object {
         "x": 0,
         "y": 0,
@@ -49,102 +75,30 @@ ShallowWrapper {
       "toggle": [Function],
     },
     "ref": [Function],
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [
-          <Styled(Text)>
-            From Moodle
-          </Styled(Text)>,
-          <Styled(Icon)
-            name="link"
-            type="MaterialIcons"
-          />,
-        ],
-        "full": true,
-        "iconRight": true,
-        "info": true,
-        "transparent": true,
-        "virtual": undefined,
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": "From Moodle",
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": "From Moodle",
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "name": "link",
-            "type": "MaterialIcons",
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": <Styled(Button)
-          full={true}
-          iconRight={true}
-          info={true}
-          transparent={true}
-        >
-          <Styled(Text)>
-            From Moodle
-          </Styled(Text)>
-          <Styled(Icon)
-            name="link"
-            type="MaterialIcons"
-          />
-        </Styled(Button)>,
-        "position": Object {
-          "x": 0,
-          "y": 0,
-        },
-        "toggle": [Function],
-      },
-      "ref": [Function],
-      "rendered": Object {
+    "rendered": Array [
+      Object {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
         "props": Object {
           "children": Array [
-            <Styled(Text)>
-              From Moodle
-            </Styled(Text)>,
             <Styled(Icon)
-              name="link"
+              name="notifications"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
               type="MaterialIcons"
             />,
+            <Styled(Text)>
+              Notifications
+            </Styled(Text)>,
           ],
-          "full": true,
-          "iconRight": true,
-          "info": true,
+          "disabled": true,
+          "iconLeft": true,
+          "light": undefined,
           "transparent": true,
           "virtual": undefined,
         },
@@ -155,19 +109,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": "From Moodle",
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": "From Moodle",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "name": "link",
+              "name": "notifications",
+              "style": Object {
+                "textAlign": "center",
+                "width": 25,
+              },
               "type": "MaterialIcons",
               "virtual": undefined,
             },
@@ -175,9 +121,257 @@ ShallowWrapper {
             "rendered": null,
             "type": [Function],
           },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Notifications",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": "Notifications",
+            "type": [Function],
+          },
         ],
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(Icon)
+              name="report"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
+              type="MaterialIcons"
+            />,
+            <Styled(Text)>
+              Report Abuse
+            </Styled(Text)>,
+          ],
+          "danger": true,
+          "iconLeft": true,
+          "transparent": true,
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "report",
+              "style": Object {
+                "textAlign": "center",
+                "width": 25,
+              },
+              "type": "MaterialIcons",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Report Abuse",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": "Report Abuse",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Styled(Button)
+            disabled={true}
+            iconLeft={true}
+            transparent={true}
+          >
+            <Styled(Icon)
+              name="notifications"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
+              type="MaterialIcons"
+            />
+            <Styled(Text)>
+              Notifications
+            </Styled(Text)>
+          </Styled(Button)>,
+          <Styled(Button)
+            danger={true}
+            iconLeft={true}
+            transparent={true}
+          >
+            <Styled(Icon)
+              name="report"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
+              type="MaterialIcons"
+            />
+            <Styled(Text)>
+              Report Abuse
+            </Styled(Text)>
+          </Styled(Button)>,
+        ],
+        "position": Object {
+          "x": 0,
+          "y": 0,
+        },
+        "toggle": [Function],
+      },
+      "ref": [Function],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Styled(Icon)
+                name="notifications"
+                style={
+                  Object {
+                    "textAlign": "center",
+                    "width": 25,
+                  }
+                }
+                type="MaterialIcons"
+              />,
+              <Styled(Text)>
+                Notifications
+              </Styled(Text)>,
+            ],
+            "disabled": true,
+            "iconLeft": true,
+            "light": undefined,
+            "transparent": true,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "notifications",
+                "style": Object {
+                  "textAlign": "center",
+                  "width": 25,
+                },
+                "type": "MaterialIcons",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Notifications",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "Notifications",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Styled(Icon)
+                name="report"
+                style={
+                  Object {
+                    "textAlign": "center",
+                    "width": 25,
+                  }
+                }
+                type="MaterialIcons"
+              />,
+              <Styled(Text)>
+                Report Abuse
+              </Styled(Text)>,
+            ],
+            "danger": true,
+            "iconLeft": true,
+            "transparent": true,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "report",
+                "style": Object {
+                  "textAlign": "center",
+                  "width": 25,
+                },
+                "type": "MaterialIcons",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Report Abuse",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "Report Abuse",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
       "type": [Function],
     },
   ],
@@ -228,20 +422,46 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <Styled(Button)
-        full={true}
-        iconRight={true}
-        info={true}
-        transparent={true}
-      >
-        <Styled(Text)>
-          From Moodle
-        </Styled(Text)>
-        <Styled(Icon)
-          name="link"
-          type="MaterialIcons"
-        />
-      </Styled(Button)>,
+      "children": Array [
+        <Styled(Button)
+          disabled={true}
+          iconLeft={true}
+          transparent={true}
+        >
+          <Styled(Icon)
+            name="notifications"
+            style={
+              Object {
+                "textAlign": "center",
+                "width": 25,
+              }
+            }
+            type="MaterialIcons"
+          />
+          <Styled(Text)>
+            Notifications
+          </Styled(Text)>
+        </Styled(Button)>,
+        <Styled(Button)
+          danger={true}
+          iconLeft={true}
+          transparent={true}
+        >
+          <Styled(Icon)
+            name="report"
+            style={
+              Object {
+                "textAlign": "center",
+                "width": 25,
+              }
+            }
+            type="MaterialIcons"
+          />
+          <Styled(Text)>
+            Report Abuse
+          </Styled(Text)>
+        </Styled(Button)>,
+      ],
       "position": Object {
         "x": 0,
         "y": 0,
@@ -249,102 +469,30 @@ ShallowWrapper {
       "toggle": [Function],
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [
-          <Styled(Text)>
-            From Moodle
-          </Styled(Text)>,
-          <Styled(Icon)
-            name="link"
-            type="MaterialIcons"
-          />,
-        ],
-        "full": true,
-        "iconRight": true,
-        "info": true,
-        "transparent": true,
-        "virtual": undefined,
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": "From Moodle",
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": "From Moodle",
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "name": "link",
-            "type": "MaterialIcons",
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": <Styled(Button)
-          full={true}
-          iconRight={true}
-          info={true}
-          transparent={true}
-        >
-          <Styled(Text)>
-            From Moodle
-          </Styled(Text)>
-          <Styled(Icon)
-            name="link"
-            type="MaterialIcons"
-          />
-        </Styled(Button)>,
-        "position": Object {
-          "x": 0,
-          "y": 0,
-        },
-        "toggle": [Function],
-      },
-      "ref": null,
-      "rendered": Object {
+    "rendered": Array [
+      Object {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
         "props": Object {
           "children": Array [
-            <Styled(Text)>
-              From Moodle
-            </Styled(Text)>,
             <Styled(Icon)
-              name="link"
+              name="notifications"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
               type="MaterialIcons"
             />,
+            <Styled(Text)>
+              Notifications
+            </Styled(Text)>,
           ],
-          "full": true,
-          "iconRight": true,
-          "info": true,
+          "disabled": true,
+          "iconLeft": true,
+          "light": undefined,
           "transparent": true,
           "virtual": undefined,
         },
@@ -355,19 +503,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": "From Moodle",
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": "From Moodle",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "name": "link",
+              "name": "notifications",
+              "style": Object {
+                "textAlign": "center",
+                "width": 25,
+              },
               "type": "MaterialIcons",
               "virtual": undefined,
             },
@@ -375,9 +515,257 @@ ShallowWrapper {
             "rendered": null,
             "type": [Function],
           },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Notifications",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": "Notifications",
+            "type": [Function],
+          },
         ],
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(Icon)
+              name="report"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
+              type="MaterialIcons"
+            />,
+            <Styled(Text)>
+              Report Abuse
+            </Styled(Text)>,
+          ],
+          "danger": true,
+          "iconLeft": true,
+          "transparent": true,
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "report",
+              "style": Object {
+                "textAlign": "center",
+                "width": 25,
+              },
+              "type": "MaterialIcons",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Report Abuse",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": "Report Abuse",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Styled(Button)
+            disabled={true}
+            iconLeft={true}
+            transparent={true}
+          >
+            <Styled(Icon)
+              name="notifications"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
+              type="MaterialIcons"
+            />
+            <Styled(Text)>
+              Notifications
+            </Styled(Text)>
+          </Styled(Button)>,
+          <Styled(Button)
+            danger={true}
+            iconLeft={true}
+            transparent={true}
+          >
+            <Styled(Icon)
+              name="report"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
+              type="MaterialIcons"
+            />
+            <Styled(Text)>
+              Report Abuse
+            </Styled(Text)>
+          </Styled(Button)>,
+        ],
+        "position": Object {
+          "x": 0,
+          "y": 0,
+        },
+        "toggle": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Styled(Icon)
+                name="notifications"
+                style={
+                  Object {
+                    "textAlign": "center",
+                    "width": 25,
+                  }
+                }
+                type="MaterialIcons"
+              />,
+              <Styled(Text)>
+                Notifications
+              </Styled(Text)>,
+            ],
+            "disabled": true,
+            "iconLeft": true,
+            "light": undefined,
+            "transparent": true,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "notifications",
+                "style": Object {
+                  "textAlign": "center",
+                  "width": 25,
+                },
+                "type": "MaterialIcons",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Notifications",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "Notifications",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Styled(Icon)
+                name="report"
+                style={
+                  Object {
+                    "textAlign": "center",
+                    "width": 25,
+                  }
+                }
+                type="MaterialIcons"
+              />,
+              <Styled(Text)>
+                Report Abuse
+              </Styled(Text)>,
+            ],
+            "danger": true,
+            "iconLeft": true,
+            "transparent": true,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "report",
+                "style": Object {
+                  "textAlign": "center",
+                  "width": 25,
+                },
+                "type": "MaterialIcons",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Report Abuse",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "Report Abuse",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
       "type": [Function],
     },
   ],

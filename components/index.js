@@ -17,3 +17,5 @@ export { default as LoginForm } from './LoginForm/LoginForm';
 export { default as Drawer } from './Drawer/Drawer';
 
 export { default as PostFooter } from './PostFooter/PostFooter';
+
+export { default as PopupMenu } from './PopupMenu/PopupMenu';

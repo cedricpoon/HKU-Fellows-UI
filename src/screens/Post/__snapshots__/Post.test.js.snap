@@ -1,0 +1,251 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Post Screen renders as expected 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Post />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <PostHeaderMenu
+          onRef={[Function]}
+          parentHeight={0}
+          position={
+            Object {
+              "x": 750,
+              "y": 0,
+            }
+          }
+        />,
+        <Header
+          backable={true}
+          onLayout={[Function]}
+          onRightPress={[Function]}
+          rightIcon="more"
+          rightStyle={
+            Object {
+              "color": "#4E4A47",
+            }
+          }
+          subtitle={null}
+          title={
+            Object {
+              "color": "#2F78B0",
+              "context": "",
+              "numberOfLines": 4,
+            }
+          }
+        />,
+        <Styled(Content) />,
+        <PostFooter
+          firstPage={true}
+        />,
+      ],
+      "virtual": undefined,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "onRef": [Function],
+          "parentHeight": 0,
+          "position": Object {
+            "x": 750,
+            "y": 0,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "backable": true,
+          "onLayout": [Function],
+          "onRightPress": [Function],
+          "rightIcon": "more",
+          "rightStyle": Object {
+            "color": "#4E4A47",
+          },
+          "subtitle": null,
+          "title": Object {
+            "color": "#2F78B0",
+            "context": "",
+            "numberOfLines": 4,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "firstPage": true,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <PostHeaderMenu
+            onRef={[Function]}
+            parentHeight={0}
+            position={
+              Object {
+                "x": 750,
+                "y": 0,
+              }
+            }
+          />,
+          <Header
+            backable={true}
+            onLayout={[Function]}
+            onRightPress={[Function]}
+            rightIcon="more"
+            rightStyle={
+              Object {
+                "color": "#4E4A47",
+              }
+            }
+            subtitle={null}
+            title={
+              Object {
+                "color": "#2F78B0",
+                "context": "",
+                "numberOfLines": 4,
+              }
+            }
+          />,
+          <Styled(Content) />,
+          <PostFooter
+            firstPage={true}
+          />,
+        ],
+        "virtual": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "onRef": [Function],
+            "parentHeight": 0,
+            "position": Object {
+              "x": 750,
+              "y": 0,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "backable": true,
+            "onLayout": [Function],
+            "onRightPress": [Function],
+            "rightIcon": "more",
+            "rightStyle": Object {
+              "color": "#4E4A47",
+            },
+            "subtitle": null,
+            "title": Object {
+              "color": "#2F78B0",
+              "context": "",
+              "numberOfLines": 4,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "firstPage": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

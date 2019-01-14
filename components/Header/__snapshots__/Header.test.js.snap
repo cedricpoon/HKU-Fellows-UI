@@ -47,6 +47,7 @@ ShallowWrapper {
                   "textAlign": "justify",
                 },
                 Object {
+                  "color": undefined,
                   "fontSize": undefined,
                 },
               ]
@@ -105,6 +106,7 @@ ShallowWrapper {
                     "textAlign": "justify",
                   },
                   Object {
+                    "color": undefined,
                     "fontSize": undefined,
                   },
                 ]
@@ -136,6 +138,7 @@ ShallowWrapper {
                   "textAlign": "justify",
                 },
                 Object {
+                  "color": undefined,
                   "fontSize": undefined,
                 },
               ],
@@ -226,6 +229,7 @@ ShallowWrapper {
                     "textAlign": "justify",
                   },
                   Object {
+                    "color": undefined,
                     "fontSize": undefined,
                   },
                 ]
@@ -284,6 +288,7 @@ ShallowWrapper {
                       "textAlign": "justify",
                     },
                     Object {
+                      "color": undefined,
                       "fontSize": undefined,
                     },
                   ]
@@ -315,6 +320,7 @@ ShallowWrapper {
                     "textAlign": "justify",
                   },
                   Object {
+                    "color": undefined,
                     "fontSize": undefined,
                   },
                 ],
@@ -408,7 +414,7 @@ ShallowWrapper {
     onRightPress={[Function]}
     rightStyle={
       Object {
-        "color": "#E03A00",
+        "color": "#4E4A47",
       }
     }
     subtitle={null}
@@ -465,6 +471,7 @@ ShallowWrapper {
                   "textAlign": "justify",
                 },
                 Object {
+                  "color": undefined,
                   "fontSize": undefined,
                 },
               ]
@@ -559,6 +566,7 @@ ShallowWrapper {
                     "textAlign": "justify",
                   },
                   Object {
+                    "color": undefined,
                     "fontSize": undefined,
                   },
                 ]
@@ -590,6 +598,7 @@ ShallowWrapper {
                   "textAlign": "justify",
                 },
                 Object {
+                  "color": undefined,
                   "fontSize": undefined,
                 },
               ],
@@ -658,6 +667,7 @@ ShallowWrapper {
                     "textAlign": "justify",
                   },
                   Object {
+                    "color": undefined,
                     "fontSize": undefined,
                   },
                 ]
@@ -752,6 +762,7 @@ ShallowWrapper {
                       "textAlign": "justify",
                     },
                     Object {
+                      "color": undefined,
                       "fontSize": undefined,
                     },
                   ]
@@ -783,6 +794,7 @@ ShallowWrapper {
                     "textAlign": "justify",
                   },
                   Object {
+                    "color": undefined,
                     "fontSize": undefined,
                   },
                 ],
@@ -840,7 +852,7 @@ ShallowWrapper {
     rightIcon="arrow-dropup"
     rightStyle={
       Object {
-        "color": "#E03A00",
+        "color": "#4E4A47",
       }
     }
     subtitle={null}
@@ -883,6 +895,7 @@ ShallowWrapper {
                   "textAlign": "justify",
                 },
                 Object {
+                  "color": undefined,
                   "fontSize": undefined,
                 },
               ]
@@ -900,7 +913,7 @@ ShallowWrapper {
               name="arrow-dropup"
               style={
                 Object {
-                  "color": "#E03A00",
+                  "color": "#4E4A47",
                 }
               }
             />
@@ -945,6 +958,7 @@ ShallowWrapper {
                     "textAlign": "justify",
                   },
                   Object {
+                    "color": undefined,
                     "fontSize": undefined,
                   },
                 ]
@@ -976,6 +990,7 @@ ShallowWrapper {
                   "textAlign": "justify",
                 },
                 Object {
+                  "color": undefined,
                   "fontSize": undefined,
                 },
               ],
@@ -1002,7 +1017,7 @@ ShallowWrapper {
               name="arrow-dropup"
               style={
                 Object {
-                  "color": "#E03A00",
+                  "color": "#4E4A47",
                 }
               }
             />
@@ -1019,7 +1034,7 @@ ShallowWrapper {
               name="arrow-dropup"
               style={
                 Object {
-                  "color": "#E03A00",
+                  "color": "#4E4A47",
                 }
               }
             />,
@@ -1035,7 +1050,7 @@ ShallowWrapper {
             "props": Object {
               "name": "arrow-dropup",
               "style": Object {
-                "color": "#E03A00",
+                "color": "#4E4A47",
               },
               "virtual": undefined,
             },
@@ -1076,6 +1091,7 @@ ShallowWrapper {
                     "textAlign": "justify",
                   },
                   Object {
+                    "color": undefined,
                     "fontSize": undefined,
                   },
                 ]
@@ -1093,7 +1109,7 @@ ShallowWrapper {
                 name="arrow-dropup"
                 style={
                   Object {
-                    "color": "#E03A00",
+                    "color": "#4E4A47",
                   }
                 }
               />
@@ -1138,6 +1154,7 @@ ShallowWrapper {
                       "textAlign": "justify",
                     },
                     Object {
+                      "color": undefined,
                       "fontSize": undefined,
                     },
                   ]
@@ -1169,6 +1186,7 @@ ShallowWrapper {
                     "textAlign": "justify",
                   },
                   Object {
+                    "color": undefined,
                     "fontSize": undefined,
                   },
                 ],
@@ -1195,7 +1213,7 @@ ShallowWrapper {
                 name="arrow-dropup"
                 style={
                   Object {
-                    "color": "#E03A00",
+                    "color": "#4E4A47",
                   }
                 }
               />
@@ -1212,7 +1230,7 @@ ShallowWrapper {
                 name="arrow-dropup"
                 style={
                   Object {
-                    "color": "#E03A00",
+                    "color": "#4E4A47",
                   }
                 }
               />,
@@ -1228,7 +1246,7 @@ ShallowWrapper {
               "props": Object {
                 "name": "arrow-dropup",
                 "style": Object {
-                  "color": "#E03A00",
+                  "color": "#4E4A47",
                 },
                 "virtual": undefined,
               },
@@ -1271,7 +1289,7 @@ ShallowWrapper {
     onRightPress={[Function]}
     rightStyle={
       Object {
-        "color": "#E03A00",
+        "color": "#4E4A47",
       }
     }
     subtitle={
@@ -1318,6 +1336,7 @@ ShallowWrapper {
                   "textAlign": "justify",
                 },
                 Object {
+                  "color": undefined,
                   "fontSize": undefined,
                 },
               ]
@@ -1389,6 +1408,7 @@ ShallowWrapper {
                     "textAlign": "justify",
                   },
                   Object {
+                    "color": undefined,
                     "fontSize": undefined,
                   },
                 ]
@@ -1440,6 +1460,7 @@ ShallowWrapper {
                   "textAlign": "justify",
                 },
                 Object {
+                  "color": undefined,
                   "fontSize": undefined,
                 },
               ],
@@ -1523,6 +1544,7 @@ ShallowWrapper {
                     "textAlign": "justify",
                   },
                   Object {
+                    "color": undefined,
                     "fontSize": undefined,
                   },
                 ]
@@ -1594,6 +1616,7 @@ ShallowWrapper {
                       "textAlign": "justify",
                     },
                     Object {
+                      "color": undefined,
                       "fontSize": undefined,
                     },
                   ]
@@ -1645,6 +1668,7 @@ ShallowWrapper {
                     "textAlign": "justify",
                   },
                   Object {
+                    "color": undefined,
                     "fontSize": undefined,
                   },
                 ],
@@ -1730,7 +1754,7 @@ ShallowWrapper {
     onRightPress={[Function]}
     rightStyle={
       Object {
-        "color": "#E03A00",
+        "color": "#4E4A47",
       }
     }
     subtitle={
@@ -1779,6 +1803,7 @@ ShallowWrapper {
                   "textAlign": "justify",
                 },
                 Object {
+                  "color": undefined,
                   "fontSize": undefined,
                 },
               ]
@@ -1851,6 +1876,7 @@ ShallowWrapper {
                     "textAlign": "justify",
                   },
                   Object {
+                    "color": undefined,
                     "fontSize": undefined,
                   },
                 ]
@@ -1902,6 +1928,7 @@ ShallowWrapper {
                   "textAlign": "justify",
                 },
                 Object {
+                  "color": undefined,
                   "fontSize": undefined,
                 },
               ],
@@ -1985,6 +2012,7 @@ ShallowWrapper {
                     "textAlign": "justify",
                   },
                   Object {
+                    "color": undefined,
                     "fontSize": undefined,
                   },
                 ]
@@ -2057,6 +2085,7 @@ ShallowWrapper {
                       "textAlign": "justify",
                     },
                     Object {
+                      "color": undefined,
                       "fontSize": undefined,
                     },
                   ]
@@ -2108,6 +2137,7 @@ ShallowWrapper {
                     "textAlign": "justify",
                   },
                   Object {
+                    "color": undefined,
                     "fontSize": undefined,
                   },
                 ],
@@ -2193,7 +2223,7 @@ ShallowWrapper {
     onRightPress={[Function]}
     rightStyle={
       Object {
-        "color": "#E03A00",
+        "color": "#4E4A47",
       }
     }
     subtitle={null}
@@ -2236,6 +2266,7 @@ ShallowWrapper {
                   "textAlign": "justify",
                 },
                 Object {
+                  "color": undefined,
                   "fontSize": undefined,
                 },
               ]
@@ -2284,6 +2315,7 @@ ShallowWrapper {
                     "textAlign": "justify",
                   },
                   Object {
+                    "color": undefined,
                     "fontSize": undefined,
                   },
                 ]
@@ -2315,6 +2347,7 @@ ShallowWrapper {
                   "textAlign": "justify",
                 },
                 Object {
+                  "color": undefined,
                   "fontSize": undefined,
                 },
               ],
@@ -2369,6 +2402,7 @@ ShallowWrapper {
                     "textAlign": "justify",
                   },
                   Object {
+                    "color": undefined,
                     "fontSize": undefined,
                   },
                 ]
@@ -2417,6 +2451,7 @@ ShallowWrapper {
                       "textAlign": "justify",
                     },
                     Object {
+                      "color": undefined,
                       "fontSize": undefined,
                     },
                   ]
@@ -2448,6 +2483,7 @@ ShallowWrapper {
                     "textAlign": "justify",
                   },
                   Object {
+                    "color": undefined,
                     "fontSize": undefined,
                   },
                 ],

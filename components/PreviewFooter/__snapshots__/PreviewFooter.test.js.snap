@@ -20,10 +20,16 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        null,
-        <Styled(FooterTab)
-          onLayout={[Function]}
-        >
+        <FilterPopup
+          onRef={[Function]}
+          position={
+            Object {
+              "x": 0,
+              "y": 0,
+            }
+          }
+        />,
+        <Styled(FooterTab)>
           <Styled(Button)
             onPress={[Function]}
           >
@@ -60,12 +66,13 @@ ShallowWrapper {
             onPress={[Function]}
           >
             <Styled(Icon)
-              name="library-books"
+              name="view-list"
               type="MaterialIcons"
             />
           </Styled(Button)>
         </Styled(FooterTab)>,
       ],
+      "onLayout": [Function],
       "style": Object {
         "zIndex": 1,
       },
@@ -73,7 +80,22 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
-      null,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "onRef": [Function],
+          "parentHeight": undefined,
+          "position": Object {
+            "x": 0,
+            "y": 0,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -116,12 +138,11 @@ ShallowWrapper {
               onPress={[Function]}
             >
               <Styled(Icon)
-                name="library-books"
+                name="view-list"
                 type="MaterialIcons"
               />
             </Styled(Button)>,
           ],
-          "onLayout": [Function],
           "virtual": undefined,
         },
         "ref": null,
@@ -245,7 +266,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": <Styled(Icon)
-                name="library-books"
+                name="view-list"
                 type="MaterialIcons"
               />,
               "onPress": [Function],
@@ -257,7 +278,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "name": "library-books",
+                "name": "view-list",
                 "type": "MaterialIcons",
                 "virtual": undefined,
               },
@@ -280,10 +301,16 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          null,
-          <Styled(FooterTab)
-            onLayout={[Function]}
-          >
+          <FilterPopup
+            onRef={[Function]}
+            position={
+              Object {
+                "x": 0,
+                "y": 0,
+              }
+            }
+          />,
+          <Styled(FooterTab)>
             <Styled(Button)
               onPress={[Function]}
             >
@@ -320,12 +347,13 @@ ShallowWrapper {
               onPress={[Function]}
             >
               <Styled(Icon)
-                name="library-books"
+                name="view-list"
                 type="MaterialIcons"
               />
             </Styled(Button)>
           </Styled(FooterTab)>,
         ],
+        "onLayout": [Function],
         "style": Object {
           "zIndex": 1,
         },
@@ -333,7 +361,22 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        null,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "onRef": [Function],
+            "parentHeight": undefined,
+            "position": Object {
+              "x": 0,
+              "y": 0,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -376,12 +419,11 @@ ShallowWrapper {
                 onPress={[Function]}
               >
                 <Styled(Icon)
-                  name="library-books"
+                  name="view-list"
                   type="MaterialIcons"
                 />
               </Styled(Button)>,
             ],
-            "onLayout": [Function],
             "virtual": undefined,
           },
           "ref": null,
@@ -505,7 +547,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": <Styled(Icon)
-                  name="library-books"
+                  name="view-list"
                   type="MaterialIcons"
                 />,
                 "onPress": [Function],
@@ -517,7 +559,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "name": "library-books",
+                  "name": "view-list",
                   "type": "MaterialIcons",
                   "virtual": undefined,
                 },
@@ -575,10 +617,16 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        null,
-        <Styled(FooterTab)
-          onLayout={[Function]}
-        >
+        <FilterPopup
+          onRef={[Function]}
+          position={
+            Object {
+              "x": 0,
+              "y": 0,
+            }
+          }
+        />,
+        <Styled(FooterTab)>
           <Styled(Button)
             onPress={[Function]}
           >
@@ -591,12 +639,13 @@ ShallowWrapper {
             onPress={[Function]}
           >
             <Styled(Icon)
-              name="library-books"
+              name="view-list"
               type="MaterialIcons"
             />
           </Styled(Button)>
         </Styled(FooterTab)>,
       ],
+      "onLayout": [Function],
       "style": Object {
         "zIndex": 1,
       },
@@ -604,7 +653,22 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
-      null,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "onRef": [Function],
+          "parentHeight": undefined,
+          "position": Object {
+            "x": 0,
+            "y": 0,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -626,12 +690,11 @@ ShallowWrapper {
               onPress={[Function]}
             >
               <Styled(Icon)
-                name="library-books"
+                name="view-list"
                 type="MaterialIcons"
               />
             </Styled(Button)>,
           ],
-          "onLayout": [Function],
           "virtual": undefined,
         },
         "ref": null,
@@ -673,7 +736,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": <Styled(Icon)
-                name="library-books"
+                name="view-list"
                 type="MaterialIcons"
               />,
               "onPress": [Function],
@@ -685,7 +748,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "name": "library-books",
+                "name": "view-list",
                 "type": "MaterialIcons",
                 "virtual": undefined,
               },
@@ -708,10 +771,16 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          null,
-          <Styled(FooterTab)
-            onLayout={[Function]}
-          >
+          <FilterPopup
+            onRef={[Function]}
+            position={
+              Object {
+                "x": 0,
+                "y": 0,
+              }
+            }
+          />,
+          <Styled(FooterTab)>
             <Styled(Button)
               onPress={[Function]}
             >
@@ -724,12 +793,13 @@ ShallowWrapper {
               onPress={[Function]}
             >
               <Styled(Icon)
-                name="library-books"
+                name="view-list"
                 type="MaterialIcons"
               />
             </Styled(Button)>
           </Styled(FooterTab)>,
         ],
+        "onLayout": [Function],
         "style": Object {
           "zIndex": 1,
         },
@@ -737,7 +807,22 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        null,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "onRef": [Function],
+            "parentHeight": undefined,
+            "position": Object {
+              "x": 0,
+              "y": 0,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -759,12 +844,11 @@ ShallowWrapper {
                 onPress={[Function]}
               >
                 <Styled(Icon)
-                  name="library-books"
+                  name="view-list"
                   type="MaterialIcons"
                 />
               </Styled(Button)>,
             ],
-            "onLayout": [Function],
             "virtual": undefined,
           },
           "ref": null,
@@ -806,7 +890,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": <Styled(Icon)
-                  name="library-books"
+                  name="view-list"
                   type="MaterialIcons"
                 />,
                 "onPress": [Function],
@@ -818,7 +902,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "name": "library-books",
+                  "name": "view-list",
                   "type": "MaterialIcons",
                   "virtual": undefined,
                 },

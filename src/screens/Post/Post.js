@@ -1,33 +1,61 @@
 import React, { Component } from 'react';
-import { Text, Container, Content } from 'native-base';
+import { Dimensions } from 'react-native';
+import { Container, Content } from 'native-base';
 import { withNavigation } from 'react-navigation';
 import { connect } from 'react-redux';
 
+import PostHeaderMenu from './PostHeaderMenu/PostHeaderMenu';
+import { mapLayoutToState } from 'hkufui/components/helper';
 import { Header, PostFooter } from 'hkufui/components';
+import styles from './Styles';
 
 export class Post extends Component {
   constructor(props) {
     super(props);
-    this.state = { title: '' };
+    this.state = { title: '', headerLayout: { y: 0, height: 0 } };
+    this._openHeaderMenu = this._openHeaderMenu.bind(this);
+    this._renderHeaderMenu = this._renderHeaderMenu.bind(this);
+  }
+
+  _openHeaderMenu() {
+    if (this._popup)
+      this._popup.toggle();
+  }
+
+  _renderHeaderMenu() {
+    const { headerLayout } = this.state;
+    const { width } = Dimensions.get("window");
+
+    return (
+      <PostHeaderMenu
+        position={{ x: width, y: headerLayout.y }}
+        parentHeight={headerLayout.height}
+        onRef={ref => this._popup = ref}
+      />
+    );
   }
 
   componentDidMount() {
     const { navigation } = this.props;
     /* all props from <PostPreview /> has been passed */
-    this.setState({
-      ...navigation.state.params
-    });
+    if (navigation) {
+      this.setState({
+        ...navigation.state.params
+      });
+    }
   }
 
   render() {
-    const { id, title, subTitle } = this.state;
+    const { title, subTitle, native } = this.state;
 
     return (
       <Container>
+        {this._renderHeaderMenu()}
         <Header
           title={{
             context: title,
-            numberOfLines: 4
+            numberOfLines: 4,
+            color: native ? styles.nativeTitle.color : styles.moodleTitle.color
           }}
           subtitle={subTitle && {
             context: subTitle,
@@ -35,9 +63,10 @@ export class Post extends Component {
           }}
           backable
           rightIcon='more'
+          onRightPress={this._openHeaderMenu}
+          onLayout={mapLayoutToState('headerLayout', this)}
         />
         <Content>
-          <Text>{id}</Text>
         </Content>
         <PostFooter firstPage />
       </Container>

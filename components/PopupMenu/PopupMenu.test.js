@@ -6,7 +6,7 @@ import PopupMenu from './PopupMenu';
 describe('Testing PopupMenu Component', () => {
   it('renders as expected with required props', () => {
     const wrapper = shallow(
-      <PopupMenu position={0} toggle={() => {}}>
+      <PopupMenu position={{x: 0, y:0}}>
         <View></View>
       </PopupMenu>
     );
@@ -15,7 +15,7 @@ describe('Testing PopupMenu Component', () => {
 
   it('renders as expected with required props and parentHeight', () => {
     const wrapper = shallow(
-      <PopupMenu position={0} toggle={() => {}} parentHeight={0}>
+      <PopupMenu position={{x: 0, y:0}} parentHeight={0}>
         <View></View>
       </PopupMenu>
     );

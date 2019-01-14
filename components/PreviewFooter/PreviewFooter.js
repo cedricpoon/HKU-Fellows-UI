@@ -11,41 +11,38 @@ class PreviewFooter extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { showFilterPopup: false, footerLayout: { height: 0 } };
+    this.state = { footerLayout: { y: 0 }, filterLayout: { x: 0 } };
 
     this.filterToggle = this.filterToggle.bind(this);
   }
 
   filterToggle() {
-    this.setState(prevState => ({
-      showFilterPopup: !prevState.showFilterPopup
-    }));
+    if (this._popup)
+      this._popup.toggle();
   }
 
   _renderFilterPopup() {
-    const { filterLayout, showFilterPopup, footerLayout } = this.state;
+    const { filterLayout, footerLayout } = this.state;
 
-    if (showFilterPopup) {
-      return(
-        <FilterPopup
-          position={filterLayout.x}
-          parentHeight={footerLayout.height}
-          toggle={this.filterToggle}
-        />
-      );
-    }
-    return null;
+    return(
+      <FilterPopup
+        position={{x: filterLayout.x, y: footerLayout.y}}
+        parentHeight={footerLayout.height}
+        onRef={ref => this._popup = ref}
+      />
+    );
   }
 
   render() {
     const { muted, onRefresh } = this.props;
 
     return (
-      <Footer style={styles.footer}>
+      <Footer
+        style={styles.footer}
+        onLayout={mapLayoutToState("footerLayout", this)}
+      >
         { this._renderFilterPopup() }
-        <FooterTab
-          onLayout={mapLayoutToState("footerLayout", this)}
-        >
+        <FooterTab>
           <Button onPress={NavigationService.openDrawer}>
             <Icon name="menu" type="MaterialIcons" />
           </Button>

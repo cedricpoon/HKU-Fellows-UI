@@ -59,7 +59,7 @@ class Header extends Component {
           <Title
             style={[
               styles.title,
-              { fontSize: title.size }
+              { fontSize: title.size, color: title.color }
             ]}
             ref={ref => { this._title=ref }}
             numberOfLines={title.numberOfLines || 1}
@@ -97,7 +97,8 @@ Header.defaultProps = {
 const contextProptypes = {
   context: PropTypes.string.isRequired,
   numberOfLines: PropTypes.number,
-  size: PropTypes.number
+  size: PropTypes.number,
+  color: PropTypes.string
 }
 
 Header.propTypes = {

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Icon, Text } from 'native-base';
+import PropTypes from 'prop-types';
 
 import PopupMenu from '../../PopupMenu/PopupMenu';
 
@@ -7,12 +8,15 @@ import { localize } from 'hkufui/locale';
 const locale = localize({ language: 'en', country: 'hk' });
 
 class FilterPopup extends Component {
-
   render() {
-    const { ...restProps } = this.props;
+    const { onRef, ...restProps } = this.props;
 
     return(
-      <PopupMenu { ...restProps } /* Proptypes handling on <PopupMenu /> */ >
+      <PopupMenu
+       /* Proptypes handling on <PopupMenu /> */
+        ref={onRef}
+        { ...restProps }
+      >
         <Button full transparent info iconRight>
           <Text>{locale['footer.moodle']}</Text>
           <Icon name="link" type="MaterialIcons"></Icon>
@@ -34,9 +38,8 @@ class FilterPopup extends Component {
   }
 }
 
-FilterPopup.proptypes = {
-  /* Require PopupMenu proptypes */
-  ...PopupMenu.proptypes
+FilterPopup.propTypes = {
+  onRef: PropTypes.func
 }
 
 export default FilterPopup;

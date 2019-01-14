@@ -1,10 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing FilterPopup Component renders as expected with PopupMenu required props 1`] = `
+exports[`Testing FilterPopup Component has onRef 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <FilterPopup
-    position={0}
+    onRef={[Function]}
+    position={
+      Object {
+        "x": 0,
+        "y": 0,
+      }
+    }
     toggle={[Function]}
   >
     <View />
@@ -79,7 +85,596 @@ ShallowWrapper {
           />
         </Styled(Button)>,
       ],
-      "position": 0,
+      "position": Object {
+        "x": 0,
+        "y": 0,
+      },
+      "toggle": [Function],
+    },
+    "ref": [Function],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(Text)>
+              From Moodle
+            </Styled(Text)>,
+            <Styled(Icon)
+              name="link"
+              type="MaterialIcons"
+            />,
+          ],
+          "full": true,
+          "iconRight": true,
+          "info": true,
+          "transparent": true,
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "From Moodle",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": "From Moodle",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "link",
+              "type": "MaterialIcons",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(Text)>
+              Latest Post
+            </Styled(Text)>,
+            <Styled(Icon)
+              name="clock-fast"
+              type="MaterialCommunityIcons"
+            />,
+          ],
+          "full": true,
+          "iconRight": true,
+          "success": true,
+          "transparent": true,
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Latest Post",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": "Latest Post",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "clock-fast",
+              "type": "MaterialCommunityIcons",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(Text)>
+              Most Replied
+            </Styled(Text)>,
+            <Styled(Icon)
+              name="undo"
+            />,
+          ],
+          "full": true,
+          "iconRight": true,
+          "success": true,
+          "transparent": true,
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Most Replied",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": "Most Replied",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "undo",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(Text)>
+              Popularity
+            </Styled(Text)>,
+            <Styled(Icon)
+              name="people"
+              type="MaterialIcons"
+            />,
+          ],
+          "full": true,
+          "iconRight": true,
+          "success": true,
+          "transparent": true,
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Popularity",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": "Popularity",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "people",
+              "type": "MaterialIcons",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Styled(Button)
+            full={true}
+            iconRight={true}
+            info={true}
+            transparent={true}
+          >
+            <Styled(Text)>
+              From Moodle
+            </Styled(Text)>
+            <Styled(Icon)
+              name="link"
+              type="MaterialIcons"
+            />
+          </Styled(Button)>,
+          <Styled(Button)
+            full={true}
+            iconRight={true}
+            success={true}
+            transparent={true}
+          >
+            <Styled(Text)>
+              Latest Post
+            </Styled(Text)>
+            <Styled(Icon)
+              name="clock-fast"
+              type="MaterialCommunityIcons"
+            />
+          </Styled(Button)>,
+          <Styled(Button)
+            full={true}
+            iconRight={true}
+            success={true}
+            transparent={true}
+          >
+            <Styled(Text)>
+              Most Replied
+            </Styled(Text)>
+            <Styled(Icon)
+              name="undo"
+            />
+          </Styled(Button)>,
+          <Styled(Button)
+            full={true}
+            iconRight={true}
+            success={true}
+            transparent={true}
+          >
+            <Styled(Text)>
+              Popularity
+            </Styled(Text)>
+            <Styled(Icon)
+              name="people"
+              type="MaterialIcons"
+            />
+          </Styled(Button)>,
+        ],
+        "position": Object {
+          "x": 0,
+          "y": 0,
+        },
+        "toggle": [Function],
+      },
+      "ref": [Function],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Styled(Text)>
+                From Moodle
+              </Styled(Text)>,
+              <Styled(Icon)
+                name="link"
+                type="MaterialIcons"
+              />,
+            ],
+            "full": true,
+            "iconRight": true,
+            "info": true,
+            "transparent": true,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "From Moodle",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "From Moodle",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "link",
+                "type": "MaterialIcons",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Styled(Text)>
+                Latest Post
+              </Styled(Text)>,
+              <Styled(Icon)
+                name="clock-fast"
+                type="MaterialCommunityIcons"
+              />,
+            ],
+            "full": true,
+            "iconRight": true,
+            "success": true,
+            "transparent": true,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Latest Post",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "Latest Post",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "clock-fast",
+                "type": "MaterialCommunityIcons",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Styled(Text)>
+                Most Replied
+              </Styled(Text)>,
+              <Styled(Icon)
+                name="undo"
+              />,
+            ],
+            "full": true,
+            "iconRight": true,
+            "success": true,
+            "transparent": true,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Most Replied",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "Most Replied",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "undo",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Styled(Text)>
+                Popularity
+              </Styled(Text)>,
+              <Styled(Icon)
+                name="people"
+                type="MaterialIcons"
+              />,
+            ],
+            "full": true,
+            "iconRight": true,
+            "success": true,
+            "transparent": true,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Popularity",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "Popularity",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "people",
+                "type": "MaterialIcons",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing FilterPopup Component renders as expected with PopupMenu required props 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <FilterPopup
+    position={
+      Object {
+        "x": 0,
+        "y": 0,
+      }
+    }
+    toggle={[Function]}
+  >
+    <View />
+  </FilterPopup>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <Styled(Button)
+          full={true}
+          iconRight={true}
+          info={true}
+          transparent={true}
+        >
+          <Styled(Text)>
+            From Moodle
+          </Styled(Text)>
+          <Styled(Icon)
+            name="link"
+            type="MaterialIcons"
+          />
+        </Styled(Button)>,
+        <Styled(Button)
+          full={true}
+          iconRight={true}
+          success={true}
+          transparent={true}
+        >
+          <Styled(Text)>
+            Latest Post
+          </Styled(Text)>
+          <Styled(Icon)
+            name="clock-fast"
+            type="MaterialCommunityIcons"
+          />
+        </Styled(Button)>,
+        <Styled(Button)
+          full={true}
+          iconRight={true}
+          success={true}
+          transparent={true}
+        >
+          <Styled(Text)>
+            Most Replied
+          </Styled(Text)>
+          <Styled(Icon)
+            name="undo"
+          />
+        </Styled(Button)>,
+        <Styled(Button)
+          full={true}
+          iconRight={true}
+          success={true}
+          transparent={true}
+        >
+          <Styled(Text)>
+            Popularity
+          </Styled(Text)>
+          <Styled(Icon)
+            name="people"
+            type="MaterialIcons"
+          />
+        </Styled(Button)>,
+      ],
+      "position": Object {
+        "x": 0,
+        "y": 0,
+      },
       "toggle": [Function],
     },
     "ref": null,
@@ -348,7 +943,10 @@ ShallowWrapper {
             />
           </Styled(Button)>,
         ],
-        "position": 0,
+        "position": Object {
+          "x": 0,
+          "y": 0,
+        },
         "toggle": [Function],
       },
       "ref": null,

@@ -1,23 +1,23 @@
 import React from 'react';
 import { View } from 'react-native';
 import { shallow } from 'enzyme';
-import FilterPopup from './FilterPopup';
+import PostHeaderMenu from './PostHeaderMenu';
 
-describe('Testing FilterPopup Component', () => {
+describe('Testing PostHeaderMenu Component', () => {
   it('renders as expected with PopupMenu required props', () => {
     const wrapper = shallow(
-      <FilterPopup position={{x: 0, y: 0}} toggle={() => {}}>
+      <PostHeaderMenu position={{x: 0, y: 0}} toggle={() => {}}>
         <View></View>
-      </FilterPopup>
+      </PostHeaderMenu>
     );
     expect(wrapper).toMatchSnapshot();
   });
 
   it('has onRef', () => {
     const wrapper = shallow(
-      <FilterPopup position={{x: 0, y: 0}} toggle={() => {}} onRef={() => {}}>
+      <PostHeaderMenu position={{x: 0, y: 0}} toggle={() => {}} onRef={() => {}}>
         <View></View>
-      </FilterPopup>
+      </PostHeaderMenu>
     );
     expect(wrapper).toMatchSnapshot();
   });

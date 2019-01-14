@@ -25,7 +25,6 @@ export default StyleSheet.create({
     /* z-index in <PopupMenu /> */
     zIndex: 1,
     position: 'absolute',
-    top: -Dimensions.get('window').height,
     width: Dimensions.get('window').width,
     height: Dimensions.get('window').height
   }

@@ -15,64 +15,78 @@ class PopupMenu extends Component {
     /* init width for first time rendering */
     const _menuLayout = {};
     _menuLayout['width'] = 0;
-    this.state = { menuLayout: _menuLayout };
+    this.state = { menuLayout: _menuLayout, toggleFlag: false };
+    this.toggle = this.toggle.bind(this);
+  }
+
+  toggle() {
+    this.setState({ toggleFlag: !this.state.toggleFlag });
   }
 
   render() {
-    const { children, position, parentHeight, toggle } = this.props;
-    const { menuLayout } = this.state;
+    const { children, position, parentHeight } = this.props;
+    const { menuLayout, toggleFlag } = this.state;
+    const { width, height } = Dimensions.get('window');
 
-    const conceal = () => {
-      this._menu.zoomOut(100).then(toggle);
-    }
+    if (toggleFlag) {
+      const conceal = () => {
+        this._menu.zoomOut(100).then(this.toggle);
+      }
 
-    /* Calculate position */
-    const appendLeft = {};
-    const screenWidth = Dimensions.get('window').width
-    if (position <= 0) {
-      appendLeft.left = footer.popUpMargin;
-    } else if (position + menuLayout.width >= screenWidth) {
-      appendLeft.left = screenWidth - menuLayout.width - footer.popUpMargin;
-    } else {
-      appendLeft.left = position;
-    }
+      /* Calculate position */
+      const appendPos = { left: position.x, top: parentHeight + footer.popUpMargin };
+      if (position.x <= 0) {
+        appendPos.left = footer.popUpMargin;
+      } else if (position.x + menuLayout.width >= width) {
+        appendPos.left = width - menuLayout.width - footer.popUpMargin;
+      }
 
-    return(
-      <View style={ styles.container }>
-        <TouchableWithoutFeedback onPress={conceal}>
-          <View
+      if (position.y < 0) {
+        appendPos.top = appendPos.top + menuLayout.height;
+      } else if (position.y + menuLayout.height >= height) {
+        appendPos.top = -menuLayout.height - footer.popUpMargin
+      }
+
+      return(
+        <View style={ styles.container }>
+          <TouchableWithoutFeedback onPress={conceal}>
+            <View
+              style={[
+                styles.outsider,
+                {top: -position.y}
+              ]}
+            ></View>
+          </TouchableWithoutFeedback>
+
+          <Animatable.View
             style={[
-              styles.outsider,
-              { top: styles.outsider.top + parentHeight }
+              styles.menu,
+              { ...appendPos }
             ]}
-          ></View>
-        </TouchableWithoutFeedback>
-
-        <Animatable.View
-          style={[
-            styles.menu,
-            {
-              ...appendLeft,
-              bottom: parentHeight + 10
-            }
-          ]}
-          animation="zoomIn"
-          duration={100}
-          onLayout={mapLayoutToState("menuLayout", this)}
-          ref={ref => { this._menu = ref }}
-        >
-          { children }
-        </Animatable.View>
-      </View>
-    );
+            animation="zoomIn"
+            duration={100}
+            onLayout={mapLayoutToState("menuLayout", this)}
+            ref={ref => { this._menu = ref }}
+          >
+            { children }
+          </Animatable.View>
+        </View>
+      );
+    } else {
+      return null;
+    }
   }
+}
+
+const position = {
+  x: PropTypes.number.isRequired,
+  y: PropTypes.number.isRequired
 }
 
 PopupMenu.propTypes = {
   children: PropTypes.node.isRequired,
-  position: PropTypes.number.isRequired,
-  parentHeight: PropTypes.number,
-  toggle: PropTypes.func.isRequired
+  position: PropTypes.shape(position).isRequired,
+  parentHeight: PropTypes.number
 }
 
 export default PopupMenu;

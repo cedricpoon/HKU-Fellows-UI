@@ -4,8 +4,8 @@ import { Body as NBBody, Text, Icon, View, Button } from 'native-base';
 import * as Animatable from 'react-native-animatable';
 
 import styles from './Styles';
-import peerStyles from '../PostPreview/Styles';
-import { FADE_IN_DURATION } from '../Constants';
+import peerStyles from '../Styles';
+import { FADE_IN_DURATION } from 'hkufui/components/Scrollable/Constants';
 
 const Body = Animatable.createAnimatableComponent(NBBody);
 

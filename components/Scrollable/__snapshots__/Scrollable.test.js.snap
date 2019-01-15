@@ -1,11 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing PostScrollable Component renders as expected with onUnmount event 1`] = `
+exports[`Testing Scrollable Component renders as expected with onUnmount event 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <PostScrollable
+  Symbol(enzyme.__unrendered__): <Scrollable
+    itemRenderer={[Function]}
+    items={Array []}
     onUnmount={[Function]}
-    posts={Array []}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -39,11 +40,12 @@ ShallowWrapper {
 }
 `;
 
-exports[`Testing PostScrollable Component renders as expected with posts 1`] = `
+exports[`Testing Scrollable Component renders as expected with posts 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <PostScrollable
-    posts={Array []}
+  Symbol(enzyme.__unrendered__): <Scrollable
+    itemRenderer={[Function]}
+    items={Array []}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

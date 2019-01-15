@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import { PostScrollable, PostPlaceholder, PostLoadIndicator } from 'hkufui/components';
+import { Scrollable, PostPlaceholder, PostLoadIndicator, PostPreview } from 'hkufui/components';
 import { OK, FAIL, LOADING, STILL } from 'hkufui/src/constants/loadStatus';
 import { fetchPosts } from './loadPosts';
 import { localize } from 'hkufui/locale';
@@ -25,8 +25,16 @@ export class PostPreviewLoader extends Component {
 
     if (posts && posts.length > 0 && status === OK) {
       return (
-        <PostScrollable
-          posts={posts}
+        <Scrollable
+          items={posts}
+          itemRenderer={({item}) => {
+            return (
+              <PostPreview
+                id={item.id}
+                {...item}
+              />
+            );
+          }}
           {...restProps}
         />
       );

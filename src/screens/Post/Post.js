@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Dimensions } from 'react-native';
-import { Container, Content } from 'native-base';
+import { Container, Tab, Tabs, Text, Content } from 'native-base';
 import { withNavigation } from 'react-navigation';
 import { connect } from 'react-redux';
 
@@ -67,8 +67,23 @@ export class Post extends Component {
           onRightPress={this._openHeaderMenu}
           onLayout={mapLayoutToState('headerLayout', this)}
         />
-        <Content>
-        </Content>
+        <Tabs renderTabBar={false} prerenderingSiblingsNumber={2}>
+          <Tab heading="a">
+            <Content style={{backgroundColor: 'red'}}><Text>A</Text></Content>
+          </Tab>
+          <Tab heading="b">
+            <Content style={{backgroundColor: 'yellow'}}><Text>B</Text></Content>
+          </Tab>
+          <Tab heading="c">
+            <Content style={{backgroundColor: 'blue'}}><Text>C</Text></Content>
+          </Tab>
+          <Tab heading="d">
+            <Content style={{backgroundColor: 'green'}}><Text>D</Text></Content>
+          </Tab>
+          <Tab heading="e">
+            <Content style={{backgroundColor: 'orange'}}><Text>E</Text></Content>
+          </Tab>
+        </Tabs>
         <PostFooter firstPage />
       </Container>
     );

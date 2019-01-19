@@ -4,6 +4,7 @@ exports[`Testing Header Component has right style 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header
+    animated={true}
     onRightPress={[Function]}
     rightIcon="arrow-dropup"
     rightStyle={Object {}}
@@ -27,6 +28,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
+      "animated": true,
       "children": Array [
         <Styled(Left) />,
         <Styled(Body)
@@ -212,6 +214,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
+        "animated": true,
         "children": Array [
           <Styled(Left) />,
           <Styled(Body)
@@ -416,6 +419,7 @@ exports[`Testing Header Component renders as expected with back button 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header
+    animated={true}
     backable={true}
     onRightPress={[Function]}
     rightStyle={
@@ -443,6 +447,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
+      "animated": true,
       "children": Array [
         <Styled(Left)>
           <Styled(Button)
@@ -639,6 +644,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
+        "animated": true,
         "children": Array [
           <Styled(Left)>
             <Styled(Button)
@@ -854,6 +860,7 @@ exports[`Testing Header Component renders as expected with right button 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header
+    animated={true}
     onRightPress={[Function]}
     rightIcon="arrow-dropup"
     rightStyle={
@@ -881,6 +888,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
+      "animated": true,
       "children": Array [
         <Styled(Left) />,
         <Styled(Body)
@@ -1080,6 +1088,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
+        "animated": true,
         "children": Array [
           <Styled(Left) />,
           <Styled(Body)
@@ -1298,6 +1307,7 @@ exports[`Testing Header Component renders as expected with subtitle 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header
+    animated={true}
     onRightPress={[Function]}
     rightStyle={
       Object {
@@ -1328,6 +1338,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
+      "animated": true,
       "children": Array [
         <Styled(Left) />,
         <Styled(Body)
@@ -1536,6 +1547,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
+        "animated": true,
         "children": Array [
           <Styled(Left) />,
           <Styled(Body)
@@ -1763,6 +1775,7 @@ exports[`Testing Header Component renders as expected with subtitle and regardin
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header
+    animated={true}
     onRightPress={[Function]}
     rightStyle={
       Object {
@@ -1795,6 +1808,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
+      "animated": true,
       "children": Array [
         <Styled(Left) />,
         <Styled(Body)
@@ -2004,6 +2018,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
+        "animated": true,
         "children": Array [
           <Styled(Left) />,
           <Styled(Body)
@@ -2232,6 +2247,7 @@ exports[`Testing Header Component renders as expected with title 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header
+    animated={true}
     onRightPress={[Function]}
     rightStyle={
       Object {
@@ -2258,6 +2274,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
+      "animated": true,
       "children": Array [
         <Styled(Left) />,
         <Styled(Body)
@@ -2394,6 +2411,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
+        "animated": true,
         "children": Array [
           <Styled(Left) />,
           <Styled(Body)
@@ -2506,6 +2524,474 @@ ShallowWrapper {
               "type": [Function],
             },
             null,
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": undefined,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing Header Component renders without animation 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Header
+    animated={false}
+    onRightPress={[Function]}
+    rightStyle={
+      Object {
+        "color": "#4E4A47",
+      }
+    }
+    subtitle={
+      Object {
+        "context": "header",
+      }
+    }
+    title={
+      Object {
+        "context": "header",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "animated": false,
+      "children": Array [
+        <Styled(Left) />,
+        <Styled(Body)
+          style={
+            Object {
+              "flex": 4,
+            }
+          }
+        >
+          <Styled(Title)
+            numberOfLines={1}
+            style={
+              Array [
+                Object {
+                  "fontSize": undefined,
+                  "fontWeight": "normal",
+                  "marginBottom": 5,
+                  "textAlign": "justify",
+                },
+                Object {
+                  "color": undefined,
+                  "fontSize": undefined,
+                },
+              ]
+            }
+          >
+            header
+          </Styled(Title)>
+          <withAnimatable(Styled(Subtitle))
+            delay={0}
+            direction="normal"
+            iterationCount={1}
+            iterationDelay={0}
+            numberOfLines={1}
+            onAnimationBegin={[Function]}
+            onAnimationEnd={[Function]}
+            onTransitionBegin={[Function]}
+            onTransitionEnd={[Function]}
+            style={
+              Object {
+                "color": "#685A5C",
+                "marginBottom": 5,
+                "textAlign": "justify",
+              }
+            }
+            useNativeDriver={false}
+          >
+            header
+          </withAnimatable(Styled(Subtitle))>
+        </Styled(Body)>,
+        <Styled(Right) />,
+      ],
+      "style": Object {
+        "height": "auto",
+        "paddingBottom": 0.5,
+      },
+      "subtitle": Object {
+        "context": "header",
+      },
+      "virtual": undefined,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": undefined,
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(Title)
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "fontSize": undefined,
+                    "fontWeight": "normal",
+                    "marginBottom": 5,
+                    "textAlign": "justify",
+                  },
+                  Object {
+                    "color": undefined,
+                    "fontSize": undefined,
+                  },
+                ]
+              }
+            >
+              header
+            </Styled(Title)>,
+            <withAnimatable(Styled(Subtitle))
+              delay={0}
+              direction="normal"
+              iterationCount={1}
+              iterationDelay={0}
+              numberOfLines={1}
+              onAnimationBegin={[Function]}
+              onAnimationEnd={[Function]}
+              onTransitionBegin={[Function]}
+              onTransitionEnd={[Function]}
+              style={
+                Object {
+                  "color": "#685A5C",
+                  "marginBottom": 5,
+                  "textAlign": "justify",
+                }
+              }
+              useNativeDriver={false}
+            >
+              header
+            </withAnimatable(Styled(Subtitle))>,
+          ],
+          "style": Object {
+            "flex": 4,
+          },
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "header",
+              "numberOfLines": 1,
+              "style": Array [
+                Object {
+                  "fontSize": undefined,
+                  "fontWeight": "normal",
+                  "marginBottom": 5,
+                  "textAlign": "justify",
+                },
+                Object {
+                  "color": undefined,
+                  "fontSize": undefined,
+                },
+              ],
+              "virtual": undefined,
+            },
+            "ref": [Function],
+            "rendered": "header",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "animation": undefined,
+              "children": "header",
+              "delay": 0,
+              "direction": "normal",
+              "duration": undefined,
+              "easing": undefined,
+              "iterationCount": 1,
+              "iterationDelay": 0,
+              "numberOfLines": 1,
+              "onAnimationBegin": [Function],
+              "onAnimationEnd": [Function],
+              "onTransitionBegin": [Function],
+              "onTransitionEnd": [Function],
+              "style": Object {
+                "color": "#685A5C",
+                "marginBottom": 5,
+                "textAlign": "justify",
+              },
+              "transition": undefined,
+              "useNativeDriver": false,
+            },
+            "ref": [Function],
+            "rendered": "header",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": undefined,
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "animated": false,
+        "children": Array [
+          <Styled(Left) />,
+          <Styled(Body)
+            style={
+              Object {
+                "flex": 4,
+              }
+            }
+          >
+            <Styled(Title)
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "fontSize": undefined,
+                    "fontWeight": "normal",
+                    "marginBottom": 5,
+                    "textAlign": "justify",
+                  },
+                  Object {
+                    "color": undefined,
+                    "fontSize": undefined,
+                  },
+                ]
+              }
+            >
+              header
+            </Styled(Title)>
+            <withAnimatable(Styled(Subtitle))
+              delay={0}
+              direction="normal"
+              iterationCount={1}
+              iterationDelay={0}
+              numberOfLines={1}
+              onAnimationBegin={[Function]}
+              onAnimationEnd={[Function]}
+              onTransitionBegin={[Function]}
+              onTransitionEnd={[Function]}
+              style={
+                Object {
+                  "color": "#685A5C",
+                  "marginBottom": 5,
+                  "textAlign": "justify",
+                }
+              }
+              useNativeDriver={false}
+            >
+              header
+            </withAnimatable(Styled(Subtitle))>
+          </Styled(Body)>,
+          <Styled(Right) />,
+        ],
+        "style": Object {
+          "height": "auto",
+          "paddingBottom": 0.5,
+        },
+        "subtitle": Object {
+          "context": "header",
+        },
+        "virtual": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": undefined,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Styled(Title)
+                numberOfLines={1}
+                style={
+                  Array [
+                    Object {
+                      "fontSize": undefined,
+                      "fontWeight": "normal",
+                      "marginBottom": 5,
+                      "textAlign": "justify",
+                    },
+                    Object {
+                      "color": undefined,
+                      "fontSize": undefined,
+                    },
+                  ]
+                }
+              >
+                header
+              </Styled(Title)>,
+              <withAnimatable(Styled(Subtitle))
+                delay={0}
+                direction="normal"
+                iterationCount={1}
+                iterationDelay={0}
+                numberOfLines={1}
+                onAnimationBegin={[Function]}
+                onAnimationEnd={[Function]}
+                onTransitionBegin={[Function]}
+                onTransitionEnd={[Function]}
+                style={
+                  Object {
+                    "color": "#685A5C",
+                    "marginBottom": 5,
+                    "textAlign": "justify",
+                  }
+                }
+                useNativeDriver={false}
+              >
+                header
+              </withAnimatable(Styled(Subtitle))>,
+            ],
+            "style": Object {
+              "flex": 4,
+            },
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "header",
+                "numberOfLines": 1,
+                "style": Array [
+                  Object {
+                    "fontSize": undefined,
+                    "fontWeight": "normal",
+                    "marginBottom": 5,
+                    "textAlign": "justify",
+                  },
+                  Object {
+                    "color": undefined,
+                    "fontSize": undefined,
+                  },
+                ],
+                "virtual": undefined,
+              },
+              "ref": [Function],
+              "rendered": "header",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "animation": undefined,
+                "children": "header",
+                "delay": 0,
+                "direction": "normal",
+                "duration": undefined,
+                "easing": undefined,
+                "iterationCount": 1,
+                "iterationDelay": 0,
+                "numberOfLines": 1,
+                "onAnimationBegin": [Function],
+                "onAnimationEnd": [Function],
+                "onTransitionBegin": [Function],
+                "onTransitionEnd": [Function],
+                "style": Object {
+                  "color": "#685A5C",
+                  "marginBottom": 5,
+                  "textAlign": "justify",
+                },
+                "transition": undefined,
+                "useNativeDriver": false,
+              },
+              "ref": [Function],
+              "rendered": "header",
+              "type": [Function],
+            },
           ],
           "type": [Function],
         },

@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing PostSwipable Component has onRef 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PostSwipable
+    onRef={[Function]}
+    posts={Array []}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [],
+      "contentProps": Object {},
+      "initialPage": 0,
+      "locked": false,
+      "onChangeTab": [Function],
+      "onScroll": [Function],
+      "page": -1,
+      "prerenderingSiblingsNumber": 2,
+      "renderTabBar": false,
+      "scrollWithoutAnimation": false,
+      "tabBarPosition": "top",
+    },
+    "ref": [Function],
+    "rendered": Array [],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [],
+        "contentProps": Object {},
+        "initialPage": 0,
+        "locked": false,
+        "onChangeTab": [Function],
+        "onScroll": [Function],
+        "page": -1,
+        "prerenderingSiblingsNumber": 2,
+        "renderTabBar": false,
+        "scrollWithoutAnimation": false,
+        "tabBarPosition": "top",
+      },
+      "ref": [Function],
+      "rendered": Array [],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing PostSwipable Component renders as expected with required props 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PostSwipable
+    posts={Array []}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [],
+      "contentProps": Object {},
+      "initialPage": 0,
+      "locked": false,
+      "onChangeTab": [Function],
+      "onScroll": [Function],
+      "page": -1,
+      "prerenderingSiblingsNumber": 2,
+      "renderTabBar": false,
+      "scrollWithoutAnimation": false,
+      "tabBarPosition": "top",
+    },
+    "ref": null,
+    "rendered": Array [],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [],
+        "contentProps": Object {},
+        "initialPage": 0,
+        "locked": false,
+        "onChangeTab": [Function],
+        "onScroll": [Function],
+        "page": -1,
+        "prerenderingSiblingsNumber": 2,
+        "renderTabBar": false,
+        "scrollWithoutAnimation": false,
+        "tabBarPosition": "top",
+      },
+      "ref": null,
+      "rendered": Array [],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

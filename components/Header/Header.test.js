@@ -48,4 +48,15 @@ describe('Testing Header Component', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('renders without animation', () => {
+    const wrapper = shallow(
+      <Header
+        title={{ context: 'header' }}
+        subtitle={{ context: 'header' }}
+        animated={false}
+      />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });

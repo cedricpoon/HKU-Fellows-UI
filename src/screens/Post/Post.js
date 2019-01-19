@@ -1,20 +1,28 @@
 import React, { Component } from 'react';
 import { Dimensions } from 'react-native';
-import { Container, Tab, Tabs, Text, Content } from 'native-base';
+import { Container } from 'native-base';
 import { withNavigation } from 'react-navigation';
 import { connect } from 'react-redux';
 
 import PostHeaderMenu from './PostHeaderMenu/PostHeaderMenu';
 import { mapLayoutToState } from 'hkufui/components/helper';
-import { Header, PostFooter } from 'hkufui/components';
+import { Header, PostFooter, PostSwipable } from 'hkufui/components';
 import styles from './Styles';
+
+// MOCK
+import MOCK_POSTS from 'hkufui/static/mock/posts';
 
 export class Post extends Component {
   constructor(props) {
     super(props);
-    this.state = { title: '', headerLayout: { y: 0, height: 0 } };
+    this.state = {
+      title: '',
+      currentPage: 0,
+      headerLayout: { y: 0, height: 0 }
+    };
     this._openHeaderMenu = this._openHeaderMenu.bind(this);
     this._renderHeaderMenu = this._renderHeaderMenu.bind(this);
+    this._onPostTabChange = this._onPostTabChange.bind(this);
   }
 
   _openHeaderMenu() {
@@ -36,6 +44,10 @@ export class Post extends Component {
     );
   }
 
+  _onPostTabChange({i}) {
+    this.setState({ currentPage: i });
+  }
+
   componentDidMount() {
     const { navigation } = this.props;
     /* all props from <PostPreview /> has been passed */
@@ -47,7 +59,9 @@ export class Post extends Component {
   }
 
   render() {
-    const { title, subTitle, native } = this.state;
+    const { title, subTitle, native, currentPage } = this.state;
+    // Mocking
+    const posts = MOCK_POSTS;
 
     return (
       <Container>
@@ -62,29 +76,25 @@ export class Post extends Component {
             context: subTitle,
             numberOfLines: 3
           }}
+          animated={false}
           backable
           rightIcon='more'
           onRightPress={this._openHeaderMenu}
           onLayout={mapLayoutToState('headerLayout', this)}
         />
-        <Tabs renderTabBar={false} prerenderingSiblingsNumber={2}>
-          <Tab heading="a">
-            <Content style={{backgroundColor: 'red'}}><Text>A</Text></Content>
-          </Tab>
-          <Tab heading="b">
-            <Content style={{backgroundColor: 'yellow'}}><Text>B</Text></Content>
-          </Tab>
-          <Tab heading="c">
-            <Content style={{backgroundColor: 'blue'}}><Text>C</Text></Content>
-          </Tab>
-          <Tab heading="d">
-            <Content style={{backgroundColor: 'green'}}><Text>D</Text></Content>
-          </Tab>
-          <Tab heading="e">
-            <Content style={{backgroundColor: 'orange'}}><Text>E</Text></Content>
-          </Tab>
-        </Tabs>
-        <PostFooter firstPage />
+        <PostSwipable
+          posts={posts}
+          onChangeTab={this._onPostTabChange}
+          onRef={ref => this._postTabs = ref}
+        />
+        <PostFooter
+          firstPage={currentPage === 0}
+          lastPage={currentPage === posts.length - 1}
+          onPageChangeThunk={(i) => {
+            if (this._postTabs)
+              return () => { this._postTabs.goToPage(currentPage + i) };
+          }}
+        />
       </Container>
     );
   }

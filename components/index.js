@@ -21,3 +21,7 @@ export { default as PostFooter } from './PostFooter/PostFooter';
 export { default as PopupMenu } from './PopupMenu/PopupMenu';
 
 export { default as PostPreview } from './PostPreview/PostPreview';
+
+export { default as PostSwipable } from './PostSwipable/PostSwipable';
+
+export { default as PostDetails } from './PostDetails/PostDetails';

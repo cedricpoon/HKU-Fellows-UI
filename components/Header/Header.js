@@ -26,7 +26,7 @@ class Header extends Component {
   }
 
   componentDidUpdate() {
-    if (this._subtitle) {
+    if (this._subtitle && this.props.animated) {
       this._subtitle.pulse(subtitleAnimationDuration); // eslint-disable-line react/prop-types
     }
   }
@@ -91,7 +91,8 @@ class Header extends Component {
 Header.defaultProps = {
   onRightPress: () => {},
   subtitle: null,
-  rightStyle: styles.button
+  rightStyle: styles.button,
+  animated: true
 };
 
 const contextProptypes = {
@@ -107,7 +108,8 @@ Header.propTypes = {
   backable: PropTypes.bool,
   rightIcon: PropTypes.string,
   rightStyle: Icon.propTypes.style,
-  onRightPress: PropTypes.func
+  onRightPress: PropTypes.func,
+  animated: PropTypes.bool
 };
 
 export default Header;

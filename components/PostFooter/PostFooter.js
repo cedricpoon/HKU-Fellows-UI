@@ -4,12 +4,12 @@ import { Footer, FooterTab, Button, Icon } from 'native-base';
 
 class PostFooter extends Component {
   render() {
-    const { firstPage } = this.props;
+    const { firstPage, lastPage, onPageChangeThunk } = this.props;
 
     return (
       <Footer>
         <FooterTab>
-          <Button transparent={firstPage} disabled={firstPage}>
+          <Button transparent={firstPage} disabled={firstPage} onPress={onPageChangeThunk(-1)}>
             <Icon name="arrow-left" type="MaterialCommunityIcons" />
           </Button>
           <Button>
@@ -18,7 +18,7 @@ class PostFooter extends Component {
           <Button>
             <Icon name="comment-text" type="MaterialCommunityIcons" />
           </Button>
-          <Button>
+          <Button transparent={lastPage} disabled={lastPage} onPress={onPageChangeThunk(1)}>
             <Icon name="arrow-right" type="MaterialCommunityIcons" />
           </Button>
         </FooterTab>
@@ -27,8 +27,14 @@ class PostFooter extends Component {
   }
 }
 
+PostFooter.defaultProps = {
+  onPageChangeThunk: () => { return null }
+}
+
 PostFooter.propTypes = {
-  firstPage: PropTypes.bool
+  firstPage: PropTypes.bool,
+  lastPage: PropTypes.bool,
+  onPageChangeThunk: PropTypes.func
 }
 
 export default PostFooter;

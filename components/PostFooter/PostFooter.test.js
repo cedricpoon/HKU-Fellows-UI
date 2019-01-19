@@ -16,4 +16,18 @@ describe('Testing PostFooter Component', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('is in last page', () => {
+    const wrapper = shallow(
+      <PostFooter lastPage />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('contains page change callback', () => {
+    const wrapper = shallow(
+      <PostFooter onPageChangeThunk={() => { return () => {} }} />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });

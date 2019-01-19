@@ -24,6 +24,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Header
+          animated={true}
           backable={true}
           onRightPress={[Function]}
           rightIcon="arrow-dropup"
@@ -59,6 +60,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "animated": true,
           "backable": true,
           "onRightPress": [Function],
           "rightIcon": "arrow-dropup",
@@ -116,6 +118,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Header
+            animated={true}
             backable={true}
             onRightPress={[Function]}
             rightIcon="arrow-dropup"
@@ -151,6 +154,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "animated": true,
             "backable": true,
             "onRightPress": [Function],
             "rightIcon": "arrow-dropup",
@@ -245,6 +249,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Header
+          animated={true}
           backable={true}
           onRightPress={[Function]}
           rightIcon="arrow-dropup"
@@ -280,6 +285,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "animated": true,
           "backable": true,
           "onRightPress": [Function],
           "rightIcon": "arrow-dropup",
@@ -337,6 +343,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Header
+            animated={true}
             backable={true}
             onRightPress={[Function]}
             rightIcon="arrow-dropup"
@@ -372,6 +379,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "animated": true,
             "backable": true,
             "onRightPress": [Function],
             "rightIcon": "arrow-dropup",

@@ -29,6 +29,7 @@ ShallowWrapper {
           }
         />,
         <Header
+          animated={false}
           backable={true}
           onLayout={[Function]}
           onRightPress={[Function]}
@@ -47,9 +48,53 @@ ShallowWrapper {
             }
           }
         />,
-        <Styled(Content) />,
+        <PostSwipable
+          onChangeTab={[Function]}
+          onRef={[Function]}
+          posts={
+            Array [
+              Object {
+                "author": "Griffin",
+                "content": "Cupidatat irure fugiat deserunt sit nostrud id enim id officia amet dolore ut magna. Qui reprehenderit Lorem aliqua velit. In veniam labore officia ea occaecat consequat anim non est magna consequat. Excepteur incididunt officia consequat ullamco enim anim. Commodo aute et in velit aliquip consequat proident id do. Voluptate et consequat excepteur Lorem anim voluptate quis sint cillum.
+",
+                "id": "5c4356e3068eac4bcdb9706e",
+                "timestamp": "Thu Aug 24 2000 12:58:39 GMT+0800 (Hong Kong Standard Time)",
+              },
+              Object {
+                "author": "Walker",
+                "content": "Lorem deserunt occaecat laborum exercitation quis. Ut ad dolore quis excepteur qui aliquip ex eiusmod mollit commodo quis sint sint aliquip. Esse velit fugiat magna minim. Fugiat excepteur occaecat ullamco nostrud tempor duis.
+",
+                "id": "5c4356e3c5ba30b43eeebe73",
+                "timestamp": "Sun Jul 23 1978 06:40:52 GMT+0800 (Hong Kong Standard Time)",
+              },
+              Object {
+                "author": "Marla",
+                "content": "Culpa dolore commodo pariatur officia laborum ullamco magna enim cillum adipisicing commodo veniam ut. Qui laboris sunt cillum id nostrud incididunt ad anim. Est fugiat adipisicing dolore est ullamco exercitation proident laboris sunt.
+",
+                "id": "5c4356e3604a3adc170fb597",
+                "timestamp": "Tue Jan 18 2000 06:52:09 GMT+0800 (Hong Kong Standard Time)",
+              },
+              Object {
+                "author": "Adams",
+                "content": "Deserunt deserunt incididunt ea nisi sit Lorem amet sit ipsum anim veniam. Aliquip ad consequat sit consectetur veniam adipisicing amet sint consequat laborum enim. In aute laborum consequat id laborum id.
+",
+                "id": "5c4356e3c3fc03a89f3426ed",
+                "timestamp": "Sun Jul 22 2001 08:14:31 GMT+0800 (Hong Kong Standard Time)",
+              },
+              Object {
+                "author": "Ferrell",
+                "content": "Dolor pariatur excepteur fugiat ullamco ipsum aute minim cupidatat qui magna ad. Voluptate do tempor id commodo anim mollit cillum ipsum culpa commodo sit est consectetur eiusmod. Aliquip cupidatat sint cillum et non ea labore consequat est ad voluptate occaecat eiusmod ipsum.
+",
+                "id": "5c4356e30718150c611cec1b",
+                "timestamp": "Fri Apr 04 2008 02:05:31 GMT+0800 (Hong Kong Standard Time)",
+              },
+            ]
+          }
+        />,
         <PostFooter
           firstPage={true}
+          lastPage={false}
+          onPageChangeThunk={[Function]}
         />,
       ],
       "virtual": undefined,
@@ -78,6 +123,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "animated": false,
           "backable": true,
           "onLayout": [Function],
           "onRightPress": [Function],
@@ -101,7 +147,45 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "virtual": undefined,
+          "onChangeTab": [Function],
+          "onRef": [Function],
+          "posts": Array [
+            Object {
+              "author": "Griffin",
+              "content": "Cupidatat irure fugiat deserunt sit nostrud id enim id officia amet dolore ut magna. Qui reprehenderit Lorem aliqua velit. In veniam labore officia ea occaecat consequat anim non est magna consequat. Excepteur incididunt officia consequat ullamco enim anim. Commodo aute et in velit aliquip consequat proident id do. Voluptate et consequat excepteur Lorem anim voluptate quis sint cillum.
+",
+              "id": "5c4356e3068eac4bcdb9706e",
+              "timestamp": "Thu Aug 24 2000 12:58:39 GMT+0800 (Hong Kong Standard Time)",
+            },
+            Object {
+              "author": "Walker",
+              "content": "Lorem deserunt occaecat laborum exercitation quis. Ut ad dolore quis excepteur qui aliquip ex eiusmod mollit commodo quis sint sint aliquip. Esse velit fugiat magna minim. Fugiat excepteur occaecat ullamco nostrud tempor duis.
+",
+              "id": "5c4356e3c5ba30b43eeebe73",
+              "timestamp": "Sun Jul 23 1978 06:40:52 GMT+0800 (Hong Kong Standard Time)",
+            },
+            Object {
+              "author": "Marla",
+              "content": "Culpa dolore commodo pariatur officia laborum ullamco magna enim cillum adipisicing commodo veniam ut. Qui laboris sunt cillum id nostrud incididunt ad anim. Est fugiat adipisicing dolore est ullamco exercitation proident laboris sunt.
+",
+              "id": "5c4356e3604a3adc170fb597",
+              "timestamp": "Tue Jan 18 2000 06:52:09 GMT+0800 (Hong Kong Standard Time)",
+            },
+            Object {
+              "author": "Adams",
+              "content": "Deserunt deserunt incididunt ea nisi sit Lorem amet sit ipsum anim veniam. Aliquip ad consequat sit consectetur veniam adipisicing amet sint consequat laborum enim. In aute laborum consequat id laborum id.
+",
+              "id": "5c4356e3c3fc03a89f3426ed",
+              "timestamp": "Sun Jul 22 2001 08:14:31 GMT+0800 (Hong Kong Standard Time)",
+            },
+            Object {
+              "author": "Ferrell",
+              "content": "Dolor pariatur excepteur fugiat ullamco ipsum aute minim cupidatat qui magna ad. Voluptate do tempor id commodo anim mollit cillum ipsum culpa commodo sit est consectetur eiusmod. Aliquip cupidatat sint cillum et non ea labore consequat est ad voluptate occaecat eiusmod ipsum.
+",
+              "id": "5c4356e30718150c611cec1b",
+              "timestamp": "Fri Apr 04 2008 02:05:31 GMT+0800 (Hong Kong Standard Time)",
+            },
+          ],
         },
         "ref": null,
         "rendered": null,
@@ -113,6 +197,8 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "firstPage": true,
+          "lastPage": false,
+          "onPageChangeThunk": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -139,6 +225,7 @@ ShallowWrapper {
             }
           />,
           <Header
+            animated={false}
             backable={true}
             onLayout={[Function]}
             onRightPress={[Function]}
@@ -157,9 +244,53 @@ ShallowWrapper {
               }
             }
           />,
-          <Styled(Content) />,
+          <PostSwipable
+            onChangeTab={[Function]}
+            onRef={[Function]}
+            posts={
+              Array [
+                Object {
+                  "author": "Griffin",
+                  "content": "Cupidatat irure fugiat deserunt sit nostrud id enim id officia amet dolore ut magna. Qui reprehenderit Lorem aliqua velit. In veniam labore officia ea occaecat consequat anim non est magna consequat. Excepteur incididunt officia consequat ullamco enim anim. Commodo aute et in velit aliquip consequat proident id do. Voluptate et consequat excepteur Lorem anim voluptate quis sint cillum.
+",
+                  "id": "5c4356e3068eac4bcdb9706e",
+                  "timestamp": "Thu Aug 24 2000 12:58:39 GMT+0800 (Hong Kong Standard Time)",
+                },
+                Object {
+                  "author": "Walker",
+                  "content": "Lorem deserunt occaecat laborum exercitation quis. Ut ad dolore quis excepteur qui aliquip ex eiusmod mollit commodo quis sint sint aliquip. Esse velit fugiat magna minim. Fugiat excepteur occaecat ullamco nostrud tempor duis.
+",
+                  "id": "5c4356e3c5ba30b43eeebe73",
+                  "timestamp": "Sun Jul 23 1978 06:40:52 GMT+0800 (Hong Kong Standard Time)",
+                },
+                Object {
+                  "author": "Marla",
+                  "content": "Culpa dolore commodo pariatur officia laborum ullamco magna enim cillum adipisicing commodo veniam ut. Qui laboris sunt cillum id nostrud incididunt ad anim. Est fugiat adipisicing dolore est ullamco exercitation proident laboris sunt.
+",
+                  "id": "5c4356e3604a3adc170fb597",
+                  "timestamp": "Tue Jan 18 2000 06:52:09 GMT+0800 (Hong Kong Standard Time)",
+                },
+                Object {
+                  "author": "Adams",
+                  "content": "Deserunt deserunt incididunt ea nisi sit Lorem amet sit ipsum anim veniam. Aliquip ad consequat sit consectetur veniam adipisicing amet sint consequat laborum enim. In aute laborum consequat id laborum id.
+",
+                  "id": "5c4356e3c3fc03a89f3426ed",
+                  "timestamp": "Sun Jul 22 2001 08:14:31 GMT+0800 (Hong Kong Standard Time)",
+                },
+                Object {
+                  "author": "Ferrell",
+                  "content": "Dolor pariatur excepteur fugiat ullamco ipsum aute minim cupidatat qui magna ad. Voluptate do tempor id commodo anim mollit cillum ipsum culpa commodo sit est consectetur eiusmod. Aliquip cupidatat sint cillum et non ea labore consequat est ad voluptate occaecat eiusmod ipsum.
+",
+                  "id": "5c4356e30718150c611cec1b",
+                  "timestamp": "Fri Apr 04 2008 02:05:31 GMT+0800 (Hong Kong Standard Time)",
+                },
+              ]
+            }
+          />,
           <PostFooter
             firstPage={true}
+            lastPage={false}
+            onPageChangeThunk={[Function]}
           />,
         ],
         "virtual": undefined,
@@ -188,6 +319,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "animated": false,
             "backable": true,
             "onLayout": [Function],
             "onRightPress": [Function],
@@ -211,7 +343,45 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "virtual": undefined,
+            "onChangeTab": [Function],
+            "onRef": [Function],
+            "posts": Array [
+              Object {
+                "author": "Griffin",
+                "content": "Cupidatat irure fugiat deserunt sit nostrud id enim id officia amet dolore ut magna. Qui reprehenderit Lorem aliqua velit. In veniam labore officia ea occaecat consequat anim non est magna consequat. Excepteur incididunt officia consequat ullamco enim anim. Commodo aute et in velit aliquip consequat proident id do. Voluptate et consequat excepteur Lorem anim voluptate quis sint cillum.
+",
+                "id": "5c4356e3068eac4bcdb9706e",
+                "timestamp": "Thu Aug 24 2000 12:58:39 GMT+0800 (Hong Kong Standard Time)",
+              },
+              Object {
+                "author": "Walker",
+                "content": "Lorem deserunt occaecat laborum exercitation quis. Ut ad dolore quis excepteur qui aliquip ex eiusmod mollit commodo quis sint sint aliquip. Esse velit fugiat magna minim. Fugiat excepteur occaecat ullamco nostrud tempor duis.
+",
+                "id": "5c4356e3c5ba30b43eeebe73",
+                "timestamp": "Sun Jul 23 1978 06:40:52 GMT+0800 (Hong Kong Standard Time)",
+              },
+              Object {
+                "author": "Marla",
+                "content": "Culpa dolore commodo pariatur officia laborum ullamco magna enim cillum adipisicing commodo veniam ut. Qui laboris sunt cillum id nostrud incididunt ad anim. Est fugiat adipisicing dolore est ullamco exercitation proident laboris sunt.
+",
+                "id": "5c4356e3604a3adc170fb597",
+                "timestamp": "Tue Jan 18 2000 06:52:09 GMT+0800 (Hong Kong Standard Time)",
+              },
+              Object {
+                "author": "Adams",
+                "content": "Deserunt deserunt incididunt ea nisi sit Lorem amet sit ipsum anim veniam. Aliquip ad consequat sit consectetur veniam adipisicing amet sint consequat laborum enim. In aute laborum consequat id laborum id.
+",
+                "id": "5c4356e3c3fc03a89f3426ed",
+                "timestamp": "Sun Jul 22 2001 08:14:31 GMT+0800 (Hong Kong Standard Time)",
+              },
+              Object {
+                "author": "Ferrell",
+                "content": "Dolor pariatur excepteur fugiat ullamco ipsum aute minim cupidatat qui magna ad. Voluptate do tempor id commodo anim mollit cillum ipsum culpa commodo sit est consectetur eiusmod. Aliquip cupidatat sint cillum et non ea labore consequat est ad voluptate occaecat eiusmod ipsum.
+",
+                "id": "5c4356e30718150c611cec1b",
+                "timestamp": "Fri Apr 04 2008 02:05:31 GMT+0800 (Hong Kong Standard Time)",
+              },
+            ],
           },
           "ref": null,
           "rendered": null,
@@ -223,6 +393,8 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "firstPage": true,
+            "lastPage": false,
+            "onPageChangeThunk": [Function],
           },
           "ref": null,
           "rendered": null,

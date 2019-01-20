@@ -7,13 +7,13 @@ import { PRE_RENDER_NUMBER } from './Constants';
 
 class PostSwipable extends Component {
   render() {
-    const { posts, onRef, ...restProps } = this.props;
+    const { comments, onRef, ...restProps } = this.props;
     const context = [];
 
-    posts.forEach((post) => {
+    comments.forEach((post, index) => {
       context.push(
         <Tab heading={post.id} key={post.id}>
-          <PostDetails post={post} />
+          <PostDetails post={post} index={index+1} />
         </Tab>
       );
     });
@@ -32,7 +32,7 @@ class PostSwipable extends Component {
 }
 
 PostSwipable.propTypes = {
-  posts: PropTypes.array.isRequired,
+  comments: PropTypes.array.isRequired,
   onRef: PropTypes.func
 };
 

@@ -22,6 +22,7 @@
     "react-native-gesture-handler": "^1.0.12",
     "react-native-linear-gradient": "^2.5.3",
     "react-native-loading-placeholder": "0.0.6",
+    "react-native-markdown-renderer": "^3.2.8",
     "react-native-svg": "^8.0.10",
     "react-navigation": "^3.0.9",
     "react-redux": "^6.0.0",

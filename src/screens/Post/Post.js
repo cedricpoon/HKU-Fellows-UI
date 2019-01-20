@@ -3,6 +3,7 @@ import { Dimensions } from 'react-native';
 import { Container } from 'native-base';
 import { withNavigation } from 'react-navigation';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
 import PostHeaderMenu from './PostHeaderMenu/PostHeaderMenu';
 import { mapLayoutToState } from 'hkufui/components/helper';
@@ -60,8 +61,7 @@ export class Post extends Component {
 
   render() {
     const { title, subTitle, native, currentPage } = this.state;
-    // Mocking
-    const posts = MOCK_POSTS;
+    const { comments } = this.props;
 
     return (
       <Container>
@@ -83,13 +83,13 @@ export class Post extends Component {
           onLayout={mapLayoutToState('headerLayout', this)}
         />
         <PostSwipable
-          posts={posts}
+          comments={comments}
           onChangeTab={this._onPostTabChange}
           onRef={ref => this._postTabs = ref}
         />
         <PostFooter
           firstPage={currentPage === 0}
-          lastPage={currentPage === posts.length - 1}
+          lastPage={currentPage === comments.length - 1}
           onPageChangeThunk={(i) => {
             if (this._postTabs)
               return () => { this._postTabs.goToPage(currentPage + i) };
@@ -100,8 +100,12 @@ export class Post extends Component {
   }
 }
 
-Post.propTypes = {
+Post.defaultProps = {
+  comments: MOCK_POSTS
+};
 
+Post.propTypes = {
+  comments: PropTypes.array
 }
 
 const mapStateToProps = () => ({

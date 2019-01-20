@@ -4,7 +4,7 @@ import PostSwipable from './PostSwipable';
 
 describe('Testing PostSwipable Component', () => {
   const requiredProps = {
-    posts: []
+    comments: []
   };
 
   it('renders as expected with required props', () => {

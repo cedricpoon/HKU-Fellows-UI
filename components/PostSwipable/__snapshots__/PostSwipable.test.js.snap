@@ -4,8 +4,8 @@ exports[`Testing PostSwipable Component has onRef 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PostSwipable
+    comments={Array []}
     onRef={[Function]}
-    posts={Array []}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -83,7 +83,7 @@ exports[`Testing PostSwipable Component renders as expected with required props 
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PostSwipable
-    posts={Array []}
+    comments={Array []}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

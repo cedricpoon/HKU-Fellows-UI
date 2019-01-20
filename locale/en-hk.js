@@ -11,6 +11,8 @@ export default {
   'post.loadErrorButton': 'Refresh',
   'post.copyright': '© 2018 HKU Fellows. All Rights Reserved.',
 
+  'comment.anonymousUser': 'Anonymous',
+
   'footer.moodle': 'From Moodle',
   'footer.latestPost': 'Latest Post',
   'footer.mostReplied': 'Most Replied',

@@ -5,7 +5,7 @@ import { Post } from './Post';
 describe('Testing Post Screen', () => {
   it('renders as expected', () => {
     const wrapper = shallow(
-      <Post />
+      <Post comments={[]} />
     );
     expect(wrapper).toMatchSnapshot();
   });

@@ -4,7 +4,8 @@ import PostDetails from './PostDetails';
 
 describe('Testing PostDetails Component', () => {
   const requiredProps = {
-    post: {
+    index: 1,
+    comment: {
       id: 'id',
       timestamp: 'timestamp',
       author: 'author',

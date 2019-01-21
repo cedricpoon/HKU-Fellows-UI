@@ -10,10 +10,10 @@ class PostSwipable extends Component {
     const { comments, onRef, ...restProps } = this.props;
     const context = [];
 
-    comments.forEach((post, index) => {
+    comments.forEach((comment, index) => {
       context.push(
-        <Tab heading={post.id} key={post.id}>
-          <PostDetails post={post} index={index+1} />
+        <Tab heading={comment.id} key={comment.id}>
+          <PostDetails comment={comment} index={index+1} />
         </Tab>
       );
     });

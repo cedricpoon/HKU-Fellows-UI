@@ -17,9 +17,16 @@ describe('Testing BarIndicator Component', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('renders without animatio ', () => {
+  it('renders without animation', () => {
     const wrapper = shallow(
       <BarIndicator stalled />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('renders with paragraph mode', () => {
+    const wrapper = shallow(
+      <BarIndicator paragraph />
     );
     expect(wrapper).toMatchSnapshot();
   });

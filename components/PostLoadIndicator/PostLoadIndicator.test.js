@@ -16,4 +16,11 @@ describe('Testing PostLoadIndicator Component', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('renders as a page', () => {
+    const wrapper = shallow(
+      <PostLoadIndicator page />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });

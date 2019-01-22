@@ -12,15 +12,15 @@ const Wrapper = Animatable.createAnimatableComponent(View);
 class BarIndicator extends Component {
 
   render() {
-    const { delay, stalled } = this.props;
+    const { delay, stalled, paragraph } = this.props;
 
     const context = (
       <View>
         <View
-          style={styles.placeholderGroup}
+          style={paragraph ? styles.paragraphGroup : styles.placeholderGroup}
         >
           <Placeholder
-            style={[styles.placeholder, styles.placeholderShort]}
+            style={[paragraph ? styles.placeholderNoMarginTop : styles.placeholder, styles.placeholderShort]}
           />
           <Placeholder
             style={[styles.placeholder, styles.placeholderLong]}
@@ -28,10 +28,22 @@ class BarIndicator extends Component {
           <Placeholder
             style={[styles.placeholder, styles.placeholderLong]}
           />
+          {paragraph && (
+            <View>
+              <Placeholder
+                style={[styles.placeholder, styles.placeholderLong]}
+              />
+              <Placeholder
+                style={[styles.placeholder, styles.placeholderLong]}
+              />
+            </View>
+          )}
         </View>
-        <View
-          style={styles.hr}
-        />
+        {!paragraph && (
+          <View
+            style={styles.hr}
+          />
+        )}
       </View>
     );
 
@@ -62,7 +74,8 @@ BarIndicator.defaultProps = {
 
 BarIndicator.propTypes = {
   delay: PropTypes.number,
-  stalled: PropTypes.bool
+  stalled: PropTypes.bool,
+  paragraph: PropTypes.bool
 }
 
 export default BarIndicator;

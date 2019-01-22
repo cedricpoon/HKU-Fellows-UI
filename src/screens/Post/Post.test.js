@@ -9,4 +9,11 @@ describe('Testing Post Screen', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('is loading', () => {
+    const wrapper = shallow(
+      <Post />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });

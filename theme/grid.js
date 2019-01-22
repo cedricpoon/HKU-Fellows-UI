@@ -13,6 +13,11 @@ export const post = {
   placeholderVerticalMargin: gridBase * 5
 };
 
+export const comment = {
+  spacingHorizontal: gridBase * 3,
+  spacingVertical: gridBase * 2
+};
+
 export const icon = {
   width: gridBase * 5,
   textAlign: 'center'

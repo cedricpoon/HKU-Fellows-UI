@@ -30,13 +30,19 @@ ShallowWrapper {
         </Styled(Button)>
         <Styled(Button)>
           <Styled(Icon)
-            name="share-variant"
+            name="refresh"
             type="MaterialCommunityIcons"
           />
         </Styled(Button)>
         <Styled(Button)>
           <Styled(Icon)
-            name="comment-text"
+            name="comment-text-outline"
+            type="MaterialCommunityIcons"
+          />
+        </Styled(Button)>
+        <Styled(Button)>
+          <Styled(Icon)
+            name="share-variant"
             type="MaterialCommunityIcons"
           />
         </Styled(Button)>
@@ -68,13 +74,19 @@ ShallowWrapper {
           </Styled(Button)>,
           <Styled(Button)>
             <Styled(Icon)
-              name="share-variant"
+              name="refresh"
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>,
           <Styled(Button)>
             <Styled(Icon)
-              name="comment-text"
+              name="comment-text-outline"
+              type="MaterialCommunityIcons"
+            />
+          </Styled(Button)>,
+          <Styled(Button)>
+            <Styled(Icon)
+              name="share-variant"
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>,
@@ -127,7 +139,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": <Styled(Icon)
-              name="share-variant"
+              name="refresh"
               type="MaterialCommunityIcons"
             />,
             "virtual": undefined,
@@ -138,7 +150,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "name": "share-variant",
+              "name": "refresh",
               "type": "MaterialCommunityIcons",
               "virtual": undefined,
             },
@@ -154,7 +166,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": <Styled(Icon)
-              name="comment-text"
+              name="comment-text-outline"
               type="MaterialCommunityIcons"
             />,
             "virtual": undefined,
@@ -165,7 +177,34 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "name": "comment-text",
+              "name": "comment-text-outline",
+              "type": "MaterialCommunityIcons",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Styled(Icon)
+              name="share-variant"
+              type="MaterialCommunityIcons"
+            />,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "share-variant",
               "type": "MaterialCommunityIcons",
               "virtual": undefined,
             },
@@ -227,13 +266,19 @@ ShallowWrapper {
           </Styled(Button)>
           <Styled(Button)>
             <Styled(Icon)
-              name="share-variant"
+              name="refresh"
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>
           <Styled(Button)>
             <Styled(Icon)
-              name="comment-text"
+              name="comment-text-outline"
+              type="MaterialCommunityIcons"
+            />
+          </Styled(Button)>
+          <Styled(Button)>
+            <Styled(Icon)
+              name="share-variant"
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>
@@ -265,13 +310,19 @@ ShallowWrapper {
             </Styled(Button)>,
             <Styled(Button)>
               <Styled(Icon)
-                name="share-variant"
+                name="refresh"
                 type="MaterialCommunityIcons"
               />
             </Styled(Button)>,
             <Styled(Button)>
               <Styled(Icon)
-                name="comment-text"
+                name="comment-text-outline"
+                type="MaterialCommunityIcons"
+              />
+            </Styled(Button)>,
+            <Styled(Button)>
+              <Styled(Icon)
+                name="share-variant"
                 type="MaterialCommunityIcons"
               />
             </Styled(Button)>,
@@ -324,7 +375,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": <Styled(Icon)
-                name="share-variant"
+                name="refresh"
                 type="MaterialCommunityIcons"
               />,
               "virtual": undefined,
@@ -335,7 +386,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "name": "share-variant",
+                "name": "refresh",
                 "type": "MaterialCommunityIcons",
                 "virtual": undefined,
               },
@@ -351,7 +402,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": <Styled(Icon)
-                name="comment-text"
+                name="comment-text-outline"
                 type="MaterialCommunityIcons"
               />,
               "virtual": undefined,
@@ -362,7 +413,34 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "name": "comment-text",
+                "name": "comment-text-outline",
+                "type": "MaterialCommunityIcons",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Icon)
+                name="share-variant"
+                type="MaterialCommunityIcons"
+              />,
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "share-variant",
                 "type": "MaterialCommunityIcons",
                 "virtual": undefined,
               },
@@ -461,13 +539,19 @@ ShallowWrapper {
         </Styled(Button)>
         <Styled(Button)>
           <Styled(Icon)
-            name="share-variant"
+            name="refresh"
             type="MaterialCommunityIcons"
           />
         </Styled(Button)>
         <Styled(Button)>
           <Styled(Icon)
-            name="comment-text"
+            name="comment-text-outline"
+            type="MaterialCommunityIcons"
+          />
+        </Styled(Button)>
+        <Styled(Button)>
+          <Styled(Icon)
+            name="share-variant"
             type="MaterialCommunityIcons"
           />
         </Styled(Button)>
@@ -501,13 +585,19 @@ ShallowWrapper {
           </Styled(Button)>,
           <Styled(Button)>
             <Styled(Icon)
-              name="share-variant"
+              name="refresh"
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>,
           <Styled(Button)>
             <Styled(Icon)
-              name="comment-text"
+              name="comment-text-outline"
+              type="MaterialCommunityIcons"
+            />
+          </Styled(Button)>,
+          <Styled(Button)>
+            <Styled(Icon)
+              name="share-variant"
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>,
@@ -560,7 +650,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": <Styled(Icon)
-              name="share-variant"
+              name="refresh"
               type="MaterialCommunityIcons"
             />,
             "virtual": undefined,
@@ -571,7 +661,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "name": "share-variant",
+              "name": "refresh",
               "type": "MaterialCommunityIcons",
               "virtual": undefined,
             },
@@ -587,7 +677,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": <Styled(Icon)
-              name="comment-text"
+              name="comment-text-outline"
               type="MaterialCommunityIcons"
             />,
             "virtual": undefined,
@@ -598,7 +688,34 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "name": "comment-text",
+              "name": "comment-text-outline",
+              "type": "MaterialCommunityIcons",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Styled(Icon)
+              name="share-variant"
+              type="MaterialCommunityIcons"
+            />,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "share-variant",
               "type": "MaterialCommunityIcons",
               "virtual": undefined,
             },
@@ -662,13 +779,19 @@ ShallowWrapper {
           </Styled(Button)>
           <Styled(Button)>
             <Styled(Icon)
-              name="share-variant"
+              name="refresh"
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>
           <Styled(Button)>
             <Styled(Icon)
-              name="comment-text"
+              name="comment-text-outline"
+              type="MaterialCommunityIcons"
+            />
+          </Styled(Button)>
+          <Styled(Button)>
+            <Styled(Icon)
+              name="share-variant"
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>
@@ -702,13 +825,19 @@ ShallowWrapper {
             </Styled(Button)>,
             <Styled(Button)>
               <Styled(Icon)
-                name="share-variant"
+                name="refresh"
                 type="MaterialCommunityIcons"
               />
             </Styled(Button)>,
             <Styled(Button)>
               <Styled(Icon)
-                name="comment-text"
+                name="comment-text-outline"
+                type="MaterialCommunityIcons"
+              />
+            </Styled(Button)>,
+            <Styled(Button)>
+              <Styled(Icon)
+                name="share-variant"
                 type="MaterialCommunityIcons"
               />
             </Styled(Button)>,
@@ -761,7 +890,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": <Styled(Icon)
-                name="share-variant"
+                name="refresh"
                 type="MaterialCommunityIcons"
               />,
               "virtual": undefined,
@@ -772,7 +901,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "name": "share-variant",
+                "name": "refresh",
                 "type": "MaterialCommunityIcons",
                 "virtual": undefined,
               },
@@ -788,7 +917,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": <Styled(Icon)
-                name="comment-text"
+                name="comment-text-outline"
                 type="MaterialCommunityIcons"
               />,
               "virtual": undefined,
@@ -799,7 +928,34 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "name": "comment-text",
+                "name": "comment-text-outline",
+                "type": "MaterialCommunityIcons",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Icon)
+                name="share-variant"
+                type="MaterialCommunityIcons"
+              />,
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "share-variant",
                 "type": "MaterialCommunityIcons",
                 "virtual": undefined,
               },
@@ -896,13 +1052,19 @@ ShallowWrapper {
         </Styled(Button)>
         <Styled(Button)>
           <Styled(Icon)
-            name="share-variant"
+            name="refresh"
             type="MaterialCommunityIcons"
           />
         </Styled(Button)>
         <Styled(Button)>
           <Styled(Icon)
-            name="comment-text"
+            name="comment-text-outline"
+            type="MaterialCommunityIcons"
+          />
+        </Styled(Button)>
+        <Styled(Button)>
+          <Styled(Icon)
+            name="share-variant"
             type="MaterialCommunityIcons"
           />
         </Styled(Button)>
@@ -936,13 +1098,19 @@ ShallowWrapper {
           </Styled(Button)>,
           <Styled(Button)>
             <Styled(Icon)
-              name="share-variant"
+              name="refresh"
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>,
           <Styled(Button)>
             <Styled(Icon)
-              name="comment-text"
+              name="comment-text-outline"
+              type="MaterialCommunityIcons"
+            />
+          </Styled(Button)>,
+          <Styled(Button)>
+            <Styled(Icon)
+              name="share-variant"
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>,
@@ -997,7 +1165,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": <Styled(Icon)
-              name="share-variant"
+              name="refresh"
               type="MaterialCommunityIcons"
             />,
             "virtual": undefined,
@@ -1008,7 +1176,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "name": "share-variant",
+              "name": "refresh",
               "type": "MaterialCommunityIcons",
               "virtual": undefined,
             },
@@ -1024,7 +1192,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": <Styled(Icon)
-              name="comment-text"
+              name="comment-text-outline"
               type="MaterialCommunityIcons"
             />,
             "virtual": undefined,
@@ -1035,7 +1203,34 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "name": "comment-text",
+              "name": "comment-text-outline",
+              "type": "MaterialCommunityIcons",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Styled(Icon)
+              name="share-variant"
+              type="MaterialCommunityIcons"
+            />,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "share-variant",
               "type": "MaterialCommunityIcons",
               "virtual": undefined,
             },
@@ -1097,13 +1292,19 @@ ShallowWrapper {
           </Styled(Button)>
           <Styled(Button)>
             <Styled(Icon)
-              name="share-variant"
+              name="refresh"
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>
           <Styled(Button)>
             <Styled(Icon)
-              name="comment-text"
+              name="comment-text-outline"
+              type="MaterialCommunityIcons"
+            />
+          </Styled(Button)>
+          <Styled(Button)>
+            <Styled(Icon)
+              name="share-variant"
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>
@@ -1137,13 +1338,19 @@ ShallowWrapper {
             </Styled(Button)>,
             <Styled(Button)>
               <Styled(Icon)
-                name="share-variant"
+                name="refresh"
                 type="MaterialCommunityIcons"
               />
             </Styled(Button)>,
             <Styled(Button)>
               <Styled(Icon)
-                name="comment-text"
+                name="comment-text-outline"
+                type="MaterialCommunityIcons"
+              />
+            </Styled(Button)>,
+            <Styled(Button)>
+              <Styled(Icon)
+                name="share-variant"
                 type="MaterialCommunityIcons"
               />
             </Styled(Button)>,
@@ -1198,7 +1405,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": <Styled(Icon)
-                name="share-variant"
+                name="refresh"
                 type="MaterialCommunityIcons"
               />,
               "virtual": undefined,
@@ -1209,7 +1416,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "name": "share-variant",
+                "name": "refresh",
                 "type": "MaterialCommunityIcons",
                 "virtual": undefined,
               },
@@ -1225,7 +1432,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": <Styled(Icon)
-                name="comment-text"
+                name="comment-text-outline"
                 type="MaterialCommunityIcons"
               />,
               "virtual": undefined,
@@ -1236,7 +1443,34 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "name": "comment-text",
+                "name": "comment-text-outline",
+                "type": "MaterialCommunityIcons",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Icon)
+                name="share-variant"
+                type="MaterialCommunityIcons"
+              />,
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "share-variant",
                 "type": "MaterialCommunityIcons",
                 "virtual": undefined,
               },
@@ -1332,13 +1566,19 @@ ShallowWrapper {
         </Styled(Button)>
         <Styled(Button)>
           <Styled(Icon)
-            name="share-variant"
+            name="refresh"
             type="MaterialCommunityIcons"
           />
         </Styled(Button)>
         <Styled(Button)>
           <Styled(Icon)
-            name="comment-text"
+            name="comment-text-outline"
+            type="MaterialCommunityIcons"
+          />
+        </Styled(Button)>
+        <Styled(Button)>
+          <Styled(Icon)
+            name="share-variant"
             type="MaterialCommunityIcons"
           />
         </Styled(Button)>
@@ -1370,13 +1610,19 @@ ShallowWrapper {
           </Styled(Button)>,
           <Styled(Button)>
             <Styled(Icon)
-              name="share-variant"
+              name="refresh"
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>,
           <Styled(Button)>
             <Styled(Icon)
-              name="comment-text"
+              name="comment-text-outline"
+              type="MaterialCommunityIcons"
+            />
+          </Styled(Button)>,
+          <Styled(Button)>
+            <Styled(Icon)
+              name="share-variant"
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>,
@@ -1429,7 +1675,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": <Styled(Icon)
-              name="share-variant"
+              name="refresh"
               type="MaterialCommunityIcons"
             />,
             "virtual": undefined,
@@ -1440,7 +1686,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "name": "share-variant",
+              "name": "refresh",
               "type": "MaterialCommunityIcons",
               "virtual": undefined,
             },
@@ -1456,7 +1702,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": <Styled(Icon)
-              name="comment-text"
+              name="comment-text-outline"
               type="MaterialCommunityIcons"
             />,
             "virtual": undefined,
@@ -1467,7 +1713,34 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "name": "comment-text",
+              "name": "comment-text-outline",
+              "type": "MaterialCommunityIcons",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Styled(Icon)
+              name="share-variant"
+              type="MaterialCommunityIcons"
+            />,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "share-variant",
               "type": "MaterialCommunityIcons",
               "virtual": undefined,
             },
@@ -1529,13 +1802,19 @@ ShallowWrapper {
           </Styled(Button)>
           <Styled(Button)>
             <Styled(Icon)
-              name="share-variant"
+              name="refresh"
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>
           <Styled(Button)>
             <Styled(Icon)
-              name="comment-text"
+              name="comment-text-outline"
+              type="MaterialCommunityIcons"
+            />
+          </Styled(Button)>
+          <Styled(Button)>
+            <Styled(Icon)
+              name="share-variant"
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>
@@ -1567,13 +1846,19 @@ ShallowWrapper {
             </Styled(Button)>,
             <Styled(Button)>
               <Styled(Icon)
-                name="share-variant"
+                name="refresh"
                 type="MaterialCommunityIcons"
               />
             </Styled(Button)>,
             <Styled(Button)>
               <Styled(Icon)
-                name="comment-text"
+                name="comment-text-outline"
+                type="MaterialCommunityIcons"
+              />
+            </Styled(Button)>,
+            <Styled(Button)>
+              <Styled(Icon)
+                name="share-variant"
                 type="MaterialCommunityIcons"
               />
             </Styled(Button)>,
@@ -1626,7 +1911,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": <Styled(Icon)
-                name="share-variant"
+                name="refresh"
                 type="MaterialCommunityIcons"
               />,
               "virtual": undefined,
@@ -1637,7 +1922,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "name": "share-variant",
+                "name": "refresh",
                 "type": "MaterialCommunityIcons",
                 "virtual": undefined,
               },
@@ -1653,7 +1938,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": <Styled(Icon)
-                name="comment-text"
+                name="comment-text-outline"
                 type="MaterialCommunityIcons"
               />,
               "virtual": undefined,
@@ -1664,7 +1949,34 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "name": "comment-text",
+                "name": "comment-text-outline",
+                "type": "MaterialCommunityIcons",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Icon)
+                name="share-variant"
+                type="MaterialCommunityIcons"
+              />,
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "share-variant",
                 "type": "MaterialCommunityIcons",
                 "virtual": undefined,
               },

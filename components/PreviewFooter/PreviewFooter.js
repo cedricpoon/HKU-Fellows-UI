@@ -34,7 +34,7 @@ class PreviewFooter extends Component {
   }
 
   render() {
-    const { muted, onRefresh } = this.props;
+    const { muted, onRefresh, refreshing } = this.props;
 
     return (
       <Footer
@@ -47,13 +47,13 @@ class PreviewFooter extends Component {
             <Icon name="menu" type="MaterialIcons" />
           </Button>
           {!muted && (
-            <Button onPress={onRefresh}>
+            <Button onPress={onRefresh} disabled={refreshing} transparent={refreshing}>
               <Icon name="refresh" type="MaterialIcons" />
             </Button>
           )}
           {!muted && (
             <Button>
-              <Icon name="add" type="MaterialIcons" />
+              <Icon name="comment-plus-outline" type="MaterialCommunityIcons" />
             </Button>
           )}
           {!muted && (
@@ -78,6 +78,7 @@ class PreviewFooter extends Component {
 
 PreviewFooter.propTypes = {
   muted: PropTypes.bool,
+  refreshing: PropTypes.bool,
   onRefresh: PropTypes.func.isRequired
 }
 

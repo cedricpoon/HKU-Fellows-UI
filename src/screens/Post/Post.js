@@ -88,8 +88,8 @@ export class Post extends Component {
           onRef={ref => this._postTabs = ref}
         />
         <PostFooter
-          firstPage={currentPage === 0}
-          lastPage={currentPage === comments.length - 1}
+          firstPage={!comments || currentPage === 0}
+          lastPage={!comments || currentPage === comments.length - 1 || comments.length === 0}
           onPageChangeThunk={(i) => {
             if (this._postTabs)
               return () => { this._postTabs.goToPage(currentPage + i) };
@@ -102,7 +102,7 @@ export class Post extends Component {
 
 Post.defaultProps = {
   comments: MOCK_POSTS
-};
+}
 
 Post.propTypes = {
   comments: PropTypes.array

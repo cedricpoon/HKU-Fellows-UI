@@ -1,5 +1,1005 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Testing PostLoadIndicator Component renders as a page 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PostLoadIndicator
+    page={true}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <PlaceholderContainer
+        animatedComponent={
+          <LinearGradient
+            colors={
+              Array [
+                "#eee",
+                "#ddd",
+                "#eee",
+              ]
+            }
+            end={
+              Object {
+                "x": 0,
+                "y": 0,
+              }
+            }
+            start={
+              Object {
+                "x": 1,
+                "y": 0,
+              }
+            }
+            style={
+              Object {
+                "flex": 1,
+                "width": 125,
+              }
+            }
+          />
+        }
+        delay={1000}
+        duration={1000}
+      >
+        <Styled(ViewNB)>
+          <Placeholder
+            style={
+              Array [
+                Object {
+                  "alignSelf": "flex-start",
+                  "backgroundColor": "#eee",
+                  "borderRadius": 2.5,
+                  "height": 10,
+                  "justifyContent": "center",
+                  "marginTop": 10,
+                },
+                Object {
+                  "width": "50%",
+                },
+                Object {
+                  "marginHorizontal": 15,
+                  "marginTop": 15,
+                },
+              ]
+            }
+          />
+          <Styled(ViewNB)
+            style={
+              Object {
+                "backgroundColor": "#eee",
+                "height": 1,
+                "marginHorizontal": 15,
+                "marginTop": 15,
+              }
+            }
+          />
+        </Styled(ViewNB)>
+        <BarIndicator
+          delay={40}
+          paragraph={true}
+        />
+        <BarIndicator
+          delay={92.5}
+          paragraph={true}
+        />
+        <BarIndicator
+          delay={145}
+          paragraph={true}
+        />
+        <BarIndicator
+          delay={197.5}
+          paragraph={true}
+        />
+        <BarIndicator
+          delay={250}
+          paragraph={true}
+        />
+        <BarIndicator
+          delay={302.5}
+          paragraph={true}
+        />
+        <BarIndicator
+          delay={355}
+          paragraph={true}
+        />
+        <BarIndicator
+          delay={407.5}
+          paragraph={true}
+        />
+        <BarIndicator
+          delay={460}
+          paragraph={true}
+        />
+        <BarIndicator
+          delay={512.5}
+          paragraph={true}
+        />
+        <BarIndicator
+          delay={565}
+          paragraph={true}
+        />
+        <BarIndicator
+          delay={617.5}
+          paragraph={true}
+        />
+      </PlaceholderContainer>,
+      "scrollEnabled": false,
+      "virtual": undefined,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "animatedComponent": <LinearGradient
+          colors={
+            Array [
+              "#eee",
+              "#ddd",
+              "#eee",
+            ]
+          }
+          end={
+            Object {
+              "x": 0,
+              "y": 0,
+            }
+          }
+          start={
+            Object {
+              "x": 1,
+              "y": 0,
+            }
+          }
+          style={
+            Object {
+              "flex": 1,
+              "width": 125,
+            }
+          }
+        />,
+        "children": Array [
+          <Styled(ViewNB)>
+            <Placeholder
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "flex-start",
+                    "backgroundColor": "#eee",
+                    "borderRadius": 2.5,
+                    "height": 10,
+                    "justifyContent": "center",
+                    "marginTop": 10,
+                  },
+                  Object {
+                    "width": "50%",
+                  },
+                  Object {
+                    "marginHorizontal": 15,
+                    "marginTop": 15,
+                  },
+                ]
+              }
+            />
+            <Styled(ViewNB)
+              style={
+                Object {
+                  "backgroundColor": "#eee",
+                  "height": 1,
+                  "marginHorizontal": 15,
+                  "marginTop": 15,
+                }
+              }
+            />
+          </Styled(ViewNB)>,
+          <BarIndicator
+            delay={40}
+            paragraph={true}
+          />,
+          <BarIndicator
+            delay={92.5}
+            paragraph={true}
+          />,
+          <BarIndicator
+            delay={145}
+            paragraph={true}
+          />,
+          <BarIndicator
+            delay={197.5}
+            paragraph={true}
+          />,
+          <BarIndicator
+            delay={250}
+            paragraph={true}
+          />,
+          <BarIndicator
+            delay={302.5}
+            paragraph={true}
+          />,
+          <BarIndicator
+            delay={355}
+            paragraph={true}
+          />,
+          <BarIndicator
+            delay={407.5}
+            paragraph={true}
+          />,
+          <BarIndicator
+            delay={460}
+            paragraph={true}
+          />,
+          <BarIndicator
+            delay={512.5}
+            paragraph={true}
+          />,
+          <BarIndicator
+            delay={565}
+            paragraph={true}
+          />,
+          <BarIndicator
+            delay={617.5}
+            paragraph={true}
+          />,
+        ],
+        "delay": 1000,
+        "duration": 1000,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "-1",
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Placeholder
+                style={
+                  Array [
+                    Object {
+                      "alignSelf": "flex-start",
+                      "backgroundColor": "#eee",
+                      "borderRadius": 2.5,
+                      "height": 10,
+                      "justifyContent": "center",
+                      "marginTop": 10,
+                    },
+                    Object {
+                      "width": "50%",
+                    },
+                    Object {
+                      "marginHorizontal": 15,
+                      "marginTop": 15,
+                    },
+                  ]
+                }
+              />,
+              <Styled(ViewNB)
+                style={
+                  Object {
+                    "backgroundColor": "#eee",
+                    "height": 1,
+                    "marginHorizontal": 15,
+                    "marginTop": 15,
+                  }
+                }
+              />,
+            ],
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "style": Array [
+                  Object {
+                    "alignSelf": "flex-start",
+                    "backgroundColor": "#eee",
+                    "borderRadius": 2.5,
+                    "height": 10,
+                    "justifyContent": "center",
+                    "marginTop": 10,
+                  },
+                  Object {
+                    "width": "50%",
+                  },
+                  Object {
+                    "marginHorizontal": 15,
+                    "marginTop": 15,
+                  },
+                ],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "style": Object {
+                  "backgroundColor": "#eee",
+                  "height": 1,
+                  "marginHorizontal": 15,
+                  "marginTop": 15,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "class",
+          "props": Object {
+            "delay": 40,
+            "paragraph": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "105",
+          "nodeType": "class",
+          "props": Object {
+            "delay": 92.5,
+            "paragraph": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "210",
+          "nodeType": "class",
+          "props": Object {
+            "delay": 145,
+            "paragraph": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "315",
+          "nodeType": "class",
+          "props": Object {
+            "delay": 197.5,
+            "paragraph": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "420",
+          "nodeType": "class",
+          "props": Object {
+            "delay": 250,
+            "paragraph": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "525",
+          "nodeType": "class",
+          "props": Object {
+            "delay": 302.5,
+            "paragraph": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "630",
+          "nodeType": "class",
+          "props": Object {
+            "delay": 355,
+            "paragraph": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "735",
+          "nodeType": "class",
+          "props": Object {
+            "delay": 407.5,
+            "paragraph": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "840",
+          "nodeType": "class",
+          "props": Object {
+            "delay": 460,
+            "paragraph": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "945",
+          "nodeType": "class",
+          "props": Object {
+            "delay": 512.5,
+            "paragraph": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "1050",
+          "nodeType": "class",
+          "props": Object {
+            "delay": 565,
+            "paragraph": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "1155",
+          "nodeType": "class",
+          "props": Object {
+            "delay": 617.5,
+            "paragraph": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <PlaceholderContainer
+          animatedComponent={
+            <LinearGradient
+              colors={
+                Array [
+                  "#eee",
+                  "#ddd",
+                  "#eee",
+                ]
+              }
+              end={
+                Object {
+                  "x": 0,
+                  "y": 0,
+                }
+              }
+              start={
+                Object {
+                  "x": 1,
+                  "y": 0,
+                }
+              }
+              style={
+                Object {
+                  "flex": 1,
+                  "width": 125,
+                }
+              }
+            />
+          }
+          delay={1000}
+          duration={1000}
+        >
+          <Styled(ViewNB)>
+            <Placeholder
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "flex-start",
+                    "backgroundColor": "#eee",
+                    "borderRadius": 2.5,
+                    "height": 10,
+                    "justifyContent": "center",
+                    "marginTop": 10,
+                  },
+                  Object {
+                    "width": "50%",
+                  },
+                  Object {
+                    "marginHorizontal": 15,
+                    "marginTop": 15,
+                  },
+                ]
+              }
+            />
+            <Styled(ViewNB)
+              style={
+                Object {
+                  "backgroundColor": "#eee",
+                  "height": 1,
+                  "marginHorizontal": 15,
+                  "marginTop": 15,
+                }
+              }
+            />
+          </Styled(ViewNB)>
+          <BarIndicator
+            delay={40}
+            paragraph={true}
+          />
+          <BarIndicator
+            delay={92.5}
+            paragraph={true}
+          />
+          <BarIndicator
+            delay={145}
+            paragraph={true}
+          />
+          <BarIndicator
+            delay={197.5}
+            paragraph={true}
+          />
+          <BarIndicator
+            delay={250}
+            paragraph={true}
+          />
+          <BarIndicator
+            delay={302.5}
+            paragraph={true}
+          />
+          <BarIndicator
+            delay={355}
+            paragraph={true}
+          />
+          <BarIndicator
+            delay={407.5}
+            paragraph={true}
+          />
+          <BarIndicator
+            delay={460}
+            paragraph={true}
+          />
+          <BarIndicator
+            delay={512.5}
+            paragraph={true}
+          />
+          <BarIndicator
+            delay={565}
+            paragraph={true}
+          />
+          <BarIndicator
+            delay={617.5}
+            paragraph={true}
+          />
+        </PlaceholderContainer>,
+        "scrollEnabled": false,
+        "virtual": undefined,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "animatedComponent": <LinearGradient
+            colors={
+              Array [
+                "#eee",
+                "#ddd",
+                "#eee",
+              ]
+            }
+            end={
+              Object {
+                "x": 0,
+                "y": 0,
+              }
+            }
+            start={
+              Object {
+                "x": 1,
+                "y": 0,
+              }
+            }
+            style={
+              Object {
+                "flex": 1,
+                "width": 125,
+              }
+            }
+          />,
+          "children": Array [
+            <Styled(ViewNB)>
+              <Placeholder
+                style={
+                  Array [
+                    Object {
+                      "alignSelf": "flex-start",
+                      "backgroundColor": "#eee",
+                      "borderRadius": 2.5,
+                      "height": 10,
+                      "justifyContent": "center",
+                      "marginTop": 10,
+                    },
+                    Object {
+                      "width": "50%",
+                    },
+                    Object {
+                      "marginHorizontal": 15,
+                      "marginTop": 15,
+                    },
+                  ]
+                }
+              />
+              <Styled(ViewNB)
+                style={
+                  Object {
+                    "backgroundColor": "#eee",
+                    "height": 1,
+                    "marginHorizontal": 15,
+                    "marginTop": 15,
+                  }
+                }
+              />
+            </Styled(ViewNB)>,
+            <BarIndicator
+              delay={40}
+              paragraph={true}
+            />,
+            <BarIndicator
+              delay={92.5}
+              paragraph={true}
+            />,
+            <BarIndicator
+              delay={145}
+              paragraph={true}
+            />,
+            <BarIndicator
+              delay={197.5}
+              paragraph={true}
+            />,
+            <BarIndicator
+              delay={250}
+              paragraph={true}
+            />,
+            <BarIndicator
+              delay={302.5}
+              paragraph={true}
+            />,
+            <BarIndicator
+              delay={355}
+              paragraph={true}
+            />,
+            <BarIndicator
+              delay={407.5}
+              paragraph={true}
+            />,
+            <BarIndicator
+              delay={460}
+              paragraph={true}
+            />,
+            <BarIndicator
+              delay={512.5}
+              paragraph={true}
+            />,
+            <BarIndicator
+              delay={565}
+              paragraph={true}
+            />,
+            <BarIndicator
+              delay={617.5}
+              paragraph={true}
+            />,
+          ],
+          "delay": 1000,
+          "duration": 1000,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "-1",
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <Placeholder
+                  style={
+                    Array [
+                      Object {
+                        "alignSelf": "flex-start",
+                        "backgroundColor": "#eee",
+                        "borderRadius": 2.5,
+                        "height": 10,
+                        "justifyContent": "center",
+                        "marginTop": 10,
+                      },
+                      Object {
+                        "width": "50%",
+                      },
+                      Object {
+                        "marginHorizontal": 15,
+                        "marginTop": 15,
+                      },
+                    ]
+                  }
+                />,
+                <Styled(ViewNB)
+                  style={
+                    Object {
+                      "backgroundColor": "#eee",
+                      "height": 1,
+                      "marginHorizontal": 15,
+                      "marginTop": 15,
+                    }
+                  }
+                />,
+              ],
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "style": Array [
+                    Object {
+                      "alignSelf": "flex-start",
+                      "backgroundColor": "#eee",
+                      "borderRadius": 2.5,
+                      "height": 10,
+                      "justifyContent": "center",
+                      "marginTop": 10,
+                    },
+                    Object {
+                      "width": "50%",
+                    },
+                    Object {
+                      "marginHorizontal": 15,
+                      "marginTop": 15,
+                    },
+                  ],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "style": Object {
+                    "backgroundColor": "#eee",
+                    "height": 1,
+                    "marginHorizontal": 15,
+                    "marginTop": 15,
+                  },
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "class",
+            "props": Object {
+              "delay": 40,
+              "paragraph": true,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "105",
+            "nodeType": "class",
+            "props": Object {
+              "delay": 92.5,
+              "paragraph": true,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "210",
+            "nodeType": "class",
+            "props": Object {
+              "delay": 145,
+              "paragraph": true,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "315",
+            "nodeType": "class",
+            "props": Object {
+              "delay": 197.5,
+              "paragraph": true,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "420",
+            "nodeType": "class",
+            "props": Object {
+              "delay": 250,
+              "paragraph": true,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "525",
+            "nodeType": "class",
+            "props": Object {
+              "delay": 302.5,
+              "paragraph": true,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "630",
+            "nodeType": "class",
+            "props": Object {
+              "delay": 355,
+              "paragraph": true,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "735",
+            "nodeType": "class",
+            "props": Object {
+              "delay": 407.5,
+              "paragraph": true,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "840",
+            "nodeType": "class",
+            "props": Object {
+              "delay": 460,
+              "paragraph": true,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "945",
+            "nodeType": "class",
+            "props": Object {
+              "delay": 512.5,
+              "paragraph": true,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1050",
+            "nodeType": "class",
+            "props": Object {
+              "delay": 565,
+              "paragraph": true,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1155",
+            "nodeType": "class",
+            "props": Object {
+              "delay": 617.5,
+              "paragraph": true,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
 exports[`Testing PostLoadIndicator Component renders as expected 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
@@ -440,6 +1440,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "delay": 40,
+            "paragraph": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -451,6 +1452,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "delay": 80,
+            "paragraph": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -462,6 +1464,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "delay": 120,
+            "paragraph": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -473,6 +1476,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "delay": 160,
+            "paragraph": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -484,6 +1488,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "delay": 200,
+            "paragraph": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -495,6 +1500,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "delay": 240,
+            "paragraph": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -506,6 +1512,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "delay": 280,
+            "paragraph": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -517,6 +1524,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "delay": 320,
+            "paragraph": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -528,6 +1536,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "delay": 360,
+            "paragraph": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -539,6 +1548,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "delay": 400,
+            "paragraph": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -550,6 +1560,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "delay": 440,
+            "paragraph": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -561,6 +1572,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "delay": 480,
+            "paragraph": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -572,6 +1584,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "delay": 520,
+            "paragraph": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -583,6 +1596,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "delay": 560,
+            "paragraph": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -594,6 +1608,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "delay": 600,
+            "paragraph": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -605,6 +1620,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "delay": 640,
+            "paragraph": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -800,6 +1816,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "delay": 40,
+              "paragraph": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -811,6 +1828,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "delay": 80,
+              "paragraph": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -822,6 +1840,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "delay": 120,
+              "paragraph": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -833,6 +1852,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "delay": 160,
+              "paragraph": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -844,6 +1864,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "delay": 200,
+              "paragraph": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -855,6 +1876,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "delay": 240,
+              "paragraph": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -866,6 +1888,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "delay": 280,
+              "paragraph": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -877,6 +1900,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "delay": 320,
+              "paragraph": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -888,6 +1912,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "delay": 360,
+              "paragraph": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -899,6 +1924,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "delay": 400,
+              "paragraph": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -910,6 +1936,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "delay": 440,
+              "paragraph": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -921,6 +1948,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "delay": 480,
+              "paragraph": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -932,6 +1960,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "delay": 520,
+              "paragraph": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -943,6 +1972,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "delay": 560,
+              "paragraph": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -954,6 +1984,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "delay": 600,
+              "paragraph": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -965,6 +1996,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "delay": 640,
+              "paragraph": undefined,
             },
             "ref": null,
             "rendered": null,

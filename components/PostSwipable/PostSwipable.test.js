@@ -3,20 +3,17 @@ import { shallow } from 'enzyme';
 import PostSwipable from './PostSwipable';
 
 describe('Testing PostSwipable Component', () => {
-  const requiredProps = {
-    comments: []
-  };
 
-  it('renders as expected with required props', () => {
+  it('renders with placeholder', () => {
     const wrapper = shallow(
-      <PostSwipable {...requiredProps} />
+      <PostSwipable />
     );
     expect(wrapper).toMatchSnapshot();
   });
 
   it('has onRef', () => {
     const wrapper = shallow(
-      <PostSwipable {...requiredProps} onRef={() => {}} />
+      <PostSwipable comments={[]} onRef={() => {}} />
     );
     expect(wrapper).toMatchSnapshot();
   });

@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-import { gridBase, fontSize } from 'hkufui/theme/grid';
+import { gridBase, fontSize, comment } from 'hkufui/theme/grid';
 import { logo, seperator } from 'hkufui/theme/palette';
 import customMarkDown from './MarkDownStyles';
 
@@ -12,12 +12,12 @@ const headlineContent = {
 export default StyleSheet.create({
   ...customMarkDown,
   container: {
-    paddingHorizontal: gridBase * 3
+    paddingHorizontal: comment.spacingHorizontal
   },
   headline: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingVertical: gridBase * 2,
+    paddingVertical: comment.spacingVertical,
     borderBottomWidth: gridBase / 10,
     borderColor: seperator,
   },

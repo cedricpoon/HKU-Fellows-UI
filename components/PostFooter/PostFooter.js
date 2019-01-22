@@ -13,10 +13,13 @@ class PostFooter extends Component {
             <Icon name="arrow-left" type="MaterialCommunityIcons" />
           </Button>
           <Button>
-            <Icon name="share-variant" type="MaterialCommunityIcons" />
+            <Icon name="refresh" type="MaterialCommunityIcons" />
           </Button>
           <Button>
-            <Icon name="comment-text" type="MaterialCommunityIcons" />
+            <Icon name="comment-text-outline" type="MaterialCommunityIcons" />
+          </Button>
+          <Button>
+            <Icon name="share-variant" type="MaterialCommunityIcons" />
           </Button>
           <Button transparent={lastPage} disabled={lastPage} onPress={onPageChangeThunk(1)}>
             <Icon name="arrow-right" type="MaterialCommunityIcons" />

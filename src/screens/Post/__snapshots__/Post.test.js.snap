@@ -15,6 +15,7 @@ Eiusmod esse excepteur ex non incididunt proident in occaecat non. Veniam culpa 
 Sunt velit duis reprehenderit laboris ut ex culpa voluptate amet est ex veniam nostrud. Ad exercitation cillum aliqua tempor amet velit ullamco est cupidatat deserunt excepteur mollit. Voluptate culpa incididunt dolor officia minim eiusmod consectetur eu elit minim. Enim nostrud exercitation aliquip labore mollit ullamco consequat sit nostrud aliquip officia magna. Reprehenderit velit est commodo ex in ad occaecat aute enim labore nulla sit proident sit. In ipsum esse adipisicing proident nulla culpa et voluptate est. Nulla tempor tempor sint laboris deserunt laboris ea sit voluptate ad reprehenderit duis.
 ",
           "id": "5c448f33bb8ea03c926d544a",
+          "temperature": 10,
           "timestamp": "Thu Sep 05 2013 03:05:38 GMT+0800 (Hong Kong Standard Time)",
         },
         Object {
@@ -25,7 +26,8 @@ Voluptate dolore consectetur commodo aliqua ea minim ex deserunt commodo esse eu
 Deserunt quis velit fugiat ea aliquip laborum do. Nulla deserunt laborum est ut reprehenderit minim. Reprehenderit quis adipisicing nostrud nisi amet dolore excepteur proident pariatur sit ex proident aute. Reprehenderit aliqua ipsum incididunt duis. Sint dolor incididunt ad excepteur ex est duis. Consequat minim culpa dolor est aliqua nisi commodo ex sint ipsum do. Anim veniam tempor incididunt mollit eiusmod excepteur in voluptate ad pariatur.
 Eiusmod velit duis deserunt duis ut ad labore. In esse dolor sunt est culpa eiusmod officia velit deserunt anim eu tempor. Duis aliqua nulla do officia. Cillum proident velit anim aute cupidatat. Tempor anim magna culpa aute. Cupidatat ad nisi voluptate eu do mollit aute tempor et qui ut esse elit.
 ",
-          "id": "5c448f33ee8320265f5febe8",
+          "id": "227445a988500528d7826c6921d2e3b4a79ccf3a94cc3bcf7b667e3ae4990b36",
+          "temperature": -5,
           "timestamp": "Sat Jul 30 1983 22:16:17 GMT+0800 (Hong Kong Standard Time)",
         },
         Object {
@@ -71,6 +73,7 @@ test.. test... test..... test?..... test!....
 \\"Smartypants, double quotes\\" and 'single quotes'
     ",
           "id": "5c448f33fa0a35cc3773e369",
+          "temperature": 4,
           "timestamp": "Fri Feb 04 2011 13:54:37 GMT+0800 (Hong Kong Standard Time)",
         },
         Object {
@@ -123,6 +126,7 @@ Start numbering with offset:
 1. bar
     ",
           "id": "5c448f334fcf12a88c4fd0f1",
+          "temperature": 0,
           "timestamp": "Wed Jan 12 2011 21:31:56 GMT+0800 (Hong Kong Standard Time)",
         },
         Object {
@@ -196,6 +200,7 @@ With a reference later in the document defining the URL location:
 [id]: https://octodex.github.com/images/dojocat.jpg  \\"The Dojocat\\"
     ",
           "id": "5c448f3390966b8261eff42b",
+          "temperature": 20,
           "timestamp": "Fri May 11 1984 09:08:52 GMT+0800 (Hong Kong Standard Time)",
         },
       ]
@@ -259,6 +264,7 @@ Eiusmod esse excepteur ex non incididunt proident in occaecat non. Veniam culpa 
 Sunt velit duis reprehenderit laboris ut ex culpa voluptate amet est ex veniam nostrud. Ad exercitation cillum aliqua tempor amet velit ullamco est cupidatat deserunt excepteur mollit. Voluptate culpa incididunt dolor officia minim eiusmod consectetur eu elit minim. Enim nostrud exercitation aliquip labore mollit ullamco consequat sit nostrud aliquip officia magna. Reprehenderit velit est commodo ex in ad occaecat aute enim labore nulla sit proident sit. In ipsum esse adipisicing proident nulla culpa et voluptate est. Nulla tempor tempor sint laboris deserunt laboris ea sit voluptate ad reprehenderit duis.
 ",
                 "id": "5c448f33bb8ea03c926d544a",
+                "temperature": 10,
                 "timestamp": "Thu Sep 05 2013 03:05:38 GMT+0800 (Hong Kong Standard Time)",
               },
               Object {
@@ -269,7 +275,8 @@ Voluptate dolore consectetur commodo aliqua ea minim ex deserunt commodo esse eu
 Deserunt quis velit fugiat ea aliquip laborum do. Nulla deserunt laborum est ut reprehenderit minim. Reprehenderit quis adipisicing nostrud nisi amet dolore excepteur proident pariatur sit ex proident aute. Reprehenderit aliqua ipsum incididunt duis. Sint dolor incididunt ad excepteur ex est duis. Consequat minim culpa dolor est aliqua nisi commodo ex sint ipsum do. Anim veniam tempor incididunt mollit eiusmod excepteur in voluptate ad pariatur.
 Eiusmod velit duis deserunt duis ut ad labore. In esse dolor sunt est culpa eiusmod officia velit deserunt anim eu tempor. Duis aliqua nulla do officia. Cillum proident velit anim aute cupidatat. Tempor anim magna culpa aute. Cupidatat ad nisi voluptate eu do mollit aute tempor et qui ut esse elit.
 ",
-                "id": "5c448f33ee8320265f5febe8",
+                "id": "227445a988500528d7826c6921d2e3b4a79ccf3a94cc3bcf7b667e3ae4990b36",
+                "temperature": -5,
                 "timestamp": "Sat Jul 30 1983 22:16:17 GMT+0800 (Hong Kong Standard Time)",
               },
               Object {
@@ -315,6 +322,7 @@ test.. test... test..... test?..... test!....
 \\"Smartypants, double quotes\\" and 'single quotes'
     ",
                 "id": "5c448f33fa0a35cc3773e369",
+                "temperature": 4,
                 "timestamp": "Fri Feb 04 2011 13:54:37 GMT+0800 (Hong Kong Standard Time)",
               },
               Object {
@@ -367,6 +375,7 @@ Start numbering with offset:
 1. bar
     ",
                 "id": "5c448f334fcf12a88c4fd0f1",
+                "temperature": 0,
                 "timestamp": "Wed Jan 12 2011 21:31:56 GMT+0800 (Hong Kong Standard Time)",
               },
               Object {
@@ -440,6 +449,7 @@ With a reference later in the document defining the URL location:
 [id]: https://octodex.github.com/images/dojocat.jpg  \\"The Dojocat\\"
     ",
                 "id": "5c448f3390966b8261eff42b",
+                "temperature": 20,
                 "timestamp": "Fri May 11 1984 09:08:52 GMT+0800 (Hong Kong Standard Time)",
               },
             ]
@@ -515,6 +525,7 @@ Eiusmod esse excepteur ex non incididunt proident in occaecat non. Veniam culpa 
 Sunt velit duis reprehenderit laboris ut ex culpa voluptate amet est ex veniam nostrud. Ad exercitation cillum aliqua tempor amet velit ullamco est cupidatat deserunt excepteur mollit. Voluptate culpa incididunt dolor officia minim eiusmod consectetur eu elit minim. Enim nostrud exercitation aliquip labore mollit ullamco consequat sit nostrud aliquip officia magna. Reprehenderit velit est commodo ex in ad occaecat aute enim labore nulla sit proident sit. In ipsum esse adipisicing proident nulla culpa et voluptate est. Nulla tempor tempor sint laboris deserunt laboris ea sit voluptate ad reprehenderit duis.
 ",
               "id": "5c448f33bb8ea03c926d544a",
+              "temperature": 10,
               "timestamp": "Thu Sep 05 2013 03:05:38 GMT+0800 (Hong Kong Standard Time)",
             },
             Object {
@@ -525,7 +536,8 @@ Voluptate dolore consectetur commodo aliqua ea minim ex deserunt commodo esse eu
 Deserunt quis velit fugiat ea aliquip laborum do. Nulla deserunt laborum est ut reprehenderit minim. Reprehenderit quis adipisicing nostrud nisi amet dolore excepteur proident pariatur sit ex proident aute. Reprehenderit aliqua ipsum incididunt duis. Sint dolor incididunt ad excepteur ex est duis. Consequat minim culpa dolor est aliqua nisi commodo ex sint ipsum do. Anim veniam tempor incididunt mollit eiusmod excepteur in voluptate ad pariatur.
 Eiusmod velit duis deserunt duis ut ad labore. In esse dolor sunt est culpa eiusmod officia velit deserunt anim eu tempor. Duis aliqua nulla do officia. Cillum proident velit anim aute cupidatat. Tempor anim magna culpa aute. Cupidatat ad nisi voluptate eu do mollit aute tempor et qui ut esse elit.
 ",
-              "id": "5c448f33ee8320265f5febe8",
+              "id": "227445a988500528d7826c6921d2e3b4a79ccf3a94cc3bcf7b667e3ae4990b36",
+              "temperature": -5,
               "timestamp": "Sat Jul 30 1983 22:16:17 GMT+0800 (Hong Kong Standard Time)",
             },
             Object {
@@ -571,6 +583,7 @@ test.. test... test..... test?..... test!....
 \\"Smartypants, double quotes\\" and 'single quotes'
     ",
               "id": "5c448f33fa0a35cc3773e369",
+              "temperature": 4,
               "timestamp": "Fri Feb 04 2011 13:54:37 GMT+0800 (Hong Kong Standard Time)",
             },
             Object {
@@ -623,6 +636,7 @@ Start numbering with offset:
 1. bar
     ",
               "id": "5c448f334fcf12a88c4fd0f1",
+              "temperature": 0,
               "timestamp": "Wed Jan 12 2011 21:31:56 GMT+0800 (Hong Kong Standard Time)",
             },
             Object {
@@ -696,6 +710,7 @@ With a reference later in the document defining the URL location:
 [id]: https://octodex.github.com/images/dojocat.jpg  \\"The Dojocat\\"
     ",
               "id": "5c448f3390966b8261eff42b",
+              "temperature": 20,
               "timestamp": "Fri May 11 1984 09:08:52 GMT+0800 (Hong Kong Standard Time)",
             },
           ],
@@ -774,6 +789,7 @@ Eiusmod esse excepteur ex non incididunt proident in occaecat non. Veniam culpa 
 Sunt velit duis reprehenderit laboris ut ex culpa voluptate amet est ex veniam nostrud. Ad exercitation cillum aliqua tempor amet velit ullamco est cupidatat deserunt excepteur mollit. Voluptate culpa incididunt dolor officia minim eiusmod consectetur eu elit minim. Enim nostrud exercitation aliquip labore mollit ullamco consequat sit nostrud aliquip officia magna. Reprehenderit velit est commodo ex in ad occaecat aute enim labore nulla sit proident sit. In ipsum esse adipisicing proident nulla culpa et voluptate est. Nulla tempor tempor sint laboris deserunt laboris ea sit voluptate ad reprehenderit duis.
 ",
                   "id": "5c448f33bb8ea03c926d544a",
+                  "temperature": 10,
                   "timestamp": "Thu Sep 05 2013 03:05:38 GMT+0800 (Hong Kong Standard Time)",
                 },
                 Object {
@@ -784,7 +800,8 @@ Voluptate dolore consectetur commodo aliqua ea minim ex deserunt commodo esse eu
 Deserunt quis velit fugiat ea aliquip laborum do. Nulla deserunt laborum est ut reprehenderit minim. Reprehenderit quis adipisicing nostrud nisi amet dolore excepteur proident pariatur sit ex proident aute. Reprehenderit aliqua ipsum incididunt duis. Sint dolor incididunt ad excepteur ex est duis. Consequat minim culpa dolor est aliqua nisi commodo ex sint ipsum do. Anim veniam tempor incididunt mollit eiusmod excepteur in voluptate ad pariatur.
 Eiusmod velit duis deserunt duis ut ad labore. In esse dolor sunt est culpa eiusmod officia velit deserunt anim eu tempor. Duis aliqua nulla do officia. Cillum proident velit anim aute cupidatat. Tempor anim magna culpa aute. Cupidatat ad nisi voluptate eu do mollit aute tempor et qui ut esse elit.
 ",
-                  "id": "5c448f33ee8320265f5febe8",
+                  "id": "227445a988500528d7826c6921d2e3b4a79ccf3a94cc3bcf7b667e3ae4990b36",
+                  "temperature": -5,
                   "timestamp": "Sat Jul 30 1983 22:16:17 GMT+0800 (Hong Kong Standard Time)",
                 },
                 Object {
@@ -830,6 +847,7 @@ test.. test... test..... test?..... test!....
 \\"Smartypants, double quotes\\" and 'single quotes'
     ",
                   "id": "5c448f33fa0a35cc3773e369",
+                  "temperature": 4,
                   "timestamp": "Fri Feb 04 2011 13:54:37 GMT+0800 (Hong Kong Standard Time)",
                 },
                 Object {
@@ -882,6 +900,7 @@ Start numbering with offset:
 1. bar
     ",
                   "id": "5c448f334fcf12a88c4fd0f1",
+                  "temperature": 0,
                   "timestamp": "Wed Jan 12 2011 21:31:56 GMT+0800 (Hong Kong Standard Time)",
                 },
                 Object {
@@ -955,6 +974,7 @@ With a reference later in the document defining the URL location:
 [id]: https://octodex.github.com/images/dojocat.jpg  \\"The Dojocat\\"
     ",
                   "id": "5c448f3390966b8261eff42b",
+                  "temperature": 20,
                   "timestamp": "Fri May 11 1984 09:08:52 GMT+0800 (Hong Kong Standard Time)",
                 },
               ]
@@ -1030,6 +1050,7 @@ Eiusmod esse excepteur ex non incididunt proident in occaecat non. Veniam culpa 
 Sunt velit duis reprehenderit laboris ut ex culpa voluptate amet est ex veniam nostrud. Ad exercitation cillum aliqua tempor amet velit ullamco est cupidatat deserunt excepteur mollit. Voluptate culpa incididunt dolor officia minim eiusmod consectetur eu elit minim. Enim nostrud exercitation aliquip labore mollit ullamco consequat sit nostrud aliquip officia magna. Reprehenderit velit est commodo ex in ad occaecat aute enim labore nulla sit proident sit. In ipsum esse adipisicing proident nulla culpa et voluptate est. Nulla tempor tempor sint laboris deserunt laboris ea sit voluptate ad reprehenderit duis.
 ",
                 "id": "5c448f33bb8ea03c926d544a",
+                "temperature": 10,
                 "timestamp": "Thu Sep 05 2013 03:05:38 GMT+0800 (Hong Kong Standard Time)",
               },
               Object {
@@ -1040,7 +1061,8 @@ Voluptate dolore consectetur commodo aliqua ea minim ex deserunt commodo esse eu
 Deserunt quis velit fugiat ea aliquip laborum do. Nulla deserunt laborum est ut reprehenderit minim. Reprehenderit quis adipisicing nostrud nisi amet dolore excepteur proident pariatur sit ex proident aute. Reprehenderit aliqua ipsum incididunt duis. Sint dolor incididunt ad excepteur ex est duis. Consequat minim culpa dolor est aliqua nisi commodo ex sint ipsum do. Anim veniam tempor incididunt mollit eiusmod excepteur in voluptate ad pariatur.
 Eiusmod velit duis deserunt duis ut ad labore. In esse dolor sunt est culpa eiusmod officia velit deserunt anim eu tempor. Duis aliqua nulla do officia. Cillum proident velit anim aute cupidatat. Tempor anim magna culpa aute. Cupidatat ad nisi voluptate eu do mollit aute tempor et qui ut esse elit.
 ",
-                "id": "5c448f33ee8320265f5febe8",
+                "id": "227445a988500528d7826c6921d2e3b4a79ccf3a94cc3bcf7b667e3ae4990b36",
+                "temperature": -5,
                 "timestamp": "Sat Jul 30 1983 22:16:17 GMT+0800 (Hong Kong Standard Time)",
               },
               Object {
@@ -1086,6 +1108,7 @@ test.. test... test..... test?..... test!....
 \\"Smartypants, double quotes\\" and 'single quotes'
     ",
                 "id": "5c448f33fa0a35cc3773e369",
+                "temperature": 4,
                 "timestamp": "Fri Feb 04 2011 13:54:37 GMT+0800 (Hong Kong Standard Time)",
               },
               Object {
@@ -1138,6 +1161,7 @@ Start numbering with offset:
 1. bar
     ",
                 "id": "5c448f334fcf12a88c4fd0f1",
+                "temperature": 0,
                 "timestamp": "Wed Jan 12 2011 21:31:56 GMT+0800 (Hong Kong Standard Time)",
               },
               Object {
@@ -1211,6 +1235,7 @@ With a reference later in the document defining the URL location:
 [id]: https://octodex.github.com/images/dojocat.jpg  \\"The Dojocat\\"
     ",
                 "id": "5c448f3390966b8261eff42b",
+                "temperature": 20,
                 "timestamp": "Fri May 11 1984 09:08:52 GMT+0800 (Hong Kong Standard Time)",
               },
             ],

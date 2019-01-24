@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { StyleSheet } from 'react-native';
 import { Button, Icon, Text, Separator } from 'native-base';
 import PropTypes from 'prop-types';
 
@@ -9,11 +8,7 @@ import { localize } from 'hkufui/locale';
 import themeStyles from 'hkufui/theme/Styles';
 const locale = localize({ language: 'en', country: 'hk' });
 
-const styles = StyleSheet.create({
-  separator: {
-    height: 2
-  }
-});
+import styles from './Styles';
 
 class PostHeaderMenu extends Component {
 

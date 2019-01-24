@@ -9,7 +9,8 @@ describe('Testing PostDetails Component', () => {
       id: 'id',
       timestamp: 'timestamp',
       author: 'author',
-      content: 'content'
+      content: 'content',
+      temperature: 1
     }
   };
 

@@ -3337,7 +3337,7 @@ ShallowWrapper {
     id="id"
     native={true}
     replyNo={0}
-    solved={true}
+    solved="uid"
     timestamp=""
     title=""
   />,

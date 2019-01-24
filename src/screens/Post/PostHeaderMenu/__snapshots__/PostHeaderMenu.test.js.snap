@@ -4,6 +4,7 @@ exports[`Testing PostHeaderMenu Component has onRef 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PostHeaderMenu
+    index={1}
     onRef={[Function]}
     position={
       Object {
@@ -29,25 +30,11 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <Styled(Button)
-          disabled={true}
-          iconLeft={true}
-          transparent={true}
-        >
-          <Styled(Icon)
-            name="notifications"
-            style={
-              Object {
-                "textAlign": "center",
-                "width": 25,
-              }
-            }
-            type="MaterialIcons"
-          />
-          <Styled(Text)>
-            Notifications
-          </Styled(Text)>
-        </Styled(Button)>,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
         <Styled(Button)
           danger={true}
           iconLeft={true}
@@ -76,66 +63,11 @@ ShallowWrapper {
     },
     "ref": [Function],
     "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <Styled(Icon)
-              name="notifications"
-              style={
-                Object {
-                  "textAlign": "center",
-                  "width": 25,
-                }
-              }
-              type="MaterialIcons"
-            />,
-            <Styled(Text)>
-              Notifications
-            </Styled(Text)>,
-          ],
-          "disabled": true,
-          "iconLeft": true,
-          "light": undefined,
-          "transparent": true,
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "name": "notifications",
-              "style": Object {
-                "textAlign": "center",
-                "width": 25,
-              },
-              "type": "MaterialIcons",
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "Notifications",
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": "Notifications",
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
       Object {
         "instance": null,
         "key": undefined,
@@ -205,25 +137,11 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <Styled(Button)
-            disabled={true}
-            iconLeft={true}
-            transparent={true}
-          >
-            <Styled(Icon)
-              name="notifications"
-              style={
-                Object {
-                  "textAlign": "center",
-                  "width": 25,
-                }
-              }
-              type="MaterialIcons"
-            />
-            <Styled(Text)>
-              Notifications
-            </Styled(Text)>
-          </Styled(Button)>,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
           <Styled(Button)
             danger={true}
             iconLeft={true}
@@ -252,6 +170,11 @@ ShallowWrapper {
       },
       "ref": [Function],
       "rendered": Array [
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
         Object {
           "instance": null,
           "key": undefined,
@@ -259,7 +182,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <Styled(Icon)
-                name="notifications"
+                name="report"
                 style={
                   Object {
                     "textAlign": "center",
@@ -269,12 +192,11 @@ ShallowWrapper {
                 type="MaterialIcons"
               />,
               <Styled(Text)>
-                Notifications
+                Report Abuse
               </Styled(Text)>,
             ],
-            "disabled": true,
+            "danger": true,
             "iconLeft": true,
-            "light": undefined,
             "transparent": true,
             "virtual": undefined,
           },
@@ -285,7 +207,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "name": "notifications",
+                "name": "report",
                 "style": Object {
                   "textAlign": "center",
                   "width": 25,
@@ -302,16 +224,215 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": "Notifications",
+                "children": "Report Abuse",
                 "virtual": undefined,
               },
               "ref": null,
-              "rendered": "Notifications",
+              "rendered": "Report Abuse",
               "type": [Function],
             },
           ],
           "type": [Function],
         },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing PostHeaderMenu Component is solved 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PostHeaderMenu
+    index={1}
+    position={
+      Object {
+        "x": 0,
+        "y": 0,
+      }
+    }
+    solved={true}
+    toggle={[Function]}
+  >
+    <View />
+  </PostHeaderMenu>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        <Styled(Button)
+          danger={true}
+          iconLeft={true}
+          transparent={true}
+        >
+          <Styled(Icon)
+            name="report"
+            style={
+              Object {
+                "textAlign": "center",
+                "width": 25,
+              }
+            }
+            type="MaterialIcons"
+          />
+          <Styled(Text)>
+            Report Abuse
+          </Styled(Text)>
+        </Styled(Button)>,
+      ],
+      "position": Object {
+        "x": 0,
+        "y": 0,
+      },
+      "toggle": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(Icon)
+              name="report"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
+              type="MaterialIcons"
+            />,
+            <Styled(Text)>
+              Report Abuse
+            </Styled(Text)>,
+          ],
+          "danger": true,
+          "iconLeft": true,
+          "transparent": true,
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "report",
+              "style": Object {
+                "textAlign": "center",
+                "width": 25,
+              },
+              "type": "MaterialIcons",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Report Abuse",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": "Report Abuse",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          <Styled(Button)
+            danger={true}
+            iconLeft={true}
+            transparent={true}
+          >
+            <Styled(Icon)
+              name="report"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
+              type="MaterialIcons"
+            />
+            <Styled(Text)>
+              Report Abuse
+            </Styled(Text)>
+          </Styled(Button)>,
+        ],
+        "position": Object {
+          "x": 0,
+          "y": 0,
+        },
+        "toggle": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
         Object {
           "instance": null,
           "key": undefined,
@@ -399,6 +520,7 @@ exports[`Testing PostHeaderMenu Component renders as expected with PopupMenu req
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PostHeaderMenu
+    index={1}
     position={
       Object {
         "x": 0,
@@ -423,25 +545,11 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <Styled(Button)
-          disabled={true}
-          iconLeft={true}
-          transparent={true}
-        >
-          <Styled(Icon)
-            name="notifications"
-            style={
-              Object {
-                "textAlign": "center",
-                "width": 25,
-              }
-            }
-            type="MaterialIcons"
-          />
-          <Styled(Text)>
-            Notifications
-          </Styled(Text)>
-        </Styled(Button)>,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
         <Styled(Button)
           danger={true}
           iconLeft={true}
@@ -470,66 +578,11 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <Styled(Icon)
-              name="notifications"
-              style={
-                Object {
-                  "textAlign": "center",
-                  "width": 25,
-                }
-              }
-              type="MaterialIcons"
-            />,
-            <Styled(Text)>
-              Notifications
-            </Styled(Text)>,
-          ],
-          "disabled": true,
-          "iconLeft": true,
-          "light": undefined,
-          "transparent": true,
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "name": "notifications",
-              "style": Object {
-                "textAlign": "center",
-                "width": 25,
-              },
-              "type": "MaterialIcons",
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "Notifications",
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": "Notifications",
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
       Object {
         "instance": null,
         "key": undefined,
@@ -599,25 +652,11 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <Styled(Button)
-            disabled={true}
-            iconLeft={true}
-            transparent={true}
-          >
-            <Styled(Icon)
-              name="notifications"
-              style={
-                Object {
-                  "textAlign": "center",
-                  "width": 25,
-                }
-              }
-              type="MaterialIcons"
-            />
-            <Styled(Text)>
-              Notifications
-            </Styled(Text)>
-          </Styled(Button)>,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
           <Styled(Button)
             danger={true}
             iconLeft={true}
@@ -646,66 +685,11 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <Styled(Icon)
-                name="notifications"
-                style={
-                  Object {
-                    "textAlign": "center",
-                    "width": 25,
-                  }
-                }
-                type="MaterialIcons"
-              />,
-              <Styled(Text)>
-                Notifications
-              </Styled(Text)>,
-            ],
-            "disabled": true,
-            "iconLeft": true,
-            "light": undefined,
-            "transparent": true,
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "name": "notifications",
-                "style": Object {
-                  "textAlign": "center",
-                  "width": 25,
-                },
-                "type": "MaterialIcons",
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "Notifications",
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": "Notifications",
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
         Object {
           "instance": null,
           "key": undefined,

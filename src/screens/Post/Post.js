@@ -32,7 +32,7 @@ export class Post extends Component {
   }
 
   _renderHeaderMenu() {
-    const { headerLayout, native } = this.state;
+    const { headerLayout, native, solved, currentPage } = this.state;
     const { width } = Dimensions.get("window");
 
     return (
@@ -41,6 +41,8 @@ export class Post extends Component {
         parentHeight={headerLayout.height}
         onRef={ref => this._popup = ref}
         native={native}
+        solved={solved != null}
+        index={currentPage + 1}
       />
     );
   }
@@ -60,7 +62,7 @@ export class Post extends Component {
   }
 
   render() {
-    const { title, subTitle, native, currentPage } = this.state;
+    const { title, subTitle, native, solved, currentPage } = this.state;
     const { comments } = this.props;
 
     return (
@@ -86,6 +88,7 @@ export class Post extends Component {
           comments={comments}
           onChangeTab={this._onPostTabChange}
           onRef={ref => this._postTabs = ref}
+          solved={solved}
         />
         <PostFooter
           firstPage={!comments || currentPage === 0}

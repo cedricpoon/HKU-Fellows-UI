@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, Content } from 'native-base';
+import { Text, View, Content, Icon } from 'native-base';
 import PropTypes from "prop-types";
 import { format } from 'timeago.js';
 import Markdown from 'react-native-markdown-renderer';
@@ -11,7 +11,7 @@ import styles from './Styles';
 
 class PostSwipable extends Component {
   render() {
-    const { index } = this.props;
+    const { index, selectedAnswer } = this.props;
     const { author, timestamp, content } = this.props.comment;
 
     return (
@@ -22,6 +22,8 @@ class PostSwipable extends Component {
             {author ? author : locale['comment.anonymousUser']}
           </Text>
           <Text style={styles.date}>· {format(new Date(timestamp))}</Text>
+          {selectedAnswer && (<Text style={styles.solved}>· {locale['comment.solved']}</Text>)}
+          {selectedAnswer && (<Icon name="check-decagram" type="MaterialCommunityIcons" style={styles.solved}/>)}
         </View>
         <View style={styles.contentContainer}>
           <Markdown style={styles}>{content}</Markdown>
@@ -38,7 +40,8 @@ PostSwipable.propTypes = {
     author: PropTypes.string,
     timestamp: PropTypes.string.isRequired,
     content: PropTypes.string.isRequired
-  }).isRequired
+  }).isRequired,
+  selectedAnswer: PropTypes.bool
 };
 
 export default PostSwipable;

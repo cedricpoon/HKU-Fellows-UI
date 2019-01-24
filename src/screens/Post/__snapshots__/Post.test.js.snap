@@ -216,6 +216,7 @@ With a reference later in the document defining the URL location:
     "props": Object {
       "children": Array [
         <PostHeaderMenu
+          index={1}
           onRef={[Function]}
           parentHeight={0}
           position={
@@ -224,6 +225,7 @@ With a reference later in the document defining the URL location:
               "y": 0,
             }
           }
+          solved={false}
         />,
         <Header
           animated={false}
@@ -460,6 +462,7 @@ With a reference later in the document defining the URL location:
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "index": 1,
           "native": undefined,
           "onRef": [Function],
           "parentHeight": 0,
@@ -467,6 +470,7 @@ With a reference later in the document defining the URL location:
             "x": 750,
             "y": 0,
           },
+          "solved": false,
         },
         "ref": null,
         "rendered": null,
@@ -697,6 +701,7 @@ With a reference later in the document defining the URL location:
           ],
           "onChangeTab": [Function],
           "onRef": [Function],
+          "solved": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -726,6 +731,7 @@ With a reference later in the document defining the URL location:
       "props": Object {
         "children": Array [
           <PostHeaderMenu
+            index={1}
             onRef={[Function]}
             parentHeight={0}
             position={
@@ -734,6 +740,7 @@ With a reference later in the document defining the URL location:
                 "y": 0,
               }
             }
+            solved={false}
           />,
           <Header
             animated={false}
@@ -970,6 +977,7 @@ With a reference later in the document defining the URL location:
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "index": 1,
             "native": undefined,
             "onRef": [Function],
             "parentHeight": 0,
@@ -977,6 +985,7 @@ With a reference later in the document defining the URL location:
               "x": 750,
               "y": 0,
             },
+            "solved": false,
           },
           "ref": null,
           "rendered": null,
@@ -1207,6 +1216,7 @@ With a reference later in the document defining the URL location:
             ],
             "onChangeTab": [Function],
             "onRef": [Function],
+            "solved": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -1270,6 +1280,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <PostHeaderMenu
+          index={1}
           onRef={[Function]}
           parentHeight={0}
           position={
@@ -1278,6 +1289,7 @@ ShallowWrapper {
               "y": 0,
             }
           }
+          solved={false}
         />,
         <Header
           animated={false}
@@ -1319,6 +1331,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "index": 1,
           "native": undefined,
           "onRef": [Function],
           "parentHeight": 0,
@@ -1326,6 +1339,7 @@ ShallowWrapper {
             "x": 750,
             "y": 0,
           },
+          "solved": false,
         },
         "ref": null,
         "rendered": null,
@@ -1363,6 +1377,7 @@ ShallowWrapper {
           "comments": Array [],
           "onChangeTab": [Function],
           "onRef": [Function],
+          "solved": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -1392,6 +1407,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <PostHeaderMenu
+            index={1}
             onRef={[Function]}
             parentHeight={0}
             position={
@@ -1400,6 +1416,7 @@ ShallowWrapper {
                 "y": 0,
               }
             }
+            solved={false}
           />,
           <Header
             animated={false}
@@ -1441,6 +1458,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "index": 1,
             "native": undefined,
             "onRef": [Function],
             "parentHeight": 0,
@@ -1448,6 +1466,7 @@ ShallowWrapper {
               "x": 750,
               "y": 0,
             },
+            "solved": false,
           },
           "ref": null,
           "rendered": null,
@@ -1485,6 +1504,7 @@ ShallowWrapper {
             "comments": Array [],
             "onChangeTab": [Function],
             "onRef": [Function],
+            "solved": undefined,
           },
           "ref": null,
           "rendered": null,

@@ -78,7 +78,7 @@ class PostPreview extends PureComponent {
 PostPreview.propTypes = {
   id: PropTypes.string.isRequired,
   native: PropTypes.bool.isRequired,
-  solved: PropTypes.bool,
+  solved: PropTypes.string,
   viewed: PropTypes.bool,
   primaryHashtag: PropTypes.string,
   secondaryHashtag: PropTypes.string,

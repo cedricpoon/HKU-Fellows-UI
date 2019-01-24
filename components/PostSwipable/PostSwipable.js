@@ -7,14 +7,15 @@ import { PRE_RENDER_NUMBER } from './Constants';
 
 class PostSwipable extends Component {
   render() {
-    const { comments, onRef, ...restProps } = this.props;
+    const { comments, onRef, solved, ...restProps } = this.props;
     const context = [];
 
     if (comments) {
       comments.forEach((comment, index) => {
+        const { id } = comment;
         context.push(
-          <Tab heading={comment.id} key={comment.id}>
-            <PostDetails comment={comment} index={index+1} />
+          <Tab heading={id} key={id}>
+            <PostDetails comment={comment} index={index + 1} selectedAnswer={solved === id} />
           </Tab>
         );
       });
@@ -39,7 +40,8 @@ class PostSwipable extends Component {
 
 PostSwipable.propTypes = {
   comments: PropTypes.array,
-  onRef: PropTypes.func
+  onRef: PropTypes.func,
+  solved: PropTypes.string
 };
 
 export default PostSwipable;

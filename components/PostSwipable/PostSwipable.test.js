@@ -17,4 +17,11 @@ describe('Testing PostSwipable Component', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('is solved', () => {
+    const wrapper = shallow(
+      <PostSwipable comments={[]} onRef={() => {}} solved='uid' />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });

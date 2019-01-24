@@ -39,6 +39,11 @@ export default StyleSheet.create({
     fontSize: fontSize.semiTitleSize,
     color: logo.black
   },
+  solved: {
+    ...headlineContent,
+    fontSize: fontSize.semiTitleSize,
+    color: logo.dimmed.yellow
+  },
   contentContainer: {
     marginVertical: gridBase
   }

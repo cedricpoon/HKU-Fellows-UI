@@ -19,4 +19,11 @@ describe('Testing PostDetails Component', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('is selectedAnswer', () => {
+    const wrapper = shallow(
+      <PostDetails {...requiredProps} selectedAnswer />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });

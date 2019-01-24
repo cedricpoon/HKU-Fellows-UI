@@ -12,6 +12,7 @@ export default {
   'post.copyright': '© 2018 HKU Fellows. All Rights Reserved.',
 
   'comment.anonymousUser': 'Anonymous',
+  'comment.solved': 'Adopted',
 
   'footer.moodle': 'From Moodle',
   'footer.latestPost': 'Latest Post',
@@ -36,6 +37,9 @@ export default {
 
   'header.notifications': 'Notifications',
   'header.abuse': 'Report Abuse',
+  'header.thumbUp': i => `Vote #${i} Up`,
+  'header.thumbDown': i => `Vote #${i} Down`,
+  'header.solved': 'Adopt this Answer',
 
   'fetch.noNetwork': 'Server is not connected.',
 

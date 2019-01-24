@@ -20,7 +20,7 @@ describe('Testing PostPreview Component', () => {
 
   it('renders as expected with required props and solved', () => {
     const wrapper = shallow(
-      <Post {...requiredProps} solved />
+      <Post {...requiredProps} solved='uid' />
     );
     expect(wrapper).toMatchSnapshot();
   });

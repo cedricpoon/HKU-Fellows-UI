@@ -29,7 +29,7 @@ class PostPreview extends PureComponent {
       replyNo,
       temperature,
       title,
-      subTitle,
+      subtitle,
       viewed
     } = this.props;
 
@@ -63,11 +63,11 @@ class PostPreview extends PureComponent {
           </View>
           <Text style={styles.mainText} numberOfLines={1}>{title}</Text>
           <Text
-            style={subTitle ? styles.subTitle : styles.noSubtitle}
+            style={subtitle ? styles.subtitle : styles.noSubtitle}
             note
             numberOfLines={1}
           >
-            {subTitle ? subTitle : locale['post.noSubtitle']}
+            {subtitle ? subtitle : locale['post.noSubtitle']}
           </Text>
         </Body>
       </ListItem>
@@ -86,7 +86,7 @@ PostPreview.propTypes = {
   replyNo: PropTypes.number.isRequired,
   temperature: PropTypes.number,
   title: PropTypes.string.isRequired,
-  subTitle: PropTypes.string
+  subtitle: PropTypes.string
 }
 
 export default PostPreview;

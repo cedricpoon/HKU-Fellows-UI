@@ -31,7 +31,7 @@ export default StyleSheet.create({
     paddingLeft: gridBase,
     paddingBottom: gridBase
   },
-  subTitle: {
+  subtitle: {
     color: logo.black
   },
   noSubtitle: {

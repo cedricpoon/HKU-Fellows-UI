@@ -62,7 +62,7 @@ export class Post extends Component {
   }
 
   render() {
-    const { title, subTitle, native, solved, currentPage } = this.state;
+    const { title, subtitle, native, solved, currentPage } = this.state;
     const { comments } = this.props;
 
     return (
@@ -74,8 +74,8 @@ export class Post extends Component {
             numberOfLines: 4,
             color: native ? styles.nativeTitle.color : styles.moodleTitle.color
           }}
-          subtitle={subTitle && {
-            context: subTitle,
+          subtitle={subtitle && {
+            context: subtitle,
             numberOfLines: 3
           }}
           animated={false}

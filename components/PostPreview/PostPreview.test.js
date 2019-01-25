@@ -34,7 +34,7 @@ describe('Testing PostPreview Component', () => {
 
   it('renders as expected with required props and subtitle', () => {
     const wrapper = shallow(
-      <Post {...requiredProps} subTitle={''} />
+      <Post {...requiredProps} subtitle={''} />
     );
     expect(wrapper).toMatchSnapshot();
   });

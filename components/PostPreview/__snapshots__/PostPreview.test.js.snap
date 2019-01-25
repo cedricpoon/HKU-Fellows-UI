@@ -5110,7 +5110,7 @@ ShallowWrapper {
     id="id"
     native={true}
     replyNo={0}
-    subTitle=""
+    subtitle=""
     timestamp=""
     title=""
   />,

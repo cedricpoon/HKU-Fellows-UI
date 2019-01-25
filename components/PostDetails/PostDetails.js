@@ -26,8 +26,8 @@ class PostSwipable extends Component {
               {author ? author : locale['comment.anonymousUser']}
             </Text>
             <Text style={styles.date}>· {format(new Date(timestamp))}</Text>
-            {selectedAnswer && (<Text style={styles.solved}>· {locale['comment.solved']}</Text>)}
-            {selectedAnswer && (<Icon name="check-decagram" type="MaterialCommunityIcons" style={styles.solved}/>)}
+            {selectedAnswer && (<Icon name="checkbox-marked-circle-outline" type="MaterialCommunityIcons" style={styles.solved}/>)}
+            {selectedAnswer && (<Text style={styles.solved}>{locale['comment.solved']}</Text>)}
           </View>
           <View style={styles.rightPanel}>
             <Icon style={[styles.temperature, hotStyle]} name="ios-flame" />

@@ -4,6 +4,7 @@ exports[`Testing PostFooter Component contains page change callback 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PostFooter
+    enableRefresh={true}
     onPageChangeThunk={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -29,7 +30,10 @@ ShallowWrapper {
             type="MaterialCommunityIcons"
           />
         </Styled(Button)>
-        <Styled(Button)>
+        <Styled(Button)
+          disabled={false}
+          transparent={false}
+        >
           <Styled(Icon)
             name="refresh"
             type="MaterialCommunityIcons"
@@ -73,7 +77,10 @@ ShallowWrapper {
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>,
-          <Styled(Button)>
+          <Styled(Button)
+            disabled={false}
+            transparent={false}
+          >
             <Styled(Icon)
               name="refresh"
               type="MaterialCommunityIcons"
@@ -143,6 +150,9 @@ ShallowWrapper {
               name="refresh"
               type="MaterialCommunityIcons"
             />,
+            "disabled": false,
+            "onPress": undefined,
+            "transparent": false,
             "virtual": undefined,
           },
           "ref": null,
@@ -265,7 +275,10 @@ ShallowWrapper {
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>
-          <Styled(Button)>
+          <Styled(Button)
+            disabled={false}
+            transparent={false}
+          >
             <Styled(Icon)
               name="refresh"
               type="MaterialCommunityIcons"
@@ -309,7 +322,10 @@ ShallowWrapper {
                 type="MaterialCommunityIcons"
               />
             </Styled(Button)>,
-            <Styled(Button)>
+            <Styled(Button)
+              disabled={false}
+              transparent={false}
+            >
               <Styled(Icon)
                 name="refresh"
                 type="MaterialCommunityIcons"
@@ -379,6 +395,9 @@ ShallowWrapper {
                 name="refresh"
                 type="MaterialCommunityIcons"
               />,
+              "disabled": false,
+              "onPress": undefined,
+              "transparent": false,
               "virtual": undefined,
             },
             "ref": null,
@@ -515,6 +534,7 @@ exports[`Testing PostFooter Component is in first page 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PostFooter
+    enableRefresh={true}
     firstPage={true}
     onPageChangeThunk={[Function]}
   />,
@@ -543,7 +563,10 @@ ShallowWrapper {
             type="MaterialCommunityIcons"
           />
         </Styled(Button)>
-        <Styled(Button)>
+        <Styled(Button)
+          disabled={false}
+          transparent={false}
+        >
           <Styled(Icon)
             name="refresh"
             type="MaterialCommunityIcons"
@@ -589,7 +612,10 @@ ShallowWrapper {
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>,
-          <Styled(Button)>
+          <Styled(Button)
+            disabled={false}
+            transparent={false}
+          >
             <Styled(Icon)
               name="refresh"
               type="MaterialCommunityIcons"
@@ -659,6 +685,9 @@ ShallowWrapper {
               name="refresh"
               type="MaterialCommunityIcons"
             />,
+            "disabled": false,
+            "onPress": undefined,
+            "transparent": false,
             "virtual": undefined,
           },
           "ref": null,
@@ -783,7 +812,10 @@ ShallowWrapper {
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>
-          <Styled(Button)>
+          <Styled(Button)
+            disabled={false}
+            transparent={false}
+          >
             <Styled(Icon)
               name="refresh"
               type="MaterialCommunityIcons"
@@ -829,7 +861,10 @@ ShallowWrapper {
                 type="MaterialCommunityIcons"
               />
             </Styled(Button)>,
-            <Styled(Button)>
+            <Styled(Button)
+              disabled={false}
+              transparent={false}
+            >
               <Styled(Icon)
                 name="refresh"
                 type="MaterialCommunityIcons"
@@ -899,6 +934,9 @@ ShallowWrapper {
                 name="refresh"
                 type="MaterialCommunityIcons"
               />,
+              "disabled": false,
+              "onPress": undefined,
+              "transparent": false,
               "virtual": undefined,
             },
             "ref": null,
@@ -1035,6 +1073,7 @@ exports[`Testing PostFooter Component is in last page 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PostFooter
+    enableRefresh={true}
     lastPage={true}
     onPageChangeThunk={[Function]}
   />,
@@ -1061,7 +1100,10 @@ ShallowWrapper {
             type="MaterialCommunityIcons"
           />
         </Styled(Button)>
-        <Styled(Button)>
+        <Styled(Button)
+          disabled={false}
+          transparent={false}
+        >
           <Styled(Icon)
             name="refresh"
             type="MaterialCommunityIcons"
@@ -1107,7 +1149,10 @@ ShallowWrapper {
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>,
-          <Styled(Button)>
+          <Styled(Button)
+            disabled={false}
+            transparent={false}
+          >
             <Styled(Icon)
               name="refresh"
               type="MaterialCommunityIcons"
@@ -1179,6 +1224,9 @@ ShallowWrapper {
               name="refresh"
               type="MaterialCommunityIcons"
             />,
+            "disabled": false,
+            "onPress": undefined,
+            "transparent": false,
             "virtual": undefined,
           },
           "ref": null,
@@ -1301,7 +1349,10 @@ ShallowWrapper {
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>
-          <Styled(Button)>
+          <Styled(Button)
+            disabled={false}
+            transparent={false}
+          >
             <Styled(Icon)
               name="refresh"
               type="MaterialCommunityIcons"
@@ -1347,7 +1398,10 @@ ShallowWrapper {
                 type="MaterialCommunityIcons"
               />
             </Styled(Button)>,
-            <Styled(Button)>
+            <Styled(Button)
+              disabled={false}
+              transparent={false}
+            >
               <Styled(Icon)
                 name="refresh"
                 type="MaterialCommunityIcons"
@@ -1419,6 +1473,9 @@ ShallowWrapper {
                 name="refresh"
                 type="MaterialCommunityIcons"
               />,
+              "disabled": false,
+              "onPress": undefined,
+              "transparent": false,
               "virtual": undefined,
             },
             "ref": null,
@@ -1555,6 +1612,7 @@ exports[`Testing PostFooter Component renders as expected 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PostFooter
+    enableRefresh={true}
     onPageChangeThunk={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -1580,7 +1638,10 @@ ShallowWrapper {
             type="MaterialCommunityIcons"
           />
         </Styled(Button)>
-        <Styled(Button)>
+        <Styled(Button)
+          disabled={false}
+          transparent={false}
+        >
           <Styled(Icon)
             name="refresh"
             type="MaterialCommunityIcons"
@@ -1624,7 +1685,10 @@ ShallowWrapper {
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>,
-          <Styled(Button)>
+          <Styled(Button)
+            disabled={false}
+            transparent={false}
+          >
             <Styled(Icon)
               name="refresh"
               type="MaterialCommunityIcons"
@@ -1694,6 +1758,9 @@ ShallowWrapper {
               name="refresh"
               type="MaterialCommunityIcons"
             />,
+            "disabled": false,
+            "onPress": undefined,
+            "transparent": false,
             "virtual": undefined,
           },
           "ref": null,
@@ -1816,7 +1883,10 @@ ShallowWrapper {
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>
-          <Styled(Button)>
+          <Styled(Button)
+            disabled={false}
+            transparent={false}
+          >
             <Styled(Icon)
               name="refresh"
               type="MaterialCommunityIcons"
@@ -1860,7 +1930,10 @@ ShallowWrapper {
                 type="MaterialCommunityIcons"
               />
             </Styled(Button)>,
-            <Styled(Button)>
+            <Styled(Button)
+              disabled={false}
+              transparent={false}
+            >
               <Styled(Icon)
                 name="refresh"
                 type="MaterialCommunityIcons"
@@ -1930,6 +2003,9 @@ ShallowWrapper {
                 name="refresh"
                 type="MaterialCommunityIcons"
               />,
+              "disabled": false,
+              "onPress": undefined,
+              "transparent": false,
               "virtual": undefined,
             },
             "ref": null,

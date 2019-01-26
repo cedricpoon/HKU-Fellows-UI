@@ -22,6 +22,10 @@ export default {
     /* timeframe for locking select in backend */
     timeframe: null,
   },
+  replies: {
+    /* posts(replies) of a topic */
+    replies: null,
+  },
   /* user login credential */
   credential: null
 }

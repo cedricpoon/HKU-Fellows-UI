@@ -7,11 +7,14 @@ import PropTypes from 'prop-types';
 
 import PostHeaderMenu from './PostHeaderMenu/PostHeaderMenu';
 import { mapLayoutToState } from 'hkufui/components/helper';
+import * as _loadStatus from 'hkufui/src/constants/loadStatus';
 import { Header, PostFooter, PostSwipable } from 'hkufui/components';
+import { show2s } from 'hkufui/src/toastHelper';
+
+import { onLoad, onClear, onRefresh } from './replyActions';
 import styles from './Styles';
 
-// MOCK
-import MOCK_POSTS from 'hkufui/static/mock/posts';
+const alert = (message) => { show2s({ message }); }
 
 export class Post extends Component {
   constructor(props) {
@@ -52,18 +55,21 @@ export class Post extends Component {
   }
 
   componentDidMount() {
-    const { navigation } = this.props;
+    const { navigation, onLoadReplies } = this.props;
     /* all props from <PostPreview /> has been passed */
     if (navigation) {
+      const { params } = navigation.state;
       this.setState({
-        ...navigation.state.params
+        ...params
       });
+      // start loading replies
+      onLoadReplies(params.id);
     }
   }
 
   render() {
-    const { title, subtitle, native, solved, currentPage } = this.state;
-    const { comments } = this.props;
+    const { id, title, subtitle, native, solved, currentPage } = this.state;
+    const { comments, onRefreshReplies, loadStatus } = this.props;
 
     return (
       <Container>
@@ -97,26 +103,35 @@ export class Post extends Component {
             if (this._postTabs)
               return () => { this._postTabs.goToPage(currentPage + i) };
           }}
+          onRefresh={() => { onRefreshReplies(id) }}
+          enableRefresh={loadStatus === _loadStatus.OK}
         />
       </Container>
     );
   }
 }
 
-Post.defaultProps = {
-  comments: MOCK_POSTS
-}
-
 Post.propTypes = {
-  comments: PropTypes.array
+  comments: PropTypes.array,
+  onLoadReplies: PropTypes.func,
+  onRefreshReplies: PropTypes.func,
+  loadStatus: PropTypes.oneOf(Object.values(_loadStatus))
 }
 
-const mapStateToProps = () => ({
-
+const mapStateToProps = state => ({
+  comments: state.replies.replies,
+  loadStatus: state.replies.status
 });
 
-const mapDispatchToProps = () => ({
-
+const mapDispatchToProps = dispatch => ({
+  onLoadReplies: (id) => {
+    dispatch(onClear());
+    dispatch(onLoad({ id }));
+  },
+  onRefreshReplies: (id) => {
+    dispatch(onRefresh({ alert }));
+    dispatch(onLoad({ id, alert }));
+  }
 })
 
 export default withNavigation(connect(

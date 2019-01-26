@@ -13,6 +13,8 @@ export default {
 
   'comment.anonymousUser': 'Anonymous',
   'comment.solved': 'Adopted',
+  'comment.refreshing': 'Reloading now...',
+  'comment.refreshed': 'Reloaded successfully!',
 
   'footer.moodle': 'From Moodle',
   'footer.latestPost': 'Latest Post',

@@ -1,12 +1,20 @@
 import React from 'react';
 import { View } from 'react-native';
 import { shallow } from 'enzyme';
-import PostHeaderMenu from './PostHeaderMenu';
+import { PostHeaderMenu } from './PostHeaderMenu';
 
 describe('Testing PostHeaderMenu Component', () => {
+  const requiredProps = {
+    postId: 'postId',
+    topicId: 'topicId',
+    index: 1,
+    position: {x: 0, y: 0},
+    toggle: () => {}
+  };
+
   it('renders as expected with PopupMenu required props', () => {
     const wrapper = shallow(
-      <PostHeaderMenu position={{x: 0, y: 0}} toggle={() => {}} index={1}>
+      <PostHeaderMenu  {...requiredProps}>
         <View></View>
       </PostHeaderMenu>
     );
@@ -15,7 +23,7 @@ describe('Testing PostHeaderMenu Component', () => {
 
   it('has onRef', () => {
     const wrapper = shallow(
-      <PostHeaderMenu position={{x: 0, y: 0}} toggle={() => {}} index={1} onRef={() => {}}>
+      <PostHeaderMenu  {...requiredProps} onRef={() => {}}>
         <View></View>
       </PostHeaderMenu>
     );
@@ -24,7 +32,7 @@ describe('Testing PostHeaderMenu Component', () => {
 
   it('is solved', () => {
     const wrapper = shallow(
-      <PostHeaderMenu position={{x: 0, y: 0}} toggle={() => {}} index={1} solved>
+      <PostHeaderMenu {...requiredProps} solved>
         <View></View>
       </PostHeaderMenu>
     );

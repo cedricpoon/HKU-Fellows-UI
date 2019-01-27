@@ -9,12 +9,13 @@ import PostHeaderMenu from './PostHeaderMenu/PostHeaderMenu';
 import { mapLayoutToState } from 'hkufui/components/helper';
 import * as _loadStatus from 'hkufui/src/constants/loadStatus';
 import { Header, PostFooter, PostSwipable } from 'hkufui/components';
-import { show2s } from 'hkufui/src/toastHelper';
+import { show1s } from 'hkufui/src/toastHelper';
 
 import { onLoad, onClear, onRefresh } from './replyActions';
 import styles from './Styles';
 
-const alert = (message) => { show2s({ message }); }
+const alert = (message) => { show1s({ message }); }
+const alertSuccess = (message) => { show1s({ message, type: 'success' }); }
 
 export class Post extends Component {
   constructor(props) {
@@ -35,19 +36,25 @@ export class Post extends Component {
   }
 
   _renderHeaderMenu() {
-    const { headerLayout, native, solved, currentPage } = this.state;
+    const { comments } = this.props;
+    const { headerLayout, native, solved, currentPage, id } = this.state;
     const { width } = Dimensions.get("window");
 
-    return (
-      <PostHeaderMenu
-        position={{ x: width, y: headerLayout.y }}
-        parentHeight={headerLayout.height}
-        onRef={ref => this._popup = ref}
-        native={native}
-        solved={solved != null}
-        index={currentPage + 1}
-      />
-    );
+    if (comments && id)
+      return (
+        <PostHeaderMenu
+          topicId={id}
+          postId={comments[currentPage].id}
+          position={{ x: width, y: headerLayout.y }}
+          parentHeight={headerLayout.height}
+          onRef={ref => this._popup = ref}
+          native={native}
+          solved={solved != null}
+          index={currentPage + 1}
+        />
+      );
+    else
+      return null;
   }
 
   _onPostTabChange({i}) {
@@ -73,7 +80,7 @@ export class Post extends Component {
 
     return (
       <Container>
-        {this._renderHeaderMenu()}
+        {comments && this._renderHeaderMenu()}
         <Header
           title={{
             context: title,
@@ -86,7 +93,7 @@ export class Post extends Component {
           }}
           animated={false}
           backable
-          rightIcon='more'
+          rightIcon={comments ? 'more' : null}
           onRightPress={this._openHeaderMenu}
           onLayout={mapLayoutToState('headerLayout', this)}
         />
@@ -130,7 +137,7 @@ const mapDispatchToProps = dispatch => ({
   },
   onRefreshReplies: (id) => {
     dispatch(onRefresh({ alert }));
-    dispatch(onLoad({ id, alert }));
+    dispatch(onLoad({ id, alert: alertSuccess }));
   }
 })
 

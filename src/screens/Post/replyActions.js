@@ -1,10 +1,17 @@
-import { FILL_REPLIES, LOAD_REPLIES, REFRESH_REPLIES } from 'hkufui/src/constants/actionTypes';
+import {
+  FILL_REPLIES,
+  LOAD_REPLIES,
+  REFRESH_REPLIES
+} from 'hkufui/src/constants/actionTypes';
+import { Alert } from 'react-native';
 import { OK, LOADING } from 'hkufui/src/constants/loadStatus';
 import { localize } from 'hkufui/locale';
 
 import MOCK_POSTS from 'hkufui/static/mock/posts';
 
 const locale = localize({ language: 'en', country: 'hk' });
+
+/* eslint-disable */
 
 export function onClear() {
   return dispatch => {
@@ -16,6 +23,28 @@ export function onRefresh({ alert }) {
   return dispatch => {
     alert(locale['comment.refreshing']);
     dispatch({ type: REFRESH_REPLIES })
+  }
+}
+
+export function onVote({ topicId, postId, value }) {
+  return dispatch => {
+    Alert.alert('onVote');
+    dispatch({ type: REFRESH_REPLIES });
+    dispatch(onLoad({ id: topicId }));
+  }
+}
+
+export function onNotify({ topicId }) {
+  return dispatch => {
+    Alert.alert('onNotify');
+  }
+}
+
+export function onAccept({ topicId, postId }) {
+  return dispatch => {
+    Alert.alert('onAccept');
+    dispatch({ type: REFRESH_REPLIES });
+    dispatch(onLoad({ id: topicId }));
   }
 }
 

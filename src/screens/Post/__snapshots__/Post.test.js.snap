@@ -19,24 +19,13 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <PostHeaderMenu
-          index={1}
-          onRef={[Function]}
-          parentHeight={0}
-          position={
-            Object {
-              "x": 750,
-              "y": 0,
-            }
-          }
-          solved={false}
-        />,
+        undefined,
         <Header
           animated={false}
           backable={true}
           onLayout={[Function]}
           onRightPress={[Function]}
-          rightIcon="more"
+          rightIcon={null}
           rightStyle={
             Object {
               "color": "#4E4A47",
@@ -67,25 +56,7 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "index": 1,
-          "native": undefined,
-          "onRef": [Function],
-          "parentHeight": 0,
-          "position": Object {
-            "x": 750,
-            "y": 0,
-          },
-          "solved": false,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
+      undefined,
       Object {
         "instance": null,
         "key": undefined,
@@ -95,7 +66,7 @@ ShallowWrapper {
           "backable": true,
           "onLayout": [Function],
           "onRightPress": [Function],
-          "rightIcon": "more",
+          "rightIcon": null,
           "rightStyle": Object {
             "color": "#4E4A47",
           },
@@ -149,24 +120,13 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <PostHeaderMenu
-            index={1}
-            onRef={[Function]}
-            parentHeight={0}
-            position={
-              Object {
-                "x": 750,
-                "y": 0,
-              }
-            }
-            solved={false}
-          />,
+          undefined,
           <Header
             animated={false}
             backable={true}
             onLayout={[Function]}
             onRightPress={[Function]}
-            rightIcon="more"
+            rightIcon={null}
             rightStyle={
               Object {
                 "color": "#4E4A47",
@@ -197,25 +157,7 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "index": 1,
-            "native": undefined,
-            "onRef": [Function],
-            "parentHeight": 0,
-            "position": Object {
-              "x": 750,
-              "y": 0,
-            },
-            "solved": false,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
+        undefined,
         Object {
           "instance": null,
           "key": undefined,
@@ -225,7 +167,7 @@ ShallowWrapper {
             "backable": true,
             "onLayout": [Function],
             "onRightPress": [Function],
-            "rightIcon": "more",
+            "rightIcon": null,
             "rightStyle": Object {
               "color": "#4E4A47",
             },
@@ -318,18 +260,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <PostHeaderMenu
-          index={1}
-          onRef={[Function]}
-          parentHeight={0}
-          position={
-            Object {
-              "x": 750,
-              "y": 0,
-            }
-          }
-          solved={false}
-        />,
+        null,
         <Header
           animated={false}
           backable={true}
@@ -367,25 +298,7 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "index": 1,
-          "native": undefined,
-          "onRef": [Function],
-          "parentHeight": 0,
-          "position": Object {
-            "x": 750,
-            "y": 0,
-          },
-          "solved": false,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
+      null,
       Object {
         "instance": null,
         "key": undefined,
@@ -449,18 +362,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <PostHeaderMenu
-            index={1}
-            onRef={[Function]}
-            parentHeight={0}
-            position={
-              Object {
-                "x": 750,
-                "y": 0,
-              }
-            }
-            solved={false}
-          />,
+          null,
           <Header
             animated={false}
             backable={true}
@@ -498,25 +400,7 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "index": 1,
-            "native": undefined,
-            "onRef": [Function],
-            "parentHeight": 0,
-            "position": Object {
-              "x": 750,
-              "y": 0,
-            },
-            "solved": false,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
+        null,
         Object {
           "instance": null,
           "key": undefined,

@@ -9,7 +9,7 @@ import { localize } from 'hkufui/locale';
 import themeStyles from 'hkufui/theme/Styles';
 const locale = localize({ language: 'en', country: 'hk' });
 
-import { onVote, onNotify, onAccept } from '../replyActions';
+import { onVote, onNotify, onAccept } from '../viewActions';
 import styles from './Styles';
 
 export class PostHeaderMenu extends Component {

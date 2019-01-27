@@ -11,10 +11,10 @@ export default {
   'post.loadErrorButton': 'Refresh',
   'post.copyright': '© 2018 HKU Fellows. All Rights Reserved.',
 
-  'comment.anonymousUser': 'Anonymous',
-  'comment.solved': 'Adopted',
-  'comment.refreshing': 'Reloading now...',
-  'comment.refreshed': 'Reloaded successfully!',
+  'replies.anonymousUser': 'Anonymous',
+  'replies.solved': 'Adopted',
+  'replies.refreshing': 'Reloading now...',
+  'replies.refreshed': 'Reloaded successfully!',
 
   'footer.moodle': 'From Moodle',
   'footer.latestPost': 'Latest Post',

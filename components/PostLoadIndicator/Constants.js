@@ -4,8 +4,6 @@ export const LOADER_GROUP_HEIGHT = 80;
 
 export const PARAGRAPH_GROUP_HEIGHT = 105;
 
-export { FADE_IN_DURATION } from '../Scrollable/Constants';
-
 export const DELAY_BASE = 40;
 
 export const EST_HEADER_HEIGHT = 65;

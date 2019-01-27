@@ -21,7 +21,7 @@ export function onClear() {
 
 export function onRefresh({ alert }) {
   return dispatch => {
-    alert(locale['comment.refreshing']);
+    alert(locale['replies.refreshing']);
     dispatch({ type: REFRESH_REPLIES })
   }
 }
@@ -56,7 +56,7 @@ export function onLoad({ id, alert }) {
         payload: { replies: MOCK_POSTS }
       });
       if (alert) {
-        alert(locale['comment.refreshed']);
+        alert(locale['replies.refreshed']);
       }
     }, 3000);
   };

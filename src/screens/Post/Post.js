@@ -11,7 +11,7 @@ import * as _loadStatus from 'hkufui/src/constants/loadStatus';
 import { Header, PostFooter, PostSwipable } from 'hkufui/components';
 import { show1s } from 'hkufui/src/toastHelper';
 
-import { onLoad, onClear, onRefresh } from './replyActions';
+import { onLoad, onClear, onRefresh } from './viewActions';
 import styles from './Styles';
 
 const alert = (message) => { show1s({ message }); }

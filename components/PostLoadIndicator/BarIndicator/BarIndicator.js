@@ -5,7 +5,7 @@ import { Placeholder } from 'react-native-loading-placeholder';
 import PropTypes from 'prop-types';
 
 import styles from '../Styles';
-import { FADE_IN_DURATION } from '../Constants';
+import { FADE_IN_DURATION } from 'hkufui/components/Constants';
 
 const Wrapper = Animatable.createAnimatableComponent(View);
 

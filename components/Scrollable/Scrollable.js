@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import * as Animatable from 'react-native-animatable';
 import { FlatList as RNFlatList } from 'react-native';
 
-import * as consts from './Constants';
+import { FADE_IN_DURATION } from 'hkufui/components/Constants';
 
 const FlatList = Animatable.createAnimatableComponent(RNFlatList);
 
@@ -24,7 +24,7 @@ class Scrollable extends PureComponent {
           keyExtractor={item => item.id}
           renderItem={itemRenderer}
           animation='fadeIn'
-          duration={consts.FADE_IN_DURATION}
+          duration={FADE_IN_DURATION}
           {...restProps}
         />
       );

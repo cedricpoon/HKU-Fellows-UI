@@ -5,7 +5,7 @@ import * as Animatable from 'react-native-animatable';
 
 import styles from './Styles';
 import peerStyles from '../Styles';
-import { FADE_IN_DURATION } from 'hkufui/components/Scrollable/Constants';
+import { FADE_IN_DURATION } from 'hkufui/components/Constants';
 
 const Body = Animatable.createAnimatableComponent(NBBody);
 

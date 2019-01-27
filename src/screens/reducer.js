@@ -8,7 +8,7 @@ import SelectCourseActionHandler from './SelectCourse/handleActions';
 import LoadPostsHandler from './Preview/PostPreviewLoader/loadPosts';
 import ExpandPostsHandler from './Preview/expandPosts';
 import Authentication from './Login/authenticate';
-import ReplyActionHandler from './Post/replyActions';
+import ViewActionHandler from './Post/viewActions';
 
 const ruleReducer = (state, action) => {
   // logged in rule middleware
@@ -30,7 +30,7 @@ const ruleReducer = (state, action) => {
       LoadPostsHandler,
       ExpandPostsHandler
     )),
-    replies: loggedIn(ReplyActionHandler),
+    replies: loggedIn(ViewActionHandler),
     credential: Authentication
   });
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Linking, Alert, Clipboard } from 'react-native';
 import { Button, Icon, Text, Separator } from 'native-base';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
@@ -7,6 +8,7 @@ import { PopupMenu } from 'hkufui/components';
 
 import { localize } from 'hkufui/locale';
 import themeStyles from 'hkufui/theme/Styles';
+import { email } from 'hkufui/config';
 const locale = localize({ language: 'en', country: 'hk' });
 
 import { onVote, onNotify, onAccept } from '../viewActions';
@@ -20,6 +22,7 @@ export class PostHeaderMenu extends Component {
     this._voteDown = this._voteDown.bind(this);
     this._enableNotification = this._enableNotification.bind(this);
     this._acceptAnswer = this._acceptAnswer.bind(this);
+    this._reportAbuse = this._reportAbuse.bind(this);
   }
 
   _voteUp() {
@@ -35,6 +38,23 @@ export class PostHeaderMenu extends Component {
   _enableNotification() {
     const { onNotify, topicId } = this.props;
     onNotify({ topicId });
+  }
+
+  _reportAbuse() {
+    const { address, subject, template, ref } = email;
+    const { postId } = this.props;
+    // open mail app to report
+    Linking.openURL(`mailto:${address}?subject=${subject}&body=${template(postId)}`)
+      .catch(() => {
+        Alert.alert(
+          locale['alert.noEmailTitle'],
+          locale['alert.noEmailContent'](address, ref(postId)),
+          [
+            {text: locale['alert.copy'], onPress: () => Clipboard.setString(`${address} - ${ref(postId)}`)},
+            {text: locale['toast.dismiss']}
+          ]
+        );
+      });
   }
 
   _acceptAnswer() {
@@ -77,7 +97,7 @@ export class PostHeaderMenu extends Component {
             <Text>{locale['header.notifications']}</Text>
           </Button>
         )}
-        <Button transparent iconLeft danger>
+        <Button transparent iconLeft danger onPress={this._reportAbuse}>
           <Icon name="report" type="MaterialIcons" style={themeStyles.icon}></Icon>
           <Text>{locale['header.abuse']}</Text>
         </Button>

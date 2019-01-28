@@ -18,7 +18,7 @@ class PostSwipable extends Component {
     const { index, selectedAnswer } = this.props;
     const { author, timestamp, content, temperature } = this.props.comment;
 
-    const hotStyle = temperature > hot ? styles.hot : null;
+    const hotStyle = temperature && temperature > hot ? styles.hot : null;
 
     return (
       <Content style={styles.container}>
@@ -33,10 +33,12 @@ class PostSwipable extends Component {
               {selectedAnswer && (<Icon name="checkbox-marked-circle-outline" type="MaterialCommunityIcons" style={styles.solved}/>)}
               {selectedAnswer && (<Text style={styles.solved}>{locale['replies.solved']}</Text>)}
             </View>
-            <View style={styles.rightPanel}>
-              <Icon style={[styles.temperature, hotStyle]} name="ios-flame" />
-              <Text style={[styles.temperature, hotStyle]}>{temperature}</Text>
-            </View>
+            {temperature != null && (
+              <View style={styles.rightPanel}>
+                <Icon style={[styles.temperature, hotStyle]} name="ios-flame" />
+                <Text style={[styles.temperature, hotStyle]}>{temperature}</Text>
+              </View>
+            )}
           </View>
           <View style={styles.contentContainer}>
             <Markdown style={styles}>{content}</Markdown>
@@ -54,7 +56,7 @@ PostSwipable.propTypes = {
     author: PropTypes.string,
     timestamp: PropTypes.string.isRequired,
     content: PropTypes.string.isRequired,
-    temperature: PropTypes.number.isRequired
+    temperature: PropTypes.number
   }).isRequired,
   selectedAnswer: PropTypes.bool
 };

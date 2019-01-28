@@ -16,7 +16,6 @@ export default [
   {
     "id": "5c448f33fa0a35cc3773e369",
     "timestamp": "Fri Feb 04 2011 13:54:37 GMT+0800 (Hong Kong Standard Time)",
-    "temperature": 4,
     "content": `
 __Advertisement :)__
 

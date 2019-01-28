@@ -41,6 +41,7 @@ ShallowWrapper {
         <Styled(Button)
           danger={true}
           iconLeft={true}
+          onPress={[Function]}
           transparent={true}
         >
           <Styled(Icon)
@@ -95,6 +96,7 @@ ShallowWrapper {
           ],
           "danger": true,
           "iconLeft": true,
+          "onPress": [Function],
           "transparent": true,
           "virtual": undefined,
         },
@@ -150,6 +152,7 @@ ShallowWrapper {
           <Styled(Button)
             danger={true}
             iconLeft={true}
+            onPress={[Function]}
             transparent={true}
           >
             <Styled(Icon)
@@ -204,6 +207,7 @@ ShallowWrapper {
             ],
             "danger": true,
             "iconLeft": true,
+            "onPress": [Function],
             "transparent": true,
             "virtual": undefined,
           },
@@ -310,6 +314,7 @@ ShallowWrapper {
         <Styled(Button)
           danger={true}
           iconLeft={true}
+          onPress={[Function]}
           transparent={true}
         >
           <Styled(Icon)
@@ -364,6 +369,7 @@ ShallowWrapper {
           ],
           "danger": true,
           "iconLeft": true,
+          "onPress": [Function],
           "transparent": true,
           "virtual": undefined,
         },
@@ -419,6 +425,7 @@ ShallowWrapper {
           <Styled(Button)
             danger={true}
             iconLeft={true}
+            onPress={[Function]}
             transparent={true}
           >
             <Styled(Icon)
@@ -473,6 +480,7 @@ ShallowWrapper {
             ],
             "danger": true,
             "iconLeft": true,
+            "onPress": [Function],
             "transparent": true,
             "virtual": undefined,
           },
@@ -578,6 +586,7 @@ ShallowWrapper {
         <Styled(Button)
           danger={true}
           iconLeft={true}
+          onPress={[Function]}
           transparent={true}
         >
           <Styled(Icon)
@@ -632,6 +641,7 @@ ShallowWrapper {
           ],
           "danger": true,
           "iconLeft": true,
+          "onPress": [Function],
           "transparent": true,
           "virtual": undefined,
         },
@@ -687,6 +697,7 @@ ShallowWrapper {
           <Styled(Button)
             danger={true}
             iconLeft={true}
+            onPress={[Function]}
             transparent={true}
           >
             <Styled(Icon)
@@ -741,6 +752,7 @@ ShallowWrapper {
             ],
             "danger": true,
             "iconLeft": true,
+            "onPress": [Function],
             "transparent": true,
             "virtual": undefined,
           },

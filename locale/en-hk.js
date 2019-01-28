@@ -45,5 +45,9 @@ export default {
 
   'fetch.noNetwork': 'Server is not connected.',
 
-  'toast.dismiss': 'Dismiss'
+  'toast.dismiss': 'Dismiss',
+
+  'alert.copy': 'Copy',
+  'alert.noEmailTitle': 'Email App Not Found',
+  'alert.noEmailContent': (a, b) => `Please send your report to\n\n${a}\n\n${b}\n\nWe appreciate your support.`
 }

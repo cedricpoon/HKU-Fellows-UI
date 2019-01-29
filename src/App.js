@@ -6,6 +6,7 @@ import { PersistGate } from 'redux-persist/integration/react'
 
 import AppContainer from './AppContainer';
 import NavigationService from './NavigationService';
+import { deepLink } from 'hkufui/config';
 
 import { store, persistor } from './store';
 
@@ -20,6 +21,7 @@ export default class App extends Component {
                 ref={navigatorRef => {
                   NavigationService.setTopLevelNavigator(navigatorRef);
                 }}
+                uriPrefix={deepLink.prefix}
               />
             </StyleProvider>
           </Root>

@@ -1,8 +1,30 @@
 import React, { Component } from 'react';
+import { Share } from 'react-native';
 import PropTypes from 'prop-types';
 import { Footer, FooterTab, Button, Icon } from 'native-base';
 
 class PostFooter extends Component {
+  async _share() {
+    const { sharePayload } = this.props;
+    try {
+      const result = await Share.share({
+        message: sharePayload
+      })
+
+      if (result.action === Share.sharedAction) {
+        if (result.activityType) {
+          // shared with activity type of result.activityType
+        } else {
+          // shared
+        }
+      } else if (result.action === Share.dismissedAction) {
+        // dismissed
+      }
+    } catch (error) {
+      return;
+    }
+  }
+
   render() {
     const { firstPage, lastPage, onPageChangeThunk, onRefresh, enableRefresh } = this.props;
 
@@ -18,7 +40,7 @@ class PostFooter extends Component {
           <Button>
             <Icon name="comment-text-outline" type="MaterialCommunityIcons" />
           </Button>
-          <Button>
+          <Button onPress={this._share}>
             <Icon name="share-variant" type="MaterialCommunityIcons" />
           </Button>
           <Button transparent={lastPage} disabled={lastPage} onPress={onPageChangeThunk(1)}>
@@ -40,7 +62,8 @@ PostFooter.propTypes = {
   lastPage: PropTypes.bool,
   onPageChangeThunk: PropTypes.func,
   onRefresh: PropTypes.func,
-  enableRefresh: PropTypes.bool
+  enableRefresh: PropTypes.bool,
+  sharePayload: PropTypes.string
 }
 
 export default PostFooter;

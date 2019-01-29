@@ -7,6 +7,7 @@ import PropTypes from 'prop-types';
 
 import PostHeaderMenu from './PostHeaderMenu/PostHeaderMenu';
 import { mapLayoutToState } from 'hkufui/components/helper';
+import NavigationService from 'hkufui/src/NavigationService';
 import * as _loadStatus from 'hkufui/src/constants/loadStatus';
 import { Header, PostFooter, PostSwipable } from 'hkufui/components';
 import { show1s } from 'hkufui/src/toastHelper';
@@ -66,8 +67,15 @@ export class Post extends Component {
     /* all props from <PostPreview /> has been passed */
     if (navigation) {
       const { params } = navigation.state;
+      /* parse from deep linking */
+      let payload;
+      try {
+        payload = params && params.payload ? JSON.parse(decodeURI(params.payload)) : params;
+      } catch (e) {
+        payload = params;
+      }
       this.setState({
-        ...params
+        ...payload
       });
       // start loading replies
       onLoadReplies(params.id);
@@ -76,7 +84,15 @@ export class Post extends Component {
 
   render() {
     const { id, title, subtitle, native, solved, currentPage } = this.state;
-    const { comments, onRefreshReplies, loadStatus } = this.props;
+    const { comments, onRefreshReplies, loadStatus, credential } = this.props;
+
+    /* unauthorized deep link */
+    if (!credential) {
+      NavigationService.goBack();
+      return null;
+    }
+    /* construct share payload */
+    const sharePayload = { id, title, subtitle, native, solved };
 
     return (
       <Container>
@@ -112,6 +128,7 @@ export class Post extends Component {
           }}
           onRefresh={() => { onRefreshReplies(id) }}
           enableRefresh={loadStatus === _loadStatus.OK}
+          sharePayload={encodeURI(JSON.stringify(sharePayload))}
         />
       </Container>
     );
@@ -122,12 +139,14 @@ Post.propTypes = {
   comments: PropTypes.array,
   onLoadReplies: PropTypes.func,
   onRefreshReplies: PropTypes.func,
+  credential: PropTypes.object,
   loadStatus: PropTypes.oneOf(Object.values(_loadStatus))
 }
 
 const mapStateToProps = state => ({
   comments: state.replies.replies,
-  loadStatus: state.replies.status
+  loadStatus: state.replies.status,
+  credential: state.credential
 });
 
 const mapDispatchToProps = dispatch => ({

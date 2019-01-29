@@ -10,5 +10,10 @@ export const email = {
   template: postId => `Your UID:\n\nIncident Location:\n\nIncident Details:\n\n${refNo(postId)}`
 };
 
+export const deepLink = {
+  prefix: 'hkufui://',
+  post: i => `post/${i}`
+};
+
 // eslint-disable-next-line no-undef
 export const environment = process.env['NODE_ENV'];

@@ -4,24 +4,16 @@ import PropTypes from 'prop-types';
 import { Footer, FooterTab, Button, Icon } from 'native-base';
 
 import { deepLink } from 'hkufui/config';
+import appString from 'hkufui/app.json';
 
 class PostFooter extends Component {
   async _share() {
-    const { sharePayload } = this.props;
+    const { sharePayload, title, subtitle } = this.props;
+    const _subtitle = subtitle ? ` · ${subtitle}` : '';
     try {
-      const result = await Share.share({
-        message: `${deepLink.prefix}${deepLink.post(sharePayload)}`
+      await Share.share({
+        message: `[${appString.displayName}]\n${title}${_subtitle}\n${deepLink.prefix}${deepLink.post(sharePayload)}`
       })
-
-      if (result.action === Share.sharedAction) {
-        if (result.activityType) {
-          // shared with activity type of result.activityType
-        } else {
-          // shared
-        }
-      } else if (result.action === Share.dismissedAction) {
-        // dismissed
-      }
     } catch (error) {
       return;
     }
@@ -65,7 +57,9 @@ PostFooter.propTypes = {
   onPageChangeThunk: PropTypes.func,
   onRefresh: PropTypes.func,
   enableRefresh: PropTypes.bool,
-  sharePayload: PropTypes.string
+  sharePayload: PropTypes.string,
+  title: PropTypes.string,
+  subtitle: PropTypes.string
 }
 
 export default PostFooter;

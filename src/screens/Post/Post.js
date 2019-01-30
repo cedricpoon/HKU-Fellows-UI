@@ -131,6 +131,8 @@ export class Post extends Component {
           onRefresh={() => { onRefreshReplies(id) }}
           enableRefresh={loadStatus === _loadStatus.OK}
           sharePayload={encryptor(sharePayload)}
+          title={title}
+          subtitle={subtitle}
         />
       </Container>
     );

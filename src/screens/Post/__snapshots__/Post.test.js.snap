@@ -55,6 +55,7 @@ ShallowWrapper {
           onPageChangeThunk={[Function]}
           onRefresh={[Function]}
           sharePayload=""
+          title=""
         />,
       ],
       "virtual": undefined,
@@ -111,6 +112,8 @@ ShallowWrapper {
           "onPageChangeThunk": [Function],
           "onRefresh": [Function],
           "sharePayload": "",
+          "subtitle": undefined,
+          "title": "",
         },
         "ref": null,
         "rendered": null,
@@ -158,6 +161,7 @@ ShallowWrapper {
             onPageChangeThunk={[Function]}
             onRefresh={[Function]}
             sharePayload=""
+            title=""
           />,
         ],
         "virtual": undefined,
@@ -214,6 +218,8 @@ ShallowWrapper {
             "onPageChangeThunk": [Function],
             "onRefresh": [Function],
             "sharePayload": "",
+            "subtitle": undefined,
+            "title": "",
           },
           "ref": null,
           "rendered": null,
@@ -304,6 +310,7 @@ ShallowWrapper {
           onPageChangeThunk={[Function]}
           onRefresh={[Function]}
           sharePayload=""
+          title=""
         />,
       ],
       "virtual": undefined,
@@ -360,6 +367,8 @@ ShallowWrapper {
           "onPageChangeThunk": [Function],
           "onRefresh": [Function],
           "sharePayload": "",
+          "subtitle": undefined,
+          "title": "",
         },
         "ref": null,
         "rendered": null,
@@ -408,6 +417,7 @@ ShallowWrapper {
             onPageChangeThunk={[Function]}
             onRefresh={[Function]}
             sharePayload=""
+            title=""
           />,
         ],
         "virtual": undefined,
@@ -464,6 +474,8 @@ ShallowWrapper {
             "onPageChangeThunk": [Function],
             "onRefresh": [Function],
             "sharePayload": "",
+            "subtitle": undefined,
+            "title": "",
           },
           "ref": null,
           "rendered": null,

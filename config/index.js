@@ -13,7 +13,7 @@ export const email = {
 };
 
 export const deepLink = {
-  prefix: 'hkufui://',
+  prefix: 'fellows://',
   post: i => `post/${i}`
 };
 

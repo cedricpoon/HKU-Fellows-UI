@@ -24,12 +24,12 @@
 	<array>
 		<dict>
 			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
+			<string>Viewer</string>
 			<key>CFBundleURLName</key>
-			<string>hkufui</string>
+			<string>hku.cs.fyp18005.hkufui.url</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>hkufui</string>
+				<string>fellows</string>
 			</array>
 		</dict>
 	</array>

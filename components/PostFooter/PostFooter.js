@@ -3,12 +3,14 @@ import { Share } from 'react-native';
 import PropTypes from 'prop-types';
 import { Footer, FooterTab, Button, Icon } from 'native-base';
 
+import { deepLink } from 'hkufui/config';
+
 class PostFooter extends Component {
   async _share() {
     const { sharePayload } = this.props;
     try {
       const result = await Share.share({
-        message: sharePayload
+        message: `${deepLink.prefix}${deepLink.post(sharePayload)}`
       })
 
       if (result.action === Share.sharedAction) {
@@ -40,7 +42,7 @@ class PostFooter extends Component {
           <Button>
             <Icon name="comment-text-outline" type="MaterialCommunityIcons" />
           </Button>
-          <Button onPress={this._share}>
+          <Button onPress={this._share.bind(this)}>
             <Icon name="share-variant" type="MaterialCommunityIcons" />
           </Button>
           <Button transparent={lastPage} disabled={lastPage} onPress={onPageChangeThunk(1)}>

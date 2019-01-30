@@ -3,7 +3,11 @@
 exports[`Testing Post Screen is loading 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Post />,
+  Symbol(enzyme.__unrendered__): <Post
+    credential={Object {}}
+    decryptor={[Function]}
+    encryptor={[Function]}
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -50,6 +54,7 @@ ShallowWrapper {
           lastPage={true}
           onPageChangeThunk={[Function]}
           onRefresh={[Function]}
+          sharePayload=""
         />,
       ],
       "virtual": undefined,
@@ -105,6 +110,7 @@ ShallowWrapper {
           "lastPage": true,
           "onPageChangeThunk": [Function],
           "onRefresh": [Function],
+          "sharePayload": "",
         },
         "ref": null,
         "rendered": null,
@@ -151,6 +157,7 @@ ShallowWrapper {
             lastPage={true}
             onPageChangeThunk={[Function]}
             onRefresh={[Function]}
+            sharePayload=""
           />,
         ],
         "virtual": undefined,
@@ -206,6 +213,7 @@ ShallowWrapper {
             "lastPage": true,
             "onPageChangeThunk": [Function],
             "onRefresh": [Function],
+            "sharePayload": "",
           },
           "ref": null,
           "rendered": null,
@@ -244,6 +252,9 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Post
     comments={Array []}
+    credential={Object {}}
+    decryptor={[Function]}
+    encryptor={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -292,6 +303,7 @@ ShallowWrapper {
           lastPage={true}
           onPageChangeThunk={[Function]}
           onRefresh={[Function]}
+          sharePayload=""
         />,
       ],
       "virtual": undefined,
@@ -347,6 +359,7 @@ ShallowWrapper {
           "lastPage": true,
           "onPageChangeThunk": [Function],
           "onRefresh": [Function],
+          "sharePayload": "",
         },
         "ref": null,
         "rendered": null,
@@ -394,6 +407,7 @@ ShallowWrapper {
             lastPage={true}
             onPageChangeThunk={[Function]}
             onRefresh={[Function]}
+            sharePayload=""
           />,
         ],
         "virtual": undefined,
@@ -449,6 +463,7 @@ ShallowWrapper {
             "lastPage": true,
             "onPageChangeThunk": [Function],
             "onRefresh": [Function],
+            "sharePayload": "",
           },
           "ref": null,
           "rendered": null,

@@ -45,7 +45,9 @@ ShallowWrapper {
             type="MaterialCommunityIcons"
           />
         </Styled(Button)>
-        <Styled(Button)>
+        <Styled(Button)
+          onPress={[Function]}
+        >
           <Styled(Icon)
             name="share-variant"
             type="MaterialCommunityIcons"
@@ -92,7 +94,9 @@ ShallowWrapper {
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>,
-          <Styled(Button)>
+          <Styled(Button)
+            onPress={[Function]}
+          >
             <Styled(Icon)
               name="share-variant"
               type="MaterialCommunityIcons"
@@ -207,6 +211,7 @@ ShallowWrapper {
               name="share-variant"
               type="MaterialCommunityIcons"
             />,
+            "onPress": [Function],
             "virtual": undefined,
           },
           "ref": null,
@@ -290,7 +295,9 @@ ShallowWrapper {
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>
-          <Styled(Button)>
+          <Styled(Button)
+            onPress={[Function]}
+          >
             <Styled(Icon)
               name="share-variant"
               type="MaterialCommunityIcons"
@@ -337,7 +344,9 @@ ShallowWrapper {
                 type="MaterialCommunityIcons"
               />
             </Styled(Button)>,
-            <Styled(Button)>
+            <Styled(Button)
+              onPress={[Function]}
+            >
               <Styled(Icon)
                 name="share-variant"
                 type="MaterialCommunityIcons"
@@ -452,6 +461,7 @@ ShallowWrapper {
                 name="share-variant"
                 type="MaterialCommunityIcons"
               />,
+              "onPress": [Function],
               "virtual": undefined,
             },
             "ref": null,
@@ -481,6 +491,547 @@ ShallowWrapper {
               />,
               "disabled": undefined,
               "onPress": [Function],
+              "transparent": undefined,
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "arrow-right",
+                "type": "MaterialCommunityIcons",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing PostFooter Component contains share payload 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PostFooter
+    enableRefresh={true}
+    onPageChangeThunk={[Function]}
+    sharePayload="..."
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <Styled(FooterTab)>
+        <Styled(Button)
+          onPress={null}
+        >
+          <Styled(Icon)
+            name="arrow-left"
+            type="MaterialCommunityIcons"
+          />
+        </Styled(Button)>
+        <Styled(Button)
+          disabled={false}
+          transparent={false}
+        >
+          <Styled(Icon)
+            name="refresh"
+            type="MaterialCommunityIcons"
+          />
+        </Styled(Button)>
+        <Styled(Button)>
+          <Styled(Icon)
+            name="comment-text-outline"
+            type="MaterialCommunityIcons"
+          />
+        </Styled(Button)>
+        <Styled(Button)
+          onPress={[Function]}
+        >
+          <Styled(Icon)
+            name="share-variant"
+            type="MaterialCommunityIcons"
+          />
+        </Styled(Button)>
+        <Styled(Button)
+          onPress={null}
+        >
+          <Styled(Icon)
+            name="arrow-right"
+            type="MaterialCommunityIcons"
+          />
+        </Styled(Button)>
+      </Styled(FooterTab)>,
+      "virtual": undefined,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Styled(Button)
+            onPress={null}
+          >
+            <Styled(Icon)
+              name="arrow-left"
+              type="MaterialCommunityIcons"
+            />
+          </Styled(Button)>,
+          <Styled(Button)
+            disabled={false}
+            transparent={false}
+          >
+            <Styled(Icon)
+              name="refresh"
+              type="MaterialCommunityIcons"
+            />
+          </Styled(Button)>,
+          <Styled(Button)>
+            <Styled(Icon)
+              name="comment-text-outline"
+              type="MaterialCommunityIcons"
+            />
+          </Styled(Button)>,
+          <Styled(Button)
+            onPress={[Function]}
+          >
+            <Styled(Icon)
+              name="share-variant"
+              type="MaterialCommunityIcons"
+            />
+          </Styled(Button)>,
+          <Styled(Button)
+            onPress={null}
+          >
+            <Styled(Icon)
+              name="arrow-right"
+              type="MaterialCommunityIcons"
+            />
+          </Styled(Button)>,
+        ],
+        "virtual": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Styled(Icon)
+              name="arrow-left"
+              type="MaterialCommunityIcons"
+            />,
+            "disabled": undefined,
+            "onPress": null,
+            "transparent": undefined,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "arrow-left",
+              "type": "MaterialCommunityIcons",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Styled(Icon)
+              name="refresh"
+              type="MaterialCommunityIcons"
+            />,
+            "disabled": false,
+            "onPress": undefined,
+            "transparent": false,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "refresh",
+              "type": "MaterialCommunityIcons",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Styled(Icon)
+              name="comment-text-outline"
+              type="MaterialCommunityIcons"
+            />,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "comment-text-outline",
+              "type": "MaterialCommunityIcons",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Styled(Icon)
+              name="share-variant"
+              type="MaterialCommunityIcons"
+            />,
+            "onPress": [Function],
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "share-variant",
+              "type": "MaterialCommunityIcons",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Styled(Icon)
+              name="arrow-right"
+              type="MaterialCommunityIcons"
+            />,
+            "disabled": undefined,
+            "onPress": null,
+            "transparent": undefined,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "arrow-right",
+              "type": "MaterialCommunityIcons",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <Styled(FooterTab)>
+          <Styled(Button)
+            onPress={null}
+          >
+            <Styled(Icon)
+              name="arrow-left"
+              type="MaterialCommunityIcons"
+            />
+          </Styled(Button)>
+          <Styled(Button)
+            disabled={false}
+            transparent={false}
+          >
+            <Styled(Icon)
+              name="refresh"
+              type="MaterialCommunityIcons"
+            />
+          </Styled(Button)>
+          <Styled(Button)>
+            <Styled(Icon)
+              name="comment-text-outline"
+              type="MaterialCommunityIcons"
+            />
+          </Styled(Button)>
+          <Styled(Button)
+            onPress={[Function]}
+          >
+            <Styled(Icon)
+              name="share-variant"
+              type="MaterialCommunityIcons"
+            />
+          </Styled(Button)>
+          <Styled(Button)
+            onPress={null}
+          >
+            <Styled(Icon)
+              name="arrow-right"
+              type="MaterialCommunityIcons"
+            />
+          </Styled(Button)>
+        </Styled(FooterTab)>,
+        "virtual": undefined,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(Button)
+              onPress={null}
+            >
+              <Styled(Icon)
+                name="arrow-left"
+                type="MaterialCommunityIcons"
+              />
+            </Styled(Button)>,
+            <Styled(Button)
+              disabled={false}
+              transparent={false}
+            >
+              <Styled(Icon)
+                name="refresh"
+                type="MaterialCommunityIcons"
+              />
+            </Styled(Button)>,
+            <Styled(Button)>
+              <Styled(Icon)
+                name="comment-text-outline"
+                type="MaterialCommunityIcons"
+              />
+            </Styled(Button)>,
+            <Styled(Button)
+              onPress={[Function]}
+            >
+              <Styled(Icon)
+                name="share-variant"
+                type="MaterialCommunityIcons"
+              />
+            </Styled(Button)>,
+            <Styled(Button)
+              onPress={null}
+            >
+              <Styled(Icon)
+                name="arrow-right"
+                type="MaterialCommunityIcons"
+              />
+            </Styled(Button)>,
+          ],
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Icon)
+                name="arrow-left"
+                type="MaterialCommunityIcons"
+              />,
+              "disabled": undefined,
+              "onPress": null,
+              "transparent": undefined,
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "arrow-left",
+                "type": "MaterialCommunityIcons",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Icon)
+                name="refresh"
+                type="MaterialCommunityIcons"
+              />,
+              "disabled": false,
+              "onPress": undefined,
+              "transparent": false,
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "refresh",
+                "type": "MaterialCommunityIcons",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Icon)
+                name="comment-text-outline"
+                type="MaterialCommunityIcons"
+              />,
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "comment-text-outline",
+                "type": "MaterialCommunityIcons",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Icon)
+                name="share-variant"
+                type="MaterialCommunityIcons"
+              />,
+              "onPress": [Function],
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "share-variant",
+                "type": "MaterialCommunityIcons",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Icon)
+                name="arrow-right"
+                type="MaterialCommunityIcons"
+              />,
+              "disabled": undefined,
+              "onPress": null,
               "transparent": undefined,
               "virtual": undefined,
             },
@@ -578,7 +1129,9 @@ ShallowWrapper {
             type="MaterialCommunityIcons"
           />
         </Styled(Button)>
-        <Styled(Button)>
+        <Styled(Button)
+          onPress={[Function]}
+        >
           <Styled(Icon)
             name="share-variant"
             type="MaterialCommunityIcons"
@@ -627,7 +1180,9 @@ ShallowWrapper {
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>,
-          <Styled(Button)>
+          <Styled(Button)
+            onPress={[Function]}
+          >
             <Styled(Icon)
               name="share-variant"
               type="MaterialCommunityIcons"
@@ -742,6 +1297,7 @@ ShallowWrapper {
               name="share-variant"
               type="MaterialCommunityIcons"
             />,
+            "onPress": [Function],
             "virtual": undefined,
           },
           "ref": null,
@@ -827,7 +1383,9 @@ ShallowWrapper {
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>
-          <Styled(Button)>
+          <Styled(Button)
+            onPress={[Function]}
+          >
             <Styled(Icon)
               name="share-variant"
               type="MaterialCommunityIcons"
@@ -876,7 +1434,9 @@ ShallowWrapper {
                 type="MaterialCommunityIcons"
               />
             </Styled(Button)>,
-            <Styled(Button)>
+            <Styled(Button)
+              onPress={[Function]}
+            >
               <Styled(Icon)
                 name="share-variant"
                 type="MaterialCommunityIcons"
@@ -991,6 +1551,7 @@ ShallowWrapper {
                 name="share-variant"
                 type="MaterialCommunityIcons"
               />,
+              "onPress": [Function],
               "virtual": undefined,
             },
             "ref": null,
@@ -1115,7 +1676,9 @@ ShallowWrapper {
             type="MaterialCommunityIcons"
           />
         </Styled(Button)>
-        <Styled(Button)>
+        <Styled(Button)
+          onPress={[Function]}
+        >
           <Styled(Icon)
             name="share-variant"
             type="MaterialCommunityIcons"
@@ -1164,7 +1727,9 @@ ShallowWrapper {
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>,
-          <Styled(Button)>
+          <Styled(Button)
+            onPress={[Function]}
+          >
             <Styled(Icon)
               name="share-variant"
               type="MaterialCommunityIcons"
@@ -1281,6 +1846,7 @@ ShallowWrapper {
               name="share-variant"
               type="MaterialCommunityIcons"
             />,
+            "onPress": [Function],
             "virtual": undefined,
           },
           "ref": null,
@@ -1364,7 +1930,9 @@ ShallowWrapper {
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>
-          <Styled(Button)>
+          <Styled(Button)
+            onPress={[Function]}
+          >
             <Styled(Icon)
               name="share-variant"
               type="MaterialCommunityIcons"
@@ -1413,7 +1981,9 @@ ShallowWrapper {
                 type="MaterialCommunityIcons"
               />
             </Styled(Button)>,
-            <Styled(Button)>
+            <Styled(Button)
+              onPress={[Function]}
+            >
               <Styled(Icon)
                 name="share-variant"
                 type="MaterialCommunityIcons"
@@ -1530,6 +2100,7 @@ ShallowWrapper {
                 name="share-variant"
                 type="MaterialCommunityIcons"
               />,
+              "onPress": [Function],
               "virtual": undefined,
             },
             "ref": null,
@@ -1653,7 +2224,9 @@ ShallowWrapper {
             type="MaterialCommunityIcons"
           />
         </Styled(Button)>
-        <Styled(Button)>
+        <Styled(Button)
+          onPress={[Function]}
+        >
           <Styled(Icon)
             name="share-variant"
             type="MaterialCommunityIcons"
@@ -1700,7 +2273,9 @@ ShallowWrapper {
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>,
-          <Styled(Button)>
+          <Styled(Button)
+            onPress={[Function]}
+          >
             <Styled(Icon)
               name="share-variant"
               type="MaterialCommunityIcons"
@@ -1815,6 +2390,7 @@ ShallowWrapper {
               name="share-variant"
               type="MaterialCommunityIcons"
             />,
+            "onPress": [Function],
             "virtual": undefined,
           },
           "ref": null,
@@ -1898,7 +2474,9 @@ ShallowWrapper {
               type="MaterialCommunityIcons"
             />
           </Styled(Button)>
-          <Styled(Button)>
+          <Styled(Button)
+            onPress={[Function]}
+          >
             <Styled(Icon)
               name="share-variant"
               type="MaterialCommunityIcons"
@@ -1945,7 +2523,9 @@ ShallowWrapper {
                 type="MaterialCommunityIcons"
               />
             </Styled(Button)>,
-            <Styled(Button)>
+            <Styled(Button)
+              onPress={[Function]}
+            >
               <Styled(Icon)
                 name="share-variant"
                 type="MaterialCommunityIcons"
@@ -2060,6 +2640,7 @@ ShallowWrapper {
                 name="share-variant"
                 type="MaterialCommunityIcons"
               />,
+              "onPress": [Function],
               "virtual": undefined,
             },
             "ref": null,

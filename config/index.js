@@ -2,6 +2,8 @@ export const hotPostMinIndex = 5;
 
 export const persistStoreKey = 'hkufui.local';
 
+export const cipherKey = 'DoNotGoGentleIntoThatGoodNight';
+
 const refNo = postId => `Ref No.: ${postId}`;
 export const email = {
   address:'fyp18005@cs.hku.hk',

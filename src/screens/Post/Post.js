@@ -11,6 +11,7 @@ import NavigationService from 'hkufui/src/NavigationService';
 import * as _loadStatus from 'hkufui/src/constants/loadStatus';
 import { Header, PostFooter, PostSwipable } from 'hkufui/components';
 import { show1s } from 'hkufui/src/toastHelper';
+import { encrypt, decrypt } from 'hkufui/src/safe';
 
 import { onLoad, onClear, onRefresh } from './viewActions';
 import styles from './Styles';
@@ -22,6 +23,7 @@ export class Post extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      id: '',
       title: '',
       currentPage: 0,
       headerLayout: { y: 0, height: 0 }
@@ -63,16 +65,16 @@ export class Post extends Component {
   }
 
   componentDidMount() {
-    const { navigation, onLoadReplies } = this.props;
+    const { navigation, onLoadReplies, decryptor } = this.props;
     /* all props from <PostPreview /> has been passed */
     if (navigation) {
       const { params } = navigation.state;
       /* parse from deep linking */
       let payload;
       try {
-        payload = params && params.payload ? JSON.parse(decodeURI(params.payload)) : params;
+        payload = params && params.payload ? decryptor(params.payload) : params;
       } catch (e) {
-        payload = params;
+        NavigationService.goBack();
       }
       this.setState({
         ...payload
@@ -84,7 +86,7 @@ export class Post extends Component {
 
   render() {
     const { id, title, subtitle, native, solved, currentPage } = this.state;
-    const { comments, onRefreshReplies, loadStatus, credential } = this.props;
+    const { comments, onRefreshReplies, loadStatus, credential, encryptor } = this.props;
 
     /* unauthorized deep link */
     if (!credential) {
@@ -128,20 +130,27 @@ export class Post extends Component {
           }}
           onRefresh={() => { onRefreshReplies(id) }}
           enableRefresh={loadStatus === _loadStatus.OK}
-          sharePayload={encodeURI(JSON.stringify(sharePayload))}
+          sharePayload={encryptor(sharePayload)}
         />
       </Container>
     );
   }
 }
 
+Post.defaultProps = {
+  encryptor: encrypt,
+  decryptor: decrypt
+};
+
 Post.propTypes = {
   comments: PropTypes.array,
   onLoadReplies: PropTypes.func,
   onRefreshReplies: PropTypes.func,
   credential: PropTypes.object,
-  loadStatus: PropTypes.oneOf(Object.values(_loadStatus))
-}
+  loadStatus: PropTypes.oneOf(Object.values(_loadStatus)),
+  encryptor: PropTypes.func.isRequired,
+  decryptor: PropTypes.func.isRequired
+};
 
 const mapStateToProps = state => ({
   comments: state.replies.replies,

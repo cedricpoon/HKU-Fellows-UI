@@ -33,7 +33,7 @@ describe('Testing PostFooter Component', () => {
 
   it('contains share payload', () => {
     const wrapper = shallow(
-      <PostFooter sharePayload='%7B%22a%22:%22a%22,%22b%22:%22c%22%7D' />
+      <PostFooter sharePayload='...' />
     );
     expect(wrapper).toMatchSnapshot();
   });

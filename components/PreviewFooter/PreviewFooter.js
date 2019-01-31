@@ -52,7 +52,7 @@ class PreviewFooter extends Component {
             </Button>
           )}
           {!muted && (
-            <Button>
+            <Button onPress={() => { NavigationService.navigate('Compose') }}>
               <Icon name="comment-plus-outline" type="MaterialCommunityIcons" />
             </Button>
           )}
@@ -66,7 +66,7 @@ class PreviewFooter extends Component {
             </Button>
           )}
           <Button
-            onPress={()=>{ NavigationService.navigate('SelectCourse') }}
+            onPress={() => { NavigationService.navigate('SelectCourse') }}
           >
             <Icon name="view-list" type="MaterialIcons" />
           </Button>

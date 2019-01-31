@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Dimensions } from 'react-native';
 import PropTypes from 'prop-types';
-import { Content } from 'native-base';
-import { PlaceholderContainer } from 'react-native-loading-placeholder';
+import { Content, View } from 'native-base';
+import { PlaceholderContainer, Placeholder } from 'react-native-loading-placeholder';
 import LinearGradient from 'react-native-linear-gradient';
 
 import BarIndicator from './BarIndicator/BarIndicator';
@@ -24,16 +24,31 @@ class PostLoadIndicator extends Component {
   }
 
   render() {
-    const { multiple, ...restProps } = this.props;
+    const { multiple, page, ...restProps } = this.props;
     const { height } = Dimensions.get('window');
     let context = [];
+    const groupHeight = page ? consts.PARAGRAPH_GROUP_HEIGHT : consts.LOADER_GROUP_HEIGHT;
 
-    if (multiple) {
-      for (let i = 0; i < height - consts.EST_FOOTER_HEIGHT - consts.EST_HEADER_HEIGHT; i += consts.LOADER_GROUP_HEIGHT) {
+    if (page || multiple) {
+      if (page) {
+        // render headline
+        context.push(
+          <View key={-1}>
+            <Placeholder
+              style={[styles.placeholder, styles.placeholderMedium, styles.paragraphGroup]}
+            />
+            <View
+              style={styles.headlineHr}
+            />
+          </View>
+        );
+      }
+      for (let i = 0; i < height - consts.EST_FOOTER_HEIGHT - consts.EST_HEADER_HEIGHT; i += groupHeight) {
         context.push(
           <BarIndicator
             key={i}
             delay={(i / consts.LOADER_GROUP_HEIGHT + 1) * consts.DELAY_BASE}
+            paragraph={page}
             {...restProps}
           />
         );
@@ -59,7 +74,8 @@ class PostLoadIndicator extends Component {
 }
 
 PostLoadIndicator.propTypes = {
-  multiple: PropTypes.bool
+  multiple: PropTypes.bool,
+  page: PropTypes.bool
 }
 
 export default PostLoadIndicator;

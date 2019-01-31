@@ -7,7 +7,11 @@ import { connect } from 'react-redux';
 import { PreviewFooter, PreviewHeader, PostLoadIndicator } from 'hkufui/components';
 import PostPreviewLoader from './PostPreviewLoader/PostPreviewLoader'
 
-import { BLAND, EXPANDING, HALT } from 'hkufui/src/constants/expandStatus';
+import * as _expandStatus from 'hkufui/src/constants/expandStatus';
+import { BLAND, EXPANDING } from 'hkufui/src/constants/expandStatus';
+import * as _loadStatus from 'hkufui/src/constants/loadStatus';
+import { OK } from 'hkufui/src/constants/loadStatus';
+
 import { fetchPostsSafe } from './PostPreviewLoader/loadPosts';
 import { fetchExpansion } from './expandPosts';
 import styles from './Styles';
@@ -74,7 +78,7 @@ export class Preview extends Component {
   }
 
   render() {
-    const { location } = this.props;
+    const { location, loadStatus } = this.props;
 
     return (
       <Container>
@@ -94,6 +98,7 @@ export class Preview extends Component {
         <PreviewFooter
           muted={location === ''}
           onRefresh={this._refresh}
+          refreshing={loadStatus !== OK}
         />
       </Container>
     );
@@ -108,12 +113,14 @@ Preview.propTypes = {
   location: PropTypes.string,
   onLoadPost: PropTypes.func.isRequired,
   onLoadMore: PropTypes.func.isRequired,
-  expandStatus: PropTypes.oneOf([ BLAND, EXPANDING, HALT ]).isRequired
+  expandStatus: PropTypes.oneOf(Object.values(_expandStatus)).isRequired,
+  loadStatus: PropTypes.oneOf(Object.values(_loadStatus)).isRequired
 }
 
 const mapStateToProps = state => ({
   location: state.location.courseTitle,
-  expandStatus: state.posts.subStatus
+  expandStatus: state.posts.subStatus,
+  loadStatus: state.posts.status
 });
 
 const mapDispatchToProps = dispatch => ({

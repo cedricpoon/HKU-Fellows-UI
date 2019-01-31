@@ -21,3 +21,9 @@ export const LOGGED_IN = "LOGGED_IN";
 export const LOGGING_IN = "LOGGING_IN";
 
 export const LOGOUT = "LOGOUT";
+
+export const FILL_REPLIES = "FILL_REPLIES";
+
+export const LOAD_REPLIES = "LOAD_REPLIES";
+
+export const REFRESH_REPLIES = "REFRESH_REPLIES";

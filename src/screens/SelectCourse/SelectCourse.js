@@ -10,6 +10,7 @@ import courses from 'hkufui/static/courses';
 import { onUpdateLocation, onSetSelectCourseIndex } from './handleActions';
 import { fetchPostsSafe } from '../Preview/PostPreviewLoader/loadPosts';
 import { formBreadcrumbString } from './helper';
+import styles from './Styles';
 
 const locale = localize({ language: 'en', country: 'hk' });
 
@@ -47,6 +48,7 @@ export class SelectCourse extends Component {
           title={{ context: locale['header.course'] }}
           backable
           rightIcon='arrow-dropup'
+          rightStyle={styles.collapseButton}
           onRightPress={() => {
             this._courseScrollable.collapseAll();
           }}

@@ -11,7 +11,8 @@ export const logo = {
   },
   dimmed: {
     yellow: '#E5CB26',
-    green: '#3A936B'
+    green: '#3A936B',
+    blue: '#2F78B0'
   }
 };
 

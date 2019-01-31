@@ -1,42 +1,46 @@
 import React, { Component } from 'react';
 import { Button, Icon, Text } from 'native-base';
+import PropTypes from 'prop-types';
 
-import PopupMenu from '../PopupMenu/PopupMenu';
+import PopupMenu from '../../PopupMenu/PopupMenu';
 
 import { localize } from 'hkufui/locale';
+import styles from 'hkufui/theme/Styles';
 const locale = localize({ language: 'en', country: 'hk' });
 
 class FilterPopup extends Component {
-
   render() {
-    const { ...restProps } = this.props;
+    const { onRef, ...restProps } = this.props;
 
     return(
-      <PopupMenu { ...restProps } /* Proptypes handling on <PopupMenu /> */ >
-        <Button full transparent info iconRight>
+      <PopupMenu
+       /* Proptypes handling on <PopupMenu /> */
+        ref={onRef}
+        { ...restProps }
+      >
+        <Button transparent info iconLeft>
+          <Icon name="link" type="MaterialIcons" style={styles.icon}></Icon>
           <Text>{locale['footer.moodle']}</Text>
-          <Icon name="link" type="MaterialIcons"></Icon>
         </Button>
-        <Button full transparent success iconRight>
+        <Button transparent success iconLeft>
+          <Icon name="clock-fast" type="MaterialCommunityIcons" style={styles.icon}></Icon>
           <Text>{locale['footer.latestPost']}</Text>
-          <Icon name="clock-fast" type="MaterialCommunityIcons"></Icon>
         </Button>
-        <Button full transparent success iconRight>
+        <Button transparent success iconLeft>
+          <Icon name="undo" style={styles.icon}></Icon>
           <Text>{locale['footer.mostReplied']}</Text>
-          <Icon name="undo"></Icon>
         </Button>
-        <Button full transparent success iconRight>
+        <Button transparent success iconLeft>
+          <Icon name="people" type="MaterialIcons" style={styles.icon}></Icon>
           <Text>{locale['footer.popularity']}</Text>
-          <Icon name="people" type="MaterialIcons"></Icon>
         </Button>
       </PopupMenu>
     );
   }
 }
 
-FilterPopup.proptypes = {
-  /* Require PopupMenu proptypes */
-  ...PopupMenu.proptypes
+FilterPopup.propTypes = {
+  onRef: PropTypes.func
 }
 
 export default FilterPopup;

@@ -1,0 +1,510 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Post Screen is loading 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Post
+    credential={Object {}}
+    decryptor={[Function]}
+    encryptor={[Function]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        undefined,
+        <Header
+          animated={false}
+          backable={true}
+          onLayout={[Function]}
+          onRightPress={[Function]}
+          rightIcon={null}
+          rightStyle={
+            Object {
+              "color": "#4E4A47",
+            }
+          }
+          subtitle={null}
+          title={
+            Object {
+              "color": "#2F78B0",
+              "context": "",
+              "numberOfLines": 4,
+            }
+          }
+        />,
+        <PostSwipable
+          onChangeTab={[Function]}
+          onRef={[Function]}
+        />,
+        <PostFooter
+          enableRefresh={false}
+          firstPage={true}
+          lastPage={true}
+          onPageChangeThunk={[Function]}
+          onRefresh={[Function]}
+          sharePayload=""
+          title=""
+        />,
+      ],
+      "virtual": undefined,
+    },
+    "ref": null,
+    "rendered": Array [
+      undefined,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "animated": false,
+          "backable": true,
+          "onLayout": [Function],
+          "onRightPress": [Function],
+          "rightIcon": null,
+          "rightStyle": Object {
+            "color": "#4E4A47",
+          },
+          "subtitle": null,
+          "title": Object {
+            "color": "#2F78B0",
+            "context": "",
+            "numberOfLines": 4,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "comments": undefined,
+          "onChangeTab": [Function],
+          "onRef": [Function],
+          "solved": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "enableRefresh": false,
+          "firstPage": true,
+          "lastPage": true,
+          "onPageChangeThunk": [Function],
+          "onRefresh": [Function],
+          "sharePayload": "",
+          "subtitle": undefined,
+          "title": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          undefined,
+          <Header
+            animated={false}
+            backable={true}
+            onLayout={[Function]}
+            onRightPress={[Function]}
+            rightIcon={null}
+            rightStyle={
+              Object {
+                "color": "#4E4A47",
+              }
+            }
+            subtitle={null}
+            title={
+              Object {
+                "color": "#2F78B0",
+                "context": "",
+                "numberOfLines": 4,
+              }
+            }
+          />,
+          <PostSwipable
+            onChangeTab={[Function]}
+            onRef={[Function]}
+          />,
+          <PostFooter
+            enableRefresh={false}
+            firstPage={true}
+            lastPage={true}
+            onPageChangeThunk={[Function]}
+            onRefresh={[Function]}
+            sharePayload=""
+            title=""
+          />,
+        ],
+        "virtual": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        undefined,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "animated": false,
+            "backable": true,
+            "onLayout": [Function],
+            "onRightPress": [Function],
+            "rightIcon": null,
+            "rightStyle": Object {
+              "color": "#4E4A47",
+            },
+            "subtitle": null,
+            "title": Object {
+              "color": "#2F78B0",
+              "context": "",
+              "numberOfLines": 4,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "comments": undefined,
+            "onChangeTab": [Function],
+            "onRef": [Function],
+            "solved": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "enableRefresh": false,
+            "firstPage": true,
+            "lastPage": true,
+            "onPageChangeThunk": [Function],
+            "onRefresh": [Function],
+            "sharePayload": "",
+            "subtitle": undefined,
+            "title": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing Post Screen renders as expected 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Post
+    comments={Array []}
+    credential={Object {}}
+    decryptor={[Function]}
+    encryptor={[Function]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        null,
+        <Header
+          animated={false}
+          backable={true}
+          onLayout={[Function]}
+          onRightPress={[Function]}
+          rightIcon="more"
+          rightStyle={
+            Object {
+              "color": "#4E4A47",
+            }
+          }
+          subtitle={null}
+          title={
+            Object {
+              "color": "#2F78B0",
+              "context": "",
+              "numberOfLines": 4,
+            }
+          }
+        />,
+        <PostSwipable
+          comments={Array []}
+          onChangeTab={[Function]}
+          onRef={[Function]}
+        />,
+        <PostFooter
+          enableRefresh={false}
+          firstPage={true}
+          lastPage={true}
+          onPageChangeThunk={[Function]}
+          onRefresh={[Function]}
+          sharePayload=""
+          title=""
+        />,
+      ],
+      "virtual": undefined,
+    },
+    "ref": null,
+    "rendered": Array [
+      null,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "animated": false,
+          "backable": true,
+          "onLayout": [Function],
+          "onRightPress": [Function],
+          "rightIcon": "more",
+          "rightStyle": Object {
+            "color": "#4E4A47",
+          },
+          "subtitle": null,
+          "title": Object {
+            "color": "#2F78B0",
+            "context": "",
+            "numberOfLines": 4,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "comments": Array [],
+          "onChangeTab": [Function],
+          "onRef": [Function],
+          "solved": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "enableRefresh": false,
+          "firstPage": true,
+          "lastPage": true,
+          "onPageChangeThunk": [Function],
+          "onRefresh": [Function],
+          "sharePayload": "",
+          "subtitle": undefined,
+          "title": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          null,
+          <Header
+            animated={false}
+            backable={true}
+            onLayout={[Function]}
+            onRightPress={[Function]}
+            rightIcon="more"
+            rightStyle={
+              Object {
+                "color": "#4E4A47",
+              }
+            }
+            subtitle={null}
+            title={
+              Object {
+                "color": "#2F78B0",
+                "context": "",
+                "numberOfLines": 4,
+              }
+            }
+          />,
+          <PostSwipable
+            comments={Array []}
+            onChangeTab={[Function]}
+            onRef={[Function]}
+          />,
+          <PostFooter
+            enableRefresh={false}
+            firstPage={true}
+            lastPage={true}
+            onPageChangeThunk={[Function]}
+            onRefresh={[Function]}
+            sharePayload=""
+            title=""
+          />,
+        ],
+        "virtual": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        null,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "animated": false,
+            "backable": true,
+            "onLayout": [Function],
+            "onRightPress": [Function],
+            "rightIcon": "more",
+            "rightStyle": Object {
+              "color": "#4E4A47",
+            },
+            "subtitle": null,
+            "title": Object {
+              "color": "#2F78B0",
+              "context": "",
+              "numberOfLines": 4,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "comments": Array [],
+            "onChangeTab": [Function],
+            "onRef": [Function],
+            "solved": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "enableRefresh": false,
+            "firstPage": true,
+            "lastPage": true,
+            "onPageChangeThunk": [Function],
+            "onRefresh": [Function],
+            "sharePayload": "",
+            "subtitle": undefined,
+            "title": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

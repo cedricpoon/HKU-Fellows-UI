@@ -11,6 +11,7 @@ ShallowWrapper {
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
     "getNode": [Function],
     "render": [Function],
     "simulateError": [Function],
@@ -24,9 +25,15 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Header
+          animated={true}
           backable={true}
           onRightPress={[Function]}
           rightIcon="arrow-dropup"
+          rightStyle={
+            Object {
+              "color": "#E03A00",
+            }
+          }
           subtitle={null}
           title={
             Object {
@@ -54,9 +61,13 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "animated": true,
           "backable": true,
           "onRightPress": [Function],
           "rightIcon": "arrow-dropup",
+          "rightStyle": Object {
+            "color": "#E03A00",
+          },
           "subtitle": null,
           "title": Object {
             "context": "Courses",
@@ -108,9 +119,15 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Header
+            animated={true}
             backable={true}
             onRightPress={[Function]}
             rightIcon="arrow-dropup"
+            rightStyle={
+              Object {
+                "color": "#E03A00",
+              }
+            }
             subtitle={null}
             title={
               Object {
@@ -138,9 +155,13 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "animated": true,
             "backable": true,
             "onRightPress": [Function],
             "rightIcon": "arrow-dropup",
+            "rightStyle": Object {
+              "color": "#E03A00",
+            },
             "subtitle": null,
             "title": Object {
               "context": "Courses",
@@ -189,9 +210,13 @@ ShallowWrapper {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
         "lifecycles": Object {
           "componentDidUpdate": Object {
             "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
           },
           "getDerivedStateFromProps": true,
           "getSnapshotBeforeUpdate": true,
@@ -216,6 +241,7 @@ ShallowWrapper {
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
     "getNode": [Function],
     "render": [Function],
     "simulateError": [Function],
@@ -229,9 +255,15 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Header
+          animated={true}
           backable={true}
           onRightPress={[Function]}
           rightIcon="arrow-dropup"
+          rightStyle={
+            Object {
+              "color": "#E03A00",
+            }
+          }
           subtitle={null}
           title={
             Object {
@@ -259,9 +291,13 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "animated": true,
           "backable": true,
           "onRightPress": [Function],
           "rightIcon": "arrow-dropup",
+          "rightStyle": Object {
+            "color": "#E03A00",
+          },
           "subtitle": null,
           "title": Object {
             "context": "Courses",
@@ -313,9 +349,15 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Header
+            animated={true}
             backable={true}
             onRightPress={[Function]}
             rightIcon="arrow-dropup"
+            rightStyle={
+              Object {
+                "color": "#E03A00",
+              }
+            }
             subtitle={null}
             title={
               Object {
@@ -343,9 +385,13 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "animated": true,
             "backable": true,
             "onRightPress": [Function],
             "rightIcon": "arrow-dropup",
+            "rightStyle": Object {
+              "color": "#E03A00",
+            },
             "subtitle": null,
             "title": Object {
               "context": "Courses",
@@ -394,9 +440,13 @@ ShallowWrapper {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
         "lifecycles": Object {
           "componentDidUpdate": Object {
             "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
           },
           "getDerivedStateFromProps": true,
           "getSnapshotBeforeUpdate": true,

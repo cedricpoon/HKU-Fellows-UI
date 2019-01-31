@@ -1,10 +1,9 @@
 /*
  * ----------------------------------------------------------
- * Forked from native-base version 2.10.0
- * Modified and licensed with Apache License 2.0
+ *          Forked from native-base version 2.10.0
+ *  Modified and licensed with Apache License 2.0 in LICENSE
  * GitHub repository: https://github.com/GeekyAnts/NativeBase
- *
- * All rights reserved to GeekyAnts
+ *             All rights reserved to GeekyAnts
  * ----------------------------------------------------------
  */
 import React, { Component } from "react";

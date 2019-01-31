@@ -11,6 +11,11 @@ export default {
   'post.loadErrorButton': 'Refresh',
   'post.copyright': '© 2018 HKU Fellows. All Rights Reserved.',
 
+  'replies.anonymousUser': 'Anonymous',
+  'replies.solved': 'Adopted',
+  'replies.refreshing': 'Reloading now...',
+  'replies.refreshed': 'Reloaded successfully!',
+
   'footer.moodle': 'From Moodle',
   'footer.latestPost': 'Latest Post',
   'footer.mostReplied': 'Most Replied',
@@ -32,7 +37,17 @@ export default {
   'drawer.landing': 'Browse Courses / Posts',
   'drawer.logout': 'Log out',
 
+  'header.notifications': 'Notifications',
+  'header.abuse': 'Report Abuse',
+  'header.thumbUp': i => `Vote #${i} Up`,
+  'header.thumbDown': i => `Vote #${i} Down`,
+  'header.solved': 'Adopt this Answer',
+
   'fetch.noNetwork': 'Server is not connected.',
 
-  'toast.dismiss': 'Dismiss'
+  'toast.dismiss': 'Dismiss',
+
+  'alert.copy': 'Copy',
+  'alert.noEmailTitle': 'Email App Not Found',
+  'alert.noEmailContent': (a, b) => `Please send your report to\n\n${a}\n\n${b}\n\nWe appreciate your support.`
 }

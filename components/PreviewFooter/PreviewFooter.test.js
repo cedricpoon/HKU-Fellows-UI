@@ -18,4 +18,11 @@ describe('Testing PreviewFooter Component', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('is refreshing', () => {
+    const wrapper = shallow(
+      <PreviewFooter {...required} refreshing />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });

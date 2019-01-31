@@ -1,8 +1,12 @@
 import { StyleSheet } from 'react-native';
-import { fontSize } from 'hkufui/theme/grid';
+
+import { logo } from 'hkufui/theme/palette';
 
 export default StyleSheet.create({
-  title: {
-    fontSize: fontSize.semiTitleSize
+  moodleTitle: {
+    color: logo.dimmed.blue
+  },
+  nativeTitle: {
+    color: logo.dimmed.green
   }
 });

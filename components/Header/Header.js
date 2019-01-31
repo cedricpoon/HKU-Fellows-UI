@@ -26,7 +26,7 @@ class Header extends Component {
   }
 
   componentDidUpdate() {
-    if (this._subtitle) {
+    if (this._subtitle && this.props.animated) {
       this._subtitle.pulse(subtitleAnimationDuration); // eslint-disable-line react/prop-types
     }
   }
@@ -37,10 +37,11 @@ class Header extends Component {
       backable,
       rightIcon,
       onRightPress,
+      rightStyle,
       ...restProps
     } = this.props;
 
-    const { subtitle } = this.state;
+    const { subtitle } = this.state.subtitle ? this.state : this.props;
 
     return (
       <NBHeader {...restProps} style={styles.header}>
@@ -50,7 +51,7 @@ class Header extends Component {
               transparent
               onPress={() => { NavigationService.goBack(); }}
             >
-              <Icon style={styles.back} name="arrow-dropleft"/>
+              <Icon style={styles.button} name="arrow-dropleft"/>
             </Button>
           )}
         </Left>
@@ -58,7 +59,7 @@ class Header extends Component {
           <Title
             style={[
               styles.title,
-              { fontSize: title.size }
+              { fontSize: title.size, color: title.color }
             ]}
             ref={ref => { this._title=ref }}
             numberOfLines={title.numberOfLines || 1}
@@ -77,8 +78,8 @@ class Header extends Component {
         </Body>
         <Right>
         {rightIcon && (
-          <Button transparent onPress={onRightPress}>
-            <Icon name={rightIcon} style={styles.rightIcon} />
+          <Button transparent onPress={onRightPress} onLongPress={onRightPress}>
+            <Icon name={rightIcon} style={rightStyle} />
           </Button>
         )}
         </Right>
@@ -90,12 +91,15 @@ class Header extends Component {
 Header.defaultProps = {
   onRightPress: () => {},
   subtitle: null,
+  rightStyle: styles.button,
+  animated: true
 };
 
 const contextProptypes = {
   context: PropTypes.string.isRequired,
   numberOfLines: PropTypes.number,
-  size: PropTypes.number
+  size: PropTypes.number,
+  color: PropTypes.string
 }
 
 Header.propTypes = {
@@ -103,7 +107,9 @@ Header.propTypes = {
   subtitle: PropTypes.shape(contextProptypes),
   backable: PropTypes.bool,
   rightIcon: PropTypes.string,
-  onRightPress: PropTypes.func
+  rightStyle: Icon.propTypes.style,
+  onRightPress: PropTypes.func,
+  animated: PropTypes.bool
 };
 
 export default Header;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { StyleSheet } from 'react-native';
 import { shallow } from 'enzyme';
 import Header from './Header';
 
@@ -37,6 +38,24 @@ describe('Testing Header Component', () => {
   it('renders as expected with right button', () => {
     const wrapper = shallow(
       <Header title={{ context: 'header' }} rightIcon="arrow-dropup" onRightPress={() => {}} />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('has right style', () => {
+    const wrapper = shallow(
+      <Header title={{ context: 'header' }} rightIcon='arrow-dropup' rightStyle={StyleSheet.create({})} />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('renders without animation', () => {
+    const wrapper = shallow(
+      <Header
+        title={{ context: 'header' }}
+        subtitle={{ context: 'header' }}
+        animated={false}
+      />
     );
     expect(wrapper).toMatchSnapshot();
   });

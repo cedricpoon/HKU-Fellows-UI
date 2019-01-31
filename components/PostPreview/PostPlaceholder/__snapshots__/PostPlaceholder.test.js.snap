@@ -1,0 +1,736 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing PostPlaceholder Component renders as expected with headline colored 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PostPlaceholder
+    headline=""
+    headlineColor="green"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "animation": "fadeIn",
+      "children": Array [
+        <Styled(Text)
+          style={
+            Object {
+              "color": "green",
+            }
+          }
+        >
+          
+        </Styled(Text)>,
+        undefined,
+        undefined,
+      ],
+      "delay": 0,
+      "direction": "normal",
+      "duration": 250,
+      "easing": undefined,
+      "iterationCount": 1,
+      "iterationDelay": 0,
+      "onAnimationBegin": [Function],
+      "onAnimationEnd": [Function],
+      "onTransitionBegin": [Function],
+      "onTransitionEnd": [Function],
+      "style": Object {
+        "marginVertical": 25,
+      },
+      "transition": undefined,
+      "useNativeDriver": false,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "",
+          "style": Object {
+            "color": "green",
+          },
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": "",
+        "type": [Function],
+      },
+      undefined,
+      undefined,
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "animation": "fadeIn",
+        "children": Array [
+          <Styled(Text)
+            style={
+              Object {
+                "color": "green",
+              }
+            }
+          >
+            
+          </Styled(Text)>,
+          undefined,
+          undefined,
+        ],
+        "delay": 0,
+        "direction": "normal",
+        "duration": 250,
+        "easing": undefined,
+        "iterationCount": 1,
+        "iterationDelay": 0,
+        "onAnimationBegin": [Function],
+        "onAnimationEnd": [Function],
+        "onTransitionBegin": [Function],
+        "onTransitionEnd": [Function],
+        "style": Object {
+          "marginVertical": 25,
+        },
+        "transition": undefined,
+        "useNativeDriver": false,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "",
+            "style": Object {
+              "color": "green",
+            },
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": "",
+          "type": [Function],
+        },
+        undefined,
+        undefined,
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing PostPlaceholder Component renders as expected with required props 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PostPlaceholder
+    headline=""
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "animation": "fadeIn",
+      "children": Array [
+        <Styled(Text)
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+        >
+          
+        </Styled(Text)>,
+        undefined,
+        undefined,
+      ],
+      "delay": 0,
+      "direction": "normal",
+      "duration": 250,
+      "easing": undefined,
+      "iterationCount": 1,
+      "iterationDelay": 0,
+      "onAnimationBegin": [Function],
+      "onAnimationEnd": [Function],
+      "onTransitionBegin": [Function],
+      "onTransitionEnd": [Function],
+      "style": Object {
+        "marginVertical": 25,
+      },
+      "transition": undefined,
+      "useNativeDriver": false,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "",
+          "style": Object {
+            "color": undefined,
+          },
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": "",
+        "type": [Function],
+      },
+      undefined,
+      undefined,
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "animation": "fadeIn",
+        "children": Array [
+          <Styled(Text)
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+          >
+            
+          </Styled(Text)>,
+          undefined,
+          undefined,
+        ],
+        "delay": 0,
+        "direction": "normal",
+        "duration": 250,
+        "easing": undefined,
+        "iterationCount": 1,
+        "iterationDelay": 0,
+        "onAnimationBegin": [Function],
+        "onAnimationEnd": [Function],
+        "onTransitionBegin": [Function],
+        "onTransitionEnd": [Function],
+        "style": Object {
+          "marginVertical": 25,
+        },
+        "transition": undefined,
+        "useNativeDriver": false,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "",
+            "style": Object {
+              "color": undefined,
+            },
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": "",
+          "type": [Function],
+        },
+        undefined,
+        undefined,
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing PostPlaceholder Component renders as expected with subHeadline 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PostPlaceholder
+    headline=""
+    subHeadline=""
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "animation": "fadeIn",
+      "children": Array [
+        <Styled(Text)
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+        >
+          
+        </Styled(Text)>,
+        "",
+        undefined,
+      ],
+      "delay": 0,
+      "direction": "normal",
+      "duration": 250,
+      "easing": undefined,
+      "iterationCount": 1,
+      "iterationDelay": 0,
+      "onAnimationBegin": [Function],
+      "onAnimationEnd": [Function],
+      "onTransitionBegin": [Function],
+      "onTransitionEnd": [Function],
+      "style": Object {
+        "marginVertical": 25,
+      },
+      "transition": undefined,
+      "useNativeDriver": false,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "",
+          "style": Object {
+            "color": undefined,
+          },
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": "",
+        "type": [Function],
+      },
+      "",
+      undefined,
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "animation": "fadeIn",
+        "children": Array [
+          <Styled(Text)
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+          >
+            
+          </Styled(Text)>,
+          "",
+          undefined,
+        ],
+        "delay": 0,
+        "direction": "normal",
+        "duration": 250,
+        "easing": undefined,
+        "iterationCount": 1,
+        "iterationDelay": 0,
+        "onAnimationBegin": [Function],
+        "onAnimationEnd": [Function],
+        "onTransitionBegin": [Function],
+        "onTransitionEnd": [Function],
+        "style": Object {
+          "marginVertical": 25,
+        },
+        "transition": undefined,
+        "useNativeDriver": false,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "",
+            "style": Object {
+              "color": undefined,
+            },
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": "",
+          "type": [Function],
+        },
+        "",
+        undefined,
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing PostPlaceholder Component renders as expected with subHeadline and icon and button 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PostPlaceholder
+    button={
+      Object {
+        "text": "",
+      }
+    }
+    headline=""
+    icon={
+      Object {
+        "name": "apps",
+      }
+    }
+    subHeadline=""
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "animation": "fadeIn",
+      "children": Array [
+        <Styled(Text)
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+        >
+          
+        </Styled(Text)>,
+        "",
+        <Styled(Button)
+          bordered={true}
+          style={
+            Object {
+              "alignSelf": "center",
+              "borderColor": "#808080",
+              "height": null,
+              "marginTop": 20,
+            }
+          }
+        >
+          <Styled(Text)
+            note={true}
+          >
+            
+          </Styled(Text)>
+        </Styled(Button)>,
+      ],
+      "delay": 0,
+      "direction": "normal",
+      "duration": 250,
+      "easing": undefined,
+      "iterationCount": 1,
+      "iterationDelay": 0,
+      "onAnimationBegin": [Function],
+      "onAnimationEnd": [Function],
+      "onTransitionBegin": [Function],
+      "onTransitionEnd": [Function],
+      "style": Object {
+        "marginVertical": 25,
+      },
+      "transition": undefined,
+      "useNativeDriver": false,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "",
+          "style": Object {
+            "color": undefined,
+          },
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": "",
+        "type": [Function],
+      },
+      "",
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "bordered": true,
+          "children": <Styled(Text)
+            note={true}
+          >
+            
+          </Styled(Text)>,
+          "onPress": undefined,
+          "style": Object {
+            "alignSelf": "center",
+            "borderColor": "#808080",
+            "height": null,
+            "marginTop": 20,
+          },
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "",
+            "note": true,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": "",
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "animation": "fadeIn",
+        "children": Array [
+          <Styled(Text)
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+          >
+            
+          </Styled(Text)>,
+          "",
+          <Styled(Button)
+            bordered={true}
+            style={
+              Object {
+                "alignSelf": "center",
+                "borderColor": "#808080",
+                "height": null,
+                "marginTop": 20,
+              }
+            }
+          >
+            <Styled(Text)
+              note={true}
+            >
+              
+            </Styled(Text)>
+          </Styled(Button)>,
+        ],
+        "delay": 0,
+        "direction": "normal",
+        "duration": 250,
+        "easing": undefined,
+        "iterationCount": 1,
+        "iterationDelay": 0,
+        "onAnimationBegin": [Function],
+        "onAnimationEnd": [Function],
+        "onTransitionBegin": [Function],
+        "onTransitionEnd": [Function],
+        "style": Object {
+          "marginVertical": 25,
+        },
+        "transition": undefined,
+        "useNativeDriver": false,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "",
+            "style": Object {
+              "color": undefined,
+            },
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": "",
+          "type": [Function],
+        },
+        "",
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "bordered": true,
+            "children": <Styled(Text)
+              note={true}
+            >
+              
+            </Styled(Text)>,
+            "onPress": undefined,
+            "style": Object {
+              "alignSelf": "center",
+              "borderColor": "#808080",
+              "height": null,
+              "marginTop": 20,
+            },
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "",
+              "note": true,
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": "",
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

@@ -1,29 +1,19 @@
 import React, { Component } from 'react';
-import { Container, Toast } from 'native-base';
+import { Container } from 'native-base';
 import { withNavigation } from 'react-navigation';
 
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import { LoginForm } from 'hkufui/components';
-import { localize } from 'hkufui/locale';
 import { login } from 'hkufui/config/webapi';
 import NavigationService from 'hkufui/src/NavigationService';
-import { onLogin } from './authenticate';
+import { show3s } from 'hkufui/src/toastHelper.js';
+
 import { onLogout } from 'hkufui/src/navigator/Context/DrawerMenu/drawerAction';
-import { ALERT_DURATION } from './Constants';
+import { onLogin } from './authenticate';
 
-const locale = localize({ language: 'en', country: 'hk' });
-
-const alert = (message) => {
-  Toast.show({
-    text: message,
-    buttonText: locale['toast.dismiss'],
-    type: 'danger',
-    duration: ALERT_DURATION
-  });
-}
-
+const alert = (message) => { show3s({ message, type: 'danger' }); }
 const isAuthenticated = (credential) => credential && Object.keys(credential).length !== 0;
 
 export class Login extends Component {

@@ -1,16 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing Preview Screen renders as expected with last post 1`] = `
+exports[`Testing Preview Screen is loaded 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Preview
-    expandStatus="HALT"
+    expandStatus="BLAND"
+    loadStatus="OK"
     location=""
     onLoadMore={[Function]}
     onLoadPost={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
     "getNode": [Function],
     "render": [Function],
     "simulateError": [Function],
@@ -45,6 +47,7 @@ ShallowWrapper {
         <PreviewFooter
           muted={true}
           onRefresh={[Function]}
+          refreshing={false}
         />,
       ],
       "virtual": undefined,
@@ -91,6 +94,7 @@ ShallowWrapper {
         "props": Object {
           "muted": true,
           "onRefresh": [Function],
+          "refreshing": false,
         },
         "ref": null,
         "rendered": null,
@@ -128,6 +132,7 @@ ShallowWrapper {
           <PreviewFooter
             muted={true}
             onRefresh={[Function]}
+            refreshing={false}
           />,
         ],
         "virtual": undefined,
@@ -174,6 +179,7 @@ ShallowWrapper {
           "props": Object {
             "muted": true,
             "onRefresh": [Function],
+            "refreshing": false,
           },
           "ref": null,
           "rendered": null,
@@ -187,9 +193,226 @@ ShallowWrapper {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
         "lifecycles": Object {
           "componentDidUpdate": Object {
             "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing Preview Screen renders as expected with last post 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Preview
+    expandStatus="HALT"
+    loadStatus="OK"
+    location=""
+    onLoadMore={[Function]}
+    onLoadPost={[Function]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <PreviewHeader
+          location=""
+        />,
+        <Connect(PostPreviewLoader)
+          ListFooterComponent={[Function]}
+          getItemLayout={[Function]}
+          onEndReached={[Function]}
+          onEndReachedThreshold={0.35}
+          onScroll={[Function]}
+          onUnmount={[Function]}
+          refreshControl={
+            <RefreshControlMock
+              onRefresh={[Function]}
+              refreshing={false}
+              tintColor="#ddd"
+            />
+          }
+          removeClippedSubviews={true}
+        />,
+        <PreviewFooter
+          muted={true}
+          onRefresh={[Function]}
+          refreshing={false}
+        />,
+      ],
+      "virtual": undefined,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "location": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "ListFooterComponent": [Function],
+          "getItemLayout": [Function],
+          "onEndReached": [Function],
+          "onEndReachedThreshold": 0.35,
+          "onScroll": [Function],
+          "onUnmount": [Function],
+          "refreshControl": <RefreshControlMock
+            onRefresh={[Function]}
+            refreshing={false}
+            tintColor="#ddd"
+          />,
+          "removeClippedSubviews": true,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "muted": true,
+          "onRefresh": [Function],
+          "refreshing": false,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <PreviewHeader
+            location=""
+          />,
+          <Connect(PostPreviewLoader)
+            ListFooterComponent={[Function]}
+            getItemLayout={[Function]}
+            onEndReached={[Function]}
+            onEndReachedThreshold={0.35}
+            onScroll={[Function]}
+            onUnmount={[Function]}
+            refreshControl={
+              <RefreshControlMock
+                onRefresh={[Function]}
+                refreshing={false}
+                tintColor="#ddd"
+              />
+            }
+            removeClippedSubviews={true}
+          />,
+          <PreviewFooter
+            muted={true}
+            onRefresh={[Function]}
+            refreshing={false}
+          />,
+        ],
+        "virtual": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "location": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "ListFooterComponent": [Function],
+            "getItemLayout": [Function],
+            "onEndReached": [Function],
+            "onEndReachedThreshold": 0.35,
+            "onScroll": [Function],
+            "onUnmount": [Function],
+            "refreshControl": <RefreshControlMock
+              onRefresh={[Function]}
+              refreshing={false}
+              tintColor="#ddd"
+            />,
+            "removeClippedSubviews": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "muted": true,
+            "onRefresh": [Function],
+            "refreshing": false,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
           },
           "getDerivedStateFromProps": true,
           "getSnapshotBeforeUpdate": true,
@@ -208,12 +431,14 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Preview
     expandStatus="EXPANDING"
+    loadStatus="OK"
     location=""
     onLoadMore={[Function]}
     onLoadPost={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
     "getNode": [Function],
     "render": [Function],
     "simulateError": [Function],
@@ -248,6 +473,7 @@ ShallowWrapper {
         <PreviewFooter
           muted={true}
           onRefresh={[Function]}
+          refreshing={false}
         />,
       ],
       "virtual": undefined,
@@ -294,6 +520,7 @@ ShallowWrapper {
         "props": Object {
           "muted": true,
           "onRefresh": [Function],
+          "refreshing": false,
         },
         "ref": null,
         "rendered": null,
@@ -331,6 +558,7 @@ ShallowWrapper {
           <PreviewFooter
             muted={true}
             onRefresh={[Function]}
+            refreshing={false}
           />,
         ],
         "virtual": undefined,
@@ -377,6 +605,7 @@ ShallowWrapper {
           "props": Object {
             "muted": true,
             "onRefresh": [Function],
+            "refreshing": false,
           },
           "ref": null,
           "rendered": null,
@@ -390,9 +619,13 @@ ShallowWrapper {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
         "lifecycles": Object {
           "componentDidUpdate": Object {
             "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
           },
           "getDerivedStateFromProps": true,
           "getSnapshotBeforeUpdate": true,
@@ -411,12 +644,14 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Preview
     expandStatus="BLAND"
+    loadStatus="OK"
     location=""
     onLoadMore={[Function]}
     onLoadPost={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
     "getNode": [Function],
     "render": [Function],
     "simulateError": [Function],
@@ -451,6 +686,7 @@ ShallowWrapper {
         <PreviewFooter
           muted={true}
           onRefresh={[Function]}
+          refreshing={false}
         />,
       ],
       "virtual": undefined,
@@ -497,6 +733,7 @@ ShallowWrapper {
         "props": Object {
           "muted": true,
           "onRefresh": [Function],
+          "refreshing": false,
         },
         "ref": null,
         "rendered": null,
@@ -534,6 +771,7 @@ ShallowWrapper {
           <PreviewFooter
             muted={true}
             onRefresh={[Function]}
+            refreshing={false}
           />,
         ],
         "virtual": undefined,
@@ -580,6 +818,7 @@ ShallowWrapper {
           "props": Object {
             "muted": true,
             "onRefresh": [Function],
+            "refreshing": false,
           },
           "ref": null,
           "rendered": null,
@@ -593,9 +832,13 @@ ShallowWrapper {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
         "lifecycles": Object {
           "componentDidUpdate": Object {
             "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
           },
           "getDerivedStateFromProps": true,
           "getSnapshotBeforeUpdate": true,

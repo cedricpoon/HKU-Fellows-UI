@@ -1,8 +1,13 @@
 import React from 'react';
+import { View } from 'react-native';
 import { shallow } from 'enzyme';
 import PostDetails from './PostDetails';
 
 describe('Testing PostDetails Component', () => {
+  const mockMarkdownRenderer = () => {
+    return <View></View>;
+  }
+
   const requiredProps = {
     index: 1,
     comment: {
@@ -11,7 +16,8 @@ describe('Testing PostDetails Component', () => {
       author: 'author',
       content: 'content',
       temperature: 1
-    }
+    },
+    markdownRenderer: mockMarkdownRenderer
   };
 
   it('renders as expected with required props', () => {

@@ -15,7 +15,7 @@ const locale = localize({ language: 'en', country: 'hk' });
 
 class PostSwipable extends Component {
   render() {
-    const { index, selectedAnswer } = this.props;
+    const { index, selectedAnswer, markdownRenderer } = this.props;
     const { author, timestamp, content, temperature } = this.props.comment;
 
     const hotStyle = temperature && temperature > hot ? styles.hot : null;
@@ -41,7 +41,7 @@ class PostSwipable extends Component {
             )}
           </View>
           <View style={styles.contentContainer}>
-            <Markdown style={styles}>{content}</Markdown>
+            {markdownRenderer(content, styles)}
           </View>
         </AnimatingView>
       </Content>
@@ -49,8 +49,17 @@ class PostSwipable extends Component {
   }
 }
 
+const defaultMarkdownRenderer = (content, styles) => {
+  return (<Markdown style={styles}>{content}</Markdown>);
+}
+
+PostSwipable.defaultProps = {
+  markdownRenderer: defaultMarkdownRenderer
+};
+
 PostSwipable.propTypes = {
   index: PropTypes.number.isRequired,
+  markdownRenderer: PropTypes.func,
   comment: PropTypes.shape({
     id: PropTypes.string.isRequired,
     author: PropTypes.string,

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Text, View, Content, Icon } from 'native-base';
+import { TouchableOpacity, TextInput } from 'react-native';
 import PropTypes from "prop-types";
 import { format } from 'timeago.js';
 import * as Animatable from 'react-native-animatable';
@@ -13,12 +14,35 @@ import { FADE_IN_DURATION } from 'hkufui/components/Constants'
 const AnimatingView = Animatable.createAnimatableComponent(View);
 const locale = localize({ language: 'en', country: 'hk' });
 
-class PostSwipable extends Component {
+class PostDetails extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { raw: false }
+  }
+
+  _toggleRaw() {
+    this.setState({ raw: !this.state.raw });
+  }
+
   render() {
     const { index, selectedAnswer, markdownRenderer } = this.props;
     const { author, timestamp, content, temperature } = this.props.comment;
+    const { raw } = this.state;
 
     const hotStyle = temperature && temperature > hot ? styles.hot : null;
+    const context = raw ?
+      (<View style={styles.contentContainer}>
+        {selectableTextRenderer(content, this._toggleRaw.bind(this))}
+      </View>)
+    :
+      (<TouchableOpacity
+        style={styles.contentContainer}
+        onLongPress={this._toggleRaw.bind(this)}
+        activeOpacity={1}
+      >
+        {markdownRenderer(content, styles)}
+      </TouchableOpacity>)
+    ;
 
     return (
       <Content style={styles.container}>
@@ -40,24 +64,36 @@ class PostSwipable extends Component {
               </View>
             )}
           </View>
-          <View style={styles.contentContainer}>
-            {markdownRenderer(content, styles)}
-          </View>
+          {context}
         </AnimatingView>
       </Content>
     );
   }
 }
 
-const defaultMarkdownRenderer = (content, styles) => {
-  return (<Markdown style={styles}>{content}</Markdown>);
+const selectableTextRenderer = (content, onToggleRaw) => {
+  return (
+    <TextInput
+      style={styles.selectableText}
+      multiline={true}
+      editable={false}
+      scrollEnabled={false}
+      onBlur={onToggleRaw}
+    >
+      {content}
+    </TextInput>
+  );
 }
 
-PostSwipable.defaultProps = {
+const defaultMarkdownRenderer = (content, styles) => {
+  return <Markdown style={styles}>{content}</Markdown>;
+}
+
+PostDetails.defaultProps = {
   markdownRenderer: defaultMarkdownRenderer
 };
 
-PostSwipable.propTypes = {
+PostDetails.propTypes = {
   index: PropTypes.number.isRequired,
   markdownRenderer: PropTypes.func,
   comment: PropTypes.shape({
@@ -70,4 +106,4 @@ PostSwipable.propTypes = {
   selectedAnswer: PropTypes.bool
 };
 
-export default PostSwipable;
+export default PostDetails;

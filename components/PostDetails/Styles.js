@@ -73,5 +73,8 @@ export default StyleSheet.create({
   },
   contentContainer: {
     marginVertical: gridBase
+  },
+  selectableText: {
+    marginTop: gridBase
   }
 });

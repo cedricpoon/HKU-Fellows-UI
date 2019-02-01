@@ -6,7 +6,7 @@ import customMarkDown from './MarkDownStyles';
 
 const headlineContent = {
   marginLeft: gridBase,
-  fontSize: fontSize.titleSize
+  fontSize: fontSize.semiTitleSize
 };
 
 const panel = {
@@ -27,7 +27,8 @@ export default StyleSheet.create({
     borderColor: seperator,
   },
   leftPanel: {
-    ...panel
+    ...panel,
+    paddingVertical: 1
   },
   rightPanel: {
     ...panel,
@@ -63,13 +64,16 @@ export default StyleSheet.create({
   },
   date: {
     ...headlineContent,
-    fontSize: fontSize.semiTitleSize,
     color: logo.black
   },
   solved: {
     ...headlineContent,
-    fontSize: fontSize.semiTitleSize,
+    fontSize: fontSize.miniSize,
     color: logo.dimmed.yellow
+  },
+  dismiss: {
+    color: logo.red,
+    fontSize: fontSize.semiTitleSize
   },
   contentContainer: {
     marginVertical: gridBase

@@ -32,13 +32,13 @@ class PostDetails extends Component {
     const hotStyle = temperature && temperature > hot ? styles.hot : null;
     const context = raw ?
       (<View style={styles.contentContainer}>
-        {selectableTextRenderer(content, this._toggleRaw.bind(this))}
+        {selectableTextRenderer(content)}
       </View>)
     :
       (<TouchableOpacity
         style={styles.contentContainer}
         onLongPress={this._toggleRaw.bind(this)}
-        activeOpacity={1}
+        activeOpacity={0.8}
       >
         {markdownRenderer(content, styles)}
       </TouchableOpacity>)
@@ -46,8 +46,8 @@ class PostDetails extends Component {
 
     return (
       <Content style={styles.container}>
-        <AnimatingView animation='fadeIn' duration={FADE_IN_DURATION}>
-          <View style={styles.headline}>
+        {!raw ? (
+          <AnimatingView animation='fadeIn' duration={FADE_IN_DURATION} style={styles.headline}>
             <View style={styles.leftPanel}>
               <Text style={styles.index}>#{index}</Text>
               <Text style={author ? styles.author : styles.anonymous}>
@@ -63,7 +63,20 @@ class PostDetails extends Component {
                 <Text style={[styles.temperature, hotStyle]}>{temperature}</Text>
               </View>
             )}
+          </AnimatingView>
+        ) : (
+          <View style={styles.headline}>
+            <TouchableOpacity
+              onPress={this._toggleRaw.bind(this)}
+            >
+              <AnimatingView animation='fadeIn' duration={FADE_IN_DURATION} style={styles.leftPanel}>
+                <Icon style={[styles.dismiss, styles.temperature]} name="close" type="MaterialIcons" />
+                <Text style={[styles.dismiss]}>{locale['replies.noRaw']}</Text>
+              </AnimatingView>
+            </TouchableOpacity>
           </View>
+        )}
+        <AnimatingView animation='fadeIn' duration={FADE_IN_DURATION}>
           {context}
         </AnimatingView>
       </Content>
@@ -71,14 +84,13 @@ class PostDetails extends Component {
   }
 }
 
-const selectableTextRenderer = (content, onToggleRaw) => {
+const selectableTextRenderer = (content) => {
   return (
     <TextInput
       style={styles.selectableText}
       multiline={true}
       editable={false}
       scrollEnabled={false}
-      onBlur={onToggleRaw}
     >
       {content}
     </TextInput>

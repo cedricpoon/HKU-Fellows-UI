@@ -15,6 +15,7 @@ export default {
   'replies.solved': 'Adopted',
   'replies.refreshing': 'Reloading now...',
   'replies.refreshed': 'Reloaded successfully!',
+  'replies.noRaw': 'Click to Dismiss Raw',
 
   'footer.moodle': 'From Moodle',
   'footer.latestPost': 'Latest Post',

@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 
 import { Scrollable, PostPlaceholder, PostLoadIndicator, PostPreview } from 'hkufui/components';
 import { OK, FAIL, LOADING, STILL } from 'hkufui/src/constants/loadStatus';
+import NavigationService from 'hkufui/src/NavigationService';
 import { fetchPosts } from './loadPosts';
 import { localize } from 'hkufui/locale';
 
@@ -53,7 +54,10 @@ export class PostPreviewLoader extends Component {
           headline={locale['post.noPostTitle']}
           subHeadline={locale['post.noPostContent']}
           icon={{name: 'md-paper'}}
-          button={{text: locale['post.noPostButton']}}
+          button={{
+            text: locale['post.noPostButton'],
+            onPress: () => { NavigationService.navigate('Compose') }
+          }}
         />
       );
     } else if (status === FAIL) {

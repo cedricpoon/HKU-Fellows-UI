@@ -44,6 +44,15 @@ export default {
   'header.thumbDown': i => `Vote #${i} Down`,
   'header.solved': 'Adopt this Answer',
 
+  'new.header': 'New Topic',
+  'new.title': 'Title (Compulsory)',
+  'new.subtitle': 'Subtitle',
+  'new.content': 'Content (Compulsory)',
+  'new.hashtags': 'Hashtags (Max. 2, E.g. #AY18#Tutor1)',
+  'new.nonAnonymous': 'Post with UID',
+  'new.anonymous': 'Post Anonymously',
+  'new.markdownRemark': '** Content can be styled in',
+
   'fetch.noNetwork': 'Server is not connected.',
 
   'toast.dismiss': 'Dismiss',

@@ -29,9 +29,8 @@ export class Compose extends Component {
       this._popup.toggle();
   }
 
-  _renderHeaderMenu() {
+  _renderHeaderMenu({ width }) {
     const { headerLayout } = this.state;
-    const { width } = Dimensions.get("window");
 
     return (
       <ViewMenu
@@ -44,10 +43,11 @@ export class Compose extends Component {
 
   render() {
     const { location } = this.props;
+    const { width, height } = Dimensions.get("window");
 
     return (
       <Container>
-        { this._renderHeaderMenu() }
+        { this._renderHeaderMenu({ width }) }
         <Header
           title={{ context: locale['new.header'] }}
           subtitle={{ context: location }}
@@ -67,7 +67,11 @@ export class Compose extends Component {
             <Item regular style={styles.item}>
               <Input placeholder={locale['new.hashtags']} style={styles.textbox} />
             </Item>
-            <Textarea rowSpan={13} bordered placeholder={locale['new.content']} />
+            <Textarea
+              bordered
+              placeholder={locale['new.content']}
+              style={{ height: height / 3 }}
+            />
           </Form>
           <View style={styles.remarkGroup}>
             <Text style={styles.remark} note>
@@ -77,7 +81,7 @@ export class Compose extends Component {
               style={[styles.remark, styles.hyperlink]}
               onPress={() => Linking.openURL(markdownTutorialLink)}
             >
-              Markdown
+              {locale['new.markdown']}
             </Text>
           </View>
         </Content>

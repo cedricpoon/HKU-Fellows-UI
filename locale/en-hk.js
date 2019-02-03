@@ -52,6 +52,7 @@ export default {
   'new.nonAnonymous': 'Post with UID',
   'new.anonymous': 'Post Anonymously',
   'new.markdownRemark': '** Content can be styled in',
+  'new.markdown': 'Markdown',
 
   'fetch.noNetwork': 'Server is not connected.',
 

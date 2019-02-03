@@ -78,8 +78,8 @@ class Header extends Component {
         </Body>
         <Right>
         {rightIcon && (
-          <Button transparent onPress={onRightPress} onLongPress={onRightPress}>
-            <Icon name={rightIcon} style={rightStyle} />
+          <Button transparent onPress={onRightPress} onLongPress={onRightPress} disabled={!onRightPress}>
+            <Icon name={rightIcon} style={onRightPress ? rightStyle : null} />
           </Button>
         )}
         </Right>
@@ -89,7 +89,7 @@ class Header extends Component {
 }
 
 Header.defaultProps = {
-  onRightPress: () => {},
+  onRightPress: null,
   subtitle: null,
   rightStyle: styles.button,
   animated: true

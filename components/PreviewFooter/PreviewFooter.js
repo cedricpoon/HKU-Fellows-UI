@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { Footer, FooterTab, Button, Icon } from 'native-base';
+import { View, Footer, FooterTab, Button, Icon } from 'native-base';
 import PropTypes from 'prop-types';
 
 import NavigationService from 'hkufui/src/NavigationService';
 import FilterPopup from './FilterPopup/FilterPopup';
 import { mapLayoutToState } from 'hkufui/components/helper';
-import styles from './Styles';
 
 class PreviewFooter extends Component {
 
@@ -23,7 +22,6 @@ class PreviewFooter extends Component {
 
   _renderFilterPopup() {
     const { filterLayout, footerLayout } = this.state;
-
     return(
       <FilterPopup
         position={{x: filterLayout.x, y: footerLayout.y}}
@@ -37,41 +35,40 @@ class PreviewFooter extends Component {
     const { muted, onRefresh, refreshing } = this.props;
 
     return (
-      <Footer
-        style={styles.footer}
-        onLayout={mapLayoutToState("footerLayout", this)}
-      >
-        { this._renderFilterPopup() }
-        <FooterTab>
-          <Button onPress={NavigationService.openDrawer}>
-            <Icon name="menu" type="MaterialIcons" />
-          </Button>
-          {!muted && (
-            <Button onPress={onRefresh} disabled={refreshing} transparent={refreshing}>
-              <Icon name="refresh" type="MaterialIcons" />
+      <View onLayout={mapLayoutToState("footerLayout", this)}>
+        <Footer>
+          { this._renderFilterPopup() }
+          <FooterTab>
+            <Button onPress={NavigationService.openDrawer}>
+              <Icon name="menu" type="MaterialIcons" />
             </Button>
-          )}
-          {!muted && (
-            <Button onPress={() => { NavigationService.navigate('Compose') }}>
-              <Icon name="comment-plus-outline" type="MaterialCommunityIcons" />
-            </Button>
-          )}
-          {!muted && (
+            {!muted && (
+              <Button onPress={onRefresh} disabled={refreshing} transparent={refreshing}>
+                <Icon name="refresh" type="MaterialIcons" />
+              </Button>
+            )}
+            {!muted && (
+              <Button onPress={() => { NavigationService.navigate('Compose') }}>
+                <Icon name="comment-plus-outline" type="MaterialCommunityIcons" />
+              </Button>
+            )}
+            {!muted && (
+              <Button
+                onPress={this.filterToggle}
+                onLongPress={this.filterToggle}
+                onLayout={mapLayoutToState("filterLayout", this)}
+              >
+                <Icon name="sort-descending" type="MaterialCommunityIcons"></Icon>
+              </Button>
+            )}
             <Button
-              onPress={this.filterToggle}
-              onLongPress={this.filterToggle}
-              onLayout={mapLayoutToState("filterLayout", this)}
+              onPress={() => { NavigationService.navigate('SelectCourse') }}
             >
-              <Icon name="sort-descending" type="MaterialCommunityIcons"></Icon>
+              <Icon name="view-list" type="MaterialIcons" />
             </Button>
-          )}
-          <Button
-            onPress={() => { NavigationService.navigate('SelectCourse') }}
-          >
-            <Icon name="view-list" type="MaterialIcons" />
-          </Button>
-        </FooterTab>
-      </Footer>
+          </FooterTab>
+        </Footer>
+      </View>
     );
   }
 }

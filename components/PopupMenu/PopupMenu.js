@@ -8,7 +8,6 @@ import styles from './Styles';
 import { footer } from 'hkufui/theme/grid';
 
 class PopupMenu extends Component {
-
   constructor(props) {
     super(props);
 

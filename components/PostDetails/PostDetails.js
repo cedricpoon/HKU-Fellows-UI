@@ -38,7 +38,7 @@ class PostDetails extends Component {
       (<TouchableOpacity
         style={styles.contentContainer}
         onLongPress={this._toggleRaw.bind(this)}
-        activeOpacity={0.8}
+        activeOpacity={0.5}
       >
         {markdownRenderer(content, styles)}
       </TouchableOpacity>)

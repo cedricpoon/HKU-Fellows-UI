@@ -181,7 +181,7 @@ ShallowWrapper {
           useNativeDriver={false}
         >
           <TouchableOpacity
-            activeOpacity={0.8}
+            activeOpacity={0.5}
             onLongPress={[Function]}
             style={
               Object {
@@ -616,7 +616,7 @@ ShallowWrapper {
         "props": Object {
           "animation": "fadeIn",
           "children": <TouchableOpacity
-            activeOpacity={0.8}
+            activeOpacity={0.5}
             onLongPress={[Function]}
             style={
               Object {
@@ -646,7 +646,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "activeOpacity": 0.8,
+            "activeOpacity": 0.5,
             "children": <View />,
             "onLongPress": [Function],
             "style": Object {
@@ -826,7 +826,7 @@ ShallowWrapper {
             useNativeDriver={false}
           >
             <TouchableOpacity
-              activeOpacity={0.8}
+              activeOpacity={0.5}
               onLongPress={[Function]}
               style={
                 Object {
@@ -1261,7 +1261,7 @@ ShallowWrapper {
           "props": Object {
             "animation": "fadeIn",
             "children": <TouchableOpacity
-              activeOpacity={0.8}
+              activeOpacity={0.5}
               onLongPress={[Function]}
               style={
                 Object {
@@ -1291,7 +1291,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "activeOpacity": 0.8,
+              "activeOpacity": 0.5,
               "children": <View />,
               "onLongPress": [Function],
               "style": Object {
@@ -1498,7 +1498,7 @@ ShallowWrapper {
           useNativeDriver={false}
         >
           <TouchableOpacity
-            activeOpacity={0.8}
+            activeOpacity={0.5}
             onLongPress={[Function]}
             style={
               Object {
@@ -1858,7 +1858,7 @@ ShallowWrapper {
         "props": Object {
           "animation": "fadeIn",
           "children": <TouchableOpacity
-            activeOpacity={0.8}
+            activeOpacity={0.5}
             onLongPress={[Function]}
             style={
               Object {
@@ -1888,7 +1888,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "activeOpacity": 0.8,
+            "activeOpacity": 0.5,
             "children": <View />,
             "onLongPress": [Function],
             "style": Object {
@@ -2046,7 +2046,7 @@ ShallowWrapper {
             useNativeDriver={false}
           >
             <TouchableOpacity
-              activeOpacity={0.8}
+              activeOpacity={0.5}
               onLongPress={[Function]}
               style={
                 Object {
@@ -2406,7 +2406,7 @@ ShallowWrapper {
           "props": Object {
             "animation": "fadeIn",
             "children": <TouchableOpacity
-              activeOpacity={0.8}
+              activeOpacity={0.5}
               onLongPress={[Function]}
               style={
                 Object {
@@ -2436,7 +2436,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "activeOpacity": 0.8,
+              "activeOpacity": 0.5,
               "children": <View />,
               "onLongPress": [Function],
               "style": Object {

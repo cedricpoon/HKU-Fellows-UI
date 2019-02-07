@@ -66,10 +66,10 @@ export class Post extends Component {
 
   componentDidMount() {
     const { navigation, onLoadReplies, decryptor } = this.props;
-    /* all props from <PostPreview /> has been passed */
+    // all props from <PostPreview /> has been passed
     if (navigation) {
       const { params } = navigation.state;
-      /* parse from deep linking */
+      // parse from deep linking
       let payload;
       try {
         payload = params && params.payload ? decryptor(params.payload) : params;
@@ -88,12 +88,12 @@ export class Post extends Component {
     const { id, title, subtitle, native, solved, currentPage } = this.state;
     const { comments, onRefreshReplies, loadStatus, credential, encryptor } = this.props;
 
-    /* unauthorized deep link */
+    // unauthorized deep link
     if (!credential) {
       NavigationService.goBack();
       return null;
     }
-    /* construct share payload */
+    // construct share payload
     const sharePayload = { id, title, subtitle, native, solved };
 
     return (

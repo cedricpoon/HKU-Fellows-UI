@@ -256,6 +256,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "button": Object {
+        "onPress": [Function],
         "text": "Compose",
       },
       "headline": "No Posts Yet",
@@ -275,6 +276,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "button": Object {
+          "onPress": [Function],
           "text": "Compose",
         },
         "headline": "No Posts Yet",

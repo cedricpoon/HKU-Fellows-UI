@@ -5,7 +5,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header
     animated={true}
-    onRightPress={[Function]}
+    onRightPress={null}
     rightIcon="arrow-dropup"
     rightStyle={Object {}}
     subtitle={null}
@@ -61,13 +61,14 @@ ShallowWrapper {
         </Styled(Body)>,
         <Styled(Right)>
           <Styled(Button)
-            onLongPress={[Function]}
-            onPress={[Function]}
+            disabled={true}
+            onLongPress={null}
+            onPress={null}
             transparent={true}
           >
             <Styled(Icon)
               name="arrow-dropup"
-              style={Object {}}
+              style={null}
             />
           </Styled(Button)>
         </Styled(Right)>,
@@ -162,13 +163,14 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": <Styled(Button)
-            onLongPress={[Function]}
-            onPress={[Function]}
+            disabled={true}
+            onLongPress={null}
+            onPress={null}
             transparent={true}
           >
             <Styled(Icon)
               name="arrow-dropup"
-              style={Object {}}
+              style={null}
             />
           </Styled(Button)>,
           "virtual": undefined,
@@ -181,10 +183,11 @@ ShallowWrapper {
           "props": Object {
             "children": <Styled(Icon)
               name="arrow-dropup"
-              style={Object {}}
+              style={null}
             />,
-            "onLongPress": [Function],
-            "onPress": [Function],
+            "disabled": true,
+            "onLongPress": null,
+            "onPress": null,
             "transparent": true,
             "virtual": undefined,
           },
@@ -195,7 +198,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "name": "arrow-dropup",
-              "style": Object {},
+              "style": null,
               "virtual": undefined,
             },
             "ref": null,
@@ -247,13 +250,14 @@ ShallowWrapper {
           </Styled(Body)>,
           <Styled(Right)>
             <Styled(Button)
-              onLongPress={[Function]}
-              onPress={[Function]}
+              disabled={true}
+              onLongPress={null}
+              onPress={null}
               transparent={true}
             >
               <Styled(Icon)
                 name="arrow-dropup"
-                style={Object {}}
+                style={null}
               />
             </Styled(Button)>
           </Styled(Right)>,
@@ -348,13 +352,14 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": <Styled(Button)
-              onLongPress={[Function]}
-              onPress={[Function]}
+              disabled={true}
+              onLongPress={null}
+              onPress={null}
               transparent={true}
             >
               <Styled(Icon)
                 name="arrow-dropup"
-                style={Object {}}
+                style={null}
               />
             </Styled(Button)>,
             "virtual": undefined,
@@ -367,10 +372,11 @@ ShallowWrapper {
             "props": Object {
               "children": <Styled(Icon)
                 name="arrow-dropup"
-                style={Object {}}
+                style={null}
               />,
-              "onLongPress": [Function],
-              "onPress": [Function],
+              "disabled": true,
+              "onLongPress": null,
+              "onPress": null,
               "transparent": true,
               "virtual": undefined,
             },
@@ -381,7 +387,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "name": "arrow-dropup",
-                "style": Object {},
+                "style": null,
                 "virtual": undefined,
               },
               "ref": null,
@@ -426,7 +432,7 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Header
     animated={true}
     backable={true}
-    onRightPress={[Function]}
+    onRightPress={null}
     rightStyle={
       Object {
         "color": "#4E4A47",
@@ -931,6 +937,7 @@ ShallowWrapper {
         </Styled(Body)>,
         <Styled(Right)>
           <Styled(Button)
+            disabled={false}
             onLongPress={[Function]}
             onPress={[Function]}
             transparent={true}
@@ -1036,6 +1043,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": <Styled(Button)
+            disabled={false}
             onLongPress={[Function]}
             onPress={[Function]}
             transparent={true}
@@ -1065,6 +1073,7 @@ ShallowWrapper {
                 }
               }
             />,
+            "disabled": false,
             "onLongPress": [Function],
             "onPress": [Function],
             "transparent": true,
@@ -1131,6 +1140,7 @@ ShallowWrapper {
           </Styled(Body)>,
           <Styled(Right)>
             <Styled(Button)
+              disabled={false}
               onLongPress={[Function]}
               onPress={[Function]}
               transparent={true}
@@ -1236,6 +1246,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": <Styled(Button)
+              disabled={false}
               onLongPress={[Function]}
               onPress={[Function]}
               transparent={true}
@@ -1265,6 +1276,7 @@ ShallowWrapper {
                   }
                 }
               />,
+              "disabled": false,
               "onLongPress": [Function],
               "onPress": [Function],
               "transparent": true,
@@ -1323,7 +1335,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header
     animated={true}
-    onRightPress={[Function]}
+    onRightPress={null}
     rightStyle={
       Object {
         "color": "#4E4A47",
@@ -1796,7 +1808,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header
     animated={true}
-    onRightPress={[Function]}
+    onRightPress={null}
     rightStyle={
       Object {
         "color": "#4E4A47",
@@ -2273,7 +2285,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header
     animated={true}
-    onRightPress={[Function]}
+    onRightPress={null}
     rightStyle={
       Object {
         "color": "#4E4A47",
@@ -2598,7 +2610,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header
     animated={false}
-    onRightPress={[Function]}
+    onRightPress={null}
     rightStyle={
       Object {
         "color": "#4E4A47",

@@ -4,11 +4,13 @@ exports[`Testing Preview Screen is loaded 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Preview
+    currentFilter={1}
     expandStatus="BLAND"
     loadStatus="OK"
     location=""
     onLoadMore={[Function]}
     onLoadPost={[Function]}
+    onUpdateFilter={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -47,6 +49,12 @@ ShallowWrapper {
         <PreviewFooter
           muted={true}
           onRefresh={[Function]}
+          popupProps={
+            Object {
+              "disabled": 1,
+              "onFilterThunk": [Function],
+            }
+          }
           refreshing={false}
         />,
       ],
@@ -94,9 +102,13 @@ ShallowWrapper {
         "props": Object {
           "muted": true,
           "onRefresh": [Function],
+          "popupProps": Object {
+            "disabled": 1,
+            "onFilterThunk": [Function],
+          },
           "refreshing": false,
         },
-        "ref": null,
+        "ref": [Function],
         "rendered": null,
         "type": [Function],
       },
@@ -132,6 +144,12 @@ ShallowWrapper {
           <PreviewFooter
             muted={true}
             onRefresh={[Function]}
+            popupProps={
+              Object {
+                "disabled": 1,
+                "onFilterThunk": [Function],
+              }
+            }
             refreshing={false}
           />,
         ],
@@ -179,9 +197,13 @@ ShallowWrapper {
           "props": Object {
             "muted": true,
             "onRefresh": [Function],
+            "popupProps": Object {
+              "disabled": 1,
+              "onFilterThunk": [Function],
+            },
             "refreshing": false,
           },
-          "ref": null,
+          "ref": [Function],
           "rendered": null,
           "type": [Function],
         },
@@ -217,11 +239,13 @@ exports[`Testing Preview Screen renders as expected with last post 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Preview
+    currentFilter={1}
     expandStatus="HALT"
     loadStatus="OK"
     location=""
     onLoadMore={[Function]}
     onLoadPost={[Function]}
+    onUpdateFilter={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -260,6 +284,12 @@ ShallowWrapper {
         <PreviewFooter
           muted={true}
           onRefresh={[Function]}
+          popupProps={
+            Object {
+              "disabled": 1,
+              "onFilterThunk": [Function],
+            }
+          }
           refreshing={false}
         />,
       ],
@@ -307,9 +337,13 @@ ShallowWrapper {
         "props": Object {
           "muted": true,
           "onRefresh": [Function],
+          "popupProps": Object {
+            "disabled": 1,
+            "onFilterThunk": [Function],
+          },
           "refreshing": false,
         },
-        "ref": null,
+        "ref": [Function],
         "rendered": null,
         "type": [Function],
       },
@@ -345,6 +379,12 @@ ShallowWrapper {
           <PreviewFooter
             muted={true}
             onRefresh={[Function]}
+            popupProps={
+              Object {
+                "disabled": 1,
+                "onFilterThunk": [Function],
+              }
+            }
             refreshing={false}
           />,
         ],
@@ -392,9 +432,13 @@ ShallowWrapper {
           "props": Object {
             "muted": true,
             "onRefresh": [Function],
+            "popupProps": Object {
+              "disabled": 1,
+              "onFilterThunk": [Function],
+            },
             "refreshing": false,
           },
-          "ref": null,
+          "ref": [Function],
           "rendered": null,
           "type": [Function],
         },
@@ -430,11 +474,13 @@ exports[`Testing Preview Screen renders as expected with loading more 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Preview
+    currentFilter={1}
     expandStatus="EXPANDING"
     loadStatus="OK"
     location=""
     onLoadMore={[Function]}
     onLoadPost={[Function]}
+    onUpdateFilter={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -473,6 +519,12 @@ ShallowWrapper {
         <PreviewFooter
           muted={true}
           onRefresh={[Function]}
+          popupProps={
+            Object {
+              "disabled": 1,
+              "onFilterThunk": [Function],
+            }
+          }
           refreshing={false}
         />,
       ],
@@ -520,9 +572,13 @@ ShallowWrapper {
         "props": Object {
           "muted": true,
           "onRefresh": [Function],
+          "popupProps": Object {
+            "disabled": 1,
+            "onFilterThunk": [Function],
+          },
           "refreshing": false,
         },
-        "ref": null,
+        "ref": [Function],
         "rendered": null,
         "type": [Function],
       },
@@ -558,6 +614,12 @@ ShallowWrapper {
           <PreviewFooter
             muted={true}
             onRefresh={[Function]}
+            popupProps={
+              Object {
+                "disabled": 1,
+                "onFilterThunk": [Function],
+              }
+            }
             refreshing={false}
           />,
         ],
@@ -605,9 +667,13 @@ ShallowWrapper {
           "props": Object {
             "muted": true,
             "onRefresh": [Function],
+            "popupProps": Object {
+              "disabled": 1,
+              "onFilterThunk": [Function],
+            },
             "refreshing": false,
           },
-          "ref": null,
+          "ref": [Function],
           "rendered": null,
           "type": [Function],
         },
@@ -643,11 +709,13 @@ exports[`Testing Preview Screen renders as expected without load more 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Preview
+    currentFilter={1}
     expandStatus="BLAND"
     loadStatus="OK"
     location=""
     onLoadMore={[Function]}
     onLoadPost={[Function]}
+    onUpdateFilter={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -686,6 +754,12 @@ ShallowWrapper {
         <PreviewFooter
           muted={true}
           onRefresh={[Function]}
+          popupProps={
+            Object {
+              "disabled": 1,
+              "onFilterThunk": [Function],
+            }
+          }
           refreshing={false}
         />,
       ],
@@ -733,9 +807,13 @@ ShallowWrapper {
         "props": Object {
           "muted": true,
           "onRefresh": [Function],
+          "popupProps": Object {
+            "disabled": 1,
+            "onFilterThunk": [Function],
+          },
           "refreshing": false,
         },
-        "ref": null,
+        "ref": [Function],
         "rendered": null,
         "type": [Function],
       },
@@ -771,6 +849,12 @@ ShallowWrapper {
           <PreviewFooter
             muted={true}
             onRefresh={[Function]}
+            popupProps={
+              Object {
+                "disabled": 1,
+                "onFilterThunk": [Function],
+              }
+            }
             refreshing={false}
           />,
         ],
@@ -818,9 +902,13 @@ ShallowWrapper {
           "props": Object {
             "muted": true,
             "onRefresh": [Function],
+            "popupProps": Object {
+              "disabled": 1,
+              "onFilterThunk": [Function],
+            },
             "refreshing": false,
           },
-          "ref": null,
+          "ref": [Function],
           "rendered": null,
           "type": [Function],
         },

@@ -4,9 +4,15 @@ import { shallow } from 'enzyme';
 import FilterPopup from './FilterPopup';
 
 describe('Testing FilterPopup Component', () => {
+  const requiredProps = {
+    position: {x: 0, y: 0},
+    toggle: () => {},
+    onFilterThunk: () => {}
+  };
+
   it('renders as expected with PopupMenu required props', () => {
     const wrapper = shallow(
-      <FilterPopup position={{x: 0, y: 0}} toggle={() => {}}>
+      <FilterPopup {...requiredProps}>
         <View></View>
       </FilterPopup>
     );
@@ -15,7 +21,7 @@ describe('Testing FilterPopup Component', () => {
 
   it('has onRef', () => {
     const wrapper = shallow(
-      <FilterPopup position={{x: 0, y: 0}} toggle={() => {}} onRef={() => {}}>
+      <FilterPopup {...requiredProps} onRef={() => {}}>
         <View></View>
       </FilterPopup>
     );

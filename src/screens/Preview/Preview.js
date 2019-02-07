@@ -14,6 +14,7 @@ import { OK } from 'hkufui/src/constants/loadStatus';
 
 import { fetchPostsSafe } from './PostPreviewLoader/loadPosts';
 import { fetchExpansion } from './expandPosts';
+import { onUpdateFilter } from './filterPosts';
 import styles from './Styles';
 
 import { circularTint } from 'hkufui/theme/palette';
@@ -32,7 +33,8 @@ export class Preview extends Component {
     this._loadMore = this._loadMore.bind(this);
     this._scrollInit = this._scrollInit.bind(this);
     this._scrollableUnmount = this._scrollableUnmount.bind(this);
-    this._renderListFooter = this._renderListFooter.bind(this)
+    this._renderListFooter = this._renderListFooter.bind(this);
+    this._filterWrapper = this._filterWrapper.bind(this);
   }
 
   _refresh() {
@@ -77,8 +79,16 @@ export class Preview extends Component {
     );
   }
 
+  _filterWrapper(filter) {
+    const { onUpdateFilter } = this.props;
+    return () => {
+      onUpdateFilter(filter);
+      this.footer.filterToggle();
+    };
+  }
+
   render() {
-    const { location, loadStatus } = this.props;
+    const { location, loadStatus, currentFilter } = this.props;
 
     return (
       <Container>
@@ -99,6 +109,11 @@ export class Preview extends Component {
           muted={location === ''}
           onRefresh={this._refresh}
           refreshing={loadStatus !== OK}
+          popupProps={{
+            onFilterThunk: this._filterWrapper,
+            disabled: currentFilter
+          }}
+          ref={ref => this.footer = ref}
         />
       </Container>
     );
@@ -113,19 +128,23 @@ Preview.propTypes = {
   location: PropTypes.string,
   onLoadPost: PropTypes.func.isRequired,
   onLoadMore: PropTypes.func.isRequired,
+  onUpdateFilter: PropTypes.func.isRequired,
   expandStatus: PropTypes.oneOf(Object.values(_expandStatus)).isRequired,
-  loadStatus: PropTypes.oneOf(Object.values(_loadStatus)).isRequired
+  loadStatus: PropTypes.oneOf(Object.values(_loadStatus)).isRequired,
+  currentFilter: PropTypes.number.isRequired
 }
 
 const mapStateToProps = state => ({
   location: state.location.courseTitle,
   expandStatus: state.posts.subStatus,
-  loadStatus: state.posts.status
+  loadStatus: state.posts.status,
+  currentFilter: state.posts.filter
 });
 
 const mapDispatchToProps = dispatch => ({
   onLoadPost: () => dispatch(fetchPostsSafe()),
-  onLoadMore: () => dispatch(fetchExpansion())
+  onLoadMore: () => dispatch(fetchExpansion()),
+  onUpdateFilter: (filter) => dispatch(fetchPostsSafe(onUpdateFilter(filter)))
 })
 
 export default connect(

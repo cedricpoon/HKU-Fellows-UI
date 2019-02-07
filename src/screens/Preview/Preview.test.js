@@ -7,7 +7,9 @@ import { OK } from 'hkufui/src/constants/loadStatus';
 describe('Testing Preview Screen', () => {
   const defaultProps = {
     onLoadPost: () => {},
-    onLoadMore: () => {}
+    onLoadMore: () => {},
+    onUpdateFilter: () => {},
+    currentFilter: 1
   };
 
   it('renders as expected without load more', () => {

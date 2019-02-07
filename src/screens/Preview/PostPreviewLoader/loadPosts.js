@@ -13,6 +13,7 @@ export async function retrievePosts(dispatch, getState) {
     code: location.courseId,
     index: posts.index ,
     time: posts.timeframe,
+    filter: posts.filter
   })), {
     method: 'POST',
     headers: {

@@ -4,6 +4,7 @@ exports[`Testing FilterPopup Component has onRef 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <FilterPopup
+    onFilterThunk={[Function]}
     onRef={[Function]}
     position={
       Object {
@@ -31,6 +32,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Styled(Button)
+          disabled={false}
           iconLeft={true}
           info={true}
           transparent={true}
@@ -50,6 +52,7 @@ ShallowWrapper {
           </Styled(Text)>
         </Styled(Button)>,
         <Styled(Button)
+          disabled={false}
           iconLeft={true}
           success={true}
           transparent={true}
@@ -69,6 +72,7 @@ ShallowWrapper {
           </Styled(Text)>
         </Styled(Button)>,
         <Styled(Button)
+          disabled={false}
           iconLeft={true}
           success={true}
           transparent={true}
@@ -87,6 +91,7 @@ ShallowWrapper {
           </Styled(Text)>
         </Styled(Button)>,
         <Styled(Button)
+          disabled={false}
           iconLeft={true}
           success={true}
           transparent={true}
@@ -134,8 +139,10 @@ ShallowWrapper {
               From Moodle
             </Styled(Text)>,
           ],
+          "disabled": false,
           "iconLeft": true,
           "info": true,
+          "onPress": undefined,
           "transparent": true,
           "virtual": undefined,
         },
@@ -193,7 +200,9 @@ ShallowWrapper {
               Latest Post
             </Styled(Text)>,
           ],
+          "disabled": false,
           "iconLeft": true,
+          "onPress": undefined,
           "success": true,
           "transparent": true,
           "virtual": undefined,
@@ -251,7 +260,9 @@ ShallowWrapper {
               Most Replied
             </Styled(Text)>,
           ],
+          "disabled": false,
           "iconLeft": true,
+          "onPress": undefined,
           "success": true,
           "transparent": true,
           "virtual": undefined,
@@ -309,7 +320,9 @@ ShallowWrapper {
               Popularity
             </Styled(Text)>,
           ],
+          "disabled": false,
           "iconLeft": true,
+          "onPress": undefined,
           "success": true,
           "transparent": true,
           "virtual": undefined,
@@ -359,6 +372,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Styled(Button)
+            disabled={false}
             iconLeft={true}
             info={true}
             transparent={true}
@@ -378,6 +392,7 @@ ShallowWrapper {
             </Styled(Text)>
           </Styled(Button)>,
           <Styled(Button)
+            disabled={false}
             iconLeft={true}
             success={true}
             transparent={true}
@@ -397,6 +412,7 @@ ShallowWrapper {
             </Styled(Text)>
           </Styled(Button)>,
           <Styled(Button)
+            disabled={false}
             iconLeft={true}
             success={true}
             transparent={true}
@@ -415,6 +431,7 @@ ShallowWrapper {
             </Styled(Text)>
           </Styled(Button)>,
           <Styled(Button)
+            disabled={false}
             iconLeft={true}
             success={true}
             transparent={true}
@@ -462,8 +479,10 @@ ShallowWrapper {
                 From Moodle
               </Styled(Text)>,
             ],
+            "disabled": false,
             "iconLeft": true,
             "info": true,
+            "onPress": undefined,
             "transparent": true,
             "virtual": undefined,
           },
@@ -521,7 +540,9 @@ ShallowWrapper {
                 Latest Post
               </Styled(Text)>,
             ],
+            "disabled": false,
             "iconLeft": true,
+            "onPress": undefined,
             "success": true,
             "transparent": true,
             "virtual": undefined,
@@ -579,7 +600,9 @@ ShallowWrapper {
                 Most Replied
               </Styled(Text)>,
             ],
+            "disabled": false,
             "iconLeft": true,
+            "onPress": undefined,
             "success": true,
             "transparent": true,
             "virtual": undefined,
@@ -637,7 +660,9 @@ ShallowWrapper {
                 Popularity
               </Styled(Text)>,
             ],
+            "disabled": false,
             "iconLeft": true,
+            "onPress": undefined,
             "success": true,
             "transparent": true,
             "virtual": undefined,
@@ -708,6 +733,7 @@ exports[`Testing FilterPopup Component renders as expected with PopupMenu requir
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <FilterPopup
+    onFilterThunk={[Function]}
     position={
       Object {
         "x": 0,
@@ -734,6 +760,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Styled(Button)
+          disabled={false}
           iconLeft={true}
           info={true}
           transparent={true}
@@ -753,6 +780,7 @@ ShallowWrapper {
           </Styled(Text)>
         </Styled(Button)>,
         <Styled(Button)
+          disabled={false}
           iconLeft={true}
           success={true}
           transparent={true}
@@ -772,6 +800,7 @@ ShallowWrapper {
           </Styled(Text)>
         </Styled(Button)>,
         <Styled(Button)
+          disabled={false}
           iconLeft={true}
           success={true}
           transparent={true}
@@ -790,6 +819,7 @@ ShallowWrapper {
           </Styled(Text)>
         </Styled(Button)>,
         <Styled(Button)
+          disabled={false}
           iconLeft={true}
           success={true}
           transparent={true}
@@ -837,8 +867,10 @@ ShallowWrapper {
               From Moodle
             </Styled(Text)>,
           ],
+          "disabled": false,
           "iconLeft": true,
           "info": true,
+          "onPress": undefined,
           "transparent": true,
           "virtual": undefined,
         },
@@ -896,7 +928,9 @@ ShallowWrapper {
               Latest Post
             </Styled(Text)>,
           ],
+          "disabled": false,
           "iconLeft": true,
+          "onPress": undefined,
           "success": true,
           "transparent": true,
           "virtual": undefined,
@@ -954,7 +988,9 @@ ShallowWrapper {
               Most Replied
             </Styled(Text)>,
           ],
+          "disabled": false,
           "iconLeft": true,
+          "onPress": undefined,
           "success": true,
           "transparent": true,
           "virtual": undefined,
@@ -1012,7 +1048,9 @@ ShallowWrapper {
               Popularity
             </Styled(Text)>,
           ],
+          "disabled": false,
           "iconLeft": true,
+          "onPress": undefined,
           "success": true,
           "transparent": true,
           "virtual": undefined,
@@ -1062,6 +1100,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Styled(Button)
+            disabled={false}
             iconLeft={true}
             info={true}
             transparent={true}
@@ -1081,6 +1120,7 @@ ShallowWrapper {
             </Styled(Text)>
           </Styled(Button)>,
           <Styled(Button)
+            disabled={false}
             iconLeft={true}
             success={true}
             transparent={true}
@@ -1100,6 +1140,7 @@ ShallowWrapper {
             </Styled(Text)>
           </Styled(Button)>,
           <Styled(Button)
+            disabled={false}
             iconLeft={true}
             success={true}
             transparent={true}
@@ -1118,6 +1159,7 @@ ShallowWrapper {
             </Styled(Text)>
           </Styled(Button)>,
           <Styled(Button)
+            disabled={false}
             iconLeft={true}
             success={true}
             transparent={true}
@@ -1165,8 +1207,10 @@ ShallowWrapper {
                 From Moodle
               </Styled(Text)>,
             ],
+            "disabled": false,
             "iconLeft": true,
             "info": true,
+            "onPress": undefined,
             "transparent": true,
             "virtual": undefined,
           },
@@ -1224,7 +1268,9 @@ ShallowWrapper {
                 Latest Post
               </Styled(Text)>,
             ],
+            "disabled": false,
             "iconLeft": true,
+            "onPress": undefined,
             "success": true,
             "transparent": true,
             "virtual": undefined,
@@ -1282,7 +1328,9 @@ ShallowWrapper {
                 Most Replied
               </Styled(Text)>,
             ],
+            "disabled": false,
             "iconLeft": true,
+            "onPress": undefined,
             "success": true,
             "transparent": true,
             "virtual": undefined,
@@ -1340,7 +1388,9 @@ ShallowWrapper {
                 Popularity
               </Styled(Text)>,
             ],
+            "disabled": false,
             "iconLeft": true,
+            "onPress": undefined,
             "success": true,
             "transparent": true,
             "virtual": undefined,

@@ -4,13 +4,14 @@ import PropTypes from 'prop-types';
 
 import PopupMenu from '../../PopupMenu/PopupMenu';
 
+import { MOODLE, TIMESTAMP, REPLIES, TEMPERATURE } from 'hkufui/src/constants/filterStatus';
 import { localize } from 'hkufui/locale';
 import styles from 'hkufui/theme/Styles';
 const locale = localize({ language: 'en', country: 'hk' });
 
 class FilterPopup extends Component {
   render() {
-    const { onRef, ...restProps } = this.props;
+    const { onRef, onFilterThunk, disabled, ...restProps } = this.props;
 
     return(
       <PopupMenu
@@ -18,19 +19,19 @@ class FilterPopup extends Component {
         ref={onRef}
         { ...restProps }
       >
-        <Button transparent info iconLeft>
+        <Button transparent info iconLeft onPress={onFilterThunk(MOODLE)} disabled={disabled === MOODLE}>
           <Icon name="link" type="MaterialIcons" style={styles.icon}></Icon>
           <Text>{locale['footer.moodle']}</Text>
         </Button>
-        <Button transparent success iconLeft>
+        <Button transparent success iconLeft onPress={onFilterThunk(TIMESTAMP)} disabled={disabled === TIMESTAMP}>
           <Icon name="clock-fast" type="MaterialCommunityIcons" style={styles.icon}></Icon>
           <Text>{locale['footer.latestPost']}</Text>
         </Button>
-        <Button transparent success iconLeft>
+        <Button transparent success iconLeft onPress={onFilterThunk(REPLIES)} disabled={disabled === REPLIES}>
           <Icon name="undo" style={styles.icon}></Icon>
           <Text>{locale['footer.mostReplied']}</Text>
         </Button>
-        <Button transparent success iconLeft>
+        <Button transparent success iconLeft onPress={onFilterThunk(TEMPERATURE)} disabled={disabled === TEMPERATURE}>
           <Icon name="people" type="MaterialIcons" style={styles.icon}></Icon>
           <Text>{locale['footer.popularity']}</Text>
         </Button>
@@ -39,8 +40,14 @@ class FilterPopup extends Component {
   }
 }
 
+FilterPopup.defaultProps = {
+  onFilterThunk: () => {}
+}
+
 FilterPopup.propTypes = {
-  onRef: PropTypes.func
+  onRef: PropTypes.func,
+  disabled: PropTypes.oneOf([ MOODLE, TIMESTAMP, REPLIES, TEMPERATURE ]),
+  onFilterThunk: PropTypes.func.isRequired
 }
 
 export default FilterPopup;

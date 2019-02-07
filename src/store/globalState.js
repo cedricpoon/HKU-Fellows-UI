@@ -1,5 +1,6 @@
 import { STILL } from 'hkufui/src/constants/loadStatus';
 import { BLAND } from 'hkufui/src/constants/expandStatus';
+import { TIMESTAMP } from 'hkufui/src/constants/filterStatus';
 
 export default {
   location: {
@@ -17,6 +18,8 @@ export default {
     status: STILL,
     /* BLAND, EXPANDING, HALT */
     subStatus: BLAND,
+    /* MOODLE, TIMESTAMP, REPLIES, TEMPERATURE */
+    filter: TIMESTAMP,
     /* index from /post/:courseId/:index */
     index: 1,
     /* timeframe for locking select in backend */

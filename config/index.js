@@ -17,5 +17,7 @@ export const deepLink = {
   post: i => `post/${i}`
 };
 
+export const markdownTutorialLink = 'https://guides.github.com/features/mastering-markdown/';
+
 // eslint-disable-next-line no-undef
 export const environment = process.env['NODE_ENV'];

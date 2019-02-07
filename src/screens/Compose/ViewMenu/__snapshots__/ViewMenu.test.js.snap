@@ -1,0 +1,396 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing ViewMenu Screen renders as expected 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ViewMenu
+    position={
+      Object {
+        "x": 0,
+        "y": 0,
+      }
+    }
+    toggle={[Function]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <Styled(Button)
+          iconLeft={true}
+          success={true}
+          transparent={true}
+        >
+          <Styled(Icon)
+            name="face"
+            style={
+              Object {
+                "textAlign": "center",
+                "width": 25,
+              }
+            }
+            type="MaterialIcons"
+          />
+          <Styled(Text)>
+            Post with UID
+          </Styled(Text)>
+        </Styled(Button)>,
+        <Styled(Button)
+          iconLeft={true}
+          info={true}
+          transparent={true}
+        >
+          <Styled(Icon)
+            name="incognito"
+            style={
+              Object {
+                "textAlign": "center",
+                "width": 25,
+              }
+            }
+            type="MaterialCommunityIcons"
+          />
+          <Styled(Text)>
+            Post Anonymously
+          </Styled(Text)>
+        </Styled(Button)>,
+      ],
+      "position": Object {
+        "x": 0,
+        "y": 0,
+      },
+      "toggle": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(Icon)
+              name="face"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
+              type="MaterialIcons"
+            />,
+            <Styled(Text)>
+              Post with UID
+            </Styled(Text)>,
+          ],
+          "iconLeft": true,
+          "success": true,
+          "transparent": true,
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "face",
+              "style": Object {
+                "textAlign": "center",
+                "width": 25,
+              },
+              "type": "MaterialIcons",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Post with UID",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": "Post with UID",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(Icon)
+              name="incognito"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
+              type="MaterialCommunityIcons"
+            />,
+            <Styled(Text)>
+              Post Anonymously
+            </Styled(Text)>,
+          ],
+          "iconLeft": true,
+          "info": true,
+          "transparent": true,
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "incognito",
+              "style": Object {
+                "textAlign": "center",
+                "width": 25,
+              },
+              "type": "MaterialCommunityIcons",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Post Anonymously",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": "Post Anonymously",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Styled(Button)
+            iconLeft={true}
+            success={true}
+            transparent={true}
+          >
+            <Styled(Icon)
+              name="face"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
+              type="MaterialIcons"
+            />
+            <Styled(Text)>
+              Post with UID
+            </Styled(Text)>
+          </Styled(Button)>,
+          <Styled(Button)
+            iconLeft={true}
+            info={true}
+            transparent={true}
+          >
+            <Styled(Icon)
+              name="incognito"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
+              type="MaterialCommunityIcons"
+            />
+            <Styled(Text)>
+              Post Anonymously
+            </Styled(Text)>
+          </Styled(Button)>,
+        ],
+        "position": Object {
+          "x": 0,
+          "y": 0,
+        },
+        "toggle": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Styled(Icon)
+                name="face"
+                style={
+                  Object {
+                    "textAlign": "center",
+                    "width": 25,
+                  }
+                }
+                type="MaterialIcons"
+              />,
+              <Styled(Text)>
+                Post with UID
+              </Styled(Text)>,
+            ],
+            "iconLeft": true,
+            "success": true,
+            "transparent": true,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "face",
+                "style": Object {
+                  "textAlign": "center",
+                  "width": 25,
+                },
+                "type": "MaterialIcons",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Post with UID",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "Post with UID",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Styled(Icon)
+                name="incognito"
+                style={
+                  Object {
+                    "textAlign": "center",
+                    "width": 25,
+                  }
+                }
+                type="MaterialCommunityIcons"
+              />,
+              <Styled(Text)>
+                Post Anonymously
+              </Styled(Text)>,
+            ],
+            "iconLeft": true,
+            "info": true,
+            "transparent": true,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "incognito",
+                "style": Object {
+                  "textAlign": "center",
+                  "width": 25,
+                },
+                "type": "MaterialCommunityIcons",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Post Anonymously",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "Post Anonymously",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

@@ -9,7 +9,7 @@ export const email = {
   address:'fyp18005@cs.hku.hk',
   subject: 'Report Abuse',
   ref: postId => refNo(postId),
-  template: postId => `Your UID:\n\nIncident Location:\n\nIncident Details:\n\n${refNo(postId)}`
+  template: (uid, postId) => `Your UID: ${uid}\n\nIncident Location:\n\nIncident Details:\n\n${refNo(postId)}`
 };
 
 export const deepLink = {

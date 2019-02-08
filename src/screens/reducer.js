@@ -9,6 +9,7 @@ import LoadPostsHandler from './Preview/PostPreviewLoader/loadPosts';
 import ExpandPostsHandler from './Preview/expandPosts';
 import Authentication from './Login/authenticate';
 import ViewActionHandler from './Post/viewActions';
+import FilterPostHandler from './Preview/filterPosts';
 
 const ruleReducer = (state, action) => {
   // logged in rule middleware
@@ -28,7 +29,8 @@ const ruleReducer = (state, action) => {
     location: loggedIn(SelectCourseActionHandler),
     posts: loggedIn(reduceReducers(
       LoadPostsHandler,
-      ExpandPostsHandler
+      ExpandPostsHandler,
+      FilterPostHandler
     )),
     replies: loggedIn(ViewActionHandler),
     credential: Authentication

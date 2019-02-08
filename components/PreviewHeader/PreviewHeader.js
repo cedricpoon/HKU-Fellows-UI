@@ -15,7 +15,7 @@ class PreviewHeader extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { inputFocused: false };
+    this.state = { inputFocused: false, query: '' };
 
     this.searchBarOnFocus = this.searchBarOnFocus.bind(this);
     this.searchCancel = this.searchCancel.bind(this);
@@ -33,14 +33,17 @@ class PreviewHeader extends Component {
 
     Keyboard.dismiss();
 
+    this.props.onCancel(this.state.query !== '');
+
     this.setState(() => ({
-      inputFocused: false
+      inputFocused: false,
+      query: ''
     }));
   }
 
   render() {
-    const { location } = this.props;
-    const { inputFocused } = this.state;
+    const { location, onSearchThunk } = this.props;
+    const { inputFocused, query } = this.state;
 
     const inputIcon = location === '' ? 'arrow-dropright' : 'search'
 
@@ -58,7 +61,6 @@ class PreviewHeader extends Component {
               {location !== '' ? location : appName}
             </Text>
           </Button>
-
           <Input
             placeholder={
               location !== '' ?
@@ -71,9 +73,11 @@ class PreviewHeader extends Component {
             onFocus={this.searchBarOnFocus}
             ref={(ref) => { this._searchBar = ref }}
             enablesReturnKeyAutomatically
+            autoCorrect={false}
+            onSubmitEditing={onSearchThunk(query)}
+            onChangeText={(query) => this.setState({query})}
             disabled={location === ''}
           />
-
           <Right style={styles.rightButtons}>
             <Button
               transparent
@@ -92,8 +96,15 @@ class PreviewHeader extends Component {
   }
 }
 
+PreviewHeader.defaultProps = {
+  onSearchThunk: () => {},
+  onCancel: () => {}
+}
+
 PreviewHeader.propTypes = {
-  location: PropTypes.string.isRequired
+  location: PropTypes.string.isRequired,
+  onSearchThunk: PropTypes.func,
+  onCancel: PropTypes.func
 };
 
 export default PreviewHeader;

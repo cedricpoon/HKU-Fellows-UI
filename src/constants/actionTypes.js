@@ -27,3 +27,9 @@ export const FILL_REPLIES = "FILL_REPLIES";
 export const LOAD_REPLIES = "LOAD_REPLIES";
 
 export const REFRESH_REPLIES = "REFRESH_REPLIES";
+
+export const UPDATE_FILTER = "UPDATE_FILTER";
+
+export const UPDATE_KEYWORD = "UPDATE_KEYWORD";
+
+export const UPDATE_QUERY = "UPDATE_QUERY";

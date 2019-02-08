@@ -42,9 +42,9 @@ export class PostHeaderMenu extends Component {
 
   _reportAbuse() {
     const { address, subject, template, ref } = email;
-    const { postId } = this.props;
+    const { postId, uid } = this.props;
     // open mail app to report
-    Linking.openURL(`mailto:${address}?subject=${subject}&body=${template(postId)}`)
+    Linking.openURL(`mailto:${address}?subject=${subject}&body=${template(uid, postId)}`)
       .catch(() => {
         Alert.alert(
           locale['alert.noEmailTitle'],
@@ -109,6 +109,7 @@ export class PostHeaderMenu extends Component {
 PostHeaderMenu.propTypes = {
   postId: PropTypes.string.isRequired,
   topicId: PropTypes.string.isRequired,
+  uid: PropTypes.string.isRequired,
   onRef: PropTypes.func,
   native: PropTypes.bool,
   index: PropTypes.number.isRequired,
@@ -124,7 +125,11 @@ const mapDispatchToProps = dispatch => ({
   onAccept: ({ topicId, postId }) => dispatch(onAccept({ topicId, postId }))
 });
 
+const mapStateToProps = state => ({
+  uid: state.credential.userId
+});
+
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(PostHeaderMenu);

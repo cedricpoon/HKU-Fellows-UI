@@ -14,8 +14,9 @@ import { OK } from 'hkufui/src/constants/loadStatus';
 
 import { fetchPostsSafe } from './PostPreviewLoader/loadPosts';
 import { fetchExpansion } from './expandPosts';
-import { onUpdateFilter } from './filterPosts';
+import { onUpdateFilter, onUpdateQuery, onUpdateKeyword, resetQueryKeyword } from './filterPosts';
 import styles from './Styles';
+import { classifyQuery } from './helper';
 
 import { circularTint } from 'hkufui/theme/palette';
 import { localize } from 'hkufui/locale';
@@ -27,7 +28,7 @@ export class Preview extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { willRefresh: false, isReady: false };
+    this.state = { willRefresh: false, isReady: false, searched: false };
 
     this._refresh = this._refresh.bind(this);
     this._loadMore = this._loadMore.bind(this);
@@ -35,6 +36,7 @@ export class Preview extends Component {
     this._scrollableUnmount = this._scrollableUnmount.bind(this);
     this._renderListFooter = this._renderListFooter.bind(this);
     this._filterWrapper = this._filterWrapper.bind(this);
+    this._searchWrapper = this._searchWrapper.bind(this);
   }
 
   _refresh() {
@@ -87,12 +89,45 @@ export class Preview extends Component {
     };
   }
 
-  render() {
-    const { location, loadStatus, currentFilter } = this.props;
+  _searchWrapper(query) {
+    const { onUpdateQuery, onUpdateKeyword } = this.props;
+    return () => {
+      const target = classifyQuery(query);
+      this.setState({ searched: true });
 
+      if (typeof target === 'object') {
+        onUpdateKeyword(target);
+      } else {
+        onUpdateQuery(target);
+      }
+    }
+  }
+
+  componentDidUpdate() {
+    const { shouldSearchBarEmpty } = this.props;
+    const { searched } = this.state;
+
+    if (this._header && searched && shouldSearchBarEmpty) {
+      this._header.searchCancel();
+    }
+  }
+
+  render() {
+    const { location, loadStatus, currentFilter, onResetQueryKeyword } = this.props;
+    const cancel = (isNotEmpty) => {
+      if (isNotEmpty) {
+        onResetQueryKeyword();
+        this.setState({ searched: false });
+      }
+    }
     return (
       <Container>
-        <PreviewHeader location={location} />
+        <PreviewHeader
+          location={location}
+          onSearchThunk={this._searchWrapper}
+          onCancel={cancel}
+          ref={ref => this._header = ref}
+        />
         <PostPreviewLoader
           onScroll={this._scrollInit}
           onUnmount={this._scrollableUnmount}
@@ -129,22 +164,39 @@ Preview.propTypes = {
   onLoadPost: PropTypes.func.isRequired,
   onLoadMore: PropTypes.func.isRequired,
   onUpdateFilter: PropTypes.func.isRequired,
+  onUpdateKeyword: PropTypes.func.isRequired,
+  onUpdateQuery: PropTypes.func.isRequired,
+  onResetQueryKeyword: PropTypes.func.isRequired,
   expandStatus: PropTypes.oneOf(Object.values(_expandStatus)).isRequired,
   loadStatus: PropTypes.oneOf(Object.values(_loadStatus)).isRequired,
-  currentFilter: PropTypes.number.isRequired
+  currentFilter: PropTypes.number.isRequired,
+  shouldSearchBarEmpty: PropTypes.bool
 }
 
 const mapStateToProps = state => ({
   location: state.location.courseTitle,
   expandStatus: state.posts.subStatus,
   loadStatus: state.posts.status,
-  currentFilter: state.posts.filter
+  currentFilter: state.posts.filter,
+  shouldSearchBarEmpty: !state.posts.query && !state.posts.hashtag
 });
 
 const mapDispatchToProps = dispatch => ({
   onLoadPost: () => dispatch(fetchPostsSafe()),
   onLoadMore: () => dispatch(fetchExpansion()),
-  onUpdateFilter: (filter) => dispatch(fetchPostsSafe(onUpdateFilter(filter)))
+  onUpdateFilter: (filter) => dispatch(fetchPostsSafe(onUpdateFilter(filter))),
+  onUpdateKeyword: (keyword) => dispatch(dispatch => {
+    dispatch(onUpdateKeyword(keyword));
+    dispatch(fetchPostsSafe());
+  }),
+  onUpdateQuery: (query) => dispatch(dispatch => {
+    dispatch(onUpdateQuery(query));
+    dispatch(fetchPostsSafe());
+  }),
+  onResetQueryKeyword: () => dispatch(dispatch => {
+    dispatch(resetQueryKeyword());
+    dispatch(fetchPostsSafe());
+  })
 })
 
 export default connect(

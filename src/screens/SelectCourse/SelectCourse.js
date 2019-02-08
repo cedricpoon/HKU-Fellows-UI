@@ -9,7 +9,7 @@ import courses from 'hkufui/static/courses';
 
 import { onUpdateLocation, onSetSelectCourseIndex } from './handleActions';
 import { fetchPostsSafe } from '../Preview/PostPreviewLoader/loadPosts';
-import { onResetFilter } from '../Preview/filterPosts';
+import { onResetFilter, resetQueryKeyword } from '../Preview/filterPosts';
 import { formBreadcrumbString } from './helper';
 import styles from './Styles';
 
@@ -86,6 +86,7 @@ const mapDispatchToProps = dispatch => ({
   onUpdateLocationAndLoadPost: (item) => dispatch(fetchPostsSafe(dispatch => {
     dispatch(onUpdateLocation(item));
     dispatch(onResetFilter());
+    dispatch(resetQueryKeyword());
   })),
   onSetSelectCourseIndex: (array) => dispatch(onSetSelectCourseIndex(array))
 })

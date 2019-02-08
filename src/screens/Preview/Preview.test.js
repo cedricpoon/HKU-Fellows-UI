@@ -9,6 +9,9 @@ describe('Testing Preview Screen', () => {
     onLoadPost: () => {},
     onLoadMore: () => {},
     onUpdateFilter: () => {},
+    onUpdateQuery: () => {},
+    onUpdateKeyword: () => {},
+    onResetQueryKeyword: () => {},
     currentFilter: 1
   };
 

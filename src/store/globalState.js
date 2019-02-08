@@ -20,6 +20,10 @@ export default {
     subStatus: BLAND,
     /* MOODLE, TIMESTAMP, REPLIES, TEMPERATURE */
     filter: TIMESTAMP,
+    /* string to be searched */
+    query: null,
+    /* { primary: xxx, secondary: yyy } */
+    hashtag: null,
     /* index from /post/:courseId/:index */
     index: 1,
     /* timeframe for locking select in backend */

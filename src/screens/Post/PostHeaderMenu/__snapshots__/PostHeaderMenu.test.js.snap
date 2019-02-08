@@ -15,6 +15,7 @@ ShallowWrapper {
     postId="postId"
     toggle={[Function]}
     topicId="topicId"
+    uid="uid"
   >
     <View />
   </PostHeaderMenu>,
@@ -66,6 +67,7 @@ ShallowWrapper {
       "postId": "postId",
       "toggle": [Function],
       "topicId": "topicId",
+      "uid": "uid",
     },
     "ref": [Function],
     "rendered": Array [
@@ -177,6 +179,7 @@ ShallowWrapper {
         "postId": "postId",
         "toggle": [Function],
         "topicId": "topicId",
+        "uid": "uid",
       },
       "ref": [Function],
       "rendered": Array [
@@ -288,6 +291,7 @@ ShallowWrapper {
     solved={true}
     toggle={[Function]}
     topicId="topicId"
+    uid="uid"
   >
     <View />
   </PostHeaderMenu>,
@@ -339,6 +343,7 @@ ShallowWrapper {
       "postId": "postId",
       "toggle": [Function],
       "topicId": "topicId",
+      "uid": "uid",
     },
     "ref": null,
     "rendered": Array [
@@ -450,6 +455,7 @@ ShallowWrapper {
         "postId": "postId",
         "toggle": [Function],
         "topicId": "topicId",
+        "uid": "uid",
       },
       "ref": null,
       "rendered": Array [
@@ -560,6 +566,7 @@ ShallowWrapper {
     postId="postId"
     toggle={[Function]}
     topicId="topicId"
+    uid="uid"
   >
     <View />
   </PostHeaderMenu>,
@@ -611,6 +618,7 @@ ShallowWrapper {
       "postId": "postId",
       "toggle": [Function],
       "topicId": "topicId",
+      "uid": "uid",
     },
     "ref": null,
     "rendered": Array [
@@ -722,6 +730,7 @@ ShallowWrapper {
         "postId": "postId",
         "toggle": [Function],
         "topicId": "topicId",
+        "uid": "uid",
       },
       "ref": null,
       "rendered": Array [

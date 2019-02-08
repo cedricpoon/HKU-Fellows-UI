@@ -10,7 +10,10 @@ ShallowWrapper {
     location=""
     onLoadMore={[Function]}
     onLoadPost={[Function]}
+    onResetQueryKeyword={[Function]}
     onUpdateFilter={[Function]}
+    onUpdateKeyword={[Function]}
+    onUpdateQuery={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -29,6 +32,8 @@ ShallowWrapper {
       "children": Array [
         <PreviewHeader
           location=""
+          onCancel={[Function]}
+          onSearchThunk={[Function]}
         />,
         <Connect(PostPreviewLoader)
           ListFooterComponent={[Function]}
@@ -68,8 +73,10 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "location": "",
+          "onCancel": [Function],
+          "onSearchThunk": [Function],
         },
-        "ref": null,
+        "ref": [Function],
         "rendered": null,
         "type": [Function],
       },
@@ -124,6 +131,8 @@ ShallowWrapper {
         "children": Array [
           <PreviewHeader
             location=""
+            onCancel={[Function]}
+            onSearchThunk={[Function]}
           />,
           <Connect(PostPreviewLoader)
             ListFooterComponent={[Function]}
@@ -163,8 +172,10 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "location": "",
+            "onCancel": [Function],
+            "onSearchThunk": [Function],
           },
-          "ref": null,
+          "ref": [Function],
           "rendered": null,
           "type": [Function],
         },
@@ -245,7 +256,10 @@ ShallowWrapper {
     location=""
     onLoadMore={[Function]}
     onLoadPost={[Function]}
+    onResetQueryKeyword={[Function]}
     onUpdateFilter={[Function]}
+    onUpdateKeyword={[Function]}
+    onUpdateQuery={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -264,6 +278,8 @@ ShallowWrapper {
       "children": Array [
         <PreviewHeader
           location=""
+          onCancel={[Function]}
+          onSearchThunk={[Function]}
         />,
         <Connect(PostPreviewLoader)
           ListFooterComponent={[Function]}
@@ -303,8 +319,10 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "location": "",
+          "onCancel": [Function],
+          "onSearchThunk": [Function],
         },
-        "ref": null,
+        "ref": [Function],
         "rendered": null,
         "type": [Function],
       },
@@ -359,6 +377,8 @@ ShallowWrapper {
         "children": Array [
           <PreviewHeader
             location=""
+            onCancel={[Function]}
+            onSearchThunk={[Function]}
           />,
           <Connect(PostPreviewLoader)
             ListFooterComponent={[Function]}
@@ -398,8 +418,10 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "location": "",
+            "onCancel": [Function],
+            "onSearchThunk": [Function],
           },
-          "ref": null,
+          "ref": [Function],
           "rendered": null,
           "type": [Function],
         },
@@ -480,7 +502,10 @@ ShallowWrapper {
     location=""
     onLoadMore={[Function]}
     onLoadPost={[Function]}
+    onResetQueryKeyword={[Function]}
     onUpdateFilter={[Function]}
+    onUpdateKeyword={[Function]}
+    onUpdateQuery={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -499,6 +524,8 @@ ShallowWrapper {
       "children": Array [
         <PreviewHeader
           location=""
+          onCancel={[Function]}
+          onSearchThunk={[Function]}
         />,
         <Connect(PostPreviewLoader)
           ListFooterComponent={[Function]}
@@ -538,8 +565,10 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "location": "",
+          "onCancel": [Function],
+          "onSearchThunk": [Function],
         },
-        "ref": null,
+        "ref": [Function],
         "rendered": null,
         "type": [Function],
       },
@@ -594,6 +623,8 @@ ShallowWrapper {
         "children": Array [
           <PreviewHeader
             location=""
+            onCancel={[Function]}
+            onSearchThunk={[Function]}
           />,
           <Connect(PostPreviewLoader)
             ListFooterComponent={[Function]}
@@ -633,8 +664,10 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "location": "",
+            "onCancel": [Function],
+            "onSearchThunk": [Function],
           },
-          "ref": null,
+          "ref": [Function],
           "rendered": null,
           "type": [Function],
         },
@@ -715,7 +748,10 @@ ShallowWrapper {
     location=""
     onLoadMore={[Function]}
     onLoadPost={[Function]}
+    onResetQueryKeyword={[Function]}
     onUpdateFilter={[Function]}
+    onUpdateKeyword={[Function]}
+    onUpdateQuery={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -734,6 +770,8 @@ ShallowWrapper {
       "children": Array [
         <PreviewHeader
           location=""
+          onCancel={[Function]}
+          onSearchThunk={[Function]}
         />,
         <Connect(PostPreviewLoader)
           ListFooterComponent={[Function]}
@@ -773,8 +811,10 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "location": "",
+          "onCancel": [Function],
+          "onSearchThunk": [Function],
         },
-        "ref": null,
+        "ref": [Function],
         "rendered": null,
         "type": [Function],
       },
@@ -829,6 +869,8 @@ ShallowWrapper {
         "children": Array [
           <PreviewHeader
             location=""
+            onCancel={[Function]}
+            onSearchThunk={[Function]}
           />,
           <Connect(PostPreviewLoader)
             ListFooterComponent={[Function]}
@@ -868,8 +910,10 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "location": "",
+            "onCancel": [Function],
+            "onSearchThunk": [Function],
           },
-          "ref": null,
+          "ref": [Function],
           "rendered": null,
           "type": [Function],
         },

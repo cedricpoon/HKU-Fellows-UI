@@ -259,7 +259,7 @@ ShallowWrapper {
         "onPress": [Function],
         "text": "Compose",
       },
-      "headline": "No Posts Yet",
+      "headline": "No Result / No Posts Yet",
       "icon": Object {
         "name": "md-paper",
       },
@@ -279,7 +279,7 @@ ShallowWrapper {
           "onPress": [Function],
           "text": "Compose",
         },
-        "headline": "No Posts Yet",
+        "headline": "No Result / No Posts Yet",
         "icon": Object {
           "name": "md-paper",
         },

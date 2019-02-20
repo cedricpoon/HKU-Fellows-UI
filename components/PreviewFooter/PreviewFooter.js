@@ -22,11 +22,13 @@ class PreviewFooter extends Component {
 
   _renderFilterPopup() {
     const { filterLayout, footerLayout } = this.state;
+    const { popupProps } = this.props;
     return(
       <FilterPopup
         position={{x: filterLayout.x, y: footerLayout.y}}
         parentHeight={footerLayout.height}
         onRef={ref => this._popup = ref}
+        {...popupProps}
       />
     );
   }
@@ -76,7 +78,8 @@ class PreviewFooter extends Component {
 PreviewFooter.propTypes = {
   muted: PropTypes.bool,
   refreshing: PropTypes.bool,
-  onRefresh: PropTypes.func.isRequired
+  onRefresh: PropTypes.func.isRequired,
+  popupProps: PropTypes.object
 }
 
 export default PreviewFooter;

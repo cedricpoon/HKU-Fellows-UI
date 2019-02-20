@@ -5,6 +5,8 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PreviewHeader
     location=""
+    onCancel={[Function]}
+    onSearchThunk={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -48,8 +50,10 @@ ShallowWrapper {
           </Styled(Text)>
         </Styled(Button)>
         <Styled(Input)
+          autoCorrect={false}
           disabled={true}
           enablesReturnKeyAutomatically={true}
+          onChangeText={[Function]}
           onFocus={[Function]}
           placeholder="Swipe left to choose course"
           returnKeyType="search"
@@ -124,8 +128,10 @@ ShallowWrapper {
             </Styled(Text)>
           </Styled(Button)>,
           <Styled(Input)
+            autoCorrect={false}
             disabled={true}
             enablesReturnKeyAutomatically={true}
+            onChangeText={[Function]}
             onFocus={[Function]}
             placeholder="Swipe left to choose course"
             returnKeyType="search"
@@ -218,9 +224,12 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "autoCorrect": false,
             "disabled": true,
             "enablesReturnKeyAutomatically": true,
+            "onChangeText": [Function],
             "onFocus": [Function],
+            "onSubmitEditing": undefined,
             "placeholder": "Swipe left to choose course",
             "returnKeyType": "search",
             "style": Object {
@@ -342,8 +351,10 @@ ShallowWrapper {
             </Styled(Text)>
           </Styled(Button)>
           <Styled(Input)
+            autoCorrect={false}
             disabled={true}
             enablesReturnKeyAutomatically={true}
+            onChangeText={[Function]}
             onFocus={[Function]}
             placeholder="Swipe left to choose course"
             returnKeyType="search"
@@ -418,8 +429,10 @@ ShallowWrapper {
               </Styled(Text)>
             </Styled(Button)>,
             <Styled(Input)
+              autoCorrect={false}
               disabled={true}
               enablesReturnKeyAutomatically={true}
+              onChangeText={[Function]}
               onFocus={[Function]}
               placeholder="Swipe left to choose course"
               returnKeyType="search"
@@ -512,9 +525,1298 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
+              "autoCorrect": false,
               "disabled": true,
               "enablesReturnKeyAutomatically": true,
+              "onChangeText": [Function],
               "onFocus": [Function],
+              "onSubmitEditing": undefined,
+              "placeholder": "Swipe left to choose course",
+              "returnKeyType": "search",
+              "style": Object {
+                "fontSize": 15,
+                "top": 0,
+              },
+              "virtual": undefined,
+            },
+            "ref": [Function],
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Button)
+                dark={true}
+                disabled={true}
+                onPress={[Function]}
+                small={true}
+                transparent={true}
+              >
+                <Styled(Icon)
+                  name="arrow-dropright"
+                  style={
+                    Object {
+                      "marginLeft": 0,
+                      "marginRight": 15,
+                    }
+                  }
+                />
+              </Styled(Button)>,
+              "style": Object {
+                "flex": 0,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Styled(Icon)
+                  name="arrow-dropright"
+                  style={
+                    Object {
+                      "marginLeft": 0,
+                      "marginRight": 15,
+                    }
+                  }
+                />,
+                "dark": true,
+                "disabled": true,
+                "onPress": [Function],
+                "small": true,
+                "transparent": true,
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "name": "arrow-dropright",
+                  "style": Object {
+                    "marginLeft": 0,
+                    "marginRight": 15,
+                  },
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing PreviewHeader Component will cancel 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PreviewHeader
+    location=""
+    onCancel={[Function]}
+    onSearchThunk={[Function]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <Styled(Item)
+        rounded={true}
+      >
+        <Styled(Button)
+          onPress={[Function]}
+          rounded={true}
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#4E4A47",
+              "height": null,
+              "marginLeft": 2.5,
+            }
+          }
+        >
+          <Styled(Text)
+            style={
+              Object {
+                "fontSize": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+              }
+            }
+          >
+            HKU Fellows
+          </Styled(Text)>
+        </Styled(Button)>
+        <Styled(Input)
+          autoCorrect={false}
+          disabled={true}
+          enablesReturnKeyAutomatically={true}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          placeholder="Swipe left to choose course"
+          returnKeyType="search"
+          style={
+            Object {
+              "fontSize": 15,
+              "top": 0,
+            }
+          }
+        />
+        <Styled(Right)
+          style={
+            Object {
+              "flex": 0,
+            }
+          }
+        >
+          <Styled(Button)
+            dark={true}
+            disabled={true}
+            onPress={[Function]}
+            small={true}
+            transparent={true}
+          >
+            <Styled(Icon)
+              name="arrow-dropright"
+              style={
+                Object {
+                  "marginLeft": 0,
+                  "marginRight": 15,
+                }
+              }
+            />
+          </Styled(Button)>
+        </Styled(Right)>
+      </Styled(Item)>,
+      "searchBar": true,
+      "style": Object {
+        "backgroundColor": "#F8F8F8",
+      },
+      "virtual": undefined,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Styled(Button)
+            onPress={[Function]}
+            rounded={true}
+            style={
+              Object {
+                "alignSelf": "center",
+                "backgroundColor": "#4E4A47",
+                "height": null,
+                "marginLeft": 2.5,
+              }
+            }
+          >
+            <Styled(Text)
+              style={
+                Object {
+                  "fontSize": 10,
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
+                }
+              }
+            >
+              HKU Fellows
+            </Styled(Text)>
+          </Styled(Button)>,
+          <Styled(Input)
+            autoCorrect={false}
+            disabled={true}
+            enablesReturnKeyAutomatically={true}
+            onChangeText={[Function]}
+            onFocus={[Function]}
+            placeholder="Swipe left to choose course"
+            returnKeyType="search"
+            style={
+              Object {
+                "fontSize": 15,
+                "top": 0,
+              }
+            }
+          />,
+          <Styled(Right)
+            style={
+              Object {
+                "flex": 0,
+              }
+            }
+          >
+            <Styled(Button)
+              dark={true}
+              disabled={true}
+              onPress={[Function]}
+              small={true}
+              transparent={true}
+            >
+              <Styled(Icon)
+                name="arrow-dropright"
+                style={
+                  Object {
+                    "marginLeft": 0,
+                    "marginRight": 15,
+                  }
+                }
+              />
+            </Styled(Button)>
+          </Styled(Right)>,
+        ],
+        "rounded": true,
+        "virtual": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Styled(Text)
+              style={
+                Object {
+                  "fontSize": 10,
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
+                }
+              }
+            >
+              HKU Fellows
+            </Styled(Text)>,
+            "onPress": [Function],
+            "rounded": true,
+            "style": Object {
+              "alignSelf": "center",
+              "backgroundColor": "#4E4A47",
+              "height": null,
+              "marginLeft": 2.5,
+            },
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "HKU Fellows",
+              "style": Object {
+                "fontSize": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": "HKU Fellows",
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "autoCorrect": false,
+            "disabled": true,
+            "enablesReturnKeyAutomatically": true,
+            "onChangeText": [Function],
+            "onFocus": [Function],
+            "onSubmitEditing": undefined,
+            "placeholder": "Swipe left to choose course",
+            "returnKeyType": "search",
+            "style": Object {
+              "fontSize": 15,
+              "top": 0,
+            },
+            "virtual": undefined,
+          },
+          "ref": [Function],
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Styled(Button)
+              dark={true}
+              disabled={true}
+              onPress={[Function]}
+              small={true}
+              transparent={true}
+            >
+              <Styled(Icon)
+                name="arrow-dropright"
+                style={
+                  Object {
+                    "marginLeft": 0,
+                    "marginRight": 15,
+                  }
+                }
+              />
+            </Styled(Button)>,
+            "style": Object {
+              "flex": 0,
+            },
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Icon)
+                name="arrow-dropright"
+                style={
+                  Object {
+                    "marginLeft": 0,
+                    "marginRight": 15,
+                  }
+                }
+              />,
+              "dark": true,
+              "disabled": true,
+              "onPress": [Function],
+              "small": true,
+              "transparent": true,
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "arrow-dropright",
+                "style": Object {
+                  "marginLeft": 0,
+                  "marginRight": 15,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <Styled(Item)
+          rounded={true}
+        >
+          <Styled(Button)
+            onPress={[Function]}
+            rounded={true}
+            style={
+              Object {
+                "alignSelf": "center",
+                "backgroundColor": "#4E4A47",
+                "height": null,
+                "marginLeft": 2.5,
+              }
+            }
+          >
+            <Styled(Text)
+              style={
+                Object {
+                  "fontSize": 10,
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
+                }
+              }
+            >
+              HKU Fellows
+            </Styled(Text)>
+          </Styled(Button)>
+          <Styled(Input)
+            autoCorrect={false}
+            disabled={true}
+            enablesReturnKeyAutomatically={true}
+            onChangeText={[Function]}
+            onFocus={[Function]}
+            placeholder="Swipe left to choose course"
+            returnKeyType="search"
+            style={
+              Object {
+                "fontSize": 15,
+                "top": 0,
+              }
+            }
+          />
+          <Styled(Right)
+            style={
+              Object {
+                "flex": 0,
+              }
+            }
+          >
+            <Styled(Button)
+              dark={true}
+              disabled={true}
+              onPress={[Function]}
+              small={true}
+              transparent={true}
+            >
+              <Styled(Icon)
+                name="arrow-dropright"
+                style={
+                  Object {
+                    "marginLeft": 0,
+                    "marginRight": 15,
+                  }
+                }
+              />
+            </Styled(Button)>
+          </Styled(Right)>
+        </Styled(Item)>,
+        "searchBar": true,
+        "style": Object {
+          "backgroundColor": "#F8F8F8",
+        },
+        "virtual": undefined,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(Button)
+              onPress={[Function]}
+              rounded={true}
+              style={
+                Object {
+                  "alignSelf": "center",
+                  "backgroundColor": "#4E4A47",
+                  "height": null,
+                  "marginLeft": 2.5,
+                }
+              }
+            >
+              <Styled(Text)
+                style={
+                  Object {
+                    "fontSize": 10,
+                    "paddingLeft": 10,
+                    "paddingRight": 10,
+                  }
+                }
+              >
+                HKU Fellows
+              </Styled(Text)>
+            </Styled(Button)>,
+            <Styled(Input)
+              autoCorrect={false}
+              disabled={true}
+              enablesReturnKeyAutomatically={true}
+              onChangeText={[Function]}
+              onFocus={[Function]}
+              placeholder="Swipe left to choose course"
+              returnKeyType="search"
+              style={
+                Object {
+                  "fontSize": 15,
+                  "top": 0,
+                }
+              }
+            />,
+            <Styled(Right)
+              style={
+                Object {
+                  "flex": 0,
+                }
+              }
+            >
+              <Styled(Button)
+                dark={true}
+                disabled={true}
+                onPress={[Function]}
+                small={true}
+                transparent={true}
+              >
+                <Styled(Icon)
+                  name="arrow-dropright"
+                  style={
+                    Object {
+                      "marginLeft": 0,
+                      "marginRight": 15,
+                    }
+                  }
+                />
+              </Styled(Button)>
+            </Styled(Right)>,
+          ],
+          "rounded": true,
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Text)
+                style={
+                  Object {
+                    "fontSize": 10,
+                    "paddingLeft": 10,
+                    "paddingRight": 10,
+                  }
+                }
+              >
+                HKU Fellows
+              </Styled(Text)>,
+              "onPress": [Function],
+              "rounded": true,
+              "style": Object {
+                "alignSelf": "center",
+                "backgroundColor": "#4E4A47",
+                "height": null,
+                "marginLeft": 2.5,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "HKU Fellows",
+                "style": Object {
+                  "fontSize": 10,
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "HKU Fellows",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "autoCorrect": false,
+              "disabled": true,
+              "enablesReturnKeyAutomatically": true,
+              "onChangeText": [Function],
+              "onFocus": [Function],
+              "onSubmitEditing": undefined,
+              "placeholder": "Swipe left to choose course",
+              "returnKeyType": "search",
+              "style": Object {
+                "fontSize": 15,
+                "top": 0,
+              },
+              "virtual": undefined,
+            },
+            "ref": [Function],
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Button)
+                dark={true}
+                disabled={true}
+                onPress={[Function]}
+                small={true}
+                transparent={true}
+              >
+                <Styled(Icon)
+                  name="arrow-dropright"
+                  style={
+                    Object {
+                      "marginLeft": 0,
+                      "marginRight": 15,
+                    }
+                  }
+                />
+              </Styled(Button)>,
+              "style": Object {
+                "flex": 0,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Styled(Icon)
+                  name="arrow-dropright"
+                  style={
+                    Object {
+                      "marginLeft": 0,
+                      "marginRight": 15,
+                    }
+                  }
+                />,
+                "dark": true,
+                "disabled": true,
+                "onPress": [Function],
+                "small": true,
+                "transparent": true,
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "name": "arrow-dropright",
+                  "style": Object {
+                    "marginLeft": 0,
+                    "marginRight": 15,
+                  },
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing PreviewHeader Component will search 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PreviewHeader
+    location=""
+    onCancel={[Function]}
+    onSearchThunk={[Function]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <Styled(Item)
+        rounded={true}
+      >
+        <Styled(Button)
+          onPress={[Function]}
+          rounded={true}
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#4E4A47",
+              "height": null,
+              "marginLeft": 2.5,
+            }
+          }
+        >
+          <Styled(Text)
+            style={
+              Object {
+                "fontSize": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+              }
+            }
+          >
+            HKU Fellows
+          </Styled(Text)>
+        </Styled(Button)>
+        <Styled(Input)
+          autoCorrect={false}
+          disabled={true}
+          enablesReturnKeyAutomatically={true}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          placeholder="Swipe left to choose course"
+          returnKeyType="search"
+          style={
+            Object {
+              "fontSize": 15,
+              "top": 0,
+            }
+          }
+        />
+        <Styled(Right)
+          style={
+            Object {
+              "flex": 0,
+            }
+          }
+        >
+          <Styled(Button)
+            dark={true}
+            disabled={true}
+            onPress={[Function]}
+            small={true}
+            transparent={true}
+          >
+            <Styled(Icon)
+              name="arrow-dropright"
+              style={
+                Object {
+                  "marginLeft": 0,
+                  "marginRight": 15,
+                }
+              }
+            />
+          </Styled(Button)>
+        </Styled(Right)>
+      </Styled(Item)>,
+      "searchBar": true,
+      "style": Object {
+        "backgroundColor": "#F8F8F8",
+      },
+      "virtual": undefined,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Styled(Button)
+            onPress={[Function]}
+            rounded={true}
+            style={
+              Object {
+                "alignSelf": "center",
+                "backgroundColor": "#4E4A47",
+                "height": null,
+                "marginLeft": 2.5,
+              }
+            }
+          >
+            <Styled(Text)
+              style={
+                Object {
+                  "fontSize": 10,
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
+                }
+              }
+            >
+              HKU Fellows
+            </Styled(Text)>
+          </Styled(Button)>,
+          <Styled(Input)
+            autoCorrect={false}
+            disabled={true}
+            enablesReturnKeyAutomatically={true}
+            onChangeText={[Function]}
+            onFocus={[Function]}
+            placeholder="Swipe left to choose course"
+            returnKeyType="search"
+            style={
+              Object {
+                "fontSize": 15,
+                "top": 0,
+              }
+            }
+          />,
+          <Styled(Right)
+            style={
+              Object {
+                "flex": 0,
+              }
+            }
+          >
+            <Styled(Button)
+              dark={true}
+              disabled={true}
+              onPress={[Function]}
+              small={true}
+              transparent={true}
+            >
+              <Styled(Icon)
+                name="arrow-dropright"
+                style={
+                  Object {
+                    "marginLeft": 0,
+                    "marginRight": 15,
+                  }
+                }
+              />
+            </Styled(Button)>
+          </Styled(Right)>,
+        ],
+        "rounded": true,
+        "virtual": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Styled(Text)
+              style={
+                Object {
+                  "fontSize": 10,
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
+                }
+              }
+            >
+              HKU Fellows
+            </Styled(Text)>,
+            "onPress": [Function],
+            "rounded": true,
+            "style": Object {
+              "alignSelf": "center",
+              "backgroundColor": "#4E4A47",
+              "height": null,
+              "marginLeft": 2.5,
+            },
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "HKU Fellows",
+              "style": Object {
+                "fontSize": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": "HKU Fellows",
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "autoCorrect": false,
+            "disabled": true,
+            "enablesReturnKeyAutomatically": true,
+            "onChangeText": [Function],
+            "onFocus": [Function],
+            "onSubmitEditing": undefined,
+            "placeholder": "Swipe left to choose course",
+            "returnKeyType": "search",
+            "style": Object {
+              "fontSize": 15,
+              "top": 0,
+            },
+            "virtual": undefined,
+          },
+          "ref": [Function],
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Styled(Button)
+              dark={true}
+              disabled={true}
+              onPress={[Function]}
+              small={true}
+              transparent={true}
+            >
+              <Styled(Icon)
+                name="arrow-dropright"
+                style={
+                  Object {
+                    "marginLeft": 0,
+                    "marginRight": 15,
+                  }
+                }
+              />
+            </Styled(Button)>,
+            "style": Object {
+              "flex": 0,
+            },
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Icon)
+                name="arrow-dropright"
+                style={
+                  Object {
+                    "marginLeft": 0,
+                    "marginRight": 15,
+                  }
+                }
+              />,
+              "dark": true,
+              "disabled": true,
+              "onPress": [Function],
+              "small": true,
+              "transparent": true,
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "arrow-dropright",
+                "style": Object {
+                  "marginLeft": 0,
+                  "marginRight": 15,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <Styled(Item)
+          rounded={true}
+        >
+          <Styled(Button)
+            onPress={[Function]}
+            rounded={true}
+            style={
+              Object {
+                "alignSelf": "center",
+                "backgroundColor": "#4E4A47",
+                "height": null,
+                "marginLeft": 2.5,
+              }
+            }
+          >
+            <Styled(Text)
+              style={
+                Object {
+                  "fontSize": 10,
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
+                }
+              }
+            >
+              HKU Fellows
+            </Styled(Text)>
+          </Styled(Button)>
+          <Styled(Input)
+            autoCorrect={false}
+            disabled={true}
+            enablesReturnKeyAutomatically={true}
+            onChangeText={[Function]}
+            onFocus={[Function]}
+            placeholder="Swipe left to choose course"
+            returnKeyType="search"
+            style={
+              Object {
+                "fontSize": 15,
+                "top": 0,
+              }
+            }
+          />
+          <Styled(Right)
+            style={
+              Object {
+                "flex": 0,
+              }
+            }
+          >
+            <Styled(Button)
+              dark={true}
+              disabled={true}
+              onPress={[Function]}
+              small={true}
+              transparent={true}
+            >
+              <Styled(Icon)
+                name="arrow-dropright"
+                style={
+                  Object {
+                    "marginLeft": 0,
+                    "marginRight": 15,
+                  }
+                }
+              />
+            </Styled(Button)>
+          </Styled(Right)>
+        </Styled(Item)>,
+        "searchBar": true,
+        "style": Object {
+          "backgroundColor": "#F8F8F8",
+        },
+        "virtual": undefined,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(Button)
+              onPress={[Function]}
+              rounded={true}
+              style={
+                Object {
+                  "alignSelf": "center",
+                  "backgroundColor": "#4E4A47",
+                  "height": null,
+                  "marginLeft": 2.5,
+                }
+              }
+            >
+              <Styled(Text)
+                style={
+                  Object {
+                    "fontSize": 10,
+                    "paddingLeft": 10,
+                    "paddingRight": 10,
+                  }
+                }
+              >
+                HKU Fellows
+              </Styled(Text)>
+            </Styled(Button)>,
+            <Styled(Input)
+              autoCorrect={false}
+              disabled={true}
+              enablesReturnKeyAutomatically={true}
+              onChangeText={[Function]}
+              onFocus={[Function]}
+              placeholder="Swipe left to choose course"
+              returnKeyType="search"
+              style={
+                Object {
+                  "fontSize": 15,
+                  "top": 0,
+                }
+              }
+            />,
+            <Styled(Right)
+              style={
+                Object {
+                  "flex": 0,
+                }
+              }
+            >
+              <Styled(Button)
+                dark={true}
+                disabled={true}
+                onPress={[Function]}
+                small={true}
+                transparent={true}
+              >
+                <Styled(Icon)
+                  name="arrow-dropright"
+                  style={
+                    Object {
+                      "marginLeft": 0,
+                      "marginRight": 15,
+                    }
+                  }
+                />
+              </Styled(Button)>
+            </Styled(Right)>,
+          ],
+          "rounded": true,
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Text)
+                style={
+                  Object {
+                    "fontSize": 10,
+                    "paddingLeft": 10,
+                    "paddingRight": 10,
+                  }
+                }
+              >
+                HKU Fellows
+              </Styled(Text)>,
+              "onPress": [Function],
+              "rounded": true,
+              "style": Object {
+                "alignSelf": "center",
+                "backgroundColor": "#4E4A47",
+                "height": null,
+                "marginLeft": 2.5,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "HKU Fellows",
+                "style": Object {
+                  "fontSize": 10,
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "HKU Fellows",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "autoCorrect": false,
+              "disabled": true,
+              "enablesReturnKeyAutomatically": true,
+              "onChangeText": [Function],
+              "onFocus": [Function],
+              "onSubmitEditing": undefined,
               "placeholder": "Swipe left to choose course",
               "returnKeyType": "search",
               "style": Object {

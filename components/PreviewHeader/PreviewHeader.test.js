@@ -9,4 +9,18 @@ describe('Testing PreviewHeader Component', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('will search', () => {
+    const wrapper = shallow(
+      <PreviewHeader location='' onSearchThunk={() => {}} />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('will cancel', () => {
+    const wrapper = shallow(
+      <PreviewHeader location='' onCancel={() => {}} />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });

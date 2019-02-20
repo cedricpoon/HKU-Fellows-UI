@@ -13,6 +13,7 @@ export async function retrievePosts(dispatch, getState) {
     code: location.courseId,
     index: posts.index ,
     time: posts.timeframe,
+    filter: posts.filter
   })), {
     method: 'POST',
     headers: {
@@ -22,7 +23,9 @@ export async function retrievePosts(dispatch, getState) {
     body: JSON.stringify({
       username: credential.userId,
       token: credential.token,
-      moodleKey: credential.moodleKey
+      moodleKey: credential.moodleKey,
+      query: posts.query,
+      hashtag: posts.hashtag
     }),
   });
   const res = await response.json();

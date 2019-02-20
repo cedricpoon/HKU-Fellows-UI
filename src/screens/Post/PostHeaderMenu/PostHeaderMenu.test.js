@@ -6,6 +6,7 @@ import { PostHeaderMenu } from './PostHeaderMenu';
 describe('Testing PostHeaderMenu Component', () => {
   const requiredProps = {
     postId: 'postId',
+    uid: 'uid',
     topicId: 'topicId',
     index: 1,
     position: {x: 0, y: 0},

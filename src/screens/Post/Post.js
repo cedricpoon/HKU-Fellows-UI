@@ -93,8 +93,6 @@ export class Post extends Component {
       NavigationService.goBack();
       return null;
     }
-    // construct share payload
-    const sharePayload = { id, title, subtitle, native, solved };
 
     return (
       <Container>
@@ -130,7 +128,7 @@ export class Post extends Component {
           }}
           onRefresh={() => { onRefreshReplies(id) }}
           enableRefresh={loadStatus === _loadStatus.OK}
-          sharePayload={encryptor(sharePayload)}
+          sharePayload={encryptor(id)}
           title={title}
           subtitle={subtitle}
         />

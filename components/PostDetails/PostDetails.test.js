@@ -17,7 +17,8 @@ describe('Testing PostDetails Component', () => {
       content: 'content',
       temperature: 1
     },
-    markdownRenderer: mockMarkdownRenderer
+    markdownRenderer: mockMarkdownRenderer,
+    htmlRenderer: mockMarkdownRenderer
   };
 
   it('renders as expected with required props', () => {
@@ -30,6 +31,13 @@ describe('Testing PostDetails Component', () => {
   it('is selectedAnswer', () => {
     const wrapper = shallow(
       <PostDetails {...requiredProps} selectedAnswer />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('renders with markdown', () => {
+    const wrapper = shallow(
+      <PostDetails {...requiredProps} native />
     );
     expect(wrapper).toMatchSnapshot();
   });

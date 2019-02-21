@@ -7,7 +7,7 @@ import { PRE_RENDER_NUMBER } from './Constants';
 
 class PostSwipable extends Component {
   render() {
-    const { comments, onRef, solved, ...restProps } = this.props;
+    const { comments, onRef, solved, native, ...restProps } = this.props;
     const context = [];
 
     if (comments) {
@@ -15,7 +15,7 @@ class PostSwipable extends Component {
         const { id } = comment;
         context.push(
           <Tab heading={id} key={id}>
-            <PostDetails comment={comment} index={index + 1} selectedAnswer={solved === id} />
+            <PostDetails comment={comment} index={index + 1} selectedAnswer={solved === id} native={native} />
           </Tab>
         );
       });
@@ -41,7 +41,8 @@ class PostSwipable extends Component {
 PostSwipable.propTypes = {
   comments: PropTypes.array,
   onRef: PropTypes.func,
-  solved: PropTypes.string
+  solved: PropTypes.string,
+  native: PropTypes.bool
 };
 
 export default PostSwipable;

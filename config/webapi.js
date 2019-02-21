@@ -15,4 +15,6 @@ export const post = ({ code, index, time, filter }) => {
   return `/post/${code}/${index}?time=${time}${filterQS}`;
 };
 
+export const view = ({ topicId }) => `/view/${topicId}`;
+
 export const link = (path) => `${protocol}://${baseUrl}${path}`

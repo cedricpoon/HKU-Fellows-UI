@@ -24,7 +24,6 @@ export class Post extends Component {
     super(props);
     this.state = {
       id: '',
-      title: '',
       currentPage: 0,
       headerLayout: { y: 0, height: 0 }
     };
@@ -39,9 +38,11 @@ export class Post extends Component {
   }
 
   _renderHeaderMenu() {
-    const { comments } = this.props;
-    const { headerLayout, native, solved, currentPage, id } = this.state;
+    const { comments, topicInfo } = this.props;
+    const { headerLayout, native: _native, solved: _solved, currentPage, id } = this.state;
     const { width } = Dimensions.get("window");
+    const native = _native ? _native : topicInfo.native;
+    const solved = _solved ? _solved : topicInfo.solved;
 
     if (comments && id)
       return (
@@ -85,11 +86,15 @@ export class Post extends Component {
   }
 
   render() {
-    const { id, title, subtitle, native, solved, currentPage } = this.state;
-    const { comments, onRefreshReplies, loadStatus, credential, encryptor } = this.props;
+    const { id, title: _title, subtitle: _subtitle, native: _native, solved: _solved, currentPage } = this.state;
+    const { comments, onRefreshReplies, loadStatus, credential, encryptor, topicInfo } = this.props;
+    const title = _title ? _title : topicInfo.title;
+    const subtitle = _subtitle ? _subtitle : topicInfo.subtitle;
+    const native = _native ? _native : topicInfo.native;
+    const solved = _solved ? _solved : topicInfo.solved;
 
     // unauthorized deep link
-    if (!credential) {
+    if (!credential || loadStatus === _loadStatus.FAIL) {
       NavigationService.goBack();
       return null;
     }
@@ -118,6 +123,7 @@ export class Post extends Component {
           onChangeTab={this._onPostTabChange}
           onRef={ref => this._postTabs = ref}
           solved={solved}
+          native={native}
         />
         <PostFooter
           firstPage={!comments || currentPage === 0}
@@ -144,6 +150,7 @@ Post.defaultProps = {
 
 Post.propTypes = {
   comments: PropTypes.array,
+  topicInfo: PropTypes.object,
   onLoadReplies: PropTypes.func,
   onRefreshReplies: PropTypes.func,
   credential: PropTypes.object,
@@ -154,6 +161,7 @@ Post.propTypes = {
 
 const mapStateToProps = state => ({
   comments: state.replies.replies,
+  topicInfo: state.replies.topicInfo,
   loadStatus: state.replies.status,
   credential: state.credential
 });

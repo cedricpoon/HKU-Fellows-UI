@@ -32,6 +32,10 @@ export default {
   replies: {
     /* posts(replies) of a topic */
     replies: null,
+    /* OK, LOADING, STILL */
+    status: STILL,
+    /* Possible topic payload retrieved from /view/:topicId */
+    topicInfo: { title: '', subtitle: null, native: null, solved: null }
   },
   /* user login credential */
   credential: null

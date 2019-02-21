@@ -6,6 +6,7 @@ export default {
   'post.noCourseTitle': 'Welcome to HKU Fellows',
   'post.noCourseContent': 'Enjoy your peer learning journey with us',
   'post.noSubtitle': '- No Subtitle -',
+  'post.noHashtags': '- No Hashtags -',
   'post.loadErrorTitle': 'Load Failure',
   'post.loadErrorContent': 'Oops! We hope a page refresh helps',
   'post.loadErrorButton': 'Refresh',

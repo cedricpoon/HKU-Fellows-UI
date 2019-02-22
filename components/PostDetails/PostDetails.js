@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { Text, View, Content, Icon } from 'native-base';
-import { TouchableOpacity, TextInput, Dimensions } from 'react-native';
+import { TouchableOpacity, TextInput } from 'react-native';
 import PropTypes from "prop-types";
 import { format } from 'timeago.js';
 import * as Animatable from 'react-native-animatable';
 import Markdown from 'react-native-markdown-renderer';
-import Html from 'react-native-render-html';
 
 import { localize } from 'hkufui/locale';
 import { hotPostMinIndex as hot } from 'hkufui/config';
@@ -26,7 +25,7 @@ class PostDetails extends Component {
   }
 
   render() {
-    const { index, selectedAnswer, markdownRenderer, htmlRenderer, native } = this.props;
+    const { index, selectedAnswer, markdownRenderer } = this.props;
     const { author, timestamp, content, temperature } = this.props.comment;
     const { raw } = this.state;
 
@@ -41,7 +40,7 @@ class PostDetails extends Component {
         onLongPress={this._toggleRaw.bind(this)}
         activeOpacity={0.5}
       >
-        {native ? markdownRenderer(content, styles) : htmlRenderer(content)}
+        {markdownRenderer(content, styles)}
       </TouchableOpacity>)
     ;
 
@@ -102,19 +101,13 @@ const defaultMarkdownRenderer = (content, styles) => {
   return <Markdown style={styles}>{content}</Markdown>;
 }
 
-const defaultHtmlRenderer = content => {
-  return <Html html={content} imagesMaxWidth={Dimensions.get('window').width} />;
-}
-
 PostDetails.defaultProps = {
-  markdownRenderer: defaultMarkdownRenderer,
-  htmlRenderer: defaultHtmlRenderer
+  markdownRenderer: defaultMarkdownRenderer
 };
 
 PostDetails.propTypes = {
   index: PropTypes.number.isRequired,
   markdownRenderer: PropTypes.func,
-  htmlRenderer: PropTypes.func,
   comment: PropTypes.shape({
     id: PropTypes.string.isRequired,
     author: PropTypes.string,
@@ -122,7 +115,6 @@ PostDetails.propTypes = {
     content: PropTypes.string.isRequired,
     temperature: PropTypes.number
   }).isRequired,
-  native: PropTypes.bool,
   selectedAnswer: PropTypes.bool
 };
 

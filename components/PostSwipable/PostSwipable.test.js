@@ -24,11 +24,4 @@ describe('Testing PostSwipable Component', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
-
-  it('is native', () => {
-    const wrapper = shallow(
-      <PostSwipable comments={[]} onRef={() => {}} native />
-    );
-    expect(wrapper).toMatchSnapshot();
-  });
 });

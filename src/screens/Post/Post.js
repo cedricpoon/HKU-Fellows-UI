@@ -12,18 +12,21 @@ import * as _loadStatus from 'hkufui/src/constants/loadStatus';
 import { Header, PostFooter, PostSwipable } from 'hkufui/components';
 import { show1s } from 'hkufui/src/toastHelper';
 import { encrypt, decrypt } from 'hkufui/src/safe';
+import defaultState from 'hkufui/src/store/globalState';
 
 import { onLoad, onClear, onRefresh } from './viewActions';
 import styles from './Styles';
 
 const alert = (message) => { show1s({ message }); }
 const alertSuccess = (message) => { show1s({ message, type: 'success' }); }
+const defaultTopicInfo = defaultState.replies.topicInfo;
 
 export class Post extends Component {
   constructor(props) {
     super(props);
     this.state = {
       id: '',
+      status: _loadStatus.STILL,
       currentPage: 0,
       headerLayout: { y: 0, height: 0 }
     };
@@ -39,26 +42,22 @@ export class Post extends Component {
 
   _renderHeaderMenu() {
     const { comments, topicInfo } = this.props;
-    const { headerLayout, native: _native, solved: _solved, currentPage, id } = this.state;
+    const { headerLayout, currentPage, id } = this.state;
     const { width } = Dimensions.get("window");
-    const native = _native ? _native : topicInfo.native;
-    const solved = _solved ? _solved : topicInfo.solved;
+    const { native, solved } = topicInfo;
 
-    if (comments && id)
-      return (
-        <PostHeaderMenu
-          topicId={id}
-          postId={comments[currentPage].id}
-          position={{ x: width, y: headerLayout.y }}
-          parentHeight={headerLayout.height}
-          onRef={ref => this._popup = ref}
-          native={native}
-          solved={solved != null}
-          index={currentPage + 1}
-        />
-      );
-    else
-      return null;
+    return (
+      <PostHeaderMenu
+        topicId={id}
+        postId={comments[currentPage].id}
+        position={{ x: width, y: headerLayout.y }}
+        parentHeight={headerLayout.height}
+        onRef={ref => this._popup = ref}
+        native={native}
+        solved={solved != null}
+        index={currentPage + 1}
+      />
+    );
   }
 
   _onPostTabChange({i}) {
@@ -73,25 +72,29 @@ export class Post extends Component {
       // parse from deep linking
       let payload;
       try {
-        payload = params && params.payload ? decryptor(params.payload) : params;
+        payload = params && params.payload ? { id: decryptor(params.payload) } : params;
+
+        const { id, title, subtitle, native } = payload;
+        const extraInfo = title ? { title, subtitle, native } : null
+        this.setState({ id, extraInfo });
+        // start loading replies
+        onLoadReplies(payload.id);
       } catch (e) {
         NavigationService.goBack();
       }
-      this.setState({
-        ...payload
-      });
-      // start loading replies
-      onLoadReplies(params.id);
     }
   }
 
+  componentDidUpdate() {
+    const { STILL, OK } = _loadStatus;
+    if (this.state.status === STILL && this.props.loadStatus === OK)
+      this.setState({ status: OK });
+  }
+
   render() {
-    const { id, title: _title, subtitle: _subtitle, native: _native, solved: _solved, currentPage } = this.state;
+    const { id, currentPage, status, extraInfo } = this.state;
     const { comments, onRefreshReplies, loadStatus, credential, encryptor, topicInfo } = this.props;
-    const title = _title ? _title : topicInfo.title;
-    const subtitle = _subtitle ? _subtitle : topicInfo.subtitle;
-    const native = _native ? _native : topicInfo.native;
-    const solved = _solved ? _solved : topicInfo.solved;
+    const { title, subtitle, native, solved } = status !== _loadStatus.STILL ? topicInfo : extraInfo || defaultTopicInfo;
 
     // unauthorized deep link
     if (!credential || loadStatus === _loadStatus.FAIL) {
@@ -101,7 +104,7 @@ export class Post extends Component {
 
     return (
       <Container>
-        {comments && this._renderHeaderMenu()}
+        {comments && id ? this._renderHeaderMenu() : null}
         <Header
           title={{
             context: title,

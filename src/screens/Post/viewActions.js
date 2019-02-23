@@ -27,7 +27,7 @@ export function onRefresh({ alert }) {
   }
 }
 
-export function onVote({ topicId, postId, value }) {
+export function onVote({ topicId, postId, value }) { // eslint-disable-line
   return dispatch => {
     Alert.alert('onVote');
     dispatch({ type: REFRESH_REPLIES });
@@ -35,13 +35,13 @@ export function onVote({ topicId, postId, value }) {
   }
 }
 
-export function onNotify({ topicId }) {
-  return dispatch => {
+export function onNotify({ topicId }) { // eslint-disable-line
+  return dispatch => { // eslint-disable-line
     Alert.alert('onNotify');
   }
 }
 
-export function onAccept({ topicId, postId }) {
+export function onAccept({ topicId, postId }) { // eslint-disable-line
   return dispatch => {
     Alert.alert('onAccept');
     dispatch({ type: REFRESH_REPLIES });

@@ -6,6 +6,7 @@
  */
 
 #import "AppDelegate.h"
+#import "RNSplashScreen.h"
 
 #import <React/RCTLinkingManager.h>
 #import <React/RCTBundleURLProvider.h>
@@ -23,13 +24,14 @@
                                                       moduleName:@"hkufui"
                                                initialProperties:nil
                                                    launchOptions:launchOptions];
-  rootView.backgroundColor = [UIColor blackColor];
+  rootView.backgroundColor = [UIColor whiteColor];
 
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   UIViewController *rootViewController = [UIViewController new];
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+  [RNSplashScreen show];
   return YES;
 }
 

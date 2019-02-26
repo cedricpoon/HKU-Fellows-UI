@@ -31,7 +31,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        undefined,
+        null,
         <Header
           animated={false}
           backable={true}
@@ -73,7 +73,7 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
-      undefined,
+      null,
       Object {
         "instance": null,
         "key": undefined,
@@ -141,7 +141,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          undefined,
+          null,
           <Header
             animated={false}
             backable={true}
@@ -183,7 +183,7 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        undefined,
+        null,
         Object {
           "instance": null,
           "key": undefined,

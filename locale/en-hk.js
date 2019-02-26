@@ -1,5 +1,5 @@
 export default {
-  'post.moodle': '#Moodle',
+  'post.moodle': 'Moodle',
   'post.noPostTitle': 'No Result / No Posts Yet',
   'post.noPostContent': 'Feel free to raise the first post',
   'post.noPostButton': 'Compose',

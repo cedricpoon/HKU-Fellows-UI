@@ -12,19 +12,21 @@ import * as _loadStatus from 'hkufui/src/constants/loadStatus';
 import { Header, PostFooter, PostSwipable } from 'hkufui/components';
 import { show1s } from 'hkufui/src/toastHelper';
 import { encrypt, decrypt } from 'hkufui/src/safe';
+import defaultState from 'hkufui/src/store/globalState';
 
 import { onLoad, onClear, onRefresh } from './viewActions';
 import styles from './Styles';
 
 const alert = (message) => { show1s({ message }); }
 const alertSuccess = (message) => { show1s({ message, type: 'success' }); }
+const defaultTopicInfo = defaultState.replies.topicInfo;
 
 export class Post extends Component {
   constructor(props) {
     super(props);
     this.state = {
       id: '',
-      title: '',
+      status: _loadStatus.STILL,
       currentPage: 0,
       headerLayout: { y: 0, height: 0 }
     };
@@ -39,25 +41,23 @@ export class Post extends Component {
   }
 
   _renderHeaderMenu() {
-    const { comments } = this.props;
-    const { headerLayout, native, solved, currentPage, id } = this.state;
+    const { comments, topicInfo } = this.props;
+    const { headerLayout, currentPage, id } = this.state;
     const { width } = Dimensions.get("window");
+    const { native, solved } = topicInfo;
 
-    if (comments && id)
-      return (
-        <PostHeaderMenu
-          topicId={id}
-          postId={comments[currentPage].id}
-          position={{ x: width, y: headerLayout.y }}
-          parentHeight={headerLayout.height}
-          onRef={ref => this._popup = ref}
-          native={native}
-          solved={solved != null}
-          index={currentPage + 1}
-        />
-      );
-    else
-      return null;
+    return (
+      <PostHeaderMenu
+        topicId={id}
+        postId={comments[currentPage].id}
+        position={{ x: width, y: headerLayout.y }}
+        parentHeight={headerLayout.height}
+        onRef={ref => this._popup = ref}
+        native={native}
+        solved={solved != null}
+        index={currentPage + 1}
+      />
+    );
   }
 
   _onPostTabChange({i}) {
@@ -72,33 +72,39 @@ export class Post extends Component {
       // parse from deep linking
       let payload;
       try {
-        payload = params && params.payload ? decryptor(params.payload) : params;
+        payload = params && params.payload ? { id: decryptor(params.payload) } : params;
+
+        const { id, title, subtitle, native } = payload;
+        const extraInfo = title ? { title, subtitle, native } : null
+        this.setState({ id, extraInfo });
+        // start loading replies
+        onLoadReplies(payload.id);
       } catch (e) {
         NavigationService.goBack();
       }
-      this.setState({
-        ...payload
-      });
-      // start loading replies
-      onLoadReplies(params.id);
     }
   }
 
+  componentDidUpdate() {
+    const { STILL, OK } = _loadStatus;
+    if (this.state.status === STILL && this.props.loadStatus === OK)
+      this.setState({ status: OK });
+  }
+
   render() {
-    const { id, title, subtitle, native, solved, currentPage } = this.state;
-    const { comments, onRefreshReplies, loadStatus, credential, encryptor } = this.props;
+    const { id, currentPage, status, extraInfo } = this.state;
+    const { comments, onRefreshReplies, loadStatus, credential, encryptor, topicInfo } = this.props;
+    const { title, subtitle, native, solved } = status !== _loadStatus.STILL ? topicInfo : extraInfo || defaultTopicInfo;
 
     // unauthorized deep link
-    if (!credential) {
+    if (!credential || loadStatus === _loadStatus.FAIL) {
       NavigationService.goBack();
       return null;
     }
-    // construct share payload
-    const sharePayload = { id, title, subtitle, native, solved };
 
     return (
       <Container>
-        {comments && this._renderHeaderMenu()}
+        {comments && id ? this._renderHeaderMenu() : null}
         <Header
           title={{
             context: title,
@@ -120,6 +126,7 @@ export class Post extends Component {
           onChangeTab={this._onPostTabChange}
           onRef={ref => this._postTabs = ref}
           solved={solved}
+          native={native}
         />
         <PostFooter
           firstPage={!comments || currentPage === 0}
@@ -130,7 +137,7 @@ export class Post extends Component {
           }}
           onRefresh={() => { onRefreshReplies(id) }}
           enableRefresh={loadStatus === _loadStatus.OK}
-          sharePayload={encryptor(sharePayload)}
+          sharePayload={encryptor(id)}
           title={title}
           subtitle={subtitle}
         />
@@ -146,6 +153,7 @@ Post.defaultProps = {
 
 Post.propTypes = {
   comments: PropTypes.array,
+  topicInfo: PropTypes.object,
   onLoadReplies: PropTypes.func,
   onRefreshReplies: PropTypes.func,
   credential: PropTypes.object,
@@ -156,6 +164,7 @@ Post.propTypes = {
 
 const mapStateToProps = state => ({
   comments: state.replies.replies,
+  topicInfo: state.replies.topicInfo,
   loadStatus: state.replies.status,
   credential: state.credential
 });

@@ -25,7 +25,7 @@ export async function retrievePosts(dispatch, getState) {
       token: credential.token,
       moodleKey: credential.moodleKey,
       query: posts.query,
-      hashtag: posts.hashtag
+      hashtag: encodeURI(JSON.stringify(posts.hashtag))
     }),
   });
   const res = await response.json();

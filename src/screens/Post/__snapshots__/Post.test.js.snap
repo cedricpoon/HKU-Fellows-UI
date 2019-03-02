@@ -7,6 +7,14 @@ ShallowWrapper {
     credential={Object {}}
     decryptor={[Function]}
     encryptor={[Function]}
+    topicInfo={
+      Object {
+        "native": null,
+        "solved": null,
+        "subtitle": null,
+        "title": "",
+      }
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -23,7 +31,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        undefined,
+        null,
         <Header
           animated={false}
           backable={true}
@@ -45,8 +53,10 @@ ShallowWrapper {
           }
         />,
         <PostSwipable
+          native={null}
           onChangeTab={[Function]}
           onRef={[Function]}
+          solved={null}
         />,
         <PostFooter
           enableRefresh={false}
@@ -55,6 +65,7 @@ ShallowWrapper {
           onPageChangeThunk={[Function]}
           onRefresh={[Function]}
           sharePayload=""
+          subtitle={null}
           title=""
         />,
       ],
@@ -62,7 +73,7 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
-      undefined,
+      null,
       Object {
         "instance": null,
         "key": undefined,
@@ -93,9 +104,10 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "comments": undefined,
+          "native": null,
           "onChangeTab": [Function],
           "onRef": [Function],
-          "solved": undefined,
+          "solved": null,
         },
         "ref": null,
         "rendered": null,
@@ -112,7 +124,7 @@ ShallowWrapper {
           "onPageChangeThunk": [Function],
           "onRefresh": [Function],
           "sharePayload": "",
-          "subtitle": undefined,
+          "subtitle": null,
           "title": "",
         },
         "ref": null,
@@ -129,7 +141,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          undefined,
+          null,
           <Header
             animated={false}
             backable={true}
@@ -151,8 +163,10 @@ ShallowWrapper {
             }
           />,
           <PostSwipable
+            native={null}
             onChangeTab={[Function]}
             onRef={[Function]}
+            solved={null}
           />,
           <PostFooter
             enableRefresh={false}
@@ -161,6 +175,7 @@ ShallowWrapper {
             onPageChangeThunk={[Function]}
             onRefresh={[Function]}
             sharePayload=""
+            subtitle={null}
             title=""
           />,
         ],
@@ -168,7 +183,7 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        undefined,
+        null,
         Object {
           "instance": null,
           "key": undefined,
@@ -199,9 +214,10 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "comments": undefined,
+            "native": null,
             "onChangeTab": [Function],
             "onRef": [Function],
-            "solved": undefined,
+            "solved": null,
           },
           "ref": null,
           "rendered": null,
@@ -218,7 +234,7 @@ ShallowWrapper {
             "onPageChangeThunk": [Function],
             "onRefresh": [Function],
             "sharePayload": "",
-            "subtitle": undefined,
+            "subtitle": null,
             "title": "",
           },
           "ref": null,
@@ -250,6 +266,7 @@ ShallowWrapper {
       },
     },
   },
+  Symbol(enzyme.__childContext__): null,
 }
 `;
 
@@ -261,6 +278,14 @@ ShallowWrapper {
     credential={Object {}}
     decryptor={[Function]}
     encryptor={[Function]}
+    topicInfo={
+      Object {
+        "native": null,
+        "solved": null,
+        "subtitle": null,
+        "title": "",
+      }
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -300,8 +325,10 @@ ShallowWrapper {
         />,
         <PostSwipable
           comments={Array []}
+          native={null}
           onChangeTab={[Function]}
           onRef={[Function]}
+          solved={null}
         />,
         <PostFooter
           enableRefresh={false}
@@ -310,6 +337,7 @@ ShallowWrapper {
           onPageChangeThunk={[Function]}
           onRefresh={[Function]}
           sharePayload=""
+          subtitle={null}
           title=""
         />,
       ],
@@ -348,9 +376,10 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "comments": Array [],
+          "native": null,
           "onChangeTab": [Function],
           "onRef": [Function],
-          "solved": undefined,
+          "solved": null,
         },
         "ref": null,
         "rendered": null,
@@ -367,7 +396,7 @@ ShallowWrapper {
           "onPageChangeThunk": [Function],
           "onRefresh": [Function],
           "sharePayload": "",
-          "subtitle": undefined,
+          "subtitle": null,
           "title": "",
         },
         "ref": null,
@@ -407,8 +436,10 @@ ShallowWrapper {
           />,
           <PostSwipable
             comments={Array []}
+            native={null}
             onChangeTab={[Function]}
             onRef={[Function]}
+            solved={null}
           />,
           <PostFooter
             enableRefresh={false}
@@ -417,6 +448,7 @@ ShallowWrapper {
             onPageChangeThunk={[Function]}
             onRefresh={[Function]}
             sharePayload=""
+            subtitle={null}
             title=""
           />,
         ],
@@ -455,9 +487,10 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "comments": Array [],
+            "native": null,
             "onChangeTab": [Function],
             "onRef": [Function],
-            "solved": undefined,
+            "solved": null,
           },
           "ref": null,
           "rendered": null,
@@ -474,7 +507,7 @@ ShallowWrapper {
             "onPageChangeThunk": [Function],
             "onRefresh": [Function],
             "sharePayload": "",
-            "subtitle": undefined,
+            "subtitle": null,
             "title": "",
           },
           "ref": null,
@@ -506,5 +539,6 @@ ShallowWrapper {
       },
     },
   },
+  Symbol(enzyme.__childContext__): null,
 }
 `;

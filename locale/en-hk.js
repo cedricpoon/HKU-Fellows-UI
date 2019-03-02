@@ -1,11 +1,12 @@
 export default {
-  'post.moodle': '#Moodle',
+  'post.moodle': 'Moodle',
   'post.noPostTitle': 'No Result / No Posts Yet',
   'post.noPostContent': 'Feel free to raise the first post',
   'post.noPostButton': 'Compose',
   'post.noCourseTitle': 'Welcome to HKU Fellows',
   'post.noCourseContent': 'Enjoy your peer learning journey with us',
   'post.noSubtitle': '- No Subtitle -',
+  'post.noHashtags': '- No Hashtags -',
   'post.loadErrorTitle': 'Load Failure',
   'post.loadErrorContent': 'Oops! We hope a page refresh helps',
   'post.loadErrorButton': 'Refresh',

@@ -32,6 +32,14 @@ class PostPreview extends PureComponent {
       subtitle,
       viewed
     } = this.props;
+    let hashtagText;
+    if (native) {
+      if (primaryHashtag || secondaryHashtag)
+        hashtagText = `#${primaryHashtag}` + (secondaryHashtag ? ` #${secondaryHashtag}` : '');
+      else
+        hashtagText = locale['post.noHashtags'];
+    } else
+      hashtagText = locale['post.moodle'];
 
     return(
       <ListItem avatar style={styles.noMarginLeft} onPress={this._onPress.bind(this)}>
@@ -46,11 +54,7 @@ class PostPreview extends PureComponent {
         <Body style={styles.noMarginLeft}>
           <View style={[styles.infoBar]}>
             <Text style={[styles.subText, native ? styles.hashtags : styles.moodle]}>
-              {native ?
-                `#${primaryHashtag}` + (secondaryHashtag ? ` #${secondaryHashtag}` : '')
-                :
-                locale['post.moodle']
-              }
+              {hashtagText}
             </Text>
             <Right style={[styles.right, styles.infoBar]}>
               <Icon style={[styles.subText, styles.note]} name="md-time" />

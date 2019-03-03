@@ -37,6 +37,7 @@ export default {
   'login.missingParam': 'Please enter UID and PIN.',
 
   'drawer.landing': 'Browse Courses / Posts',
+  'drawer.userInfoIndicator': 'You are logged in as',
   'drawer.logout': 'Log out',
 
   'header.notifications': 'Notifications',

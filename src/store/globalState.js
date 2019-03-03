@@ -38,5 +38,9 @@ export default {
     topicInfo: { title: '', subtitle: null, native: null, solved: null }
   },
   /* user login credential */
-  credential: null
+  credential: null,
+  profile: {
+    /* User temperature in number */
+    temperature: null,
+  }
 }

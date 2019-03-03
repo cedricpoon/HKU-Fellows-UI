@@ -22,6 +22,8 @@ export const seperator = grayscale.slice(-1)[0];
 
 export const circularTint = grayscale.slice(-2)[0];
 
+export const warningOrange = '#f0ad4e';
+
 export const placeholder = {
   lighter: grayscale.slice(-1)[0],
   darker: grayscale.slice(-2)[0]

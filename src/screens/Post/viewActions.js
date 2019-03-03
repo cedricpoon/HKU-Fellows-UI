@@ -95,12 +95,13 @@ export function onLoad({ id, alert }) {
     try {
       const res = await fetchPost({ credential, path: view({ topicId: id }), isMoodleKey: true });
       if (res.status === 200) {
-        const { posts, native: _native, ...restPayload } = res.payload;
+        const { posts, native: _native, owned: _owned, ...restPayload } = res.payload;
         const native = _native === 1;
+        const owned = _owned === 1;
         // success
         dispatch({
           type: FILL_REPLIES,
-          payload: { replies: posts, topicInfo: { native, ...restPayload } }
+          payload: { replies: posts, topicInfo: { native, owned, ...restPayload } }
         });
         if (alert) {
           alert(locale['replies.refreshed']);

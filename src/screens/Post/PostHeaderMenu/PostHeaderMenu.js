@@ -66,7 +66,7 @@ export class PostHeaderMenu extends Component {
   }
 
   render() {
-    const { onRef, index, solved, native, ...restProps } = this.props;
+    const { onRef, index, solved, native, owned, ...restProps } = this.props;
 
     return(
       <PopupMenu
@@ -75,17 +75,17 @@ export class PostHeaderMenu extends Component {
       >
         {native && (
           <Button transparent iconLeft light onPress={this._voteUp}>
-            <Icon name="thumb-up" type="MaterialCommunityIcons" style={themeStyles.icon}></Icon>
+            <Icon name="thumb-up" type="MaterialCommunityIcons" style={[themeStyles.icon, styles.thumbUp]}></Icon>
             <Text>{locale['header.thumbUp'](index)}</Text>
           </Button>
         )}
         {native && (
           <Button transparent iconLeft light onPress={this._voteDown}>
-            <Icon name="thumb-down" type="MaterialCommunityIcons" style={themeStyles.icon}></Icon>
+            <Icon name="thumb-down" type="MaterialCommunityIcons" style={[themeStyles.icon, styles.thumbDown]}></Icon>
             <Text>{locale['header.thumbDown'](index)}</Text>
           </Button>
         )}
-        {native && (
+        {native && owned && (
           <Button transparent iconLeft warning disabled={solved} onPress={this._acceptAnswer}>
             <Icon name="checkbox-marked-circle-outline" type="MaterialCommunityIcons" style={themeStyles.icon}></Icon>
             <Text>{locale['header.solved']}</Text>
@@ -117,6 +117,7 @@ PostHeaderMenu.propTypes = {
   native: PropTypes.bool,
   index: PropTypes.number.isRequired,
   solved: PropTypes.bool,
+  owned: PropTypes.bool,
   onVote: PropTypes.func,
   onAccept: PropTypes.func,
   onNotify: PropTypes.func

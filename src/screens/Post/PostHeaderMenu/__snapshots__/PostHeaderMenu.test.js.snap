@@ -277,6 +277,283 @@ ShallowWrapper {
 }
 `;
 
+exports[`Testing PostHeaderMenu Component is owned by logged user 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PostHeaderMenu
+    index={1}
+    owned={true}
+    position={
+      Object {
+        "x": 0,
+        "y": 0,
+      }
+    }
+    postId="postId"
+    toggle={[Function]}
+    topicId="topicId"
+    uid="uid"
+  >
+    <View />
+  </PostHeaderMenu>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        <Styled(Button)
+          danger={true}
+          iconLeft={true}
+          onPress={[Function]}
+          transparent={true}
+        >
+          <Styled(Icon)
+            name="report"
+            style={
+              Object {
+                "textAlign": "center",
+                "width": 25,
+              }
+            }
+            type="MaterialIcons"
+          />
+          <Styled(Text)>
+            Report Abuse
+          </Styled(Text)>
+        </Styled(Button)>,
+      ],
+      "position": Object {
+        "x": 0,
+        "y": 0,
+      },
+      "postId": "postId",
+      "toggle": [Function],
+      "topicId": "topicId",
+      "uid": "uid",
+    },
+    "ref": null,
+    "rendered": Array [
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(Icon)
+              name="report"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
+              type="MaterialIcons"
+            />,
+            <Styled(Text)>
+              Report Abuse
+            </Styled(Text)>,
+          ],
+          "danger": true,
+          "iconLeft": true,
+          "onPress": [Function],
+          "transparent": true,
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "report",
+              "style": Object {
+                "textAlign": "center",
+                "width": 25,
+              },
+              "type": "MaterialIcons",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Report Abuse",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": "Report Abuse",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          <Styled(Button)
+            danger={true}
+            iconLeft={true}
+            onPress={[Function]}
+            transparent={true}
+          >
+            <Styled(Icon)
+              name="report"
+              style={
+                Object {
+                  "textAlign": "center",
+                  "width": 25,
+                }
+              }
+              type="MaterialIcons"
+            />
+            <Styled(Text)>
+              Report Abuse
+            </Styled(Text)>
+          </Styled(Button)>,
+        ],
+        "position": Object {
+          "x": 0,
+          "y": 0,
+        },
+        "postId": "postId",
+        "toggle": [Function],
+        "topicId": "topicId",
+        "uid": "uid",
+      },
+      "ref": null,
+      "rendered": Array [
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Styled(Icon)
+                name="report"
+                style={
+                  Object {
+                    "textAlign": "center",
+                    "width": 25,
+                  }
+                }
+                type="MaterialIcons"
+              />,
+              <Styled(Text)>
+                Report Abuse
+              </Styled(Text)>,
+            ],
+            "danger": true,
+            "iconLeft": true,
+            "onPress": [Function],
+            "transparent": true,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "report",
+                "style": Object {
+                  "textAlign": "center",
+                  "width": 25,
+                },
+                "type": "MaterialIcons",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Report Abuse",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "Report Abuse",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
+
 exports[`Testing PostHeaderMenu Component is solved 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],

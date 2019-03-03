@@ -6,6 +6,6 @@ User Interface of HKU Fellows
 ## Work In Progress
 ### To-do
 - [ ] Chrome like popup menu
-- [ ] Drawer username and temperature
+- [x] Drawer username and temperature
 ### Known issue to-fix
 - [ ] Deep link to post won't stack

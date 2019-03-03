@@ -37,7 +37,7 @@ const mapDispatchToProps = dispatch => ({
 
 const mapStateToProps = state => ({
   userId: state.credential.userId,
-  token7digits: state.credential.token.substring(0, 7),
+  token7digits: state.credential.token ? state.credential.token.substring(0, 7) : null,
   userTemp: state.profile.temperature
 });
 

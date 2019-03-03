@@ -4,7 +4,8 @@ import Drawer from './Drawer';
 
 describe('Testing Drawer Component', () => {
   const requiredProps = {
-    onLogout: () => {}
+    onLogout: () => {},
+    onTemperature: () => {}
   };
 
   it('renders as expected', () => {

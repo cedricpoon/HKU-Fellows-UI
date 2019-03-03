@@ -18,8 +18,25 @@ export default StyleSheet.create({
     zIndex: 1,
   },
   items: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
     alignItems: 'flex-start',
     margin: gridBase * 4
+  },
+  userInfoGroup: {
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    alignItems: 'flex-end'
+  },
+  secondaryUserInfo: {
+    fontSize: fontSize.miniSize,
+    color: 'grey'
+  },
+  userInfo: {
+    fontSize: fontSize.semiTitleSize
+  },
+  hot: {
+    color: logo.red
   },
   backdrop: {
     zIndex: 0

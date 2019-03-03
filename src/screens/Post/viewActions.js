@@ -89,7 +89,7 @@ export function onLoad({ id, alert }) {
             // refresh token
             await dispatch(onLogin({
               credential: { username: credential.userId, passphrase: credential.passphrase },
-              path: login.passphrase
+              path: login.passphrase()
             }));
             dispatch(onLoad({ id, alert }));
             break;

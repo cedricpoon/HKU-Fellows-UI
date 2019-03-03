@@ -77,7 +77,7 @@ const mapDispatchToProps = dispatch => ({
     onLogin({
       credential: { username, password },
       alert,
-      path: login.password
+      path: login.password()
     })
   )},
   onLogout: () => { dispatch(onLogout()) }

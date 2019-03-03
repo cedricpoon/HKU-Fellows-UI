@@ -10,6 +10,7 @@ import ExpandPostsHandler from './Preview/expandPosts';
 import Authentication from './Login/authenticate';
 import ViewActionHandler from './Post/viewActions';
 import FilterPostHandler from './Preview/filterPosts';
+import DrawerActionHandler from '../navigator/Context/DrawerMenu/drawerAction';
 
 const ruleReducer = (state, action) => {
   // logged in rule middleware
@@ -33,7 +34,8 @@ const ruleReducer = (state, action) => {
       FilterPostHandler
     )),
     replies: loggedIn(ViewActionHandler),
-    credential: Authentication
+    credential: Authentication,
+    profile: loggedIn(DrawerActionHandler),
   });
 
   return appReducer(state, action);

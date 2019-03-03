@@ -4,7 +4,8 @@ import DrawerMenu from './DrawerMenu';
 
 describe('Testing DrawerMenu Component', () => {
   const requiredProps = {
-    onLogout: () => {}
+    onLogout: () => {},
+    onTemperature: () => {}
   };
 
   it('renders as expected', () => {

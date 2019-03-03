@@ -47,7 +47,7 @@ async function invokeRetrieving(dispatch, getState) {
           // refresh token
           await dispatch(onLogin({
             credential: { username: credential.userId, passphrase: credential.passphrase },
-            path: login.passphrase
+            path: login.passphrase()
           }));
           // try retrieve posts again
           invokeRetrieving(dispatch, getState);

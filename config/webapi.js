@@ -21,4 +21,9 @@ export const profile = {
   temperature: () => '/profile/temperature'
 }
 
+export const vote = {
+  up: ({ postId }) => `/vote/${postId}/up`,
+  down: ({ postId }) => `/vote/${postId}/down`,
+}
+
 export const link = (path) => `${protocol}://${baseUrl}${path}`

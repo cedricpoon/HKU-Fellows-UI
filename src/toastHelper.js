@@ -18,6 +18,10 @@ export const show3s = ({ message, type }) => {
   show({ message, type, duration: 3000 });
 }
 
+export const show2s = ({ message, type }) => {
+  show({ message, type, duration: 2000, bottom: 40 });
+}
+
 export const show1s = ({ message, type }) => {
   show({ message, type, duration: 1000, bottom: 40, hideButton: true });
 }

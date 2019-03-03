@@ -35,11 +35,14 @@ const mapDispatchToProps = dispatch => ({
   onTemperature: () => { dispatch(onLoadUserTemperature()) }
 })
 
-const mapStateToProps = state => ({
-  userId: state.credential.userId,
-  token7digits: state.credential.token ? state.credential.token.substring(0, 7) : null,
-  userTemp: state.profile.temperature
-});
+const mapStateToProps = state => {
+  const { credential } = state;
+  return {
+    userId: credential ? credential.userId : null,
+    token7digits: credential && credential.token ? state.credential.token.substring(0, 7) : null,
+    userTemp: state.profile.temperature
+  }
+};
 
 export default connect(
   mapStateToProps,

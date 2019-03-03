@@ -10,9 +10,12 @@ import { localize } from 'hkufui/locale';
 import themeStyles from 'hkufui/theme/Styles';
 import { email } from 'hkufui/config';
 const locale = localize({ language: 'en', country: 'hk' });
+import { show2s } from 'hkufui/src/toastHelper';
 
 import { onVote, onNotify, onAccept } from '../viewActions';
 import styles from './Styles';
+
+const alert = (message) => { show2s({ message }); }
 
 export class PostHeaderMenu extends Component {
   constructor(props) {
@@ -120,7 +123,7 @@ PostHeaderMenu.propTypes = {
 }
 
 const mapDispatchToProps = dispatch => ({
-  onVote: ({ postId, topicId, value }) => dispatch(onVote({ postId, topicId, value })),
+  onVote: ({ postId, topicId, value }) => dispatch(onVote({ postId, topicId, value, alert })),
   onNotify: ({ topicId }) => dispatch(onNotify({ topicId })),
   onAccept: ({ topicId, postId }) => dispatch(onAccept({ topicId, postId }))
 });

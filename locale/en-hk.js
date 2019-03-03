@@ -17,6 +17,9 @@ export default {
   'replies.refreshing': 'Reloading now...',
   'replies.refreshed': 'Reloaded successfully!',
   'replies.noRaw': 'Click to Dismiss Raw',
+  'replies.voted': 'You have already voted',
+  'replies.selfVote': 'Own post cannot be voted',
+  'replies.voteIssue': 'Vote not submitted',
 
   'footer.moodle': 'From Moodle',
   'footer.latestPost': 'Latest Post',

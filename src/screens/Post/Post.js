@@ -44,7 +44,7 @@ export class Post extends Component {
     const { comments, topicInfo } = this.props;
     const { headerLayout, currentPage, id } = this.state;
     const { width } = Dimensions.get("window");
-    const { native, solved } = topicInfo;
+    const { native, solved, owned } = topicInfo;
 
     return (
       <PostHeaderMenu
@@ -55,6 +55,7 @@ export class Post extends Component {
         onRef={ref => this._popup = ref}
         native={native}
         solved={solved != null}
+        owned={owned}
         index={currentPage + 1}
       />
     );

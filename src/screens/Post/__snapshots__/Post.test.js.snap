@@ -10,6 +10,7 @@ ShallowWrapper {
     topicInfo={
       Object {
         "native": null,
+        "owned": null,
         "solved": null,
         "subtitle": null,
         "title": "",
@@ -281,6 +282,7 @@ ShallowWrapper {
     topicInfo={
       Object {
         "native": null,
+        "owned": null,
         "solved": null,
         "subtitle": null,
         "title": "",

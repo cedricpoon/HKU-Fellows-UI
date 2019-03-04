@@ -7,7 +7,7 @@ import {
 import { Alert } from 'react-native';
 import { OK, LOADING, FAIL } from 'hkufui/src/constants/loadStatus';
 import { localize } from 'hkufui/locale';
-import { link, view, login } from 'hkufui/config/webapi';
+import { link, view, login, vote } from 'hkufui/config/webapi';
 import defaultState from 'hkufui/src/store/globalState';
 
 import { onLogin } from '../Login/authenticate';
@@ -27,11 +27,50 @@ export function onRefresh({ alert }) {
   }
 }
 
-export function onVote({ topicId, postId, value }) { // eslint-disable-line
-  return dispatch => {
-    Alert.alert('onVote');
-    dispatch({ type: REFRESH_REPLIES });
-    dispatch(onLoad({ id: topicId }));
+async function fetchPost({ credential, path, isMoodleKey }) {
+  const response = await fetch(link(path), {
+    method: 'POST',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      username: credential.userId,
+      token: credential.token,
+      ...(isMoodleKey && { moodleKey: credential.moodleKey })
+    }),
+  });
+  return await response.json();
+}
+
+export function onVote({ topicId, postId, value, alert }) {
+  return async (dispatch, getState) => {
+    const { credential } = getState();
+    // +1 -> vote up / -1 -> vote down
+    const votePath = value > 0 ? vote.up({ postId }) : vote.down({ postId })
+    try {
+      const res = await fetchPost({ credential, path: votePath });
+      if (res.status === 200) {
+        // Successfully voted
+        dispatch({ type: REFRESH_REPLIES });
+        dispatch(onLoad({ id: topicId }));
+      } else {
+        // failure
+        switch(res.status) {
+          case 409:
+            alert(locale['replies.voted']);
+            break;
+          case 410:
+            alert(locale['replies.selfVote']);
+            break;
+          default:
+            alert(`${locale['replies.voteIssue']} ${res.status}`);
+            break;
+        }
+      }
+    } catch (error) {
+      alert(locale['replies.voteIssue']);
+    }
   }
 }
 
@@ -49,35 +88,20 @@ export function onAccept({ topicId, postId }) { // eslint-disable-line
   }
 }
 
-async function fetchPost(id, credential) {
-  const response = await fetch(link(view({ topicId: id })), {
-    method: 'POST',
-    headers: {
-      Accept: 'application/json',
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      username: credential.userId,
-      token: credential.token,
-      moodleKey: credential.moodleKey
-    }),
-  });
-  return await response.json();
-}
-
 export function onLoad({ id, alert }) {
   return async (dispatch, getState) => {
     const { credential } = getState();
 
     try {
-      const res = await fetchPost(id, credential);
+      const res = await fetchPost({ credential, path: view({ topicId: id }), isMoodleKey: true });
       if (res.status === 200) {
-        const { posts, native: _native, ...restPayload } = res.payload;
+        const { posts, native: _native, owned: _owned, ...restPayload } = res.payload;
         const native = _native === 1;
+        const owned = _owned === 1;
         // success
         dispatch({
           type: FILL_REPLIES,
-          payload: { replies: posts, topicInfo: { native, ...restPayload } }
+          payload: { replies: posts, topicInfo: { native, owned, ...restPayload } }
         });
         if (alert) {
           alert(locale['replies.refreshed']);

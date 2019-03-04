@@ -39,4 +39,13 @@ describe('Testing PostHeaderMenu Component', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('is owned by logged user', () => {
+    const wrapper = shallow(
+      <PostHeaderMenu {...requiredProps} owned>
+        <View></View>
+      </PostHeaderMenu>
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });

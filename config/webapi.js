@@ -15,7 +15,10 @@ export const post = ({ code, index, time, filter }) => {
   return `/post/${code}/${index}?time=${time}${filterQS}`;
 };
 
-export const view = ({ topicId }) => `/view/${topicId}`;
+export const view = {
+  index: ({ topicId }) => `/view/${topicId}`,
+  adopt: ({ topicId }) => `/view/${topicId}/adopt`
+}
 
 export const profile = {
   temperature: () => '/profile/temperature'

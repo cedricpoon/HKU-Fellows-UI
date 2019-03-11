@@ -126,7 +126,7 @@ PostHeaderMenu.propTypes = {
 const mapDispatchToProps = dispatch => ({
   onVote: ({ postId, topicId, value }) => dispatch(onVote({ postId, topicId, value, alert })),
   onNotify: ({ topicId }) => dispatch(onNotify({ topicId })),
-  onAccept: ({ topicId, postId }) => dispatch(onAccept({ topicId, postId }))
+  onAccept: ({ topicId, postId }) => dispatch(onAccept({ topicId, postId, alert }))
 });
 
 const mapStateToProps = state => ({

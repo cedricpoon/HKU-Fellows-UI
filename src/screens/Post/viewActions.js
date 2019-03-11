@@ -27,7 +27,7 @@ export function onRefresh({ alert }) {
   }
 }
 
-async function fetchPost({ credential, path, isMoodleKey }) {
+async function fetchPost({ credential, path, isMoodleKey, payload }) {
   const response = await fetch(link(path), {
     method: 'POST',
     headers: {
@@ -37,7 +37,8 @@ async function fetchPost({ credential, path, isMoodleKey }) {
     body: JSON.stringify({
       username: credential.userId,
       token: credential.token,
-      ...(isMoodleKey && { moodleKey: credential.moodleKey })
+      ...(isMoodleKey && { moodleKey: credential.moodleKey }),
+      ...payload
     }),
   });
   return await response.json();
@@ -80,11 +81,22 @@ export function onNotify({ topicId }) { // eslint-disable-line
   }
 }
 
-export function onAccept({ topicId, postId }) { // eslint-disable-line
-  return dispatch => {
-    Alert.alert('onAccept');
-    dispatch({ type: REFRESH_REPLIES });
-    dispatch(onLoad({ id: topicId }));
+export function onAccept({ topicId, postId, alert }) {
+  return async (dispatch, getState) => {
+    const { credential } = getState();
+    try {
+      const res = await fetchPost({ credential, path: view.adopt({ topicId }), payload: { postId } });
+      if (res.status === 200) {
+        // Successfully voted
+        dispatch({ type: REFRESH_REPLIES });
+        dispatch(onLoad({ id: topicId }));
+      } else {
+        // failure
+        alert(`${locale['replies.acceptError']} ${res.status}`);
+      }
+    } catch (error) {
+      alert(locale['replies.acceptError']);
+    }
   }
 }
 
@@ -93,7 +105,7 @@ export function onLoad({ id, alert }) {
     const { credential } = getState();
 
     try {
-      const res = await fetchPost({ credential, path: view({ topicId: id }), isMoodleKey: true });
+      const res = await fetchPost({ credential, path: view.index({ topicId: id }), isMoodleKey: true });
       if (res.status === 200) {
         const { posts, native: _native, owned: _owned, ...restPayload } = res.payload;
         const native = _native === 1;

@@ -20,6 +20,7 @@ export default {
   'replies.voted': 'You have already voted',
   'replies.selfVote': 'Own post cannot be voted',
   'replies.voteIssue': 'Vote not submitted',
+  'replies.acceptError': 'Answer not adopted',
 
   'footer.moodle': 'From Moodle',
   'footer.latestPost': 'Latest Post',

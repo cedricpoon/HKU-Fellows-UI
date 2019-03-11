@@ -59,6 +59,8 @@ export default {
   'new.anonymous': 'Post Anonymously',
   'new.markdownRemark': '** Content can be styled in',
   'new.markdown': 'Markdown',
+  'new.noCompulsory': 'Compulsory items not filled',
+  'new.malformedHashtags': 'Hashtag(s) malformed',
 
   'fetch.noNetwork': 'Server is not connected.',
 

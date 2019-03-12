@@ -52,13 +52,19 @@ export class Compose extends Component {
   }
 
   _renderHeaderMenu({ width }) {
-    const { headerLayout } = this.state;
+    const { headerLayout, title, subtitle, hashtags, content } = this.state;
 
     return (
       <ViewMenu
         position={{ x: width, y: headerLayout.y }}
         parentHeight={headerLayout.height}
         onRef={ref => this._popup = ref}
+        payload={{
+          title,
+          subtitle: subtitle !== '' ? subtitle : null,
+          hashtags: classifyQuery(hashtags) !== hashtags ? classifyQuery(hashtags) : null,
+          content
+        }}
       />
     );
   }

@@ -4,6 +4,12 @@ exports[`Testing ViewMenu Screen renders as expected 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ViewMenu
+    payload={
+      Object {
+        "content": "content",
+        "title": "title",
+      }
+    }
     position={
       Object {
         "x": 0,
@@ -29,6 +35,7 @@ ShallowWrapper {
       "children": Array [
         <Styled(Button)
           iconLeft={true}
+          onPress={[Function]}
           success={true}
           transparent={true}
         >
@@ -49,6 +56,7 @@ ShallowWrapper {
         <Styled(Button)
           iconLeft={true}
           info={true}
+          onPress={[Function]}
           transparent={true}
         >
           <Styled(Icon)
@@ -66,13 +74,17 @@ ShallowWrapper {
           </Styled(Text)>
         </Styled(Button)>,
       ],
+      "payload": Object {
+        "content": "content",
+        "title": "title",
+      },
       "position": Object {
         "x": 0,
         "y": 0,
       },
       "toggle": [Function],
     },
-    "ref": null,
+    "ref": [Function],
     "rendered": Array [
       Object {
         "instance": null,
@@ -95,6 +107,7 @@ ShallowWrapper {
             </Styled(Text)>,
           ],
           "iconLeft": true,
+          "onPress": [Function],
           "success": true,
           "transparent": true,
           "virtual": undefined,
@@ -155,6 +168,7 @@ ShallowWrapper {
           ],
           "iconLeft": true,
           "info": true,
+          "onPress": [Function],
           "transparent": true,
           "virtual": undefined,
         },
@@ -204,6 +218,7 @@ ShallowWrapper {
         "children": Array [
           <Styled(Button)
             iconLeft={true}
+            onPress={[Function]}
             success={true}
             transparent={true}
           >
@@ -224,6 +239,7 @@ ShallowWrapper {
           <Styled(Button)
             iconLeft={true}
             info={true}
+            onPress={[Function]}
             transparent={true}
           >
             <Styled(Icon)
@@ -241,13 +257,17 @@ ShallowWrapper {
             </Styled(Text)>
           </Styled(Button)>,
         ],
+        "payload": Object {
+          "content": "content",
+          "title": "title",
+        },
         "position": Object {
           "x": 0,
           "y": 0,
         },
         "toggle": [Function],
       },
-      "ref": null,
+      "ref": [Function],
       "rendered": Array [
         Object {
           "instance": null,
@@ -270,6 +290,7 @@ ShallowWrapper {
               </Styled(Text)>,
             ],
             "iconLeft": true,
+            "onPress": [Function],
             "success": true,
             "transparent": true,
             "virtual": undefined,
@@ -330,6 +351,7 @@ ShallowWrapper {
             ],
             "iconLeft": true,
             "info": true,
+            "onPress": [Function],
             "transparent": true,
             "virtual": undefined,
           },

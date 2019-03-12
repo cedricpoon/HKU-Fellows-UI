@@ -61,6 +61,7 @@ export default {
   'new.markdown': 'Markdown',
   'new.noCompulsory': 'Compulsory items not filled',
   'new.malformedHashtags': 'Hashtag(s) malformed',
+  'new.previewWordings': 'This is a preview of the actual post',
 
   'fetch.noNetwork': 'Server is not connected.',
 

@@ -6,8 +6,11 @@ import { format } from 'timeago.js';
 import PropTypes from 'prop-types';
 
 import { Header, PostSwipable } from 'hkufui/components';
+import { localize } from 'hkufui/locale';
 import postStyles from '../Post/Styles';
 import styles from './Styles';
+
+const locale = localize({ country: 'hk', language: 'en' });
 
 export class ComposePreview extends Component {
   constructor(props) {
@@ -32,7 +35,7 @@ export class ComposePreview extends Component {
       <Container>
         <Header
           title={{
-            context: `[Preview] ${title}`,
+            context: title,
             numberOfLines: 4,
             color: native ? postStyles.nativeTitle.color : postStyles.moodleTitle.color
           }}
@@ -51,7 +54,7 @@ export class ComposePreview extends Component {
             id: '0'.repeat(64), /* mock of SHA-256 hash */
             author: anonymity ? null : username,
             timestamp: format(Date.now()),
-            content,
+            content: `*{ ${locale['new.previewWordings']} }*\n\n---\n\n${content}`,
             temperature: 0 /* no temperature at first */
           }]}
           native={native}

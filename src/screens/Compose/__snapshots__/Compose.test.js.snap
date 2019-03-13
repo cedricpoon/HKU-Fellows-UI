@@ -40,7 +40,7 @@ ShallowWrapper {
           }
         />,
         <Header
-          animated={true}
+          animated={false}
           backable={true}
           onLayout={[Function]}
           onRightPress={[Function]}
@@ -207,7 +207,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "animated": true,
+          "animated": false,
           "backable": true,
           "onLayout": [Function],
           "onRightPress": [Function],
@@ -703,7 +703,7 @@ ShallowWrapper {
             }
           />,
           <Header
-            animated={true}
+            animated={false}
             backable={true}
             onLayout={[Function]}
             onRightPress={[Function]}
@@ -870,7 +870,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "animated": true,
+            "animated": false,
             "backable": true,
             "onLayout": [Function],
             "onRightPress": [Function],

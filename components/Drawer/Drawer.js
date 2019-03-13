@@ -83,7 +83,8 @@ export class Drawer extends PureComponent {
 
 Drawer.defaultProps = {
   username: '-',
-  token7digits: '0000000'
+  token7digits: '0000000',
+  temperature: null
 }
 
 Drawer.propTypes = {

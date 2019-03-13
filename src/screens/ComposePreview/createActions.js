@@ -18,7 +18,7 @@ export function onCompose({ payload, alert }) {
     const { hashtag, ...restPayload } = payload;
 
     dispatch({ type: REQUEST_POST_CREATE });
-    alert('Creating post...', 1000);
+    alert(locale['new.creatingPost'], 1000);
     try {
       const response = await fetch(link(compose.native({ courseId })), {
         method: 'POST',
@@ -35,7 +35,7 @@ export function onCompose({ payload, alert }) {
       });
       const res = await response.json();
       if (res.status === 200 || res.status === 204) {
-        alert('Post created!', 2000, true);
+        alert(locale['new.createdPost'], 2000, true);
         // go back twice as <Compose/> + <ComposePreview/>
         NavigationService.goBackNTimes(2);
         if (res.status === 200) {
@@ -46,11 +46,11 @@ export function onCompose({ payload, alert }) {
         dispatch(fetchPosts());
       } else {
         // failure
-        alert(`Post cannot be created ${res.status}`);
+        alert(`${locale['new.error']} ${res.status}`);
       }
     } catch (error) {
       // failure
-      alert(`Post cannot be created`);
+      alert(locale['new.error']);
     }
     dispatch({ type: END_POST_CREATE });
   };

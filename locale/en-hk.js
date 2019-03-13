@@ -62,6 +62,9 @@ export default {
   'new.noCompulsory': 'Compulsory items not filled',
   'new.malformedHashtags': 'Hashtag(s) malformed',
   'new.previewWordings': 'This is a preview of the actual post',
+  'new.creatingPost': 'Creating post...',
+  'new.createdPost': 'Post created!',
+  'new.error': 'Post cannot be created',
 
   'fetch.noNetwork': 'Server is not connected.',
 

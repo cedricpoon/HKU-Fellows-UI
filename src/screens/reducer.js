@@ -11,6 +11,7 @@ import Authentication from './Login/authenticate';
 import ViewActionHandler from './Post/viewActions';
 import FilterPostHandler from './Preview/filterPosts';
 import DrawerActionHandler from '../navigator/Context/DrawerMenu/drawerAction';
+import ComposeActionHandler from './ComposePreview/createActions';
 
 const ruleReducer = (state, action) => {
   // logged in rule middleware
@@ -36,6 +37,7 @@ const ruleReducer = (state, action) => {
     replies: loggedIn(ViewActionHandler),
     credential: Authentication,
     profile: loggedIn(DrawerActionHandler),
+    compose: loggedIn(ComposeActionHandler)
   });
 
   return appReducer(state, action);

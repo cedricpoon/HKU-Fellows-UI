@@ -7,15 +7,21 @@ import PropTypes from 'prop-types';
 
 import { Header, PostSwipable } from 'hkufui/components';
 import { localize } from 'hkufui/locale';
+import { STILL, LOADING } from 'hkufui/src/constants/loadStatus';
+import { show3s } from 'hkufui/src/toastHelper';
+
 import postStyles from '../Post/Styles';
 import styles from './Styles';
+import { onCompose } from './createActions';
 
 const locale = localize({ country: 'hk', language: 'en' });
+const alert = (message) => { show3s({ message }); }
 
 export class ComposePreview extends Component {
   constructor(props) {
     super(props);
     this.state = { title: '', subtitle: null, hashtags: null, content: '', anonymity: false, native: true };
+    this._composeNativePost = this._composeNativePost.bind(this);
   }
 
   componentDidMount() {
@@ -27,9 +33,15 @@ export class ComposePreview extends Component {
     }
   }
 
+  _composeNativePost() {
+    const { onComposeNative } = this.props;
+    const { title, subtitle, hashtags, content, anonymity } = this.state;
+    onComposeNative({ title, subtitle, hashtags, content, anonymity });
+  }
+
   render() {
     const { title, subtitle, content, anonymity, native } = this.state;
-    const { username } = this.props;
+    const { username, status } = this.props;
 
     return (
       <Container>
@@ -44,10 +56,10 @@ export class ComposePreview extends Component {
             numberOfLines: 3
           }}
           animated={false}
-          backable
+          backable={status === STILL}
           rightIcon='send'
           rightStyle={styles.send}
-          onRightPress={() => {}}
+          onRightPress={status === STILL ? this._composeNativePost : null}
         />
         <PostSwipable
           comments={[{
@@ -65,15 +77,23 @@ export class ComposePreview extends Component {
 }
 
 ComposePreview.propTypes = {
-  username: PropTypes.string
+  username: PropTypes.string,
+  onComposeNative: PropTypes.func.isRequired,
+  status: PropTypes.oneOf([ STILL, LOADING ])
 }
 
 const mapStateToProps = state => ({
-  username: state.credential.userId
+  username: state.credential.userId,
+  status: state.compose.status
 });
 
-const mapDispatchToProps = () => ({
-
+const mapDispatchToProps = dispatch => ({
+  onComposeNative: ({ title, subtitle, hashtags, content, anonymity }) => {
+    dispatch(onCompose({
+      payload: { title, subtitle, hashtag: hashtags, content, anonymous: anonymity ? 1 : 0 },
+      alert
+    }));
+  }
 })
 
 export default withNavigation(connect(

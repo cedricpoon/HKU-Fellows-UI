@@ -24,6 +24,11 @@ export const profile = {
   temperature: () => '/profile/temperature'
 }
 
+export const compose = {
+  native: ({ courseId }) => `/compose/native/${courseId}`,
+  moodle: ({ courseId }) => `/compose/moodle/${courseId}`
+}
+
 export const vote = {
   up: ({ postId }) => `/vote/${postId}/up`,
   down: ({ postId }) => `/vote/${postId}/down`,

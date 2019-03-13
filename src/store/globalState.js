@@ -42,5 +42,9 @@ export default {
   profile: {
     /* User temperature in number */
     temperature: null,
+  },
+  compose: {
+    /* compose status of new post, LOADING or STILL */
+    status: STILL
   }
 }

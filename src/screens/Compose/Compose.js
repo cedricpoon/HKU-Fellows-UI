@@ -82,6 +82,7 @@ export class Compose extends Component {
           rightIcon='eye'
           onRightPress={this._openHeaderMenu}
           backable
+          animated={false}
           onLayout={mapLayoutToState('headerLayout', this)}
         />
         <Content padder>

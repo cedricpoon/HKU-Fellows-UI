@@ -8,14 +8,16 @@ import PropTypes from 'prop-types';
 import { Header, PostSwipable } from 'hkufui/components';
 import { localize } from 'hkufui/locale';
 import { STILL, LOADING } from 'hkufui/src/constants/loadStatus';
-import { show3s } from 'hkufui/src/toastHelper';
+import { show } from 'hkufui/src/toastHelper';
 
 import postStyles from '../Post/Styles';
 import styles from './Styles';
 import { onCompose } from './createActions';
 
 const locale = localize({ country: 'hk', language: 'en' });
-const alert = (message) => { show3s({ message }); }
+const alert = (message, duration, success = false) => {
+  show({ message, duration, hideButton: duration <= 1000, type: success ? 'success' : null });
+}
 
 export class ComposePreview extends Component {
   constructor(props) {

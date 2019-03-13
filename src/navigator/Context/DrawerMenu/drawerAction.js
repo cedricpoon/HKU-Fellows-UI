@@ -38,6 +38,7 @@ const handleActions = (state = {}, action = {}) => {
   switch (action.type) {
     case UPDATE_TEMPERATURE:
       return {
+        ...state,
         temperature: action.payload.temperature
       }
     default:

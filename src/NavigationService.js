@@ -22,6 +22,10 @@ function goBack() {
   _navigator.dispatch(NavigationActions.back());
 }
 
+function goBackNTimes(n) {
+  _navigator.dispatch(StackActions.pop({ n }));
+}
+
 function openDrawer() {
   _navigator.dispatch(DrawerActions.openDrawer());
 }
@@ -44,5 +48,6 @@ export default {
   setTopLevelNavigator,
   goBack,
   openDrawer,
-  reset
+  reset,
+  goBackNTimes
 };

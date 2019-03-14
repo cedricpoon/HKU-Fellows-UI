@@ -4,6 +4,7 @@ exports[`Testing ComposePreview Screen is creating post 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <withNavigation(Connect(ComposePreview))
+    onComposeMoodle={[Function]}
     onComposeNative={[Function]}
     status="LOADING"
     username="alanchan"
@@ -104,6 +105,7 @@ exports[`Testing ComposePreview Screen renders as expected 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <withNavigation(Connect(ComposePreview))
+    onComposeMoodle={[Function]}
     onComposeNative={[Function]}
     status="STILL"
     username="alanchan"

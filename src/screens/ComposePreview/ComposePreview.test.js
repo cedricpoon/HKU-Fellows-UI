@@ -6,7 +6,8 @@ import { STILL, LOADING } from 'hkufui/src/constants/loadStatus';
 describe('Testing ComposePreview Screen', () => {
   const defaultProps = {
     username:'alanchan',
-    onComposeNative:() => {}
+    onComposeNative: () => {},
+    onComposeMoodle: () => {}
   };
 
   it('renders as expected', () => {

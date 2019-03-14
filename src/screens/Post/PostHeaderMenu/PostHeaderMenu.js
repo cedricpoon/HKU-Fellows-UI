@@ -74,15 +74,15 @@ export class PostHeaderMenu extends Component {
         { ...restProps } /* Proptypes handling on <PopupMenu /> */
       >
         {native && (
-          <Button transparent iconLeft light onPress={this._voteUp}>
+          <Button transparent iconLeft onPress={this._voteUp}>
             <Icon name="thumb-up" type="MaterialCommunityIcons" style={[themeStyles.icon, styles.thumbUp]}></Icon>
-            <Text>{locale['header.thumbUp'](index)}</Text>
+            <Text style={styles.text}>{locale['header.thumbUp'](index)}</Text>
           </Button>
         )}
         {native && (
-          <Button transparent iconLeft light onPress={this._voteDown}>
+          <Button transparent iconLeft onPress={this._voteDown}>
             <Icon name="thumb-down" type="MaterialCommunityIcons" style={[themeStyles.icon, styles.thumbDown]}></Icon>
-            <Text>{locale['header.thumbDown'](index)}</Text>
+            <Text style={styles.text}>{locale['header.thumbDown'](index)}</Text>
           </Button>
         )}
         {native && owned && (
@@ -95,9 +95,9 @@ export class PostHeaderMenu extends Component {
           <Separator style={styles.separator} />
         )}
         {native && (
-          <Button transparent iconLeft light onPress={this._enableNotification}>
-            <Icon name="notifications" type="MaterialIcons" style={themeStyles.icon}></Icon>
-            <Text>{locale['header.notifications']}</Text>
+          <Button transparent iconLeft onPress={this._enableNotification}>
+            <Icon name="notifications" type="MaterialIcons" style={[themeStyles.icon, styles.text]}></Icon>
+            <Text style={styles.text}>{locale['header.notifications']}</Text>
           </Button>
         )}
         <Button transparent iconLeft danger onPress={this._reportAbuse}>

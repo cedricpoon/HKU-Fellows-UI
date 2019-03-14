@@ -23,7 +23,7 @@ export class ComposePreview extends Component {
   constructor(props) {
     super(props);
     this.state = { title: '', subtitle: null, hashtags: null, content: '', anonymity: false, native: true };
-    this._composeNativePost = this._composeNativePost.bind(this);
+    this._composePost = this._composePost.bind(this);
   }
 
   componentDidMount() {
@@ -35,10 +35,13 @@ export class ComposePreview extends Component {
     }
   }
 
-  _composeNativePost() {
-    const { onComposeNative } = this.props;
-    const { title, subtitle, hashtags, content, anonymity } = this.state;
-    onComposeNative({ title, subtitle, hashtags, content, anonymity });
+  _composePost() {
+    const { onComposeNative, onComposeMoodle } = this.props;
+    const { title, subtitle, hashtags, content, anonymity, native } = this.state;
+    if (native)
+      onComposeNative({ title, subtitle, hashtags, content, anonymity });
+    else
+      onComposeMoodle({ title, content });
   }
 
   render() {
@@ -61,16 +64,16 @@ export class ComposePreview extends Component {
           backable={status === STILL}
           rightIcon='send'
           rightStyle={styles.send}
-          onRightPress={status === STILL ? this._composeNativePost : null}
+          onRightPress={status === STILL ? this._composePost : null}
         />
         <PostSwipable
-          comments={[{
+          comments={status === STILL ? [{
             id: '0'.repeat(64), /* mock of SHA-256 hash */
             author: anonymity ? null : username,
             timestamp: format(Date.now()),
-            content: `*{ ${locale['new.previewWordings']} }*\n\n---\n\n${content}`,
+            content: `*{ ${locale['new.previewWordings']} }*\n\n${content}`,
             temperature: 0 /* no temperature at first */
-          }]}
+          }] : null}
           native={native}
         />
       </Container>
@@ -81,6 +84,7 @@ export class ComposePreview extends Component {
 ComposePreview.propTypes = {
   username: PropTypes.string,
   onComposeNative: PropTypes.func.isRequired,
+  onComposeMoodle: PropTypes.func.isRequired,
   status: PropTypes.oneOf([ STILL, LOADING ])
 }
 
@@ -93,7 +97,13 @@ const mapDispatchToProps = dispatch => ({
   onComposeNative: ({ title, subtitle, hashtags, content, anonymity }) => {
     dispatch(onCompose({
       payload: { title, subtitle, hashtag: hashtags, content, anonymous: anonymity ? 1 : 0 },
-      alert
+      alert, native: true
+    }));
+  },
+  onComposeMoodle: ({ title, content }) => {
+    dispatch(onCompose({
+      payload: { title, content },
+      alert, native: false
     }));
   }
 })

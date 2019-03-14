@@ -11,24 +11,21 @@ import { fetchPosts } from '../Preview/PostPreviewLoader/loadPosts';
 
 const locale = localize({ language: 'en', country: 'hk' });
 
-export function onCompose({ payload, alert }) {
-  return async (dispatch, getState) => {
-    const { location, credential } = getState();
-    const { courseId } = location;
+function requestCompose({ payload, alert, link, credential }) {
+  return async dispatch => {
     const { hashtag, ...restPayload } = payload;
 
     dispatch({ type: REQUEST_POST_CREATE });
     alert(locale['new.creatingPost'], 1000);
     try {
-      const response = await fetch(link(compose.native({ courseId })), {
+      const response = await fetch(link, {
         method: 'POST',
         headers: {
           Accept: 'application/json',
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          username: credential.userId,
-          token: credential.token,
+          ...credential,
           hashtag: hashtag && encodeURI(JSON.stringify(hashtag)),
           ...restPayload
         })
@@ -53,6 +50,24 @@ export function onCompose({ payload, alert }) {
       alert(locale['new.error']);
     }
     dispatch({ type: END_POST_CREATE });
+  };
+}
+
+export function onCompose({ payload, alert, native }) {
+  return async (dispatch, getState) => {
+    const { location, credential } = getState();
+    const { courseId } = location;
+
+    dispatch(requestCompose({
+      payload,
+      alert,
+      link: native ? link(compose.native({ courseId })) : link(compose.moodle({ courseId })),
+      credential: {
+        username: credential.userId,
+        token: credential.token,
+        ...(!native && {moodleKey: credential.moodleKey})
+      }
+    }));
   };
 }
 

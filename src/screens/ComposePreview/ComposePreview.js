@@ -81,6 +81,7 @@ export class ComposePreview extends Component {
 ComposePreview.propTypes = {
   username: PropTypes.string,
   onComposeNative: PropTypes.func.isRequired,
+  onComposeMoodle: PropTypes.func.isRequired,
   status: PropTypes.oneOf([ STILL, LOADING ])
 }
 
@@ -93,7 +94,13 @@ const mapDispatchToProps = dispatch => ({
   onComposeNative: ({ title, subtitle, hashtags, content, anonymity }) => {
     dispatch(onCompose({
       payload: { title, subtitle, hashtag: hashtags, content, anonymous: anonymity ? 1 : 0 },
-      alert
+      alert, native: true
+    }));
+  },
+  onComposeMoodle: ({ title, content }) => {
+    dispatch(onCompose({
+      payload: { title, content },
+      alert, native: false
     }));
   }
 })

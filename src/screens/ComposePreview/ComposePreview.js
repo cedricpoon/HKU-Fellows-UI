@@ -23,7 +23,7 @@ export class ComposePreview extends Component {
   constructor(props) {
     super(props);
     this.state = { title: '', subtitle: null, hashtags: null, content: '', anonymity: false, native: true };
-    this._composeNativePost = this._composeNativePost.bind(this);
+    this._composePost = this._composePost.bind(this);
   }
 
   componentDidMount() {
@@ -35,10 +35,13 @@ export class ComposePreview extends Component {
     }
   }
 
-  _composeNativePost() {
-    const { onComposeNative } = this.props;
-    const { title, subtitle, hashtags, content, anonymity } = this.state;
-    onComposeNative({ title, subtitle, hashtags, content, anonymity });
+  _composePost() {
+    const { onComposeNative, onComposeMoodle } = this.props;
+    const { title, subtitle, hashtags, content, anonymity, native } = this.state;
+    if (native)
+      onComposeNative({ title, subtitle, hashtags, content, anonymity });
+    else
+      onComposeMoodle({ title, content });
   }
 
   render() {
@@ -61,7 +64,7 @@ export class ComposePreview extends Component {
           backable={status === STILL}
           rightIcon='send'
           rightStyle={styles.send}
-          onRightPress={status === STILL ? this._composeNativePost : null}
+          onRightPress={status === STILL ? this._composePost : null}
         />
         <PostSwipable
           comments={[{

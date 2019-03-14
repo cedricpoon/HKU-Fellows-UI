@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-import { Dimensions, Linking, Keyboard } from 'react-native';
-import { Container, Content, Form, Textarea, Item, Input, Text, View } from 'native-base';
+import { Dimensions, Keyboard } from 'react-native';
+import { Container } from 'native-base';
 import { withNavigation } from 'react-navigation';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import { Header } from 'hkufui/components';
+import { Header, ComposeForm } from 'hkufui/components';
 import ViewMenu from './ViewMenu/ViewMenu';
 import { mapLayoutToState } from 'hkufui/components/helper';
 import { localize } from 'hkufui/locale';
-import styles from './Styles';
-import { markdownTutorialLink } from 'hkufui/config';
 import { show3s } from 'hkufui/src/toastHelper';
 import { classifyQuery } from 'hkufui/src/screens/Preview/helper';
+import NavigationService from 'hkufui/src/NavigationService';
 
 const locale = localize({ country: 'hk', language: 'en' });
 const alert = (message) => { show3s({ message, type: 'danger' }); }
@@ -25,24 +24,29 @@ export class Compose extends Component {
       title: "",
       subtitle: "",
       hashtags: "",
-      content: ""
+      content: "",
+      native: true
     };
     this._openHeaderMenu = this._openHeaderMenu.bind(this);
     this._renderHeaderMenu = this._renderHeaderMenu.bind(this);
     this._handleTextUpdate = this._handleTextUpdate.bind(this);
+    this._toggleNativeMode = this._toggleNativeMode.bind(this);
   }
 
   _openHeaderMenu() {
-    const { title, content, hashtags } = this.state;
+    const { title, content, hashtags, native } = this.state;
     Keyboard.dismiss();
     // compulsory not filled
     if (title === '' || content === '')
       alert(locale['new.noCompulsory']);
     // not a valid hashtag string
-    else if (hashtags !== '' && classifyQuery(hashtags) === hashtags)
+    else if (native && hashtags !== '' && classifyQuery(hashtags) === hashtags)
       alert(locale['new.malformedHashtags']);
-    else if (this._popup)
+    else if (native && this._popup)
       this._popup.toggle();
+    else
+      // directly preview for Moodle
+      NavigationService.navigate('ComposePreview', { title, content, native: false });
   }
 
   _handleTextUpdate(name) {
@@ -51,18 +55,23 @@ export class Compose extends Component {
     }
   }
 
+  _toggleNativeMode(isNative) {
+    this.setState({ native: isNative });
+  }
+
   _renderHeaderMenu({ width }) {
-    const { headerLayout, title, subtitle, hashtags, content } = this.state;
+    const { headerLayout, title, subtitle, hashtags, content, native } = this.state;
 
     return (
       <ViewMenu
         position={{ x: width, y: headerLayout.y }}
         parentHeight={headerLayout.height}
         onRef={ref => this._popup = ref}
+        native={native}
         payload={{
           title,
-          subtitle: subtitle !== '' ? subtitle : null,
-          hashtags: classifyQuery(hashtags) !== hashtags ? classifyQuery(hashtags) : null,
+          subtitle: native && subtitle !== '' ? subtitle : null,
+          hashtags: native && classifyQuery(hashtags) !== hashtags ? classifyQuery(hashtags) : null,
           content
         }}
       />
@@ -85,36 +94,16 @@ export class Compose extends Component {
           animated={false}
           onLayout={mapLayoutToState('headerLayout', this)}
         />
-        <Content padder>
-          <Form>
-            <Item regular>
-              <Input placeholder={locale['new.title']} style={styles.textbox} onChangeText={this._handleTextUpdate('title')} />
-            </Item>
-            <Item regular style={styles.item}>
-              <Input placeholder={locale['new.subtitle']} style={styles.textbox} onChangeText={this._handleTextUpdate('subtitle')} />
-            </Item>
-            <Item regular style={styles.item}>
-              <Input placeholder={locale['new.hashtags']} style={styles.textbox} onChangeText={this._handleTextUpdate('hashtags')} />
-            </Item>
-            <Textarea
-              bordered
-              placeholder={locale['new.content']}
-              style={{ height: height / 3 }}
-              onChangeText={this._handleTextUpdate('content')}
-            />
-          </Form>
-          <View style={styles.remarkGroup}>
-            <Text style={styles.remark} note>
-              {locale['new.markdownRemark']}
-            </Text>
-            <Text
-              style={[styles.remark, styles.hyperlink]}
-              onPress={() => Linking.openURL(markdownTutorialLink)}
-            >
-              {locale['new.markdown']}
-            </Text>
-          </View>
-        </Content>
+        <ComposeForm
+          onTextUpdates={{
+            title: this._handleTextUpdate('title'),
+            subtitle: this._handleTextUpdate('subtitle'),
+            hashtags: this._handleTextUpdate('hashtags'),
+            content: this._handleTextUpdate('content')
+          }}
+          onToggleMode={this._toggleNativeMode}
+          screenHeight={height}
+        />
       </Container>
     );
   }

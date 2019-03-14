@@ -10,7 +10,7 @@ export default StyleSheet.create({
     paddingRight: gridBase
   },
   item: {
-    marginTop: gridBase
+    marginTop: gridBase * 2
   },
   remarkGroup: {
     marginTop: gridBase * 2,
@@ -25,5 +25,11 @@ export default StyleSheet.create({
     color: logo.blue,
     fontStyle: 'normal',
     textDecorationLine: 'underline'
+  },
+  toggler: {
+    fontSize: fontSize.titleSize
+  },
+  hidden: {
+    display: 'none'
   }
 });

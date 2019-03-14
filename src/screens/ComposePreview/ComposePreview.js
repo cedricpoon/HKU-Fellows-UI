@@ -68,7 +68,7 @@ export class ComposePreview extends Component {
             id: '0'.repeat(64), /* mock of SHA-256 hash */
             author: anonymity ? null : username,
             timestamp: format(Date.now()),
-            content: `*{ ${locale['new.previewWordings']} }*\n\n---\n\n${content}`,
+            content: `*{ ${locale['new.previewWordings']} }*\n\n${content}`,
             temperature: 0 /* no temperature at first */
           }]}
           native={native}

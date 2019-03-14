@@ -25,3 +25,5 @@ export { default as PostPreview } from './PostPreview/PostPreview';
 export { default as PostSwipable } from './PostSwipable/PostSwipable';
 
 export { default as PostDetails } from './PostDetails/PostDetails';
+
+export { default as ComposeForm } from './ComposeForm/ComposeForm';

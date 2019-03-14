@@ -12,5 +12,8 @@ export default StyleSheet.create({
   },
   thumbDown: {
     color: logo.red
+  },
+  text: {
+    color: logo.black
   }
 });

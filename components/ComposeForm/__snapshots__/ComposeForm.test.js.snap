@@ -1,0 +1,3371 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing ComposeForm Component can toggle mode 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ComposeForm
+    onTextUpdates={Object {}}
+    onToggleMode={[Function]}
+    screenHeight={300}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <Styled(Form)>
+          <Styled(Item)
+            regular={true}
+          >
+            <Styled(Input)
+              placeholder="Title (Compulsory)"
+              style={
+                Object {
+                  "fontSize": 15,
+                  "height": 30,
+                  "paddingLeft": 10,
+                  "paddingRight": 5,
+                }
+              }
+            />
+          </Styled(Item)>
+          <Styled(Item)
+            regular={true}
+            style={
+              Array [
+                Object {
+                  "marginTop": 10,
+                },
+                false,
+              ]
+            }
+          >
+            <Styled(Input)
+              placeholder="Subtitle"
+              style={
+                Object {
+                  "fontSize": 15,
+                  "height": 30,
+                  "paddingLeft": 10,
+                  "paddingRight": 5,
+                }
+              }
+            />
+          </Styled(Item)>
+          <Styled(Item)
+            regular={true}
+            style={
+              Array [
+                Object {
+                  "marginTop": 10,
+                },
+                false,
+              ]
+            }
+          >
+            <Styled(Input)
+              placeholder="Hashtags (Max. 2, E.g. #AY18#Tutor1)"
+              style={
+                Object {
+                  "fontSize": 15,
+                  "height": 30,
+                  "paddingLeft": 10,
+                  "paddingRight": 5,
+                }
+              }
+            />
+          </Styled(Item)>
+          <Styled(Textarea)
+            bordered={true}
+            placeholder="Content (Compulsory)"
+            style={
+              Object {
+                "height": 100,
+              }
+            }
+          />
+          <Styled(Button)
+            dark={false}
+            full={true}
+            light={true}
+            onPress={[Function]}
+            style={
+              Object {
+                "marginTop": 10,
+              }
+            }
+          >
+            <Styled(Text)
+              style={
+                Object {
+                  "fontSize": 15,
+                }
+              }
+            >
+              As Native Post
+            </Styled(Text)>
+          </Styled(Button)>
+        </Styled(Form)>,
+        <Styled(ViewNB)
+          style={
+            Object {
+              "flexDirection": "row",
+              "marginTop": 10,
+            }
+          }
+        >
+          <Styled(Text)
+            note={true}
+            style={
+              Object {
+                "fontSize": 12.5,
+                "fontStyle": "italic",
+                "marginRight": 5,
+              }
+            }
+          >
+            ** Content can be styled in
+          </Styled(Text)>
+          <Styled(Text)
+            onPress={[Function]}
+            style={
+              Array [
+                Object {
+                  "fontSize": 12.5,
+                  "fontStyle": "italic",
+                  "marginRight": 5,
+                },
+                Object {
+                  "color": "#3B96DC",
+                  "fontStyle": "normal",
+                  "textDecorationLine": "underline",
+                },
+              ]
+            }
+          >
+            Markdown
+          </Styled(Text)>
+        </Styled(ViewNB)>,
+      ],
+      "padder": true,
+      "virtual": undefined,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(Item)
+              regular={true}
+            >
+              <Styled(Input)
+                placeholder="Title (Compulsory)"
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  }
+                }
+              />
+            </Styled(Item)>,
+            <Styled(Item)
+              regular={true}
+              style={
+                Array [
+                  Object {
+                    "marginTop": 10,
+                  },
+                  false,
+                ]
+              }
+            >
+              <Styled(Input)
+                placeholder="Subtitle"
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  }
+                }
+              />
+            </Styled(Item)>,
+            <Styled(Item)
+              regular={true}
+              style={
+                Array [
+                  Object {
+                    "marginTop": 10,
+                  },
+                  false,
+                ]
+              }
+            >
+              <Styled(Input)
+                placeholder="Hashtags (Max. 2, E.g. #AY18#Tutor1)"
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  }
+                }
+              />
+            </Styled(Item)>,
+            <Styled(Textarea)
+              bordered={true}
+              placeholder="Content (Compulsory)"
+              style={
+                Object {
+                  "height": 100,
+                }
+              }
+            />,
+            <Styled(Button)
+              dark={false}
+              full={true}
+              light={true}
+              onPress={[Function]}
+              style={
+                Object {
+                  "marginTop": 10,
+                }
+              }
+            >
+              <Styled(Text)
+                style={
+                  Object {
+                    "fontSize": 15,
+                  }
+                }
+              >
+                As Native Post
+              </Styled(Text)>
+            </Styled(Button)>,
+          ],
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Input)
+                placeholder="Title (Compulsory)"
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  }
+                }
+              />,
+              "regular": true,
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "onChangeText": undefined,
+                "placeholder": "Title (Compulsory)",
+                "style": Object {
+                  "fontSize": 15,
+                  "height": 30,
+                  "paddingLeft": 10,
+                  "paddingRight": 5,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Input)
+                placeholder="Subtitle"
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  }
+                }
+              />,
+              "regular": true,
+              "style": Array [
+                Object {
+                  "marginTop": 10,
+                },
+                false,
+              ],
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "onChangeText": undefined,
+                "placeholder": "Subtitle",
+                "style": Object {
+                  "fontSize": 15,
+                  "height": 30,
+                  "paddingLeft": 10,
+                  "paddingRight": 5,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Input)
+                placeholder="Hashtags (Max. 2, E.g. #AY18#Tutor1)"
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  }
+                }
+              />,
+              "regular": true,
+              "style": Array [
+                Object {
+                  "marginTop": 10,
+                },
+                false,
+              ],
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "onChangeText": undefined,
+                "placeholder": "Hashtags (Max. 2, E.g. #AY18#Tutor1)",
+                "style": Object {
+                  "fontSize": 15,
+                  "height": 30,
+                  "paddingLeft": 10,
+                  "paddingRight": 5,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "bordered": true,
+              "onChangeText": undefined,
+              "placeholder": "Content (Compulsory)",
+              "style": Object {
+                "height": 100,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Text)
+                style={
+                  Object {
+                    "fontSize": 15,
+                  }
+                }
+              >
+                As Native Post
+              </Styled(Text)>,
+              "dark": false,
+              "full": true,
+              "light": true,
+              "onPress": [Function],
+              "style": Object {
+                "marginTop": 10,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "As Native Post",
+                "style": Object {
+                  "fontSize": 15,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "As Native Post",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(Text)
+              note={true}
+              style={
+                Object {
+                  "fontSize": 12.5,
+                  "fontStyle": "italic",
+                  "marginRight": 5,
+                }
+              }
+            >
+              ** Content can be styled in
+            </Styled(Text)>,
+            <Styled(Text)
+              onPress={[Function]}
+              style={
+                Array [
+                  Object {
+                    "fontSize": 12.5,
+                    "fontStyle": "italic",
+                    "marginRight": 5,
+                  },
+                  Object {
+                    "color": "#3B96DC",
+                    "fontStyle": "normal",
+                    "textDecorationLine": "underline",
+                  },
+                ]
+              }
+            >
+              Markdown
+            </Styled(Text)>,
+          ],
+          "style": Object {
+            "flexDirection": "row",
+            "marginTop": 10,
+          },
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "** Content can be styled in",
+              "note": true,
+              "style": Object {
+                "fontSize": 12.5,
+                "fontStyle": "italic",
+                "marginRight": 5,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": "** Content can be styled in",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Markdown",
+              "onPress": [Function],
+              "style": Array [
+                Object {
+                  "fontSize": 12.5,
+                  "fontStyle": "italic",
+                  "marginRight": 5,
+                },
+                Object {
+                  "color": "#3B96DC",
+                  "fontStyle": "normal",
+                  "textDecorationLine": "underline",
+                },
+              ],
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": "Markdown",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Styled(Form)>
+            <Styled(Item)
+              regular={true}
+            >
+              <Styled(Input)
+                placeholder="Title (Compulsory)"
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  }
+                }
+              />
+            </Styled(Item)>
+            <Styled(Item)
+              regular={true}
+              style={
+                Array [
+                  Object {
+                    "marginTop": 10,
+                  },
+                  false,
+                ]
+              }
+            >
+              <Styled(Input)
+                placeholder="Subtitle"
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  }
+                }
+              />
+            </Styled(Item)>
+            <Styled(Item)
+              regular={true}
+              style={
+                Array [
+                  Object {
+                    "marginTop": 10,
+                  },
+                  false,
+                ]
+              }
+            >
+              <Styled(Input)
+                placeholder="Hashtags (Max. 2, E.g. #AY18#Tutor1)"
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  }
+                }
+              />
+            </Styled(Item)>
+            <Styled(Textarea)
+              bordered={true}
+              placeholder="Content (Compulsory)"
+              style={
+                Object {
+                  "height": 100,
+                }
+              }
+            />
+            <Styled(Button)
+              dark={false}
+              full={true}
+              light={true}
+              onPress={[Function]}
+              style={
+                Object {
+                  "marginTop": 10,
+                }
+              }
+            >
+              <Styled(Text)
+                style={
+                  Object {
+                    "fontSize": 15,
+                  }
+                }
+              >
+                As Native Post
+              </Styled(Text)>
+            </Styled(Button)>
+          </Styled(Form)>,
+          <Styled(ViewNB)
+            style={
+              Object {
+                "flexDirection": "row",
+                "marginTop": 10,
+              }
+            }
+          >
+            <Styled(Text)
+              note={true}
+              style={
+                Object {
+                  "fontSize": 12.5,
+                  "fontStyle": "italic",
+                  "marginRight": 5,
+                }
+              }
+            >
+              ** Content can be styled in
+            </Styled(Text)>
+            <Styled(Text)
+              onPress={[Function]}
+              style={
+                Array [
+                  Object {
+                    "fontSize": 12.5,
+                    "fontStyle": "italic",
+                    "marginRight": 5,
+                  },
+                  Object {
+                    "color": "#3B96DC",
+                    "fontStyle": "normal",
+                    "textDecorationLine": "underline",
+                  },
+                ]
+              }
+            >
+              Markdown
+            </Styled(Text)>
+          </Styled(ViewNB)>,
+        ],
+        "padder": true,
+        "virtual": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Styled(Item)
+                regular={true}
+              >
+                <Styled(Input)
+                  placeholder="Title (Compulsory)"
+                  style={
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    }
+                  }
+                />
+              </Styled(Item)>,
+              <Styled(Item)
+                regular={true}
+                style={
+                  Array [
+                    Object {
+                      "marginTop": 10,
+                    },
+                    false,
+                  ]
+                }
+              >
+                <Styled(Input)
+                  placeholder="Subtitle"
+                  style={
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    }
+                  }
+                />
+              </Styled(Item)>,
+              <Styled(Item)
+                regular={true}
+                style={
+                  Array [
+                    Object {
+                      "marginTop": 10,
+                    },
+                    false,
+                  ]
+                }
+              >
+                <Styled(Input)
+                  placeholder="Hashtags (Max. 2, E.g. #AY18#Tutor1)"
+                  style={
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    }
+                  }
+                />
+              </Styled(Item)>,
+              <Styled(Textarea)
+                bordered={true}
+                placeholder="Content (Compulsory)"
+                style={
+                  Object {
+                    "height": 100,
+                  }
+                }
+              />,
+              <Styled(Button)
+                dark={false}
+                full={true}
+                light={true}
+                onPress={[Function]}
+                style={
+                  Object {
+                    "marginTop": 10,
+                  }
+                }
+              >
+                <Styled(Text)
+                  style={
+                    Object {
+                      "fontSize": 15,
+                    }
+                  }
+                >
+                  As Native Post
+                </Styled(Text)>
+              </Styled(Button)>,
+            ],
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Styled(Input)
+                  placeholder="Title (Compulsory)"
+                  style={
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    }
+                  }
+                />,
+                "regular": true,
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "onChangeText": undefined,
+                  "placeholder": "Title (Compulsory)",
+                  "style": Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  },
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Styled(Input)
+                  placeholder="Subtitle"
+                  style={
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    }
+                  }
+                />,
+                "regular": true,
+                "style": Array [
+                  Object {
+                    "marginTop": 10,
+                  },
+                  false,
+                ],
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "onChangeText": undefined,
+                  "placeholder": "Subtitle",
+                  "style": Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  },
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Styled(Input)
+                  placeholder="Hashtags (Max. 2, E.g. #AY18#Tutor1)"
+                  style={
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    }
+                  }
+                />,
+                "regular": true,
+                "style": Array [
+                  Object {
+                    "marginTop": 10,
+                  },
+                  false,
+                ],
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "onChangeText": undefined,
+                  "placeholder": "Hashtags (Max. 2, E.g. #AY18#Tutor1)",
+                  "style": Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  },
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "bordered": true,
+                "onChangeText": undefined,
+                "placeholder": "Content (Compulsory)",
+                "style": Object {
+                  "height": 100,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Styled(Text)
+                  style={
+                    Object {
+                      "fontSize": 15,
+                    }
+                  }
+                >
+                  As Native Post
+                </Styled(Text)>,
+                "dark": false,
+                "full": true,
+                "light": true,
+                "onPress": [Function],
+                "style": Object {
+                  "marginTop": 10,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "As Native Post",
+                  "style": Object {
+                    "fontSize": 15,
+                  },
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": "As Native Post",
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Styled(Text)
+                note={true}
+                style={
+                  Object {
+                    "fontSize": 12.5,
+                    "fontStyle": "italic",
+                    "marginRight": 5,
+                  }
+                }
+              >
+                ** Content can be styled in
+              </Styled(Text)>,
+              <Styled(Text)
+                onPress={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "fontSize": 12.5,
+                      "fontStyle": "italic",
+                      "marginRight": 5,
+                    },
+                    Object {
+                      "color": "#3B96DC",
+                      "fontStyle": "normal",
+                      "textDecorationLine": "underline",
+                    },
+                  ]
+                }
+              >
+                Markdown
+              </Styled(Text)>,
+            ],
+            "style": Object {
+              "flexDirection": "row",
+              "marginTop": 10,
+            },
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "** Content can be styled in",
+                "note": true,
+                "style": Object {
+                  "fontSize": 12.5,
+                  "fontStyle": "italic",
+                  "marginRight": 5,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "** Content can be styled in",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Markdown",
+                "onPress": [Function],
+                "style": Array [
+                  Object {
+                    "fontSize": 12.5,
+                    "fontStyle": "italic",
+                    "marginRight": 5,
+                  },
+                  Object {
+                    "color": "#3B96DC",
+                    "fontStyle": "normal",
+                    "textDecorationLine": "underline",
+                  },
+                ],
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "Markdown",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
+
+exports[`Testing ComposeForm Component renders as expected 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ComposeForm
+    onTextUpdates={Object {}}
+    onToggleMode={[Function]}
+    screenHeight={300}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <Styled(Form)>
+          <Styled(Item)
+            regular={true}
+          >
+            <Styled(Input)
+              placeholder="Title (Compulsory)"
+              style={
+                Object {
+                  "fontSize": 15,
+                  "height": 30,
+                  "paddingLeft": 10,
+                  "paddingRight": 5,
+                }
+              }
+            />
+          </Styled(Item)>
+          <Styled(Item)
+            regular={true}
+            style={
+              Array [
+                Object {
+                  "marginTop": 10,
+                },
+                false,
+              ]
+            }
+          >
+            <Styled(Input)
+              placeholder="Subtitle"
+              style={
+                Object {
+                  "fontSize": 15,
+                  "height": 30,
+                  "paddingLeft": 10,
+                  "paddingRight": 5,
+                }
+              }
+            />
+          </Styled(Item)>
+          <Styled(Item)
+            regular={true}
+            style={
+              Array [
+                Object {
+                  "marginTop": 10,
+                },
+                false,
+              ]
+            }
+          >
+            <Styled(Input)
+              placeholder="Hashtags (Max. 2, E.g. #AY18#Tutor1)"
+              style={
+                Object {
+                  "fontSize": 15,
+                  "height": 30,
+                  "paddingLeft": 10,
+                  "paddingRight": 5,
+                }
+              }
+            />
+          </Styled(Item)>
+          <Styled(Textarea)
+            bordered={true}
+            placeholder="Content (Compulsory)"
+            style={
+              Object {
+                "height": 100,
+              }
+            }
+          />
+          <Styled(Button)
+            dark={false}
+            full={true}
+            light={true}
+            onPress={[Function]}
+            style={
+              Object {
+                "marginTop": 10,
+              }
+            }
+          >
+            <Styled(Text)
+              style={
+                Object {
+                  "fontSize": 15,
+                }
+              }
+            >
+              As Native Post
+            </Styled(Text)>
+          </Styled(Button)>
+        </Styled(Form)>,
+        <Styled(ViewNB)
+          style={
+            Object {
+              "flexDirection": "row",
+              "marginTop": 10,
+            }
+          }
+        >
+          <Styled(Text)
+            note={true}
+            style={
+              Object {
+                "fontSize": 12.5,
+                "fontStyle": "italic",
+                "marginRight": 5,
+              }
+            }
+          >
+            ** Content can be styled in
+          </Styled(Text)>
+          <Styled(Text)
+            onPress={[Function]}
+            style={
+              Array [
+                Object {
+                  "fontSize": 12.5,
+                  "fontStyle": "italic",
+                  "marginRight": 5,
+                },
+                Object {
+                  "color": "#3B96DC",
+                  "fontStyle": "normal",
+                  "textDecorationLine": "underline",
+                },
+              ]
+            }
+          >
+            Markdown
+          </Styled(Text)>
+        </Styled(ViewNB)>,
+      ],
+      "padder": true,
+      "virtual": undefined,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(Item)
+              regular={true}
+            >
+              <Styled(Input)
+                placeholder="Title (Compulsory)"
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  }
+                }
+              />
+            </Styled(Item)>,
+            <Styled(Item)
+              regular={true}
+              style={
+                Array [
+                  Object {
+                    "marginTop": 10,
+                  },
+                  false,
+                ]
+              }
+            >
+              <Styled(Input)
+                placeholder="Subtitle"
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  }
+                }
+              />
+            </Styled(Item)>,
+            <Styled(Item)
+              regular={true}
+              style={
+                Array [
+                  Object {
+                    "marginTop": 10,
+                  },
+                  false,
+                ]
+              }
+            >
+              <Styled(Input)
+                placeholder="Hashtags (Max. 2, E.g. #AY18#Tutor1)"
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  }
+                }
+              />
+            </Styled(Item)>,
+            <Styled(Textarea)
+              bordered={true}
+              placeholder="Content (Compulsory)"
+              style={
+                Object {
+                  "height": 100,
+                }
+              }
+            />,
+            <Styled(Button)
+              dark={false}
+              full={true}
+              light={true}
+              onPress={[Function]}
+              style={
+                Object {
+                  "marginTop": 10,
+                }
+              }
+            >
+              <Styled(Text)
+                style={
+                  Object {
+                    "fontSize": 15,
+                  }
+                }
+              >
+                As Native Post
+              </Styled(Text)>
+            </Styled(Button)>,
+          ],
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Input)
+                placeholder="Title (Compulsory)"
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  }
+                }
+              />,
+              "regular": true,
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "onChangeText": undefined,
+                "placeholder": "Title (Compulsory)",
+                "style": Object {
+                  "fontSize": 15,
+                  "height": 30,
+                  "paddingLeft": 10,
+                  "paddingRight": 5,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Input)
+                placeholder="Subtitle"
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  }
+                }
+              />,
+              "regular": true,
+              "style": Array [
+                Object {
+                  "marginTop": 10,
+                },
+                false,
+              ],
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "onChangeText": undefined,
+                "placeholder": "Subtitle",
+                "style": Object {
+                  "fontSize": 15,
+                  "height": 30,
+                  "paddingLeft": 10,
+                  "paddingRight": 5,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Input)
+                placeholder="Hashtags (Max. 2, E.g. #AY18#Tutor1)"
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  }
+                }
+              />,
+              "regular": true,
+              "style": Array [
+                Object {
+                  "marginTop": 10,
+                },
+                false,
+              ],
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "onChangeText": undefined,
+                "placeholder": "Hashtags (Max. 2, E.g. #AY18#Tutor1)",
+                "style": Object {
+                  "fontSize": 15,
+                  "height": 30,
+                  "paddingLeft": 10,
+                  "paddingRight": 5,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "bordered": true,
+              "onChangeText": undefined,
+              "placeholder": "Content (Compulsory)",
+              "style": Object {
+                "height": 100,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Text)
+                style={
+                  Object {
+                    "fontSize": 15,
+                  }
+                }
+              >
+                As Native Post
+              </Styled(Text)>,
+              "dark": false,
+              "full": true,
+              "light": true,
+              "onPress": [Function],
+              "style": Object {
+                "marginTop": 10,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "As Native Post",
+                "style": Object {
+                  "fontSize": 15,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "As Native Post",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(Text)
+              note={true}
+              style={
+                Object {
+                  "fontSize": 12.5,
+                  "fontStyle": "italic",
+                  "marginRight": 5,
+                }
+              }
+            >
+              ** Content can be styled in
+            </Styled(Text)>,
+            <Styled(Text)
+              onPress={[Function]}
+              style={
+                Array [
+                  Object {
+                    "fontSize": 12.5,
+                    "fontStyle": "italic",
+                    "marginRight": 5,
+                  },
+                  Object {
+                    "color": "#3B96DC",
+                    "fontStyle": "normal",
+                    "textDecorationLine": "underline",
+                  },
+                ]
+              }
+            >
+              Markdown
+            </Styled(Text)>,
+          ],
+          "style": Object {
+            "flexDirection": "row",
+            "marginTop": 10,
+          },
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "** Content can be styled in",
+              "note": true,
+              "style": Object {
+                "fontSize": 12.5,
+                "fontStyle": "italic",
+                "marginRight": 5,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": "** Content can be styled in",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Markdown",
+              "onPress": [Function],
+              "style": Array [
+                Object {
+                  "fontSize": 12.5,
+                  "fontStyle": "italic",
+                  "marginRight": 5,
+                },
+                Object {
+                  "color": "#3B96DC",
+                  "fontStyle": "normal",
+                  "textDecorationLine": "underline",
+                },
+              ],
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": "Markdown",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Styled(Form)>
+            <Styled(Item)
+              regular={true}
+            >
+              <Styled(Input)
+                placeholder="Title (Compulsory)"
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  }
+                }
+              />
+            </Styled(Item)>
+            <Styled(Item)
+              regular={true}
+              style={
+                Array [
+                  Object {
+                    "marginTop": 10,
+                  },
+                  false,
+                ]
+              }
+            >
+              <Styled(Input)
+                placeholder="Subtitle"
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  }
+                }
+              />
+            </Styled(Item)>
+            <Styled(Item)
+              regular={true}
+              style={
+                Array [
+                  Object {
+                    "marginTop": 10,
+                  },
+                  false,
+                ]
+              }
+            >
+              <Styled(Input)
+                placeholder="Hashtags (Max. 2, E.g. #AY18#Tutor1)"
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  }
+                }
+              />
+            </Styled(Item)>
+            <Styled(Textarea)
+              bordered={true}
+              placeholder="Content (Compulsory)"
+              style={
+                Object {
+                  "height": 100,
+                }
+              }
+            />
+            <Styled(Button)
+              dark={false}
+              full={true}
+              light={true}
+              onPress={[Function]}
+              style={
+                Object {
+                  "marginTop": 10,
+                }
+              }
+            >
+              <Styled(Text)
+                style={
+                  Object {
+                    "fontSize": 15,
+                  }
+                }
+              >
+                As Native Post
+              </Styled(Text)>
+            </Styled(Button)>
+          </Styled(Form)>,
+          <Styled(ViewNB)
+            style={
+              Object {
+                "flexDirection": "row",
+                "marginTop": 10,
+              }
+            }
+          >
+            <Styled(Text)
+              note={true}
+              style={
+                Object {
+                  "fontSize": 12.5,
+                  "fontStyle": "italic",
+                  "marginRight": 5,
+                }
+              }
+            >
+              ** Content can be styled in
+            </Styled(Text)>
+            <Styled(Text)
+              onPress={[Function]}
+              style={
+                Array [
+                  Object {
+                    "fontSize": 12.5,
+                    "fontStyle": "italic",
+                    "marginRight": 5,
+                  },
+                  Object {
+                    "color": "#3B96DC",
+                    "fontStyle": "normal",
+                    "textDecorationLine": "underline",
+                  },
+                ]
+              }
+            >
+              Markdown
+            </Styled(Text)>
+          </Styled(ViewNB)>,
+        ],
+        "padder": true,
+        "virtual": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Styled(Item)
+                regular={true}
+              >
+                <Styled(Input)
+                  placeholder="Title (Compulsory)"
+                  style={
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    }
+                  }
+                />
+              </Styled(Item)>,
+              <Styled(Item)
+                regular={true}
+                style={
+                  Array [
+                    Object {
+                      "marginTop": 10,
+                    },
+                    false,
+                  ]
+                }
+              >
+                <Styled(Input)
+                  placeholder="Subtitle"
+                  style={
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    }
+                  }
+                />
+              </Styled(Item)>,
+              <Styled(Item)
+                regular={true}
+                style={
+                  Array [
+                    Object {
+                      "marginTop": 10,
+                    },
+                    false,
+                  ]
+                }
+              >
+                <Styled(Input)
+                  placeholder="Hashtags (Max. 2, E.g. #AY18#Tutor1)"
+                  style={
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    }
+                  }
+                />
+              </Styled(Item)>,
+              <Styled(Textarea)
+                bordered={true}
+                placeholder="Content (Compulsory)"
+                style={
+                  Object {
+                    "height": 100,
+                  }
+                }
+              />,
+              <Styled(Button)
+                dark={false}
+                full={true}
+                light={true}
+                onPress={[Function]}
+                style={
+                  Object {
+                    "marginTop": 10,
+                  }
+                }
+              >
+                <Styled(Text)
+                  style={
+                    Object {
+                      "fontSize": 15,
+                    }
+                  }
+                >
+                  As Native Post
+                </Styled(Text)>
+              </Styled(Button)>,
+            ],
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Styled(Input)
+                  placeholder="Title (Compulsory)"
+                  style={
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    }
+                  }
+                />,
+                "regular": true,
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "onChangeText": undefined,
+                  "placeholder": "Title (Compulsory)",
+                  "style": Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  },
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Styled(Input)
+                  placeholder="Subtitle"
+                  style={
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    }
+                  }
+                />,
+                "regular": true,
+                "style": Array [
+                  Object {
+                    "marginTop": 10,
+                  },
+                  false,
+                ],
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "onChangeText": undefined,
+                  "placeholder": "Subtitle",
+                  "style": Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  },
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Styled(Input)
+                  placeholder="Hashtags (Max. 2, E.g. #AY18#Tutor1)"
+                  style={
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    }
+                  }
+                />,
+                "regular": true,
+                "style": Array [
+                  Object {
+                    "marginTop": 10,
+                  },
+                  false,
+                ],
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "onChangeText": undefined,
+                  "placeholder": "Hashtags (Max. 2, E.g. #AY18#Tutor1)",
+                  "style": Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  },
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "bordered": true,
+                "onChangeText": undefined,
+                "placeholder": "Content (Compulsory)",
+                "style": Object {
+                  "height": 100,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Styled(Text)
+                  style={
+                    Object {
+                      "fontSize": 15,
+                    }
+                  }
+                >
+                  As Native Post
+                </Styled(Text)>,
+                "dark": false,
+                "full": true,
+                "light": true,
+                "onPress": [Function],
+                "style": Object {
+                  "marginTop": 10,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "As Native Post",
+                  "style": Object {
+                    "fontSize": 15,
+                  },
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": "As Native Post",
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Styled(Text)
+                note={true}
+                style={
+                  Object {
+                    "fontSize": 12.5,
+                    "fontStyle": "italic",
+                    "marginRight": 5,
+                  }
+                }
+              >
+                ** Content can be styled in
+              </Styled(Text)>,
+              <Styled(Text)
+                onPress={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "fontSize": 12.5,
+                      "fontStyle": "italic",
+                      "marginRight": 5,
+                    },
+                    Object {
+                      "color": "#3B96DC",
+                      "fontStyle": "normal",
+                      "textDecorationLine": "underline",
+                    },
+                  ]
+                }
+              >
+                Markdown
+              </Styled(Text)>,
+            ],
+            "style": Object {
+              "flexDirection": "row",
+              "marginTop": 10,
+            },
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "** Content can be styled in",
+                "note": true,
+                "style": Object {
+                  "fontSize": 12.5,
+                  "fontStyle": "italic",
+                  "marginRight": 5,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "** Content can be styled in",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Markdown",
+                "onPress": [Function],
+                "style": Array [
+                  Object {
+                    "fontSize": 12.5,
+                    "fontStyle": "italic",
+                    "marginRight": 5,
+                  },
+                  Object {
+                    "color": "#3B96DC",
+                    "fontStyle": "normal",
+                    "textDecorationLine": "underline",
+                  },
+                ],
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "Markdown",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
+
+exports[`Testing ComposeForm Component renders with onTextUpdates 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ComposeForm
+    onTextUpdates={
+      Object {
+        "title": [Function],
+      }
+    }
+    onToggleMode={[Function]}
+    screenHeight={300}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <Styled(Form)>
+          <Styled(Item)
+            regular={true}
+          >
+            <Styled(Input)
+              onChangeText={[Function]}
+              placeholder="Title (Compulsory)"
+              style={
+                Object {
+                  "fontSize": 15,
+                  "height": 30,
+                  "paddingLeft": 10,
+                  "paddingRight": 5,
+                }
+              }
+            />
+          </Styled(Item)>
+          <Styled(Item)
+            regular={true}
+            style={
+              Array [
+                Object {
+                  "marginTop": 10,
+                },
+                false,
+              ]
+            }
+          >
+            <Styled(Input)
+              placeholder="Subtitle"
+              style={
+                Object {
+                  "fontSize": 15,
+                  "height": 30,
+                  "paddingLeft": 10,
+                  "paddingRight": 5,
+                }
+              }
+            />
+          </Styled(Item)>
+          <Styled(Item)
+            regular={true}
+            style={
+              Array [
+                Object {
+                  "marginTop": 10,
+                },
+                false,
+              ]
+            }
+          >
+            <Styled(Input)
+              placeholder="Hashtags (Max. 2, E.g. #AY18#Tutor1)"
+              style={
+                Object {
+                  "fontSize": 15,
+                  "height": 30,
+                  "paddingLeft": 10,
+                  "paddingRight": 5,
+                }
+              }
+            />
+          </Styled(Item)>
+          <Styled(Textarea)
+            bordered={true}
+            placeholder="Content (Compulsory)"
+            style={
+              Object {
+                "height": 100,
+              }
+            }
+          />
+          <Styled(Button)
+            dark={false}
+            full={true}
+            light={true}
+            onPress={[Function]}
+            style={
+              Object {
+                "marginTop": 10,
+              }
+            }
+          >
+            <Styled(Text)
+              style={
+                Object {
+                  "fontSize": 15,
+                }
+              }
+            >
+              As Native Post
+            </Styled(Text)>
+          </Styled(Button)>
+        </Styled(Form)>,
+        <Styled(ViewNB)
+          style={
+            Object {
+              "flexDirection": "row",
+              "marginTop": 10,
+            }
+          }
+        >
+          <Styled(Text)
+            note={true}
+            style={
+              Object {
+                "fontSize": 12.5,
+                "fontStyle": "italic",
+                "marginRight": 5,
+              }
+            }
+          >
+            ** Content can be styled in
+          </Styled(Text)>
+          <Styled(Text)
+            onPress={[Function]}
+            style={
+              Array [
+                Object {
+                  "fontSize": 12.5,
+                  "fontStyle": "italic",
+                  "marginRight": 5,
+                },
+                Object {
+                  "color": "#3B96DC",
+                  "fontStyle": "normal",
+                  "textDecorationLine": "underline",
+                },
+              ]
+            }
+          >
+            Markdown
+          </Styled(Text)>
+        </Styled(ViewNB)>,
+      ],
+      "padder": true,
+      "virtual": undefined,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(Item)
+              regular={true}
+            >
+              <Styled(Input)
+                onChangeText={[Function]}
+                placeholder="Title (Compulsory)"
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  }
+                }
+              />
+            </Styled(Item)>,
+            <Styled(Item)
+              regular={true}
+              style={
+                Array [
+                  Object {
+                    "marginTop": 10,
+                  },
+                  false,
+                ]
+              }
+            >
+              <Styled(Input)
+                placeholder="Subtitle"
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  }
+                }
+              />
+            </Styled(Item)>,
+            <Styled(Item)
+              regular={true}
+              style={
+                Array [
+                  Object {
+                    "marginTop": 10,
+                  },
+                  false,
+                ]
+              }
+            >
+              <Styled(Input)
+                placeholder="Hashtags (Max. 2, E.g. #AY18#Tutor1)"
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  }
+                }
+              />
+            </Styled(Item)>,
+            <Styled(Textarea)
+              bordered={true}
+              placeholder="Content (Compulsory)"
+              style={
+                Object {
+                  "height": 100,
+                }
+              }
+            />,
+            <Styled(Button)
+              dark={false}
+              full={true}
+              light={true}
+              onPress={[Function]}
+              style={
+                Object {
+                  "marginTop": 10,
+                }
+              }
+            >
+              <Styled(Text)
+                style={
+                  Object {
+                    "fontSize": 15,
+                  }
+                }
+              >
+                As Native Post
+              </Styled(Text)>
+            </Styled(Button)>,
+          ],
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Input)
+                onChangeText={[Function]}
+                placeholder="Title (Compulsory)"
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  }
+                }
+              />,
+              "regular": true,
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "onChangeText": [Function],
+                "placeholder": "Title (Compulsory)",
+                "style": Object {
+                  "fontSize": 15,
+                  "height": 30,
+                  "paddingLeft": 10,
+                  "paddingRight": 5,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Input)
+                placeholder="Subtitle"
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  }
+                }
+              />,
+              "regular": true,
+              "style": Array [
+                Object {
+                  "marginTop": 10,
+                },
+                false,
+              ],
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "onChangeText": undefined,
+                "placeholder": "Subtitle",
+                "style": Object {
+                  "fontSize": 15,
+                  "height": 30,
+                  "paddingLeft": 10,
+                  "paddingRight": 5,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Input)
+                placeholder="Hashtags (Max. 2, E.g. #AY18#Tutor1)"
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  }
+                }
+              />,
+              "regular": true,
+              "style": Array [
+                Object {
+                  "marginTop": 10,
+                },
+                false,
+              ],
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "onChangeText": undefined,
+                "placeholder": "Hashtags (Max. 2, E.g. #AY18#Tutor1)",
+                "style": Object {
+                  "fontSize": 15,
+                  "height": 30,
+                  "paddingLeft": 10,
+                  "paddingRight": 5,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "bordered": true,
+              "onChangeText": undefined,
+              "placeholder": "Content (Compulsory)",
+              "style": Object {
+                "height": 100,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Text)
+                style={
+                  Object {
+                    "fontSize": 15,
+                  }
+                }
+              >
+                As Native Post
+              </Styled(Text)>,
+              "dark": false,
+              "full": true,
+              "light": true,
+              "onPress": [Function],
+              "style": Object {
+                "marginTop": 10,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "As Native Post",
+                "style": Object {
+                  "fontSize": 15,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "As Native Post",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(Text)
+              note={true}
+              style={
+                Object {
+                  "fontSize": 12.5,
+                  "fontStyle": "italic",
+                  "marginRight": 5,
+                }
+              }
+            >
+              ** Content can be styled in
+            </Styled(Text)>,
+            <Styled(Text)
+              onPress={[Function]}
+              style={
+                Array [
+                  Object {
+                    "fontSize": 12.5,
+                    "fontStyle": "italic",
+                    "marginRight": 5,
+                  },
+                  Object {
+                    "color": "#3B96DC",
+                    "fontStyle": "normal",
+                    "textDecorationLine": "underline",
+                  },
+                ]
+              }
+            >
+              Markdown
+            </Styled(Text)>,
+          ],
+          "style": Object {
+            "flexDirection": "row",
+            "marginTop": 10,
+          },
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "** Content can be styled in",
+              "note": true,
+              "style": Object {
+                "fontSize": 12.5,
+                "fontStyle": "italic",
+                "marginRight": 5,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": "** Content can be styled in",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Markdown",
+              "onPress": [Function],
+              "style": Array [
+                Object {
+                  "fontSize": 12.5,
+                  "fontStyle": "italic",
+                  "marginRight": 5,
+                },
+                Object {
+                  "color": "#3B96DC",
+                  "fontStyle": "normal",
+                  "textDecorationLine": "underline",
+                },
+              ],
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": "Markdown",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Styled(Form)>
+            <Styled(Item)
+              regular={true}
+            >
+              <Styled(Input)
+                onChangeText={[Function]}
+                placeholder="Title (Compulsory)"
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  }
+                }
+              />
+            </Styled(Item)>
+            <Styled(Item)
+              regular={true}
+              style={
+                Array [
+                  Object {
+                    "marginTop": 10,
+                  },
+                  false,
+                ]
+              }
+            >
+              <Styled(Input)
+                placeholder="Subtitle"
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  }
+                }
+              />
+            </Styled(Item)>
+            <Styled(Item)
+              regular={true}
+              style={
+                Array [
+                  Object {
+                    "marginTop": 10,
+                  },
+                  false,
+                ]
+              }
+            >
+              <Styled(Input)
+                placeholder="Hashtags (Max. 2, E.g. #AY18#Tutor1)"
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  }
+                }
+              />
+            </Styled(Item)>
+            <Styled(Textarea)
+              bordered={true}
+              placeholder="Content (Compulsory)"
+              style={
+                Object {
+                  "height": 100,
+                }
+              }
+            />
+            <Styled(Button)
+              dark={false}
+              full={true}
+              light={true}
+              onPress={[Function]}
+              style={
+                Object {
+                  "marginTop": 10,
+                }
+              }
+            >
+              <Styled(Text)
+                style={
+                  Object {
+                    "fontSize": 15,
+                  }
+                }
+              >
+                As Native Post
+              </Styled(Text)>
+            </Styled(Button)>
+          </Styled(Form)>,
+          <Styled(ViewNB)
+            style={
+              Object {
+                "flexDirection": "row",
+                "marginTop": 10,
+              }
+            }
+          >
+            <Styled(Text)
+              note={true}
+              style={
+                Object {
+                  "fontSize": 12.5,
+                  "fontStyle": "italic",
+                  "marginRight": 5,
+                }
+              }
+            >
+              ** Content can be styled in
+            </Styled(Text)>
+            <Styled(Text)
+              onPress={[Function]}
+              style={
+                Array [
+                  Object {
+                    "fontSize": 12.5,
+                    "fontStyle": "italic",
+                    "marginRight": 5,
+                  },
+                  Object {
+                    "color": "#3B96DC",
+                    "fontStyle": "normal",
+                    "textDecorationLine": "underline",
+                  },
+                ]
+              }
+            >
+              Markdown
+            </Styled(Text)>
+          </Styled(ViewNB)>,
+        ],
+        "padder": true,
+        "virtual": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Styled(Item)
+                regular={true}
+              >
+                <Styled(Input)
+                  onChangeText={[Function]}
+                  placeholder="Title (Compulsory)"
+                  style={
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    }
+                  }
+                />
+              </Styled(Item)>,
+              <Styled(Item)
+                regular={true}
+                style={
+                  Array [
+                    Object {
+                      "marginTop": 10,
+                    },
+                    false,
+                  ]
+                }
+              >
+                <Styled(Input)
+                  placeholder="Subtitle"
+                  style={
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    }
+                  }
+                />
+              </Styled(Item)>,
+              <Styled(Item)
+                regular={true}
+                style={
+                  Array [
+                    Object {
+                      "marginTop": 10,
+                    },
+                    false,
+                  ]
+                }
+              >
+                <Styled(Input)
+                  placeholder="Hashtags (Max. 2, E.g. #AY18#Tutor1)"
+                  style={
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    }
+                  }
+                />
+              </Styled(Item)>,
+              <Styled(Textarea)
+                bordered={true}
+                placeholder="Content (Compulsory)"
+                style={
+                  Object {
+                    "height": 100,
+                  }
+                }
+              />,
+              <Styled(Button)
+                dark={false}
+                full={true}
+                light={true}
+                onPress={[Function]}
+                style={
+                  Object {
+                    "marginTop": 10,
+                  }
+                }
+              >
+                <Styled(Text)
+                  style={
+                    Object {
+                      "fontSize": 15,
+                    }
+                  }
+                >
+                  As Native Post
+                </Styled(Text)>
+              </Styled(Button)>,
+            ],
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Styled(Input)
+                  onChangeText={[Function]}
+                  placeholder="Title (Compulsory)"
+                  style={
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    }
+                  }
+                />,
+                "regular": true,
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "onChangeText": [Function],
+                  "placeholder": "Title (Compulsory)",
+                  "style": Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  },
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Styled(Input)
+                  placeholder="Subtitle"
+                  style={
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    }
+                  }
+                />,
+                "regular": true,
+                "style": Array [
+                  Object {
+                    "marginTop": 10,
+                  },
+                  false,
+                ],
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "onChangeText": undefined,
+                  "placeholder": "Subtitle",
+                  "style": Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  },
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Styled(Input)
+                  placeholder="Hashtags (Max. 2, E.g. #AY18#Tutor1)"
+                  style={
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    }
+                  }
+                />,
+                "regular": true,
+                "style": Array [
+                  Object {
+                    "marginTop": 10,
+                  },
+                  false,
+                ],
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "onChangeText": undefined,
+                  "placeholder": "Hashtags (Max. 2, E.g. #AY18#Tutor1)",
+                  "style": Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  },
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "bordered": true,
+                "onChangeText": undefined,
+                "placeholder": "Content (Compulsory)",
+                "style": Object {
+                  "height": 100,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Styled(Text)
+                  style={
+                    Object {
+                      "fontSize": 15,
+                    }
+                  }
+                >
+                  As Native Post
+                </Styled(Text)>,
+                "dark": false,
+                "full": true,
+                "light": true,
+                "onPress": [Function],
+                "style": Object {
+                  "marginTop": 10,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "As Native Post",
+                  "style": Object {
+                    "fontSize": 15,
+                  },
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": "As Native Post",
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Styled(Text)
+                note={true}
+                style={
+                  Object {
+                    "fontSize": 12.5,
+                    "fontStyle": "italic",
+                    "marginRight": 5,
+                  }
+                }
+              >
+                ** Content can be styled in
+              </Styled(Text)>,
+              <Styled(Text)
+                onPress={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "fontSize": 12.5,
+                      "fontStyle": "italic",
+                      "marginRight": 5,
+                    },
+                    Object {
+                      "color": "#3B96DC",
+                      "fontStyle": "normal",
+                      "textDecorationLine": "underline",
+                    },
+                  ]
+                }
+              >
+                Markdown
+              </Styled(Text)>,
+            ],
+            "style": Object {
+              "flexDirection": "row",
+              "marginTop": 10,
+            },
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "** Content can be styled in",
+                "note": true,
+                "style": Object {
+                  "fontSize": 12.5,
+                  "fontStyle": "italic",
+                  "marginRight": 5,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "** Content can be styled in",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Markdown",
+                "onPress": [Function],
+                "style": Array [
+                  Object {
+                    "fontSize": 12.5,
+                    "fontStyle": "italic",
+                    "marginRight": 5,
+                  },
+                  Object {
+                    "color": "#3B96DC",
+                    "fontStyle": "normal",
+                    "textDecorationLine": "underline",
+                  },
+                ],
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "Markdown",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

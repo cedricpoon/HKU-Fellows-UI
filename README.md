@@ -9,3 +9,4 @@ User Interface of HKU Fellows
 - [x] Drawer username and temperature
 ### Known issue to-fix
 - [ ] Deep link to post won't stack
+- [ ] Wait for patch of enzyme on version 1.11

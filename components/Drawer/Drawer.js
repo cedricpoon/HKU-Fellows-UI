@@ -48,7 +48,7 @@ export class Drawer extends PureComponent {
               <Text style={styles.secondaryUserInfo}>{locale['drawer.userInfoIndicator']}</Text>
               <Text style={styles.userInfo}>{username}</Text>
               <Text style={[styles.userInfo, temperature && temperature > hot && styles.hot]}>
-                <Icon style={[styles.userInfo, temperature && temperature > hot && styles.hot]} name='ios-flame'/> {temperature || '-'}
+                <Icon style={[styles.userInfo, temperature && temperature > hot && styles.hot]} name='ios-flame'/> {temperature === null ? '-' : temperature}
               </Text>
               <Text style={styles.secondaryUserInfo}>
                 <Icon style={styles.secondaryUserInfo} name='key' type='Foundation'/> {token7digits}
@@ -83,7 +83,8 @@ export class Drawer extends PureComponent {
 
 Drawer.defaultProps = {
   username: '-',
-  token7digits: '0000000'
+  token7digits: '0000000',
+  temperature: null
 }
 
 Drawer.propTypes = {

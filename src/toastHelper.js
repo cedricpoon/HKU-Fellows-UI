@@ -3,7 +3,7 @@ import { localize } from 'hkufui/locale';
 
 const locale = localize({ language: 'en', country: 'hk' });
 
-const show = ({ message, type, duration, hideButton, bottom }) => {
+export const show = ({ message, type, duration, hideButton, bottom }) => {
   Toast.show({
     text: message,
     buttonText: locale['toast.dismiss'],

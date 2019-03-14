@@ -24,6 +24,14 @@ ShallowWrapper {
         <ViewMenu
           onRef={[Function]}
           parentHeight={0}
+          payload={
+            Object {
+              "content": "",
+              "hashtags": null,
+              "subtitle": null,
+              "title": "",
+            }
+          }
           position={
             Object {
               "x": 750,
@@ -32,7 +40,7 @@ ShallowWrapper {
           }
         />,
         <Header
-          animated={true}
+          animated={false}
           backable={true}
           onLayout={[Function]}
           onRightPress={[Function]}
@@ -61,6 +69,7 @@ ShallowWrapper {
               regular={true}
             >
               <Styled(Input)
+                onChangeText={[Function]}
                 placeholder="Title (Compulsory)"
                 style={
                   Object {
@@ -81,6 +90,7 @@ ShallowWrapper {
               }
             >
               <Styled(Input)
+                onChangeText={[Function]}
                 placeholder="Subtitle"
                 style={
                   Object {
@@ -101,6 +111,7 @@ ShallowWrapper {
               }
             >
               <Styled(Input)
+                onChangeText={[Function]}
                 placeholder="Hashtags (Max. 2, E.g. #AY18#Tutor1)"
                 style={
                   Object {
@@ -114,6 +125,7 @@ ShallowWrapper {
             </Styled(Item)>
             <Styled(Textarea)
               bordered={true}
+              onChangeText={[Function]}
               placeholder="Content (Compulsory)"
               style={
                 Object {
@@ -175,6 +187,12 @@ ShallowWrapper {
         "props": Object {
           "onRef": [Function],
           "parentHeight": 0,
+          "payload": Object {
+            "content": "",
+            "hashtags": null,
+            "subtitle": null,
+            "title": "",
+          },
           "position": Object {
             "x": 750,
             "y": 0,
@@ -189,7 +207,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "animated": true,
+          "animated": false,
           "backable": true,
           "onLayout": [Function],
           "onRightPress": [Function],
@@ -219,6 +237,7 @@ ShallowWrapper {
                 regular={true}
               >
                 <Styled(Input)
+                  onChangeText={[Function]}
                   placeholder="Title (Compulsory)"
                   style={
                     Object {
@@ -239,6 +258,7 @@ ShallowWrapper {
                 }
               >
                 <Styled(Input)
+                  onChangeText={[Function]}
                   placeholder="Subtitle"
                   style={
                     Object {
@@ -259,6 +279,7 @@ ShallowWrapper {
                 }
               >
                 <Styled(Input)
+                  onChangeText={[Function]}
                   placeholder="Hashtags (Max. 2, E.g. #AY18#Tutor1)"
                   style={
                     Object {
@@ -272,6 +293,7 @@ ShallowWrapper {
               </Styled(Item)>
               <Styled(Textarea)
                 bordered={true}
+                onChangeText={[Function]}
                 placeholder="Content (Compulsory)"
                 style={
                   Object {
@@ -336,6 +358,7 @@ ShallowWrapper {
                   regular={true}
                 >
                   <Styled(Input)
+                    onChangeText={[Function]}
                     placeholder="Title (Compulsory)"
                     style={
                       Object {
@@ -356,6 +379,7 @@ ShallowWrapper {
                   }
                 >
                   <Styled(Input)
+                    onChangeText={[Function]}
                     placeholder="Subtitle"
                     style={
                       Object {
@@ -376,6 +400,7 @@ ShallowWrapper {
                   }
                 >
                   <Styled(Input)
+                    onChangeText={[Function]}
                     placeholder="Hashtags (Max. 2, E.g. #AY18#Tutor1)"
                     style={
                       Object {
@@ -389,6 +414,7 @@ ShallowWrapper {
                 </Styled(Item)>,
                 <Styled(Textarea)
                   bordered={true}
+                  onChangeText={[Function]}
                   placeholder="Content (Compulsory)"
                   style={
                     Object {
@@ -407,6 +433,7 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "children": <Styled(Input)
+                    onChangeText={[Function]}
                     placeholder="Title (Compulsory)"
                     style={
                       Object {
@@ -426,6 +453,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
+                    "onChangeText": [Function],
                     "placeholder": "Title (Compulsory)",
                     "style": Object {
                       "fontSize": 15,
@@ -447,6 +475,7 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "children": <Styled(Input)
+                    onChangeText={[Function]}
                     placeholder="Subtitle"
                     style={
                       Object {
@@ -469,6 +498,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
+                    "onChangeText": [Function],
                     "placeholder": "Subtitle",
                     "style": Object {
                       "fontSize": 15,
@@ -490,6 +520,7 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "children": <Styled(Input)
+                    onChangeText={[Function]}
                     placeholder="Hashtags (Max. 2, E.g. #AY18#Tutor1)"
                     style={
                       Object {
@@ -512,6 +543,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
+                    "onChangeText": [Function],
                     "placeholder": "Hashtags (Max. 2, E.g. #AY18#Tutor1)",
                     "style": Object {
                       "fontSize": 15,
@@ -533,6 +565,7 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "bordered": true,
+                  "onChangeText": [Function],
                   "placeholder": "Content (Compulsory)",
                   "style": Object {
                     "height": 444.6666666666667,
@@ -654,6 +687,14 @@ ShallowWrapper {
           <ViewMenu
             onRef={[Function]}
             parentHeight={0}
+            payload={
+              Object {
+                "content": "",
+                "hashtags": null,
+                "subtitle": null,
+                "title": "",
+              }
+            }
             position={
               Object {
                 "x": 750,
@@ -662,7 +703,7 @@ ShallowWrapper {
             }
           />,
           <Header
-            animated={true}
+            animated={false}
             backable={true}
             onLayout={[Function]}
             onRightPress={[Function]}
@@ -691,6 +732,7 @@ ShallowWrapper {
                 regular={true}
               >
                 <Styled(Input)
+                  onChangeText={[Function]}
                   placeholder="Title (Compulsory)"
                   style={
                     Object {
@@ -711,6 +753,7 @@ ShallowWrapper {
                 }
               >
                 <Styled(Input)
+                  onChangeText={[Function]}
                   placeholder="Subtitle"
                   style={
                     Object {
@@ -731,6 +774,7 @@ ShallowWrapper {
                 }
               >
                 <Styled(Input)
+                  onChangeText={[Function]}
                   placeholder="Hashtags (Max. 2, E.g. #AY18#Tutor1)"
                   style={
                     Object {
@@ -744,6 +788,7 @@ ShallowWrapper {
               </Styled(Item)>
               <Styled(Textarea)
                 bordered={true}
+                onChangeText={[Function]}
                 placeholder="Content (Compulsory)"
                 style={
                   Object {
@@ -805,6 +850,12 @@ ShallowWrapper {
           "props": Object {
             "onRef": [Function],
             "parentHeight": 0,
+            "payload": Object {
+              "content": "",
+              "hashtags": null,
+              "subtitle": null,
+              "title": "",
+            },
             "position": Object {
               "x": 750,
               "y": 0,
@@ -819,7 +870,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "animated": true,
+            "animated": false,
             "backable": true,
             "onLayout": [Function],
             "onRightPress": [Function],
@@ -849,6 +900,7 @@ ShallowWrapper {
                   regular={true}
                 >
                   <Styled(Input)
+                    onChangeText={[Function]}
                     placeholder="Title (Compulsory)"
                     style={
                       Object {
@@ -869,6 +921,7 @@ ShallowWrapper {
                   }
                 >
                   <Styled(Input)
+                    onChangeText={[Function]}
                     placeholder="Subtitle"
                     style={
                       Object {
@@ -889,6 +942,7 @@ ShallowWrapper {
                   }
                 >
                   <Styled(Input)
+                    onChangeText={[Function]}
                     placeholder="Hashtags (Max. 2, E.g. #AY18#Tutor1)"
                     style={
                       Object {
@@ -902,6 +956,7 @@ ShallowWrapper {
                 </Styled(Item)>
                 <Styled(Textarea)
                   bordered={true}
+                  onChangeText={[Function]}
                   placeholder="Content (Compulsory)"
                   style={
                     Object {
@@ -966,6 +1021,7 @@ ShallowWrapper {
                     regular={true}
                   >
                     <Styled(Input)
+                      onChangeText={[Function]}
                       placeholder="Title (Compulsory)"
                       style={
                         Object {
@@ -986,6 +1042,7 @@ ShallowWrapper {
                     }
                   >
                     <Styled(Input)
+                      onChangeText={[Function]}
                       placeholder="Subtitle"
                       style={
                         Object {
@@ -1006,6 +1063,7 @@ ShallowWrapper {
                     }
                   >
                     <Styled(Input)
+                      onChangeText={[Function]}
                       placeholder="Hashtags (Max. 2, E.g. #AY18#Tutor1)"
                       style={
                         Object {
@@ -1019,6 +1077,7 @@ ShallowWrapper {
                   </Styled(Item)>,
                   <Styled(Textarea)
                     bordered={true}
+                    onChangeText={[Function]}
                     placeholder="Content (Compulsory)"
                     style={
                       Object {
@@ -1037,6 +1096,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "children": <Styled(Input)
+                      onChangeText={[Function]}
                       placeholder="Title (Compulsory)"
                       style={
                         Object {
@@ -1056,6 +1116,7 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "class",
                     "props": Object {
+                      "onChangeText": [Function],
                       "placeholder": "Title (Compulsory)",
                       "style": Object {
                         "fontSize": 15,
@@ -1077,6 +1138,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "children": <Styled(Input)
+                      onChangeText={[Function]}
                       placeholder="Subtitle"
                       style={
                         Object {
@@ -1099,6 +1161,7 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "class",
                     "props": Object {
+                      "onChangeText": [Function],
                       "placeholder": "Subtitle",
                       "style": Object {
                         "fontSize": 15,
@@ -1120,6 +1183,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "children": <Styled(Input)
+                      onChangeText={[Function]}
                       placeholder="Hashtags (Max. 2, E.g. #AY18#Tutor1)"
                       style={
                         Object {
@@ -1142,6 +1206,7 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "class",
                     "props": Object {
+                      "onChangeText": [Function],
                       "placeholder": "Hashtags (Max. 2, E.g. #AY18#Tutor1)",
                       "style": Object {
                         "fontSize": 15,
@@ -1163,6 +1228,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "bordered": true,
+                    "onChangeText": [Function],
                     "placeholder": "Content (Compulsory)",
                     "style": Object {
                       "height": 444.6666666666667,

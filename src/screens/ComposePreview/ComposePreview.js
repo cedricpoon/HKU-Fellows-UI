@@ -67,13 +67,13 @@ export class ComposePreview extends Component {
           onRightPress={status === STILL ? this._composePost : null}
         />
         <PostSwipable
-          comments={[{
+          comments={status === STILL ? [{
             id: '0'.repeat(64), /* mock of SHA-256 hash */
             author: anonymity ? null : username,
             timestamp: format(Date.now()),
             content: `*{ ${locale['new.previewWordings']} }*\n\n${content}`,
             temperature: 0 /* no temperature at first */
-          }]}
+          }] : null}
           native={native}
         />
       </Container>

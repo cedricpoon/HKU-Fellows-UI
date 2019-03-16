@@ -6,3 +6,6 @@ export const mapLayoutToState = (key, ref) => {
     ref.setState(_state);
   }).bind(ref);
 };
+
+/* Normalize ISO timestamp format from mysql for `timeago.js` */
+export const noZ = (t) => t.replace(/(\d+-\d+-\d+T\d+:\d+:\d+\.\d+)(Z)/, '$1');

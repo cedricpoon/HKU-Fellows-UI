@@ -9,6 +9,7 @@ import Markdown from 'react-native-markdown-renderer';
 import { localize } from 'hkufui/locale';
 import { hotPostMinIndex as hot } from 'hkufui/config';
 import styles from './Styles';
+import { noZ } from '../helper';
 import { FADE_IN_DURATION } from 'hkufui/components/Constants'
 
 const AnimatingView = Animatable.createAnimatableComponent(View);
@@ -53,7 +54,7 @@ class PostDetails extends Component {
               <Text style={author ? styles.author : styles.anonymous}>
                 {author ? author : locale['replies.anonymousUser']}
               </Text>
-              <Text style={styles.date}>· {format(new Date(timestamp))}</Text>
+              <Text style={styles.date}>· {format(new Date(noZ(timestamp)))}</Text>
               {selectedAnswer && (<Icon name="checkbox-marked-circle-outline" type="MaterialCommunityIcons" style={styles.solved}/>)}
               {selectedAnswer && (<Text style={styles.solved}>{locale['replies.solved']}</Text>)}
             </View>

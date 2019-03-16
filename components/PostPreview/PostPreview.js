@@ -7,6 +7,7 @@ import NavigationService from 'hkufui/src/NavigationService';
 import { localize } from 'hkufui/locale';
 import { hotPostMinIndex as hot } from 'hkufui/config';
 import styles from './Styles';
+import { noZ } from '../helper';
 
 const locale = localize({ language: 'en', country: 'hk' });
 
@@ -58,7 +59,7 @@ class PostPreview extends PureComponent {
             </Text>
             <Right style={[styles.right, styles.infoBar]}>
               <Icon style={[styles.subText, styles.note]} name="md-time" />
-              <Text note style={styles.subText}>{format(new Date(timestamp))}</Text>
+              <Text note style={styles.subText}>{format(new Date(noZ(timestamp)))}</Text>
               <Icon style={[styles.subText, styles.note]} type="Entypo" name="chat" />
               <Text note style={styles.subText}>{replyNo}</Text>
               <Icon style={[styles.subText, temperature > hot && styles.active]} name="ios-flame" />

@@ -54,7 +54,7 @@ class PostDetails extends Component {
               <Text style={author ? styles.author : styles.anonymous}>
                 {author ? author : locale['replies.anonymousUser']}
               </Text>
-              <Text style={styles.date}>· {format(new Date(noZ(timestamp)))}</Text>
+              <Text style={styles.date}>· {format(noZ(timestamp))}</Text>
               {selectedAnswer && (<Icon name="checkbox-marked-circle-outline" type="MaterialCommunityIcons" style={styles.solved}/>)}
               {selectedAnswer && (<Text style={styles.solved}>{locale['replies.solved']}</Text>)}
             </View>

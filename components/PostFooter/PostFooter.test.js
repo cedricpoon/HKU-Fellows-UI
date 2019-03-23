@@ -31,6 +31,13 @@ describe('Testing PostFooter Component', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it('can reply', () => {
+    const wrapper = shallow(
+      <PostFooter onReply={() => {}} />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
+
   it('contains share payload', () => {
     const wrapper = shallow(
       <PostFooter sharePayload='...' />

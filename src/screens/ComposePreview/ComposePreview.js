@@ -22,7 +22,7 @@ const alert = (message, duration, success = false) => {
 export class ComposePreview extends Component {
   constructor(props) {
     super(props);
-    this.state = { title: '', subtitle: null, hashtags: null, content: '', anonymity: false, native: true };
+    this.state = { title: '', subtitle: null, hashtags: null, content: '', anonymity: false, native: true, reply: false };
     this._composePost = this._composePost.bind(this);
   }
 
@@ -45,7 +45,7 @@ export class ComposePreview extends Component {
   }
 
   render() {
-    const { title, subtitle, content, anonymity, native } = this.state;
+    const { title, subtitle, content, anonymity, native, reply } = this.state;
     const { username, status } = this.props;
 
     return (
@@ -71,7 +71,7 @@ export class ComposePreview extends Component {
             id: '0'.repeat(64), /* mock of SHA-256 hash */
             author: anonymity ? null : username,
             timestamp: format(Date.now()),
-            content: `*{ ${locale['new.previewWordings']} }*\n\n${content}`,
+            content: `*{ ${!reply ? locale['new.previewWordings'] : locale['new.replyWordings']} }*\n\n${content}`,
             temperature: 0 /* no temperature at first */
           }] : null}
           native={native}

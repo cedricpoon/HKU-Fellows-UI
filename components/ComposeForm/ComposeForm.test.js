@@ -27,4 +27,11 @@ describe('Testing ComposeForm Component', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('is a reply', () => {
+    const wrapper = shallow(
+      <ComposeForm {...defaultProps} replyParams={{ title: 'title' }} />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });

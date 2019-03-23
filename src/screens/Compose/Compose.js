@@ -29,8 +29,11 @@ export class Compose extends Component {
     };
     this._openHeaderMenu = this._openHeaderMenu.bind(this);
     this._renderHeaderMenu = this._renderHeaderMenu.bind(this);
+    this._renderNewHeaderMenu = this._renderNewHeaderMenu.bind(this);
+    this._renderReplyHeaderMenu = this._renderReplyHeaderMenu.bind(this);
     this._handleTextUpdate = this._handleTextUpdate.bind(this);
     this._toggleNativeMode = this._toggleNativeMode.bind(this);
+    this._openReplyHeaderMenu = this._openReplyHeaderMenu.bind(this);
   }
 
   _openHeaderMenu() {
@@ -49,6 +52,20 @@ export class Compose extends Component {
       NavigationService.navigate('ComposePreview', { title, content, native: false });
   }
 
+  _openReplyHeaderMenu() {
+    const { content } = this.state;
+    const { navigation } = this.props;
+    const { title, subtitle, native } = navigation.state.params;
+
+    if (content === '')
+      alert(locale['new.noCompulsory']);
+    else if (native && this._popup)
+      this._popup.toggle();
+    else
+      // directly preview for Moodle
+      NavigationService.navigate('ComposePreview', { reply: true, title, subtitle, content, native: false });
+  }
+
   _handleTextUpdate(name) {
     return (newValue) => {
       this.setState({ [name]: newValue });
@@ -59,49 +76,71 @@ export class Compose extends Component {
     this.setState({ native: isNative });
   }
 
-  _renderHeaderMenu({ width }) {
-    const { headerLayout, title, subtitle, hashtags, content, native } = this.state;
+  _renderHeaderMenu({ width, title, subtitle, hashtags }) {
+    const { headerLayout, content } = this.state;
 
     return (
       <ViewMenu
         position={{ x: width, y: headerLayout.y }}
         parentHeight={headerLayout.height}
         onRef={ref => this._popup = ref}
-        native={native}
-        payload={{
-          title,
-          subtitle: native && subtitle !== '' ? subtitle : null,
-          hashtags: native && classifyQuery(hashtags) !== hashtags ? classifyQuery(hashtags) : null,
-          content
-        }}
+        payload={{ title, subtitle, hashtags, content }}
       />
     );
   }
 
+  _renderReplyHeaderMenu({ width }) {
+    const { navigation } = this.props;
+
+    const nTitle = navigation.getParam('title', null);
+    const nSubtitle = navigation.getParam('subtitle', null);
+
+    return this._renderHeaderMenu({ width, title: nTitle, subtitle: nSubtitle, reply: true });
+  }
+
+  _renderNewHeaderMenu({ width }) {
+    const { title, subtitle, hashtags, native } = this.state;
+    return this._renderHeaderMenu({
+      width,
+      title,
+      subtitle: native && subtitle !== '' ? subtitle : null,
+      hashtags: native && classifyQuery(hashtags) !== hashtags ? classifyQuery(hashtags) : null,
+    });
+  }
+
   render() {
-    const { location } = this.props;
+    const { location, navigation } = this.props;
     const { width, height } = Dimensions.get("window");
+
+    const nTitle = navigation.getParam('title', null); // Non null == reply
+    const nSubtitle = navigation.getParam('subtitle', null);
+    const nNative = navigation.getParam('native', null);
 
     return (
       <Container>
-        { this._renderHeaderMenu({ width }) }
+        { !nTitle ? this._renderNewHeaderMenu({ width }) : this._renderReplyHeaderMenu({ width }) }
         <Header
-          title={{ context: locale['new.header'] }}
+          title={{ context: !nTitle ? locale['new.header'] : locale['new.replyHeader'] }}
           subtitle={{ context: location }}
           rightIcon='eye'
-          onRightPress={this._openHeaderMenu}
+          onRightPress={nTitle ? this._openReplyHeaderMenu : this._openHeaderMenu}
           backable
           animated={false}
           onLayout={mapLayoutToState('headerLayout', this)}
         />
         <ComposeForm
           onTextUpdates={{
-            title: this._handleTextUpdate('title'),
-            subtitle: this._handleTextUpdate('subtitle'),
-            hashtags: this._handleTextUpdate('hashtags'),
+            title: !nTitle ? this._handleTextUpdate('title') : null,
+            subtitle: !nTitle ? this._handleTextUpdate('subtitle') : null,
+            hashtags: !nTitle ? this._handleTextUpdate('hashtags') : null,
             content: this._handleTextUpdate('content')
           }}
-          onToggleMode={this._toggleNativeMode}
+          onToggleMode={!nTitle ? this._toggleNativeMode : null}
+          replyParams={!nTitle ? null : {
+            title: nTitle,
+            subtitle: nSubtitle,
+            native: nNative
+          }}
           screenHeight={height}
         />
       </Container>

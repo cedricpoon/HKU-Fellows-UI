@@ -33,6 +33,7 @@ export class Post extends Component {
     this._openHeaderMenu = this._openHeaderMenu.bind(this);
     this._renderHeaderMenu = this._renderHeaderMenu.bind(this);
     this._onPostTabChange = this._onPostTabChange.bind(this);
+    this._reply = this._reply.bind(this);
   }
 
   _openHeaderMenu() {
@@ -63,6 +64,13 @@ export class Post extends Component {
 
   _onPostTabChange({i}) {
     this.setState({ currentPage: i });
+  }
+
+  _reply() {
+    const { topicInfo } = this.props;
+    const { title, subtitle, native } = topicInfo;
+
+    NavigationService.navigate('Compose', { title, subtitle, native });
   }
 
   componentDidMount() {
@@ -137,6 +145,7 @@ export class Post extends Component {
               return () => { this._postTabs.goToPage(currentPage + i) };
           }}
           onRefresh={() => { onRefreshReplies(id) }}
+          onReply={this._reply}
           enableRefresh={loadStatus === _loadStatus.OK}
           sharePayload={encryptor(id)}
           title={title}

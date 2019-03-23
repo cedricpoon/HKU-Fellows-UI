@@ -4,7 +4,8 @@ import { Compose } from './Compose';
 
 describe('Testing Compose Screen', () => {
   const requiredProps = {
-    location: 'location'
+    location: 'location',
+    navigation: { getParam: () => {} } // mock of react navigation
   }
 
   it('renders as expected', () => {

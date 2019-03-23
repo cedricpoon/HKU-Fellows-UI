@@ -51,6 +51,7 @@ export default {
   'header.solved': 'Adopt this Answer',
 
   'new.header': 'New Topic',
+  'new.replyHeader': 'Reply Topic',
   'new.title': 'Title (Compulsory)',
   'new.subtitle': 'Subtitle',
   'new.content': 'Content (Compulsory)',
@@ -62,9 +63,12 @@ export default {
   'new.noCompulsory': 'Compulsory items not filled',
   'new.malformedHashtags': 'Hashtag(s) malformed',
   'new.previewWordings': 'This is a preview of the actual post',
+  'new.replyWordings': 'This is a preview of the actual reply',
   'new.creatingPost': 'Creating post...',
   'new.createdPost': 'Post created!',
   'new.error': 'Post cannot be created',
+
+  'reply.titlePrefix': 'Re: ',
 
   'fetch.noNetwork': 'Server is not connected.',
 

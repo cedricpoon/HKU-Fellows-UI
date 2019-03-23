@@ -96,7 +96,10 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   onComposeNative: ({ title, subtitle, hashtags, content, anonymity }) => {
     dispatch(onCompose({
-      payload: { title, subtitle, hashtag: hashtags, content, anonymous: anonymity ? 1 : 0 },
+      payload: {
+        title, subtitle, content, anonymous: anonymity ? 1 : 0,
+        hashtag: hashtags && encodeURI(JSON.stringify(hashtags))
+      },
       alert, native: true
     }));
   },

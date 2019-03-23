@@ -1,3 +1,5 @@
+import { environment as env } from  'hkufui/config';
+
 /* Common method called by onLayout */
 export const mapLayoutToState = (key, ref) => {
   return ((event) => {
@@ -8,4 +10,5 @@ export const mapLayoutToState = (key, ref) => {
 };
 
 /* Normalize ISO timestamp format from mysql for `timeago.js` */
-export const noZ = (t) => t.replace(/(\d+-\d+-\d+T\d+:\d+:\d+\.\d+)(Z)/, '$1');
+/* ONLY for production server */
+export const noZ = (t) => env === 'development' ? t : t.replace(/(\d+-\d+-\d+T\d+:\d+:\d+\.\d+)(Z)/, '$1');

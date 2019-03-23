@@ -13,8 +13,6 @@ const locale = localize({ language: 'en', country: 'hk' });
 
 function requestCompose({ payload, alert, link, credential }) {
   return async dispatch => {
-    const { hashtag, ...restPayload } = payload;
-
     dispatch({ type: REQUEST_POST_CREATE });
     alert(locale['new.creatingPost'], 1000);
     try {
@@ -26,30 +24,25 @@ function requestCompose({ payload, alert, link, credential }) {
         },
         body: JSON.stringify({
           ...credential,
-          hashtag: hashtag && encodeURI(JSON.stringify(hashtag)),
-          ...restPayload
+          ...payload
         })
       });
       const res = await response.json();
-      if (res.status === 200 || res.status === 204) {
-        alert(locale['new.createdPost'], 2000, true);
-        // go back twice as <Compose/> + <ComposePreview/>
-        NavigationService.goBackNTimes(2);
-        if (res.status === 200) {
-          // deep link to newly created post
-          Linking.openURL(`${deepLink.prefix}${deepLink.post(encrypt(res.payload.topicId))}`);
-        }
-        // refresh post list
-        dispatch(fetchPosts());
-      } else {
-        // failure
-        alert(`${locale['new.error']} ${res.status}`);
+      dispatch({ type: END_POST_CREATE });
+      switch (res.status) {
+        case 200:
+          return res.payload.topicId;
+        case 204:
+          return;
+        default:
+          // failure
+          alert(`${locale['new.error']} ${res.status}`);
       }
     } catch (error) {
       // failure
       alert(locale['new.error']);
+      dispatch({ type: END_POST_CREATE });
     }
-    dispatch({ type: END_POST_CREATE });
   };
 }
 
@@ -58,7 +51,7 @@ export function onCompose({ payload, alert, native }) {
     const { location, credential } = getState();
     const { courseId } = location;
 
-    dispatch(requestCompose({
+    const topicId = await dispatch(requestCompose({
       payload,
       alert,
       link: native ? link(compose.native({ courseId })) : link(compose.moodle({ courseId })),
@@ -68,6 +61,16 @@ export function onCompose({ payload, alert, native }) {
         ...(!native && {moodleKey: credential.moodleKey})
       }
     }));
+
+    alert(locale['new.createdPost'], 2000, true);
+    // go back twice as <Compose/> + <ComposePreview/>
+    NavigationService.goBackNTimes(2);
+    if (topicId) {
+      // deep link to newly created post
+      Linking.openURL(`${deepLink.prefix}${deepLink.post(encrypt(topicId))}`);
+    }
+    // refresh post list
+    dispatch(fetchPosts());
   };
 }
 

@@ -9,6 +9,7 @@ import LoadPostsHandler from './Preview/PostPreviewLoader/loadPosts';
 import ExpandPostsHandler from './Preview/expandPosts';
 import Authentication from './Login/authenticate';
 import ViewActionHandler from './Post/viewActions';
+import SetTopicActionHandler from './Post/setTopicActions';
 import FilterPostHandler from './Preview/filterPosts';
 import DrawerActionHandler from '../navigator/Context/DrawerMenu/drawerAction';
 import ComposeActionHandler from './ComposePreview/createActions';
@@ -28,7 +29,10 @@ const ruleReducer = (state, action) => {
 
   // main application reducers
   const appReducer = combineReducers({
-    location: loggedIn(SelectCourseActionHandler),
+    location: loggedIn(reduceReducers(
+      SelectCourseActionHandler,
+      SetTopicActionHandler
+    )),
     posts: loggedIn(reduceReducers(
       LoadPostsHandler,
       ExpandPostsHandler,

@@ -29,6 +29,11 @@ export const compose = {
   moodle: ({ courseId }) => `/compose/moodle/${courseId}`
 }
 
+export const reply = {
+  native: ({ topicId }) => `/reply/native/${topicId}`,
+  moodle: ({ topicId }) => `/reply/moodle/${topicId}`
+}
+
 export const vote = {
   up: ({ postId }) => `/vote/${postId}/up`,
   down: ({ postId }) => `/vote/${postId}/down`,

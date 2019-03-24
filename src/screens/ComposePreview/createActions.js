@@ -1,6 +1,6 @@
 import { Linking } from 'react-native';
 import { REQUEST_POST_CREATE, END_POST_CREATE } from 'hkufui/src/constants/actionTypes';
-import { link, compose } from 'hkufui/config/webapi';
+import { link, compose, reply } from 'hkufui/config/webapi';
 import { localize } from 'hkufui/locale';
 import { LOADING, STILL } from 'hkufui/src/constants/loadStatus';
 import NavigationService from 'hkufui/src/NavigationService';
@@ -8,6 +8,7 @@ import { deepLink } from 'hkufui/config';
 import { encrypt } from 'hkufui/src/safe';
 
 import { fetchPosts } from '../Preview/PostPreviewLoader/loadPosts';
+import { onLoad } from '../Post/viewActions';
 
 const locale = localize({ language: 'en', country: 'hk' });
 
@@ -31,7 +32,7 @@ function requestCompose({ payload, alert, link, credential }) {
       dispatch({ type: END_POST_CREATE });
       switch (res.status) {
         case 200:
-          return res.payload.topicId;
+          return { ...res.payload };
         case 204:
           return;
         default:
@@ -46,12 +47,39 @@ function requestCompose({ payload, alert, link, credential }) {
   };
 }
 
+export function onReply({ payload, alert, native }) {
+  return async (dispatch, getState) => {
+    const { location, credential } = getState();
+    const { recentTopic: topicId, courseId } = location;
+
+    await dispatch(requestCompose({
+      payload: {
+        ...payload,
+        ...(!native && { code: courseId })
+      },
+      alert,
+      link: native ? link(reply.native({ topicId })) : link(reply.moodle({ topicId })),
+      credential: {
+        username: credential.userId,
+        token: credential.token,
+        ...(!native && { moodleKey: credential.moodleKey })
+      }
+    }));
+
+    alert(locale['reply.success'], 2000, true);
+    // go back twice as <Compose /> + <ComposePreview />
+    NavigationService.goBackNTimes(2);
+    // refresh replies
+    dispatch(onLoad({ id: topicId }));
+  };
+}
+
 export function onCompose({ payload, alert, native }) {
   return async (dispatch, getState) => {
     const { location, credential } = getState();
     const { courseId } = location;
 
-    const topicId = await dispatch(requestCompose({
+    const { topicId } = await dispatch(requestCompose({
       payload,
       alert,
       link: native ? link(compose.native({ courseId })) : link(compose.moodle({ courseId })),
@@ -63,7 +91,7 @@ export function onCompose({ payload, alert, native }) {
     }));
 
     alert(locale['new.createdPost'], 2000, true);
-    // go back twice as <Compose/> + <ComposePreview/>
+    // go back twice as <Compose /> + <ComposePreview />
     NavigationService.goBackNTimes(2);
     if (topicId) {
       // deep link to newly created post

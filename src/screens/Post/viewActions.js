@@ -11,6 +11,7 @@ import { link, view, login, vote } from 'hkufui/config/webapi';
 import defaultState from 'hkufui/src/store/globalState';
 
 import { onLogin } from '../Login/authenticate';
+import { onSetTopic } from './setTopicActions';
 
 const locale = localize({ language: 'en', country: 'hk' });
 
@@ -86,13 +87,19 @@ export function onAccept({ topicId, postId, alert }) {
     const { credential } = getState();
     try {
       const res = await fetchPost({ credential, path: view.adopt({ topicId }), payload: { postId } });
-      if (res.status === 200) {
-        // Successfully voted
-        dispatch({ type: REFRESH_REPLIES });
-        dispatch(onLoad({ id: topicId }));
-      } else {
-        // failure
-        alert(`${locale['replies.acceptError']} ${res.status}`);
+      switch (res.status) {
+        case 200:
+          // Successfully voted
+          dispatch({ type: REFRESH_REPLIES });
+          dispatch(onLoad({ id: topicId }));
+          break;
+        case 403:
+          // failure
+          alert(locale['replies.selfAccept']);
+          break;
+        default:
+          // failure
+          alert(`${locale['replies.acceptError']} ${res.status}`);
       }
     } catch (error) {
       alert(locale['replies.acceptError']);
@@ -115,6 +122,8 @@ export function onLoad({ id, alert }) {
           type: FILL_REPLIES,
           payload: { replies: posts, topicInfo: { native, owned, ...restPayload } }
         });
+        // set topic id in location
+        dispatch(onSetTopic(id));
         if (alert) {
           alert(locale['replies.refreshed']);
         }

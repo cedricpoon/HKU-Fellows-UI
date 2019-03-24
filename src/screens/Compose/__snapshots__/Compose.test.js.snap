@@ -33,6 +33,7 @@ ShallowWrapper {
             Object {
               "content": "",
               "hashtags": null,
+              "reply": undefined,
               "subtitle": null,
               "title": "",
             }
@@ -94,6 +95,7 @@ ShallowWrapper {
           "payload": Object {
             "content": "",
             "hashtags": null,
+            "reply": undefined,
             "subtitle": null,
             "title": "",
           },
@@ -166,6 +168,7 @@ ShallowWrapper {
               Object {
                 "content": "",
                 "hashtags": null,
+                "reply": undefined,
                 "subtitle": null,
                 "title": "",
               }
@@ -227,6 +230,7 @@ ShallowWrapper {
             "payload": Object {
               "content": "",
               "hashtags": null,
+              "reply": undefined,
               "subtitle": null,
               "title": "",
             },

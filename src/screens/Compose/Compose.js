@@ -76,7 +76,7 @@ export class Compose extends Component {
     this.setState({ native: isNative });
   }
 
-  _renderHeaderMenu({ width, title, subtitle, hashtags }) {
+  _renderHeaderMenu({ width, title, subtitle, hashtags, reply }) {
     const { headerLayout, content } = this.state;
 
     return (
@@ -84,7 +84,7 @@ export class Compose extends Component {
         position={{ x: width, y: headerLayout.y }}
         parentHeight={headerLayout.height}
         onRef={ref => this._popup = ref}
-        payload={{ title, subtitle, hashtags, content }}
+        payload={{ title, subtitle, hashtags, content, reply }}
       />
     );
   }

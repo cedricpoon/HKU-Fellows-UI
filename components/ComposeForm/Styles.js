@@ -9,6 +9,15 @@ export default StyleSheet.create({
     paddingLeft: gridBase * 2,
     paddingRight: gridBase
   },
+  replybox: {
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRightWidth: 0,
+    borderLeftWidth: 2
+  },
+  bold: {
+    fontWeight: "600"
+  },
   item: {
     marginTop: gridBase * 2
   },

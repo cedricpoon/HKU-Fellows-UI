@@ -25,30 +25,46 @@ class ComposeForm extends PureComponent {
   }
 
   render() {
-    const { onTextUpdates, screenHeight } = this.props;
+    const { onTextUpdates, screenHeight, onToggleMode, replyParams } = this.props;
     const { isNative } = this.state;
 
     return (
       <Content padder>
         <Form>
-          <Item regular>
-            <Input placeholder={locale['new.title']} style={styles.textbox} onChangeText={onTextUpdates.title} />
+          <Item regular style={replyParams && styles.replybox}>
+            <Input
+              placeholder={locale['new.title']}
+              style={[styles.textbox, replyParams && styles.bold]}
+              onChangeText={onTextUpdates.title}
+              disabled={replyParams != null}
+              value={replyParams ? `${locale['reply.titlePrefix']}${replyParams.title}` : null}
+            />
           </Item>
-          <Item regular style={[styles.item, !isNative && styles.hidden]}>
-            <Input placeholder={locale['new.subtitle']} style={styles.textbox} onChangeText={onTextUpdates.subtitle} />
+          <Item regular style={[styles.item, !isNative && styles.hidden, replyParams && styles.replybox]}>
+            <Input
+              placeholder={!replyParams ? locale['new.subtitle'] : locale['post.noSubtitle']}
+              style={styles.textbox}
+              onChangeText={onTextUpdates.subtitle}
+              disabled={replyParams != null}
+              value={replyParams ? replyParams.subtitle : null}
+            />
           </Item>
-          <Item regular style={[styles.item, !isNative && styles.hidden]}>
-            <Input placeholder={locale['new.hashtags']} style={styles.textbox} onChangeText={onTextUpdates.hashtags} />
-          </Item>
+          {!replyParams && (
+            <Item regular style={[styles.item, !isNative && styles.hidden]}>
+              <Input placeholder={locale['new.hashtags']} style={styles.textbox} onChangeText={onTextUpdates.hashtags} />
+            </Item>
+          )}
           <Textarea
             bordered
             placeholder={locale['new.content']}
-            style={{ height: screenHeight / 3 }}
+            style={[{ height: screenHeight / 3 }, styles.item]}
             onChangeText={onTextUpdates.content}
           />
-          <Button full dark={!isNative} light={isNative} style={styles.item} onPress={this._toggleUploadMode}>
-            <Text style={styles.toggler}>{isNative ? 'As Native Post' : 'As Moodle Forum Post'}</Text>
-          </Button>
+          {onToggleMode && (
+            <Button full dark={!isNative} light={isNative} style={styles.item} onPress={this._toggleUploadMode}>
+              <Text style={styles.toggler}>{isNative ? 'As Native Post' : 'As Moodle Forum Post'}</Text>
+            </Button>
+          )}
         </Form>
         <View style={styles.remarkGroup}>
           <Text style={styles.remark} note>
@@ -67,8 +83,7 @@ class ComposeForm extends PureComponent {
 }
 
 ComposeForm.defaultProps = {
-  onTextUpdates: {},
-  onToggleMode: () => {}
+  onTextUpdates: {}
 }
 
 ComposeForm.propTypes = {
@@ -79,7 +94,12 @@ ComposeForm.propTypes = {
     content: PropTypes.func
   }),
   onToggleMode: PropTypes.func,
-  screenHeight: PropTypes.number.isRequired
+  screenHeight: PropTypes.number.isRequired,
+  replyParams: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string,
+    native: PropTypes.bool
+  })
 }
 
 export default ComposeForm;

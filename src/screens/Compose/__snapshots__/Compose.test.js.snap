@@ -5,6 +5,11 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Compose
     location="location"
+    navigation={
+      Object {
+        "getParam": [Function],
+      }
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -22,13 +27,13 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <ViewMenu
-          native={true}
           onRef={[Function]}
           parentHeight={0}
           payload={
             Object {
               "content": "",
               "hashtags": null,
+              "reply": undefined,
               "subtitle": null,
               "title": "",
             }
@@ -72,6 +77,7 @@ ShallowWrapper {
             }
           }
           onToggleMode={[Function]}
+          replyParams={null}
           screenHeight={1334}
         />,
       ],
@@ -84,12 +90,12 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "native": true,
           "onRef": [Function],
           "parentHeight": 0,
           "payload": Object {
             "content": "",
             "hashtags": null,
+            "reply": undefined,
             "subtitle": null,
             "title": "",
           },
@@ -138,6 +144,7 @@ ShallowWrapper {
             "title": [Function],
           },
           "onToggleMode": [Function],
+          "replyParams": null,
           "screenHeight": 1334,
         },
         "ref": null,
@@ -155,13 +162,13 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <ViewMenu
-            native={true}
             onRef={[Function]}
             parentHeight={0}
             payload={
               Object {
                 "content": "",
                 "hashtags": null,
+                "reply": undefined,
                 "subtitle": null,
                 "title": "",
               }
@@ -205,6 +212,7 @@ ShallowWrapper {
               }
             }
             onToggleMode={[Function]}
+            replyParams={null}
             screenHeight={1334}
           />,
         ],
@@ -217,12 +225,12 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "native": true,
             "onRef": [Function],
             "parentHeight": 0,
             "payload": Object {
               "content": "",
               "hashtags": null,
+              "reply": undefined,
               "subtitle": null,
               "title": "",
             },
@@ -271,6 +279,7 @@ ShallowWrapper {
               "title": [Function],
             },
             "onToggleMode": [Function],
+            "replyParams": null,
             "screenHeight": 1334,
           },
           "ref": null,

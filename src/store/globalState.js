@@ -9,7 +9,9 @@ export default {
     /* COMP4801 */
     courseTitle: '',
     /* [{id: engg, title: engineering}] */
-    breadcrumb: []
+    breadcrumb: [],
+    /* native id hash / mod000000 */
+    recentTopic: '',
   },
   posts: {
     /* refer to mock/../posts */

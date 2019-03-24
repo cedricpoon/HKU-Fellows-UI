@@ -21,6 +21,7 @@ export default {
   'replies.selfVote': 'Own post cannot be voted',
   'replies.voteIssue': 'Vote not submitted',
   'replies.acceptError': 'Answer not adopted',
+  'replies.selfAccept': 'Own post cannot be adopted',
 
   'footer.moodle': 'From Moodle',
   'footer.latestPost': 'Latest Post',
@@ -51,6 +52,7 @@ export default {
   'header.solved': 'Adopt this Answer',
 
   'new.header': 'New Topic',
+  'new.replyHeader': 'Reply Topic',
   'new.title': 'Title (Compulsory)',
   'new.subtitle': 'Subtitle',
   'new.content': 'Content (Compulsory)',
@@ -61,10 +63,14 @@ export default {
   'new.markdown': 'Markdown',
   'new.noCompulsory': 'Compulsory items not filled',
   'new.malformedHashtags': 'Hashtag(s) malformed',
-  'new.previewWordings': 'This is a preview of the actual post',
+  'new.previewWordings': 'This is a preview of the actual **POST**',
+  'new.replyWordings': 'This is a preview of the actual **REPLY**',
   'new.creatingPost': 'Creating post...',
   'new.createdPost': 'Post created!',
   'new.error': 'Post cannot be created',
+
+  'reply.titlePrefix': 'Re: ',
+  'reply.success': 'Replied!',
 
   'fetch.noNetwork': 'Server is not connected.',
 

@@ -7,7 +7,9 @@ describe('Testing ComposePreview Screen', () => {
   const defaultProps = {
     username:'alanchan',
     onComposeNative: () => {},
-    onComposeMoodle: () => {}
+    onComposeMoodle: () => {},
+    onReplyNative: () => {},
+    onReplyMoodle: () => {}
   };
 
   it('renders as expected', () => {

@@ -6,6 +6,8 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <withNavigation(Connect(ComposePreview))
     onComposeMoodle={[Function]}
     onComposeNative={[Function]}
+    onReplyMoodle={[Function]}
+    onReplyNative={[Function]}
     status="LOADING"
     username="alanchan"
   />,
@@ -107,6 +109,8 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <withNavigation(Connect(ComposePreview))
     onComposeMoodle={[Function]}
     onComposeNative={[Function]}
+    onReplyMoodle={[Function]}
+    onReplyNative={[Function]}
     status="STILL"
     username="alanchan"
   />,

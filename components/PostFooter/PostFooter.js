@@ -20,7 +20,7 @@ class PostFooter extends Component {
   }
 
   render() {
-    const { firstPage, lastPage, onPageChangeThunk, onRefresh, enableRefresh } = this.props;
+    const { firstPage, lastPage, onPageChangeThunk, onRefresh, enableRefresh, onReply } = this.props;
 
     return (
       <Footer>
@@ -31,7 +31,7 @@ class PostFooter extends Component {
           <Button onPress={onRefresh} transparent={!enableRefresh} disabled={!enableRefresh} >
             <Icon name="refresh" type="MaterialCommunityIcons" />
           </Button>
-          <Button>
+          <Button onPress={onReply} transparent={!enableRefresh} disabled={!enableRefresh}>
             <Icon name="comment-text-outline" type="MaterialCommunityIcons" />
           </Button>
           <Button onPress={this._share.bind(this)}>
@@ -56,6 +56,7 @@ PostFooter.propTypes = {
   lastPage: PropTypes.bool,
   onPageChangeThunk: PropTypes.func,
   onRefresh: PropTypes.func,
+  onReply: PropTypes.func,
   enableRefresh: PropTypes.bool,
   sharePayload: PropTypes.string,
   title: PropTypes.string,

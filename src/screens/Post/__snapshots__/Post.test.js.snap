@@ -65,6 +65,7 @@ ShallowWrapper {
           lastPage={true}
           onPageChangeThunk={[Function]}
           onRefresh={[Function]}
+          onReply={[Function]}
           sharePayload=""
           subtitle={null}
           title=""
@@ -124,6 +125,7 @@ ShallowWrapper {
           "lastPage": true,
           "onPageChangeThunk": [Function],
           "onRefresh": [Function],
+          "onReply": [Function],
           "sharePayload": "",
           "subtitle": null,
           "title": "",
@@ -175,6 +177,7 @@ ShallowWrapper {
             lastPage={true}
             onPageChangeThunk={[Function]}
             onRefresh={[Function]}
+            onReply={[Function]}
             sharePayload=""
             subtitle={null}
             title=""
@@ -234,6 +237,7 @@ ShallowWrapper {
             "lastPage": true,
             "onPageChangeThunk": [Function],
             "onRefresh": [Function],
+            "onReply": [Function],
             "sharePayload": "",
             "subtitle": null,
             "title": "",
@@ -338,6 +342,7 @@ ShallowWrapper {
           lastPage={true}
           onPageChangeThunk={[Function]}
           onRefresh={[Function]}
+          onReply={[Function]}
           sharePayload=""
           subtitle={null}
           title=""
@@ -397,6 +402,7 @@ ShallowWrapper {
           "lastPage": true,
           "onPageChangeThunk": [Function],
           "onRefresh": [Function],
+          "onReply": [Function],
           "sharePayload": "",
           "subtitle": null,
           "title": "",
@@ -449,6 +455,7 @@ ShallowWrapper {
             lastPage={true}
             onPageChangeThunk={[Function]}
             onRefresh={[Function]}
+            onReply={[Function]}
             sharePayload=""
             subtitle={null}
             title=""
@@ -508,6 +515,7 @@ ShallowWrapper {
             "lastPage": true,
             "onPageChangeThunk": [Function],
             "onRefresh": [Function],
+            "onReply": [Function],
             "sharePayload": "",
             "subtitle": null,
             "title": "",

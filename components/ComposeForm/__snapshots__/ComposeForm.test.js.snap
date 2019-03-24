@@ -28,15 +28,20 @@ ShallowWrapper {
             regular={true}
           >
             <Styled(Input)
+              disabled={false}
               placeholder="Title (Compulsory)"
               style={
-                Object {
-                  "fontSize": 15,
-                  "height": 30,
-                  "paddingLeft": 10,
-                  "paddingRight": 5,
-                }
+                Array [
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  },
+                  undefined,
+                ]
               }
+              value={null}
             />
           </Styled(Item)>
           <Styled(Item)
@@ -47,10 +52,12 @@ ShallowWrapper {
                   "marginTop": 10,
                 },
                 false,
+                undefined,
               ]
             }
           >
             <Styled(Input)
+              disabled={false}
               placeholder="Subtitle"
               style={
                 Object {
@@ -60,6 +67,7 @@ ShallowWrapper {
                   "paddingRight": 5,
                 }
               }
+              value={null}
             />
           </Styled(Item)>
           <Styled(Item)
@@ -89,9 +97,14 @@ ShallowWrapper {
             bordered={true}
             placeholder="Content (Compulsory)"
             style={
-              Object {
-                "height": 100,
-              }
+              Array [
+                Object {
+                  "height": 100,
+                },
+                Object {
+                  "marginTop": 10,
+                },
+              ]
             }
           />
           <Styled(Button)
@@ -172,15 +185,20 @@ ShallowWrapper {
               regular={true}
             >
               <Styled(Input)
+                disabled={false}
                 placeholder="Title (Compulsory)"
                 style={
-                  Object {
-                    "fontSize": 15,
-                    "height": 30,
-                    "paddingLeft": 10,
-                    "paddingRight": 5,
-                  }
+                  Array [
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    },
+                    undefined,
+                  ]
                 }
+                value={null}
               />
             </Styled(Item)>,
             <Styled(Item)
@@ -191,10 +209,12 @@ ShallowWrapper {
                     "marginTop": 10,
                   },
                   false,
+                  undefined,
                 ]
               }
             >
               <Styled(Input)
+                disabled={false}
                 placeholder="Subtitle"
                 style={
                   Object {
@@ -204,6 +224,7 @@ ShallowWrapper {
                     "paddingRight": 5,
                   }
                 }
+                value={null}
               />
             </Styled(Item)>,
             <Styled(Item)
@@ -233,9 +254,14 @@ ShallowWrapper {
               bordered={true}
               placeholder="Content (Compulsory)"
               style={
-                Object {
-                  "height": 100,
-                }
+                Array [
+                  Object {
+                    "height": 100,
+                  },
+                  Object {
+                    "marginTop": 10,
+                  },
+                ]
               }
             />,
             <Styled(Button)
@@ -270,17 +296,23 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": <Styled(Input)
+                disabled={false}
                 placeholder="Title (Compulsory)"
                 style={
-                  Object {
-                    "fontSize": 15,
-                    "height": 30,
-                    "paddingLeft": 10,
-                    "paddingRight": 5,
-                  }
+                  Array [
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    },
+                    undefined,
+                  ]
                 }
+                value={null}
               />,
               "regular": true,
+              "style": undefined,
               "virtual": undefined,
             },
             "ref": null,
@@ -289,14 +321,19 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
+                "disabled": false,
                 "onChangeText": undefined,
                 "placeholder": "Title (Compulsory)",
-                "style": Object {
-                  "fontSize": 15,
-                  "height": 30,
-                  "paddingLeft": 10,
-                  "paddingRight": 5,
-                },
+                "style": Array [
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  },
+                  undefined,
+                ],
+                "value": null,
                 "virtual": undefined,
               },
               "ref": null,
@@ -311,6 +348,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": <Styled(Input)
+                disabled={false}
                 placeholder="Subtitle"
                 style={
                   Object {
@@ -320,6 +358,7 @@ ShallowWrapper {
                     "paddingRight": 5,
                   }
                 }
+                value={null}
               />,
               "regular": true,
               "style": Array [
@@ -327,6 +366,7 @@ ShallowWrapper {
                   "marginTop": 10,
                 },
                 false,
+                undefined,
               ],
               "virtual": undefined,
             },
@@ -336,6 +376,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
+                "disabled": false,
                 "onChangeText": undefined,
                 "placeholder": "Subtitle",
                 "style": Object {
@@ -344,6 +385,7 @@ ShallowWrapper {
                   "paddingLeft": 10,
                   "paddingRight": 5,
                 },
+                "value": null,
                 "virtual": undefined,
               },
               "ref": null,
@@ -407,9 +449,14 @@ ShallowWrapper {
               "bordered": true,
               "onChangeText": undefined,
               "placeholder": "Content (Compulsory)",
-              "style": Object {
-                "height": 100,
-              },
+              "style": Array [
+                Object {
+                  "height": 100,
+                },
+                Object {
+                  "marginTop": 10,
+                },
+              ],
               "virtual": undefined,
             },
             "ref": null,
@@ -567,15 +614,20 @@ ShallowWrapper {
               regular={true}
             >
               <Styled(Input)
+                disabled={false}
                 placeholder="Title (Compulsory)"
                 style={
-                  Object {
-                    "fontSize": 15,
-                    "height": 30,
-                    "paddingLeft": 10,
-                    "paddingRight": 5,
-                  }
+                  Array [
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    },
+                    undefined,
+                  ]
                 }
+                value={null}
               />
             </Styled(Item)>
             <Styled(Item)
@@ -586,10 +638,12 @@ ShallowWrapper {
                     "marginTop": 10,
                   },
                   false,
+                  undefined,
                 ]
               }
             >
               <Styled(Input)
+                disabled={false}
                 placeholder="Subtitle"
                 style={
                   Object {
@@ -599,6 +653,7 @@ ShallowWrapper {
                     "paddingRight": 5,
                   }
                 }
+                value={null}
               />
             </Styled(Item)>
             <Styled(Item)
@@ -628,9 +683,14 @@ ShallowWrapper {
               bordered={true}
               placeholder="Content (Compulsory)"
               style={
-                Object {
-                  "height": 100,
-                }
+                Array [
+                  Object {
+                    "height": 100,
+                  },
+                  Object {
+                    "marginTop": 10,
+                  },
+                ]
               }
             />
             <Styled(Button)
@@ -711,15 +771,20 @@ ShallowWrapper {
                 regular={true}
               >
                 <Styled(Input)
+                  disabled={false}
                   placeholder="Title (Compulsory)"
                   style={
-                    Object {
-                      "fontSize": 15,
-                      "height": 30,
-                      "paddingLeft": 10,
-                      "paddingRight": 5,
-                    }
+                    Array [
+                      Object {
+                        "fontSize": 15,
+                        "height": 30,
+                        "paddingLeft": 10,
+                        "paddingRight": 5,
+                      },
+                      undefined,
+                    ]
                   }
+                  value={null}
                 />
               </Styled(Item)>,
               <Styled(Item)
@@ -730,10 +795,12 @@ ShallowWrapper {
                       "marginTop": 10,
                     },
                     false,
+                    undefined,
                   ]
                 }
               >
                 <Styled(Input)
+                  disabled={false}
                   placeholder="Subtitle"
                   style={
                     Object {
@@ -743,6 +810,7 @@ ShallowWrapper {
                       "paddingRight": 5,
                     }
                   }
+                  value={null}
                 />
               </Styled(Item)>,
               <Styled(Item)
@@ -772,9 +840,14 @@ ShallowWrapper {
                 bordered={true}
                 placeholder="Content (Compulsory)"
                 style={
-                  Object {
-                    "height": 100,
-                  }
+                  Array [
+                    Object {
+                      "height": 100,
+                    },
+                    Object {
+                      "marginTop": 10,
+                    },
+                  ]
                 }
               />,
               <Styled(Button)
@@ -809,17 +882,23 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": <Styled(Input)
+                  disabled={false}
                   placeholder="Title (Compulsory)"
                   style={
-                    Object {
-                      "fontSize": 15,
-                      "height": 30,
-                      "paddingLeft": 10,
-                      "paddingRight": 5,
-                    }
+                    Array [
+                      Object {
+                        "fontSize": 15,
+                        "height": 30,
+                        "paddingLeft": 10,
+                        "paddingRight": 5,
+                      },
+                      undefined,
+                    ]
                   }
+                  value={null}
                 />,
                 "regular": true,
+                "style": undefined,
                 "virtual": undefined,
               },
               "ref": null,
@@ -828,14 +907,19 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
+                  "disabled": false,
                   "onChangeText": undefined,
                   "placeholder": "Title (Compulsory)",
-                  "style": Object {
-                    "fontSize": 15,
-                    "height": 30,
-                    "paddingLeft": 10,
-                    "paddingRight": 5,
-                  },
+                  "style": Array [
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    },
+                    undefined,
+                  ],
+                  "value": null,
                   "virtual": undefined,
                 },
                 "ref": null,
@@ -850,6 +934,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": <Styled(Input)
+                  disabled={false}
                   placeholder="Subtitle"
                   style={
                     Object {
@@ -859,6 +944,7 @@ ShallowWrapper {
                       "paddingRight": 5,
                     }
                   }
+                  value={null}
                 />,
                 "regular": true,
                 "style": Array [
@@ -866,6 +952,7 @@ ShallowWrapper {
                     "marginTop": 10,
                   },
                   false,
+                  undefined,
                 ],
                 "virtual": undefined,
               },
@@ -875,6 +962,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
+                  "disabled": false,
                   "onChangeText": undefined,
                   "placeholder": "Subtitle",
                   "style": Object {
@@ -883,6 +971,7 @@ ShallowWrapper {
                     "paddingLeft": 10,
                     "paddingRight": 5,
                   },
+                  "value": null,
                   "virtual": undefined,
                 },
                 "ref": null,
@@ -946,9 +1035,14 @@ ShallowWrapper {
                 "bordered": true,
                 "onChangeText": undefined,
                 "placeholder": "Content (Compulsory)",
-                "style": Object {
-                  "height": 100,
-                },
+                "style": Array [
+                  Object {
+                    "height": 100,
+                  },
+                  Object {
+                    "marginTop": 10,
+                  },
+                ],
                 "virtual": undefined,
               },
               "ref": null,
@@ -1120,12 +1214,967 @@ ShallowWrapper {
 }
 `;
 
+exports[`Testing ComposeForm Component is a reply 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ComposeForm
+    onTextUpdates={Object {}}
+    replyParams={
+      Object {
+        "title": "title",
+      }
+    }
+    screenHeight={300}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <Styled(Form)>
+          <Styled(Item)
+            regular={true}
+            style={
+              Object {
+                "borderBottomWidth": 0,
+                "borderLeftWidth": 2,
+                "borderRightWidth": 0,
+                "borderTopWidth": 0,
+              }
+            }
+          >
+            <Styled(Input)
+              disabled={true}
+              placeholder="Title (Compulsory)"
+              style={
+                Array [
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  },
+                  Object {
+                    "fontWeight": "600",
+                  },
+                ]
+              }
+              value="Re: title"
+            />
+          </Styled(Item)>
+          <Styled(Item)
+            regular={true}
+            style={
+              Array [
+                Object {
+                  "marginTop": 10,
+                },
+                false,
+                Object {
+                  "borderBottomWidth": 0,
+                  "borderLeftWidth": 2,
+                  "borderRightWidth": 0,
+                  "borderTopWidth": 0,
+                },
+              ]
+            }
+          >
+            <Styled(Input)
+              disabled={true}
+              placeholder="- No Subtitle -"
+              style={
+                Object {
+                  "fontSize": 15,
+                  "height": 30,
+                  "paddingLeft": 10,
+                  "paddingRight": 5,
+                }
+              }
+            />
+          </Styled(Item)>
+          <Styled(Textarea)
+            bordered={true}
+            placeholder="Content (Compulsory)"
+            style={
+              Array [
+                Object {
+                  "height": 100,
+                },
+                Object {
+                  "marginTop": 10,
+                },
+              ]
+            }
+          />
+        </Styled(Form)>,
+        <Styled(ViewNB)
+          style={
+            Object {
+              "flexDirection": "row",
+              "marginTop": 10,
+            }
+          }
+        >
+          <Styled(Text)
+            note={true}
+            style={
+              Object {
+                "fontSize": 12.5,
+                "fontStyle": "italic",
+                "marginRight": 5,
+              }
+            }
+          >
+            ** Content can be styled in
+          </Styled(Text)>
+          <Styled(Text)
+            onPress={[Function]}
+            style={
+              Array [
+                Object {
+                  "fontSize": 12.5,
+                  "fontStyle": "italic",
+                  "marginRight": 5,
+                },
+                Object {
+                  "color": "#3B96DC",
+                  "fontStyle": "normal",
+                  "textDecorationLine": "underline",
+                },
+              ]
+            }
+          >
+            Markdown
+          </Styled(Text)>
+        </Styled(ViewNB)>,
+      ],
+      "padder": true,
+      "virtual": undefined,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(Item)
+              regular={true}
+              style={
+                Object {
+                  "borderBottomWidth": 0,
+                  "borderLeftWidth": 2,
+                  "borderRightWidth": 0,
+                  "borderTopWidth": 0,
+                }
+              }
+            >
+              <Styled(Input)
+                disabled={true}
+                placeholder="Title (Compulsory)"
+                style={
+                  Array [
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    },
+                    Object {
+                      "fontWeight": "600",
+                    },
+                  ]
+                }
+                value="Re: title"
+              />
+            </Styled(Item)>,
+            <Styled(Item)
+              regular={true}
+              style={
+                Array [
+                  Object {
+                    "marginTop": 10,
+                  },
+                  false,
+                  Object {
+                    "borderBottomWidth": 0,
+                    "borderLeftWidth": 2,
+                    "borderRightWidth": 0,
+                    "borderTopWidth": 0,
+                  },
+                ]
+              }
+            >
+              <Styled(Input)
+                disabled={true}
+                placeholder="- No Subtitle -"
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  }
+                }
+              />
+            </Styled(Item)>,
+            false,
+            <Styled(Textarea)
+              bordered={true}
+              placeholder="Content (Compulsory)"
+              style={
+                Array [
+                  Object {
+                    "height": 100,
+                  },
+                  Object {
+                    "marginTop": 10,
+                  },
+                ]
+              }
+            />,
+            undefined,
+          ],
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Input)
+                disabled={true}
+                placeholder="Title (Compulsory)"
+                style={
+                  Array [
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    },
+                    Object {
+                      "fontWeight": "600",
+                    },
+                  ]
+                }
+                value="Re: title"
+              />,
+              "regular": true,
+              "style": Object {
+                "borderBottomWidth": 0,
+                "borderLeftWidth": 2,
+                "borderRightWidth": 0,
+                "borderTopWidth": 0,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "disabled": true,
+                "onChangeText": undefined,
+                "placeholder": "Title (Compulsory)",
+                "style": Array [
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  },
+                  Object {
+                    "fontWeight": "600",
+                  },
+                ],
+                "value": "Re: title",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Input)
+                disabled={true}
+                placeholder="- No Subtitle -"
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  }
+                }
+              />,
+              "regular": true,
+              "style": Array [
+                Object {
+                  "marginTop": 10,
+                },
+                false,
+                Object {
+                  "borderBottomWidth": 0,
+                  "borderLeftWidth": 2,
+                  "borderRightWidth": 0,
+                  "borderTopWidth": 0,
+                },
+              ],
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "disabled": true,
+                "onChangeText": undefined,
+                "placeholder": "- No Subtitle -",
+                "style": Object {
+                  "fontSize": 15,
+                  "height": 30,
+                  "paddingLeft": 10,
+                  "paddingRight": 5,
+                },
+                "value": undefined,
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          false,
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "bordered": true,
+              "onChangeText": undefined,
+              "placeholder": "Content (Compulsory)",
+              "style": Array [
+                Object {
+                  "height": 100,
+                },
+                Object {
+                  "marginTop": 10,
+                },
+              ],
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          undefined,
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(Text)
+              note={true}
+              style={
+                Object {
+                  "fontSize": 12.5,
+                  "fontStyle": "italic",
+                  "marginRight": 5,
+                }
+              }
+            >
+              ** Content can be styled in
+            </Styled(Text)>,
+            <Styled(Text)
+              onPress={[Function]}
+              style={
+                Array [
+                  Object {
+                    "fontSize": 12.5,
+                    "fontStyle": "italic",
+                    "marginRight": 5,
+                  },
+                  Object {
+                    "color": "#3B96DC",
+                    "fontStyle": "normal",
+                    "textDecorationLine": "underline",
+                  },
+                ]
+              }
+            >
+              Markdown
+            </Styled(Text)>,
+          ],
+          "style": Object {
+            "flexDirection": "row",
+            "marginTop": 10,
+          },
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "** Content can be styled in",
+              "note": true,
+              "style": Object {
+                "fontSize": 12.5,
+                "fontStyle": "italic",
+                "marginRight": 5,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": "** Content can be styled in",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Markdown",
+              "onPress": [Function],
+              "style": Array [
+                Object {
+                  "fontSize": 12.5,
+                  "fontStyle": "italic",
+                  "marginRight": 5,
+                },
+                Object {
+                  "color": "#3B96DC",
+                  "fontStyle": "normal",
+                  "textDecorationLine": "underline",
+                },
+              ],
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": "Markdown",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Styled(Form)>
+            <Styled(Item)
+              regular={true}
+              style={
+                Object {
+                  "borderBottomWidth": 0,
+                  "borderLeftWidth": 2,
+                  "borderRightWidth": 0,
+                  "borderTopWidth": 0,
+                }
+              }
+            >
+              <Styled(Input)
+                disabled={true}
+                placeholder="Title (Compulsory)"
+                style={
+                  Array [
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    },
+                    Object {
+                      "fontWeight": "600",
+                    },
+                  ]
+                }
+                value="Re: title"
+              />
+            </Styled(Item)>
+            <Styled(Item)
+              regular={true}
+              style={
+                Array [
+                  Object {
+                    "marginTop": 10,
+                  },
+                  false,
+                  Object {
+                    "borderBottomWidth": 0,
+                    "borderLeftWidth": 2,
+                    "borderRightWidth": 0,
+                    "borderTopWidth": 0,
+                  },
+                ]
+              }
+            >
+              <Styled(Input)
+                disabled={true}
+                placeholder="- No Subtitle -"
+                style={
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  }
+                }
+              />
+            </Styled(Item)>
+            <Styled(Textarea)
+              bordered={true}
+              placeholder="Content (Compulsory)"
+              style={
+                Array [
+                  Object {
+                    "height": 100,
+                  },
+                  Object {
+                    "marginTop": 10,
+                  },
+                ]
+              }
+            />
+          </Styled(Form)>,
+          <Styled(ViewNB)
+            style={
+              Object {
+                "flexDirection": "row",
+                "marginTop": 10,
+              }
+            }
+          >
+            <Styled(Text)
+              note={true}
+              style={
+                Object {
+                  "fontSize": 12.5,
+                  "fontStyle": "italic",
+                  "marginRight": 5,
+                }
+              }
+            >
+              ** Content can be styled in
+            </Styled(Text)>
+            <Styled(Text)
+              onPress={[Function]}
+              style={
+                Array [
+                  Object {
+                    "fontSize": 12.5,
+                    "fontStyle": "italic",
+                    "marginRight": 5,
+                  },
+                  Object {
+                    "color": "#3B96DC",
+                    "fontStyle": "normal",
+                    "textDecorationLine": "underline",
+                  },
+                ]
+              }
+            >
+              Markdown
+            </Styled(Text)>
+          </Styled(ViewNB)>,
+        ],
+        "padder": true,
+        "virtual": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Styled(Item)
+                regular={true}
+                style={
+                  Object {
+                    "borderBottomWidth": 0,
+                    "borderLeftWidth": 2,
+                    "borderRightWidth": 0,
+                    "borderTopWidth": 0,
+                  }
+                }
+              >
+                <Styled(Input)
+                  disabled={true}
+                  placeholder="Title (Compulsory)"
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 15,
+                        "height": 30,
+                        "paddingLeft": 10,
+                        "paddingRight": 5,
+                      },
+                      Object {
+                        "fontWeight": "600",
+                      },
+                    ]
+                  }
+                  value="Re: title"
+                />
+              </Styled(Item)>,
+              <Styled(Item)
+                regular={true}
+                style={
+                  Array [
+                    Object {
+                      "marginTop": 10,
+                    },
+                    false,
+                    Object {
+                      "borderBottomWidth": 0,
+                      "borderLeftWidth": 2,
+                      "borderRightWidth": 0,
+                      "borderTopWidth": 0,
+                    },
+                  ]
+                }
+              >
+                <Styled(Input)
+                  disabled={true}
+                  placeholder="- No Subtitle -"
+                  style={
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    }
+                  }
+                />
+              </Styled(Item)>,
+              false,
+              <Styled(Textarea)
+                bordered={true}
+                placeholder="Content (Compulsory)"
+                style={
+                  Array [
+                    Object {
+                      "height": 100,
+                    },
+                    Object {
+                      "marginTop": 10,
+                    },
+                  ]
+                }
+              />,
+              undefined,
+            ],
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Styled(Input)
+                  disabled={true}
+                  placeholder="Title (Compulsory)"
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 15,
+                        "height": 30,
+                        "paddingLeft": 10,
+                        "paddingRight": 5,
+                      },
+                      Object {
+                        "fontWeight": "600",
+                      },
+                    ]
+                  }
+                  value="Re: title"
+                />,
+                "regular": true,
+                "style": Object {
+                  "borderBottomWidth": 0,
+                  "borderLeftWidth": 2,
+                  "borderRightWidth": 0,
+                  "borderTopWidth": 0,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "disabled": true,
+                  "onChangeText": undefined,
+                  "placeholder": "Title (Compulsory)",
+                  "style": Array [
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    },
+                    Object {
+                      "fontWeight": "600",
+                    },
+                  ],
+                  "value": "Re: title",
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Styled(Input)
+                  disabled={true}
+                  placeholder="- No Subtitle -"
+                  style={
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    }
+                  }
+                />,
+                "regular": true,
+                "style": Array [
+                  Object {
+                    "marginTop": 10,
+                  },
+                  false,
+                  Object {
+                    "borderBottomWidth": 0,
+                    "borderLeftWidth": 2,
+                    "borderRightWidth": 0,
+                    "borderTopWidth": 0,
+                  },
+                ],
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "disabled": true,
+                  "onChangeText": undefined,
+                  "placeholder": "- No Subtitle -",
+                  "style": Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  },
+                  "value": undefined,
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            false,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "bordered": true,
+                "onChangeText": undefined,
+                "placeholder": "Content (Compulsory)",
+                "style": Array [
+                  Object {
+                    "height": 100,
+                  },
+                  Object {
+                    "marginTop": 10,
+                  },
+                ],
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            undefined,
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Styled(Text)
+                note={true}
+                style={
+                  Object {
+                    "fontSize": 12.5,
+                    "fontStyle": "italic",
+                    "marginRight": 5,
+                  }
+                }
+              >
+                ** Content can be styled in
+              </Styled(Text)>,
+              <Styled(Text)
+                onPress={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "fontSize": 12.5,
+                      "fontStyle": "italic",
+                      "marginRight": 5,
+                    },
+                    Object {
+                      "color": "#3B96DC",
+                      "fontStyle": "normal",
+                      "textDecorationLine": "underline",
+                    },
+                  ]
+                }
+              >
+                Markdown
+              </Styled(Text)>,
+            ],
+            "style": Object {
+              "flexDirection": "row",
+              "marginTop": 10,
+            },
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "** Content can be styled in",
+                "note": true,
+                "style": Object {
+                  "fontSize": 12.5,
+                  "fontStyle": "italic",
+                  "marginRight": 5,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "** Content can be styled in",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Markdown",
+                "onPress": [Function],
+                "style": Array [
+                  Object {
+                    "fontSize": 12.5,
+                    "fontStyle": "italic",
+                    "marginRight": 5,
+                  },
+                  Object {
+                    "color": "#3B96DC",
+                    "fontStyle": "normal",
+                    "textDecorationLine": "underline",
+                  },
+                ],
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "Markdown",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
+
 exports[`Testing ComposeForm Component renders as expected 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ComposeForm
     onTextUpdates={Object {}}
-    onToggleMode={[Function]}
     screenHeight={300}
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -1148,15 +2197,20 @@ ShallowWrapper {
             regular={true}
           >
             <Styled(Input)
+              disabled={false}
               placeholder="Title (Compulsory)"
               style={
-                Object {
-                  "fontSize": 15,
-                  "height": 30,
-                  "paddingLeft": 10,
-                  "paddingRight": 5,
-                }
+                Array [
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  },
+                  undefined,
+                ]
               }
+              value={null}
             />
           </Styled(Item)>
           <Styled(Item)
@@ -1167,10 +2221,12 @@ ShallowWrapper {
                   "marginTop": 10,
                 },
                 false,
+                undefined,
               ]
             }
           >
             <Styled(Input)
+              disabled={false}
               placeholder="Subtitle"
               style={
                 Object {
@@ -1180,6 +2236,7 @@ ShallowWrapper {
                   "paddingRight": 5,
                 }
               }
+              value={null}
             />
           </Styled(Item)>
           <Styled(Item)
@@ -1209,32 +2266,16 @@ ShallowWrapper {
             bordered={true}
             placeholder="Content (Compulsory)"
             style={
-              Object {
-                "height": 100,
-              }
+              Array [
+                Object {
+                  "height": 100,
+                },
+                Object {
+                  "marginTop": 10,
+                },
+              ]
             }
           />
-          <Styled(Button)
-            dark={false}
-            full={true}
-            light={true}
-            onPress={[Function]}
-            style={
-              Object {
-                "marginTop": 10,
-              }
-            }
-          >
-            <Styled(Text)
-              style={
-                Object {
-                  "fontSize": 15,
-                }
-              }
-            >
-              As Native Post
-            </Styled(Text)>
-          </Styled(Button)>
         </Styled(Form)>,
         <Styled(ViewNB)
           style={
@@ -1292,15 +2333,20 @@ ShallowWrapper {
               regular={true}
             >
               <Styled(Input)
+                disabled={false}
                 placeholder="Title (Compulsory)"
                 style={
-                  Object {
-                    "fontSize": 15,
-                    "height": 30,
-                    "paddingLeft": 10,
-                    "paddingRight": 5,
-                  }
+                  Array [
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    },
+                    undefined,
+                  ]
                 }
+                value={null}
               />
             </Styled(Item)>,
             <Styled(Item)
@@ -1311,10 +2357,12 @@ ShallowWrapper {
                     "marginTop": 10,
                   },
                   false,
+                  undefined,
                 ]
               }
             >
               <Styled(Input)
+                disabled={false}
                 placeholder="Subtitle"
                 style={
                   Object {
@@ -1324,6 +2372,7 @@ ShallowWrapper {
                     "paddingRight": 5,
                   }
                 }
+                value={null}
               />
             </Styled(Item)>,
             <Styled(Item)
@@ -1353,32 +2402,17 @@ ShallowWrapper {
               bordered={true}
               placeholder="Content (Compulsory)"
               style={
-                Object {
-                  "height": 100,
-                }
+                Array [
+                  Object {
+                    "height": 100,
+                  },
+                  Object {
+                    "marginTop": 10,
+                  },
+                ]
               }
             />,
-            <Styled(Button)
-              dark={false}
-              full={true}
-              light={true}
-              onPress={[Function]}
-              style={
-                Object {
-                  "marginTop": 10,
-                }
-              }
-            >
-              <Styled(Text)
-                style={
-                  Object {
-                    "fontSize": 15,
-                  }
-                }
-              >
-                As Native Post
-              </Styled(Text)>
-            </Styled(Button)>,
+            undefined,
           ],
           "virtual": undefined,
         },
@@ -1390,17 +2424,23 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": <Styled(Input)
+                disabled={false}
                 placeholder="Title (Compulsory)"
                 style={
-                  Object {
-                    "fontSize": 15,
-                    "height": 30,
-                    "paddingLeft": 10,
-                    "paddingRight": 5,
-                  }
+                  Array [
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    },
+                    undefined,
+                  ]
                 }
+                value={null}
               />,
               "regular": true,
+              "style": undefined,
               "virtual": undefined,
             },
             "ref": null,
@@ -1409,14 +2449,19 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
+                "disabled": false,
                 "onChangeText": undefined,
                 "placeholder": "Title (Compulsory)",
-                "style": Object {
-                  "fontSize": 15,
-                  "height": 30,
-                  "paddingLeft": 10,
-                  "paddingRight": 5,
-                },
+                "style": Array [
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  },
+                  undefined,
+                ],
+                "value": null,
                 "virtual": undefined,
               },
               "ref": null,
@@ -1431,6 +2476,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": <Styled(Input)
+                disabled={false}
                 placeholder="Subtitle"
                 style={
                   Object {
@@ -1440,6 +2486,7 @@ ShallowWrapper {
                     "paddingRight": 5,
                   }
                 }
+                value={null}
               />,
               "regular": true,
               "style": Array [
@@ -1447,6 +2494,7 @@ ShallowWrapper {
                   "marginTop": 10,
                 },
                 false,
+                undefined,
               ],
               "virtual": undefined,
             },
@@ -1456,6 +2504,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
+                "disabled": false,
                 "onChangeText": undefined,
                 "placeholder": "Subtitle",
                 "style": Object {
@@ -1464,6 +2513,7 @@ ShallowWrapper {
                   "paddingLeft": 10,
                   "paddingRight": 5,
                 },
+                "value": null,
                 "virtual": undefined,
               },
               "ref": null,
@@ -1527,56 +2577,21 @@ ShallowWrapper {
               "bordered": true,
               "onChangeText": undefined,
               "placeholder": "Content (Compulsory)",
-              "style": Object {
-                "height": 100,
-              },
+              "style": Array [
+                Object {
+                  "height": 100,
+                },
+                Object {
+                  "marginTop": 10,
+                },
+              ],
               "virtual": undefined,
             },
             "ref": null,
             "rendered": null,
             "type": [Function],
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": <Styled(Text)
-                style={
-                  Object {
-                    "fontSize": 15,
-                  }
-                }
-              >
-                As Native Post
-              </Styled(Text)>,
-              "dark": false,
-              "full": true,
-              "light": true,
-              "onPress": [Function],
-              "style": Object {
-                "marginTop": 10,
-              },
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "As Native Post",
-                "style": Object {
-                  "fontSize": 15,
-                },
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": "As Native Post",
-              "type": [Function],
-            },
-            "type": [Function],
-          },
+          undefined,
         ],
         "type": [Function],
       },
@@ -1687,15 +2702,20 @@ ShallowWrapper {
               regular={true}
             >
               <Styled(Input)
+                disabled={false}
                 placeholder="Title (Compulsory)"
                 style={
-                  Object {
-                    "fontSize": 15,
-                    "height": 30,
-                    "paddingLeft": 10,
-                    "paddingRight": 5,
-                  }
+                  Array [
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    },
+                    undefined,
+                  ]
                 }
+                value={null}
               />
             </Styled(Item)>
             <Styled(Item)
@@ -1706,10 +2726,12 @@ ShallowWrapper {
                     "marginTop": 10,
                   },
                   false,
+                  undefined,
                 ]
               }
             >
               <Styled(Input)
+                disabled={false}
                 placeholder="Subtitle"
                 style={
                   Object {
@@ -1719,6 +2741,7 @@ ShallowWrapper {
                     "paddingRight": 5,
                   }
                 }
+                value={null}
               />
             </Styled(Item)>
             <Styled(Item)
@@ -1748,32 +2771,16 @@ ShallowWrapper {
               bordered={true}
               placeholder="Content (Compulsory)"
               style={
-                Object {
-                  "height": 100,
-                }
+                Array [
+                  Object {
+                    "height": 100,
+                  },
+                  Object {
+                    "marginTop": 10,
+                  },
+                ]
               }
             />
-            <Styled(Button)
-              dark={false}
-              full={true}
-              light={true}
-              onPress={[Function]}
-              style={
-                Object {
-                  "marginTop": 10,
-                }
-              }
-            >
-              <Styled(Text)
-                style={
-                  Object {
-                    "fontSize": 15,
-                  }
-                }
-              >
-                As Native Post
-              </Styled(Text)>
-            </Styled(Button)>
           </Styled(Form)>,
           <Styled(ViewNB)
             style={
@@ -1831,15 +2838,20 @@ ShallowWrapper {
                 regular={true}
               >
                 <Styled(Input)
+                  disabled={false}
                   placeholder="Title (Compulsory)"
                   style={
-                    Object {
-                      "fontSize": 15,
-                      "height": 30,
-                      "paddingLeft": 10,
-                      "paddingRight": 5,
-                    }
+                    Array [
+                      Object {
+                        "fontSize": 15,
+                        "height": 30,
+                        "paddingLeft": 10,
+                        "paddingRight": 5,
+                      },
+                      undefined,
+                    ]
                   }
+                  value={null}
                 />
               </Styled(Item)>,
               <Styled(Item)
@@ -1850,10 +2862,12 @@ ShallowWrapper {
                       "marginTop": 10,
                     },
                     false,
+                    undefined,
                   ]
                 }
               >
                 <Styled(Input)
+                  disabled={false}
                   placeholder="Subtitle"
                   style={
                     Object {
@@ -1863,6 +2877,7 @@ ShallowWrapper {
                       "paddingRight": 5,
                     }
                   }
+                  value={null}
                 />
               </Styled(Item)>,
               <Styled(Item)
@@ -1892,32 +2907,17 @@ ShallowWrapper {
                 bordered={true}
                 placeholder="Content (Compulsory)"
                 style={
-                  Object {
-                    "height": 100,
-                  }
+                  Array [
+                    Object {
+                      "height": 100,
+                    },
+                    Object {
+                      "marginTop": 10,
+                    },
+                  ]
                 }
               />,
-              <Styled(Button)
-                dark={false}
-                full={true}
-                light={true}
-                onPress={[Function]}
-                style={
-                  Object {
-                    "marginTop": 10,
-                  }
-                }
-              >
-                <Styled(Text)
-                  style={
-                    Object {
-                      "fontSize": 15,
-                    }
-                  }
-                >
-                  As Native Post
-                </Styled(Text)>
-              </Styled(Button)>,
+              undefined,
             ],
             "virtual": undefined,
           },
@@ -1929,17 +2929,23 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": <Styled(Input)
+                  disabled={false}
                   placeholder="Title (Compulsory)"
                   style={
-                    Object {
-                      "fontSize": 15,
-                      "height": 30,
-                      "paddingLeft": 10,
-                      "paddingRight": 5,
-                    }
+                    Array [
+                      Object {
+                        "fontSize": 15,
+                        "height": 30,
+                        "paddingLeft": 10,
+                        "paddingRight": 5,
+                      },
+                      undefined,
+                    ]
                   }
+                  value={null}
                 />,
                 "regular": true,
+                "style": undefined,
                 "virtual": undefined,
               },
               "ref": null,
@@ -1948,14 +2954,19 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
+                  "disabled": false,
                   "onChangeText": undefined,
                   "placeholder": "Title (Compulsory)",
-                  "style": Object {
-                    "fontSize": 15,
-                    "height": 30,
-                    "paddingLeft": 10,
-                    "paddingRight": 5,
-                  },
+                  "style": Array [
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    },
+                    undefined,
+                  ],
+                  "value": null,
                   "virtual": undefined,
                 },
                 "ref": null,
@@ -1970,6 +2981,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": <Styled(Input)
+                  disabled={false}
                   placeholder="Subtitle"
                   style={
                     Object {
@@ -1979,6 +2991,7 @@ ShallowWrapper {
                       "paddingRight": 5,
                     }
                   }
+                  value={null}
                 />,
                 "regular": true,
                 "style": Array [
@@ -1986,6 +2999,7 @@ ShallowWrapper {
                     "marginTop": 10,
                   },
                   false,
+                  undefined,
                 ],
                 "virtual": undefined,
               },
@@ -1995,6 +3009,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
+                  "disabled": false,
                   "onChangeText": undefined,
                   "placeholder": "Subtitle",
                   "style": Object {
@@ -2003,6 +3018,7 @@ ShallowWrapper {
                     "paddingLeft": 10,
                     "paddingRight": 5,
                   },
+                  "value": null,
                   "virtual": undefined,
                 },
                 "ref": null,
@@ -2066,56 +3082,21 @@ ShallowWrapper {
                 "bordered": true,
                 "onChangeText": undefined,
                 "placeholder": "Content (Compulsory)",
-                "style": Object {
-                  "height": 100,
-                },
+                "style": Array [
+                  Object {
+                    "height": 100,
+                  },
+                  Object {
+                    "marginTop": 10,
+                  },
+                ],
                 "virtual": undefined,
               },
               "ref": null,
               "rendered": null,
               "type": [Function],
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": <Styled(Text)
-                  style={
-                    Object {
-                      "fontSize": 15,
-                    }
-                  }
-                >
-                  As Native Post
-                </Styled(Text)>,
-                "dark": false,
-                "full": true,
-                "light": true,
-                "onPress": [Function],
-                "style": Object {
-                  "marginTop": 10,
-                },
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "As Native Post",
-                  "style": Object {
-                    "fontSize": 15,
-                  },
-                  "virtual": undefined,
-                },
-                "ref": null,
-                "rendered": "As Native Post",
-                "type": [Function],
-              },
-              "type": [Function],
-            },
+            undefined,
           ],
           "type": [Function],
         },
@@ -2249,7 +3230,6 @@ ShallowWrapper {
         "title": [Function],
       }
     }
-    onToggleMode={[Function]}
     screenHeight={300}
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -2272,16 +3252,21 @@ ShallowWrapper {
             regular={true}
           >
             <Styled(Input)
+              disabled={false}
               onChangeText={[Function]}
               placeholder="Title (Compulsory)"
               style={
-                Object {
-                  "fontSize": 15,
-                  "height": 30,
-                  "paddingLeft": 10,
-                  "paddingRight": 5,
-                }
+                Array [
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  },
+                  undefined,
+                ]
               }
+              value={null}
             />
           </Styled(Item)>
           <Styled(Item)
@@ -2292,10 +3277,12 @@ ShallowWrapper {
                   "marginTop": 10,
                 },
                 false,
+                undefined,
               ]
             }
           >
             <Styled(Input)
+              disabled={false}
               placeholder="Subtitle"
               style={
                 Object {
@@ -2305,6 +3292,7 @@ ShallowWrapper {
                   "paddingRight": 5,
                 }
               }
+              value={null}
             />
           </Styled(Item)>
           <Styled(Item)
@@ -2334,32 +3322,16 @@ ShallowWrapper {
             bordered={true}
             placeholder="Content (Compulsory)"
             style={
-              Object {
-                "height": 100,
-              }
+              Array [
+                Object {
+                  "height": 100,
+                },
+                Object {
+                  "marginTop": 10,
+                },
+              ]
             }
           />
-          <Styled(Button)
-            dark={false}
-            full={true}
-            light={true}
-            onPress={[Function]}
-            style={
-              Object {
-                "marginTop": 10,
-              }
-            }
-          >
-            <Styled(Text)
-              style={
-                Object {
-                  "fontSize": 15,
-                }
-              }
-            >
-              As Native Post
-            </Styled(Text)>
-          </Styled(Button)>
         </Styled(Form)>,
         <Styled(ViewNB)
           style={
@@ -2417,16 +3389,21 @@ ShallowWrapper {
               regular={true}
             >
               <Styled(Input)
+                disabled={false}
                 onChangeText={[Function]}
                 placeholder="Title (Compulsory)"
                 style={
-                  Object {
-                    "fontSize": 15,
-                    "height": 30,
-                    "paddingLeft": 10,
-                    "paddingRight": 5,
-                  }
+                  Array [
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    },
+                    undefined,
+                  ]
                 }
+                value={null}
               />
             </Styled(Item)>,
             <Styled(Item)
@@ -2437,10 +3414,12 @@ ShallowWrapper {
                     "marginTop": 10,
                   },
                   false,
+                  undefined,
                 ]
               }
             >
               <Styled(Input)
+                disabled={false}
                 placeholder="Subtitle"
                 style={
                   Object {
@@ -2450,6 +3429,7 @@ ShallowWrapper {
                     "paddingRight": 5,
                   }
                 }
+                value={null}
               />
             </Styled(Item)>,
             <Styled(Item)
@@ -2479,32 +3459,17 @@ ShallowWrapper {
               bordered={true}
               placeholder="Content (Compulsory)"
               style={
-                Object {
-                  "height": 100,
-                }
+                Array [
+                  Object {
+                    "height": 100,
+                  },
+                  Object {
+                    "marginTop": 10,
+                  },
+                ]
               }
             />,
-            <Styled(Button)
-              dark={false}
-              full={true}
-              light={true}
-              onPress={[Function]}
-              style={
-                Object {
-                  "marginTop": 10,
-                }
-              }
-            >
-              <Styled(Text)
-                style={
-                  Object {
-                    "fontSize": 15,
-                  }
-                }
-              >
-                As Native Post
-              </Styled(Text)>
-            </Styled(Button)>,
+            undefined,
           ],
           "virtual": undefined,
         },
@@ -2516,18 +3481,24 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": <Styled(Input)
+                disabled={false}
                 onChangeText={[Function]}
                 placeholder="Title (Compulsory)"
                 style={
-                  Object {
-                    "fontSize": 15,
-                    "height": 30,
-                    "paddingLeft": 10,
-                    "paddingRight": 5,
-                  }
+                  Array [
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    },
+                    undefined,
+                  ]
                 }
+                value={null}
               />,
               "regular": true,
+              "style": undefined,
               "virtual": undefined,
             },
             "ref": null,
@@ -2536,14 +3507,19 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
+                "disabled": false,
                 "onChangeText": [Function],
                 "placeholder": "Title (Compulsory)",
-                "style": Object {
-                  "fontSize": 15,
-                  "height": 30,
-                  "paddingLeft": 10,
-                  "paddingRight": 5,
-                },
+                "style": Array [
+                  Object {
+                    "fontSize": 15,
+                    "height": 30,
+                    "paddingLeft": 10,
+                    "paddingRight": 5,
+                  },
+                  undefined,
+                ],
+                "value": null,
                 "virtual": undefined,
               },
               "ref": null,
@@ -2558,6 +3534,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": <Styled(Input)
+                disabled={false}
                 placeholder="Subtitle"
                 style={
                   Object {
@@ -2567,6 +3544,7 @@ ShallowWrapper {
                     "paddingRight": 5,
                   }
                 }
+                value={null}
               />,
               "regular": true,
               "style": Array [
@@ -2574,6 +3552,7 @@ ShallowWrapper {
                   "marginTop": 10,
                 },
                 false,
+                undefined,
               ],
               "virtual": undefined,
             },
@@ -2583,6 +3562,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
+                "disabled": false,
                 "onChangeText": undefined,
                 "placeholder": "Subtitle",
                 "style": Object {
@@ -2591,6 +3571,7 @@ ShallowWrapper {
                   "paddingLeft": 10,
                   "paddingRight": 5,
                 },
+                "value": null,
                 "virtual": undefined,
               },
               "ref": null,
@@ -2654,56 +3635,21 @@ ShallowWrapper {
               "bordered": true,
               "onChangeText": undefined,
               "placeholder": "Content (Compulsory)",
-              "style": Object {
-                "height": 100,
-              },
+              "style": Array [
+                Object {
+                  "height": 100,
+                },
+                Object {
+                  "marginTop": 10,
+                },
+              ],
               "virtual": undefined,
             },
             "ref": null,
             "rendered": null,
             "type": [Function],
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": <Styled(Text)
-                style={
-                  Object {
-                    "fontSize": 15,
-                  }
-                }
-              >
-                As Native Post
-              </Styled(Text)>,
-              "dark": false,
-              "full": true,
-              "light": true,
-              "onPress": [Function],
-              "style": Object {
-                "marginTop": 10,
-              },
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "As Native Post",
-                "style": Object {
-                  "fontSize": 15,
-                },
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": "As Native Post",
-              "type": [Function],
-            },
-            "type": [Function],
-          },
+          undefined,
         ],
         "type": [Function],
       },
@@ -2814,16 +3760,21 @@ ShallowWrapper {
               regular={true}
             >
               <Styled(Input)
+                disabled={false}
                 onChangeText={[Function]}
                 placeholder="Title (Compulsory)"
                 style={
-                  Object {
-                    "fontSize": 15,
-                    "height": 30,
-                    "paddingLeft": 10,
-                    "paddingRight": 5,
-                  }
+                  Array [
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    },
+                    undefined,
+                  ]
                 }
+                value={null}
               />
             </Styled(Item)>
             <Styled(Item)
@@ -2834,10 +3785,12 @@ ShallowWrapper {
                     "marginTop": 10,
                   },
                   false,
+                  undefined,
                 ]
               }
             >
               <Styled(Input)
+                disabled={false}
                 placeholder="Subtitle"
                 style={
                   Object {
@@ -2847,6 +3800,7 @@ ShallowWrapper {
                     "paddingRight": 5,
                   }
                 }
+                value={null}
               />
             </Styled(Item)>
             <Styled(Item)
@@ -2876,32 +3830,16 @@ ShallowWrapper {
               bordered={true}
               placeholder="Content (Compulsory)"
               style={
-                Object {
-                  "height": 100,
-                }
+                Array [
+                  Object {
+                    "height": 100,
+                  },
+                  Object {
+                    "marginTop": 10,
+                  },
+                ]
               }
             />
-            <Styled(Button)
-              dark={false}
-              full={true}
-              light={true}
-              onPress={[Function]}
-              style={
-                Object {
-                  "marginTop": 10,
-                }
-              }
-            >
-              <Styled(Text)
-                style={
-                  Object {
-                    "fontSize": 15,
-                  }
-                }
-              >
-                As Native Post
-              </Styled(Text)>
-            </Styled(Button)>
           </Styled(Form)>,
           <Styled(ViewNB)
             style={
@@ -2959,16 +3897,21 @@ ShallowWrapper {
                 regular={true}
               >
                 <Styled(Input)
+                  disabled={false}
                   onChangeText={[Function]}
                   placeholder="Title (Compulsory)"
                   style={
-                    Object {
-                      "fontSize": 15,
-                      "height": 30,
-                      "paddingLeft": 10,
-                      "paddingRight": 5,
-                    }
+                    Array [
+                      Object {
+                        "fontSize": 15,
+                        "height": 30,
+                        "paddingLeft": 10,
+                        "paddingRight": 5,
+                      },
+                      undefined,
+                    ]
                   }
+                  value={null}
                 />
               </Styled(Item)>,
               <Styled(Item)
@@ -2979,10 +3922,12 @@ ShallowWrapper {
                       "marginTop": 10,
                     },
                     false,
+                    undefined,
                   ]
                 }
               >
                 <Styled(Input)
+                  disabled={false}
                   placeholder="Subtitle"
                   style={
                     Object {
@@ -2992,6 +3937,7 @@ ShallowWrapper {
                       "paddingRight": 5,
                     }
                   }
+                  value={null}
                 />
               </Styled(Item)>,
               <Styled(Item)
@@ -3021,32 +3967,17 @@ ShallowWrapper {
                 bordered={true}
                 placeholder="Content (Compulsory)"
                 style={
-                  Object {
-                    "height": 100,
-                  }
+                  Array [
+                    Object {
+                      "height": 100,
+                    },
+                    Object {
+                      "marginTop": 10,
+                    },
+                  ]
                 }
               />,
-              <Styled(Button)
-                dark={false}
-                full={true}
-                light={true}
-                onPress={[Function]}
-                style={
-                  Object {
-                    "marginTop": 10,
-                  }
-                }
-              >
-                <Styled(Text)
-                  style={
-                    Object {
-                      "fontSize": 15,
-                    }
-                  }
-                >
-                  As Native Post
-                </Styled(Text)>
-              </Styled(Button)>,
+              undefined,
             ],
             "virtual": undefined,
           },
@@ -3058,18 +3989,24 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": <Styled(Input)
+                  disabled={false}
                   onChangeText={[Function]}
                   placeholder="Title (Compulsory)"
                   style={
-                    Object {
-                      "fontSize": 15,
-                      "height": 30,
-                      "paddingLeft": 10,
-                      "paddingRight": 5,
-                    }
+                    Array [
+                      Object {
+                        "fontSize": 15,
+                        "height": 30,
+                        "paddingLeft": 10,
+                        "paddingRight": 5,
+                      },
+                      undefined,
+                    ]
                   }
+                  value={null}
                 />,
                 "regular": true,
+                "style": undefined,
                 "virtual": undefined,
               },
               "ref": null,
@@ -3078,14 +4015,19 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
+                  "disabled": false,
                   "onChangeText": [Function],
                   "placeholder": "Title (Compulsory)",
-                  "style": Object {
-                    "fontSize": 15,
-                    "height": 30,
-                    "paddingLeft": 10,
-                    "paddingRight": 5,
-                  },
+                  "style": Array [
+                    Object {
+                      "fontSize": 15,
+                      "height": 30,
+                      "paddingLeft": 10,
+                      "paddingRight": 5,
+                    },
+                    undefined,
+                  ],
+                  "value": null,
                   "virtual": undefined,
                 },
                 "ref": null,
@@ -3100,6 +4042,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": <Styled(Input)
+                  disabled={false}
                   placeholder="Subtitle"
                   style={
                     Object {
@@ -3109,6 +4052,7 @@ ShallowWrapper {
                       "paddingRight": 5,
                     }
                   }
+                  value={null}
                 />,
                 "regular": true,
                 "style": Array [
@@ -3116,6 +4060,7 @@ ShallowWrapper {
                     "marginTop": 10,
                   },
                   false,
+                  undefined,
                 ],
                 "virtual": undefined,
               },
@@ -3125,6 +4070,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
+                  "disabled": false,
                   "onChangeText": undefined,
                   "placeholder": "Subtitle",
                   "style": Object {
@@ -3133,6 +4079,7 @@ ShallowWrapper {
                     "paddingLeft": 10,
                     "paddingRight": 5,
                   },
+                  "value": null,
                   "virtual": undefined,
                 },
                 "ref": null,
@@ -3196,56 +4143,21 @@ ShallowWrapper {
                 "bordered": true,
                 "onChangeText": undefined,
                 "placeholder": "Content (Compulsory)",
-                "style": Object {
-                  "height": 100,
-                },
+                "style": Array [
+                  Object {
+                    "height": 100,
+                  },
+                  Object {
+                    "marginTop": 10,
+                  },
+                ],
                 "virtual": undefined,
               },
               "ref": null,
               "rendered": null,
               "type": [Function],
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": <Styled(Text)
-                  style={
-                    Object {
-                      "fontSize": 15,
-                    }
-                  }
-                >
-                  As Native Post
-                </Styled(Text)>,
-                "dark": false,
-                "full": true,
-                "light": true,
-                "onPress": [Function],
-                "style": Object {
-                  "marginTop": 10,
-                },
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "As Native Post",
-                  "style": Object {
-                    "fontSize": 15,
-                  },
-                  "virtual": undefined,
-                },
-                "ref": null,
-                "rendered": "As Native Post",
-                "type": [Function],
-              },
-              "type": [Function],
-            },
+            undefined,
           ],
           "type": [Function],
         },

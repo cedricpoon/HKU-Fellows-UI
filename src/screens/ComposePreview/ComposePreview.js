@@ -12,7 +12,7 @@ import { show } from 'hkufui/src/toastHelper';
 
 import postStyles from '../Post/Styles';
 import styles from './Styles';
-import { onCompose } from './createActions';
+import { onCompose, onReply } from './createActions';
 
 const locale = localize({ country: 'hk', language: 'en' });
 const alert = (message, duration, success = false) => {
@@ -22,7 +22,7 @@ const alert = (message, duration, success = false) => {
 export class ComposePreview extends Component {
   constructor(props) {
     super(props);
-    this.state = { title: '', subtitle: null, hashtags: null, content: '', anonymity: false, native: true };
+    this.state = { title: '', subtitle: null, hashtags: null, content: '', anonymity: false, native: true, reply: false };
     this._composePost = this._composePost.bind(this);
   }
 
@@ -36,16 +36,23 @@ export class ComposePreview extends Component {
   }
 
   _composePost() {
-    const { onComposeNative, onComposeMoodle } = this.props;
-    const { title, subtitle, hashtags, content, anonymity, native } = this.state;
-    if (native)
-      onComposeNative({ title, subtitle, hashtags, content, anonymity });
-    else
-      onComposeMoodle({ title, content });
+    const { onComposeNative, onComposeMoodle, onReplyNative, onReplyMoodle } = this.props;
+    const { title, subtitle, hashtags, content, anonymity, native, reply } = this.state;
+    if (reply) {
+      if (native)
+        onReplyNative({ content, anonymity });
+      else
+        onReplyMoodle({ content });
+    } else {
+      if (native)
+        onComposeNative({ title, subtitle, hashtags, content, anonymity });
+      else
+        onComposeMoodle({ title, content });
+    }
   }
 
   render() {
-    const { title, subtitle, content, anonymity, native } = this.state;
+    const { title, subtitle, content, anonymity, native, reply } = this.state;
     const { username, status } = this.props;
 
     return (
@@ -71,7 +78,7 @@ export class ComposePreview extends Component {
             id: '0'.repeat(64), /* mock of SHA-256 hash */
             author: anonymity ? null : username,
             timestamp: format(Date.now()),
-            content: `*{ ${locale['new.previewWordings']} }*\n\n${content}`,
+            content: `*{ ${!reply ? locale['new.previewWordings'] : locale['new.replyWordings']} }*\n\n${content}`,
             temperature: 0 /* no temperature at first */
           }] : null}
           native={native}
@@ -85,6 +92,8 @@ ComposePreview.propTypes = {
   username: PropTypes.string,
   onComposeNative: PropTypes.func.isRequired,
   onComposeMoodle: PropTypes.func.isRequired,
+  onReplyNative: PropTypes.func.isRequired,
+  onReplyMoodle: PropTypes.func.isRequired,
   status: PropTypes.oneOf([ STILL, LOADING ])
 }
 
@@ -96,13 +105,28 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   onComposeNative: ({ title, subtitle, hashtags, content, anonymity }) => {
     dispatch(onCompose({
-      payload: { title, subtitle, hashtag: hashtags, content, anonymous: anonymity ? 1 : 0 },
+      payload: {
+        title, subtitle, content, anonymous: anonymity ? '1' : '0',
+        hashtag: hashtags && encodeURI(JSON.stringify(hashtags))
+      },
       alert, native: true
     }));
   },
   onComposeMoodle: ({ title, content }) => {
     dispatch(onCompose({
       payload: { title, content },
+      alert, native: false
+    }));
+  },
+  onReplyNative: ({ content, anonymity }) => {
+    dispatch(onReply({
+      payload: { content, anonymous: anonymity ? '1' : '0' },
+      alert, native: true
+    }));
+  },
+  onReplyMoodle: ({ content }) => {
+    dispatch(onReply({
+      payload: { content },
       alert, native: false
     }));
   }

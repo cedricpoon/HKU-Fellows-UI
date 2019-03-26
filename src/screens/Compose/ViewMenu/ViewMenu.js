@@ -12,10 +12,9 @@ const locale = localize({ language: 'en', country: 'hk' });
 class ViewMenu extends Component {
   constructor(props) {
     super(props);
-    this._showPreview = this._showPreview.bind(this);
   }
 
-  _showPreview(anonymity) {
+  _showPreview = (anonymity) => {
     this._popup.toggle();
     NavigationService.navigate('ComposePreview', {
       anonymity,

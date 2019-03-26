@@ -23,7 +23,6 @@ export class ComposePreview extends Component {
   constructor(props) {
     super(props);
     this.state = { title: '', subtitle: null, hashtags: null, content: '', anonymity: false, native: true, reply: false };
-    this._composePost = this._composePost.bind(this);
   }
 
   componentDidMount() {
@@ -35,7 +34,7 @@ export class ComposePreview extends Component {
     }
   }
 
-  _composePost() {
+  _composePost = () => {
     const { onComposeNative, onComposeMoodle, onReplyNative, onReplyMoodle } = this.props;
     const { title, subtitle, hashtags, content, anonymity, native, reply } = this.state;
     if (reply) {

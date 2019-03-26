@@ -12,22 +12,18 @@ const locale = localize({ language: 'en', country: 'hk' });
 import styles from './Styles'
 
 class PreviewHeader extends Component {
-
   constructor(props) {
     super(props);
     this.state = { inputFocused: false, query: '' };
-
-    this.searchBarOnFocus = this.searchBarOnFocus.bind(this);
-    this.searchCancel = this.searchCancel.bind(this);
   }
 
-  searchBarOnFocus() {
+  searchBarOnFocus = () => {
     this.setState(() => ({
       inputFocused: true
     }));
   }
 
-  searchCancel() {
+  searchCancel = () => {
     this._searchBar._root.blur();
     this._searchBar._root.clear();
 

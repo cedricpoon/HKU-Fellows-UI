@@ -15,10 +15,9 @@ class PopupMenu extends Component {
     const _menuLayout = {};
     _menuLayout['width'] = 0;
     this.state = { menuLayout: _menuLayout, toggleFlag: false };
-    this.toggle = this.toggle.bind(this);
   }
 
-  toggle() {
+  toggle = () => {
     this.setState({ toggleFlag: !this.state.toggleFlag });
   }
 

@@ -12,8 +12,7 @@ import { noZ } from '../helper';
 const locale = localize({ language: 'en', country: 'hk' });
 
 class PostPreview extends PureComponent {
-
-  _onPress() {
+  _onPress = () => {
     /* dive into post with all props */
     NavigationService.navigate('Post', {
       ...this.props
@@ -43,7 +42,7 @@ class PostPreview extends PureComponent {
       hashtagText = locale['post.moodle'];
 
     return(
-      <ListItem avatar style={styles.noMarginLeft} onPress={this._onPress.bind(this)}>
+      <ListItem avatar style={styles.noMarginLeft} onPress={this._onPress}>
         <Left style={styles.badgeContainer}>
           {native && solved && (
             <Icon style={[styles.badge, styles.solved]} type="MaterialCommunityIcons" name="checkbox-marked-circle-outline" />

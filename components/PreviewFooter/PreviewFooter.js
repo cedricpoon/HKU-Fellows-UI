@@ -7,20 +7,17 @@ import FilterPopup from './FilterPopup/FilterPopup';
 import { mapLayoutToState } from 'hkufui/components/helper';
 
 class PreviewFooter extends Component {
-
   constructor(props) {
     super(props);
     this.state = { footerLayout: { y: 0 }, filterLayout: { x: 0 } };
-
-    this.filterToggle = this.filterToggle.bind(this);
   }
 
-  filterToggle() {
+  filterToggle = () => {
     if (this._popup)
       this._popup.toggle();
   }
 
-  _renderFilterPopup() {
+  _renderFilterPopup = () => {
     const { filterLayout, footerLayout } = this.state;
     const { popupProps } = this.props;
     return(

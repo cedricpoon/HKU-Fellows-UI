@@ -20,20 +20,14 @@ class CourseScrollable extends Component {
 
   constructor(props) {
     super(props);
-
     this.state = { mounted: false }
-
-    this._renderHeader = this._renderHeader.bind(this);
-    this._renderContent = this._renderContent.bind(this);
-    this._setSelectedWrapper = this._setSelectedWrapper.bind(this);
-    this.collapseAll = this.collapseAll.bind(this);
   }
 
-  collapseAll() {
+  collapseAll = () => {
     this._rootAccordion.setSelected(-1);
   }
 
-  _setSelectedWrapper(ref, pid) {
+  _setSelectedWrapper = (ref, pid) => {
     const { list, onSetSelectCourseIndex } = this.props;
 
     return (index) => {
@@ -51,7 +45,7 @@ class CourseScrollable extends Component {
     };
   }
 
-  _renderHeader({title, inner}, expanded) {
+  _renderHeader = ({title, inner}, expanded) => {
     const activeStyle = inner ? styles.active : styles.exoActive;
 
     return (
@@ -81,7 +75,7 @@ class CourseScrollable extends Component {
     );
   }
 
-  _renderContent({children, links, id}) {
+  _renderContent = ({children, links, id}) => {
     const { onItemPressWrapper, list, expandedList } = this.props;
     const { mounted } = this.state;
 

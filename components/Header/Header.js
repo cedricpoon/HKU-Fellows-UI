@@ -14,12 +14,10 @@ const subtitleAnimationDuration = 500;
 class Header extends Component {
   constructor(props) {
     super(props);
-
     this.state = { subtitle: this.props.subtitle };
-    this.setSubtitle = this.setSubtitle.bind(this);
   }
 
-  setSubtitle(subtitle = null) {
+  setSubtitle = (subtitle = null) => {
     this.setState({
       subtitle: subtitle
     });

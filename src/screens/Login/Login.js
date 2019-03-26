@@ -19,10 +19,9 @@ const isAuthenticated = (credential) => credential && Object.keys(credential).le
 export class Login extends Component {
   constructor(props) {
     super(props);
-    this._redirect = this._redirect.bind(this);
   }
 
-  _redirect() {
+  _redirect = () => {
     const { credential, navigation } = this.props;
 
     if (isAuthenticated(credential)) {

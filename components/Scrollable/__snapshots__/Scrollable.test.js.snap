@@ -1,92 +1,52 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Testing Scrollable Component renders as expected with onUnmount event 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Scrollable
-    itemRenderer={[Function]}
-    items={Array []}
-    onUnmount={[Function]}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): null,
-  Symbol(enzyme.__nodes__): Array [
-    null,
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-  Symbol(enzyme.__childContext__): null,
-}
+<withAnimatable(FlatList)
+  animation="fadeIn"
+  data={
+    Array [
+      "a",
+      "b",
+      "c",
+    ]
+  }
+  delay={0}
+  direction="normal"
+  duration={250}
+  iterationCount={1}
+  iterationDelay={0}
+  keyExtractor={[Function]}
+  onAnimationBegin={[Function]}
+  onAnimationEnd={[Function]}
+  onTransitionBegin={[Function]}
+  onTransitionEnd={[Function]}
+  onUnmount={[Function]}
+  renderItem={[Function]}
+  useNativeDriver={false}
+/>
 `;
 
 exports[`Testing Scrollable Component renders as expected with posts 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Scrollable
-    itemRenderer={[Function]}
-    items={Array []}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): null,
-  Symbol(enzyme.__nodes__): Array [
-    null,
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-  Symbol(enzyme.__childContext__): null,
-}
+<withAnimatable(FlatList)
+  animation="fadeIn"
+  data={
+    Array [
+      "a",
+      "b",
+      "c",
+    ]
+  }
+  delay={0}
+  direction="normal"
+  duration={250}
+  iterationCount={1}
+  iterationDelay={0}
+  keyExtractor={[Function]}
+  onAnimationBegin={[Function]}
+  onAnimationEnd={[Function]}
+  onTransitionBegin={[Function]}
+  onTransitionEnd={[Function]}
+  renderItem={[Function]}
+  useNativeDriver={false}
+/>
 `;

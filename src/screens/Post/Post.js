@@ -30,18 +30,14 @@ export class Post extends Component {
       currentPage: 0,
       headerLayout: { y: 0, height: 0 }
     };
-    this._openHeaderMenu = this._openHeaderMenu.bind(this);
-    this._renderHeaderMenu = this._renderHeaderMenu.bind(this);
-    this._onPostTabChange = this._onPostTabChange.bind(this);
-    this._reply = this._reply.bind(this);
   }
 
-  _openHeaderMenu() {
+  _openHeaderMenu = () => {
     if (this._popup)
       this._popup.toggle();
   }
 
-  _renderHeaderMenu() {
+  _renderHeaderMenu = () => {
     const { comments, topicInfo } = this.props;
     const { headerLayout, currentPage, id } = this.state;
     const { width } = Dimensions.get("window");
@@ -62,11 +58,11 @@ export class Post extends Component {
     );
   }
 
-  _onPostTabChange({i}) {
+  _onPostTabChange = ({i}) => {
     this.setState({ currentPage: i });
   }
 
-  _reply() {
+  _reply = () => {
     const { topicInfo } = this.props;
     const { title, subtitle, native } = topicInfo;
 

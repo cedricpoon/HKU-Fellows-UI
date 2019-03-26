@@ -1,11 +1,15 @@
 import React from 'react';
+import { View } from 'react-native';
 import { shallow } from 'enzyme';
+
 import Scrollable from './Scrollable';
 
 describe('Testing Scrollable Component', () => {
+  const renderer = () => (<View></View>);
+
   const requiredProps = {
-    items: [],
-    itemRenderer: () => { return null; }
+    items: ['a', 'b', 'c'],
+    itemRenderer: renderer
   };
 
   it('renders as expected with posts', () => {

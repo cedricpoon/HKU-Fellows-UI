@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+
 import BarIndicator from './BarIndicator';
 
 describe('Testing BarIndicator Component', () => {

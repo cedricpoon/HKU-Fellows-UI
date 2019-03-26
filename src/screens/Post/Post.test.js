@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+
 import { Post } from './Post';
 import defaultState from 'hkufui/src/store/globalState';
 

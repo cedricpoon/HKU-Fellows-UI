@@ -27,16 +27,9 @@ export class Compose extends Component {
       content: "",
       native: true
     };
-    this._openHeaderMenu = this._openHeaderMenu.bind(this);
-    this._renderHeaderMenu = this._renderHeaderMenu.bind(this);
-    this._renderNewHeaderMenu = this._renderNewHeaderMenu.bind(this);
-    this._renderReplyHeaderMenu = this._renderReplyHeaderMenu.bind(this);
-    this._handleTextUpdate = this._handleTextUpdate.bind(this);
-    this._toggleNativeMode = this._toggleNativeMode.bind(this);
-    this._openReplyHeaderMenu = this._openReplyHeaderMenu.bind(this);
   }
 
-  _openHeaderMenu() {
+  _openHeaderMenu = () => {
     const { title, content, hashtags, native } = this.state;
     Keyboard.dismiss();
     // compulsory not filled
@@ -52,7 +45,7 @@ export class Compose extends Component {
       NavigationService.navigate('ComposePreview', { title, content, native: false });
   }
 
-  _openReplyHeaderMenu() {
+  _openReplyHeaderMenu = () => {
     const { content } = this.state;
     const { navigation } = this.props;
     const { title, subtitle, native } = navigation.state.params;
@@ -66,17 +59,17 @@ export class Compose extends Component {
       NavigationService.navigate('ComposePreview', { reply: true, title, subtitle, content, native: false });
   }
 
-  _handleTextUpdate(name) {
+  _handleTextUpdate = (name) => {
     return (newValue) => {
       this.setState({ [name]: newValue });
     }
   }
 
-  _toggleNativeMode(isNative) {
+  _toggleNativeMode = (isNative) => {
     this.setState({ native: isNative });
   }
 
-  _renderHeaderMenu({ width, title, subtitle, hashtags, reply }) {
+  _renderHeaderMenu = ({ width, title, subtitle, hashtags, reply }) => {
     const { headerLayout, content } = this.state;
 
     return (
@@ -89,7 +82,7 @@ export class Compose extends Component {
     );
   }
 
-  _renderReplyHeaderMenu({ width }) {
+  _renderReplyHeaderMenu = ({ width }) => {
     const { navigation } = this.props;
 
     const nTitle = navigation.getParam('title', null);
@@ -98,7 +91,7 @@ export class Compose extends Component {
     return this._renderHeaderMenu({ width, title: nTitle, subtitle: nSubtitle, reply: true });
   }
 
-  _renderNewHeaderMenu({ width }) {
+  _renderNewHeaderMenu = ({ width }) => {
     const { title, subtitle, hashtags, native } = this.state;
     return this._renderHeaderMenu({
       width,

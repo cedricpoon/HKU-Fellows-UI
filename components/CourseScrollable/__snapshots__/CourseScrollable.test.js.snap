@@ -1,244 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Testing CourseScrollable Component renders as expected with course list 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <CourseScrollable
-    expandedList={Array []}
-    list={Array []}
-    onItemPressWrapper={[Function]}
-    onSetSelectCourseIndex={[Function]}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "dataArray": Array [],
-      "expanded": undefined,
-      "keyExtractor": [Function],
-      "renderContent": [Function],
-      "renderHeader": [Function],
-      "style": Object {
-        "borderWidth": 0,
-      },
-    },
-    "ref": [Function],
-    "rendered": null,
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
+<Accordion
+  dataArray={Array []}
+  keyExtractor={[Function]}
+  renderContent={[Function]}
+  renderHeader={[Function]}
+  style={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "dataArray": Array [],
-        "expanded": undefined,
-        "keyExtractor": [Function],
-        "renderContent": [Function],
-        "renderHeader": [Function],
-        "style": Object {
-          "borderWidth": 0,
-        },
-      },
-      "ref": [Function],
-      "rendered": null,
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-  Symbol(enzyme.__childContext__): null,
-}
+      "borderWidth": 0,
+    }
+  }
+/>
 `;
 
 exports[`Testing CourseScrollable Component renders as expected with course list and default expanded settings 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <CourseScrollable
-    expandedList={Array []}
-    list={Array []}
-    onItemPressWrapper={[Function]}
-    onSetSelectCourseIndex={[Function]}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "dataArray": Array [],
-      "expanded": undefined,
-      "keyExtractor": [Function],
-      "renderContent": [Function],
-      "renderHeader": [Function],
-      "style": Object {
-        "borderWidth": 0,
-      },
-    },
-    "ref": [Function],
-    "rendered": null,
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
+<Accordion
+  dataArray={Array []}
+  keyExtractor={[Function]}
+  renderContent={[Function]}
+  renderHeader={[Function]}
+  style={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "dataArray": Array [],
-        "expanded": undefined,
-        "keyExtractor": [Function],
-        "renderContent": [Function],
-        "renderHeader": [Function],
-        "style": Object {
-          "borderWidth": 0,
-        },
-      },
-      "ref": [Function],
-      "rendered": null,
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-  Symbol(enzyme.__childContext__): null,
-}
+      "borderWidth": 0,
+    }
+  }
+/>
 `;
 
 exports[`Testing CourseScrollable Component renders as expected with course list and events 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <CourseScrollable
-    expandedList={Array []}
-    list={Array []}
-    onItemPressWrapper={[Function]}
-    onSetSelectCourseIndex={[Function]}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "dataArray": Array [],
-      "expanded": undefined,
-      "keyExtractor": [Function],
-      "renderContent": [Function],
-      "renderHeader": [Function],
-      "style": Object {
-        "borderWidth": 0,
-      },
-    },
-    "ref": [Function],
-    "rendered": null,
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
+<Accordion
+  dataArray={Array []}
+  keyExtractor={[Function]}
+  renderContent={[Function]}
+  renderHeader={[Function]}
+  style={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "dataArray": Array [],
-        "expanded": undefined,
-        "keyExtractor": [Function],
-        "renderContent": [Function],
-        "renderHeader": [Function],
-        "style": Object {
-          "borderWidth": 0,
-        },
-      },
-      "ref": [Function],
-      "rendered": null,
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-  Symbol(enzyme.__childContext__): null,
-}
+      "borderWidth": 0,
+    }
+  }
+/>
 `;

@@ -7,7 +7,11 @@ import { deepLink } from 'hkufui/config';
 import appString from 'hkufui/app.json';
 
 class PostFooter extends Component {
-  async _share() {
+  constructor(props) {
+    super(props)
+  }
+
+  _share = async () => {
     const { sharePayload, title, subtitle } = this.props;
     const _subtitle = subtitle ? ` · ${subtitle}` : '';
     try {
@@ -34,7 +38,7 @@ class PostFooter extends Component {
           <Button onPress={onReply} transparent={!enableRefresh} disabled={!enableRefresh}>
             <Icon name="comment-text-outline" type="MaterialCommunityIcons" />
           </Button>
-          <Button onPress={this._share.bind(this)}>
+          <Button onPress={this._share}>
             <Icon name="share-variant" type="MaterialCommunityIcons" />
           </Button>
           <Button transparent={lastPage} disabled={lastPage} onPress={onPageChangeThunk(1)}>

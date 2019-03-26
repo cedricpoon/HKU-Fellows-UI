@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+
 import Drawer from './Drawer';
 
 describe('Testing Drawer Component', () => {

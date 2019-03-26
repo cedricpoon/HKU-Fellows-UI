@@ -21,7 +21,7 @@ class PostDetails extends Component {
     this.state = { raw: false }
   }
 
-  _toggleRaw() {
+  _toggleRaw = () => {
     this.setState({ raw: !this.state.raw });
   }
 
@@ -38,7 +38,7 @@ class PostDetails extends Component {
     :
       (<TouchableOpacity
         style={styles.contentContainer}
-        onLongPress={this._toggleRaw.bind(this)}
+        onLongPress={this._toggleRaw}
         activeOpacity={0.5}
       >
         {markdownRenderer(content, styles)}
@@ -68,7 +68,7 @@ class PostDetails extends Component {
         ) : (
           <View style={styles.headline}>
             <TouchableOpacity
-              onPress={this._toggleRaw.bind(this)}
+              onPress={this._toggleRaw}
             >
               <AnimatingView animation='fadeIn' duration={FADE_IN_DURATION} style={styles.leftPanel}>
                 <Icon style={[styles.dismiss, styles.temperature]} name="close" type="MaterialIcons" />

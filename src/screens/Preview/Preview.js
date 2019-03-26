@@ -27,37 +27,28 @@ const locale = localize({ language: 'en', country: 'hk' });
 export class Preview extends Component {
   constructor(props) {
     super(props);
-
     this.state = { willRefresh: false, isReady: false, searched: false };
-
-    this._refresh = this._refresh.bind(this);
-    this._loadMore = this._loadMore.bind(this);
-    this._scrollInit = this._scrollInit.bind(this);
-    this._scrollableUnmount = this._scrollableUnmount.bind(this);
-    this._renderListFooter = this._renderListFooter.bind(this);
-    this._filterWrapper = this._filterWrapper.bind(this);
-    this._searchWrapper = this._searchWrapper.bind(this);
   }
 
-  _refresh() {
+  _refresh = () => {
     this.props.onLoadPost();
   }
 
-  _scrollInit() {
+  _scrollInit = () => {
     this.setState({ isReady: true });
   }
 
-  _loadMore() {
+  _loadMore = () => {
     if (this.state.isReady && this.props.expandStatus === BLAND) {
       this.props.onLoadMore();
     }
   }
 
-  _scrollableUnmount() {
+  _scrollableUnmount = () => {
     this.setState({ isReady: false });
   }
 
-  _renderRefreshControl() {
+  _renderRefreshControl = () => {
     return(
       <RefreshControl
         refreshing={false}
@@ -67,7 +58,7 @@ export class Preview extends Component {
     );
   }
 
-  _renderListFooter() {
+  _renderListFooter = () => {
     const { expandStatus } = this.props;
 
     if (expandStatus === EXPANDING) {
@@ -81,7 +72,7 @@ export class Preview extends Component {
     );
   }
 
-  _filterWrapper(filter) {
+  _filterWrapper = (filter) => {
     const { onUpdateFilter } = this.props;
     return () => {
       onUpdateFilter(filter);
@@ -89,7 +80,7 @@ export class Preview extends Component {
     };
   }
 
-  _searchWrapper(query) {
+  _searchWrapper = (query) => {
     const { onUpdateQuery, onUpdateKeyword } = this.props;
     return () => {
       const target = classifyQuery(query);

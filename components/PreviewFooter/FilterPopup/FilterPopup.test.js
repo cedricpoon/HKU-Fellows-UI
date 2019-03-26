@@ -1,6 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import { shallow } from 'enzyme';
+
 import FilterPopup from './FilterPopup';
 
 describe('Testing FilterPopup Component', () => {

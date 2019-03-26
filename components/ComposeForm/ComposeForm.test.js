@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+
 import ComposeForm from './ComposeForm';
 
 describe('Testing ComposeForm Component', () => {

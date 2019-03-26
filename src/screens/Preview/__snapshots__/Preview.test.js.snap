@@ -1,989 +1,149 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Testing Preview Screen is loaded 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Preview
-    currentFilter={1}
-    expandStatus="BLAND"
-    loadStatus="OK"
+<Styled(Container)>
+  <PreviewHeader
     location=""
-    onLoadMore={[Function]}
-    onLoadPost={[Function]}
-    onResetQueryKeyword={[Function]}
-    onUpdateFilter={[Function]}
-    onUpdateKeyword={[Function]}
-    onUpdateQuery={[Function]}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "children": Array [
-        <PreviewHeader
-          location=""
-          onCancel={[Function]}
-          onSearchThunk={[Function]}
-        />,
-        <Connect(PostPreviewLoader)
-          ListFooterComponent={[Function]}
-          getItemLayout={[Function]}
-          onEndReached={[Function]}
-          onEndReachedThreshold={0.35}
-          onScroll={[Function]}
-          onUnmount={[Function]}
-          refreshControl={
-            <RefreshControlMock
-              onRefresh={[Function]}
-              refreshing={false}
-              tintColor="#ddd"
-            />
-          }
-          removeClippedSubviews={true}
-        />,
-        <PreviewFooter
-          muted={true}
-          onRefresh={[Function]}
-          popupProps={
-            Object {
-              "disabled": 1,
-              "onFilterThunk": [Function],
-            }
-          }
-          refreshing={false}
-        />,
-      ],
-      "virtual": undefined,
-    },
-    "ref": null,
-    "rendered": Array [
+    onCancel={[Function]}
+    onSearchThunk={[Function]}
+  />
+  <Connect(PostPreviewLoader)
+    ListFooterComponent={[Function]}
+    getItemLayout={[Function]}
+    onEndReached={[Function]}
+    onEndReachedThreshold={0.35}
+    onScroll={[Function]}
+    onUnmount={[Function]}
+    refreshControl={
+      <RefreshControlMock
+        onRefresh={[Function]}
+        refreshing={false}
+        tintColor="#ddd"
+      />
+    }
+    removeClippedSubviews={true}
+  />
+  <PreviewFooter
+    muted={true}
+    onRefresh={[Function]}
+    popupProps={
       Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "location": "",
-          "onCancel": [Function],
-          "onSearchThunk": [Function],
-        },
-        "ref": [Function],
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "ListFooterComponent": [Function],
-          "getItemLayout": [Function],
-          "onEndReached": [Function],
-          "onEndReachedThreshold": 0.35,
-          "onScroll": [Function],
-          "onUnmount": [Function],
-          "refreshControl": <RefreshControlMock
-            onRefresh={[Function]}
-            refreshing={false}
-            tintColor="#ddd"
-          />,
-          "removeClippedSubviews": true,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "muted": true,
-          "onRefresh": [Function],
-          "popupProps": Object {
-            "disabled": 1,
-            "onFilterThunk": [Function],
-          },
-          "refreshing": false,
-        },
-        "ref": [Function],
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [
-          <PreviewHeader
-            location=""
-            onCancel={[Function]}
-            onSearchThunk={[Function]}
-          />,
-          <Connect(PostPreviewLoader)
-            ListFooterComponent={[Function]}
-            getItemLayout={[Function]}
-            onEndReached={[Function]}
-            onEndReachedThreshold={0.35}
-            onScroll={[Function]}
-            onUnmount={[Function]}
-            refreshControl={
-              <RefreshControlMock
-                onRefresh={[Function]}
-                refreshing={false}
-                tintColor="#ddd"
-              />
-            }
-            removeClippedSubviews={true}
-          />,
-          <PreviewFooter
-            muted={true}
-            onRefresh={[Function]}
-            popupProps={
-              Object {
-                "disabled": 1,
-                "onFilterThunk": [Function],
-              }
-            }
-            refreshing={false}
-          />,
-        ],
-        "virtual": undefined,
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "location": "",
-            "onCancel": [Function],
-            "onSearchThunk": [Function],
-          },
-          "ref": [Function],
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "ListFooterComponent": [Function],
-            "getItemLayout": [Function],
-            "onEndReached": [Function],
-            "onEndReachedThreshold": 0.35,
-            "onScroll": [Function],
-            "onUnmount": [Function],
-            "refreshControl": <RefreshControlMock
-              onRefresh={[Function]}
-              refreshing={false}
-              tintColor="#ddd"
-            />,
-            "removeClippedSubviews": true,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "muted": true,
-            "onRefresh": [Function],
-            "popupProps": Object {
-              "disabled": 1,
-              "onFilterThunk": [Function],
-            },
-            "refreshing": false,
-          },
-          "ref": [Function],
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-  Symbol(enzyme.__childContext__): null,
-}
+        "disabled": 1,
+        "onFilterThunk": [Function],
+      }
+    }
+    refreshing={false}
+  />
+</Styled(Container)>
 `;
 
 exports[`Testing Preview Screen renders as expected with last post 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Preview
-    currentFilter={1}
-    expandStatus="HALT"
-    loadStatus="OK"
+<Styled(Container)>
+  <PreviewHeader
     location=""
-    onLoadMore={[Function]}
-    onLoadPost={[Function]}
-    onResetQueryKeyword={[Function]}
-    onUpdateFilter={[Function]}
-    onUpdateKeyword={[Function]}
-    onUpdateQuery={[Function]}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "children": Array [
-        <PreviewHeader
-          location=""
-          onCancel={[Function]}
-          onSearchThunk={[Function]}
-        />,
-        <Connect(PostPreviewLoader)
-          ListFooterComponent={[Function]}
-          getItemLayout={[Function]}
-          onEndReached={[Function]}
-          onEndReachedThreshold={0.35}
-          onScroll={[Function]}
-          onUnmount={[Function]}
-          refreshControl={
-            <RefreshControlMock
-              onRefresh={[Function]}
-              refreshing={false}
-              tintColor="#ddd"
-            />
-          }
-          removeClippedSubviews={true}
-        />,
-        <PreviewFooter
-          muted={true}
-          onRefresh={[Function]}
-          popupProps={
-            Object {
-              "disabled": 1,
-              "onFilterThunk": [Function],
-            }
-          }
-          refreshing={false}
-        />,
-      ],
-      "virtual": undefined,
-    },
-    "ref": null,
-    "rendered": Array [
+    onCancel={[Function]}
+    onSearchThunk={[Function]}
+  />
+  <Connect(PostPreviewLoader)
+    ListFooterComponent={[Function]}
+    getItemLayout={[Function]}
+    onEndReached={[Function]}
+    onEndReachedThreshold={0.35}
+    onScroll={[Function]}
+    onUnmount={[Function]}
+    refreshControl={
+      <RefreshControlMock
+        onRefresh={[Function]}
+        refreshing={false}
+        tintColor="#ddd"
+      />
+    }
+    removeClippedSubviews={true}
+  />
+  <PreviewFooter
+    muted={true}
+    onRefresh={[Function]}
+    popupProps={
       Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "location": "",
-          "onCancel": [Function],
-          "onSearchThunk": [Function],
-        },
-        "ref": [Function],
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "ListFooterComponent": [Function],
-          "getItemLayout": [Function],
-          "onEndReached": [Function],
-          "onEndReachedThreshold": 0.35,
-          "onScroll": [Function],
-          "onUnmount": [Function],
-          "refreshControl": <RefreshControlMock
-            onRefresh={[Function]}
-            refreshing={false}
-            tintColor="#ddd"
-          />,
-          "removeClippedSubviews": true,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "muted": true,
-          "onRefresh": [Function],
-          "popupProps": Object {
-            "disabled": 1,
-            "onFilterThunk": [Function],
-          },
-          "refreshing": false,
-        },
-        "ref": [Function],
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [
-          <PreviewHeader
-            location=""
-            onCancel={[Function]}
-            onSearchThunk={[Function]}
-          />,
-          <Connect(PostPreviewLoader)
-            ListFooterComponent={[Function]}
-            getItemLayout={[Function]}
-            onEndReached={[Function]}
-            onEndReachedThreshold={0.35}
-            onScroll={[Function]}
-            onUnmount={[Function]}
-            refreshControl={
-              <RefreshControlMock
-                onRefresh={[Function]}
-                refreshing={false}
-                tintColor="#ddd"
-              />
-            }
-            removeClippedSubviews={true}
-          />,
-          <PreviewFooter
-            muted={true}
-            onRefresh={[Function]}
-            popupProps={
-              Object {
-                "disabled": 1,
-                "onFilterThunk": [Function],
-              }
-            }
-            refreshing={false}
-          />,
-        ],
-        "virtual": undefined,
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "location": "",
-            "onCancel": [Function],
-            "onSearchThunk": [Function],
-          },
-          "ref": [Function],
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "ListFooterComponent": [Function],
-            "getItemLayout": [Function],
-            "onEndReached": [Function],
-            "onEndReachedThreshold": 0.35,
-            "onScroll": [Function],
-            "onUnmount": [Function],
-            "refreshControl": <RefreshControlMock
-              onRefresh={[Function]}
-              refreshing={false}
-              tintColor="#ddd"
-            />,
-            "removeClippedSubviews": true,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "muted": true,
-            "onRefresh": [Function],
-            "popupProps": Object {
-              "disabled": 1,
-              "onFilterThunk": [Function],
-            },
-            "refreshing": false,
-          },
-          "ref": [Function],
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-  Symbol(enzyme.__childContext__): null,
-}
+        "disabled": 1,
+        "onFilterThunk": [Function],
+      }
+    }
+    refreshing={false}
+  />
+</Styled(Container)>
 `;
 
 exports[`Testing Preview Screen renders as expected with loading more 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Preview
-    currentFilter={1}
-    expandStatus="EXPANDING"
-    loadStatus="OK"
+<Styled(Container)>
+  <PreviewHeader
     location=""
-    onLoadMore={[Function]}
-    onLoadPost={[Function]}
-    onResetQueryKeyword={[Function]}
-    onUpdateFilter={[Function]}
-    onUpdateKeyword={[Function]}
-    onUpdateQuery={[Function]}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "children": Array [
-        <PreviewHeader
-          location=""
-          onCancel={[Function]}
-          onSearchThunk={[Function]}
-        />,
-        <Connect(PostPreviewLoader)
-          ListFooterComponent={[Function]}
-          getItemLayout={[Function]}
-          onEndReached={[Function]}
-          onEndReachedThreshold={0.35}
-          onScroll={[Function]}
-          onUnmount={[Function]}
-          refreshControl={
-            <RefreshControlMock
-              onRefresh={[Function]}
-              refreshing={false}
-              tintColor="#ddd"
-            />
-          }
-          removeClippedSubviews={true}
-        />,
-        <PreviewFooter
-          muted={true}
-          onRefresh={[Function]}
-          popupProps={
-            Object {
-              "disabled": 1,
-              "onFilterThunk": [Function],
-            }
-          }
-          refreshing={false}
-        />,
-      ],
-      "virtual": undefined,
-    },
-    "ref": null,
-    "rendered": Array [
+    onCancel={[Function]}
+    onSearchThunk={[Function]}
+  />
+  <Connect(PostPreviewLoader)
+    ListFooterComponent={[Function]}
+    getItemLayout={[Function]}
+    onEndReached={[Function]}
+    onEndReachedThreshold={0.35}
+    onScroll={[Function]}
+    onUnmount={[Function]}
+    refreshControl={
+      <RefreshControlMock
+        onRefresh={[Function]}
+        refreshing={false}
+        tintColor="#ddd"
+      />
+    }
+    removeClippedSubviews={true}
+  />
+  <PreviewFooter
+    muted={true}
+    onRefresh={[Function]}
+    popupProps={
       Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "location": "",
-          "onCancel": [Function],
-          "onSearchThunk": [Function],
-        },
-        "ref": [Function],
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "ListFooterComponent": [Function],
-          "getItemLayout": [Function],
-          "onEndReached": [Function],
-          "onEndReachedThreshold": 0.35,
-          "onScroll": [Function],
-          "onUnmount": [Function],
-          "refreshControl": <RefreshControlMock
-            onRefresh={[Function]}
-            refreshing={false}
-            tintColor="#ddd"
-          />,
-          "removeClippedSubviews": true,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "muted": true,
-          "onRefresh": [Function],
-          "popupProps": Object {
-            "disabled": 1,
-            "onFilterThunk": [Function],
-          },
-          "refreshing": false,
-        },
-        "ref": [Function],
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [
-          <PreviewHeader
-            location=""
-            onCancel={[Function]}
-            onSearchThunk={[Function]}
-          />,
-          <Connect(PostPreviewLoader)
-            ListFooterComponent={[Function]}
-            getItemLayout={[Function]}
-            onEndReached={[Function]}
-            onEndReachedThreshold={0.35}
-            onScroll={[Function]}
-            onUnmount={[Function]}
-            refreshControl={
-              <RefreshControlMock
-                onRefresh={[Function]}
-                refreshing={false}
-                tintColor="#ddd"
-              />
-            }
-            removeClippedSubviews={true}
-          />,
-          <PreviewFooter
-            muted={true}
-            onRefresh={[Function]}
-            popupProps={
-              Object {
-                "disabled": 1,
-                "onFilterThunk": [Function],
-              }
-            }
-            refreshing={false}
-          />,
-        ],
-        "virtual": undefined,
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "location": "",
-            "onCancel": [Function],
-            "onSearchThunk": [Function],
-          },
-          "ref": [Function],
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "ListFooterComponent": [Function],
-            "getItemLayout": [Function],
-            "onEndReached": [Function],
-            "onEndReachedThreshold": 0.35,
-            "onScroll": [Function],
-            "onUnmount": [Function],
-            "refreshControl": <RefreshControlMock
-              onRefresh={[Function]}
-              refreshing={false}
-              tintColor="#ddd"
-            />,
-            "removeClippedSubviews": true,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "muted": true,
-            "onRefresh": [Function],
-            "popupProps": Object {
-              "disabled": 1,
-              "onFilterThunk": [Function],
-            },
-            "refreshing": false,
-          },
-          "ref": [Function],
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-  Symbol(enzyme.__childContext__): null,
-}
+        "disabled": 1,
+        "onFilterThunk": [Function],
+      }
+    }
+    refreshing={false}
+  />
+</Styled(Container)>
 `;
 
 exports[`Testing Preview Screen renders as expected without load more 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Preview
-    currentFilter={1}
-    expandStatus="BLAND"
-    loadStatus="OK"
+<Styled(Container)>
+  <PreviewHeader
     location=""
-    onLoadMore={[Function]}
-    onLoadPost={[Function]}
-    onResetQueryKeyword={[Function]}
-    onUpdateFilter={[Function]}
-    onUpdateKeyword={[Function]}
-    onUpdateQuery={[Function]}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "children": Array [
-        <PreviewHeader
-          location=""
-          onCancel={[Function]}
-          onSearchThunk={[Function]}
-        />,
-        <Connect(PostPreviewLoader)
-          ListFooterComponent={[Function]}
-          getItemLayout={[Function]}
-          onEndReached={[Function]}
-          onEndReachedThreshold={0.35}
-          onScroll={[Function]}
-          onUnmount={[Function]}
-          refreshControl={
-            <RefreshControlMock
-              onRefresh={[Function]}
-              refreshing={false}
-              tintColor="#ddd"
-            />
-          }
-          removeClippedSubviews={true}
-        />,
-        <PreviewFooter
-          muted={true}
-          onRefresh={[Function]}
-          popupProps={
-            Object {
-              "disabled": 1,
-              "onFilterThunk": [Function],
-            }
-          }
-          refreshing={false}
-        />,
-      ],
-      "virtual": undefined,
-    },
-    "ref": null,
-    "rendered": Array [
+    onCancel={[Function]}
+    onSearchThunk={[Function]}
+  />
+  <Connect(PostPreviewLoader)
+    ListFooterComponent={[Function]}
+    getItemLayout={[Function]}
+    onEndReached={[Function]}
+    onEndReachedThreshold={0.35}
+    onScroll={[Function]}
+    onUnmount={[Function]}
+    refreshControl={
+      <RefreshControlMock
+        onRefresh={[Function]}
+        refreshing={false}
+        tintColor="#ddd"
+      />
+    }
+    removeClippedSubviews={true}
+  />
+  <PreviewFooter
+    muted={true}
+    onRefresh={[Function]}
+    popupProps={
       Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "location": "",
-          "onCancel": [Function],
-          "onSearchThunk": [Function],
-        },
-        "ref": [Function],
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "ListFooterComponent": [Function],
-          "getItemLayout": [Function],
-          "onEndReached": [Function],
-          "onEndReachedThreshold": 0.35,
-          "onScroll": [Function],
-          "onUnmount": [Function],
-          "refreshControl": <RefreshControlMock
-            onRefresh={[Function]}
-            refreshing={false}
-            tintColor="#ddd"
-          />,
-          "removeClippedSubviews": true,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "muted": true,
-          "onRefresh": [Function],
-          "popupProps": Object {
-            "disabled": 1,
-            "onFilterThunk": [Function],
-          },
-          "refreshing": false,
-        },
-        "ref": [Function],
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [
-          <PreviewHeader
-            location=""
-            onCancel={[Function]}
-            onSearchThunk={[Function]}
-          />,
-          <Connect(PostPreviewLoader)
-            ListFooterComponent={[Function]}
-            getItemLayout={[Function]}
-            onEndReached={[Function]}
-            onEndReachedThreshold={0.35}
-            onScroll={[Function]}
-            onUnmount={[Function]}
-            refreshControl={
-              <RefreshControlMock
-                onRefresh={[Function]}
-                refreshing={false}
-                tintColor="#ddd"
-              />
-            }
-            removeClippedSubviews={true}
-          />,
-          <PreviewFooter
-            muted={true}
-            onRefresh={[Function]}
-            popupProps={
-              Object {
-                "disabled": 1,
-                "onFilterThunk": [Function],
-              }
-            }
-            refreshing={false}
-          />,
-        ],
-        "virtual": undefined,
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "location": "",
-            "onCancel": [Function],
-            "onSearchThunk": [Function],
-          },
-          "ref": [Function],
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "ListFooterComponent": [Function],
-            "getItemLayout": [Function],
-            "onEndReached": [Function],
-            "onEndReachedThreshold": 0.35,
-            "onScroll": [Function],
-            "onUnmount": [Function],
-            "refreshControl": <RefreshControlMock
-              onRefresh={[Function]}
-              refreshing={false}
-              tintColor="#ddd"
-            />,
-            "removeClippedSubviews": true,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "muted": true,
-            "onRefresh": [Function],
-            "popupProps": Object {
-              "disabled": 1,
-              "onFilterThunk": [Function],
-            },
-            "refreshing": false,
-          },
-          "ref": [Function],
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-  Symbol(enzyme.__childContext__): null,
-}
+        "disabled": 1,
+        "onFilterThunk": [Function],
+      }
+    }
+    refreshing={false}
+  />
+</Styled(Container)>
 `;

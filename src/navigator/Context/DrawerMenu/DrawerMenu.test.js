@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+
 import DrawerMenu from './DrawerMenu';
 
 describe('Testing DrawerMenu Component', () => {

@@ -1,2488 +1,321 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Testing PostDetails Component is selectedAnswer 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <PostDetails
-    comment={
+<Styled(Content)
+  style={
+    Object {
+      "paddingHorizontal": 15,
+    }
+  }
+>
+  <withAnimatable(Styled(ViewNB))
+    animation="fadeIn"
+    delay={0}
+    direction="normal"
+    duration={250}
+    iterationCount={1}
+    iterationDelay={0}
+    onAnimationBegin={[Function]}
+    onAnimationEnd={[Function]}
+    onTransitionBegin={[Function]}
+    onTransitionEnd={[Function]}
+    style={
       Object {
-        "author": "author",
-        "content": "content",
-        "id": "id",
-        "temperature": 1,
-        "timestamp": "timestamp",
+        "alignItems": "center",
+        "borderBottomWidth": 0.5,
+        "borderColor": "#eee",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "paddingVertical": 10,
       }
     }
-    index={1}
-    markdownRenderer={[Function]}
-    selectedAnswer={true}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "children": Array [
-        <withAnimatable(Styled(ViewNB))
-          animation="fadeIn"
-          delay={0}
-          direction="normal"
-          duration={250}
-          iterationCount={1}
-          iterationDelay={0}
-          onAnimationBegin={[Function]}
-          onAnimationEnd={[Function]}
-          onTransitionBegin={[Function]}
-          onTransitionEnd={[Function]}
-          style={
-            Object {
-              "alignItems": "center",
-              "borderBottomWidth": 0.5,
-              "borderColor": "#eee",
-              "flexDirection": "row",
-              "justifyContent": "space-between",
-              "paddingVertical": 10,
-            }
+    useNativeDriver={false}
+  >
+    <Styled(ViewNB)
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "paddingVertical": 1,
+        }
+      }
+    >
+      <Styled(Text)
+        style={
+          Object {
+            "color": "gray",
+            "fontSize": 10,
           }
-          useNativeDriver={false}
-        >
-          <Styled(ViewNB)
-            style={
-              Object {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "paddingVertical": 1,
-              }
-            }
-          >
-            <Styled(Text)
-              style={
-                Object {
-                  "color": "gray",
-                  "fontSize": 10,
-                }
-              }
-            >
-              #
-              1
-            </Styled(Text)>
-            <Styled(Text)
-              style={
-                Object {
-                  "color": "#3A936B",
-                  "fontSize": 12.5,
-                  "marginLeft": 5,
-                }
-              }
-            >
-              author
-            </Styled(Text)>
-            <Styled(Text)
-              style={
-                Object {
-                  "color": "#4E4A47",
-                  "fontSize": 12.5,
-                  "marginLeft": 5,
-                }
-              }
-            >
-              · 
-              just now
-            </Styled(Text)>
-            <Styled(Icon)
-              name="checkbox-marked-circle-outline"
-              style={
-                Object {
-                  "color": "#E5CB26",
-                  "fontSize": 10,
-                  "marginLeft": 5,
-                }
-              }
-              type="MaterialCommunityIcons"
-            />
-            <Styled(Text)
-              style={
-                Object {
-                  "color": "#E5CB26",
-                  "fontSize": 10,
-                  "marginLeft": 5,
-                }
-              }
-            >
-              Adopted
-            </Styled(Text)>
-          </Styled(ViewNB)>
-          <Styled(ViewNB)
-            style={
-              Object {
-                "alignItems": "baseline",
-                "backgroundColor": "white",
-                "borderRadius": 5,
-                "flexDirection": "row",
-                "paddingLeft": 5,
-                "paddingVertical": 1,
-                "shadowColor": "#4E4A47",
-                "shadowOffset": Object {
-                  "height": 1,
-                  "width": 1,
-                },
-                "shadowOpacity": 0.1,
-                "shadowRadius": 1,
-              }
-            }
-          >
-            <Styled(Icon)
-              name="ios-flame"
-              style={
-                Array [
-                  Object {
-                    "fontSize": 12.5,
-                    "marginRight": 5,
-                  },
-                  null,
-                ]
-              }
-            />
-            <Styled(Text)
-              style={
-                Array [
-                  Object {
-                    "fontSize": 12.5,
-                    "marginRight": 5,
-                  },
-                  null,
-                ]
-              }
-            >
-              1
-            </Styled(Text)>
-          </Styled(ViewNB)>
-        </withAnimatable(Styled(ViewNB))>,
-        <withAnimatable(Styled(ViewNB))
-          animation="fadeIn"
-          delay={0}
-          direction="normal"
-          duration={250}
-          iterationCount={1}
-          iterationDelay={0}
-          onAnimationBegin={[Function]}
-          onAnimationEnd={[Function]}
-          onTransitionBegin={[Function]}
-          onTransitionEnd={[Function]}
-          useNativeDriver={false}
-        >
-          <TouchableOpacity
-            activeOpacity={0.5}
-            onLongPress={[Function]}
-            style={
-              Object {
-                "marginVertical": 5,
-              }
-            }
-          >
-            <View />
-          </TouchableOpacity>
-        </withAnimatable(Styled(ViewNB))>,
-      ],
-      "style": Object {
-        "paddingHorizontal": 15,
-      },
-      "virtual": undefined,
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "animation": "fadeIn",
-          "children": Array [
-            <Styled(ViewNB)
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                  "paddingVertical": 1,
-                }
-              }
-            >
-              <Styled(Text)
-                style={
-                  Object {
-                    "color": "gray",
-                    "fontSize": 10,
-                  }
-                }
-              >
-                #
-                1
-              </Styled(Text)>
-              <Styled(Text)
-                style={
-                  Object {
-                    "color": "#3A936B",
-                    "fontSize": 12.5,
-                    "marginLeft": 5,
-                  }
-                }
-              >
-                author
-              </Styled(Text)>
-              <Styled(Text)
-                style={
-                  Object {
-                    "color": "#4E4A47",
-                    "fontSize": 12.5,
-                    "marginLeft": 5,
-                  }
-                }
-              >
-                · 
-                just now
-              </Styled(Text)>
-              <Styled(Icon)
-                name="checkbox-marked-circle-outline"
-                style={
-                  Object {
-                    "color": "#E5CB26",
-                    "fontSize": 10,
-                    "marginLeft": 5,
-                  }
-                }
-                type="MaterialCommunityIcons"
-              />
-              <Styled(Text)
-                style={
-                  Object {
-                    "color": "#E5CB26",
-                    "fontSize": 10,
-                    "marginLeft": 5,
-                  }
-                }
-              >
-                Adopted
-              </Styled(Text)>
-            </Styled(ViewNB)>,
-            <Styled(ViewNB)
-              style={
-                Object {
-                  "alignItems": "baseline",
-                  "backgroundColor": "white",
-                  "borderRadius": 5,
-                  "flexDirection": "row",
-                  "paddingLeft": 5,
-                  "paddingVertical": 1,
-                  "shadowColor": "#4E4A47",
-                  "shadowOffset": Object {
-                    "height": 1,
-                    "width": 1,
-                  },
-                  "shadowOpacity": 0.1,
-                  "shadowRadius": 1,
-                }
-              }
-            >
-              <Styled(Icon)
-                name="ios-flame"
-                style={
-                  Array [
-                    Object {
-                      "fontSize": 12.5,
-                      "marginRight": 5,
-                    },
-                    null,
-                  ]
-                }
-              />
-              <Styled(Text)
-                style={
-                  Array [
-                    Object {
-                      "fontSize": 12.5,
-                      "marginRight": 5,
-                    },
-                    null,
-                  ]
-                }
-              >
-                1
-              </Styled(Text)>
-            </Styled(ViewNB)>,
-          ],
-          "delay": 0,
-          "direction": "normal",
-          "duration": 250,
-          "easing": undefined,
-          "iterationCount": 1,
-          "iterationDelay": 0,
-          "onAnimationBegin": [Function],
-          "onAnimationEnd": [Function],
-          "onTransitionBegin": [Function],
-          "onTransitionEnd": [Function],
-          "style": Object {
-            "alignItems": "center",
-            "borderBottomWidth": 0.5,
-            "borderColor": "#eee",
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-            "paddingVertical": 10,
-          },
-          "transition": undefined,
-          "useNativeDriver": false,
-        },
-        "ref": null,
-        "rendered": Array [
+        }
+      >
+        #
+        1
+      </Styled(Text)>
+      <Styled(Text)
+        style={
           Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": Array [
-                <Styled(Text)
-                  style={
-                    Object {
-                      "color": "gray",
-                      "fontSize": 10,
-                    }
-                  }
-                >
-                  #
-                  1
-                </Styled(Text)>,
-                <Styled(Text)
-                  style={
-                    Object {
-                      "color": "#3A936B",
-                      "fontSize": 12.5,
-                      "marginLeft": 5,
-                    }
-                  }
-                >
-                  author
-                </Styled(Text)>,
-                <Styled(Text)
-                  style={
-                    Object {
-                      "color": "#4E4A47",
-                      "fontSize": 12.5,
-                      "marginLeft": 5,
-                    }
-                  }
-                >
-                  · 
-                  just now
-                </Styled(Text)>,
-                <Styled(Icon)
-                  name="checkbox-marked-circle-outline"
-                  style={
-                    Object {
-                      "color": "#E5CB26",
-                      "fontSize": 10,
-                      "marginLeft": 5,
-                    }
-                  }
-                  type="MaterialCommunityIcons"
-                />,
-                <Styled(Text)
-                  style={
-                    Object {
-                      "color": "#E5CB26",
-                      "fontSize": 10,
-                      "marginLeft": 5,
-                    }
-                  }
-                >
-                  Adopted
-                </Styled(Text)>,
-              ],
-              "style": Object {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "paddingVertical": 1,
-              },
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": Array [
-                    "#",
-                    1,
-                  ],
-                  "style": Object {
-                    "color": "gray",
-                    "fontSize": 10,
-                  },
-                  "virtual": undefined,
-                },
-                "ref": null,
-                "rendered": Array [
-                  "#",
-                  1,
-                ],
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "author",
-                  "style": Object {
-                    "color": "#3A936B",
-                    "fontSize": 12.5,
-                    "marginLeft": 5,
-                  },
-                  "virtual": undefined,
-                },
-                "ref": null,
-                "rendered": "author",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": Array [
-                    "· ",
-                    "just now",
-                  ],
-                  "style": Object {
-                    "color": "#4E4A47",
-                    "fontSize": 12.5,
-                    "marginLeft": 5,
-                  },
-                  "virtual": undefined,
-                },
-                "ref": null,
-                "rendered": Array [
-                  "· ",
-                  "just now",
-                ],
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "name": "checkbox-marked-circle-outline",
-                  "style": Object {
-                    "color": "#E5CB26",
-                    "fontSize": 10,
-                    "marginLeft": 5,
-                  },
-                  "type": "MaterialCommunityIcons",
-                  "virtual": undefined,
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "Adopted",
-                  "style": Object {
-                    "color": "#E5CB26",
-                    "fontSize": 10,
-                    "marginLeft": 5,
-                  },
-                  "virtual": undefined,
-                },
-                "ref": null,
-                "rendered": "Adopted",
-                "type": [Function],
-              },
-            ],
-            "type": [Function],
-          },
+            "color": "#3A936B",
+            "fontSize": 12.5,
+            "marginLeft": 5,
+          }
+        }
+      >
+        author
+      </Styled(Text)>
+      <Styled(Text)
+        style={
           Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": Array [
-                <Styled(Icon)
-                  name="ios-flame"
-                  style={
-                    Array [
-                      Object {
-                        "fontSize": 12.5,
-                        "marginRight": 5,
-                      },
-                      null,
-                    ]
-                  }
-                />,
-                <Styled(Text)
-                  style={
-                    Array [
-                      Object {
-                        "fontSize": 12.5,
-                        "marginRight": 5,
-                      },
-                      null,
-                    ]
-                  }
-                >
-                  1
-                </Styled(Text)>,
-              ],
-              "style": Object {
-                "alignItems": "baseline",
-                "backgroundColor": "white",
-                "borderRadius": 5,
-                "flexDirection": "row",
-                "paddingLeft": 5,
-                "paddingVertical": 1,
-                "shadowColor": "#4E4A47",
-                "shadowOffset": Object {
-                  "height": 1,
-                  "width": 1,
-                },
-                "shadowOpacity": 0.1,
-                "shadowRadius": 1,
-              },
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "name": "ios-flame",
-                  "style": Array [
-                    Object {
-                      "fontSize": 12.5,
-                      "marginRight": 5,
-                    },
-                    null,
-                  ],
-                  "virtual": undefined,
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": 1,
-                  "style": Array [
-                    Object {
-                      "fontSize": 12.5,
-                      "marginRight": 5,
-                    },
-                    null,
-                  ],
-                  "virtual": undefined,
-                },
-                "ref": null,
-                "rendered": 1,
-                "type": [Function],
-              },
-            ],
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "animation": "fadeIn",
-          "children": <TouchableOpacity
-            activeOpacity={0.5}
-            onLongPress={[Function]}
-            style={
-              Object {
-                "marginVertical": 5,
-              }
-            }
-          >
-            <View />
-          </TouchableOpacity>,
-          "delay": 0,
-          "direction": "normal",
-          "duration": 250,
-          "easing": undefined,
-          "iterationCount": 1,
-          "iterationDelay": 0,
-          "onAnimationBegin": [Function],
-          "onAnimationEnd": [Function],
-          "onTransitionBegin": [Function],
-          "onTransitionEnd": [Function],
-          "style": undefined,
-          "transition": undefined,
-          "useNativeDriver": false,
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "activeOpacity": 0.5,
-            "children": <View />,
-            "onLongPress": [Function],
-            "style": Object {
-              "marginVertical": 5,
-            },
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          "type": [Function],
-        },
-        "type": [Function],
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [
-          <withAnimatable(Styled(ViewNB))
-            animation="fadeIn"
-            delay={0}
-            direction="normal"
-            duration={250}
-            iterationCount={1}
-            iterationDelay={0}
-            onAnimationBegin={[Function]}
-            onAnimationEnd={[Function]}
-            onTransitionBegin={[Function]}
-            onTransitionEnd={[Function]}
-            style={
-              Object {
-                "alignItems": "center",
-                "borderBottomWidth": 0.5,
-                "borderColor": "#eee",
-                "flexDirection": "row",
-                "justifyContent": "space-between",
-                "paddingVertical": 10,
-              }
-            }
-            useNativeDriver={false}
-          >
-            <Styled(ViewNB)
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                  "paddingVertical": 1,
-                }
-              }
-            >
-              <Styled(Text)
-                style={
-                  Object {
-                    "color": "gray",
-                    "fontSize": 10,
-                  }
-                }
-              >
-                #
-                1
-              </Styled(Text)>
-              <Styled(Text)
-                style={
-                  Object {
-                    "color": "#3A936B",
-                    "fontSize": 12.5,
-                    "marginLeft": 5,
-                  }
-                }
-              >
-                author
-              </Styled(Text)>
-              <Styled(Text)
-                style={
-                  Object {
-                    "color": "#4E4A47",
-                    "fontSize": 12.5,
-                    "marginLeft": 5,
-                  }
-                }
-              >
-                · 
-                just now
-              </Styled(Text)>
-              <Styled(Icon)
-                name="checkbox-marked-circle-outline"
-                style={
-                  Object {
-                    "color": "#E5CB26",
-                    "fontSize": 10,
-                    "marginLeft": 5,
-                  }
-                }
-                type="MaterialCommunityIcons"
-              />
-              <Styled(Text)
-                style={
-                  Object {
-                    "color": "#E5CB26",
-                    "fontSize": 10,
-                    "marginLeft": 5,
-                  }
-                }
-              >
-                Adopted
-              </Styled(Text)>
-            </Styled(ViewNB)>
-            <Styled(ViewNB)
-              style={
-                Object {
-                  "alignItems": "baseline",
-                  "backgroundColor": "white",
-                  "borderRadius": 5,
-                  "flexDirection": "row",
-                  "paddingLeft": 5,
-                  "paddingVertical": 1,
-                  "shadowColor": "#4E4A47",
-                  "shadowOffset": Object {
-                    "height": 1,
-                    "width": 1,
-                  },
-                  "shadowOpacity": 0.1,
-                  "shadowRadius": 1,
-                }
-              }
-            >
-              <Styled(Icon)
-                name="ios-flame"
-                style={
-                  Array [
-                    Object {
-                      "fontSize": 12.5,
-                      "marginRight": 5,
-                    },
-                    null,
-                  ]
-                }
-              />
-              <Styled(Text)
-                style={
-                  Array [
-                    Object {
-                      "fontSize": 12.5,
-                      "marginRight": 5,
-                    },
-                    null,
-                  ]
-                }
-              >
-                1
-              </Styled(Text)>
-            </Styled(ViewNB)>
-          </withAnimatable(Styled(ViewNB))>,
-          <withAnimatable(Styled(ViewNB))
-            animation="fadeIn"
-            delay={0}
-            direction="normal"
-            duration={250}
-            iterationCount={1}
-            iterationDelay={0}
-            onAnimationBegin={[Function]}
-            onAnimationEnd={[Function]}
-            onTransitionBegin={[Function]}
-            onTransitionEnd={[Function]}
-            useNativeDriver={false}
-          >
-            <TouchableOpacity
-              activeOpacity={0.5}
-              onLongPress={[Function]}
-              style={
-                Object {
-                  "marginVertical": 5,
-                }
-              }
-            >
-              <View />
-            </TouchableOpacity>
-          </withAnimatable(Styled(ViewNB))>,
-        ],
-        "style": Object {
-          "paddingHorizontal": 15,
-        },
-        "virtual": undefined,
-      },
-      "ref": null,
-      "rendered": Array [
+            "color": "#4E4A47",
+            "fontSize": 12.5,
+            "marginLeft": 5,
+          }
+        }
+      >
+        · 
+        just now
+      </Styled(Text)>
+      <Styled(Icon)
+        name="checkbox-marked-circle-outline"
+        style={
+          Object {
+            "color": "#E5CB26",
+            "fontSize": 10,
+            "marginLeft": 5,
+          }
+        }
+        type="MaterialCommunityIcons"
+      />
+      <Styled(Text)
+        style={
+          Object {
+            "color": "#E5CB26",
+            "fontSize": 10,
+            "marginLeft": 5,
+          }
+        }
+      >
+        Adopted
+      </Styled(Text)>
+    </Styled(ViewNB)>
+    <Styled(ViewNB)
+      style={
         Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "animation": "fadeIn",
-            "children": Array [
-              <Styled(ViewNB)
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "paddingVertical": 1,
-                  }
-                }
-              >
-                <Styled(Text)
-                  style={
-                    Object {
-                      "color": "gray",
-                      "fontSize": 10,
-                    }
-                  }
-                >
-                  #
-                  1
-                </Styled(Text)>
-                <Styled(Text)
-                  style={
-                    Object {
-                      "color": "#3A936B",
-                      "fontSize": 12.5,
-                      "marginLeft": 5,
-                    }
-                  }
-                >
-                  author
-                </Styled(Text)>
-                <Styled(Text)
-                  style={
-                    Object {
-                      "color": "#4E4A47",
-                      "fontSize": 12.5,
-                      "marginLeft": 5,
-                    }
-                  }
-                >
-                  · 
-                  just now
-                </Styled(Text)>
-                <Styled(Icon)
-                  name="checkbox-marked-circle-outline"
-                  style={
-                    Object {
-                      "color": "#E5CB26",
-                      "fontSize": 10,
-                      "marginLeft": 5,
-                    }
-                  }
-                  type="MaterialCommunityIcons"
-                />
-                <Styled(Text)
-                  style={
-                    Object {
-                      "color": "#E5CB26",
-                      "fontSize": 10,
-                      "marginLeft": 5,
-                    }
-                  }
-                >
-                  Adopted
-                </Styled(Text)>
-              </Styled(ViewNB)>,
-              <Styled(ViewNB)
-                style={
-                  Object {
-                    "alignItems": "baseline",
-                    "backgroundColor": "white",
-                    "borderRadius": 5,
-                    "flexDirection": "row",
-                    "paddingLeft": 5,
-                    "paddingVertical": 1,
-                    "shadowColor": "#4E4A47",
-                    "shadowOffset": Object {
-                      "height": 1,
-                      "width": 1,
-                    },
-                    "shadowOpacity": 0.1,
-                    "shadowRadius": 1,
-                  }
-                }
-              >
-                <Styled(Icon)
-                  name="ios-flame"
-                  style={
-                    Array [
-                      Object {
-                        "fontSize": 12.5,
-                        "marginRight": 5,
-                      },
-                      null,
-                    ]
-                  }
-                />
-                <Styled(Text)
-                  style={
-                    Array [
-                      Object {
-                        "fontSize": 12.5,
-                        "marginRight": 5,
-                      },
-                      null,
-                    ]
-                  }
-                >
-                  1
-                </Styled(Text)>
-              </Styled(ViewNB)>,
-            ],
-            "delay": 0,
-            "direction": "normal",
-            "duration": 250,
-            "easing": undefined,
-            "iterationCount": 1,
-            "iterationDelay": 0,
-            "onAnimationBegin": [Function],
-            "onAnimationEnd": [Function],
-            "onTransitionBegin": [Function],
-            "onTransitionEnd": [Function],
-            "style": Object {
-              "alignItems": "center",
-              "borderBottomWidth": 0.5,
-              "borderColor": "#eee",
-              "flexDirection": "row",
-              "justifyContent": "space-between",
-              "paddingVertical": 10,
-            },
-            "transition": undefined,
-            "useNativeDriver": false,
+          "alignItems": "baseline",
+          "backgroundColor": "white",
+          "borderRadius": 5,
+          "flexDirection": "row",
+          "paddingLeft": 5,
+          "paddingVertical": 1,
+          "shadowColor": "#4E4A47",
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 1,
           },
-          "ref": null,
-          "rendered": Array [
+          "shadowOpacity": 0.1,
+          "shadowRadius": 1,
+        }
+      }
+    >
+      <Styled(Icon)
+        name="ios-flame"
+        style={
+          Array [
             Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": Array [
-                  <Styled(Text)
-                    style={
-                      Object {
-                        "color": "gray",
-                        "fontSize": 10,
-                      }
-                    }
-                  >
-                    #
-                    1
-                  </Styled(Text)>,
-                  <Styled(Text)
-                    style={
-                      Object {
-                        "color": "#3A936B",
-                        "fontSize": 12.5,
-                        "marginLeft": 5,
-                      }
-                    }
-                  >
-                    author
-                  </Styled(Text)>,
-                  <Styled(Text)
-                    style={
-                      Object {
-                        "color": "#4E4A47",
-                        "fontSize": 12.5,
-                        "marginLeft": 5,
-                      }
-                    }
-                  >
-                    · 
-                    just now
-                  </Styled(Text)>,
-                  <Styled(Icon)
-                    name="checkbox-marked-circle-outline"
-                    style={
-                      Object {
-                        "color": "#E5CB26",
-                        "fontSize": 10,
-                        "marginLeft": 5,
-                      }
-                    }
-                    type="MaterialCommunityIcons"
-                  />,
-                  <Styled(Text)
-                    style={
-                      Object {
-                        "color": "#E5CB26",
-                        "fontSize": 10,
-                        "marginLeft": 5,
-                      }
-                    }
-                  >
-                    Adopted
-                  </Styled(Text)>,
-                ],
-                "style": Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                  "paddingVertical": 1,
-                },
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": Array [
-                      "#",
-                      1,
-                    ],
-                    "style": Object {
-                      "color": "gray",
-                      "fontSize": 10,
-                    },
-                    "virtual": undefined,
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "#",
-                    1,
-                  ],
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": "author",
-                    "style": Object {
-                      "color": "#3A936B",
-                      "fontSize": 12.5,
-                      "marginLeft": 5,
-                    },
-                    "virtual": undefined,
-                  },
-                  "ref": null,
-                  "rendered": "author",
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": Array [
-                      "· ",
-                      "just now",
-                    ],
-                    "style": Object {
-                      "color": "#4E4A47",
-                      "fontSize": 12.5,
-                      "marginLeft": 5,
-                    },
-                    "virtual": undefined,
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "· ",
-                    "just now",
-                  ],
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "name": "checkbox-marked-circle-outline",
-                    "style": Object {
-                      "color": "#E5CB26",
-                      "fontSize": 10,
-                      "marginLeft": 5,
-                    },
-                    "type": "MaterialCommunityIcons",
-                    "virtual": undefined,
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": "Adopted",
-                    "style": Object {
-                      "color": "#E5CB26",
-                      "fontSize": 10,
-                      "marginLeft": 5,
-                    },
-                    "virtual": undefined,
-                  },
-                  "ref": null,
-                  "rendered": "Adopted",
-                  "type": [Function],
-                },
-              ],
-              "type": [Function],
+              "fontSize": 12.5,
+              "marginRight": 5,
             },
+            null,
+          ]
+        }
+      />
+      <Styled(Text)
+        style={
+          Array [
             Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": Array [
-                  <Styled(Icon)
-                    name="ios-flame"
-                    style={
-                      Array [
-                        Object {
-                          "fontSize": 12.5,
-                          "marginRight": 5,
-                        },
-                        null,
-                      ]
-                    }
-                  />,
-                  <Styled(Text)
-                    style={
-                      Array [
-                        Object {
-                          "fontSize": 12.5,
-                          "marginRight": 5,
-                        },
-                        null,
-                      ]
-                    }
-                  >
-                    1
-                  </Styled(Text)>,
-                ],
-                "style": Object {
-                  "alignItems": "baseline",
-                  "backgroundColor": "white",
-                  "borderRadius": 5,
-                  "flexDirection": "row",
-                  "paddingLeft": 5,
-                  "paddingVertical": 1,
-                  "shadowColor": "#4E4A47",
-                  "shadowOffset": Object {
-                    "height": 1,
-                    "width": 1,
-                  },
-                  "shadowOpacity": 0.1,
-                  "shadowRadius": 1,
-                },
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "name": "ios-flame",
-                    "style": Array [
-                      Object {
-                        "fontSize": 12.5,
-                        "marginRight": 5,
-                      },
-                      null,
-                    ],
-                    "virtual": undefined,
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": 1,
-                    "style": Array [
-                      Object {
-                        "fontSize": 12.5,
-                        "marginRight": 5,
-                      },
-                      null,
-                    ],
-                    "virtual": undefined,
-                  },
-                  "ref": null,
-                  "rendered": 1,
-                  "type": [Function],
-                },
-              ],
-              "type": [Function],
+              "fontSize": 12.5,
+              "marginRight": 5,
             },
-          ],
-          "type": [Function],
-        },
+            null,
+          ]
+        }
+      >
+        1
+      </Styled(Text)>
+    </Styled(ViewNB)>
+  </withAnimatable(Styled(ViewNB))>
+  <withAnimatable(Styled(ViewNB))
+    animation="fadeIn"
+    delay={0}
+    direction="normal"
+    duration={250}
+    iterationCount={1}
+    iterationDelay={0}
+    onAnimationBegin={[Function]}
+    onAnimationEnd={[Function]}
+    onTransitionBegin={[Function]}
+    onTransitionEnd={[Function]}
+    useNativeDriver={false}
+  >
+    <TouchableOpacity
+      activeOpacity={0.5}
+      onLongPress={[Function]}
+      style={
         Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "animation": "fadeIn",
-            "children": <TouchableOpacity
-              activeOpacity={0.5}
-              onLongPress={[Function]}
-              style={
-                Object {
-                  "marginVertical": 5,
-                }
-              }
-            >
-              <View />
-            </TouchableOpacity>,
-            "delay": 0,
-            "direction": "normal",
-            "duration": 250,
-            "easing": undefined,
-            "iterationCount": 1,
-            "iterationDelay": 0,
-            "onAnimationBegin": [Function],
-            "onAnimationEnd": [Function],
-            "onTransitionBegin": [Function],
-            "onTransitionEnd": [Function],
-            "style": undefined,
-            "transition": undefined,
-            "useNativeDriver": false,
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "activeOpacity": 0.5,
-              "children": <View />,
-              "onLongPress": [Function],
-              "style": Object {
-                "marginVertical": 5,
-              },
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {},
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            "type": [Function],
-          },
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-  Symbol(enzyme.__childContext__): null,
-}
+          "marginVertical": 5,
+        }
+      }
+    >
+      <View />
+    </TouchableOpacity>
+  </withAnimatable(Styled(ViewNB))>
+</Styled(Content)>
 `;
 
 exports[`Testing PostDetails Component renders as expected with required props 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <PostDetails
-    comment={
+<Styled(Content)
+  style={
+    Object {
+      "paddingHorizontal": 15,
+    }
+  }
+>
+  <withAnimatable(Styled(ViewNB))
+    animation="fadeIn"
+    delay={0}
+    direction="normal"
+    duration={250}
+    iterationCount={1}
+    iterationDelay={0}
+    onAnimationBegin={[Function]}
+    onAnimationEnd={[Function]}
+    onTransitionBegin={[Function]}
+    onTransitionEnd={[Function]}
+    style={
       Object {
-        "author": "author",
-        "content": "content",
-        "id": "id",
-        "temperature": 1,
-        "timestamp": "timestamp",
+        "alignItems": "center",
+        "borderBottomWidth": 0.5,
+        "borderColor": "#eee",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "paddingVertical": 10,
       }
     }
-    index={1}
-    markdownRenderer={[Function]}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "children": Array [
-        <withAnimatable(Styled(ViewNB))
-          animation="fadeIn"
-          delay={0}
-          direction="normal"
-          duration={250}
-          iterationCount={1}
-          iterationDelay={0}
-          onAnimationBegin={[Function]}
-          onAnimationEnd={[Function]}
-          onTransitionBegin={[Function]}
-          onTransitionEnd={[Function]}
-          style={
-            Object {
-              "alignItems": "center",
-              "borderBottomWidth": 0.5,
-              "borderColor": "#eee",
-              "flexDirection": "row",
-              "justifyContent": "space-between",
-              "paddingVertical": 10,
-            }
+    useNativeDriver={false}
+  >
+    <Styled(ViewNB)
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "paddingVertical": 1,
+        }
+      }
+    >
+      <Styled(Text)
+        style={
+          Object {
+            "color": "gray",
+            "fontSize": 10,
           }
-          useNativeDriver={false}
-        >
-          <Styled(ViewNB)
-            style={
-              Object {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "paddingVertical": 1,
-              }
-            }
-          >
-            <Styled(Text)
-              style={
-                Object {
-                  "color": "gray",
-                  "fontSize": 10,
-                }
-              }
-            >
-              #
-              1
-            </Styled(Text)>
-            <Styled(Text)
-              style={
-                Object {
-                  "color": "#3A936B",
-                  "fontSize": 12.5,
-                  "marginLeft": 5,
-                }
-              }
-            >
-              author
-            </Styled(Text)>
-            <Styled(Text)
-              style={
-                Object {
-                  "color": "#4E4A47",
-                  "fontSize": 12.5,
-                  "marginLeft": 5,
-                }
-              }
-            >
-              · 
-              just now
-            </Styled(Text)>
-          </Styled(ViewNB)>
-          <Styled(ViewNB)
-            style={
-              Object {
-                "alignItems": "baseline",
-                "backgroundColor": "white",
-                "borderRadius": 5,
-                "flexDirection": "row",
-                "paddingLeft": 5,
-                "paddingVertical": 1,
-                "shadowColor": "#4E4A47",
-                "shadowOffset": Object {
-                  "height": 1,
-                  "width": 1,
-                },
-                "shadowOpacity": 0.1,
-                "shadowRadius": 1,
-              }
-            }
-          >
-            <Styled(Icon)
-              name="ios-flame"
-              style={
-                Array [
-                  Object {
-                    "fontSize": 12.5,
-                    "marginRight": 5,
-                  },
-                  null,
-                ]
-              }
-            />
-            <Styled(Text)
-              style={
-                Array [
-                  Object {
-                    "fontSize": 12.5,
-                    "marginRight": 5,
-                  },
-                  null,
-                ]
-              }
-            >
-              1
-            </Styled(Text)>
-          </Styled(ViewNB)>
-        </withAnimatable(Styled(ViewNB))>,
-        <withAnimatable(Styled(ViewNB))
-          animation="fadeIn"
-          delay={0}
-          direction="normal"
-          duration={250}
-          iterationCount={1}
-          iterationDelay={0}
-          onAnimationBegin={[Function]}
-          onAnimationEnd={[Function]}
-          onTransitionBegin={[Function]}
-          onTransitionEnd={[Function]}
-          useNativeDriver={false}
-        >
-          <TouchableOpacity
-            activeOpacity={0.5}
-            onLongPress={[Function]}
-            style={
-              Object {
-                "marginVertical": 5,
-              }
-            }
-          >
-            <View />
-          </TouchableOpacity>
-        </withAnimatable(Styled(ViewNB))>,
-      ],
-      "style": Object {
-        "paddingHorizontal": 15,
-      },
-      "virtual": undefined,
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "animation": "fadeIn",
-          "children": Array [
-            <Styled(ViewNB)
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                  "paddingVertical": 1,
-                }
-              }
-            >
-              <Styled(Text)
-                style={
-                  Object {
-                    "color": "gray",
-                    "fontSize": 10,
-                  }
-                }
-              >
-                #
-                1
-              </Styled(Text)>
-              <Styled(Text)
-                style={
-                  Object {
-                    "color": "#3A936B",
-                    "fontSize": 12.5,
-                    "marginLeft": 5,
-                  }
-                }
-              >
-                author
-              </Styled(Text)>
-              <Styled(Text)
-                style={
-                  Object {
-                    "color": "#4E4A47",
-                    "fontSize": 12.5,
-                    "marginLeft": 5,
-                  }
-                }
-              >
-                · 
-                just now
-              </Styled(Text)>
-            </Styled(ViewNB)>,
-            <Styled(ViewNB)
-              style={
-                Object {
-                  "alignItems": "baseline",
-                  "backgroundColor": "white",
-                  "borderRadius": 5,
-                  "flexDirection": "row",
-                  "paddingLeft": 5,
-                  "paddingVertical": 1,
-                  "shadowColor": "#4E4A47",
-                  "shadowOffset": Object {
-                    "height": 1,
-                    "width": 1,
-                  },
-                  "shadowOpacity": 0.1,
-                  "shadowRadius": 1,
-                }
-              }
-            >
-              <Styled(Icon)
-                name="ios-flame"
-                style={
-                  Array [
-                    Object {
-                      "fontSize": 12.5,
-                      "marginRight": 5,
-                    },
-                    null,
-                  ]
-                }
-              />
-              <Styled(Text)
-                style={
-                  Array [
-                    Object {
-                      "fontSize": 12.5,
-                      "marginRight": 5,
-                    },
-                    null,
-                  ]
-                }
-              >
-                1
-              </Styled(Text)>
-            </Styled(ViewNB)>,
-          ],
-          "delay": 0,
-          "direction": "normal",
-          "duration": 250,
-          "easing": undefined,
-          "iterationCount": 1,
-          "iterationDelay": 0,
-          "onAnimationBegin": [Function],
-          "onAnimationEnd": [Function],
-          "onTransitionBegin": [Function],
-          "onTransitionEnd": [Function],
-          "style": Object {
-            "alignItems": "center",
-            "borderBottomWidth": 0.5,
-            "borderColor": "#eee",
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-            "paddingVertical": 10,
-          },
-          "transition": undefined,
-          "useNativeDriver": false,
-        },
-        "ref": null,
-        "rendered": Array [
+        }
+      >
+        #
+        1
+      </Styled(Text)>
+      <Styled(Text)
+        style={
           Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": Array [
-                <Styled(Text)
-                  style={
-                    Object {
-                      "color": "gray",
-                      "fontSize": 10,
-                    }
-                  }
-                >
-                  #
-                  1
-                </Styled(Text)>,
-                <Styled(Text)
-                  style={
-                    Object {
-                      "color": "#3A936B",
-                      "fontSize": 12.5,
-                      "marginLeft": 5,
-                    }
-                  }
-                >
-                  author
-                </Styled(Text)>,
-                <Styled(Text)
-                  style={
-                    Object {
-                      "color": "#4E4A47",
-                      "fontSize": 12.5,
-                      "marginLeft": 5,
-                    }
-                  }
-                >
-                  · 
-                  just now
-                </Styled(Text)>,
-                undefined,
-                undefined,
-              ],
-              "style": Object {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "paddingVertical": 1,
-              },
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": Array [
-                    "#",
-                    1,
-                  ],
-                  "style": Object {
-                    "color": "gray",
-                    "fontSize": 10,
-                  },
-                  "virtual": undefined,
-                },
-                "ref": null,
-                "rendered": Array [
-                  "#",
-                  1,
-                ],
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "author",
-                  "style": Object {
-                    "color": "#3A936B",
-                    "fontSize": 12.5,
-                    "marginLeft": 5,
-                  },
-                  "virtual": undefined,
-                },
-                "ref": null,
-                "rendered": "author",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": Array [
-                    "· ",
-                    "just now",
-                  ],
-                  "style": Object {
-                    "color": "#4E4A47",
-                    "fontSize": 12.5,
-                    "marginLeft": 5,
-                  },
-                  "virtual": undefined,
-                },
-                "ref": null,
-                "rendered": Array [
-                  "· ",
-                  "just now",
-                ],
-                "type": [Function],
-              },
-              undefined,
-              undefined,
-            ],
-            "type": [Function],
-          },
+            "color": "#3A936B",
+            "fontSize": 12.5,
+            "marginLeft": 5,
+          }
+        }
+      >
+        author
+      </Styled(Text)>
+      <Styled(Text)
+        style={
           Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": Array [
-                <Styled(Icon)
-                  name="ios-flame"
-                  style={
-                    Array [
-                      Object {
-                        "fontSize": 12.5,
-                        "marginRight": 5,
-                      },
-                      null,
-                    ]
-                  }
-                />,
-                <Styled(Text)
-                  style={
-                    Array [
-                      Object {
-                        "fontSize": 12.5,
-                        "marginRight": 5,
-                      },
-                      null,
-                    ]
-                  }
-                >
-                  1
-                </Styled(Text)>,
-              ],
-              "style": Object {
-                "alignItems": "baseline",
-                "backgroundColor": "white",
-                "borderRadius": 5,
-                "flexDirection": "row",
-                "paddingLeft": 5,
-                "paddingVertical": 1,
-                "shadowColor": "#4E4A47",
-                "shadowOffset": Object {
-                  "height": 1,
-                  "width": 1,
-                },
-                "shadowOpacity": 0.1,
-                "shadowRadius": 1,
-              },
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "name": "ios-flame",
-                  "style": Array [
-                    Object {
-                      "fontSize": 12.5,
-                      "marginRight": 5,
-                    },
-                    null,
-                  ],
-                  "virtual": undefined,
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": 1,
-                  "style": Array [
-                    Object {
-                      "fontSize": 12.5,
-                      "marginRight": 5,
-                    },
-                    null,
-                  ],
-                  "virtual": undefined,
-                },
-                "ref": null,
-                "rendered": 1,
-                "type": [Function],
-              },
-            ],
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "animation": "fadeIn",
-          "children": <TouchableOpacity
-            activeOpacity={0.5}
-            onLongPress={[Function]}
-            style={
-              Object {
-                "marginVertical": 5,
-              }
-            }
-          >
-            <View />
-          </TouchableOpacity>,
-          "delay": 0,
-          "direction": "normal",
-          "duration": 250,
-          "easing": undefined,
-          "iterationCount": 1,
-          "iterationDelay": 0,
-          "onAnimationBegin": [Function],
-          "onAnimationEnd": [Function],
-          "onTransitionBegin": [Function],
-          "onTransitionEnd": [Function],
-          "style": undefined,
-          "transition": undefined,
-          "useNativeDriver": false,
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "activeOpacity": 0.5,
-            "children": <View />,
-            "onLongPress": [Function],
-            "style": Object {
-              "marginVertical": 5,
-            },
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          "type": [Function],
-        },
-        "type": [Function],
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [
-          <withAnimatable(Styled(ViewNB))
-            animation="fadeIn"
-            delay={0}
-            direction="normal"
-            duration={250}
-            iterationCount={1}
-            iterationDelay={0}
-            onAnimationBegin={[Function]}
-            onAnimationEnd={[Function]}
-            onTransitionBegin={[Function]}
-            onTransitionEnd={[Function]}
-            style={
-              Object {
-                "alignItems": "center",
-                "borderBottomWidth": 0.5,
-                "borderColor": "#eee",
-                "flexDirection": "row",
-                "justifyContent": "space-between",
-                "paddingVertical": 10,
-              }
-            }
-            useNativeDriver={false}
-          >
-            <Styled(ViewNB)
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                  "paddingVertical": 1,
-                }
-              }
-            >
-              <Styled(Text)
-                style={
-                  Object {
-                    "color": "gray",
-                    "fontSize": 10,
-                  }
-                }
-              >
-                #
-                1
-              </Styled(Text)>
-              <Styled(Text)
-                style={
-                  Object {
-                    "color": "#3A936B",
-                    "fontSize": 12.5,
-                    "marginLeft": 5,
-                  }
-                }
-              >
-                author
-              </Styled(Text)>
-              <Styled(Text)
-                style={
-                  Object {
-                    "color": "#4E4A47",
-                    "fontSize": 12.5,
-                    "marginLeft": 5,
-                  }
-                }
-              >
-                · 
-                just now
-              </Styled(Text)>
-            </Styled(ViewNB)>
-            <Styled(ViewNB)
-              style={
-                Object {
-                  "alignItems": "baseline",
-                  "backgroundColor": "white",
-                  "borderRadius": 5,
-                  "flexDirection": "row",
-                  "paddingLeft": 5,
-                  "paddingVertical": 1,
-                  "shadowColor": "#4E4A47",
-                  "shadowOffset": Object {
-                    "height": 1,
-                    "width": 1,
-                  },
-                  "shadowOpacity": 0.1,
-                  "shadowRadius": 1,
-                }
-              }
-            >
-              <Styled(Icon)
-                name="ios-flame"
-                style={
-                  Array [
-                    Object {
-                      "fontSize": 12.5,
-                      "marginRight": 5,
-                    },
-                    null,
-                  ]
-                }
-              />
-              <Styled(Text)
-                style={
-                  Array [
-                    Object {
-                      "fontSize": 12.5,
-                      "marginRight": 5,
-                    },
-                    null,
-                  ]
-                }
-              >
-                1
-              </Styled(Text)>
-            </Styled(ViewNB)>
-          </withAnimatable(Styled(ViewNB))>,
-          <withAnimatable(Styled(ViewNB))
-            animation="fadeIn"
-            delay={0}
-            direction="normal"
-            duration={250}
-            iterationCount={1}
-            iterationDelay={0}
-            onAnimationBegin={[Function]}
-            onAnimationEnd={[Function]}
-            onTransitionBegin={[Function]}
-            onTransitionEnd={[Function]}
-            useNativeDriver={false}
-          >
-            <TouchableOpacity
-              activeOpacity={0.5}
-              onLongPress={[Function]}
-              style={
-                Object {
-                  "marginVertical": 5,
-                }
-              }
-            >
-              <View />
-            </TouchableOpacity>
-          </withAnimatable(Styled(ViewNB))>,
-        ],
-        "style": Object {
-          "paddingHorizontal": 15,
-        },
-        "virtual": undefined,
-      },
-      "ref": null,
-      "rendered": Array [
+            "color": "#4E4A47",
+            "fontSize": 12.5,
+            "marginLeft": 5,
+          }
+        }
+      >
+        · 
+        just now
+      </Styled(Text)>
+    </Styled(ViewNB)>
+    <Styled(ViewNB)
+      style={
         Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "animation": "fadeIn",
-            "children": Array [
-              <Styled(ViewNB)
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "paddingVertical": 1,
-                  }
-                }
-              >
-                <Styled(Text)
-                  style={
-                    Object {
-                      "color": "gray",
-                      "fontSize": 10,
-                    }
-                  }
-                >
-                  #
-                  1
-                </Styled(Text)>
-                <Styled(Text)
-                  style={
-                    Object {
-                      "color": "#3A936B",
-                      "fontSize": 12.5,
-                      "marginLeft": 5,
-                    }
-                  }
-                >
-                  author
-                </Styled(Text)>
-                <Styled(Text)
-                  style={
-                    Object {
-                      "color": "#4E4A47",
-                      "fontSize": 12.5,
-                      "marginLeft": 5,
-                    }
-                  }
-                >
-                  · 
-                  just now
-                </Styled(Text)>
-              </Styled(ViewNB)>,
-              <Styled(ViewNB)
-                style={
-                  Object {
-                    "alignItems": "baseline",
-                    "backgroundColor": "white",
-                    "borderRadius": 5,
-                    "flexDirection": "row",
-                    "paddingLeft": 5,
-                    "paddingVertical": 1,
-                    "shadowColor": "#4E4A47",
-                    "shadowOffset": Object {
-                      "height": 1,
-                      "width": 1,
-                    },
-                    "shadowOpacity": 0.1,
-                    "shadowRadius": 1,
-                  }
-                }
-              >
-                <Styled(Icon)
-                  name="ios-flame"
-                  style={
-                    Array [
-                      Object {
-                        "fontSize": 12.5,
-                        "marginRight": 5,
-                      },
-                      null,
-                    ]
-                  }
-                />
-                <Styled(Text)
-                  style={
-                    Array [
-                      Object {
-                        "fontSize": 12.5,
-                        "marginRight": 5,
-                      },
-                      null,
-                    ]
-                  }
-                >
-                  1
-                </Styled(Text)>
-              </Styled(ViewNB)>,
-            ],
-            "delay": 0,
-            "direction": "normal",
-            "duration": 250,
-            "easing": undefined,
-            "iterationCount": 1,
-            "iterationDelay": 0,
-            "onAnimationBegin": [Function],
-            "onAnimationEnd": [Function],
-            "onTransitionBegin": [Function],
-            "onTransitionEnd": [Function],
-            "style": Object {
-              "alignItems": "center",
-              "borderBottomWidth": 0.5,
-              "borderColor": "#eee",
-              "flexDirection": "row",
-              "justifyContent": "space-between",
-              "paddingVertical": 10,
-            },
-            "transition": undefined,
-            "useNativeDriver": false,
+          "alignItems": "baseline",
+          "backgroundColor": "white",
+          "borderRadius": 5,
+          "flexDirection": "row",
+          "paddingLeft": 5,
+          "paddingVertical": 1,
+          "shadowColor": "#4E4A47",
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 1,
           },
-          "ref": null,
-          "rendered": Array [
+          "shadowOpacity": 0.1,
+          "shadowRadius": 1,
+        }
+      }
+    >
+      <Styled(Icon)
+        name="ios-flame"
+        style={
+          Array [
             Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": Array [
-                  <Styled(Text)
-                    style={
-                      Object {
-                        "color": "gray",
-                        "fontSize": 10,
-                      }
-                    }
-                  >
-                    #
-                    1
-                  </Styled(Text)>,
-                  <Styled(Text)
-                    style={
-                      Object {
-                        "color": "#3A936B",
-                        "fontSize": 12.5,
-                        "marginLeft": 5,
-                      }
-                    }
-                  >
-                    author
-                  </Styled(Text)>,
-                  <Styled(Text)
-                    style={
-                      Object {
-                        "color": "#4E4A47",
-                        "fontSize": 12.5,
-                        "marginLeft": 5,
-                      }
-                    }
-                  >
-                    · 
-                    just now
-                  </Styled(Text)>,
-                  undefined,
-                  undefined,
-                ],
-                "style": Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                  "paddingVertical": 1,
-                },
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": Array [
-                      "#",
-                      1,
-                    ],
-                    "style": Object {
-                      "color": "gray",
-                      "fontSize": 10,
-                    },
-                    "virtual": undefined,
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "#",
-                    1,
-                  ],
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": "author",
-                    "style": Object {
-                      "color": "#3A936B",
-                      "fontSize": 12.5,
-                      "marginLeft": 5,
-                    },
-                    "virtual": undefined,
-                  },
-                  "ref": null,
-                  "rendered": "author",
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": Array [
-                      "· ",
-                      "just now",
-                    ],
-                    "style": Object {
-                      "color": "#4E4A47",
-                      "fontSize": 12.5,
-                      "marginLeft": 5,
-                    },
-                    "virtual": undefined,
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "· ",
-                    "just now",
-                  ],
-                  "type": [Function],
-                },
-                undefined,
-                undefined,
-              ],
-              "type": [Function],
+              "fontSize": 12.5,
+              "marginRight": 5,
             },
+            null,
+          ]
+        }
+      />
+      <Styled(Text)
+        style={
+          Array [
             Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": Array [
-                  <Styled(Icon)
-                    name="ios-flame"
-                    style={
-                      Array [
-                        Object {
-                          "fontSize": 12.5,
-                          "marginRight": 5,
-                        },
-                        null,
-                      ]
-                    }
-                  />,
-                  <Styled(Text)
-                    style={
-                      Array [
-                        Object {
-                          "fontSize": 12.5,
-                          "marginRight": 5,
-                        },
-                        null,
-                      ]
-                    }
-                  >
-                    1
-                  </Styled(Text)>,
-                ],
-                "style": Object {
-                  "alignItems": "baseline",
-                  "backgroundColor": "white",
-                  "borderRadius": 5,
-                  "flexDirection": "row",
-                  "paddingLeft": 5,
-                  "paddingVertical": 1,
-                  "shadowColor": "#4E4A47",
-                  "shadowOffset": Object {
-                    "height": 1,
-                    "width": 1,
-                  },
-                  "shadowOpacity": 0.1,
-                  "shadowRadius": 1,
-                },
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "name": "ios-flame",
-                    "style": Array [
-                      Object {
-                        "fontSize": 12.5,
-                        "marginRight": 5,
-                      },
-                      null,
-                    ],
-                    "virtual": undefined,
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": 1,
-                    "style": Array [
-                      Object {
-                        "fontSize": 12.5,
-                        "marginRight": 5,
-                      },
-                      null,
-                    ],
-                    "virtual": undefined,
-                  },
-                  "ref": null,
-                  "rendered": 1,
-                  "type": [Function],
-                },
-              ],
-              "type": [Function],
+              "fontSize": 12.5,
+              "marginRight": 5,
             },
-          ],
-          "type": [Function],
-        },
+            null,
+          ]
+        }
+      >
+        1
+      </Styled(Text)>
+    </Styled(ViewNB)>
+  </withAnimatable(Styled(ViewNB))>
+  <withAnimatable(Styled(ViewNB))
+    animation="fadeIn"
+    delay={0}
+    direction="normal"
+    duration={250}
+    iterationCount={1}
+    iterationDelay={0}
+    onAnimationBegin={[Function]}
+    onAnimationEnd={[Function]}
+    onTransitionBegin={[Function]}
+    onTransitionEnd={[Function]}
+    useNativeDriver={false}
+  >
+    <TouchableOpacity
+      activeOpacity={0.5}
+      onLongPress={[Function]}
+      style={
         Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "animation": "fadeIn",
-            "children": <TouchableOpacity
-              activeOpacity={0.5}
-              onLongPress={[Function]}
-              style={
-                Object {
-                  "marginVertical": 5,
-                }
-              }
-            >
-              <View />
-            </TouchableOpacity>,
-            "delay": 0,
-            "direction": "normal",
-            "duration": 250,
-            "easing": undefined,
-            "iterationCount": 1,
-            "iterationDelay": 0,
-            "onAnimationBegin": [Function],
-            "onAnimationEnd": [Function],
-            "onTransitionBegin": [Function],
-            "onTransitionEnd": [Function],
-            "style": undefined,
-            "transition": undefined,
-            "useNativeDriver": false,
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "activeOpacity": 0.5,
-              "children": <View />,
-              "onLongPress": [Function],
-              "style": Object {
-                "marginVertical": 5,
-              },
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {},
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            "type": [Function],
-          },
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-  Symbol(enzyme.__childContext__): null,
-}
+          "marginVertical": 5,
+        }
+      }
+    >
+      <View />
+    </TouchableOpacity>
+  </withAnimatable(Styled(ViewNB))>
+</Styled(Content)>
 `;

@@ -1,6 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import { shallow } from 'enzyme';
+
 import PopupMenu from './PopupMenu';
 
 describe('Testing PopupMenu Component', () => {
@@ -10,6 +11,8 @@ describe('Testing PopupMenu Component', () => {
         <View></View>
       </PopupMenu>
     );
+    // open menu for rendering
+    wrapper.instance().toggle();
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -19,6 +22,8 @@ describe('Testing PopupMenu Component', () => {
         <View></View>
       </PopupMenu>
     );
+    // open menu for rendering
+    wrapper.instance().toggle();
     expect(wrapper).toMatchSnapshot();
   });
 });

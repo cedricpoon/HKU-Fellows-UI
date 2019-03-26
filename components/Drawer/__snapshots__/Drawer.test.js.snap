@@ -1,1631 +1,180 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Testing Drawer Component renders as expected 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Drawer
-    onLogout={[Function]}
-    onTemperature={[Function]}
-    temperature={null}
-    token7digits="0000000"
-    username="-"
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "children": Array [
-        <View
+<SafeAreaView
+  forceInset={
+    Object {
+      "horizontal": "never",
+      "top": "always",
+    }
+  }
+  onLayout={[Function]}
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "zIndex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "flex-start",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "margin": 20,
+        }
+      }
+    >
+      <Logo
+        size={80}
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "flex-end",
+              "flexDirection": "column",
+              "justifyContent": "space-between",
+            },
+            Object {
+              "height": 80,
+            },
+          ]
+        }
+      >
+        <Styled(Text)
           style={
             Object {
-              "zIndex": 1,
+              "color": "grey",
+              "fontSize": 10,
             }
           }
         >
-          <View
-            style={
-              Object {
-                "alignItems": "flex-start",
-                "flexDirection": "row",
-                "justifyContent": "space-between",
-                "margin": 20,
-              }
-            }
-          >
-            <Logo
-              size={80}
-            />
-            <View
-              style={
-                Array [
-                  Object {
-                    "alignItems": "flex-end",
-                    "flexDirection": "column",
-                    "justifyContent": "space-between",
-                  },
-                  Object {
-                    "height": 80,
-                  },
-                ]
-              }
-            >
-              <Styled(Text)
-                style={
-                  Object {
-                    "color": "grey",
-                    "fontSize": 10,
-                  }
-                }
-              >
-                You are logged in as
-              </Styled(Text)>
-              <Styled(Text)
-                style={
-                  Object {
-                    "fontSize": 12.5,
-                  }
-                }
-              >
-                -
-              </Styled(Text)>
-              <Styled(Text)
-                style={
-                  Array [
-                    Object {
-                      "fontSize": 12.5,
-                    },
-                    null,
-                  ]
-                }
-              >
-                <Styled(Icon)
-                  name="ios-flame"
-                  style={
-                    Array [
-                      Object {
-                        "fontSize": 12.5,
-                      },
-                      null,
-                    ]
-                  }
-                />
-                 
-                -
-              </Styled(Text)>
-              <Styled(Text)
-                style={
-                  Object {
-                    "color": "grey",
-                    "fontSize": 10,
-                  }
-                }
-              >
-                <Styled(Icon)
-                  name="key"
-                  style={
-                    Object {
-                      "color": "grey",
-                      "fontSize": 10,
-                    }
-                  }
-                  type="Foundation"
-                />
-                 
-                0000000
-              </Styled(Text)>
-            </View>
-          </View>
-          <DrawerNavigatorItems
-            activeBackgroundColor="rgba(0, 0, 0, .04)"
-            activeTintColor="#3A936B"
-            inactiveBackgroundColor="transparent"
-            inactiveTintColor="rgba(0, 0, 0, .87)"
-            labelStyle={
-              Object {
-                "fontSize": 15,
-                "fontWeight": "normal",
-              }
-            }
-            onLogout={[Function]}
-            onTemperature={[Function]}
-            temperature={null}
-            token7digits="0000000"
-            username="-"
-          />
-          <Styled(Button)
-            dark={true}
-            full={true}
-            onPress={[Function]}
-            transparent={true}
-          >
-            <Styled(Text)
-              style={
-                Object {
-                  "fontSize": 15,
-                  "fontWeight": "normal",
-                }
-              }
-            >
-              Refresh Temperature
-            </Styled(Text)>
-          </Styled(Button)>
-          <Styled(Button)
-            dark={true}
-            full={true}
-            onPress={[Function]}
-            transparent={true}
-          >
-            <Styled(Text)
-              style={
-                Object {
-                  "fontSize": 15,
-                  "fontWeight": "normal",
-                }
-              }
-            >
-              Log out
-            </Styled(Text)>
-          </Styled(Button)>
-        </View>,
-        <Backdrop
-          height={0}
+          You are logged in as
+        </Styled(Text)>
+        <Styled(Text)
           style={
             Object {
-              "zIndex": 0,
+              "fontSize": 12.5,
             }
           }
-          width={0}
-        />,
-      ],
-      "forceInset": Object {
-        "horizontal": "never",
-        "top": "always",
-      },
-      "onLayout": [Function],
-      "style": Object {
-        "flex": 1,
-      },
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <View
-              style={
-                Object {
-                  "alignItems": "flex-start",
-                  "flexDirection": "row",
-                  "justifyContent": "space-between",
-                  "margin": 20,
-                }
-              }
-            >
-              <Logo
-                size={80}
-              />
-              <View
-                style={
-                  Array [
-                    Object {
-                      "alignItems": "flex-end",
-                      "flexDirection": "column",
-                      "justifyContent": "space-between",
-                    },
-                    Object {
-                      "height": 80,
-                    },
-                  ]
-                }
-              >
-                <Styled(Text)
-                  style={
-                    Object {
-                      "color": "grey",
-                      "fontSize": 10,
-                    }
-                  }
-                >
-                  You are logged in as
-                </Styled(Text)>
-                <Styled(Text)
-                  style={
-                    Object {
-                      "fontSize": 12.5,
-                    }
-                  }
-                >
-                  -
-                </Styled(Text)>
-                <Styled(Text)
-                  style={
-                    Array [
-                      Object {
-                        "fontSize": 12.5,
-                      },
-                      null,
-                    ]
-                  }
-                >
-                  <Styled(Icon)
-                    name="ios-flame"
-                    style={
-                      Array [
-                        Object {
-                          "fontSize": 12.5,
-                        },
-                        null,
-                      ]
-                    }
-                  />
-                   
-                  -
-                </Styled(Text)>
-                <Styled(Text)
-                  style={
-                    Object {
-                      "color": "grey",
-                      "fontSize": 10,
-                    }
-                  }
-                >
-                  <Styled(Icon)
-                    name="key"
-                    style={
-                      Object {
-                        "color": "grey",
-                        "fontSize": 10,
-                      }
-                    }
-                    type="Foundation"
-                  />
-                   
-                  0000000
-                </Styled(Text)>
-              </View>
-            </View>,
-            <DrawerNavigatorItems
-              activeBackgroundColor="rgba(0, 0, 0, .04)"
-              activeTintColor="#3A936B"
-              inactiveBackgroundColor="transparent"
-              inactiveTintColor="rgba(0, 0, 0, .87)"
-              labelStyle={
-                Object {
-                  "fontSize": 15,
-                  "fontWeight": "normal",
-                }
-              }
-              onLogout={[Function]}
-              onTemperature={[Function]}
-              temperature={null}
-              token7digits="0000000"
-              username="-"
-            />,
-            <Styled(Button)
-              dark={true}
-              full={true}
-              onPress={[Function]}
-              transparent={true}
-            >
-              <Styled(Text)
-                style={
-                  Object {
-                    "fontSize": 15,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Refresh Temperature
-              </Styled(Text)>
-            </Styled(Button)>,
-            <Styled(Button)
-              dark={true}
-              full={true}
-              onPress={[Function]}
-              transparent={true}
-            >
-              <Styled(Text)
-                style={
-                  Object {
-                    "fontSize": 15,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Log out
-              </Styled(Text)>
-            </Styled(Button)>,
-          ],
-          "style": Object {
-            "zIndex": 1,
-          },
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": Array [
-                <Logo
-                  size={80}
-                />,
-                <View
-                  style={
-                    Array [
-                      Object {
-                        "alignItems": "flex-end",
-                        "flexDirection": "column",
-                        "justifyContent": "space-between",
-                      },
-                      Object {
-                        "height": 80,
-                      },
-                    ]
-                  }
-                >
-                  <Styled(Text)
-                    style={
-                      Object {
-                        "color": "grey",
-                        "fontSize": 10,
-                      }
-                    }
-                  >
-                    You are logged in as
-                  </Styled(Text)>
-                  <Styled(Text)
-                    style={
-                      Object {
-                        "fontSize": 12.5,
-                      }
-                    }
-                  >
-                    -
-                  </Styled(Text)>
-                  <Styled(Text)
-                    style={
-                      Array [
-                        Object {
-                          "fontSize": 12.5,
-                        },
-                        null,
-                      ]
-                    }
-                  >
-                    <Styled(Icon)
-                      name="ios-flame"
-                      style={
-                        Array [
-                          Object {
-                            "fontSize": 12.5,
-                          },
-                          null,
-                        ]
-                      }
-                    />
-                     
-                    -
-                  </Styled(Text)>
-                  <Styled(Text)
-                    style={
-                      Object {
-                        "color": "grey",
-                        "fontSize": 10,
-                      }
-                    }
-                  >
-                    <Styled(Icon)
-                      name="key"
-                      style={
-                        Object {
-                          "color": "grey",
-                          "fontSize": 10,
-                        }
-                      }
-                      type="Foundation"
-                    />
-                     
-                    0000000
-                  </Styled(Text)>
-                </View>,
-              ],
-              "style": Object {
-                "alignItems": "flex-start",
-                "flexDirection": "row",
-                "justifyContent": "space-between",
-                "margin": 20,
-              },
-            },
-            "ref": null,
-            "rendered": Array [
+        >
+          -
+        </Styled(Text)>
+        <Styled(Text)
+          style={
+            Array [
               Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "size": 80,
+                "fontSize": 12.5,
+              },
+              null,
+            ]
+          }
+        >
+          <Styled(Icon)
+            name="ios-flame"
+            style={
+              Array [
+                Object {
+                  "fontSize": 12.5,
                 },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": Array [
-                    <Styled(Text)
-                      style={
-                        Object {
-                          "color": "grey",
-                          "fontSize": 10,
-                        }
-                      }
-                    >
-                      You are logged in as
-                    </Styled(Text)>,
-                    <Styled(Text)
-                      style={
-                        Object {
-                          "fontSize": 12.5,
-                        }
-                      }
-                    >
-                      -
-                    </Styled(Text)>,
-                    <Styled(Text)
-                      style={
-                        Array [
-                          Object {
-                            "fontSize": 12.5,
-                          },
-                          null,
-                        ]
-                      }
-                    >
-                      <Styled(Icon)
-                        name="ios-flame"
-                        style={
-                          Array [
-                            Object {
-                              "fontSize": 12.5,
-                            },
-                            null,
-                          ]
-                        }
-                      />
-                       
-                      -
-                    </Styled(Text)>,
-                    <Styled(Text)
-                      style={
-                        Object {
-                          "color": "grey",
-                          "fontSize": 10,
-                        }
-                      }
-                    >
-                      <Styled(Icon)
-                        name="key"
-                        style={
-                          Object {
-                            "color": "grey",
-                            "fontSize": 10,
-                          }
-                        }
-                        type="Foundation"
-                      />
-                       
-                      0000000
-                    </Styled(Text)>,
-                  ],
-                  "style": Array [
-                    Object {
-                      "alignItems": "flex-end",
-                      "flexDirection": "column",
-                      "justifyContent": "space-between",
-                    },
-                    Object {
-                      "height": 80,
-                    },
-                  ],
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": "You are logged in as",
-                      "style": Object {
-                        "color": "grey",
-                        "fontSize": 10,
-                      },
-                      "virtual": undefined,
-                    },
-                    "ref": null,
-                    "rendered": "You are logged in as",
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": "-",
-                      "style": Object {
-                        "fontSize": 12.5,
-                      },
-                      "virtual": undefined,
-                    },
-                    "ref": null,
-                    "rendered": "-",
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": Array [
-                        <Styled(Icon)
-                          name="ios-flame"
-                          style={
-                            Array [
-                              Object {
-                                "fontSize": 12.5,
-                              },
-                              null,
-                            ]
-                          }
-                        />,
-                        " ",
-                        "-",
-                      ],
-                      "style": Array [
-                        Object {
-                          "fontSize": 12.5,
-                        },
-                        null,
-                      ],
-                      "virtual": undefined,
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "class",
-                        "props": Object {
-                          "name": "ios-flame",
-                          "style": Array [
-                            Object {
-                              "fontSize": 12.5,
-                            },
-                            null,
-                          ],
-                          "virtual": undefined,
-                        },
-                        "ref": null,
-                        "rendered": null,
-                        "type": [Function],
-                      },
-                      " ",
-                      "-",
-                    ],
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": Array [
-                        <Styled(Icon)
-                          name="key"
-                          style={
-                            Object {
-                              "color": "grey",
-                              "fontSize": 10,
-                            }
-                          }
-                          type="Foundation"
-                        />,
-                        " ",
-                        "0000000",
-                      ],
-                      "style": Object {
-                        "color": "grey",
-                        "fontSize": 10,
-                      },
-                      "virtual": undefined,
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "class",
-                        "props": Object {
-                          "name": "key",
-                          "style": Object {
-                            "color": "grey",
-                            "fontSize": 10,
-                          },
-                          "type": "Foundation",
-                          "virtual": undefined,
-                        },
-                        "ref": null,
-                        "rendered": null,
-                        "type": [Function],
-                      },
-                      " ",
-                      "0000000",
-                    ],
-                    "type": [Function],
-                  },
-                ],
-                "type": [Function],
-              },
-            ],
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "activeBackgroundColor": "rgba(0, 0, 0, .04)",
-              "activeTintColor": "#3A936B",
-              "inactiveBackgroundColor": "transparent",
-              "inactiveTintColor": "rgba(0, 0, 0, .87)",
-              "labelStyle": Object {
-                "fontSize": 15,
-                "fontWeight": "normal",
-              },
-              "onLogout": [Function],
-              "onTemperature": [Function],
-              "temperature": null,
-              "token7digits": "0000000",
-              "username": "-",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": <Styled(Text)
-                style={
-                  Object {
-                    "fontSize": 15,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Refresh Temperature
-              </Styled(Text)>,
-              "dark": true,
-              "full": true,
-              "onPress": [Function],
-              "transparent": true,
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "Refresh Temperature",
-                "style": Object {
-                  "fontSize": 15,
-                  "fontWeight": "normal",
-                },
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": "Refresh Temperature",
-              "type": [Function],
-            },
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": <Styled(Text)
-                style={
-                  Object {
-                    "fontSize": 15,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Log out
-              </Styled(Text)>,
-              "dark": true,
-              "full": true,
-              "onPress": [Function],
-              "transparent": true,
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "Log out",
-                "style": Object {
-                  "fontSize": 15,
-                  "fontWeight": "normal",
-                },
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": "Log out",
-              "type": [Function],
-            },
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "height": 0,
-          "style": Object {
-            "zIndex": 0,
-          },
-          "width": 0,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [
-          <View
+                null,
+              ]
+            }
+          />
+           
+          -
+        </Styled(Text)>
+        <Styled(Text)
+          style={
+            Object {
+              "color": "grey",
+              "fontSize": 10,
+            }
+          }
+        >
+          <Styled(Icon)
+            name="key"
             style={
               Object {
-                "zIndex": 1,
+                "color": "grey",
+                "fontSize": 10,
               }
             }
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "flex-start",
-                  "flexDirection": "row",
-                  "justifyContent": "space-between",
-                  "margin": 20,
-                }
-              }
-            >
-              <Logo
-                size={80}
-              />
-              <View
-                style={
-                  Array [
-                    Object {
-                      "alignItems": "flex-end",
-                      "flexDirection": "column",
-                      "justifyContent": "space-between",
-                    },
-                    Object {
-                      "height": 80,
-                    },
-                  ]
-                }
-              >
-                <Styled(Text)
-                  style={
-                    Object {
-                      "color": "grey",
-                      "fontSize": 10,
-                    }
-                  }
-                >
-                  You are logged in as
-                </Styled(Text)>
-                <Styled(Text)
-                  style={
-                    Object {
-                      "fontSize": 12.5,
-                    }
-                  }
-                >
-                  -
-                </Styled(Text)>
-                <Styled(Text)
-                  style={
-                    Array [
-                      Object {
-                        "fontSize": 12.5,
-                      },
-                      null,
-                    ]
-                  }
-                >
-                  <Styled(Icon)
-                    name="ios-flame"
-                    style={
-                      Array [
-                        Object {
-                          "fontSize": 12.5,
-                        },
-                        null,
-                      ]
-                    }
-                  />
-                   
-                  -
-                </Styled(Text)>
-                <Styled(Text)
-                  style={
-                    Object {
-                      "color": "grey",
-                      "fontSize": 10,
-                    }
-                  }
-                >
-                  <Styled(Icon)
-                    name="key"
-                    style={
-                      Object {
-                        "color": "grey",
-                        "fontSize": 10,
-                      }
-                    }
-                    type="Foundation"
-                  />
-                   
-                  0000000
-                </Styled(Text)>
-              </View>
-            </View>
-            <DrawerNavigatorItems
-              activeBackgroundColor="rgba(0, 0, 0, .04)"
-              activeTintColor="#3A936B"
-              inactiveBackgroundColor="transparent"
-              inactiveTintColor="rgba(0, 0, 0, .87)"
-              labelStyle={
-                Object {
-                  "fontSize": 15,
-                  "fontWeight": "normal",
-                }
-              }
-              onLogout={[Function]}
-              onTemperature={[Function]}
-              temperature={null}
-              token7digits="0000000"
-              username="-"
-            />
-            <Styled(Button)
-              dark={true}
-              full={true}
-              onPress={[Function]}
-              transparent={true}
-            >
-              <Styled(Text)
-                style={
-                  Object {
-                    "fontSize": 15,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Refresh Temperature
-              </Styled(Text)>
-            </Styled(Button)>
-            <Styled(Button)
-              dark={true}
-              full={true}
-              onPress={[Function]}
-              transparent={true}
-            >
-              <Styled(Text)
-                style={
-                  Object {
-                    "fontSize": 15,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Log out
-              </Styled(Text)>
-            </Styled(Button)>
-          </View>,
-          <Backdrop
-            height={0}
-            style={
-              Object {
-                "zIndex": 0,
-              }
-            }
-            width={0}
-          />,
-        ],
-        "forceInset": Object {
-          "horizontal": "never",
-          "top": "always",
-        },
-        "onLayout": [Function],
-        "style": Object {
-          "flex": 1,
-        },
-      },
-      "ref": null,
-      "rendered": Array [
+            type="Foundation"
+          />
+           
+          0000000
+        </Styled(Text)>
+      </View>
+    </View>
+    <DrawerNavigatorItems
+      activeBackgroundColor="rgba(0, 0, 0, .04)"
+      activeTintColor="#3A936B"
+      inactiveBackgroundColor="transparent"
+      inactiveTintColor="rgba(0, 0, 0, .87)"
+      labelStyle={
         Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <View
-                style={
-                  Object {
-                    "alignItems": "flex-start",
-                    "flexDirection": "row",
-                    "justifyContent": "space-between",
-                    "margin": 20,
-                  }
-                }
-              >
-                <Logo
-                  size={80}
-                />
-                <View
-                  style={
-                    Array [
-                      Object {
-                        "alignItems": "flex-end",
-                        "flexDirection": "column",
-                        "justifyContent": "space-between",
-                      },
-                      Object {
-                        "height": 80,
-                      },
-                    ]
-                  }
-                >
-                  <Styled(Text)
-                    style={
-                      Object {
-                        "color": "grey",
-                        "fontSize": 10,
-                      }
-                    }
-                  >
-                    You are logged in as
-                  </Styled(Text)>
-                  <Styled(Text)
-                    style={
-                      Object {
-                        "fontSize": 12.5,
-                      }
-                    }
-                  >
-                    -
-                  </Styled(Text)>
-                  <Styled(Text)
-                    style={
-                      Array [
-                        Object {
-                          "fontSize": 12.5,
-                        },
-                        null,
-                      ]
-                    }
-                  >
-                    <Styled(Icon)
-                      name="ios-flame"
-                      style={
-                        Array [
-                          Object {
-                            "fontSize": 12.5,
-                          },
-                          null,
-                        ]
-                      }
-                    />
-                     
-                    -
-                  </Styled(Text)>
-                  <Styled(Text)
-                    style={
-                      Object {
-                        "color": "grey",
-                        "fontSize": 10,
-                      }
-                    }
-                  >
-                    <Styled(Icon)
-                      name="key"
-                      style={
-                        Object {
-                          "color": "grey",
-                          "fontSize": 10,
-                        }
-                      }
-                      type="Foundation"
-                    />
-                     
-                    0000000
-                  </Styled(Text)>
-                </View>
-              </View>,
-              <DrawerNavigatorItems
-                activeBackgroundColor="rgba(0, 0, 0, .04)"
-                activeTintColor="#3A936B"
-                inactiveBackgroundColor="transparent"
-                inactiveTintColor="rgba(0, 0, 0, .87)"
-                labelStyle={
-                  Object {
-                    "fontSize": 15,
-                    "fontWeight": "normal",
-                  }
-                }
-                onLogout={[Function]}
-                onTemperature={[Function]}
-                temperature={null}
-                token7digits="0000000"
-                username="-"
-              />,
-              <Styled(Button)
-                dark={true}
-                full={true}
-                onPress={[Function]}
-                transparent={true}
-              >
-                <Styled(Text)
-                  style={
-                    Object {
-                      "fontSize": 15,
-                      "fontWeight": "normal",
-                    }
-                  }
-                >
-                  Refresh Temperature
-                </Styled(Text)>
-              </Styled(Button)>,
-              <Styled(Button)
-                dark={true}
-                full={true}
-                onPress={[Function]}
-                transparent={true}
-              >
-                <Styled(Text)
-                  style={
-                    Object {
-                      "fontSize": 15,
-                      "fontWeight": "normal",
-                    }
-                  }
-                >
-                  Log out
-                </Styled(Text)>
-              </Styled(Button)>,
-            ],
-            "style": Object {
-              "zIndex": 1,
-            },
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": Array [
-                  <Logo
-                    size={80}
-                  />,
-                  <View
-                    style={
-                      Array [
-                        Object {
-                          "alignItems": "flex-end",
-                          "flexDirection": "column",
-                          "justifyContent": "space-between",
-                        },
-                        Object {
-                          "height": 80,
-                        },
-                      ]
-                    }
-                  >
-                    <Styled(Text)
-                      style={
-                        Object {
-                          "color": "grey",
-                          "fontSize": 10,
-                        }
-                      }
-                    >
-                      You are logged in as
-                    </Styled(Text)>
-                    <Styled(Text)
-                      style={
-                        Object {
-                          "fontSize": 12.5,
-                        }
-                      }
-                    >
-                      -
-                    </Styled(Text)>
-                    <Styled(Text)
-                      style={
-                        Array [
-                          Object {
-                            "fontSize": 12.5,
-                          },
-                          null,
-                        ]
-                      }
-                    >
-                      <Styled(Icon)
-                        name="ios-flame"
-                        style={
-                          Array [
-                            Object {
-                              "fontSize": 12.5,
-                            },
-                            null,
-                          ]
-                        }
-                      />
-                       
-                      -
-                    </Styled(Text)>
-                    <Styled(Text)
-                      style={
-                        Object {
-                          "color": "grey",
-                          "fontSize": 10,
-                        }
-                      }
-                    >
-                      <Styled(Icon)
-                        name="key"
-                        style={
-                          Object {
-                            "color": "grey",
-                            "fontSize": 10,
-                          }
-                        }
-                        type="Foundation"
-                      />
-                       
-                      0000000
-                    </Styled(Text)>
-                  </View>,
-                ],
-                "style": Object {
-                  "alignItems": "flex-start",
-                  "flexDirection": "row",
-                  "justifyContent": "space-between",
-                  "margin": 20,
-                },
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "size": 80,
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": Array [
-                      <Styled(Text)
-                        style={
-                          Object {
-                            "color": "grey",
-                            "fontSize": 10,
-                          }
-                        }
-                      >
-                        You are logged in as
-                      </Styled(Text)>,
-                      <Styled(Text)
-                        style={
-                          Object {
-                            "fontSize": 12.5,
-                          }
-                        }
-                      >
-                        -
-                      </Styled(Text)>,
-                      <Styled(Text)
-                        style={
-                          Array [
-                            Object {
-                              "fontSize": 12.5,
-                            },
-                            null,
-                          ]
-                        }
-                      >
-                        <Styled(Icon)
-                          name="ios-flame"
-                          style={
-                            Array [
-                              Object {
-                                "fontSize": 12.5,
-                              },
-                              null,
-                            ]
-                          }
-                        />
-                         
-                        -
-                      </Styled(Text)>,
-                      <Styled(Text)
-                        style={
-                          Object {
-                            "color": "grey",
-                            "fontSize": 10,
-                          }
-                        }
-                      >
-                        <Styled(Icon)
-                          name="key"
-                          style={
-                            Object {
-                              "color": "grey",
-                              "fontSize": 10,
-                            }
-                          }
-                          type="Foundation"
-                        />
-                         
-                        0000000
-                      </Styled(Text)>,
-                    ],
-                    "style": Array [
-                      Object {
-                        "alignItems": "flex-end",
-                        "flexDirection": "column",
-                        "justifyContent": "space-between",
-                      },
-                      Object {
-                        "height": 80,
-                      },
-                    ],
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "class",
-                      "props": Object {
-                        "children": "You are logged in as",
-                        "style": Object {
-                          "color": "grey",
-                          "fontSize": 10,
-                        },
-                        "virtual": undefined,
-                      },
-                      "ref": null,
-                      "rendered": "You are logged in as",
-                      "type": [Function],
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "class",
-                      "props": Object {
-                        "children": "-",
-                        "style": Object {
-                          "fontSize": 12.5,
-                        },
-                        "virtual": undefined,
-                      },
-                      "ref": null,
-                      "rendered": "-",
-                      "type": [Function],
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "class",
-                      "props": Object {
-                        "children": Array [
-                          <Styled(Icon)
-                            name="ios-flame"
-                            style={
-                              Array [
-                                Object {
-                                  "fontSize": 12.5,
-                                },
-                                null,
-                              ]
-                            }
-                          />,
-                          " ",
-                          "-",
-                        ],
-                        "style": Array [
-                          Object {
-                            "fontSize": 12.5,
-                          },
-                          null,
-                        ],
-                        "virtual": undefined,
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "class",
-                          "props": Object {
-                            "name": "ios-flame",
-                            "style": Array [
-                              Object {
-                                "fontSize": 12.5,
-                              },
-                              null,
-                            ],
-                            "virtual": undefined,
-                          },
-                          "ref": null,
-                          "rendered": null,
-                          "type": [Function],
-                        },
-                        " ",
-                        "-",
-                      ],
-                      "type": [Function],
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "class",
-                      "props": Object {
-                        "children": Array [
-                          <Styled(Icon)
-                            name="key"
-                            style={
-                              Object {
-                                "color": "grey",
-                                "fontSize": 10,
-                              }
-                            }
-                            type="Foundation"
-                          />,
-                          " ",
-                          "0000000",
-                        ],
-                        "style": Object {
-                          "color": "grey",
-                          "fontSize": 10,
-                        },
-                        "virtual": undefined,
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "class",
-                          "props": Object {
-                            "name": "key",
-                            "style": Object {
-                              "color": "grey",
-                              "fontSize": 10,
-                            },
-                            "type": "Foundation",
-                            "virtual": undefined,
-                          },
-                          "ref": null,
-                          "rendered": null,
-                          "type": [Function],
-                        },
-                        " ",
-                        "0000000",
-                      ],
-                      "type": [Function],
-                    },
-                  ],
-                  "type": [Function],
-                },
-              ],
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "activeBackgroundColor": "rgba(0, 0, 0, .04)",
-                "activeTintColor": "#3A936B",
-                "inactiveBackgroundColor": "transparent",
-                "inactiveTintColor": "rgba(0, 0, 0, .87)",
-                "labelStyle": Object {
-                  "fontSize": 15,
-                  "fontWeight": "normal",
-                },
-                "onLogout": [Function],
-                "onTemperature": [Function],
-                "temperature": null,
-                "token7digits": "0000000",
-                "username": "-",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": <Styled(Text)
-                  style={
-                    Object {
-                      "fontSize": 15,
-                      "fontWeight": "normal",
-                    }
-                  }
-                >
-                  Refresh Temperature
-                </Styled(Text)>,
-                "dark": true,
-                "full": true,
-                "onPress": [Function],
-                "transparent": true,
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "Refresh Temperature",
-                  "style": Object {
-                    "fontSize": 15,
-                    "fontWeight": "normal",
-                  },
-                  "virtual": undefined,
-                },
-                "ref": null,
-                "rendered": "Refresh Temperature",
-                "type": [Function],
-              },
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": <Styled(Text)
-                  style={
-                    Object {
-                      "fontSize": 15,
-                      "fontWeight": "normal",
-                    }
-                  }
-                >
-                  Log out
-                </Styled(Text)>,
-                "dark": true,
-                "full": true,
-                "onPress": [Function],
-                "transparent": true,
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "Log out",
-                  "style": Object {
-                    "fontSize": 15,
-                    "fontWeight": "normal",
-                  },
-                  "virtual": undefined,
-                },
-                "ref": null,
-                "rendered": "Log out",
-                "type": [Function],
-              },
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "height": 0,
-            "style": Object {
-              "zIndex": 0,
-            },
-            "width": 0,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-  Symbol(enzyme.__childContext__): null,
-}
+          "fontSize": 15,
+          "fontWeight": "normal",
+        }
+      }
+      onLogout={[Function]}
+      onTemperature={[Function]}
+      temperature={null}
+      token7digits="0000000"
+      username="-"
+    />
+    <Styled(Button)
+      dark={true}
+      full={true}
+      onPress={[Function]}
+      transparent={true}
+    >
+      <Styled(Text)
+        style={
+          Object {
+            "fontSize": 15,
+            "fontWeight": "normal",
+          }
+        }
+      >
+        Refresh Temperature
+      </Styled(Text)>
+    </Styled(Button)>
+    <Styled(Button)
+      dark={true}
+      full={true}
+      onPress={[Function]}
+      transparent={true}
+    >
+      <Styled(Text)
+        style={
+          Object {
+            "fontSize": 15,
+            "fontWeight": "normal",
+          }
+        }
+      >
+        Log out
+      </Styled(Text)>
+    </Styled(Button)>
+  </View>
+  <Backdrop
+    height={0}
+    style={
+      Object {
+        "zIndex": 0,
+      }
+    }
+    width={0}
+  />
+</SafeAreaView>
 `;

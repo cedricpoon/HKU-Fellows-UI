@@ -13,10 +13,9 @@ class ComposeForm extends PureComponent {
   constructor(props) {
     super(props);
     this.state = { isNative: true };
-    this._toggleUploadMode = this._toggleUploadMode.bind(this);
   }
 
-  _toggleUploadMode() {
+  _toggleUploadMode = () => {
     const { onToggleMode } = this.props;
     this.setState(prevState => {
       onToggleMode(!prevState.isNative);

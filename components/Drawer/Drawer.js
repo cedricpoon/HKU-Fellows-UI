@@ -21,10 +21,9 @@ export class Drawer extends PureComponent {
     super(props);
 
     this.state = { drawerLayout: { width: 0, height: 0 } };
-    this._onLogout = this._onLogout.bind(this);
   }
 
-  _onLogout() {
+  _onLogout = () => {
     const { onLogout } = this.props;
     onLogout();
     // navigate to login screen

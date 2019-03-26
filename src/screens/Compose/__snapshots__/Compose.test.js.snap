@@ -1,316 +1,60 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Testing Compose Screen renders as expected 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Compose
-    location="location"
-    navigation={
+<Styled(Container)>
+  <ViewMenu
+    onRef={[Function]}
+    parentHeight={0}
+    payload={
       Object {
-        "getParam": [Function],
+        "content": "",
+        "hashtags": null,
+        "reply": undefined,
+        "subtitle": null,
+        "title": "",
       }
     }
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "children": Array [
-        <ViewMenu
-          onRef={[Function]}
-          parentHeight={0}
-          payload={
-            Object {
-              "content": "",
-              "hashtags": null,
-              "reply": undefined,
-              "subtitle": null,
-              "title": "",
-            }
-          }
-          position={
-            Object {
-              "x": 750,
-              "y": 0,
-            }
-          }
-        />,
-        <Header
-          animated={false}
-          backable={true}
-          onLayout={[Function]}
-          onRightPress={[Function]}
-          rightIcon="eye"
-          rightStyle={
-            Object {
-              "color": "#4E4A47",
-            }
-          }
-          subtitle={
-            Object {
-              "context": "location",
-            }
-          }
-          title={
-            Object {
-              "context": "New Topic",
-            }
-          }
-        />,
-        <ComposeForm
-          onTextUpdates={
-            Object {
-              "content": [Function],
-              "hashtags": [Function],
-              "subtitle": [Function],
-              "title": [Function],
-            }
-          }
-          onToggleMode={[Function]}
-          replyParams={null}
-          screenHeight={1334}
-        />,
-      ],
-      "virtual": undefined,
-    },
-    "ref": null,
-    "rendered": Array [
+    position={
       Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "onRef": [Function],
-          "parentHeight": 0,
-          "payload": Object {
-            "content": "",
-            "hashtags": null,
-            "reply": undefined,
-            "subtitle": null,
-            "title": "",
-          },
-          "position": Object {
-            "x": 750,
-            "y": 0,
-          },
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
+        "x": 750,
+        "y": 0,
+      }
+    }
+  />
+  <Header
+    animated={false}
+    backable={true}
+    onLayout={[Function]}
+    onRightPress={[Function]}
+    rightIcon="eye"
+    rightStyle={
       Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "animated": false,
-          "backable": true,
-          "onLayout": [Function],
-          "onRightPress": [Function],
-          "rightIcon": "eye",
-          "rightStyle": Object {
-            "color": "#4E4A47",
-          },
-          "subtitle": Object {
-            "context": "location",
-          },
-          "title": Object {
-            "context": "New Topic",
-          },
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
+        "color": "#4E4A47",
+      }
+    }
+    subtitle={
       Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "onTextUpdates": Object {
-            "content": [Function],
-            "hashtags": [Function],
-            "subtitle": [Function],
-            "title": [Function],
-          },
-          "onToggleMode": [Function],
-          "replyParams": null,
-          "screenHeight": 1334,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [
-          <ViewMenu
-            onRef={[Function]}
-            parentHeight={0}
-            payload={
-              Object {
-                "content": "",
-                "hashtags": null,
-                "reply": undefined,
-                "subtitle": null,
-                "title": "",
-              }
-            }
-            position={
-              Object {
-                "x": 750,
-                "y": 0,
-              }
-            }
-          />,
-          <Header
-            animated={false}
-            backable={true}
-            onLayout={[Function]}
-            onRightPress={[Function]}
-            rightIcon="eye"
-            rightStyle={
-              Object {
-                "color": "#4E4A47",
-              }
-            }
-            subtitle={
-              Object {
-                "context": "location",
-              }
-            }
-            title={
-              Object {
-                "context": "New Topic",
-              }
-            }
-          />,
-          <ComposeForm
-            onTextUpdates={
-              Object {
-                "content": [Function],
-                "hashtags": [Function],
-                "subtitle": [Function],
-                "title": [Function],
-              }
-            }
-            onToggleMode={[Function]}
-            replyParams={null}
-            screenHeight={1334}
-          />,
-        ],
-        "virtual": undefined,
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "onRef": [Function],
-            "parentHeight": 0,
-            "payload": Object {
-              "content": "",
-              "hashtags": null,
-              "reply": undefined,
-              "subtitle": null,
-              "title": "",
-            },
-            "position": Object {
-              "x": 750,
-              "y": 0,
-            },
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "animated": false,
-            "backable": true,
-            "onLayout": [Function],
-            "onRightPress": [Function],
-            "rightIcon": "eye",
-            "rightStyle": Object {
-              "color": "#4E4A47",
-            },
-            "subtitle": Object {
-              "context": "location",
-            },
-            "title": Object {
-              "context": "New Topic",
-            },
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "onTextUpdates": Object {
-              "content": [Function],
-              "hashtags": [Function],
-              "subtitle": [Function],
-              "title": [Function],
-            },
-            "onToggleMode": [Function],
-            "replyParams": null,
-            "screenHeight": 1334,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-  Symbol(enzyme.__childContext__): null,
-}
+        "context": "location",
+      }
+    }
+    title={
+      Object {
+        "context": "New Topic",
+      }
+    }
+  />
+  <ComposeForm
+    onTextUpdates={
+      Object {
+        "content": [Function],
+        "hashtags": [Function],
+        "subtitle": [Function],
+        "title": [Function],
+      }
+    }
+    onToggleMode={[Function]}
+    replyParams={null}
+    screenHeight={1334}
+  />
+</Styled(Container)>
 `;

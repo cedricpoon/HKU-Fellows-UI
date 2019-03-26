@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+
 import { PostPreviewLoader } from './PostPreviewLoader';
 import { OK, FAIL, LOADING } from 'hkufui/src/constants/loadStatus';
 

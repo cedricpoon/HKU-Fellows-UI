@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+
 import { Preview } from './Preview';
 import { BLAND, EXPANDING, HALT } from 'hkufui/src/constants/expandStatus';
 import { OK } from 'hkufui/src/constants/loadStatus';

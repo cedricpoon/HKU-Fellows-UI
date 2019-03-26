@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
 import { shallow } from 'enzyme';
+
 import Header from './Header';
 
 describe('Testing Header Component', () => {

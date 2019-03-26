@@ -20,30 +20,24 @@ const alert = (message) => { show2s({ message }); }
 export class PostHeaderMenu extends Component {
   constructor(props) {
     super(props);
-
-    this._voteUp = this._voteUp.bind(this);
-    this._voteDown = this._voteDown.bind(this);
-    this._enableNotification = this._enableNotification.bind(this);
-    this._acceptAnswer = this._acceptAnswer.bind(this);
-    this._reportAbuse = this._reportAbuse.bind(this);
   }
 
-  _voteUp() {
+  _voteUp = () => {
     const { onVote, postId, topicId } = this.props;
     onVote({ postId, topicId, value: +1 });
   }
 
-  _voteDown() {
+  _voteDown = () => {
     const { onVote, postId, topicId } = this.props;
     onVote({ postId, topicId, value: -1 });
   }
 
-  _enableNotification() {
+  _enableNotification = () => {
     const { onNotify, topicId } = this.props;
     onNotify({ topicId });
   }
 
-  _reportAbuse() {
+  _reportAbuse = () => {
     const { address, subject, template, ref } = email;
     const { postId, uid } = this.props;
     // open mail app to report
@@ -60,7 +54,7 @@ export class PostHeaderMenu extends Component {
       });
   }
 
-  _acceptAnswer() {
+  _acceptAnswer = () => {
     const { onAccept, postId, topicId } = this.props;
     onAccept({ postId, topicId });
   }

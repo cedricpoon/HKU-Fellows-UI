@@ -15,14 +15,10 @@ const locale = localize({ language: 'en', country: 'hk' });
 export class LoginForm extends Component {
   constructor(props) {
     super(props);
-
     this.state = { validity: { username: true, password: true } };
-    this._setValidity = this._setValidity.bind(this);
-    this._handleChangeWrapper = this._handleChangeWrapper.bind(this);
-    this._validate = this._validate.bind(this);
   }
 
-  _setValidity(name, isValid, more = {}) {
+  _setValidity = (name, isValid, more = {}) => {
     this.setState(prevState => ({
       ...more,
       validity: {
@@ -32,7 +28,7 @@ export class LoginForm extends Component {
     }));
   }
 
-  _validate() {
+  _validate = () => {
     const { onLogin, alert } = this.props;
     const { username, password } = this.state;
 
@@ -54,7 +50,7 @@ export class LoginForm extends Component {
     }
   }
 
-  _handleChangeWrapper(name) {
+  _handleChangeWrapper = (name) => {
     return (newValue) => {
       this._setValidity(name, true, { [name]: newValue });
     }

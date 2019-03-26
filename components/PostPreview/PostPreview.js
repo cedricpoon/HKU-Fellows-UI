@@ -12,6 +12,10 @@ import { noZ } from '../helper';
 const locale = localize({ language: 'en', country: 'hk' });
 
 class PostPreview extends PureComponent {
+  constructor(props) {
+    super(props)
+  }
+
   _onPress = () => {
     /* dive into post with all props */
     NavigationService.navigate('Post', {

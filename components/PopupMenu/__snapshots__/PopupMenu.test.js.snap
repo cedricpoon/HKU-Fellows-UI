@@ -1,104 +1,139 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Testing PopupMenu Component renders as expected with required props 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <PopupMenu
-    position={
-      Object {
-        "x": 0,
-        "y": 0,
-      }
+<View
+  style={
+    Object {
+      "zIndex": 2,
     }
+  }
+>
+  <TouchableWithoutFeedback
+    onPress={[Function]}
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "height": 1334,
+            "position": "absolute",
+            "width": 750,
+            "zIndex": 1,
+          },
+          Object {
+            "top": -0,
+          },
+        ]
+      }
+    />
+  </TouchableWithoutFeedback>
+  <withAnimatable(View)
+    animation="zoomIn"
+    delay={0}
+    direction="normal"
+    duration={100}
+    iterationCount={1}
+    iterationDelay={0}
+    onAnimationBegin={[Function]}
+    onAnimationEnd={[Function]}
+    onLayout={[Function]}
+    onTransitionBegin={[Function]}
+    onTransitionEnd={[Function]}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "white",
+          "borderColor": "lightgrey",
+          "borderRadius": 10,
+          "borderWidth": 1,
+          "position": "absolute",
+          "shadowColor": "#4E4A47",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 0.2,
+          "shadowRadius": 5,
+          "zIndex": 2,
+        },
+        Object {
+          "left": 10,
+          "top": NaN,
+        },
+      ]
+    }
+    useNativeDriver={false}
   >
     <View />
-  </PopupMenu>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): null,
-  Symbol(enzyme.__nodes__): Array [
-    null,
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-  Symbol(enzyme.__childContext__): null,
-}
+  </withAnimatable(View)>
+</View>
 `;
 
 exports[`Testing PopupMenu Component renders as expected with required props and parentHeight 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <PopupMenu
-    parentHeight={0}
-    position={
-      Object {
-        "x": 0,
-        "y": 0,
-      }
+<View
+  style={
+    Object {
+      "zIndex": 2,
     }
+  }
+>
+  <TouchableWithoutFeedback
+    onPress={[Function]}
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "height": 1334,
+            "position": "absolute",
+            "width": 750,
+            "zIndex": 1,
+          },
+          Object {
+            "top": -0,
+          },
+        ]
+      }
+    />
+  </TouchableWithoutFeedback>
+  <withAnimatable(View)
+    animation="zoomIn"
+    delay={0}
+    direction="normal"
+    duration={100}
+    iterationCount={1}
+    iterationDelay={0}
+    onAnimationBegin={[Function]}
+    onAnimationEnd={[Function]}
+    onLayout={[Function]}
+    onTransitionBegin={[Function]}
+    onTransitionEnd={[Function]}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "white",
+          "borderColor": "lightgrey",
+          "borderRadius": 10,
+          "borderWidth": 1,
+          "position": "absolute",
+          "shadowColor": "#4E4A47",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 0.2,
+          "shadowRadius": 5,
+          "zIndex": 2,
+        },
+        Object {
+          "left": 10,
+          "top": 10,
+        },
+      ]
+    }
+    useNativeDriver={false}
   >
     <View />
-  </PopupMenu>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): null,
-  Symbol(enzyme.__nodes__): Array [
-    null,
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-  Symbol(enzyme.__childContext__): null,
-}
+  </withAnimatable(View)>
+</View>
 `;

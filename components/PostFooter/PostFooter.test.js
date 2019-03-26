@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+
 import PostFooter from './PostFooter';
 
 describe('Testing PostFooter Component', () => {

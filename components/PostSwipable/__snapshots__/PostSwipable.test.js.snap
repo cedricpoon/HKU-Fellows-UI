@@ -1,314 +1,55 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Testing PostSwipable Component has onRef 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <PostSwipable
-    comments={Array []}
-    onRef={[Function]}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "children": Array [],
-      "contentProps": Object {},
-      "initialPage": 0,
-      "locked": false,
-      "onChangeTab": [Function],
-      "onScroll": [Function],
-      "page": -1,
-      "prerenderingSiblingsNumber": 2,
-      "renderTabBar": false,
-      "scrollWithoutAnimation": false,
-      "tabBarPosition": "top",
-    },
-    "ref": [Function],
-    "rendered": Array [],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [],
-        "contentProps": Object {},
-        "initialPage": 0,
-        "locked": false,
-        "onChangeTab": [Function],
-        "onScroll": [Function],
-        "page": -1,
-        "prerenderingSiblingsNumber": 2,
-        "renderTabBar": false,
-        "scrollWithoutAnimation": false,
-        "tabBarPosition": "top",
-      },
-      "ref": [Function],
-      "rendered": Array [],
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-  Symbol(enzyme.__childContext__): null,
-}
+<ScrollableTabView
+  contentProps={Object {}}
+  initialPage={0}
+  locked={false}
+  onChangeTab={[Function]}
+  onScroll={[Function]}
+  page={-1}
+  prerenderingSiblingsNumber={2}
+  renderTabBar={false}
+  scrollWithoutAnimation={false}
+  tabBarPosition="top"
+/>
 `;
 
 exports[`Testing PostSwipable Component is solved 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <PostSwipable
-    comments={Array []}
-    onRef={[Function]}
-    solved="uid"
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "children": Array [],
-      "contentProps": Object {},
-      "initialPage": 0,
-      "locked": false,
-      "onChangeTab": [Function],
-      "onScroll": [Function],
-      "page": -1,
-      "prerenderingSiblingsNumber": 2,
-      "renderTabBar": false,
-      "scrollWithoutAnimation": false,
-      "tabBarPosition": "top",
-    },
-    "ref": [Function],
-    "rendered": Array [],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [],
-        "contentProps": Object {},
-        "initialPage": 0,
-        "locked": false,
-        "onChangeTab": [Function],
-        "onScroll": [Function],
-        "page": -1,
-        "prerenderingSiblingsNumber": 2,
-        "renderTabBar": false,
-        "scrollWithoutAnimation": false,
-        "tabBarPosition": "top",
-      },
-      "ref": [Function],
-      "rendered": Array [],
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-  Symbol(enzyme.__childContext__): null,
-}
+<ScrollableTabView
+  contentProps={Object {}}
+  initialPage={0}
+  locked={false}
+  onChangeTab={[Function]}
+  onScroll={[Function]}
+  page={-1}
+  prerenderingSiblingsNumber={2}
+  renderTabBar={false}
+  scrollWithoutAnimation={false}
+  tabBarPosition="top"
+/>
 `;
 
 exports[`Testing PostSwipable Component renders with placeholder 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <PostSwipable />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "children": <Styled(Tab)
-        heading=""
-      >
-        <PostLoadIndicator
-          page={true}
-        />
-      </Styled(Tab)>,
-      "contentProps": Object {},
-      "initialPage": 0,
-      "locked": false,
-      "onChangeTab": [Function],
-      "onScroll": [Function],
-      "page": -1,
-      "prerenderingSiblingsNumber": 2,
-      "renderTabBar": false,
-      "scrollWithoutAnimation": false,
-      "tabBarPosition": "top",
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": "",
-      "nodeType": "class",
-      "props": Object {
-        "children": <PostLoadIndicator
-          page={true}
-        />,
-        "heading": "",
-        "virtual": undefined,
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "page": true,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      "type": [Function],
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": <Styled(Tab)
-          heading=""
-        >
-          <PostLoadIndicator
-            page={true}
-          />
-        </Styled(Tab)>,
-        "contentProps": Object {},
-        "initialPage": 0,
-        "locked": false,
-        "onChangeTab": [Function],
-        "onScroll": [Function],
-        "page": -1,
-        "prerenderingSiblingsNumber": 2,
-        "renderTabBar": false,
-        "scrollWithoutAnimation": false,
-        "tabBarPosition": "top",
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": "",
-        "nodeType": "class",
-        "props": Object {
-          "children": <PostLoadIndicator
-            page={true}
-          />,
-          "heading": "",
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "page": true,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        "type": [Function],
-      },
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-  Symbol(enzyme.__childContext__): null,
-}
+<ScrollableTabView
+  contentProps={Object {}}
+  initialPage={0}
+  locked={false}
+  onChangeTab={[Function]}
+  onScroll={[Function]}
+  page={-1}
+  prerenderingSiblingsNumber={2}
+  renderTabBar={false}
+  scrollWithoutAnimation={false}
+  tabBarPosition="top"
+>
+  <Styled(Tab)
+    heading=""
+    key=""
+  >
+    <PostLoadIndicator
+      page={true}
+    />
+  </Styled(Tab)>
+</ScrollableTabView>
 `;

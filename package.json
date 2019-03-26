@@ -40,6 +40,7 @@
     "babel-plugin-transform-inline-environment-variables": "^0.4.3",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.11.2",
+    "enzyme-to-json": "^3.3.5",
     "eslint": "^5.15.3",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-native": "^3.6.0",
@@ -56,6 +57,11 @@
     "transformIgnorePatterns": [
       "/node_modules/(?!native-base)/"
     ],
-    "setupTestFrameworkScriptFile": "<rootDir>test/setup.js"
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/test/setup.js"
+    ]
   }
 }

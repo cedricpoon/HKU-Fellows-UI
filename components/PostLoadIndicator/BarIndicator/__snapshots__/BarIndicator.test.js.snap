@@ -1,3210 +1,379 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Testing BarIndicator Component renders as expected 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <BarIndicator
-    delay={0}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "animation": "fadeIn",
-      "children": <Styled(ViewNB)>
-        <Styled(ViewNB)
-          style={
-            Object {
-              "marginBottom": 11.5,
-              "marginLeft": 35,
-              "marginRight": 20,
-              "marginTop": 5,
-            }
-          }
-        >
-          <Placeholder
-            style={
-              Array [
-                Object {
-                  "alignSelf": "flex-start",
-                  "backgroundColor": "#eee",
-                  "borderRadius": 2.5,
-                  "height": 10,
-                  "justifyContent": "center",
-                  "marginTop": 10,
-                },
-                Object {
-                  "width": "30%",
-                },
-              ]
-            }
-          />
-          <Placeholder
-            style={
-              Array [
-                Object {
-                  "alignSelf": "flex-start",
-                  "backgroundColor": "#eee",
-                  "borderRadius": 2.5,
-                  "height": 10,
-                  "justifyContent": "center",
-                  "marginTop": 10,
-                },
-                Object {
-                  "width": "100%",
-                },
-              ]
-            }
-          />
-          <Placeholder
-            style={
-              Array [
-                Object {
-                  "alignSelf": "flex-start",
-                  "backgroundColor": "#eee",
-                  "borderRadius": 2.5,
-                  "height": 10,
-                  "justifyContent": "center",
-                  "marginTop": 10,
-                },
-                Object {
-                  "width": "100%",
-                },
-              ]
-            }
-          />
-        </Styled(ViewNB)>
-        <Styled(ViewNB)
-          style={
-            Object {
-              "backgroundColor": "#eee",
-              "height": 1,
-              "marginLeft": 35,
-              "marginTop": 5,
-              "width": "100%",
-            }
-          }
-        />
-      </Styled(ViewNB)>,
-      "delay": 0,
-      "direction": "normal",
-      "duration": 250,
-      "easing": undefined,
-      "iterationCount": 1,
-      "iterationDelay": 0,
-      "onAnimationBegin": [Function],
-      "onAnimationEnd": [Function],
-      "onTransitionBegin": [Function],
-      "onTransitionEnd": [Function],
-      "style": undefined,
-      "transition": undefined,
-      "useNativeDriver": false,
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [
-          <Styled(ViewNB)
-            style={
-              Object {
-                "marginBottom": 11.5,
-                "marginLeft": 35,
-                "marginRight": 20,
-                "marginTop": 5,
-              }
-            }
-          >
-            <Placeholder
-              style={
-                Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "30%",
-                  },
-                ]
-              }
-            />
-            <Placeholder
-              style={
-                Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "100%",
-                  },
-                ]
-              }
-            />
-            <Placeholder
-              style={
-                Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "100%",
-                  },
-                ]
-              }
-            />
-          </Styled(ViewNB)>,
-          <Styled(ViewNB)
-            style={
-              Object {
-                "backgroundColor": "#eee",
-                "height": 1,
-                "marginLeft": 35,
-                "marginTop": 5,
-                "width": "100%",
-              }
-            }
-          />,
-        ],
-        "virtual": undefined,
-      },
-      "ref": null,
-      "rendered": Array [
+<withAnimatable(Styled(ViewNB))
+  animation="fadeIn"
+  delay={0}
+  direction="normal"
+  duration={250}
+  iterationCount={1}
+  iterationDelay={0}
+  onAnimationBegin={[Function]}
+  onAnimationEnd={[Function]}
+  onTransitionBegin={[Function]}
+  onTransitionEnd={[Function]}
+  useNativeDriver={false}
+>
+  <Styled(ViewNB)>
+    <Styled(ViewNB)
+      style={
         Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <Placeholder
-                style={
-                  Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "30%",
-                    },
-                  ]
-                }
-              />,
-              <Placeholder
-                style={
-                  Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "100%",
-                    },
-                  ]
-                }
-              />,
-              <Placeholder
-                style={
-                  Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "100%",
-                    },
-                  ]
-                }
-              />,
-              undefined,
-            ],
-            "style": Object {
-              "marginBottom": 11.5,
-              "marginLeft": 35,
-              "marginRight": 20,
-              "marginTop": 5,
-            },
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": Array [
+          "marginBottom": 11.5,
+          "marginLeft": 35,
+          "marginRight": 20,
+          "marginTop": 5,
+        }
+      }
+    >
+      <Placeholder
+        style={
+          Array [
             Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "style": Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "30%",
-                  },
-                ],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "style": Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "100%",
-                  },
-                ],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "style": Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "100%",
-                  },
-                ],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            undefined,
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "style": Object {
+              "alignSelf": "flex-start",
               "backgroundColor": "#eee",
-              "height": 1,
-              "marginLeft": 35,
-              "marginTop": 5,
+              "borderRadius": 2.5,
+              "height": 10,
+              "justifyContent": "center",
+              "marginTop": 10,
+            },
+            Object {
+              "width": "30%",
+            },
+          ]
+        }
+      />
+      <Placeholder
+        style={
+          Array [
+            Object {
+              "alignSelf": "flex-start",
+              "backgroundColor": "#eee",
+              "borderRadius": 2.5,
+              "height": 10,
+              "justifyContent": "center",
+              "marginTop": 10,
+            },
+            Object {
               "width": "100%",
             },
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "animation": "fadeIn",
-        "children": <Styled(ViewNB)>
-          <Styled(ViewNB)
-            style={
-              Object {
-                "marginBottom": 11.5,
-                "marginLeft": 35,
-                "marginRight": 20,
-                "marginTop": 5,
-              }
-            }
-          >
-            <Placeholder
-              style={
-                Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "30%",
-                  },
-                ]
-              }
-            />
-            <Placeholder
-              style={
-                Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "100%",
-                  },
-                ]
-              }
-            />
-            <Placeholder
-              style={
-                Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "100%",
-                  },
-                ]
-              }
-            />
-          </Styled(ViewNB)>
-          <Styled(ViewNB)
-            style={
-              Object {
-                "backgroundColor": "#eee",
-                "height": 1,
-                "marginLeft": 35,
-                "marginTop": 5,
-                "width": "100%",
-              }
-            }
-          />
-        </Styled(ViewNB)>,
-        "delay": 0,
-        "direction": "normal",
-        "duration": 250,
-        "easing": undefined,
-        "iterationCount": 1,
-        "iterationDelay": 0,
-        "onAnimationBegin": [Function],
-        "onAnimationEnd": [Function],
-        "onTransitionBegin": [Function],
-        "onTransitionEnd": [Function],
-        "style": undefined,
-        "transition": undefined,
-        "useNativeDriver": false,
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <Styled(ViewNB)
-              style={
-                Object {
-                  "marginBottom": 11.5,
-                  "marginLeft": 35,
-                  "marginRight": 20,
-                  "marginTop": 5,
-                }
-              }
-            >
-              <Placeholder
-                style={
-                  Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "30%",
-                    },
-                  ]
-                }
-              />
-              <Placeholder
-                style={
-                  Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "100%",
-                    },
-                  ]
-                }
-              />
-              <Placeholder
-                style={
-                  Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "100%",
-                    },
-                  ]
-                }
-              />
-            </Styled(ViewNB)>,
-            <Styled(ViewNB)
-              style={
-                Object {
-                  "backgroundColor": "#eee",
-                  "height": 1,
-                  "marginLeft": 35,
-                  "marginTop": 5,
-                  "width": "100%",
-                }
-              }
-            />,
-          ],
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": Array [
-                <Placeholder
-                  style={
-                    Array [
-                      Object {
-                        "alignSelf": "flex-start",
-                        "backgroundColor": "#eee",
-                        "borderRadius": 2.5,
-                        "height": 10,
-                        "justifyContent": "center",
-                        "marginTop": 10,
-                      },
-                      Object {
-                        "width": "30%",
-                      },
-                    ]
-                  }
-                />,
-                <Placeholder
-                  style={
-                    Array [
-                      Object {
-                        "alignSelf": "flex-start",
-                        "backgroundColor": "#eee",
-                        "borderRadius": 2.5,
-                        "height": 10,
-                        "justifyContent": "center",
-                        "marginTop": 10,
-                      },
-                      Object {
-                        "width": "100%",
-                      },
-                    ]
-                  }
-                />,
-                <Placeholder
-                  style={
-                    Array [
-                      Object {
-                        "alignSelf": "flex-start",
-                        "backgroundColor": "#eee",
-                        "borderRadius": 2.5,
-                        "height": 10,
-                        "justifyContent": "center",
-                        "marginTop": 10,
-                      },
-                      Object {
-                        "width": "100%",
-                      },
-                    ]
-                  }
-                />,
-                undefined,
-              ],
-              "style": Object {
-                "marginBottom": 11.5,
-                "marginLeft": 35,
-                "marginRight": 20,
-                "marginTop": 5,
-              },
-              "virtual": undefined,
+          ]
+        }
+      />
+      <Placeholder
+        style={
+          Array [
+            Object {
+              "alignSelf": "flex-start",
+              "backgroundColor": "#eee",
+              "borderRadius": 2.5,
+              "height": 10,
+              "justifyContent": "center",
+              "marginTop": 10,
             },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "style": Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "30%",
-                    },
-                  ],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "style": Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "100%",
-                    },
-                  ],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "style": Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "100%",
-                    },
-                  ],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              undefined,
-            ],
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "style": Object {
-                "backgroundColor": "#eee",
-                "height": 1,
-                "marginLeft": 35,
-                "marginTop": 5,
-                "width": "100%",
-              },
-              "virtual": undefined,
+            Object {
+              "width": "100%",
             },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-  Symbol(enzyme.__childContext__): null,
-}
+          ]
+        }
+      />
+    </Styled(ViewNB)>
+    <Styled(ViewNB)
+      style={
+        Object {
+          "backgroundColor": "#eee",
+          "height": 1,
+          "marginLeft": 35,
+          "marginTop": 5,
+          "width": "100%",
+        }
+      }
+    />
+  </Styled(ViewNB)>
+</withAnimatable(Styled(ViewNB))>
 `;
 
 exports[`Testing BarIndicator Component renders with delayed animation 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <BarIndicator
-    delay={0}
-    delayed={1}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "animation": "fadeIn",
-      "children": <Styled(ViewNB)>
-        <Styled(ViewNB)
-          style={
-            Object {
-              "marginBottom": 11.5,
-              "marginLeft": 35,
-              "marginRight": 20,
-              "marginTop": 5,
-            }
-          }
-        >
-          <Placeholder
-            style={
-              Array [
-                Object {
-                  "alignSelf": "flex-start",
-                  "backgroundColor": "#eee",
-                  "borderRadius": 2.5,
-                  "height": 10,
-                  "justifyContent": "center",
-                  "marginTop": 10,
-                },
-                Object {
-                  "width": "30%",
-                },
-              ]
-            }
-          />
-          <Placeholder
-            style={
-              Array [
-                Object {
-                  "alignSelf": "flex-start",
-                  "backgroundColor": "#eee",
-                  "borderRadius": 2.5,
-                  "height": 10,
-                  "justifyContent": "center",
-                  "marginTop": 10,
-                },
-                Object {
-                  "width": "100%",
-                },
-              ]
-            }
-          />
-          <Placeholder
-            style={
-              Array [
-                Object {
-                  "alignSelf": "flex-start",
-                  "backgroundColor": "#eee",
-                  "borderRadius": 2.5,
-                  "height": 10,
-                  "justifyContent": "center",
-                  "marginTop": 10,
-                },
-                Object {
-                  "width": "100%",
-                },
-              ]
-            }
-          />
-        </Styled(ViewNB)>
-        <Styled(ViewNB)
-          style={
-            Object {
-              "backgroundColor": "#eee",
-              "height": 1,
-              "marginLeft": 35,
-              "marginTop": 5,
-              "width": "100%",
-            }
-          }
-        />
-      </Styled(ViewNB)>,
-      "delay": 0,
-      "direction": "normal",
-      "duration": 250,
-      "easing": undefined,
-      "iterationCount": 1,
-      "iterationDelay": 0,
-      "onAnimationBegin": [Function],
-      "onAnimationEnd": [Function],
-      "onTransitionBegin": [Function],
-      "onTransitionEnd": [Function],
-      "style": undefined,
-      "transition": undefined,
-      "useNativeDriver": false,
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [
-          <Styled(ViewNB)
-            style={
-              Object {
-                "marginBottom": 11.5,
-                "marginLeft": 35,
-                "marginRight": 20,
-                "marginTop": 5,
-              }
-            }
-          >
-            <Placeholder
-              style={
-                Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "30%",
-                  },
-                ]
-              }
-            />
-            <Placeholder
-              style={
-                Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "100%",
-                  },
-                ]
-              }
-            />
-            <Placeholder
-              style={
-                Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "100%",
-                  },
-                ]
-              }
-            />
-          </Styled(ViewNB)>,
-          <Styled(ViewNB)
-            style={
-              Object {
-                "backgroundColor": "#eee",
-                "height": 1,
-                "marginLeft": 35,
-                "marginTop": 5,
-                "width": "100%",
-              }
-            }
-          />,
-        ],
-        "virtual": undefined,
-      },
-      "ref": null,
-      "rendered": Array [
+<withAnimatable(Styled(ViewNB))
+  animation="fadeIn"
+  delay={0}
+  direction="normal"
+  duration={250}
+  iterationCount={1}
+  iterationDelay={0}
+  onAnimationBegin={[Function]}
+  onAnimationEnd={[Function]}
+  onTransitionBegin={[Function]}
+  onTransitionEnd={[Function]}
+  useNativeDriver={false}
+>
+  <Styled(ViewNB)>
+    <Styled(ViewNB)
+      style={
         Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <Placeholder
-                style={
-                  Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "30%",
-                    },
-                  ]
-                }
-              />,
-              <Placeholder
-                style={
-                  Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "100%",
-                    },
-                  ]
-                }
-              />,
-              <Placeholder
-                style={
-                  Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "100%",
-                    },
-                  ]
-                }
-              />,
-              undefined,
-            ],
-            "style": Object {
-              "marginBottom": 11.5,
-              "marginLeft": 35,
-              "marginRight": 20,
-              "marginTop": 5,
-            },
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": Array [
+          "marginBottom": 11.5,
+          "marginLeft": 35,
+          "marginRight": 20,
+          "marginTop": 5,
+        }
+      }
+    >
+      <Placeholder
+        style={
+          Array [
             Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "style": Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "30%",
-                  },
-                ],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "style": Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "100%",
-                  },
-                ],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "style": Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "100%",
-                  },
-                ],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            undefined,
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "style": Object {
+              "alignSelf": "flex-start",
               "backgroundColor": "#eee",
-              "height": 1,
-              "marginLeft": 35,
-              "marginTop": 5,
+              "borderRadius": 2.5,
+              "height": 10,
+              "justifyContent": "center",
+              "marginTop": 10,
+            },
+            Object {
+              "width": "30%",
+            },
+          ]
+        }
+      />
+      <Placeholder
+        style={
+          Array [
+            Object {
+              "alignSelf": "flex-start",
+              "backgroundColor": "#eee",
+              "borderRadius": 2.5,
+              "height": 10,
+              "justifyContent": "center",
+              "marginTop": 10,
+            },
+            Object {
               "width": "100%",
             },
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "animation": "fadeIn",
-        "children": <Styled(ViewNB)>
-          <Styled(ViewNB)
-            style={
-              Object {
-                "marginBottom": 11.5,
-                "marginLeft": 35,
-                "marginRight": 20,
-                "marginTop": 5,
-              }
-            }
-          >
-            <Placeholder
-              style={
-                Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "30%",
-                  },
-                ]
-              }
-            />
-            <Placeholder
-              style={
-                Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "100%",
-                  },
-                ]
-              }
-            />
-            <Placeholder
-              style={
-                Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "100%",
-                  },
-                ]
-              }
-            />
-          </Styled(ViewNB)>
-          <Styled(ViewNB)
-            style={
-              Object {
-                "backgroundColor": "#eee",
-                "height": 1,
-                "marginLeft": 35,
-                "marginTop": 5,
-                "width": "100%",
-              }
-            }
-          />
-        </Styled(ViewNB)>,
-        "delay": 0,
-        "direction": "normal",
-        "duration": 250,
-        "easing": undefined,
-        "iterationCount": 1,
-        "iterationDelay": 0,
-        "onAnimationBegin": [Function],
-        "onAnimationEnd": [Function],
-        "onTransitionBegin": [Function],
-        "onTransitionEnd": [Function],
-        "style": undefined,
-        "transition": undefined,
-        "useNativeDriver": false,
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <Styled(ViewNB)
-              style={
-                Object {
-                  "marginBottom": 11.5,
-                  "marginLeft": 35,
-                  "marginRight": 20,
-                  "marginTop": 5,
-                }
-              }
-            >
-              <Placeholder
-                style={
-                  Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "30%",
-                    },
-                  ]
-                }
-              />
-              <Placeholder
-                style={
-                  Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "100%",
-                    },
-                  ]
-                }
-              />
-              <Placeholder
-                style={
-                  Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "100%",
-                    },
-                  ]
-                }
-              />
-            </Styled(ViewNB)>,
-            <Styled(ViewNB)
-              style={
-                Object {
-                  "backgroundColor": "#eee",
-                  "height": 1,
-                  "marginLeft": 35,
-                  "marginTop": 5,
-                  "width": "100%",
-                }
-              }
-            />,
-          ],
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": Array [
-                <Placeholder
-                  style={
-                    Array [
-                      Object {
-                        "alignSelf": "flex-start",
-                        "backgroundColor": "#eee",
-                        "borderRadius": 2.5,
-                        "height": 10,
-                        "justifyContent": "center",
-                        "marginTop": 10,
-                      },
-                      Object {
-                        "width": "30%",
-                      },
-                    ]
-                  }
-                />,
-                <Placeholder
-                  style={
-                    Array [
-                      Object {
-                        "alignSelf": "flex-start",
-                        "backgroundColor": "#eee",
-                        "borderRadius": 2.5,
-                        "height": 10,
-                        "justifyContent": "center",
-                        "marginTop": 10,
-                      },
-                      Object {
-                        "width": "100%",
-                      },
-                    ]
-                  }
-                />,
-                <Placeholder
-                  style={
-                    Array [
-                      Object {
-                        "alignSelf": "flex-start",
-                        "backgroundColor": "#eee",
-                        "borderRadius": 2.5,
-                        "height": 10,
-                        "justifyContent": "center",
-                        "marginTop": 10,
-                      },
-                      Object {
-                        "width": "100%",
-                      },
-                    ]
-                  }
-                />,
-                undefined,
-              ],
-              "style": Object {
-                "marginBottom": 11.5,
-                "marginLeft": 35,
-                "marginRight": 20,
-                "marginTop": 5,
-              },
-              "virtual": undefined,
+          ]
+        }
+      />
+      <Placeholder
+        style={
+          Array [
+            Object {
+              "alignSelf": "flex-start",
+              "backgroundColor": "#eee",
+              "borderRadius": 2.5,
+              "height": 10,
+              "justifyContent": "center",
+              "marginTop": 10,
             },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "style": Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "30%",
-                    },
-                  ],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "style": Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "100%",
-                    },
-                  ],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "style": Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "100%",
-                    },
-                  ],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              undefined,
-            ],
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "style": Object {
-                "backgroundColor": "#eee",
-                "height": 1,
-                "marginLeft": 35,
-                "marginTop": 5,
-                "width": "100%",
-              },
-              "virtual": undefined,
+            Object {
+              "width": "100%",
             },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-  Symbol(enzyme.__childContext__): null,
-}
+          ]
+        }
+      />
+    </Styled(ViewNB)>
+    <Styled(ViewNB)
+      style={
+        Object {
+          "backgroundColor": "#eee",
+          "height": 1,
+          "marginLeft": 35,
+          "marginTop": 5,
+          "width": "100%",
+        }
+      }
+    />
+  </Styled(ViewNB)>
+</withAnimatable(Styled(ViewNB))>
 `;
 
 exports[`Testing BarIndicator Component renders with paragraph mode 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <BarIndicator
-    delay={0}
-    paragraph={true}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "animation": "fadeIn",
-      "children": <Styled(ViewNB)>
-        <Styled(ViewNB)
-          style={
-            Object {
-              "marginHorizontal": 15,
-              "marginTop": 15,
-            }
-          }
-        >
-          <Placeholder
-            style={
-              Array [
-                Object {
-                  "alignSelf": "flex-start",
-                  "backgroundColor": "#eee",
-                  "borderRadius": 2.5,
-                  "height": 10,
-                  "justifyContent": "center",
-                },
-                Object {
-                  "width": "30%",
-                },
-              ]
-            }
-          />
-          <Placeholder
-            style={
-              Array [
-                Object {
-                  "alignSelf": "flex-start",
-                  "backgroundColor": "#eee",
-                  "borderRadius": 2.5,
-                  "height": 10,
-                  "justifyContent": "center",
-                  "marginTop": 10,
-                },
-                Object {
-                  "width": "100%",
-                },
-              ]
-            }
-          />
-          <Placeholder
-            style={
-              Array [
-                Object {
-                  "alignSelf": "flex-start",
-                  "backgroundColor": "#eee",
-                  "borderRadius": 2.5,
-                  "height": 10,
-                  "justifyContent": "center",
-                  "marginTop": 10,
-                },
-                Object {
-                  "width": "100%",
-                },
-              ]
-            }
-          />
-          <Styled(ViewNB)>
-            <Placeholder
-              style={
-                Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "100%",
-                  },
-                ]
-              }
-            />
-            <Placeholder
-              style={
-                Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "100%",
-                  },
-                ]
-              }
-            />
-          </Styled(ViewNB)>
-        </Styled(ViewNB)>
-      </Styled(ViewNB)>,
-      "delay": 0,
-      "direction": "normal",
-      "duration": 250,
-      "easing": undefined,
-      "iterationCount": 1,
-      "iterationDelay": 0,
-      "onAnimationBegin": [Function],
-      "onAnimationEnd": [Function],
-      "onTransitionBegin": [Function],
-      "onTransitionEnd": [Function],
-      "style": undefined,
-      "transition": undefined,
-      "useNativeDriver": false,
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [
-          <Styled(ViewNB)
-            style={
-              Object {
-                "marginHorizontal": 15,
-                "marginTop": 15,
-              }
-            }
-          >
-            <Placeholder
-              style={
-                Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                  },
-                  Object {
-                    "width": "30%",
-                  },
-                ]
-              }
-            />
-            <Placeholder
-              style={
-                Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "100%",
-                  },
-                ]
-              }
-            />
-            <Placeholder
-              style={
-                Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "100%",
-                  },
-                ]
-              }
-            />
-            <Styled(ViewNB)>
-              <Placeholder
-                style={
-                  Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "100%",
-                    },
-                  ]
-                }
-              />
-              <Placeholder
-                style={
-                  Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "100%",
-                    },
-                  ]
-                }
-              />
-            </Styled(ViewNB)>
-          </Styled(ViewNB)>,
-          false,
-        ],
-        "virtual": undefined,
-      },
-      "ref": null,
-      "rendered": Array [
+<withAnimatable(Styled(ViewNB))
+  animation="fadeIn"
+  delay={0}
+  direction="normal"
+  duration={250}
+  iterationCount={1}
+  iterationDelay={0}
+  onAnimationBegin={[Function]}
+  onAnimationEnd={[Function]}
+  onTransitionBegin={[Function]}
+  onTransitionEnd={[Function]}
+  useNativeDriver={false}
+>
+  <Styled(ViewNB)>
+    <Styled(ViewNB)
+      style={
         Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <Placeholder
-                style={
-                  Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                    },
-                    Object {
-                      "width": "30%",
-                    },
-                  ]
-                }
-              />,
-              <Placeholder
-                style={
-                  Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "100%",
-                    },
-                  ]
-                }
-              />,
-              <Placeholder
-                style={
-                  Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "100%",
-                    },
-                  ]
-                }
-              />,
-              <Styled(ViewNB)>
-                <Placeholder
-                  style={
-                    Array [
-                      Object {
-                        "alignSelf": "flex-start",
-                        "backgroundColor": "#eee",
-                        "borderRadius": 2.5,
-                        "height": 10,
-                        "justifyContent": "center",
-                        "marginTop": 10,
-                      },
-                      Object {
-                        "width": "100%",
-                      },
-                    ]
-                  }
-                />
-                <Placeholder
-                  style={
-                    Array [
-                      Object {
-                        "alignSelf": "flex-start",
-                        "backgroundColor": "#eee",
-                        "borderRadius": 2.5,
-                        "height": 10,
-                        "justifyContent": "center",
-                        "marginTop": 10,
-                      },
-                      Object {
-                        "width": "100%",
-                      },
-                    ]
-                  }
-                />
-              </Styled(ViewNB)>,
-            ],
-            "style": Object {
-              "marginHorizontal": 15,
-              "marginTop": 15,
-            },
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": Array [
+          "marginHorizontal": 15,
+          "marginTop": 15,
+        }
+      }
+    >
+      <Placeholder
+        style={
+          Array [
             Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "style": Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                  },
-                  Object {
-                    "width": "30%",
-                  },
-                ],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
+              "alignSelf": "flex-start",
+              "backgroundColor": "#eee",
+              "borderRadius": 2.5,
+              "height": 10,
+              "justifyContent": "center",
             },
             Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "style": Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "100%",
-                  },
-                ],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
+              "width": "30%",
+            },
+          ]
+        }
+      />
+      <Placeholder
+        style={
+          Array [
+            Object {
+              "alignSelf": "flex-start",
+              "backgroundColor": "#eee",
+              "borderRadius": 2.5,
+              "height": 10,
+              "justifyContent": "center",
+              "marginTop": 10,
             },
             Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "style": Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "100%",
-                  },
-                ],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
+              "width": "100%",
+            },
+          ]
+        }
+      />
+      <Placeholder
+        style={
+          Array [
+            Object {
+              "alignSelf": "flex-start",
+              "backgroundColor": "#eee",
+              "borderRadius": 2.5,
+              "height": 10,
+              "justifyContent": "center",
+              "marginTop": 10,
             },
             Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": Array [
-                  <Placeholder
-                    style={
-                      Array [
-                        Object {
-                          "alignSelf": "flex-start",
-                          "backgroundColor": "#eee",
-                          "borderRadius": 2.5,
-                          "height": 10,
-                          "justifyContent": "center",
-                          "marginTop": 10,
-                        },
-                        Object {
-                          "width": "100%",
-                        },
-                      ]
-                    }
-                  />,
-                  <Placeholder
-                    style={
-                      Array [
-                        Object {
-                          "alignSelf": "flex-start",
-                          "backgroundColor": "#eee",
-                          "borderRadius": 2.5,
-                          "height": 10,
-                          "justifyContent": "center",
-                          "marginTop": 10,
-                        },
-                        Object {
-                          "width": "100%",
-                        },
-                      ]
-                    }
-                  />,
-                ],
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "style": Array [
-                      Object {
-                        "alignSelf": "flex-start",
-                        "backgroundColor": "#eee",
-                        "borderRadius": 2.5,
-                        "height": 10,
-                        "justifyContent": "center",
-                        "marginTop": 10,
-                      },
-                      Object {
-                        "width": "100%",
-                      },
-                    ],
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "style": Array [
-                      Object {
-                        "alignSelf": "flex-start",
-                        "backgroundColor": "#eee",
-                        "borderRadius": 2.5,
-                        "height": 10,
-                        "justifyContent": "center",
-                        "marginTop": 10,
-                      },
-                      Object {
-                        "width": "100%",
-                      },
-                    ],
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-              ],
-              "type": [Function],
+              "width": "100%",
             },
-          ],
-          "type": [Function],
-        },
-        false,
-      ],
-      "type": [Function],
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "animation": "fadeIn",
-        "children": <Styled(ViewNB)>
-          <Styled(ViewNB)
-            style={
+          ]
+        }
+      />
+      <Styled(ViewNB)>
+        <Placeholder
+          style={
+            Array [
               Object {
-                "marginHorizontal": 15,
-                "marginTop": 15,
-              }
-            }
-          >
-            <Placeholder
-              style={
-                Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                  },
-                  Object {
-                    "width": "30%",
-                  },
-                ]
-              }
-            />
-            <Placeholder
-              style={
-                Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "100%",
-                  },
-                ]
-              }
-            />
-            <Placeholder
-              style={
-                Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "100%",
-                  },
-                ]
-              }
-            />
-            <Styled(ViewNB)>
-              <Placeholder
-                style={
-                  Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "100%",
-                    },
-                  ]
-                }
-              />
-              <Placeholder
-                style={
-                  Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "100%",
-                    },
-                  ]
-                }
-              />
-            </Styled(ViewNB)>
-          </Styled(ViewNB)>
-        </Styled(ViewNB)>,
-        "delay": 0,
-        "direction": "normal",
-        "duration": 250,
-        "easing": undefined,
-        "iterationCount": 1,
-        "iterationDelay": 0,
-        "onAnimationBegin": [Function],
-        "onAnimationEnd": [Function],
-        "onTransitionBegin": [Function],
-        "onTransitionEnd": [Function],
-        "style": undefined,
-        "transition": undefined,
-        "useNativeDriver": false,
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <Styled(ViewNB)
-              style={
-                Object {
-                  "marginHorizontal": 15,
-                  "marginTop": 15,
-                }
-              }
-            >
-              <Placeholder
-                style={
-                  Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                    },
-                    Object {
-                      "width": "30%",
-                    },
-                  ]
-                }
-              />
-              <Placeholder
-                style={
-                  Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "100%",
-                    },
-                  ]
-                }
-              />
-              <Placeholder
-                style={
-                  Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "100%",
-                    },
-                  ]
-                }
-              />
-              <Styled(ViewNB)>
-                <Placeholder
-                  style={
-                    Array [
-                      Object {
-                        "alignSelf": "flex-start",
-                        "backgroundColor": "#eee",
-                        "borderRadius": 2.5,
-                        "height": 10,
-                        "justifyContent": "center",
-                        "marginTop": 10,
-                      },
-                      Object {
-                        "width": "100%",
-                      },
-                    ]
-                  }
-                />
-                <Placeholder
-                  style={
-                    Array [
-                      Object {
-                        "alignSelf": "flex-start",
-                        "backgroundColor": "#eee",
-                        "borderRadius": 2.5,
-                        "height": 10,
-                        "justifyContent": "center",
-                        "marginTop": 10,
-                      },
-                      Object {
-                        "width": "100%",
-                      },
-                    ]
-                  }
-                />
-              </Styled(ViewNB)>
-            </Styled(ViewNB)>,
-            false,
-          ],
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": Array [
-                <Placeholder
-                  style={
-                    Array [
-                      Object {
-                        "alignSelf": "flex-start",
-                        "backgroundColor": "#eee",
-                        "borderRadius": 2.5,
-                        "height": 10,
-                        "justifyContent": "center",
-                      },
-                      Object {
-                        "width": "30%",
-                      },
-                    ]
-                  }
-                />,
-                <Placeholder
-                  style={
-                    Array [
-                      Object {
-                        "alignSelf": "flex-start",
-                        "backgroundColor": "#eee",
-                        "borderRadius": 2.5,
-                        "height": 10,
-                        "justifyContent": "center",
-                        "marginTop": 10,
-                      },
-                      Object {
-                        "width": "100%",
-                      },
-                    ]
-                  }
-                />,
-                <Placeholder
-                  style={
-                    Array [
-                      Object {
-                        "alignSelf": "flex-start",
-                        "backgroundColor": "#eee",
-                        "borderRadius": 2.5,
-                        "height": 10,
-                        "justifyContent": "center",
-                        "marginTop": 10,
-                      },
-                      Object {
-                        "width": "100%",
-                      },
-                    ]
-                  }
-                />,
-                <Styled(ViewNB)>
-                  <Placeholder
-                    style={
-                      Array [
-                        Object {
-                          "alignSelf": "flex-start",
-                          "backgroundColor": "#eee",
-                          "borderRadius": 2.5,
-                          "height": 10,
-                          "justifyContent": "center",
-                          "marginTop": 10,
-                        },
-                        Object {
-                          "width": "100%",
-                        },
-                      ]
-                    }
-                  />
-                  <Placeholder
-                    style={
-                      Array [
-                        Object {
-                          "alignSelf": "flex-start",
-                          "backgroundColor": "#eee",
-                          "borderRadius": 2.5,
-                          "height": 10,
-                          "justifyContent": "center",
-                          "marginTop": 10,
-                        },
-                        Object {
-                          "width": "100%",
-                        },
-                      ]
-                    }
-                  />
-                </Styled(ViewNB)>,
-              ],
-              "style": Object {
-                "marginHorizontal": 15,
-                "marginTop": 15,
-              },
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "style": Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                    },
-                    Object {
-                      "width": "30%",
-                    },
-                  ],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
+                "alignSelf": "flex-start",
+                "backgroundColor": "#eee",
+                "borderRadius": 2.5,
+                "height": 10,
+                "justifyContent": "center",
+                "marginTop": 10,
               },
               Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "style": Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "100%",
-                    },
-                  ],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
+                "width": "100%",
+              },
+            ]
+          }
+        />
+        <Placeholder
+          style={
+            Array [
+              Object {
+                "alignSelf": "flex-start",
+                "backgroundColor": "#eee",
+                "borderRadius": 2.5,
+                "height": 10,
+                "justifyContent": "center",
+                "marginTop": 10,
               },
               Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "style": Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "100%",
-                    },
-                  ],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
+                "width": "100%",
               },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": Array [
-                    <Placeholder
-                      style={
-                        Array [
-                          Object {
-                            "alignSelf": "flex-start",
-                            "backgroundColor": "#eee",
-                            "borderRadius": 2.5,
-                            "height": 10,
-                            "justifyContent": "center",
-                            "marginTop": 10,
-                          },
-                          Object {
-                            "width": "100%",
-                          },
-                        ]
-                      }
-                    />,
-                    <Placeholder
-                      style={
-                        Array [
-                          Object {
-                            "alignSelf": "flex-start",
-                            "backgroundColor": "#eee",
-                            "borderRadius": 2.5,
-                            "height": 10,
-                            "justifyContent": "center",
-                            "marginTop": 10,
-                          },
-                          Object {
-                            "width": "100%",
-                          },
-                        ]
-                      }
-                    />,
-                  ],
-                  "virtual": undefined,
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "style": Array [
-                        Object {
-                          "alignSelf": "flex-start",
-                          "backgroundColor": "#eee",
-                          "borderRadius": 2.5,
-                          "height": 10,
-                          "justifyContent": "center",
-                          "marginTop": 10,
-                        },
-                        Object {
-                          "width": "100%",
-                        },
-                      ],
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "style": Array [
-                        Object {
-                          "alignSelf": "flex-start",
-                          "backgroundColor": "#eee",
-                          "borderRadius": 2.5,
-                          "height": 10,
-                          "justifyContent": "center",
-                          "marginTop": 10,
-                        },
-                        Object {
-                          "width": "100%",
-                        },
-                      ],
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": [Function],
-                  },
-                ],
-                "type": [Function],
-              },
-            ],
-            "type": [Function],
-          },
-          false,
-        ],
-        "type": [Function],
-      },
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-  Symbol(enzyme.__childContext__): null,
-}
+            ]
+          }
+        />
+      </Styled(ViewNB)>
+    </Styled(ViewNB)>
+  </Styled(ViewNB)>
+</withAnimatable(Styled(ViewNB))>
 `;
 
 exports[`Testing BarIndicator Component renders without animation 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <BarIndicator
-    delay={0}
-    stalled={true}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "children": <Styled(ViewNB)>
-        <Styled(ViewNB)
-          style={
-            Object {
-              "marginBottom": 11.5,
-              "marginLeft": 35,
-              "marginRight": 20,
-              "marginTop": 5,
-            }
-          }
-        >
-          <Placeholder
-            style={
-              Array [
-                Object {
-                  "alignSelf": "flex-start",
-                  "backgroundColor": "#eee",
-                  "borderRadius": 2.5,
-                  "height": 10,
-                  "justifyContent": "center",
-                  "marginTop": 10,
-                },
-                Object {
-                  "width": "30%",
-                },
-              ]
-            }
-          />
-          <Placeholder
-            style={
-              Array [
-                Object {
-                  "alignSelf": "flex-start",
-                  "backgroundColor": "#eee",
-                  "borderRadius": 2.5,
-                  "height": 10,
-                  "justifyContent": "center",
-                  "marginTop": 10,
-                },
-                Object {
-                  "width": "100%",
-                },
-              ]
-            }
-          />
-          <Placeholder
-            style={
-              Array [
-                Object {
-                  "alignSelf": "flex-start",
-                  "backgroundColor": "#eee",
-                  "borderRadius": 2.5,
-                  "height": 10,
-                  "justifyContent": "center",
-                  "marginTop": 10,
-                },
-                Object {
-                  "width": "100%",
-                },
-              ]
-            }
-          />
-        </Styled(ViewNB)>
-        <Styled(ViewNB)
-          style={
-            Object {
-              "backgroundColor": "#eee",
-              "height": 1,
-              "marginLeft": 35,
-              "marginTop": 5,
-              "width": "100%",
-            }
-          }
-        />
-      </Styled(ViewNB)>,
-      "virtual": undefined,
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [
-          <Styled(ViewNB)
-            style={
-              Object {
-                "marginBottom": 11.5,
-                "marginLeft": 35,
-                "marginRight": 20,
-                "marginTop": 5,
-              }
-            }
-          >
-            <Placeholder
-              style={
-                Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "30%",
-                  },
-                ]
-              }
-            />
-            <Placeholder
-              style={
-                Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "100%",
-                  },
-                ]
-              }
-            />
-            <Placeholder
-              style={
-                Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "100%",
-                  },
-                ]
-              }
-            />
-          </Styled(ViewNB)>,
-          <Styled(ViewNB)
-            style={
-              Object {
-                "backgroundColor": "#eee",
-                "height": 1,
-                "marginLeft": 35,
-                "marginTop": 5,
-                "width": "100%",
-              }
-            }
-          />,
-        ],
-        "virtual": undefined,
-      },
-      "ref": null,
-      "rendered": Array [
+<Styled(ViewNB)>
+  <Styled(ViewNB)>
+    <Styled(ViewNB)
+      style={
         Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <Placeholder
-                style={
-                  Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "30%",
-                    },
-                  ]
-                }
-              />,
-              <Placeholder
-                style={
-                  Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "100%",
-                    },
-                  ]
-                }
-              />,
-              <Placeholder
-                style={
-                  Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "100%",
-                    },
-                  ]
-                }
-              />,
-              undefined,
-            ],
-            "style": Object {
-              "marginBottom": 11.5,
-              "marginLeft": 35,
-              "marginRight": 20,
-              "marginTop": 5,
-            },
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": Array [
+          "marginBottom": 11.5,
+          "marginLeft": 35,
+          "marginRight": 20,
+          "marginTop": 5,
+        }
+      }
+    >
+      <Placeholder
+        style={
+          Array [
             Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "style": Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "30%",
-                  },
-                ],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "style": Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "100%",
-                  },
-                ],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "style": Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "100%",
-                  },
-                ],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            undefined,
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "style": Object {
+              "alignSelf": "flex-start",
               "backgroundColor": "#eee",
-              "height": 1,
-              "marginLeft": 35,
-              "marginTop": 5,
+              "borderRadius": 2.5,
+              "height": 10,
+              "justifyContent": "center",
+              "marginTop": 10,
+            },
+            Object {
+              "width": "30%",
+            },
+          ]
+        }
+      />
+      <Placeholder
+        style={
+          Array [
+            Object {
+              "alignSelf": "flex-start",
+              "backgroundColor": "#eee",
+              "borderRadius": 2.5,
+              "height": 10,
+              "justifyContent": "center",
+              "marginTop": 10,
+            },
+            Object {
               "width": "100%",
             },
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": <Styled(ViewNB)>
-          <Styled(ViewNB)
-            style={
-              Object {
-                "marginBottom": 11.5,
-                "marginLeft": 35,
-                "marginRight": 20,
-                "marginTop": 5,
-              }
-            }
-          >
-            <Placeholder
-              style={
-                Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "30%",
-                  },
-                ]
-              }
-            />
-            <Placeholder
-              style={
-                Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "100%",
-                  },
-                ]
-              }
-            />
-            <Placeholder
-              style={
-                Array [
-                  Object {
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "#eee",
-                    "borderRadius": 2.5,
-                    "height": 10,
-                    "justifyContent": "center",
-                    "marginTop": 10,
-                  },
-                  Object {
-                    "width": "100%",
-                  },
-                ]
-              }
-            />
-          </Styled(ViewNB)>
-          <Styled(ViewNB)
-            style={
-              Object {
-                "backgroundColor": "#eee",
-                "height": 1,
-                "marginLeft": 35,
-                "marginTop": 5,
-                "width": "100%",
-              }
-            }
-          />
-        </Styled(ViewNB)>,
-        "virtual": undefined,
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <Styled(ViewNB)
-              style={
-                Object {
-                  "marginBottom": 11.5,
-                  "marginLeft": 35,
-                  "marginRight": 20,
-                  "marginTop": 5,
-                }
-              }
-            >
-              <Placeholder
-                style={
-                  Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "30%",
-                    },
-                  ]
-                }
-              />
-              <Placeholder
-                style={
-                  Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "100%",
-                    },
-                  ]
-                }
-              />
-              <Placeholder
-                style={
-                  Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "100%",
-                    },
-                  ]
-                }
-              />
-            </Styled(ViewNB)>,
-            <Styled(ViewNB)
-              style={
-                Object {
-                  "backgroundColor": "#eee",
-                  "height": 1,
-                  "marginLeft": 35,
-                  "marginTop": 5,
-                  "width": "100%",
-                }
-              }
-            />,
-          ],
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": Array [
-                <Placeholder
-                  style={
-                    Array [
-                      Object {
-                        "alignSelf": "flex-start",
-                        "backgroundColor": "#eee",
-                        "borderRadius": 2.5,
-                        "height": 10,
-                        "justifyContent": "center",
-                        "marginTop": 10,
-                      },
-                      Object {
-                        "width": "30%",
-                      },
-                    ]
-                  }
-                />,
-                <Placeholder
-                  style={
-                    Array [
-                      Object {
-                        "alignSelf": "flex-start",
-                        "backgroundColor": "#eee",
-                        "borderRadius": 2.5,
-                        "height": 10,
-                        "justifyContent": "center",
-                        "marginTop": 10,
-                      },
-                      Object {
-                        "width": "100%",
-                      },
-                    ]
-                  }
-                />,
-                <Placeholder
-                  style={
-                    Array [
-                      Object {
-                        "alignSelf": "flex-start",
-                        "backgroundColor": "#eee",
-                        "borderRadius": 2.5,
-                        "height": 10,
-                        "justifyContent": "center",
-                        "marginTop": 10,
-                      },
-                      Object {
-                        "width": "100%",
-                      },
-                    ]
-                  }
-                />,
-                undefined,
-              ],
-              "style": Object {
-                "marginBottom": 11.5,
-                "marginLeft": 35,
-                "marginRight": 20,
-                "marginTop": 5,
-              },
-              "virtual": undefined,
+          ]
+        }
+      />
+      <Placeholder
+        style={
+          Array [
+            Object {
+              "alignSelf": "flex-start",
+              "backgroundColor": "#eee",
+              "borderRadius": 2.5,
+              "height": 10,
+              "justifyContent": "center",
+              "marginTop": 10,
             },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "style": Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "30%",
-                    },
-                  ],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "style": Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "100%",
-                    },
-                  ],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "style": Array [
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "#eee",
-                      "borderRadius": 2.5,
-                      "height": 10,
-                      "justifyContent": "center",
-                      "marginTop": 10,
-                    },
-                    Object {
-                      "width": "100%",
-                    },
-                  ],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              undefined,
-            ],
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "style": Object {
-                "backgroundColor": "#eee",
-                "height": 1,
-                "marginLeft": 35,
-                "marginTop": 5,
-                "width": "100%",
-              },
-              "virtual": undefined,
+            Object {
+              "width": "100%",
             },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-  Symbol(enzyme.__childContext__): null,
-}
+          ]
+        }
+      />
+    </Styled(ViewNB)>
+    <Styled(ViewNB)
+      style={
+        Object {
+          "backgroundColor": "#eee",
+          "height": 1,
+          "marginLeft": 35,
+          "marginTop": 5,
+          "width": "100%",
+        }
+      }
+    />
+  </Styled(ViewNB)>
+</Styled(ViewNB)>
 `;

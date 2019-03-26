@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+
 import CourseLink from './CourseLink';
 
 describe('Testing CourseLink Component', () => {

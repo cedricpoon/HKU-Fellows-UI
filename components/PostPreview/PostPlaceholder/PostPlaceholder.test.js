@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+
 import PostPlaceholder from './PostPlaceholder';
 
 describe('Testing PostPlaceholder Component', () => {

@@ -7,6 +7,10 @@ import { deepLink } from 'hkufui/config';
 import appString from 'hkufui/app.json';
 
 class PostFooter extends Component {
+  constructor(props) {
+    super(props)
+  }
+
   _share = async () => {
     const { sharePayload, title, subtitle } = this.props;
     const _subtitle = subtitle ? ` · ${subtitle}` : '';

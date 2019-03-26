@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+
 import PreviewFooter from './PreviewFooter';
 
 describe('Testing PreviewFooter Component', () => {

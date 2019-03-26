@@ -1,3086 +1,420 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Testing Header Component has right style 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Header
-    animated={true}
-    onRightPress={null}
-    rightIcon="arrow-dropup"
-    rightStyle={Object {}}
-    subtitle={null}
-    title={
+<Styled(Header)
+  animated={true}
+  style={
+    Object {
+      "height": "auto",
+      "paddingBottom": 0.5,
+    }
+  }
+  subtitle={null}
+>
+  <Styled(Left) />
+  <Styled(Body)
+    style={
       Object {
-        "context": "header",
+        "flex": 4,
       }
     }
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "animated": true,
-      "children": Array [
-        <Styled(Left) />,
-        <Styled(Body)
-          style={
-            Object {
-              "flex": 4,
-            }
-          }
-        >
-          <Styled(Title)
-            numberOfLines={1}
-            style={
-              Array [
-                Object {
-                  "fontSize": undefined,
-                  "fontWeight": "normal",
-                  "marginBottom": 5,
-                  "textAlign": "justify",
-                },
-                Object {
-                  "color": undefined,
-                  "fontSize": undefined,
-                },
-              ]
-            }
-          >
-            header
-          </Styled(Title)>
-        </Styled(Body)>,
-        <Styled(Right)>
-          <Styled(Button)
-            disabled={true}
-            onLongPress={null}
-            onPress={null}
-            transparent={true}
-          >
-            <Styled(Icon)
-              name="arrow-dropup"
-              style={null}
-            />
-          </Styled(Button)>
-        </Styled(Right)>,
-      ],
-      "style": Object {
-        "height": "auto",
-        "paddingBottom": 0.5,
-      },
-      "subtitle": null,
-      "virtual": undefined,
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": undefined,
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <Styled(Title)
-              numberOfLines={1}
-              style={
-                Array [
-                  Object {
-                    "fontSize": undefined,
-                    "fontWeight": "normal",
-                    "marginBottom": 5,
-                    "textAlign": "justify",
-                  },
-                  Object {
-                    "color": undefined,
-                    "fontSize": undefined,
-                  },
-                ]
-              }
-            >
-              header
-            </Styled(Title)>,
-            null,
-          ],
-          "style": Object {
-            "flex": 4,
-          },
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": Array [
+  >
+    <Styled(Title)
+      numberOfLines={1}
+      style={
+        Array [
           Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "header",
-              "numberOfLines": 1,
-              "style": Array [
-                Object {
-                  "fontSize": undefined,
-                  "fontWeight": "normal",
-                  "marginBottom": 5,
-                  "textAlign": "justify",
-                },
-                Object {
-                  "color": undefined,
-                  "fontSize": undefined,
-                },
-              ],
-              "virtual": undefined,
-            },
-            "ref": [Function],
-            "rendered": "header",
-            "type": [Function],
+            "fontSize": undefined,
+            "fontWeight": "normal",
+            "marginBottom": 5,
+            "textAlign": "justify",
           },
-          null,
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": <Styled(Button)
-            disabled={true}
-            onLongPress={null}
-            onPress={null}
-            transparent={true}
-          >
-            <Styled(Icon)
-              name="arrow-dropup"
-              style={null}
-            />
-          </Styled(Button)>,
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": <Styled(Icon)
-              name="arrow-dropup"
-              style={null}
-            />,
-            "disabled": true,
-            "onLongPress": null,
-            "onPress": null,
-            "transparent": true,
-            "virtual": undefined,
+          Object {
+            "color": undefined,
+            "fontSize": undefined,
           },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "name": "arrow-dropup",
-              "style": null,
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          "type": [Function],
-        },
-        "type": [Function],
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "animated": true,
-        "children": Array [
-          <Styled(Left) />,
-          <Styled(Body)
-            style={
-              Object {
-                "flex": 4,
-              }
-            }
-          >
-            <Styled(Title)
-              numberOfLines={1}
-              style={
-                Array [
-                  Object {
-                    "fontSize": undefined,
-                    "fontWeight": "normal",
-                    "marginBottom": 5,
-                    "textAlign": "justify",
-                  },
-                  Object {
-                    "color": undefined,
-                    "fontSize": undefined,
-                  },
-                ]
-              }
-            >
-              header
-            </Styled(Title)>
-          </Styled(Body)>,
-          <Styled(Right)>
-            <Styled(Button)
-              disabled={true}
-              onLongPress={null}
-              onPress={null}
-              transparent={true}
-            >
-              <Styled(Icon)
-                name="arrow-dropup"
-                style={null}
-              />
-            </Styled(Button)>
-          </Styled(Right)>,
-        ],
-        "style": Object {
-          "height": "auto",
-          "paddingBottom": 0.5,
-        },
-        "subtitle": null,
-        "virtual": undefined,
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": undefined,
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <Styled(Title)
-                numberOfLines={1}
-                style={
-                  Array [
-                    Object {
-                      "fontSize": undefined,
-                      "fontWeight": "normal",
-                      "marginBottom": 5,
-                      "textAlign": "justify",
-                    },
-                    Object {
-                      "color": undefined,
-                      "fontSize": undefined,
-                    },
-                  ]
-                }
-              >
-                header
-              </Styled(Title)>,
-              null,
-            ],
-            "style": Object {
-              "flex": 4,
-            },
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "header",
-                "numberOfLines": 1,
-                "style": Array [
-                  Object {
-                    "fontSize": undefined,
-                    "fontWeight": "normal",
-                    "marginBottom": 5,
-                    "textAlign": "justify",
-                  },
-                  Object {
-                    "color": undefined,
-                    "fontSize": undefined,
-                  },
-                ],
-                "virtual": undefined,
-              },
-              "ref": [Function],
-              "rendered": "header",
-              "type": [Function],
-            },
-            null,
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": <Styled(Button)
-              disabled={true}
-              onLongPress={null}
-              onPress={null}
-              transparent={true}
-            >
-              <Styled(Icon)
-                name="arrow-dropup"
-                style={null}
-              />
-            </Styled(Button)>,
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": <Styled(Icon)
-                name="arrow-dropup"
-                style={null}
-              />,
-              "disabled": true,
-              "onLongPress": null,
-              "onPress": null,
-              "transparent": true,
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "name": "arrow-dropup",
-                "style": null,
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            "type": [Function],
-          },
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-  Symbol(enzyme.__childContext__): null,
-}
+        ]
+      }
+    >
+      header
+    </Styled(Title)>
+  </Styled(Body)>
+  <Styled(Right)>
+    <Styled(Button)
+      disabled={true}
+      onLongPress={null}
+      onPress={null}
+      transparent={true}
+    >
+      <Styled(Icon)
+        name="arrow-dropup"
+        style={null}
+      />
+    </Styled(Button)>
+  </Styled(Right)>
+</Styled(Header)>
 `;
 
 exports[`Testing Header Component renders as expected with back button 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Header
-    animated={true}
-    backable={true}
-    onRightPress={null}
-    rightStyle={
-      Object {
-        "color": "#4E4A47",
-      }
-    }
-    subtitle={null}
-    title={
-      Object {
-        "context": "header",
-      }
-    }
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "animated": true,
-      "children": Array [
-        <Styled(Left)>
-          <Styled(Button)
-            onPress={[Function]}
-            transparent={true}
-          >
-            <Styled(Icon)
-              name="arrow-dropleft"
-              style={
-                Object {
-                  "color": "#4E4A47",
-                }
-              }
-            />
-          </Styled(Button)>
-        </Styled(Left)>,
-        <Styled(Body)
-          style={
-            Object {
-              "flex": 4,
-            }
-          }
-        >
-          <Styled(Title)
-            numberOfLines={1}
-            style={
-              Array [
-                Object {
-                  "fontSize": undefined,
-                  "fontWeight": "normal",
-                  "marginBottom": 5,
-                  "textAlign": "justify",
-                },
-                Object {
-                  "color": undefined,
-                  "fontSize": undefined,
-                },
-              ]
-            }
-          >
-            header
-          </Styled(Title)>
-        </Styled(Body)>,
-        <Styled(Right) />,
-      ],
-      "style": Object {
-        "height": "auto",
-        "paddingBottom": 0.5,
-      },
-      "subtitle": null,
-      "virtual": undefined,
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": <Styled(Button)
-            onPress={[Function]}
-            transparent={true}
-          >
-            <Styled(Icon)
-              name="arrow-dropleft"
-              style={
-                Object {
-                  "color": "#4E4A47",
-                }
-              }
-            />
-          </Styled(Button)>,
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": <Styled(Icon)
-              name="arrow-dropleft"
-              style={
-                Object {
-                  "color": "#4E4A47",
-                }
-              }
-            />,
-            "onPress": [Function],
-            "transparent": true,
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "name": "arrow-dropleft",
-              "style": Object {
-                "color": "#4E4A47",
-              },
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          "type": [Function],
-        },
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <Styled(Title)
-              numberOfLines={1}
-              style={
-                Array [
-                  Object {
-                    "fontSize": undefined,
-                    "fontWeight": "normal",
-                    "marginBottom": 5,
-                    "textAlign": "justify",
-                  },
-                  Object {
-                    "color": undefined,
-                    "fontSize": undefined,
-                  },
-                ]
-              }
-            >
-              header
-            </Styled(Title)>,
-            null,
-          ],
-          "style": Object {
-            "flex": 4,
-          },
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "header",
-              "numberOfLines": 1,
-              "style": Array [
-                Object {
-                  "fontSize": undefined,
-                  "fontWeight": "normal",
-                  "marginBottom": 5,
-                  "textAlign": "justify",
-                },
-                Object {
-                  "color": undefined,
-                  "fontSize": undefined,
-                },
-              ],
-              "virtual": undefined,
-            },
-            "ref": [Function],
-            "rendered": "header",
-            "type": [Function],
-          },
-          null,
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": undefined,
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
+<Styled(Header)
+  animated={true}
+  style={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "animated": true,
-        "children": Array [
-          <Styled(Left)>
-            <Styled(Button)
-              onPress={[Function]}
-              transparent={true}
-            >
-              <Styled(Icon)
-                name="arrow-dropleft"
-                style={
-                  Object {
-                    "color": "#4E4A47",
-                  }
-                }
-              />
-            </Styled(Button)>
-          </Styled(Left)>,
-          <Styled(Body)
-            style={
-              Object {
-                "flex": 4,
-              }
-            }
-          >
-            <Styled(Title)
-              numberOfLines={1}
-              style={
-                Array [
-                  Object {
-                    "fontSize": undefined,
-                    "fontWeight": "normal",
-                    "marginBottom": 5,
-                    "textAlign": "justify",
-                  },
-                  Object {
-                    "color": undefined,
-                    "fontSize": undefined,
-                  },
-                ]
-              }
-            >
-              header
-            </Styled(Title)>
-          </Styled(Body)>,
-          <Styled(Right) />,
-        ],
-        "style": Object {
-          "height": "auto",
-          "paddingBottom": 0.5,
-        },
-        "subtitle": null,
-        "virtual": undefined,
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": <Styled(Button)
-              onPress={[Function]}
-              transparent={true}
-            >
-              <Styled(Icon)
-                name="arrow-dropleft"
-                style={
-                  Object {
-                    "color": "#4E4A47",
-                  }
-                }
-              />
-            </Styled(Button)>,
-            "virtual": undefined,
+      "height": "auto",
+      "paddingBottom": 0.5,
+    }
+  }
+  subtitle={null}
+>
+  <Styled(Left)>
+    <Styled(Button)
+      onPress={[Function]}
+      transparent={true}
+    >
+      <Styled(Icon)
+        name="arrow-dropleft"
+        style={
+          Object {
+            "color": "#4E4A47",
+          }
+        }
+      />
+    </Styled(Button)>
+  </Styled(Left)>
+  <Styled(Body)
+    style={
+      Object {
+        "flex": 4,
+      }
+    }
+  >
+    <Styled(Title)
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "fontSize": undefined,
+            "fontWeight": "normal",
+            "marginBottom": 5,
+            "textAlign": "justify",
           },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": <Styled(Icon)
-                name="arrow-dropleft"
-                style={
-                  Object {
-                    "color": "#4E4A47",
-                  }
-                }
-              />,
-              "onPress": [Function],
-              "transparent": true,
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "name": "arrow-dropleft",
-                "style": Object {
-                  "color": "#4E4A47",
-                },
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            "type": [Function],
+          Object {
+            "color": undefined,
+            "fontSize": undefined,
           },
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <Styled(Title)
-                numberOfLines={1}
-                style={
-                  Array [
-                    Object {
-                      "fontSize": undefined,
-                      "fontWeight": "normal",
-                      "marginBottom": 5,
-                      "textAlign": "justify",
-                    },
-                    Object {
-                      "color": undefined,
-                      "fontSize": undefined,
-                    },
-                  ]
-                }
-              >
-                header
-              </Styled(Title)>,
-              null,
-            ],
-            "style": Object {
-              "flex": 4,
-            },
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "header",
-                "numberOfLines": 1,
-                "style": Array [
-                  Object {
-                    "fontSize": undefined,
-                    "fontWeight": "normal",
-                    "marginBottom": 5,
-                    "textAlign": "justify",
-                  },
-                  Object {
-                    "color": undefined,
-                    "fontSize": undefined,
-                  },
-                ],
-                "virtual": undefined,
-              },
-              "ref": [Function],
-              "rendered": "header",
-              "type": [Function],
-            },
-            null,
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": undefined,
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-  Symbol(enzyme.__childContext__): null,
-}
+        ]
+      }
+    >
+      header
+    </Styled(Title)>
+  </Styled(Body)>
+  <Styled(Right) />
+</Styled(Header)>
 `;
 
 exports[`Testing Header Component renders as expected with right button 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Header
-    animated={true}
-    onRightPress={[Function]}
-    rightIcon="arrow-dropup"
-    rightStyle={
-      Object {
-        "color": "#4E4A47",
-      }
-    }
-    subtitle={null}
-    title={
-      Object {
-        "context": "header",
-      }
-    }
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "animated": true,
-      "children": Array [
-        <Styled(Left) />,
-        <Styled(Body)
-          style={
-            Object {
-              "flex": 4,
-            }
-          }
-        >
-          <Styled(Title)
-            numberOfLines={1}
-            style={
-              Array [
-                Object {
-                  "fontSize": undefined,
-                  "fontWeight": "normal",
-                  "marginBottom": 5,
-                  "textAlign": "justify",
-                },
-                Object {
-                  "color": undefined,
-                  "fontSize": undefined,
-                },
-              ]
-            }
-          >
-            header
-          </Styled(Title)>
-        </Styled(Body)>,
-        <Styled(Right)>
-          <Styled(Button)
-            disabled={false}
-            onLongPress={[Function]}
-            onPress={[Function]}
-            transparent={true}
-          >
-            <Styled(Icon)
-              name="arrow-dropup"
-              style={
-                Object {
-                  "color": "#4E4A47",
-                }
-              }
-            />
-          </Styled(Button)>
-        </Styled(Right)>,
-      ],
-      "style": Object {
-        "height": "auto",
-        "paddingBottom": 0.5,
-      },
-      "subtitle": null,
-      "virtual": undefined,
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": undefined,
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <Styled(Title)
-              numberOfLines={1}
-              style={
-                Array [
-                  Object {
-                    "fontSize": undefined,
-                    "fontWeight": "normal",
-                    "marginBottom": 5,
-                    "textAlign": "justify",
-                  },
-                  Object {
-                    "color": undefined,
-                    "fontSize": undefined,
-                  },
-                ]
-              }
-            >
-              header
-            </Styled(Title)>,
-            null,
-          ],
-          "style": Object {
-            "flex": 4,
-          },
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "header",
-              "numberOfLines": 1,
-              "style": Array [
-                Object {
-                  "fontSize": undefined,
-                  "fontWeight": "normal",
-                  "marginBottom": 5,
-                  "textAlign": "justify",
-                },
-                Object {
-                  "color": undefined,
-                  "fontSize": undefined,
-                },
-              ],
-              "virtual": undefined,
-            },
-            "ref": [Function],
-            "rendered": "header",
-            "type": [Function],
-          },
-          null,
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": <Styled(Button)
-            disabled={false}
-            onLongPress={[Function]}
-            onPress={[Function]}
-            transparent={true}
-          >
-            <Styled(Icon)
-              name="arrow-dropup"
-              style={
-                Object {
-                  "color": "#4E4A47",
-                }
-              }
-            />
-          </Styled(Button)>,
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": <Styled(Icon)
-              name="arrow-dropup"
-              style={
-                Object {
-                  "color": "#4E4A47",
-                }
-              }
-            />,
-            "disabled": false,
-            "onLongPress": [Function],
-            "onPress": [Function],
-            "transparent": true,
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "name": "arrow-dropup",
-              "style": Object {
-                "color": "#4E4A47",
-              },
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          "type": [Function],
-        },
-        "type": [Function],
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
+<Styled(Header)
+  animated={true}
+  style={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "animated": true,
-        "children": Array [
-          <Styled(Left) />,
-          <Styled(Body)
-            style={
-              Object {
-                "flex": 4,
-              }
-            }
-          >
-            <Styled(Title)
-              numberOfLines={1}
-              style={
-                Array [
-                  Object {
-                    "fontSize": undefined,
-                    "fontWeight": "normal",
-                    "marginBottom": 5,
-                    "textAlign": "justify",
-                  },
-                  Object {
-                    "color": undefined,
-                    "fontSize": undefined,
-                  },
-                ]
-              }
-            >
-              header
-            </Styled(Title)>
-          </Styled(Body)>,
-          <Styled(Right)>
-            <Styled(Button)
-              disabled={false}
-              onLongPress={[Function]}
-              onPress={[Function]}
-              transparent={true}
-            >
-              <Styled(Icon)
-                name="arrow-dropup"
-                style={
-                  Object {
-                    "color": "#4E4A47",
-                  }
-                }
-              />
-            </Styled(Button)>
-          </Styled(Right)>,
-        ],
-        "style": Object {
-          "height": "auto",
-          "paddingBottom": 0.5,
-        },
-        "subtitle": null,
-        "virtual": undefined,
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": undefined,
-            "virtual": undefined,
+      "height": "auto",
+      "paddingBottom": 0.5,
+    }
+  }
+  subtitle={null}
+>
+  <Styled(Left) />
+  <Styled(Body)
+    style={
+      Object {
+        "flex": 4,
+      }
+    }
+  >
+    <Styled(Title)
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "fontSize": undefined,
+            "fontWeight": "normal",
+            "marginBottom": 5,
+            "textAlign": "justify",
           },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <Styled(Title)
-                numberOfLines={1}
-                style={
-                  Array [
-                    Object {
-                      "fontSize": undefined,
-                      "fontWeight": "normal",
-                      "marginBottom": 5,
-                      "textAlign": "justify",
-                    },
-                    Object {
-                      "color": undefined,
-                      "fontSize": undefined,
-                    },
-                  ]
-                }
-              >
-                header
-              </Styled(Title)>,
-              null,
-            ],
-            "style": Object {
-              "flex": 4,
-            },
-            "virtual": undefined,
+          Object {
+            "color": undefined,
+            "fontSize": undefined,
           },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "header",
-                "numberOfLines": 1,
-                "style": Array [
-                  Object {
-                    "fontSize": undefined,
-                    "fontWeight": "normal",
-                    "marginBottom": 5,
-                    "textAlign": "justify",
-                  },
-                  Object {
-                    "color": undefined,
-                    "fontSize": undefined,
-                  },
-                ],
-                "virtual": undefined,
-              },
-              "ref": [Function],
-              "rendered": "header",
-              "type": [Function],
-            },
-            null,
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": <Styled(Button)
-              disabled={false}
-              onLongPress={[Function]}
-              onPress={[Function]}
-              transparent={true}
-            >
-              <Styled(Icon)
-                name="arrow-dropup"
-                style={
-                  Object {
-                    "color": "#4E4A47",
-                  }
-                }
-              />
-            </Styled(Button)>,
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": <Styled(Icon)
-                name="arrow-dropup"
-                style={
-                  Object {
-                    "color": "#4E4A47",
-                  }
-                }
-              />,
-              "disabled": false,
-              "onLongPress": [Function],
-              "onPress": [Function],
-              "transparent": true,
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "name": "arrow-dropup",
-                "style": Object {
-                  "color": "#4E4A47",
-                },
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            "type": [Function],
-          },
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-  Symbol(enzyme.__childContext__): null,
-}
+        ]
+      }
+    >
+      header
+    </Styled(Title)>
+  </Styled(Body)>
+  <Styled(Right)>
+    <Styled(Button)
+      disabled={false}
+      onLongPress={[Function]}
+      onPress={[Function]}
+      transparent={true}
+    >
+      <Styled(Icon)
+        name="arrow-dropup"
+        style={
+          Object {
+            "color": "#4E4A47",
+          }
+        }
+      />
+    </Styled(Button)>
+  </Styled(Right)>
+</Styled(Header)>
 `;
 
 exports[`Testing Header Component renders as expected with subtitle 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Header
-    animated={true}
-    onRightPress={null}
-    rightStyle={
-      Object {
-        "color": "#4E4A47",
-      }
-    }
-    subtitle={
-      Object {
-        "context": "header",
-      }
-    }
-    title={
-      Object {
-        "context": "header",
-      }
-    }
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "animated": true,
-      "children": Array [
-        <Styled(Left) />,
-        <Styled(Body)
-          style={
-            Object {
-              "flex": 4,
-            }
-          }
-        >
-          <Styled(Title)
-            numberOfLines={1}
-            style={
-              Array [
-                Object {
-                  "fontSize": undefined,
-                  "fontWeight": "normal",
-                  "marginBottom": 5,
-                  "textAlign": "justify",
-                },
-                Object {
-                  "color": undefined,
-                  "fontSize": undefined,
-                },
-              ]
-            }
-          >
-            header
-          </Styled(Title)>
-          <withAnimatable(Styled(Subtitle))
-            delay={0}
-            direction="normal"
-            iterationCount={1}
-            iterationDelay={0}
-            numberOfLines={1}
-            onAnimationBegin={[Function]}
-            onAnimationEnd={[Function]}
-            onTransitionBegin={[Function]}
-            onTransitionEnd={[Function]}
-            style={
-              Object {
-                "color": "#685A5C",
-                "marginBottom": 5,
-                "textAlign": "justify",
-              }
-            }
-            useNativeDriver={false}
-          >
-            header
-          </withAnimatable(Styled(Subtitle))>
-        </Styled(Body)>,
-        <Styled(Right) />,
-      ],
-      "style": Object {
-        "height": "auto",
-        "paddingBottom": 0.5,
-      },
-      "subtitle": Object {
-        "context": "header",
-      },
-      "virtual": undefined,
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": undefined,
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <Styled(Title)
-              numberOfLines={1}
-              style={
-                Array [
-                  Object {
-                    "fontSize": undefined,
-                    "fontWeight": "normal",
-                    "marginBottom": 5,
-                    "textAlign": "justify",
-                  },
-                  Object {
-                    "color": undefined,
-                    "fontSize": undefined,
-                  },
-                ]
-              }
-            >
-              header
-            </Styled(Title)>,
-            <withAnimatable(Styled(Subtitle))
-              delay={0}
-              direction="normal"
-              iterationCount={1}
-              iterationDelay={0}
-              numberOfLines={1}
-              onAnimationBegin={[Function]}
-              onAnimationEnd={[Function]}
-              onTransitionBegin={[Function]}
-              onTransitionEnd={[Function]}
-              style={
-                Object {
-                  "color": "#685A5C",
-                  "marginBottom": 5,
-                  "textAlign": "justify",
-                }
-              }
-              useNativeDriver={false}
-            >
-              header
-            </withAnimatable(Styled(Subtitle))>,
-          ],
-          "style": Object {
-            "flex": 4,
-          },
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "header",
-              "numberOfLines": 1,
-              "style": Array [
-                Object {
-                  "fontSize": undefined,
-                  "fontWeight": "normal",
-                  "marginBottom": 5,
-                  "textAlign": "justify",
-                },
-                Object {
-                  "color": undefined,
-                  "fontSize": undefined,
-                },
-              ],
-              "virtual": undefined,
-            },
-            "ref": [Function],
-            "rendered": "header",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "animation": undefined,
-              "children": "header",
-              "delay": 0,
-              "direction": "normal",
-              "duration": undefined,
-              "easing": undefined,
-              "iterationCount": 1,
-              "iterationDelay": 0,
-              "numberOfLines": 1,
-              "onAnimationBegin": [Function],
-              "onAnimationEnd": [Function],
-              "onTransitionBegin": [Function],
-              "onTransitionEnd": [Function],
-              "style": Object {
-                "color": "#685A5C",
-                "marginBottom": 5,
-                "textAlign": "justify",
-              },
-              "transition": undefined,
-              "useNativeDriver": false,
-            },
-            "ref": [Function],
-            "rendered": "header",
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": undefined,
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
+<Styled(Header)
+  animated={true}
+  style={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "animated": true,
-        "children": Array [
-          <Styled(Left) />,
-          <Styled(Body)
-            style={
-              Object {
-                "flex": 4,
-              }
-            }
-          >
-            <Styled(Title)
-              numberOfLines={1}
-              style={
-                Array [
-                  Object {
-                    "fontSize": undefined,
-                    "fontWeight": "normal",
-                    "marginBottom": 5,
-                    "textAlign": "justify",
-                  },
-                  Object {
-                    "color": undefined,
-                    "fontSize": undefined,
-                  },
-                ]
-              }
-            >
-              header
-            </Styled(Title)>
-            <withAnimatable(Styled(Subtitle))
-              delay={0}
-              direction="normal"
-              iterationCount={1}
-              iterationDelay={0}
-              numberOfLines={1}
-              onAnimationBegin={[Function]}
-              onAnimationEnd={[Function]}
-              onTransitionBegin={[Function]}
-              onTransitionEnd={[Function]}
-              style={
-                Object {
-                  "color": "#685A5C",
-                  "marginBottom": 5,
-                  "textAlign": "justify",
-                }
-              }
-              useNativeDriver={false}
-            >
-              header
-            </withAnimatable(Styled(Subtitle))>
-          </Styled(Body)>,
-          <Styled(Right) />,
-        ],
-        "style": Object {
-          "height": "auto",
-          "paddingBottom": 0.5,
-        },
-        "subtitle": Object {
-          "context": "header",
-        },
-        "virtual": undefined,
-      },
-      "ref": null,
-      "rendered": Array [
+      "height": "auto",
+      "paddingBottom": 0.5,
+    }
+  }
+  subtitle={
+    Object {
+      "context": "header",
+    }
+  }
+>
+  <Styled(Left) />
+  <Styled(Body)
+    style={
+      Object {
+        "flex": 4,
+      }
+    }
+  >
+    <Styled(Title)
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "fontSize": undefined,
+            "fontWeight": "normal",
+            "marginBottom": 5,
+            "textAlign": "justify",
+          },
+          Object {
+            "color": undefined,
+            "fontSize": undefined,
+          },
+        ]
+      }
+    >
+      header
+    </Styled(Title)>
+    <withAnimatable(Styled(Subtitle))
+      delay={0}
+      direction="normal"
+      iterationCount={1}
+      iterationDelay={0}
+      numberOfLines={1}
+      onAnimationBegin={[Function]}
+      onAnimationEnd={[Function]}
+      onTransitionBegin={[Function]}
+      onTransitionEnd={[Function]}
+      style={
         Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": undefined,
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <Styled(Title)
-                numberOfLines={1}
-                style={
-                  Array [
-                    Object {
-                      "fontSize": undefined,
-                      "fontWeight": "normal",
-                      "marginBottom": 5,
-                      "textAlign": "justify",
-                    },
-                    Object {
-                      "color": undefined,
-                      "fontSize": undefined,
-                    },
-                  ]
-                }
-              >
-                header
-              </Styled(Title)>,
-              <withAnimatable(Styled(Subtitle))
-                delay={0}
-                direction="normal"
-                iterationCount={1}
-                iterationDelay={0}
-                numberOfLines={1}
-                onAnimationBegin={[Function]}
-                onAnimationEnd={[Function]}
-                onTransitionBegin={[Function]}
-                onTransitionEnd={[Function]}
-                style={
-                  Object {
-                    "color": "#685A5C",
-                    "marginBottom": 5,
-                    "textAlign": "justify",
-                  }
-                }
-                useNativeDriver={false}
-              >
-                header
-              </withAnimatable(Styled(Subtitle))>,
-            ],
-            "style": Object {
-              "flex": 4,
-            },
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "header",
-                "numberOfLines": 1,
-                "style": Array [
-                  Object {
-                    "fontSize": undefined,
-                    "fontWeight": "normal",
-                    "marginBottom": 5,
-                    "textAlign": "justify",
-                  },
-                  Object {
-                    "color": undefined,
-                    "fontSize": undefined,
-                  },
-                ],
-                "virtual": undefined,
-              },
-              "ref": [Function],
-              "rendered": "header",
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "animation": undefined,
-                "children": "header",
-                "delay": 0,
-                "direction": "normal",
-                "duration": undefined,
-                "easing": undefined,
-                "iterationCount": 1,
-                "iterationDelay": 0,
-                "numberOfLines": 1,
-                "onAnimationBegin": [Function],
-                "onAnimationEnd": [Function],
-                "onTransitionBegin": [Function],
-                "onTransitionEnd": [Function],
-                "style": Object {
-                  "color": "#685A5C",
-                  "marginBottom": 5,
-                  "textAlign": "justify",
-                },
-                "transition": undefined,
-                "useNativeDriver": false,
-              },
-              "ref": [Function],
-              "rendered": "header",
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": undefined,
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-  Symbol(enzyme.__childContext__): null,
-}
+          "color": "#685A5C",
+          "marginBottom": 5,
+          "textAlign": "justify",
+        }
+      }
+      useNativeDriver={false}
+    >
+      header
+    </withAnimatable(Styled(Subtitle))>
+  </Styled(Body)>
+  <Styled(Right) />
+</Styled(Header)>
 `;
 
 exports[`Testing Header Component renders as expected with subtitle and regarding line numbers 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Header
-    animated={true}
-    onRightPress={null}
-    rightStyle={
-      Object {
-        "color": "#4E4A47",
-      }
-    }
-    subtitle={
-      Object {
-        "context": "header",
-        "numberOfLines": 2,
-      }
-    }
-    title={
-      Object {
-        "context": "header",
-        "numberOfLines": 2,
-      }
-    }
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "animated": true,
-      "children": Array [
-        <Styled(Left) />,
-        <Styled(Body)
-          style={
-            Object {
-              "flex": 4,
-            }
-          }
-        >
-          <Styled(Title)
-            numberOfLines={2}
-            style={
-              Array [
-                Object {
-                  "fontSize": undefined,
-                  "fontWeight": "normal",
-                  "marginBottom": 5,
-                  "textAlign": "justify",
-                },
-                Object {
-                  "color": undefined,
-                  "fontSize": undefined,
-                },
-              ]
-            }
-          >
-            header
-          </Styled(Title)>
-          <withAnimatable(Styled(Subtitle))
-            delay={0}
-            direction="normal"
-            iterationCount={1}
-            iterationDelay={0}
-            numberOfLines={2}
-            onAnimationBegin={[Function]}
-            onAnimationEnd={[Function]}
-            onTransitionBegin={[Function]}
-            onTransitionEnd={[Function]}
-            style={
-              Object {
-                "color": "#685A5C",
-                "marginBottom": 5,
-                "textAlign": "justify",
-              }
-            }
-            useNativeDriver={false}
-          >
-            header
-          </withAnimatable(Styled(Subtitle))>
-        </Styled(Body)>,
-        <Styled(Right) />,
-      ],
-      "style": Object {
-        "height": "auto",
-        "paddingBottom": 0.5,
-      },
-      "subtitle": Object {
-        "context": "header",
-        "numberOfLines": 2,
-      },
-      "virtual": undefined,
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": undefined,
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <Styled(Title)
-              numberOfLines={2}
-              style={
-                Array [
-                  Object {
-                    "fontSize": undefined,
-                    "fontWeight": "normal",
-                    "marginBottom": 5,
-                    "textAlign": "justify",
-                  },
-                  Object {
-                    "color": undefined,
-                    "fontSize": undefined,
-                  },
-                ]
-              }
-            >
-              header
-            </Styled(Title)>,
-            <withAnimatable(Styled(Subtitle))
-              delay={0}
-              direction="normal"
-              iterationCount={1}
-              iterationDelay={0}
-              numberOfLines={2}
-              onAnimationBegin={[Function]}
-              onAnimationEnd={[Function]}
-              onTransitionBegin={[Function]}
-              onTransitionEnd={[Function]}
-              style={
-                Object {
-                  "color": "#685A5C",
-                  "marginBottom": 5,
-                  "textAlign": "justify",
-                }
-              }
-              useNativeDriver={false}
-            >
-              header
-            </withAnimatable(Styled(Subtitle))>,
-          ],
-          "style": Object {
-            "flex": 4,
-          },
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "header",
-              "numberOfLines": 2,
-              "style": Array [
-                Object {
-                  "fontSize": undefined,
-                  "fontWeight": "normal",
-                  "marginBottom": 5,
-                  "textAlign": "justify",
-                },
-                Object {
-                  "color": undefined,
-                  "fontSize": undefined,
-                },
-              ],
-              "virtual": undefined,
-            },
-            "ref": [Function],
-            "rendered": "header",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "animation": undefined,
-              "children": "header",
-              "delay": 0,
-              "direction": "normal",
-              "duration": undefined,
-              "easing": undefined,
-              "iterationCount": 1,
-              "iterationDelay": 0,
-              "numberOfLines": 2,
-              "onAnimationBegin": [Function],
-              "onAnimationEnd": [Function],
-              "onTransitionBegin": [Function],
-              "onTransitionEnd": [Function],
-              "style": Object {
-                "color": "#685A5C",
-                "marginBottom": 5,
-                "textAlign": "justify",
-              },
-              "transition": undefined,
-              "useNativeDriver": false,
-            },
-            "ref": [Function],
-            "rendered": "header",
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": undefined,
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
+<Styled(Header)
+  animated={true}
+  style={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "animated": true,
-        "children": Array [
-          <Styled(Left) />,
-          <Styled(Body)
-            style={
-              Object {
-                "flex": 4,
-              }
-            }
-          >
-            <Styled(Title)
-              numberOfLines={2}
-              style={
-                Array [
-                  Object {
-                    "fontSize": undefined,
-                    "fontWeight": "normal",
-                    "marginBottom": 5,
-                    "textAlign": "justify",
-                  },
-                  Object {
-                    "color": undefined,
-                    "fontSize": undefined,
-                  },
-                ]
-              }
-            >
-              header
-            </Styled(Title)>
-            <withAnimatable(Styled(Subtitle))
-              delay={0}
-              direction="normal"
-              iterationCount={1}
-              iterationDelay={0}
-              numberOfLines={2}
-              onAnimationBegin={[Function]}
-              onAnimationEnd={[Function]}
-              onTransitionBegin={[Function]}
-              onTransitionEnd={[Function]}
-              style={
-                Object {
-                  "color": "#685A5C",
-                  "marginBottom": 5,
-                  "textAlign": "justify",
-                }
-              }
-              useNativeDriver={false}
-            >
-              header
-            </withAnimatable(Styled(Subtitle))>
-          </Styled(Body)>,
-          <Styled(Right) />,
-        ],
-        "style": Object {
-          "height": "auto",
-          "paddingBottom": 0.5,
-        },
-        "subtitle": Object {
-          "context": "header",
-          "numberOfLines": 2,
-        },
-        "virtual": undefined,
-      },
-      "ref": null,
-      "rendered": Array [
+      "height": "auto",
+      "paddingBottom": 0.5,
+    }
+  }
+  subtitle={
+    Object {
+      "context": "header",
+      "numberOfLines": 2,
+    }
+  }
+>
+  <Styled(Left) />
+  <Styled(Body)
+    style={
+      Object {
+        "flex": 4,
+      }
+    }
+  >
+    <Styled(Title)
+      numberOfLines={2}
+      style={
+        Array [
+          Object {
+            "fontSize": undefined,
+            "fontWeight": "normal",
+            "marginBottom": 5,
+            "textAlign": "justify",
+          },
+          Object {
+            "color": undefined,
+            "fontSize": undefined,
+          },
+        ]
+      }
+    >
+      header
+    </Styled(Title)>
+    <withAnimatable(Styled(Subtitle))
+      delay={0}
+      direction="normal"
+      iterationCount={1}
+      iterationDelay={0}
+      numberOfLines={2}
+      onAnimationBegin={[Function]}
+      onAnimationEnd={[Function]}
+      onTransitionBegin={[Function]}
+      onTransitionEnd={[Function]}
+      style={
         Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": undefined,
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <Styled(Title)
-                numberOfLines={2}
-                style={
-                  Array [
-                    Object {
-                      "fontSize": undefined,
-                      "fontWeight": "normal",
-                      "marginBottom": 5,
-                      "textAlign": "justify",
-                    },
-                    Object {
-                      "color": undefined,
-                      "fontSize": undefined,
-                    },
-                  ]
-                }
-              >
-                header
-              </Styled(Title)>,
-              <withAnimatable(Styled(Subtitle))
-                delay={0}
-                direction="normal"
-                iterationCount={1}
-                iterationDelay={0}
-                numberOfLines={2}
-                onAnimationBegin={[Function]}
-                onAnimationEnd={[Function]}
-                onTransitionBegin={[Function]}
-                onTransitionEnd={[Function]}
-                style={
-                  Object {
-                    "color": "#685A5C",
-                    "marginBottom": 5,
-                    "textAlign": "justify",
-                  }
-                }
-                useNativeDriver={false}
-              >
-                header
-              </withAnimatable(Styled(Subtitle))>,
-            ],
-            "style": Object {
-              "flex": 4,
-            },
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "header",
-                "numberOfLines": 2,
-                "style": Array [
-                  Object {
-                    "fontSize": undefined,
-                    "fontWeight": "normal",
-                    "marginBottom": 5,
-                    "textAlign": "justify",
-                  },
-                  Object {
-                    "color": undefined,
-                    "fontSize": undefined,
-                  },
-                ],
-                "virtual": undefined,
-              },
-              "ref": [Function],
-              "rendered": "header",
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "animation": undefined,
-                "children": "header",
-                "delay": 0,
-                "direction": "normal",
-                "duration": undefined,
-                "easing": undefined,
-                "iterationCount": 1,
-                "iterationDelay": 0,
-                "numberOfLines": 2,
-                "onAnimationBegin": [Function],
-                "onAnimationEnd": [Function],
-                "onTransitionBegin": [Function],
-                "onTransitionEnd": [Function],
-                "style": Object {
-                  "color": "#685A5C",
-                  "marginBottom": 5,
-                  "textAlign": "justify",
-                },
-                "transition": undefined,
-                "useNativeDriver": false,
-              },
-              "ref": [Function],
-              "rendered": "header",
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": undefined,
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-  Symbol(enzyme.__childContext__): null,
-}
+          "color": "#685A5C",
+          "marginBottom": 5,
+          "textAlign": "justify",
+        }
+      }
+      useNativeDriver={false}
+    >
+      header
+    </withAnimatable(Styled(Subtitle))>
+  </Styled(Body)>
+  <Styled(Right) />
+</Styled(Header)>
 `;
 
 exports[`Testing Header Component renders as expected with title 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Header
-    animated={true}
-    onRightPress={null}
-    rightStyle={
-      Object {
-        "color": "#4E4A47",
-      }
-    }
-    subtitle={null}
-    title={
-      Object {
-        "context": "header",
-      }
-    }
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "animated": true,
-      "children": Array [
-        <Styled(Left) />,
-        <Styled(Body)
-          style={
-            Object {
-              "flex": 4,
-            }
-          }
-        >
-          <Styled(Title)
-            numberOfLines={1}
-            style={
-              Array [
-                Object {
-                  "fontSize": undefined,
-                  "fontWeight": "normal",
-                  "marginBottom": 5,
-                  "textAlign": "justify",
-                },
-                Object {
-                  "color": undefined,
-                  "fontSize": undefined,
-                },
-              ]
-            }
-          >
-            header
-          </Styled(Title)>
-        </Styled(Body)>,
-        <Styled(Right) />,
-      ],
-      "style": Object {
-        "height": "auto",
-        "paddingBottom": 0.5,
-      },
-      "subtitle": null,
-      "virtual": undefined,
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": undefined,
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <Styled(Title)
-              numberOfLines={1}
-              style={
-                Array [
-                  Object {
-                    "fontSize": undefined,
-                    "fontWeight": "normal",
-                    "marginBottom": 5,
-                    "textAlign": "justify",
-                  },
-                  Object {
-                    "color": undefined,
-                    "fontSize": undefined,
-                  },
-                ]
-              }
-            >
-              header
-            </Styled(Title)>,
-            null,
-          ],
-          "style": Object {
-            "flex": 4,
-          },
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "header",
-              "numberOfLines": 1,
-              "style": Array [
-                Object {
-                  "fontSize": undefined,
-                  "fontWeight": "normal",
-                  "marginBottom": 5,
-                  "textAlign": "justify",
-                },
-                Object {
-                  "color": undefined,
-                  "fontSize": undefined,
-                },
-              ],
-              "virtual": undefined,
-            },
-            "ref": [Function],
-            "rendered": "header",
-            "type": [Function],
-          },
-          null,
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": undefined,
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
+<Styled(Header)
+  animated={true}
+  style={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "animated": true,
-        "children": Array [
-          <Styled(Left) />,
-          <Styled(Body)
-            style={
-              Object {
-                "flex": 4,
-              }
-            }
-          >
-            <Styled(Title)
-              numberOfLines={1}
-              style={
-                Array [
-                  Object {
-                    "fontSize": undefined,
-                    "fontWeight": "normal",
-                    "marginBottom": 5,
-                    "textAlign": "justify",
-                  },
-                  Object {
-                    "color": undefined,
-                    "fontSize": undefined,
-                  },
-                ]
-              }
-            >
-              header
-            </Styled(Title)>
-          </Styled(Body)>,
-          <Styled(Right) />,
-        ],
-        "style": Object {
-          "height": "auto",
-          "paddingBottom": 0.5,
-        },
-        "subtitle": null,
-        "virtual": undefined,
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": undefined,
-            "virtual": undefined,
+      "height": "auto",
+      "paddingBottom": 0.5,
+    }
+  }
+  subtitle={null}
+>
+  <Styled(Left) />
+  <Styled(Body)
+    style={
+      Object {
+        "flex": 4,
+      }
+    }
+  >
+    <Styled(Title)
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "fontSize": undefined,
+            "fontWeight": "normal",
+            "marginBottom": 5,
+            "textAlign": "justify",
           },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <Styled(Title)
-                numberOfLines={1}
-                style={
-                  Array [
-                    Object {
-                      "fontSize": undefined,
-                      "fontWeight": "normal",
-                      "marginBottom": 5,
-                      "textAlign": "justify",
-                    },
-                    Object {
-                      "color": undefined,
-                      "fontSize": undefined,
-                    },
-                  ]
-                }
-              >
-                header
-              </Styled(Title)>,
-              null,
-            ],
-            "style": Object {
-              "flex": 4,
-            },
-            "virtual": undefined,
+          Object {
+            "color": undefined,
+            "fontSize": undefined,
           },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "header",
-                "numberOfLines": 1,
-                "style": Array [
-                  Object {
-                    "fontSize": undefined,
-                    "fontWeight": "normal",
-                    "marginBottom": 5,
-                    "textAlign": "justify",
-                  },
-                  Object {
-                    "color": undefined,
-                    "fontSize": undefined,
-                  },
-                ],
-                "virtual": undefined,
-              },
-              "ref": [Function],
-              "rendered": "header",
-              "type": [Function],
-            },
-            null,
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": undefined,
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-  Symbol(enzyme.__childContext__): null,
-}
+        ]
+      }
+    >
+      header
+    </Styled(Title)>
+  </Styled(Body)>
+  <Styled(Right) />
+</Styled(Header)>
 `;
 
 exports[`Testing Header Component renders without animation 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Header
-    animated={false}
-    onRightPress={null}
-    rightStyle={
-      Object {
-        "color": "#4E4A47",
-      }
-    }
-    subtitle={
-      Object {
-        "context": "header",
-      }
-    }
-    title={
-      Object {
-        "context": "header",
-      }
-    }
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "animated": false,
-      "children": Array [
-        <Styled(Left) />,
-        <Styled(Body)
-          style={
-            Object {
-              "flex": 4,
-            }
-          }
-        >
-          <Styled(Title)
-            numberOfLines={1}
-            style={
-              Array [
-                Object {
-                  "fontSize": undefined,
-                  "fontWeight": "normal",
-                  "marginBottom": 5,
-                  "textAlign": "justify",
-                },
-                Object {
-                  "color": undefined,
-                  "fontSize": undefined,
-                },
-              ]
-            }
-          >
-            header
-          </Styled(Title)>
-          <withAnimatable(Styled(Subtitle))
-            delay={0}
-            direction="normal"
-            iterationCount={1}
-            iterationDelay={0}
-            numberOfLines={1}
-            onAnimationBegin={[Function]}
-            onAnimationEnd={[Function]}
-            onTransitionBegin={[Function]}
-            onTransitionEnd={[Function]}
-            style={
-              Object {
-                "color": "#685A5C",
-                "marginBottom": 5,
-                "textAlign": "justify",
-              }
-            }
-            useNativeDriver={false}
-          >
-            header
-          </withAnimatable(Styled(Subtitle))>
-        </Styled(Body)>,
-        <Styled(Right) />,
-      ],
-      "style": Object {
-        "height": "auto",
-        "paddingBottom": 0.5,
-      },
-      "subtitle": Object {
-        "context": "header",
-      },
-      "virtual": undefined,
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": undefined,
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <Styled(Title)
-              numberOfLines={1}
-              style={
-                Array [
-                  Object {
-                    "fontSize": undefined,
-                    "fontWeight": "normal",
-                    "marginBottom": 5,
-                    "textAlign": "justify",
-                  },
-                  Object {
-                    "color": undefined,
-                    "fontSize": undefined,
-                  },
-                ]
-              }
-            >
-              header
-            </Styled(Title)>,
-            <withAnimatable(Styled(Subtitle))
-              delay={0}
-              direction="normal"
-              iterationCount={1}
-              iterationDelay={0}
-              numberOfLines={1}
-              onAnimationBegin={[Function]}
-              onAnimationEnd={[Function]}
-              onTransitionBegin={[Function]}
-              onTransitionEnd={[Function]}
-              style={
-                Object {
-                  "color": "#685A5C",
-                  "marginBottom": 5,
-                  "textAlign": "justify",
-                }
-              }
-              useNativeDriver={false}
-            >
-              header
-            </withAnimatable(Styled(Subtitle))>,
-          ],
-          "style": Object {
-            "flex": 4,
-          },
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "header",
-              "numberOfLines": 1,
-              "style": Array [
-                Object {
-                  "fontSize": undefined,
-                  "fontWeight": "normal",
-                  "marginBottom": 5,
-                  "textAlign": "justify",
-                },
-                Object {
-                  "color": undefined,
-                  "fontSize": undefined,
-                },
-              ],
-              "virtual": undefined,
-            },
-            "ref": [Function],
-            "rendered": "header",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "animation": undefined,
-              "children": "header",
-              "delay": 0,
-              "direction": "normal",
-              "duration": undefined,
-              "easing": undefined,
-              "iterationCount": 1,
-              "iterationDelay": 0,
-              "numberOfLines": 1,
-              "onAnimationBegin": [Function],
-              "onAnimationEnd": [Function],
-              "onTransitionBegin": [Function],
-              "onTransitionEnd": [Function],
-              "style": Object {
-                "color": "#685A5C",
-                "marginBottom": 5,
-                "textAlign": "justify",
-              },
-              "transition": undefined,
-              "useNativeDriver": false,
-            },
-            "ref": [Function],
-            "rendered": "header",
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": undefined,
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
+<Styled(Header)
+  animated={false}
+  style={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "animated": false,
-        "children": Array [
-          <Styled(Left) />,
-          <Styled(Body)
-            style={
-              Object {
-                "flex": 4,
-              }
-            }
-          >
-            <Styled(Title)
-              numberOfLines={1}
-              style={
-                Array [
-                  Object {
-                    "fontSize": undefined,
-                    "fontWeight": "normal",
-                    "marginBottom": 5,
-                    "textAlign": "justify",
-                  },
-                  Object {
-                    "color": undefined,
-                    "fontSize": undefined,
-                  },
-                ]
-              }
-            >
-              header
-            </Styled(Title)>
-            <withAnimatable(Styled(Subtitle))
-              delay={0}
-              direction="normal"
-              iterationCount={1}
-              iterationDelay={0}
-              numberOfLines={1}
-              onAnimationBegin={[Function]}
-              onAnimationEnd={[Function]}
-              onTransitionBegin={[Function]}
-              onTransitionEnd={[Function]}
-              style={
-                Object {
-                  "color": "#685A5C",
-                  "marginBottom": 5,
-                  "textAlign": "justify",
-                }
-              }
-              useNativeDriver={false}
-            >
-              header
-            </withAnimatable(Styled(Subtitle))>
-          </Styled(Body)>,
-          <Styled(Right) />,
-        ],
-        "style": Object {
-          "height": "auto",
-          "paddingBottom": 0.5,
-        },
-        "subtitle": Object {
-          "context": "header",
-        },
-        "virtual": undefined,
-      },
-      "ref": null,
-      "rendered": Array [
+      "height": "auto",
+      "paddingBottom": 0.5,
+    }
+  }
+  subtitle={
+    Object {
+      "context": "header",
+    }
+  }
+>
+  <Styled(Left) />
+  <Styled(Body)
+    style={
+      Object {
+        "flex": 4,
+      }
+    }
+  >
+    <Styled(Title)
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "fontSize": undefined,
+            "fontWeight": "normal",
+            "marginBottom": 5,
+            "textAlign": "justify",
+          },
+          Object {
+            "color": undefined,
+            "fontSize": undefined,
+          },
+        ]
+      }
+    >
+      header
+    </Styled(Title)>
+    <withAnimatable(Styled(Subtitle))
+      delay={0}
+      direction="normal"
+      iterationCount={1}
+      iterationDelay={0}
+      numberOfLines={1}
+      onAnimationBegin={[Function]}
+      onAnimationEnd={[Function]}
+      onTransitionBegin={[Function]}
+      onTransitionEnd={[Function]}
+      style={
         Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": undefined,
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <Styled(Title)
-                numberOfLines={1}
-                style={
-                  Array [
-                    Object {
-                      "fontSize": undefined,
-                      "fontWeight": "normal",
-                      "marginBottom": 5,
-                      "textAlign": "justify",
-                    },
-                    Object {
-                      "color": undefined,
-                      "fontSize": undefined,
-                    },
-                  ]
-                }
-              >
-                header
-              </Styled(Title)>,
-              <withAnimatable(Styled(Subtitle))
-                delay={0}
-                direction="normal"
-                iterationCount={1}
-                iterationDelay={0}
-                numberOfLines={1}
-                onAnimationBegin={[Function]}
-                onAnimationEnd={[Function]}
-                onTransitionBegin={[Function]}
-                onTransitionEnd={[Function]}
-                style={
-                  Object {
-                    "color": "#685A5C",
-                    "marginBottom": 5,
-                    "textAlign": "justify",
-                  }
-                }
-                useNativeDriver={false}
-              >
-                header
-              </withAnimatable(Styled(Subtitle))>,
-            ],
-            "style": Object {
-              "flex": 4,
-            },
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "header",
-                "numberOfLines": 1,
-                "style": Array [
-                  Object {
-                    "fontSize": undefined,
-                    "fontWeight": "normal",
-                    "marginBottom": 5,
-                    "textAlign": "justify",
-                  },
-                  Object {
-                    "color": undefined,
-                    "fontSize": undefined,
-                  },
-                ],
-                "virtual": undefined,
-              },
-              "ref": [Function],
-              "rendered": "header",
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "animation": undefined,
-                "children": "header",
-                "delay": 0,
-                "direction": "normal",
-                "duration": undefined,
-                "easing": undefined,
-                "iterationCount": 1,
-                "iterationDelay": 0,
-                "numberOfLines": 1,
-                "onAnimationBegin": [Function],
-                "onAnimationEnd": [Function],
-                "onTransitionBegin": [Function],
-                "onTransitionEnd": [Function],
-                "style": Object {
-                  "color": "#685A5C",
-                  "marginBottom": 5,
-                  "textAlign": "justify",
-                },
-                "transition": undefined,
-                "useNativeDriver": false,
-              },
-              "ref": [Function],
-              "rendered": "header",
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": undefined,
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-  Symbol(enzyme.__childContext__): null,
-}
+          "color": "#685A5C",
+          "marginBottom": 5,
+          "textAlign": "justify",
+        }
+      }
+      useNativeDriver={false}
+    >
+      header
+    </withAnimatable(Styled(Subtitle))>
+  </Styled(Body)>
+  <Styled(Right) />
+</Styled(Header)>
 `;

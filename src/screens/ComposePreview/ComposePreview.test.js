@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+
 import ComposePreview from './ComposePreview';
 import { STILL, LOADING } from 'hkufui/src/constants/loadStatus';
 

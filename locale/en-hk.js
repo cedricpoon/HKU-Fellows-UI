@@ -77,6 +77,7 @@ export default {
   'toast.dismiss': 'Dismiss',
 
   'alert.copy': 'Copy',
+  'alert.noPushNoti': 'You will not receive any native post updates',
   'alert.noEmailTitle': 'Email App Not Found',
   'alert.noEmailContent': (a, b) => `Please send your report to\n\n${a}\n\n${b}\n\nWe appreciate your support.`
 }

@@ -5,7 +5,6 @@ import { Provider as RXProvider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import SplashScreen from 'react-native-splash-screen';
 import firebase from 'react-native-firebase';
-import type { Notification, NotificationOpen } from 'react-native-firebase';
 
 import AppContainer from './AppContainer';
 import NavigationService from './NavigationService';

@@ -39,4 +39,6 @@ export const vote = {
   down: ({ postId }) => `/vote/${postId}/down`,
 }
 
+export const logout = () => '/logout';
+
 export const link = (path) => `${protocol}://${baseUrl}${path}`

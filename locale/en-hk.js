@@ -72,10 +72,11 @@ export default {
   'reply.titlePrefix': 'Re: ',
   'reply.success': 'Replied!',
 
-  'fetch.noNetwork': 'Server is not connected.',
+  'fetch.noNetwork': 'Server is not connected',
 
   'toast.dismiss': 'Dismiss',
 
+  'alert.logoutFail': 'Fail to logout',
   'alert.copy': 'Copy',
   'alert.noPushNoti': 'You will not receive any native post updates',
   'alert.noEmailTitle': 'Email App Not Found',

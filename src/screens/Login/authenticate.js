@@ -4,8 +4,10 @@ import { localize } from 'hkufui/locale';
 
 const locale = localize({ language: 'en', country: 'hk' });
 
-export function onLogin({ credential, alert, path }) {
+export function onLogin({ credential, alert, path, fcmToken }) {
   return async (dispatch) => {
+    const payload = { ...credential, ...(fcmToken && { fcmToken }) };
+
     dispatch({ type: LOGGING_IN });
     try {
       const response = await fetch(link(path), {
@@ -14,7 +16,7 @@ export function onLogin({ credential, alert, path }) {
           Accept: 'application/json',
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(credential),
+        body: JSON.stringify(payload),
       });
       const res = await response.json();
       if (res.status === 200) {

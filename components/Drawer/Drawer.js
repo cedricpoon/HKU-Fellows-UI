@@ -23,11 +23,13 @@ export class Drawer extends PureComponent {
     this.state = { drawerLayout: { width: 0, height: 0 } };
   }
 
-  _onLogout = () => {
+  _onLogout = async () => {
     const { onLogout } = this.props;
-    onLogout();
-    // navigate to login screen
-    NavigationService.reset('Login');
+    try {
+      await onLogout();
+      // navigate to login screen
+      NavigationService.reset('Login');
+    } catch (e) { /* ignored */ }
   }
 
   render() {

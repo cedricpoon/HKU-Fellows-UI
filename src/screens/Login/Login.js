@@ -12,6 +12,7 @@ import { show3s } from 'hkufui/src/toastHelper.js';
 
 import { onLogout } from 'hkufui/src/navigator/Context/DrawerMenu/drawerAction';
 import { onLogin } from './authenticate';
+import { retrieveToken } from './helper';
 
 const alert = (message) => { show3s({ message, type: 'danger' }); }
 const isAuthenticated = (credential) => credential && Object.keys(credential).length !== 0;
@@ -72,11 +73,12 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  onLogin: ({ username, password }) => { dispatch(
+  onLogin: async ({ username, password }) => { dispatch(
     onLogin({
       credential: { username, password },
       alert,
-      path: login.password()
+      path: login.password(),
+      fcmToken: await retrieveToken()
     })
   )},
   onLogout: () => { dispatch(onLogout()) }

@@ -45,7 +45,7 @@ export default {
   'drawer.userInfoIndicator': 'You are logged in as',
   'drawer.logout': 'Log out',
 
-  'header.notifications': 'Notifications',
+  'header.notifications': 'Subscribe',
   'header.abuse': 'Report Abuse',
   'header.thumbUp': i => `Vote #${i} Up`,
   'header.thumbDown': i => `Vote #${i} Down`,

@@ -30,12 +30,12 @@ export function onActiveLogout() {
       if (res.status === 204) {
         dispatch(onLogout());
       } else {
-        Alert.alert(locale['alert.logoutFail']);
+        Alert.alert(`${locale['alert.logoutFail']} ${res.status}`);
         throw new Error('not-logged-out');
       }
     } catch (error) {
       Alert.alert(locale['fetch.noNetwork']);
-      throw new Error('not-logged-out');
+      throw error;
     }
   };
 }

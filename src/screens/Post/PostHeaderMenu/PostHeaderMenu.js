@@ -54,17 +54,23 @@ export class PostHeaderMenu extends Component {
       });
   }
 
+  _transitLastPage = () => {
+    const { onGotoLast } = this.props;
+    onGotoLast();
+    this._popup.toggle();
+  }
+
   _acceptAnswer = () => {
     const { onAccept, postId, topicId } = this.props;
     onAccept({ postId, topicId });
   }
 
   render() {
-    const { onRef, index, solved, native, owned, ...restProps } = this.props;
+    const { onRef, index, solved, native, owned, onGotoLast, ...restProps } = this.props;
 
     return(
       <PopupMenu
-        ref={onRef}
+        ref={ref => { this._popup = ref; onRef(ref); }}
         { ...restProps } /* Proptypes handling on <PopupMenu /> */
       >
         {native && (
@@ -94,6 +100,14 @@ export class PostHeaderMenu extends Component {
             <Text style={styles.text}>{locale['header.notifications']}</Text>
           </Button>
         )}
+        <Button transparent iconLeft onPress={this._transitLastPage} disabled={onGotoLast === null}>
+          <Icon
+            name="last-page"
+            type="MaterialIcons"
+            style={onGotoLast !== null ? [themeStyles.icon, styles.text] : null}
+          />
+          <Text style={onGotoLast !== null ? styles.text : null}>{locale['header.gotoLast']}</Text>
+        </Button>
         <Button transparent iconLeft danger onPress={this._reportAbuse}>
           <Icon name="report" type="MaterialIcons" style={themeStyles.icon}></Icon>
           <Text>{locale['header.abuse']}</Text>
@@ -114,7 +128,8 @@ PostHeaderMenu.propTypes = {
   owned: PropTypes.bool,
   onVote: PropTypes.func,
   onAccept: PropTypes.func,
-  onNotify: PropTypes.func
+  onNotify: PropTypes.func,
+  onGotoLast: PropTypes.func,
 }
 
 const mapDispatchToProps = dispatch => ({

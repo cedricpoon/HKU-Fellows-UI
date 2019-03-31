@@ -31,6 +31,12 @@ export default {
   'header.searchPlaceholder': 'Search keywords or #hashtags',
   'header.noCoursePlaceholder': 'Swipe left to choose course',
   'header.course': 'Courses',
+  'header.notifications': 'Subscribe',
+  'header.abuse': 'Report Abuse',
+  'header.thumbUp': i => `Vote #${i} Up`,
+  'header.thumbDown': i => `Vote #${i} Down`,
+  'header.solved': 'Adopt this Answer',
+  'header.gotoLast': 'Goto Last Reply',
 
   'login.username': 'HKU Portal UID',
   'login.password': 'HKU Portal PIN',
@@ -44,12 +50,6 @@ export default {
   'drawer.landing': 'Browse Courses / Posts',
   'drawer.userInfoIndicator': 'You are logged in as',
   'drawer.logout': 'Log out',
-
-  'header.notifications': 'Subscribe',
-  'header.abuse': 'Report Abuse',
-  'header.thumbUp': i => `Vote #${i} Up`,
-  'header.thumbDown': i => `Vote #${i} Down`,
-  'header.solved': 'Adopt this Answer',
 
   'new.header': 'New Topic',
   'new.replyHeader': 'Reply Topic',

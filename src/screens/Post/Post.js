@@ -50,12 +50,19 @@ export class Post extends Component {
         position={{ x: width, y: headerLayout.y }}
         parentHeight={headerLayout.height}
         onRef={ref => this._popup = ref}
+        onGotoLast={comments.length - 1 === currentPage ? null : this._gotoLastPage}
         native={native}
         solved={solved != null}
         owned={owned}
         index={currentPage + 1}
       />
     );
+  }
+
+  _gotoLastPage = () => {
+    const { comments } = this.props;
+    this._postTabs.goToPage(comments.length - 1);
+    this.setState({ currentPage: comments.length - 1 });
   }
 
   _onPostTabChange = ({i}) => {

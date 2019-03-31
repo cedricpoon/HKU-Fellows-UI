@@ -49,4 +49,13 @@ describe('Testing PostHeaderMenu Component', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('can goto last', () => {
+    const wrapper = shallow(
+      <PostHeaderMenu {...requiredProps} onGotoLast={() => {}}>
+        <View></View>
+      </PostHeaderMenu>
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });

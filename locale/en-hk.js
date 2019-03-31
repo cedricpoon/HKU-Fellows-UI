@@ -36,7 +36,7 @@ export default {
   'header.thumbUp': i => `Vote #${i} Up`,
   'header.thumbDown': i => `Vote #${i} Down`,
   'header.solved': 'Adopt this Answer',
-  'header.gotoLast': 'Goto Last Reply',
+  'header.gotoLast': 'Latest Reply',
 
   'login.username': 'HKU Portal UID',
   'login.password': 'HKU Portal PIN',

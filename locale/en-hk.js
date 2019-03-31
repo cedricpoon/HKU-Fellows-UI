@@ -78,7 +78,9 @@ export default {
 
   'alert.logoutFail': 'Fail to logout',
   'alert.copy': 'Copy',
-  'alert.noPushNoti': 'You will not receive any native post updates',
+  'alert.settings': 'Settings',
+  'alert.noPushNotiHeading': 'Permission denied',
+  'alert.noPushNoti': 'You can always go to "Settings > HKU Fellows" to enable Push Notification',
   'alert.noEmailTitle': 'Email App Not Found',
   'alert.noEmailContent': (a, b) => `Please send your report to\n\n${a}\n\n${b}\n\nWe appreciate your support.`
 }

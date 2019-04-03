@@ -38,22 +38,17 @@ export class Post extends Component {
   }
 
   _renderHeaderMenu = () => {
-    const { comments, topicInfo } = this.props;
-    const { headerLayout, currentPage, id } = this.state;
+    const { comments } = this.props;
+    const { headerLayout, currentPage } = this.state;
     const { width } = Dimensions.get("window");
-    const { native, solved, owned } = topicInfo;
 
     return (
       <PostHeaderMenu
-        topicId={id}
         postId={comments[currentPage].id}
         position={{ x: width, y: headerLayout.y }}
         parentHeight={headerLayout.height}
         onRef={ref => this._popup = ref}
         onGotoLast={comments.length - 1 === currentPage ? null : this._gotoLastPage}
-        native={native}
-        solved={solved != null}
-        owned={owned}
         index={currentPage + 1}
       />
     );

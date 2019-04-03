@@ -146,7 +146,7 @@ exports[`Testing Drawer Component renders as expected 1`] = `
           }
         }
       >
-        Refresh Temperature
+        Refresh Rating
       </Styled(Text)>
     </Styled(Button)>
     <Styled(Button)

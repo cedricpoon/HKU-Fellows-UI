@@ -4,7 +4,6 @@ import {
   REFRESH_REPLIES,
   LOAD_REPLIES_FAILED
 } from 'hkufui/src/constants/actionTypes';
-import { Alert } from 'react-native';
 import { OK, LOADING, FAIL } from 'hkufui/src/constants/loadStatus';
 import { localize } from 'hkufui/locale';
 import { link, view, login, vote } from 'hkufui/config/webapi';
@@ -76,9 +75,26 @@ export function onVote({ topicId, postId, value, alert }) {
   }
 }
 
-export function onNotify({ topicId }) { // eslint-disable-line
-  return dispatch => { // eslint-disable-line
-    Alert.alert('onNotify');
+export function onNotify({ topicId, alert }) {
+  return async (dispatch, getState) => {
+    const { replies, credential } = getState();
+    const notifyPath = replies.topicInfo.subscribed
+    ?
+      view.unsubscribe({ topicId })
+    :
+      view.subscribe({ topicId });
+
+    const res = await fetchPost({ credential, path: notifyPath });
+    switch (res.status) {
+      case 200:
+        // Successfully subscribe
+        dispatch({ type: REFRESH_REPLIES });
+        dispatch(onLoad({ id: topicId }));
+        break;
+      default:
+        // failure
+        alert(`${locale['replies.subscribeError']} ${res.status}`);
+    }
   }
 }
 

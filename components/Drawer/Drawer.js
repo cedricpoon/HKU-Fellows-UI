@@ -62,9 +62,7 @@ export class Drawer extends PureComponent {
             {...this.props}
           />
           <Button full transparent dark onPress={onTemperature}>
-            <Text style={styles.label}>
-              Refresh Temperature
-            </Text>
+            <Text style={styles.label}>{locale['drawer.temperature']}</Text>
           </Button>
           <Button full transparent dark onPress={this._onLogout}>
             <Text style={styles.label}>

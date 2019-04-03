@@ -11,6 +11,7 @@ import themeStyles from 'hkufui/theme/Styles';
 import { email } from 'hkufui/config';
 const locale = localize({ language: 'en', country: 'hk' });
 import { show2s } from 'hkufui/src/toastHelper';
+import { OK, LOADING } from 'hkufui/src/constants/loadStatus';
 
 import { onVote, onNotify, onAccept } from '../viewActions';
 import styles from './Styles';
@@ -66,7 +67,7 @@ export class PostHeaderMenu extends Component {
   }
 
   render() {
-    const { onRef, index, solved, native, owned, onGotoLast, ...restProps } = this.props;
+    const { onRef, index, solved, native, owned, onGotoLast, subscribed, status, ...restProps } = this.props;
 
     return(
       <PopupMenu
@@ -74,19 +75,19 @@ export class PostHeaderMenu extends Component {
         { ...restProps } /* Proptypes handling on <PopupMenu /> */
       >
         {native && (
-          <Button transparent iconLeft onPress={this._voteUp}>
+          <Button transparent iconLeft onPress={this._voteUp} disabled={status !== OK}>
             <Icon name="thumb-up" type="MaterialCommunityIcons" style={[themeStyles.icon, styles.thumbUp]}></Icon>
             <Text style={styles.text}>{locale['header.thumbUp'](index)}</Text>
           </Button>
         )}
         {native && (
-          <Button transparent iconLeft onPress={this._voteDown}>
+          <Button transparent iconLeft onPress={this._voteDown} disabled={status !== OK}>
             <Icon name="thumb-down" type="MaterialCommunityIcons" style={[themeStyles.icon, styles.thumbDown]}></Icon>
             <Text style={styles.text}>{locale['header.thumbDown'](index)}</Text>
           </Button>
         )}
         {native && owned && (
-          <Button transparent iconLeft warning disabled={solved} onPress={this._acceptAnswer}>
+          <Button transparent iconLeft warning disabled={solved || status !== OK} onPress={this._acceptAnswer}>
             <Icon name="checkbox-marked-circle-outline" type="MaterialCommunityIcons" style={themeStyles.icon}></Icon>
             <Text>{locale['header.solved']}</Text>
           </Button>
@@ -95,9 +96,15 @@ export class PostHeaderMenu extends Component {
           <Separator style={styles.separator} />
         )}
         {native && (
-          <Button transparent iconLeft onPress={this._enableNotification}>
-            <Icon name="notifications" type="MaterialIcons" style={[themeStyles.icon, styles.text]}></Icon>
-            <Text style={styles.text}>{locale['header.notifications']}</Text>
+          <Button transparent iconLeft onPress={this._enableNotification} disabled={status !== OK}>
+            <Icon
+              name={subscribed ? "notifications-off" : "notifications-active"}
+              type="MaterialIcons"
+              style={[themeStyles.icon, styles.text]}
+            />
+            <Text style={styles.text}>
+              {subscribed ? locale['header.unsubscribe'] : locale['header.subscribe']}
+            </Text>
           </Button>
         )}
         <Button transparent iconLeft onPress={this._transitLastPage} disabled={onGotoLast === null}>
@@ -126,21 +133,31 @@ PostHeaderMenu.propTypes = {
   index: PropTypes.number.isRequired,
   solved: PropTypes.bool,
   owned: PropTypes.bool,
+  subscribed: PropTypes.bool,
   onVote: PropTypes.func,
   onAccept: PropTypes.func,
   onNotify: PropTypes.func,
   onGotoLast: PropTypes.func,
+  status: PropTypes.oneOf([OK, LOADING]),
 }
 
 const mapDispatchToProps = dispatch => ({
   onVote: ({ postId, topicId, value }) => dispatch(onVote({ postId, topicId, value, alert })),
-  onNotify: ({ topicId }) => dispatch(onNotify({ topicId })),
+  onNotify: ({ topicId }) => dispatch(onNotify({ topicId, alert })),
   onAccept: ({ topicId, postId }) => dispatch(onAccept({ topicId, postId, alert }))
 });
 
-const mapStateToProps = state => ({
-  uid: state.credential.userId
-});
+const mapStateToProps = state => {
+  // eslint-disable-next-line no-unused-vars
+  const { solved, title, subtitle, ...restTopicInfo } = state.replies.topicInfo;
+  return {
+    uid: state.credential.userId,
+    solved: solved != null,
+    ...restTopicInfo,
+    topicId: state.location.recentTopic,
+    status: state.replies.status,
+  };
+};
 
 export default connect(
   mapStateToProps,

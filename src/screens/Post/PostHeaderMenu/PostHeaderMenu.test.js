@@ -58,4 +58,13 @@ describe('Testing PostHeaderMenu Component', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('can be subscribed', () => {
+    const wrapper = shallow(
+      <PostHeaderMenu {...requiredProps} subscribed>
+        <View></View>
+      </PostHeaderMenu>
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });

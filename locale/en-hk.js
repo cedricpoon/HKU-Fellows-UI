@@ -21,6 +21,7 @@ export default {
   'replies.selfVote': 'Own post cannot be voted',
   'replies.voteIssue': 'Vote not submitted',
   'replies.acceptError': 'Answer not adopted',
+  'replies.subscribeError': 'Topic not (un)subscribed',
   'replies.selfAccept': 'Own post cannot be adopted',
 
   'footer.moodle': 'From Moodle',
@@ -31,7 +32,8 @@ export default {
   'header.searchPlaceholder': 'Search keywords or #hashtags',
   'header.noCoursePlaceholder': 'Swipe left to choose course',
   'header.course': 'Courses',
-  'header.notifications': 'Subscribe',
+  'header.subscribe': 'Subscribe',
+  'header.unsubscribe': 'Unsubscribe',
   'header.abuse': 'Report Abuse',
   'header.thumbUp': i => `Vote #${i} Up`,
   'header.thumbDown': i => `Vote #${i} Down`,
@@ -50,6 +52,7 @@ export default {
   'drawer.landing': 'Browse Courses / Posts',
   'drawer.userInfoIndicator': 'You are logged in as',
   'drawer.logout': 'Log out',
+  'drawer.temperature': 'Refresh Rating',
 
   'new.header': 'New Topic',
   'new.replyHeader': 'Reply Topic',

@@ -37,7 +37,7 @@ export default {
     /* OK, LOADING, STILL */
     status: STILL,
     /* Possible topic payload retrieved from /view/:topicId */
-    topicInfo: { title: '', subtitle: null, native: null, solved: null, owned: null }
+    topicInfo: { title: '', subtitle: null, native: null, solved: null, owned: null, subscribed: false }
   },
   /* user login credential */
   credential: null,

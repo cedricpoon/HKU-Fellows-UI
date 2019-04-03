@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import { Drawer } from 'hkufui/components';
-import { onLogout, onLoadUserTemperature } from './drawerAction';
+import { onLoadUserTemperature, onActiveLogout } from './drawerAction';
 
 export class DrawerMenu extends PureComponent {
   render() {
@@ -31,7 +31,7 @@ DrawerMenu.propTypes = {
 }
 
 const mapDispatchToProps = dispatch => ({
-  onLogout: () => { dispatch(onLogout()) },
+  onLogout: async () => { await dispatch(onActiveLogout()) },
   onTemperature: () => { dispatch(onLoadUserTemperature()) }
 })
 

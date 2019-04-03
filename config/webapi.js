@@ -17,7 +17,9 @@ export const post = ({ code, index, time, filter }) => {
 
 export const view = {
   index: ({ topicId }) => `/view/${topicId}`,
-  adopt: ({ topicId }) => `/view/${topicId}/adopt`
+  adopt: ({ topicId }) => `/view/${topicId}/adopt`,
+  subscribe: ({ topicId }) => `/view/${topicId}/subscribe`,
+  unsubscribe: ({ topicId }) => `/view/${topicId}/unsubscribe`,
 }
 
 export const profile = {
@@ -38,5 +40,7 @@ export const vote = {
   up: ({ postId }) => `/vote/${postId}/up`,
   down: ({ postId }) => `/vote/${postId}/down`,
 }
+
+export const logout = () => '/logout';
 
 export const link = (path) => `${protocol}://${baseUrl}${path}`

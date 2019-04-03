@@ -38,24 +38,26 @@ export class Post extends Component {
   }
 
   _renderHeaderMenu = () => {
-    const { comments, topicInfo } = this.props;
-    const { headerLayout, currentPage, id } = this.state;
+    const { comments } = this.props;
+    const { headerLayout, currentPage } = this.state;
     const { width } = Dimensions.get("window");
-    const { native, solved, owned } = topicInfo;
 
     return (
       <PostHeaderMenu
-        topicId={id}
         postId={comments[currentPage].id}
         position={{ x: width, y: headerLayout.y }}
         parentHeight={headerLayout.height}
         onRef={ref => this._popup = ref}
-        native={native}
-        solved={solved != null}
-        owned={owned}
+        onGotoLast={comments.length - 1 === currentPage ? null : this._gotoLastPage}
         index={currentPage + 1}
       />
     );
+  }
+
+  _gotoLastPage = () => {
+    const { comments } = this.props;
+    this._postTabs.goToPage(comments.length - 1);
+    this.setState({ currentPage: comments.length - 1 });
   }
 
   _onPostTabChange = ({i}) => {

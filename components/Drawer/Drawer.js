@@ -23,11 +23,13 @@ export class Drawer extends PureComponent {
     this.state = { drawerLayout: { width: 0, height: 0 } };
   }
 
-  _onLogout = () => {
+  _onLogout = async () => {
     const { onLogout } = this.props;
-    onLogout();
-    // navigate to login screen
-    NavigationService.reset('Login');
+    try {
+      await onLogout();
+      // navigate to login screen
+      NavigationService.reset('Login');
+    } catch (e) { /* ignored */ }
   }
 
   render() {
@@ -60,9 +62,7 @@ export class Drawer extends PureComponent {
             {...this.props}
           />
           <Button full transparent dark onPress={onTemperature}>
-            <Text style={styles.label}>
-              Refresh Temperature
-            </Text>
+            <Text style={styles.label}>{locale['drawer.temperature']}</Text>
           </Button>
           <Button full transparent dark onPress={this._onLogout}>
             <Text style={styles.label}>

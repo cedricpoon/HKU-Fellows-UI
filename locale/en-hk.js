@@ -21,6 +21,7 @@ export default {
   'replies.selfVote': 'Own post cannot be voted',
   'replies.voteIssue': 'Vote not submitted',
   'replies.acceptError': 'Answer not adopted',
+  'replies.subscribeError': 'Topic not (un)subscribed',
   'replies.selfAccept': 'Own post cannot be adopted',
 
   'footer.moodle': 'From Moodle',
@@ -31,6 +32,13 @@ export default {
   'header.searchPlaceholder': 'Search keywords or #hashtags',
   'header.noCoursePlaceholder': 'Swipe left to choose course',
   'header.course': 'Courses',
+  'header.subscribe': 'Subscribe',
+  'header.unsubscribe': 'Unsubscribe',
+  'header.abuse': 'Report Abuse',
+  'header.thumbUp': i => `Vote #${i} Up`,
+  'header.thumbDown': i => `Vote #${i} Down`,
+  'header.solved': 'Adopt this Answer',
+  'header.gotoLast': 'Latest Reply',
 
   'login.username': 'HKU Portal UID',
   'login.password': 'HKU Portal PIN',
@@ -44,12 +52,7 @@ export default {
   'drawer.landing': 'Browse Courses / Posts',
   'drawer.userInfoIndicator': 'You are logged in as',
   'drawer.logout': 'Log out',
-
-  'header.notifications': 'Notifications',
-  'header.abuse': 'Report Abuse',
-  'header.thumbUp': i => `Vote #${i} Up`,
-  'header.thumbDown': i => `Vote #${i} Down`,
-  'header.solved': 'Adopt this Answer',
+  'drawer.temperature': 'Refresh Rating',
 
   'new.header': 'New Topic',
   'new.replyHeader': 'Reply Topic',
@@ -72,11 +75,15 @@ export default {
   'reply.titlePrefix': 'Re: ',
   'reply.success': 'Replied!',
 
-  'fetch.noNetwork': 'Server is not connected.',
+  'fetch.noNetwork': 'Server is not connected',
 
   'toast.dismiss': 'Dismiss',
 
+  'alert.logoutFail': 'Fail to logout',
   'alert.copy': 'Copy',
+  'alert.settings': 'Settings',
+  'alert.noPushNotiHeading': 'Permission denied',
+  'alert.noPushNoti': 'You can always go to "Settings > HKU Fellows" to enable Push Notification',
   'alert.noEmailTitle': 'Email App Not Found',
   'alert.noEmailContent': (a, b) => `Please send your report to\n\n${a}\n\n${b}\n\nWe appreciate your support.`
 }

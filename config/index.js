@@ -19,5 +19,7 @@ export const deepLink = {
 
 export const markdownTutorialLink = 'https://guides.github.com/features/mastering-markdown/';
 
+export const settings = 'app-settings:';
+
 // eslint-disable-next-line no-undef
 export const environment = process.env['NODE_ENV'];

@@ -1,5 +1,72 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Testing PostHeaderMenu Component can goto last 1`] = `
+<PopupMenu
+  position={
+    Object {
+      "x": 0,
+      "y": 0,
+    }
+  }
+  postId="postId"
+  toggle={[Function]}
+  topicId="topicId"
+  uid="uid"
+>
+  <Styled(Button)
+    disabled={false}
+    iconLeft={true}
+    onPress={[Function]}
+    transparent={true}
+  >
+    <Styled(Icon)
+      name="last-page"
+      style={
+        Array [
+          Object {
+            "textAlign": "center",
+            "width": 25,
+          },
+          Object {
+            "color": "#4E4A47",
+          },
+        ]
+      }
+      type="MaterialIcons"
+    />
+    <Styled(Text)
+      style={
+        Object {
+          "color": "#4E4A47",
+        }
+      }
+    >
+      Latest Reply
+    </Styled(Text)>
+  </Styled(Button)>
+  <Styled(Button)
+    danger={true}
+    iconLeft={true}
+    onPress={[Function]}
+    transparent={true}
+  >
+    <Styled(Icon)
+      name="report"
+      style={
+        Object {
+          "textAlign": "center",
+          "width": 25,
+        }
+      }
+      type="MaterialIcons"
+    />
+    <Styled(Text)>
+      Report Abuse
+    </Styled(Text)>
+  </Styled(Button)>
+</PopupMenu>
+`;
+
 exports[`Testing PostHeaderMenu Component has onRef 1`] = `
 <PopupMenu
   position={
@@ -13,6 +80,37 @@ exports[`Testing PostHeaderMenu Component has onRef 1`] = `
   topicId="topicId"
   uid="uid"
 >
+  <Styled(Button)
+    disabled={false}
+    iconLeft={true}
+    onPress={[Function]}
+    transparent={true}
+  >
+    <Styled(Icon)
+      name="last-page"
+      style={
+        Array [
+          Object {
+            "textAlign": "center",
+            "width": 25,
+          },
+          Object {
+            "color": "#4E4A47",
+          },
+        ]
+      }
+      type="MaterialIcons"
+    />
+    <Styled(Text)
+      style={
+        Object {
+          "color": "#4E4A47",
+        }
+      }
+    >
+      Latest Reply
+    </Styled(Text)>
+  </Styled(Button)>
   <Styled(Button)
     danger={true}
     iconLeft={true}
@@ -50,6 +148,37 @@ exports[`Testing PostHeaderMenu Component is owned by logged user 1`] = `
   uid="uid"
 >
   <Styled(Button)
+    disabled={false}
+    iconLeft={true}
+    onPress={[Function]}
+    transparent={true}
+  >
+    <Styled(Icon)
+      name="last-page"
+      style={
+        Array [
+          Object {
+            "textAlign": "center",
+            "width": 25,
+          },
+          Object {
+            "color": "#4E4A47",
+          },
+        ]
+      }
+      type="MaterialIcons"
+    />
+    <Styled(Text)
+      style={
+        Object {
+          "color": "#4E4A47",
+        }
+      }
+    >
+      Latest Reply
+    </Styled(Text)>
+  </Styled(Button)>
+  <Styled(Button)
     danger={true}
     iconLeft={true}
     onPress={[Function]}
@@ -86,6 +215,37 @@ exports[`Testing PostHeaderMenu Component is solved 1`] = `
   uid="uid"
 >
   <Styled(Button)
+    disabled={false}
+    iconLeft={true}
+    onPress={[Function]}
+    transparent={true}
+  >
+    <Styled(Icon)
+      name="last-page"
+      style={
+        Array [
+          Object {
+            "textAlign": "center",
+            "width": 25,
+          },
+          Object {
+            "color": "#4E4A47",
+          },
+        ]
+      }
+      type="MaterialIcons"
+    />
+    <Styled(Text)
+      style={
+        Object {
+          "color": "#4E4A47",
+        }
+      }
+    >
+      Latest Reply
+    </Styled(Text)>
+  </Styled(Button)>
+  <Styled(Button)
     danger={true}
     iconLeft={true}
     onPress={[Function]}
@@ -121,6 +281,37 @@ exports[`Testing PostHeaderMenu Component renders as expected with PopupMenu req
   topicId="topicId"
   uid="uid"
 >
+  <Styled(Button)
+    disabled={false}
+    iconLeft={true}
+    onPress={[Function]}
+    transparent={true}
+  >
+    <Styled(Icon)
+      name="last-page"
+      style={
+        Array [
+          Object {
+            "textAlign": "center",
+            "width": 25,
+          },
+          Object {
+            "color": "#4E4A47",
+          },
+        ]
+      }
+      type="MaterialIcons"
+    />
+    <Styled(Text)
+      style={
+        Object {
+          "color": "#4E4A47",
+        }
+      }
+    >
+      Latest Reply
+    </Styled(Text)>
+  </Styled(Button)>
   <Styled(Button)
     danger={true}
     iconLeft={true}

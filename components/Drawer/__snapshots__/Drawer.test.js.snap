@@ -89,7 +89,7 @@ exports[`Testing Drawer Component renders as expected 1`] = `
               ]
             }
           />
-           
+
           -
         </Styled(Text)>
         <Styled(Text)
@@ -110,7 +110,7 @@ exports[`Testing Drawer Component renders as expected 1`] = `
             }
             type="Foundation"
           />
-           
+
           0000000
         </Styled(Text)>
       </View>

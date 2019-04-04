@@ -1,4 +1,4 @@
-package com.hkufui;
+package hku.cs.fyp18005.hkufui;
 
 import com.facebook.react.ReactActivity;
 

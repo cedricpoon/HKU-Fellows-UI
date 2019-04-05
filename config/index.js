@@ -1,3 +1,5 @@
+import { displayName } from 'hkufui/app.json';
+
 export const hotPostMinIndex = 5;
 
 export const persistStoreKey = 'hkufui.local';
@@ -20,6 +22,14 @@ export const deepLink = {
 export const markdownTutorialLink = 'https://guides.github.com/features/mastering-markdown/';
 
 export const settings = 'app-settings:';
+
+// Android notification channel
+export const channel = {
+  channelId: 'hkufui.android.channel',
+  name: displayName,
+  description: 'HKU Fellows Android Notification Channel',
+  icon: 'ic_splash',
+};
 
 // eslint-disable-next-line no-undef
 export const environment = process.env['NODE_ENV'];

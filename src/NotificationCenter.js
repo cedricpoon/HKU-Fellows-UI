@@ -1,10 +1,10 @@
 import { Component } from 'react';
-import { Linking, Alert } from 'react-native';
+import { Linking, Alert, Platform } from 'react-native';
 import PropTypes from 'prop-types';
 import firebase from 'react-native-firebase';
 import { encrypt } from 'hkufui/src/safe';
 
-import { deepLink, settings } from 'hkufui/config';
+import { deepLink, settings, channel as channelInfo } from 'hkufui/config';
 import { localize } from 'hkufui/locale';
 
 const locale = localize({ country: 'hk', language: 'en' });
@@ -36,6 +36,11 @@ export default class NotificationCenter extends Component {
   }
 
   _notificationListener = firebase.notifications().onNotification((notification) => {
+    if (Platform.OS === 'android') {
+      notification
+        .android.setChannelId(channelInfo.channelId)
+        .android.setSmallIcon(channelInfo.icon);
+    }
     // display notification even in foreground
     firebase.notifications().displayNotification(notification);
   });
@@ -47,8 +52,19 @@ export default class NotificationCenter extends Component {
       this._openTopic(data.post);
   });
 
+  _consumeChannel = () => {
+    const channel = new firebase.notifications.Android.Channel(
+      channelInfo.channelId,
+      channelInfo.name,
+      firebase.notifications.Android.Importance.Max
+    ).setDescription(channelInfo.description);
+
+    firebase.notifications().android.createChannel(channel);
+  }
+
   async componentDidMount() {
     await this._requestPermission();
+    if (Platform.OS === 'android') this._consumeChannel();
   }
 
   async componentWillUnmount() {

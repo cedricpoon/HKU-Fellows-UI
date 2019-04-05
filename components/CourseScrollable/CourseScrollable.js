@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Platform } from 'react-native';
 import PropTypes from 'prop-types';
 import * as Animatable from 'react-native-animatable';
 import { Text, Accordion, View, Icon as NBIcon } from 'native-base';
@@ -68,9 +69,9 @@ class CourseScrollable extends Component {
               duration={bouncyIconDuration}
               iterationCount="infinite"
               style={[styles.headerText, activeStyle]}
-              name="arrow-up"
+              name={Platform.os === 'ios' ? "arrow-up" : 'arrow-dropup'}
             />
-          : <Icon style={styles.headerText} name="arrow-down" />}
+          : <Icon style={styles.headerText} name={Platform.os === 'ios' ? "arrow-down" : 'arrow-dropdown'} />}
       </View>
     );
   }

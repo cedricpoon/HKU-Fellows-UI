@@ -26,7 +26,7 @@ export default {
   androidRipple: true,
   androidRippleColor: "rgba(256, 256, 256, 0.3)",
   androidRippleColorDark: "rgba(0, 0, 0, 0.15)",
-  btnUppercaseAndroidText: true,
+  btnUppercaseAndroidText: false,
 
   // Badge
   badgeBg: "#ED1727",
@@ -34,7 +34,7 @@ export default {
   badgePadding: platform === "ios" ? 3 : 0,
 
   // Button
-  btnFontFamily: platform === "ios" ? "System" : "Roboto_medium",
+  btnFontFamily: platform === "ios" ? "System" : "Roboto",
   btnDisabledBg: "#b5b5b5",
   buttonPadding: 6,
   get btnPrimaryBg() {
@@ -68,7 +68,7 @@ export default {
     return this.inverseTextColor;
   },
   get btnTextSize() {
-    return platform === "ios" ? this.fontSizeBase * 1.1 : this.fontSizeBase - 1;
+    return this.fontSizeBase * 1.1;
   },
   get btnTextSizeLarge() {
     return this.fontSizeBase * 1.5;
@@ -136,7 +136,7 @@ export default {
 
   // Footer
   footerHeight: 55,
-  footerDefaultBg: platform === "ios" ? "#F8F8F8" : "#3F51B5",
+  footerDefaultBg: "#F8F8F8",
   footerPaddingBottom: 0,
 
   // FooterTab
@@ -149,7 +149,7 @@ export default {
 
   // Header
   toolbarBtnColor: platform === "ios" ? "#007aff" : "#fff",
-  toolbarDefaultBg: platform === "ios" ? "#F8F8F8" : "#3F51B5",
+  toolbarDefaultBg: "#F8F8F8",
   toolbarHeight: platform === "ios" ? 64 : 56,
   toolbarSearchIconSize: platform === "ios" ? 20 : 23,
   toolbarInputColor: platform === "ios" ? "#CECDD2" : "#fff",
@@ -217,7 +217,7 @@ export default {
   },
 
   // Segment
-  segmentBackgroundColor: platform === "ios" ? "#F8F8F8" : "#3F51B5",
+  segmentBackgroundColor: "#F8F8F8",
   segmentActiveBackgroundColor: platform === "ios" ? "#007aff" : "#fff",
   segmentTextColor: platform === "ios" ? "#007aff" : "#fff",
   segmentActiveTextColor: platform === "ios" ? "#fff" : "#3F51B5",
@@ -229,7 +229,7 @@ export default {
   inverseSpinnerColor: "#1A191B",
 
   // Tab
-  tabDefaultBg: platform === "ios" ? "#F8F8F8" : "#3F51B5",
+  tabDefaultBg: "#F8F8F8",
   topTabBarTextColor: platform === "ios" ? "#6b6b6b" : "#b3c7f9",
   topTabBarActiveTextColor: platform === "ios" ? "#007aff" : "#fff",
   topTabBarBorderColor: platform === "ios" ? "#a7a6ab" : "#fff",

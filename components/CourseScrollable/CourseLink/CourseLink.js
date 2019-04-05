@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { ListItem, Text, Left, Right, Icon, Content, View } from 'native-base';
-import { Animated } from 'react-native';
+import { Animated, Platform } from 'react-native';
 import PropTypes from 'prop-types';
 import NavigationService from 'hkufui/src/NavigationService';
 
@@ -50,7 +50,7 @@ class CourseLink extends Component {
             </Text>
           </Content>
           <Right style={styles.linkRight}>
-            <Icon name="arrow-forward" style={[styles.headerText, styles.linkChevron]} />
+            <Icon name={Platform.os === 'ios' ? "arrow-forward" : 'arrow-dropright'} style={[styles.headerText, styles.linkChevron]} />
           </Right>
         </ListItem>
       </Animated.View>

@@ -35,6 +35,13 @@ export default class NotificationCenter extends Component {
     Linking.openURL(`${deepLink.prefix}${deepLink.post(encrypt(topicId))}`)
   }
 
+  _openNotification = (no) => {
+    const { data } = no.notification;
+    // construct deeplink and open it
+    if (data.post)
+      this._openTopic(data.post);
+  }
+
   _notificationListener = firebase.notifications().onNotification((notification) => {
     if (Platform.OS === 'android') {
       notification
@@ -46,10 +53,7 @@ export default class NotificationCenter extends Component {
   });
 
   _notificationOpenedListener = firebase.notifications().onNotificationOpened((notificationOpen) => {
-    const { data } = notificationOpen.notification;
-    // construct deeplink and open it
-    if (data.post)
-      this._openTopic(data.post);
+    this._openNotification(notificationOpen);
   });
 
   _consumeChannel = () => {
@@ -62,9 +66,19 @@ export default class NotificationCenter extends Component {
     firebase.notifications().android.createChannel(channel);
   }
 
+  _closedNotificationOpen = async () => {
+    const notificationOpen = await firebase.notifications().getInitialNotification();
+    if (notificationOpen) {
+      this._openNotification(notificationOpen);
+    }
+  }
+
   async componentDidMount() {
     await this._requestPermission();
-    if (Platform.OS === 'android') this._consumeChannel();
+    if (Platform.OS === 'android') {
+      this._consumeChannel();
+      await this._closedNotificationOpen();
+    }
   }
 
   async componentWillUnmount() {

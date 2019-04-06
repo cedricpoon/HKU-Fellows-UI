@@ -27,7 +27,10 @@ export default StyleSheet.create({
     marginBottom: Platform.OS === 'ios' ? gridBase : null
   },
   button: {
-    width: Platform.OS === 'ios' ? null : header.buttonWidth
+    width: Platform.OS === 'ios' ? null : header.buttonWidth,
+  },
+  btnRight: {
+    justifyContent: Platform.OS === 'ios' ? null : 'center',
   },
   buttonIcon: {
     color: logo.black

@@ -3,16 +3,15 @@ import { Text, View, Content, Icon } from 'native-base';
 import { TouchableOpacity, TextInput } from 'react-native';
 import PropTypes from "prop-types";
 import { format } from 'timeago.js';
-import * as Animatable from 'react-native-animatable';
 import Markdown from 'react-native-markdown-renderer';
 
 import { localize } from 'hkufui/locale';
 import { hotPostMinIndex as hot } from 'hkufui/config';
 import styles from './Styles';
-import { noZ } from '../helper';
+import { noZ, makeAnimatable } from '../helper';
 import { FADE_IN_DURATION } from 'hkufui/components/Constants'
 
-const AnimatingView = Animatable.createAnimatableComponent(View);
+const AnimatingView = makeAnimatable(View);
 const locale = localize({ language: 'en', country: 'hk' });
 
 class PostDetails extends Component {

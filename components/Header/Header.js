@@ -81,7 +81,13 @@ class Header extends Component {
         </Body>
         <Right style={styles.right}>
         {rightIcon && (
-          <Button transparent style={styles.button} onPress={onRightPress} onLongPress={onRightPress} disabled={!onRightPress}>
+          <Button
+            transparent
+            style={[styles.button, styles.btnRight]} 
+            onPress={onRightPress}
+            onLongPress={onRightPress}
+            disabled={!onRightPress}
+          >
             <Icon name={rightIcon} style={onRightPress ? rightStyle : null} />
           </Button>
         )}

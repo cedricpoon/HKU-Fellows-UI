@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Platform } from 'react-native';
 import { Container, Content } from 'native-base';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
@@ -48,7 +49,7 @@ export class SelectCourse extends Component {
         <Header
           title={{ context: locale['header.course'] }}
           backable
-          rightIcon='arrow-dropup'
+          rightIcon={Platform.OS === 'ios' ? 'arrow-dropup' : 'arrow-round-up'}
           rightStyle={styles.collapseButton}
           onRightPress={() => {
             this._courseScrollable.collapseAll();

@@ -31,7 +31,7 @@ export const footer = {
 
 export const header = {
   labelPadding: gridBase * 2,
-  buttonWidth: gridBase * 9,
+  buttonWidth: gridBase * 11,
 }
 
 export const course = {

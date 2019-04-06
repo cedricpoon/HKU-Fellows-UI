@@ -1,11 +1,11 @@
 import React, { PureComponent } from 'react';
 import PropTypes from "prop-types";
-import * as Animatable from 'react-native-animatable';
 import { FlatList as RNFlatList } from 'react-native';
 
 import { FADE_IN_DURATION } from 'hkufui/components/Constants';
+import { makeAnimatable } from 'hkufui/components/helper';
 
-const FlatList = Animatable.createAnimatableComponent(RNFlatList);
+const FlatList = makeAnimatable(RNFlatList);
 
 class Scrollable extends PureComponent {
   componentWillUnmount() {

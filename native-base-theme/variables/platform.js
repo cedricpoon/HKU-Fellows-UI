@@ -24,7 +24,7 @@ export default {
 
   // Android
   androidRipple: true,
-  androidRippleColor: "rgba(256, 256, 256, 0.3)",
+  androidRippleColor: "rgba(0, 0, 0, 0.15)",
   androidRippleColorDark: "rgba(0, 0, 0, 0.15)",
   btnUppercaseAndroidText: false,
 
@@ -248,9 +248,9 @@ export default {
   },
 
   // Title
-  titleFontfamily: platform === "ios" ? "System" : "Roboto_medium",
-  titleFontSize: platform === "ios" ? 17 : 19,
-  subTitleFontSize: platform === "ios" ? 11 : 14,
+  titleFontfamily: platform === "ios" ? "System" : "Roboto",
+  titleFontSize: 17,
+  subTitleFontSize: 11,
   subtitleColor: platform === "ios" ? "#8e8e93" : "#FFF",
   titleFontColor: platform === "ios" ? "#000" : "#FFF",
 

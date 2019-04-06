@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { View } from 'native-base';
 import * as Animatable from 'react-native-animatable';
 import { Placeholder } from 'react-native-loading-placeholder';
@@ -9,7 +9,7 @@ import { FADE_IN_DURATION } from 'hkufui/components/Constants';
 
 const Wrapper = Animatable.createAnimatableComponent(View);
 
-class BarIndicator extends Component {
+class BarIndicator extends PureComponent {
 
   render() {
     const { delay, stalled, paragraph } = this.props;

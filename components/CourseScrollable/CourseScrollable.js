@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { Platform } from 'react-native';
 import PropTypes from 'prop-types';
 import * as Animatable from 'react-native-animatable';
@@ -17,7 +17,7 @@ const Icon = Animatable.createAnimatableComponent(NBIcon);
 
 const bouncyIconDuration = 1500;
 
-class CourseScrollable extends Component {
+class CourseScrollable extends PureComponent {
 
   constructor(props) {
     super(props);
@@ -69,9 +69,9 @@ class CourseScrollable extends Component {
               duration={bouncyIconDuration}
               iterationCount="infinite"
               style={[styles.headerText, activeStyle]}
-              name={Platform.os === 'ios' ? "arrow-up" : 'arrow-dropup'}
+              name={Platform.OS === 'ios' ? "arrow-up" : 'arrow-dropup'}
             />
-          : <Icon style={styles.headerText} name={Platform.os === 'ios' ? "arrow-down" : 'arrow-dropdown'} />}
+          : <Icon style={styles.headerText} name={Platform.OS === 'ios' ? "arrow-down" : 'arrow-dropdown'} />}
       </View>
     );
   }

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { Dimensions } from 'react-native';
 import PropTypes from 'prop-types';
 import { Content, View } from 'native-base';
@@ -10,7 +10,7 @@ import BarIndicator from './BarIndicator/BarIndicator';
 import styles from './Styles';
 import * as consts from './Constants';
 
-class PostLoadIndicator extends Component {
+class PostLoadIndicator extends PureComponent {
 
   _renderGradient() {
     return (

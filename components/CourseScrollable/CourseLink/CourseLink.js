@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { ListItem, Text, Left, Right, Icon, Content, View } from 'native-base';
 import { Animated, Platform } from 'react-native';
 import PropTypes from 'prop-types';
@@ -9,7 +9,7 @@ import styles from '../Styles';
 const fadeInDuration = 150;
 const fadeInDelay = 50;
 
-class CourseLink extends Component {
+class CourseLink extends PureComponent {
 
   constructor(props) {
     super(props);
@@ -50,7 +50,7 @@ class CourseLink extends Component {
             </Text>
           </Content>
           <Right style={styles.linkRight}>
-            <Icon name={Platform.os === 'ios' ? "arrow-forward" : 'arrow-dropright'} style={[styles.headerText, styles.linkChevron]} />
+            <Icon name={Platform.OS === 'ios' ? "arrow-forward" : 'arrow-dropright'} style={[styles.headerText, styles.linkChevron]} />
           </Right>
         </ListItem>
       </Animated.View>

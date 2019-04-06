@@ -9,7 +9,7 @@ import { FADE_IN_DURATION } from 'hkufui/components/Constants';
 
 const Body = Animatable.createAnimatableComponent(NBBody);
 
-class PostPlaceholder extends React.Component {
+class PostPlaceholder extends React.PureComponent {
   render() {
     const { headline, subHeadline, icon, headlineColor, button } = this.props;
 

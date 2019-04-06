@@ -79,6 +79,7 @@ export default {
 
   'toast.dismiss': 'Dismiss',
 
+  'alert.heading': 'Error',
   'alert.logoutFail': 'Fail to logout',
   'alert.copy': 'Copy',
   'alert.settings': 'Settings',

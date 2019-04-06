@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Platform } from 'react-native';
 import PropTypes from "prop-types";
 import { Left, Body, Right, Button, Icon, Title, Subtitle as NBSubtitle } from 'native-base';
 import { Header as NBHeader } from 'hkufui/native-base-fork/Header';
@@ -42,14 +43,15 @@ class Header extends Component {
     const { subtitle } = this.state.subtitle ? this.state : this.props;
 
     return (
-      <NBHeader {...restProps} style={styles.header}>
-        <Left>
+      <NBHeader {...restProps} style={[styles.header, Platform.OS === 'android' ? styles.headerWrap : null]}>
+        <Left style={styles.left}>
           { backable && (
             <Button
               transparent
+              style={styles.button}
               onPress={() => { NavigationService.goBack(); }}
             >
-              <Icon style={styles.button} name="arrow-dropleft"/>
+              <Icon style={styles.buttonIcon} name="arrow-dropleft"/>
             </Button>
           )}
         </Left>
@@ -57,7 +59,10 @@ class Header extends Component {
           <Title
             style={[
               styles.title,
-              { fontSize: title.size, color: title.color }
+              {
+                ...(title.size && {fontSize: title.size}),
+                ...(title.color && {color: title.color})
+              }
             ]}
             ref={ref => { this._title=ref }}
             numberOfLines={title.numberOfLines || 1}
@@ -74,9 +79,9 @@ class Header extends Component {
             </Subtitle>
           )}
         </Body>
-        <Right>
+        <Right style={styles.right}>
         {rightIcon && (
-          <Button transparent onPress={onRightPress} onLongPress={onRightPress} disabled={!onRightPress}>
+          <Button transparent style={styles.button} onPress={onRightPress} onLongPress={onRightPress} disabled={!onRightPress}>
             <Icon name={rightIcon} style={onRightPress ? rightStyle : null} />
           </Button>
         )}
@@ -89,7 +94,7 @@ class Header extends Component {
 Header.defaultProps = {
   onRightPress: null,
   subtitle: null,
-  rightStyle: styles.button,
+  rightStyle: styles.buttonIcon,
   animated: true
 };
 

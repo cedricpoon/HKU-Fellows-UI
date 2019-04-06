@@ -11,4 +11,4 @@ export const mapLayoutToState = (key, ref) => {
 
 /* Normalize ISO timestamp format from mysql for `timeago.js` */
 /* ONLY for production server */
-export const noZ = (t) => env === 'development' ? t : t.replace(/(\d+-\d+-\d+T\d+:\d+:\d+\.\d+)(Z)/, '$1');
+export const noZ = (t) => env === 'locally' ? t : t.replace(/(\d+-\d+-\d+T\d+:\d+:\d+\.\d+)(Z)/, '$1');

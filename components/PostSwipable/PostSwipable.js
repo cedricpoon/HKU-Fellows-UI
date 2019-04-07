@@ -3,7 +3,6 @@ import { Tab, Tabs } from 'native-base';
 import PropTypes from "prop-types";
 
 import { PostDetails, PostLoadIndicator } from 'hkufui/components';
-import { PRE_RENDER_NUMBER } from './Constants';
 
 class PostSwipable extends Component {
   render() {
@@ -24,7 +23,7 @@ class PostSwipable extends Component {
     return (
       <Tabs
         renderTabBar={false}
-        prerenderingSiblingsNumber={PRE_RENDER_NUMBER}
+        prerenderingSiblingsNumber={comments ? comments.length : 0}
         ref={onRef}
         {...restProps}
       >

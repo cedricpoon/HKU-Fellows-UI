@@ -134,7 +134,6 @@ export class Post extends Component {
           onChangeTab={this._onPostTabChange}
           onRef={ref => this._postTabs = ref}
           solved={solved}
-          scrollWithoutAnimation={Platform.OS === 'android'}
         />
         <PostFooter
           firstPage={!comments || currentPage === 0}

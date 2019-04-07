@@ -4,17 +4,17 @@ exports[`Testing PreviewFooter Component is refreshing 1`] = `
 <Styled(ViewNB)
   onLayout={[Function]}
 >
-  <Styled(Footer)>
-    <FilterPopup
-      onFilterThunk={[Function]}
-      onRef={[Function]}
-      position={
-        Object {
-          "x": 0,
-          "y": 0,
-        }
+  <FilterPopup
+    onFilterThunk={[Function]}
+    onRef={[Function]}
+    position={
+      Object {
+        "x": 0,
+        "y": 0,
       }
-    />
+    }
+  />
+  <Styled(Footer)>
     <Styled(FooterTab)>
       <Styled(Button)
         onPress={[Function]}
@@ -69,17 +69,17 @@ exports[`Testing PreviewFooter Component renders as expected with requiredProps 
 <Styled(ViewNB)
   onLayout={[Function]}
 >
-  <Styled(Footer)>
-    <FilterPopup
-      onFilterThunk={[Function]}
-      onRef={[Function]}
-      position={
-        Object {
-          "x": 0,
-          "y": 0,
-        }
+  <FilterPopup
+    onFilterThunk={[Function]}
+    onRef={[Function]}
+    position={
+      Object {
+        "x": 0,
+        "y": 0,
       }
-    />
+    }
+  />
+  <Styled(Footer)>
     <Styled(FooterTab)>
       <Styled(Button)
         onPress={[Function]}
@@ -132,17 +132,17 @@ exports[`Testing PreviewFooter Component renders in muted 1`] = `
 <Styled(ViewNB)
   onLayout={[Function]}
 >
-  <Styled(Footer)>
-    <FilterPopup
-      onFilterThunk={[Function]}
-      onRef={[Function]}
-      position={
-        Object {
-          "x": 0,
-          "y": 0,
-        }
+  <FilterPopup
+    onFilterThunk={[Function]}
+    onRef={[Function]}
+    position={
+      Object {
+        "x": 0,
+        "y": 0,
       }
-    />
+    }
+  />
+  <Styled(Footer)>
     <Styled(FooterTab)>
       <Styled(Button)
         onPress={[Function]}

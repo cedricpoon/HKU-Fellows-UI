@@ -1,8 +1,8 @@
 import { environment } from './index';
 
-const protocol = environment === 'development' ? 'http' : 'https';
+const protocol = environment === 'locally' ? 'http' : 'https';
 
-const baseUrl = environment === 'development' ? 'localhost:8080' : 'api.hkufellows.ga';
+const baseUrl = environment === 'locally' ? 'localhost:8080' : 'api.hkufellows.ga';
 
 export const login = {
   password: () => '/login/password',

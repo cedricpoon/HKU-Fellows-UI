@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from "prop-types";
 import { Body as NBBody, Text, Icon, View, Button } from 'native-base';
-import * as Animatable from 'react-native-animatable';
 
 import styles from './Styles';
 import peerStyles from '../Styles';
 import { FADE_IN_DURATION } from 'hkufui/components/Constants';
+import { makeAnimatable } from 'hkufui/components/helper';
 
-const Body = Animatable.createAnimatableComponent(NBBody);
+const Body = makeAnimatable(NBBody);
 
-class PostPlaceholder extends React.Component {
+class PostPlaceholder extends React.PureComponent {
   render() {
     const { headline, subHeadline, icon, headlineColor, button } = this.props;
 

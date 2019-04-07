@@ -27,3 +27,5 @@ export { default as PostSwipable } from './PostSwipable/PostSwipable';
 export { default as PostDetails } from './PostDetails/PostDetails';
 
 export { default as ComposeForm } from './ComposeForm/ComposeForm';
+
+export { default as PopupMenuItem } from './PopupMenuItem/PopupMenuItem';

@@ -10,7 +10,7 @@ export default {
   'post.loadErrorTitle': 'Load Failure',
   'post.loadErrorContent': 'Oops! We hope a page refresh helps',
   'post.loadErrorButton': 'Refresh',
-  'post.copyright': '© 2018 HKU Fellows. All Rights Reserved.',
+  'post.copyright': '© 2019 HKU Fellows. All Rights Reserved.',
 
   'replies.anonymousUser': 'Anonymous',
   'replies.solved': 'Adopted',
@@ -79,6 +79,7 @@ export default {
 
   'toast.dismiss': 'Dismiss',
 
+  'alert.heading': 'Error',
   'alert.logoutFail': 'Fail to logout',
   'alert.copy': 'Copy',
   'alert.settings': 'Settings',

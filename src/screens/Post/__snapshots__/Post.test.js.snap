@@ -23,7 +23,6 @@ exports[`Testing Post Screen is loading 1`] = `
     }
   />
   <PostSwipable
-    native={null}
     onChangeTab={[Function]}
     onRef={[Function]}
     solved={null}
@@ -66,7 +65,6 @@ exports[`Testing Post Screen renders as expected 1`] = `
   />
   <PostSwipable
     comments={Array []}
-    native={null}
     onChangeTab={[Function]}
     onRef={[Function]}
     solved={null}

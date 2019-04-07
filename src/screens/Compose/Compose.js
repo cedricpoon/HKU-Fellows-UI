@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Dimensions, Keyboard } from 'react-native';
+import { Dimensions, Keyboard, Platform } from 'react-native';
 import { Container } from 'native-base';
 import { withNavigation } from 'react-navigation';
 import { connect } from 'react-redux';
@@ -49,7 +49,7 @@ export class Compose extends Component {
     const { content } = this.state;
     const { navigation } = this.props;
     const { title, subtitle, native } = navigation.state.params;
-
+    Keyboard.dismiss();
     if (content === '')
       alert(locale['new.noCompulsory']);
     else if (native && this._popup)
@@ -109,9 +109,11 @@ export class Compose extends Component {
     const nSubtitle = navigation.getParam('subtitle', null);
     const nNative = navigation.getParam('native', null);
 
+    const headerMenu = !nTitle ? this._renderNewHeaderMenu({ width }) : this._renderReplyHeaderMenu({ width });
+
     return (
       <Container>
-        { !nTitle ? this._renderNewHeaderMenu({ width }) : this._renderReplyHeaderMenu({ width }) }
+        { Platform.OS === 'ios' ? headerMenu : null }
         <Header
           title={{ context: !nTitle ? locale['new.header'] : locale['new.replyHeader'] }}
           subtitle={{ context: location }}
@@ -121,6 +123,7 @@ export class Compose extends Component {
           animated={false}
           onLayout={mapLayoutToState('headerLayout', this)}
         />
+        { Platform.OS === 'android' ? headerMenu : null }
         <ComposeForm
           onTextUpdates={{
             title: !nTitle ? this._handleTextUpdate('title') : null,

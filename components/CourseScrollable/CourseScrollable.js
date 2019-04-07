@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
+import { Platform } from 'react-native';
 import PropTypes from 'prop-types';
-import * as Animatable from 'react-native-animatable';
 import { Text, Accordion, View, Icon as NBIcon } from 'native-base';
 import { FlatList } from 'react-native';
 
+import { makeAnimatable } from 'hkufui/components/helper';
 import CourseLink from './CourseLink/CourseLink';
 import styles from './Styles';
 import {
@@ -12,11 +13,11 @@ import {
   getIndexByBreadcrumb
 } from './helper';
 
-const Icon = Animatable.createAnimatableComponent(NBIcon);
+const Icon = makeAnimatable(NBIcon);
 
 const bouncyIconDuration = 1500;
 
-class CourseScrollable extends Component {
+class CourseScrollable extends PureComponent {
 
   constructor(props) {
     super(props);
@@ -68,9 +69,9 @@ class CourseScrollable extends Component {
               duration={bouncyIconDuration}
               iterationCount="infinite"
               style={[styles.headerText, activeStyle]}
-              name="arrow-up"
+              name={Platform.OS === 'ios' ? "arrow-up" : 'arrow-dropup'}
             />
-          : <Icon style={styles.headerText} name="arrow-down" />}
+          : <Icon style={styles.headerText} name={Platform.OS === 'ios' ? "arrow-down" : 'arrow-dropdown'} />}
       </View>
     );
   }

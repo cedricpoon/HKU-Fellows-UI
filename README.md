@@ -7,6 +7,7 @@ User Interface of HKU Fellows
 2. Deep linking of `react-navigation` should be custom set on both `Android` and `iOS`
 3. `react-native-splash-screen` should be custom set on both `Android` and `iOS`
 4. `react-native-firebase` should be customised on `Android` and `iOS` for push notification
+5. Icons should be customised
 ## Work In Progress
 ### To-do
 - [ ] Chrome like popup menu

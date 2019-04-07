@@ -2,6 +2,7 @@
 
 exports[`Testing ViewMenu Screen renders as expected 1`] = `
 <PopupMenu
+  parentHeight={0}
   payload={
     Object {
       "content": "content",
@@ -16,7 +17,7 @@ exports[`Testing ViewMenu Screen renders as expected 1`] = `
   }
   toggle={[Function]}
 >
-  <Styled(Button)
+  <PopupMenuItem
     iconLeft={true}
     onPress={[Function]}
     success={true}
@@ -35,8 +36,8 @@ exports[`Testing ViewMenu Screen renders as expected 1`] = `
     <Styled(Text)>
       Post with UID
     </Styled(Text)>
-  </Styled(Button)>
-  <Styled(Button)
+  </PopupMenuItem>
+  <PopupMenuItem
     iconLeft={true}
     info={true}
     onPress={[Function]}
@@ -55,6 +56,6 @@ exports[`Testing ViewMenu Screen renders as expected 1`] = `
     <Styled(Text)>
       Post Anonymously
     </Styled(Text)>
-  </Styled(Button)>
+  </PopupMenuItem>
 </PopupMenu>
 `;

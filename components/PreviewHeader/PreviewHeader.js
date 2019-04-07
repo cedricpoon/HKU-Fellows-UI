@@ -41,7 +41,7 @@ class PreviewHeader extends Component {
     const { location, onSearchThunk } = this.props;
     const { inputFocused, query } = this.state;
 
-    const inputIcon = location === '' ? 'arrow-dropright' : 'search'
+    const inputIcon = location === '' ? 'ios-arrow-dropright' : 'search'
 
     return (
       <Header searchBar style={styles.header}>
@@ -82,7 +82,7 @@ class PreviewHeader extends Component {
               disabled={!inputFocused}
               onPress={this.searchCancel}
             >
-              <Icon name={inputFocused ? "close-circle-outline" : inputIcon} style={styles.rightIcon} />
+              <Icon name={inputFocused ? "ios-close-circle-outline" : inputIcon} style={styles.rightIcon} />
             </Button>
           </Right>
 

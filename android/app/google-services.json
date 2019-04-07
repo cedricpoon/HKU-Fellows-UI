@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1017465445122",
+    "firebase_url": "https://hku-fellows.firebaseio.com",
+    "project_id": "hku-fellows",
+    "storage_bucket": "hku-fellows.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1017465445122:android:34d1ad01010ee8ed",
+        "android_client_info": {
+          "package_name": "hku.cs.fyp18005.hkufui"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMcyJia1p-ZWEy4QH8KTyxvUV4FX8irls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1017465445122-m59djk8bc5t6bnb143l5itpv24chr5h7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1017465445122-ces1g9f70tlgir79a11m8hc8t46om1k2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "hku.cs.fyp18005.hkufui"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

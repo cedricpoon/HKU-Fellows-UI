@@ -1,8 +1,11 @@
-import React, { Component } from 'react';
-import { Dimensions } from 'react-native';
+import React, { PureComponent } from 'react';
+import { Dimensions, Platform } from 'react-native';
 import PropTypes from 'prop-types';
 import { Content, View } from 'native-base';
-import { PlaceholderContainer, Placeholder } from 'react-native-loading-placeholder';
+import {
+  PlaceholderContainer as PlaceholderContainer_,
+  Placeholder as Placeholder_
+} from 'react-native-loading-placeholder';
 import LinearGradient from 'react-native-linear-gradient';
 
 import BarIndicator from './BarIndicator/BarIndicator';
@@ -10,7 +13,10 @@ import BarIndicator from './BarIndicator/BarIndicator';
 import styles from './Styles';
 import * as consts from './Constants';
 
-class PostLoadIndicator extends Component {
+const PlaceholderContainer = Platform.OS === 'ios' ? PlaceholderContainer_ : View;
+const Placeholder = Platform.OS === 'ios' ? Placeholder_ : View;
+
+class PostLoadIndicator extends PureComponent {
 
   _renderGradient() {
     return (

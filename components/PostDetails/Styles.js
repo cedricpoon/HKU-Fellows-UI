@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 
 import { gridBase, fontSize, comment } from 'hkufui/theme/grid';
 import { logo, seperator } from 'hkufui/theme/palette';
@@ -79,6 +79,7 @@ export default StyleSheet.create({
     marginVertical: gridBase
   },
   selectableText: {
-    marginTop: gridBase
+    marginTop: Platform.OS === 'ios' ? gridBase : 0,
+    color: 'black'
   }
 });

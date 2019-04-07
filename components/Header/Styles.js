@@ -1,31 +1,41 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 
-import { fontSize, gridBase } from 'hkufui/theme/grid'
+import { fontSize, gridBase, header } from 'hkufui/theme/grid'
 import { logo } from 'hkufui/theme/palette';
 
 export default StyleSheet.create({
   header: {
     height: 'auto',
-    paddingBottom: 0.5 // compensation on diff with PreviewHeader
+    // compensation on diff with PreviewHeader
+    paddingBottom: Platform.OS === 'ios' ? 0.5 : null,
+  },
+  headerWrap: {
+    paddingTop: gridBase,
+    paddingBottom: gridBase + 1,
   },
   title: {
-    fontSize: fontSize.title,
+    fontSize: Platform.OS === 'ios' ? fontSize.semiTitleSize : fontSize.titleSize,
+    color: Platform.OS === 'ios' ? null : 'black',
     fontWeight: 'normal',
     textAlign: 'justify',
-    marginBottom: gridBase,
-  },
-  titleRegularSize: {
-    fontSize: fontSize.titleSize
+    marginBottom: Platform.OS === 'ios' ? gridBase : null
   },
   subtitle: {
     color: logo.brown,
     textAlign: 'justify',
-    marginBottom: gridBase
+    marginTop: Platform.OS === 'ios' ? null : gridBase,
+    marginBottom: Platform.OS === 'ios' ? gridBase : null
   },
   button: {
+    width: Platform.OS === 'ios' ? null : header.buttonWidth,
+  },
+  btnRight: {
+    justifyContent: Platform.OS === 'ios' ? null : 'center',
+  },
+  buttonIcon: {
     color: logo.black
   },
   context: {
-    flex: 4
+    flex: Platform.OS === 'ios' ? 4 : 2,
   }
 });

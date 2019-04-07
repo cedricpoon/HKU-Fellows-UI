@@ -2,6 +2,7 @@
 
 exports[`Testing FilterPopup Component has onRef 1`] = `
 <PopupMenu
+  parentHeight={0}
   position={
     Object {
       "x": 0,
@@ -10,7 +11,7 @@ exports[`Testing FilterPopup Component has onRef 1`] = `
   }
   toggle={[Function]}
 >
-  <Styled(Button)
+  <PopupMenuItem
     disabled={false}
     iconLeft={true}
     info={true}
@@ -29,8 +30,8 @@ exports[`Testing FilterPopup Component has onRef 1`] = `
     <Styled(Text)>
       From Moodle
     </Styled(Text)>
-  </Styled(Button)>
-  <Styled(Button)
+  </PopupMenuItem>
+  <PopupMenuItem
     disabled={false}
     iconLeft={true}
     success={true}
@@ -49,8 +50,8 @@ exports[`Testing FilterPopup Component has onRef 1`] = `
     <Styled(Text)>
       Latest Post
     </Styled(Text)>
-  </Styled(Button)>
-  <Styled(Button)
+  </PopupMenuItem>
+  <PopupMenuItem
     disabled={false}
     iconLeft={true}
     success={true}
@@ -68,8 +69,8 @@ exports[`Testing FilterPopup Component has onRef 1`] = `
     <Styled(Text)>
       Most Replied
     </Styled(Text)>
-  </Styled(Button)>
-  <Styled(Button)
+  </PopupMenuItem>
+  <PopupMenuItem
     disabled={false}
     iconLeft={true}
     success={true}
@@ -88,12 +89,13 @@ exports[`Testing FilterPopup Component has onRef 1`] = `
     <Styled(Text)>
       Popularity
     </Styled(Text)>
-  </Styled(Button)>
+  </PopupMenuItem>
 </PopupMenu>
 `;
 
 exports[`Testing FilterPopup Component renders as expected with PopupMenu required props 1`] = `
 <PopupMenu
+  parentHeight={0}
   position={
     Object {
       "x": 0,
@@ -102,7 +104,7 @@ exports[`Testing FilterPopup Component renders as expected with PopupMenu requir
   }
   toggle={[Function]}
 >
-  <Styled(Button)
+  <PopupMenuItem
     disabled={false}
     iconLeft={true}
     info={true}
@@ -121,8 +123,8 @@ exports[`Testing FilterPopup Component renders as expected with PopupMenu requir
     <Styled(Text)>
       From Moodle
     </Styled(Text)>
-  </Styled(Button)>
-  <Styled(Button)
+  </PopupMenuItem>
+  <PopupMenuItem
     disabled={false}
     iconLeft={true}
     success={true}
@@ -141,8 +143,8 @@ exports[`Testing FilterPopup Component renders as expected with PopupMenu requir
     <Styled(Text)>
       Latest Post
     </Styled(Text)>
-  </Styled(Button)>
-  <Styled(Button)
+  </PopupMenuItem>
+  <PopupMenuItem
     disabled={false}
     iconLeft={true}
     success={true}
@@ -160,8 +162,8 @@ exports[`Testing FilterPopup Component renders as expected with PopupMenu requir
     <Styled(Text)>
       Most Replied
     </Styled(Text)>
-  </Styled(Button)>
-  <Styled(Button)
+  </PopupMenuItem>
+  <PopupMenuItem
     disabled={false}
     iconLeft={true}
     success={true}
@@ -180,6 +182,6 @@ exports[`Testing FilterPopup Component renders as expected with PopupMenu requir
     <Styled(Text)>
       Popularity
     </Styled(Text)>
-  </Styled(Button)>
+  </PopupMenuItem>
 </PopupMenu>
 `;

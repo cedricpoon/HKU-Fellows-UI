@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import { SafeAreaView, View } from 'react-native';
-import { Button, Text, Icon } from 'native-base';
+import { Button, Text, Icon, Spinner } from 'native-base';
 import { DrawerItems } from 'react-navigation';
 import PropTypes from 'prop-types';
 
@@ -20,21 +20,22 @@ export class Drawer extends PureComponent {
   constructor(props) {
     super(props);
 
-    this.state = { drawerLayout: { width: 0, height: 0 } };
+    this.state = { drawerLayout: { width: 0, height: 0 }, loggingOut: false };
   }
 
   _onLogout = async () => {
     const { onLogout } = this.props;
     try {
+      this.setState({ loggingOut: true });
       await onLogout();
       // navigate to login screen
       NavigationService.reset('Login');
-    } catch (e) { /* ignored */ }
+    } catch (e) { this.setState({ loggingOut: false }); }
   }
 
   render() {
     const { username, temperature, token7digits, onTemperature } = this.props;
-    const { drawerLayout } = this.state;
+    const { drawerLayout, loggingOut } = this.state;
     // following react-navigation docs
     return (
       <SafeAreaView
@@ -64,10 +65,14 @@ export class Drawer extends PureComponent {
           <Button full transparent dark onPress={onTemperature}>
             <Text style={styles.label}>{locale['drawer.temperature']}</Text>
           </Button>
-          <Button full transparent dark onPress={this._onLogout}>
-            <Text style={styles.label}>
-              {locale['drawer.logout']}
-            </Text>
+          <Button full transparent dark onPress={this._onLogout} disabled={loggingOut}>
+            {loggingOut ? (
+              <Spinner style={styles.submit} inverse size='small' />
+            ) : (
+              <Text style={styles.label}>
+                {locale['drawer.logout']}
+              </Text>
+            )}
           </Button>
         </View>
         <Backdrop

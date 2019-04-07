@@ -21,6 +21,12 @@ export default StyleSheet.create({
     shadowOpacity: 0.2,
     shadowRadius: footer.shadowRadius
   },
+  menuAndroid: {
+    zIndex: 2,
+    backgroundColor: 'white',
+    borderColor: 'lightgrey',
+    borderWidth: 1,
+  },
   outsider: {
     /* z-index in <PopupMenu /> */
     zIndex: 1,

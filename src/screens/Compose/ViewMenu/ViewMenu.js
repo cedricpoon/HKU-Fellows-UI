@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Button, Icon, Text } from 'native-base';
+import { Icon, Text } from 'native-base';
 import PropTypes from 'prop-types';
 
-import PopupMenu from 'hkufui/components/PopupMenu/PopupMenu';
+import { PopupMenu, PopupMenuItem } from 'hkufui/components';
 import NavigationService from 'hkufui/src/NavigationService';
 import { localize } from 'hkufui/locale';
 import styles from 'hkufui/theme/Styles';
@@ -31,14 +31,14 @@ class ViewMenu extends Component {
         ref={ref => { this._popup = ref; onRef(ref) }}
         { ...restProps }
       >
-        <Button transparent success iconLeft onPress={() => { this._showPreview(false) }}>
+        <PopupMenuItem transparent success iconLeft onPress={() => { this._showPreview(false) }}>
           <Icon name="face" type="MaterialIcons" style={styles.icon}></Icon>
           <Text>{locale['new.nonAnonymous']}</Text>
-        </Button>
-        <Button transparent info iconLeft onPress={() => { this._showPreview(true) }}>
+        </PopupMenuItem>
+        <PopupMenuItem transparent info iconLeft onPress={() => { this._showPreview(true) }}>
           <Icon name="incognito" type="MaterialCommunityIcons" style={styles.icon}></Icon>
           <Text>{locale['new.anonymous']}</Text>
-        </Button>
+        </PopupMenuItem>
       </PopupMenu>
     );
   }

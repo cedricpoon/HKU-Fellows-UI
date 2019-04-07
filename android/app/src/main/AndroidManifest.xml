@@ -47,7 +47,9 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <data android:scheme="fellows" />
+                <data
+                    android:host="post"
+                    android:scheme="fellows" />
             </intent-filter>
         </activity>
 

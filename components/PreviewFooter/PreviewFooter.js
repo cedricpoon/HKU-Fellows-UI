@@ -35,8 +35,8 @@ class PreviewFooter extends Component {
 
     return (
       <View onLayout={mapLayoutToState("footerLayout", this)}>
+        { this._renderFilterPopup() }
         <Footer>
-          { this._renderFilterPopup() }
           <FooterTab>
             <Button onPress={NavigationService.openDrawer}>
               <Icon name="menu" type="MaterialIcons" />

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Dimensions } from 'react-native';
+import { Dimensions, Platform } from 'react-native';
 import { Container } from 'native-base';
 import { withNavigation } from 'react-navigation';
 import { connect } from 'react-redux';
@@ -111,7 +111,7 @@ export class Post extends Component {
 
     return (
       <Container>
-        {comments && id ? this._renderHeaderMenu() : null}
+        {Platform.OS === 'ios' && comments && id ? this._renderHeaderMenu() : null}
         <Header
           title={{
             context: title,
@@ -128,12 +128,12 @@ export class Post extends Component {
           onRightPress={this._openHeaderMenu}
           onLayout={mapLayoutToState('headerLayout', this)}
         />
+        {Platform.OS === 'android' && comments && id ? this._renderHeaderMenu() : null}
         <PostSwipable
           comments={comments}
           onChangeTab={this._onPostTabChange}
           onRef={ref => this._postTabs = ref}
           solved={solved}
-          native={native}
         />
         <PostFooter
           firstPage={!comments || currentPage === 0}

@@ -4,10 +4,13 @@ exports[`Testing Header Component has right style 1`] = `
 <Styled(Header)
   animated={true}
   style={
-    Object {
-      "height": "auto",
-      "paddingBottom": 0.5,
-    }
+    Array [
+      Object {
+        "height": "auto",
+        "paddingBottom": 0.5,
+      },
+      null,
+    ]
   }
   subtitle={null}
 >
@@ -24,15 +27,13 @@ exports[`Testing Header Component has right style 1`] = `
       style={
         Array [
           Object {
-            "fontSize": undefined,
+            "color": null,
+            "fontSize": 12.5,
             "fontWeight": "normal",
             "marginBottom": 5,
             "textAlign": "justify",
           },
-          Object {
-            "color": undefined,
-            "fontSize": undefined,
-          },
+          Object {},
         ]
       }
     >
@@ -44,6 +45,16 @@ exports[`Testing Header Component has right style 1`] = `
       disabled={true}
       onLongPress={null}
       onPress={null}
+      style={
+        Array [
+          Object {
+            "width": null,
+          },
+          Object {
+            "justifyContent": null,
+          },
+        ]
+      }
       transparent={true}
     >
       <Styled(Icon)
@@ -59,16 +70,24 @@ exports[`Testing Header Component renders as expected with back button 1`] = `
 <Styled(Header)
   animated={true}
   style={
-    Object {
-      "height": "auto",
-      "paddingBottom": 0.5,
-    }
+    Array [
+      Object {
+        "height": "auto",
+        "paddingBottom": 0.5,
+      },
+      null,
+    ]
   }
   subtitle={null}
 >
   <Styled(Left)>
     <Styled(Button)
       onPress={[Function]}
+      style={
+        Object {
+          "width": null,
+        }
+      }
       transparent={true}
     >
       <Styled(Icon)
@@ -93,15 +112,13 @@ exports[`Testing Header Component renders as expected with back button 1`] = `
       style={
         Array [
           Object {
-            "fontSize": undefined,
+            "color": null,
+            "fontSize": 12.5,
             "fontWeight": "normal",
             "marginBottom": 5,
             "textAlign": "justify",
           },
-          Object {
-            "color": undefined,
-            "fontSize": undefined,
-          },
+          Object {},
         ]
       }
     >
@@ -116,10 +133,13 @@ exports[`Testing Header Component renders as expected with right button 1`] = `
 <Styled(Header)
   animated={true}
   style={
-    Object {
-      "height": "auto",
-      "paddingBottom": 0.5,
-    }
+    Array [
+      Object {
+        "height": "auto",
+        "paddingBottom": 0.5,
+      },
+      null,
+    ]
   }
   subtitle={null}
 >
@@ -136,15 +156,13 @@ exports[`Testing Header Component renders as expected with right button 1`] = `
       style={
         Array [
           Object {
-            "fontSize": undefined,
+            "color": null,
+            "fontSize": 12.5,
             "fontWeight": "normal",
             "marginBottom": 5,
             "textAlign": "justify",
           },
-          Object {
-            "color": undefined,
-            "fontSize": undefined,
-          },
+          Object {},
         ]
       }
     >
@@ -156,6 +174,16 @@ exports[`Testing Header Component renders as expected with right button 1`] = `
       disabled={false}
       onLongPress={[Function]}
       onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "width": null,
+          },
+          Object {
+            "justifyContent": null,
+          },
+        ]
+      }
       transparent={true}
     >
       <Styled(Icon)
@@ -175,10 +203,13 @@ exports[`Testing Header Component renders as expected with subtitle 1`] = `
 <Styled(Header)
   animated={true}
   style={
-    Object {
-      "height": "auto",
-      "paddingBottom": 0.5,
-    }
+    Array [
+      Object {
+        "height": "auto",
+        "paddingBottom": 0.5,
+      },
+      null,
+    ]
   }
   subtitle={
     Object {
@@ -199,15 +230,13 @@ exports[`Testing Header Component renders as expected with subtitle 1`] = `
       style={
         Array [
           Object {
-            "fontSize": undefined,
+            "color": null,
+            "fontSize": 12.5,
             "fontWeight": "normal",
             "marginBottom": 5,
             "textAlign": "justify",
           },
-          Object {
-            "color": undefined,
-            "fontSize": undefined,
-          },
+          Object {},
         ]
       }
     >
@@ -227,6 +256,7 @@ exports[`Testing Header Component renders as expected with subtitle 1`] = `
         Object {
           "color": "#685A5C",
           "marginBottom": 5,
+          "marginTop": null,
           "textAlign": "justify",
         }
       }
@@ -243,10 +273,13 @@ exports[`Testing Header Component renders as expected with subtitle and regardin
 <Styled(Header)
   animated={true}
   style={
-    Object {
-      "height": "auto",
-      "paddingBottom": 0.5,
-    }
+    Array [
+      Object {
+        "height": "auto",
+        "paddingBottom": 0.5,
+      },
+      null,
+    ]
   }
   subtitle={
     Object {
@@ -268,15 +301,13 @@ exports[`Testing Header Component renders as expected with subtitle and regardin
       style={
         Array [
           Object {
-            "fontSize": undefined,
+            "color": null,
+            "fontSize": 12.5,
             "fontWeight": "normal",
             "marginBottom": 5,
             "textAlign": "justify",
           },
-          Object {
-            "color": undefined,
-            "fontSize": undefined,
-          },
+          Object {},
         ]
       }
     >
@@ -296,6 +327,7 @@ exports[`Testing Header Component renders as expected with subtitle and regardin
         Object {
           "color": "#685A5C",
           "marginBottom": 5,
+          "marginTop": null,
           "textAlign": "justify",
         }
       }
@@ -312,10 +344,13 @@ exports[`Testing Header Component renders as expected with title 1`] = `
 <Styled(Header)
   animated={true}
   style={
-    Object {
-      "height": "auto",
-      "paddingBottom": 0.5,
-    }
+    Array [
+      Object {
+        "height": "auto",
+        "paddingBottom": 0.5,
+      },
+      null,
+    ]
   }
   subtitle={null}
 >
@@ -332,15 +367,13 @@ exports[`Testing Header Component renders as expected with title 1`] = `
       style={
         Array [
           Object {
-            "fontSize": undefined,
+            "color": null,
+            "fontSize": 12.5,
             "fontWeight": "normal",
             "marginBottom": 5,
             "textAlign": "justify",
           },
-          Object {
-            "color": undefined,
-            "fontSize": undefined,
-          },
+          Object {},
         ]
       }
     >
@@ -355,10 +388,13 @@ exports[`Testing Header Component renders without animation 1`] = `
 <Styled(Header)
   animated={false}
   style={
-    Object {
-      "height": "auto",
-      "paddingBottom": 0.5,
-    }
+    Array [
+      Object {
+        "height": "auto",
+        "paddingBottom": 0.5,
+      },
+      null,
+    ]
   }
   subtitle={
     Object {
@@ -379,15 +415,13 @@ exports[`Testing Header Component renders without animation 1`] = `
       style={
         Array [
           Object {
-            "fontSize": undefined,
+            "color": null,
+            "fontSize": 12.5,
             "fontWeight": "normal",
             "marginBottom": 5,
             "textAlign": "justify",
           },
-          Object {
-            "color": undefined,
-            "fontSize": undefined,
-          },
+          Object {},
         ]
       }
     >
@@ -407,6 +441,7 @@ exports[`Testing Header Component renders without animation 1`] = `
         Object {
           "color": "#685A5C",
           "marginBottom": 5,
+          "marginTop": null,
           "textAlign": "justify",
         }
       }

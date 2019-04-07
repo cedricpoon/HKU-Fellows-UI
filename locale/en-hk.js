@@ -10,7 +10,7 @@ export default {
   'post.loadErrorTitle': 'Load Failure',
   'post.loadErrorContent': 'Oops! We hope a page refresh helps',
   'post.loadErrorButton': 'Refresh',
-  'post.copyright': '© 2018 HKU Fellows. All Rights Reserved.',
+  'post.copyright': '© 2019 HKU Fellows. All Rights Reserved.',
 
   'replies.anonymousUser': 'Anonymous',
   'replies.solved': 'Adopted',

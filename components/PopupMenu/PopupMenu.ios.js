@@ -81,6 +81,10 @@ const position = {
   y: PropTypes.number.isRequired
 }
 
+PopupMenu.defaultProps = {
+  parentHeight: 0
+}
+
 PopupMenu.propTypes = {
   children: PropTypes.node.isRequired,
   position: PropTypes.shape(position).isRequired,

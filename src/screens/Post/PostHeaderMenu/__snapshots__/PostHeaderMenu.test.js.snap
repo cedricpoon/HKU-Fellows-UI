@@ -2,6 +2,7 @@
 
 exports[`Testing PostHeaderMenu Component can be subscribed 1`] = `
 <PopupMenu
+  parentHeight={0}
   position={
     Object {
       "x": 0,
@@ -13,7 +14,7 @@ exports[`Testing PostHeaderMenu Component can be subscribed 1`] = `
   topicId="topicId"
   uid="uid"
 >
-  <Styled(Button)
+  <PopupMenuItem
     disabled={false}
     iconLeft={true}
     onPress={[Function]}
@@ -43,8 +44,8 @@ exports[`Testing PostHeaderMenu Component can be subscribed 1`] = `
     >
       Latest Reply
     </Styled(Text)>
-  </Styled(Button)>
-  <Styled(Button)
+  </PopupMenuItem>
+  <PopupMenuItem
     danger={true}
     iconLeft={true}
     onPress={[Function]}
@@ -63,12 +64,13 @@ exports[`Testing PostHeaderMenu Component can be subscribed 1`] = `
     <Styled(Text)>
       Report Abuse
     </Styled(Text)>
-  </Styled(Button)>
+  </PopupMenuItem>
 </PopupMenu>
 `;
 
 exports[`Testing PostHeaderMenu Component can goto last 1`] = `
 <PopupMenu
+  parentHeight={0}
   position={
     Object {
       "x": 0,
@@ -80,7 +82,7 @@ exports[`Testing PostHeaderMenu Component can goto last 1`] = `
   topicId="topicId"
   uid="uid"
 >
-  <Styled(Button)
+  <PopupMenuItem
     disabled={false}
     iconLeft={true}
     onPress={[Function]}
@@ -110,8 +112,8 @@ exports[`Testing PostHeaderMenu Component can goto last 1`] = `
     >
       Latest Reply
     </Styled(Text)>
-  </Styled(Button)>
-  <Styled(Button)
+  </PopupMenuItem>
+  <PopupMenuItem
     danger={true}
     iconLeft={true}
     onPress={[Function]}
@@ -130,12 +132,13 @@ exports[`Testing PostHeaderMenu Component can goto last 1`] = `
     <Styled(Text)>
       Report Abuse
     </Styled(Text)>
-  </Styled(Button)>
+  </PopupMenuItem>
 </PopupMenu>
 `;
 
 exports[`Testing PostHeaderMenu Component has onRef 1`] = `
 <PopupMenu
+  parentHeight={0}
   position={
     Object {
       "x": 0,
@@ -147,7 +150,7 @@ exports[`Testing PostHeaderMenu Component has onRef 1`] = `
   topicId="topicId"
   uid="uid"
 >
-  <Styled(Button)
+  <PopupMenuItem
     disabled={false}
     iconLeft={true}
     onPress={[Function]}
@@ -177,8 +180,8 @@ exports[`Testing PostHeaderMenu Component has onRef 1`] = `
     >
       Latest Reply
     </Styled(Text)>
-  </Styled(Button)>
-  <Styled(Button)
+  </PopupMenuItem>
+  <PopupMenuItem
     danger={true}
     iconLeft={true}
     onPress={[Function]}
@@ -197,12 +200,13 @@ exports[`Testing PostHeaderMenu Component has onRef 1`] = `
     <Styled(Text)>
       Report Abuse
     </Styled(Text)>
-  </Styled(Button)>
+  </PopupMenuItem>
 </PopupMenu>
 `;
 
 exports[`Testing PostHeaderMenu Component is owned by logged user 1`] = `
 <PopupMenu
+  parentHeight={0}
   position={
     Object {
       "x": 0,
@@ -214,7 +218,7 @@ exports[`Testing PostHeaderMenu Component is owned by logged user 1`] = `
   topicId="topicId"
   uid="uid"
 >
-  <Styled(Button)
+  <PopupMenuItem
     disabled={false}
     iconLeft={true}
     onPress={[Function]}
@@ -244,8 +248,8 @@ exports[`Testing PostHeaderMenu Component is owned by logged user 1`] = `
     >
       Latest Reply
     </Styled(Text)>
-  </Styled(Button)>
-  <Styled(Button)
+  </PopupMenuItem>
+  <PopupMenuItem
     danger={true}
     iconLeft={true}
     onPress={[Function]}
@@ -264,12 +268,13 @@ exports[`Testing PostHeaderMenu Component is owned by logged user 1`] = `
     <Styled(Text)>
       Report Abuse
     </Styled(Text)>
-  </Styled(Button)>
+  </PopupMenuItem>
 </PopupMenu>
 `;
 
 exports[`Testing PostHeaderMenu Component is solved 1`] = `
 <PopupMenu
+  parentHeight={0}
   position={
     Object {
       "x": 0,
@@ -281,7 +286,7 @@ exports[`Testing PostHeaderMenu Component is solved 1`] = `
   topicId="topicId"
   uid="uid"
 >
-  <Styled(Button)
+  <PopupMenuItem
     disabled={false}
     iconLeft={true}
     onPress={[Function]}
@@ -311,8 +316,8 @@ exports[`Testing PostHeaderMenu Component is solved 1`] = `
     >
       Latest Reply
     </Styled(Text)>
-  </Styled(Button)>
-  <Styled(Button)
+  </PopupMenuItem>
+  <PopupMenuItem
     danger={true}
     iconLeft={true}
     onPress={[Function]}
@@ -331,12 +336,13 @@ exports[`Testing PostHeaderMenu Component is solved 1`] = `
     <Styled(Text)>
       Report Abuse
     </Styled(Text)>
-  </Styled(Button)>
+  </PopupMenuItem>
 </PopupMenu>
 `;
 
 exports[`Testing PostHeaderMenu Component renders as expected with PopupMenu required props 1`] = `
 <PopupMenu
+  parentHeight={0}
   position={
     Object {
       "x": 0,
@@ -348,7 +354,7 @@ exports[`Testing PostHeaderMenu Component renders as expected with PopupMenu req
   topicId="topicId"
   uid="uid"
 >
-  <Styled(Button)
+  <PopupMenuItem
     disabled={false}
     iconLeft={true}
     onPress={[Function]}
@@ -378,8 +384,8 @@ exports[`Testing PostHeaderMenu Component renders as expected with PopupMenu req
     >
       Latest Reply
     </Styled(Text)>
-  </Styled(Button)>
-  <Styled(Button)
+  </PopupMenuItem>
+  <PopupMenuItem
     danger={true}
     iconLeft={true}
     onPress={[Function]}
@@ -398,6 +404,6 @@ exports[`Testing PostHeaderMenu Component renders as expected with PopupMenu req
     <Styled(Text)>
       Report Abuse
     </Styled(Text)>
-  </Styled(Button)>
+  </PopupMenuItem>
 </PopupMenu>
 `;

@@ -66,7 +66,7 @@ exports[`Testing PreviewHeader Component renders as expected with required props
         transparent={true}
       >
         <Styled(Icon)
-          name="arrow-dropright"
+          name="ios-arrow-dropright"
           style={
             Object {
               "marginLeft": 0,
@@ -146,7 +146,7 @@ exports[`Testing PreviewHeader Component will cancel 1`] = `
         transparent={true}
       >
         <Styled(Icon)
-          name="arrow-dropright"
+          name="ios-arrow-dropright"
           style={
             Object {
               "marginLeft": 0,
@@ -226,7 +226,7 @@ exports[`Testing PreviewHeader Component will search 1`] = `
         transparent={true}
       >
         <Styled(Icon)
-          name="arrow-dropright"
+          name="ios-arrow-dropright"
           style={
             Object {
               "marginLeft": 0,

@@ -58,7 +58,7 @@ exports[`Testing PopupMenu Component renders as expected with required props 1`]
         },
         Object {
           "left": 10,
-          "top": NaN,
+          "top": 10,
         },
       ]
     }

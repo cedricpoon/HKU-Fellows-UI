@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Linking, Alert, Clipboard } from 'react-native';
-import { Button, Icon, Text, Separator } from 'native-base';
+import { Icon, Text, Separator } from 'native-base';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import { PopupMenu } from 'hkufui/components';
+import { PopupMenu, PopupMenuItem } from 'hkufui/components';
 
 import { localize } from 'hkufui/locale';
 import themeStyles from 'hkufui/theme/Styles';
@@ -75,28 +75,28 @@ export class PostHeaderMenu extends Component {
         { ...restProps } /* Proptypes handling on <PopupMenu /> */
       >
         {native && (
-          <Button transparent iconLeft onPress={this._voteUp} disabled={status !== OK}>
+          <PopupMenuItem transparent iconLeft onPress={this._voteUp} disabled={status !== OK}>
             <Icon name="thumb-up" type="MaterialCommunityIcons" style={[themeStyles.icon, styles.thumbUp]}></Icon>
             <Text style={styles.text}>{locale['header.thumbUp'](index)}</Text>
-          </Button>
+          </PopupMenuItem>
         )}
         {native && (
-          <Button transparent iconLeft onPress={this._voteDown} disabled={status !== OK}>
+          <PopupMenuItem transparent iconLeft onPress={this._voteDown} disabled={status !== OK}>
             <Icon name="thumb-down" type="MaterialCommunityIcons" style={[themeStyles.icon, styles.thumbDown]}></Icon>
             <Text style={styles.text}>{locale['header.thumbDown'](index)}</Text>
-          </Button>
+          </PopupMenuItem>
         )}
         {native && owned && (
-          <Button transparent iconLeft warning disabled={solved || status !== OK} onPress={this._acceptAnswer}>
+          <PopupMenuItem transparent iconLeft warning disabled={solved || status !== OK} onPress={this._acceptAnswer}>
             <Icon name="checkbox-marked-circle-outline" type="MaterialCommunityIcons" style={themeStyles.icon}></Icon>
             <Text>{locale['header.solved']}</Text>
-          </Button>
+          </PopupMenuItem>
         )}
         {native && (
           <Separator style={styles.separator} />
         )}
         {native && (
-          <Button transparent iconLeft onPress={this._enableNotification} disabled={status !== OK}>
+          <PopupMenuItem transparent iconLeft onPress={this._enableNotification} disabled={status !== OK}>
             <Icon
               name={subscribed ? "notifications-off" : "notifications-active"}
               type="MaterialIcons"
@@ -105,20 +105,20 @@ export class PostHeaderMenu extends Component {
             <Text style={styles.text}>
               {subscribed ? locale['header.unsubscribe'] : locale['header.subscribe']}
             </Text>
-          </Button>
+          </PopupMenuItem>
         )}
-        <Button transparent iconLeft onPress={this._transitLastPage} disabled={onGotoLast === null}>
+        <PopupMenuItem transparent iconLeft onPress={this._transitLastPage} disabled={onGotoLast === null}>
           <Icon
             name="last-page"
             type="MaterialIcons"
             style={onGotoLast !== null ? [themeStyles.icon, styles.text] : null}
           />
           <Text style={onGotoLast !== null ? styles.text : null}>{locale['header.gotoLast']}</Text>
-        </Button>
-        <Button transparent iconLeft danger onPress={this._reportAbuse}>
+        </PopupMenuItem>
+        <PopupMenuItem transparent iconLeft danger onPress={this._reportAbuse}>
           <Icon name="report" type="MaterialIcons" style={themeStyles.icon}></Icon>
           <Text>{locale['header.abuse']}</Text>
-        </Button>
+        </PopupMenuItem>
       </PopupMenu>
     );
   }

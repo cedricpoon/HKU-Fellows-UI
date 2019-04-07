@@ -25,7 +25,6 @@ exports[`Testing Post Screen is loading 1`] = `
   <PostSwipable
     onChangeTab={[Function]}
     onRef={[Function]}
-    scrollWithoutAnimation={false}
     solved={null}
   />
   <PostFooter
@@ -68,7 +67,6 @@ exports[`Testing Post Screen renders as expected 1`] = `
     comments={Array []}
     onChangeTab={[Function]}
     onRef={[Function]}
-    scrollWithoutAnimation={false}
     solved={null}
   />
   <PostFooter

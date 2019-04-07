@@ -17,5 +17,8 @@ export default {
   link: {
     textDecorationLine: 'underline',
     color: logo.blue
+  },
+  text: {
+    color: 'black'
   }
 }

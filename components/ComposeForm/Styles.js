@@ -1,11 +1,11 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 import { gridBase, fontSize } from 'hkufui/theme/grid';
 import { logo } from 'hkufui/theme/palette';
 
 export default StyleSheet.create({
   textbox: {
     fontSize: fontSize.titleSize,
-    height: gridBase * 6,
+    height: Platform.OS === 'ios' ? gridBase * 6 : gridBase * 8,
     paddingLeft: gridBase * 2,
     paddingRight: gridBase
   },

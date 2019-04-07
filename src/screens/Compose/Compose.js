@@ -49,7 +49,7 @@ export class Compose extends Component {
     const { content } = this.state;
     const { navigation } = this.props;
     const { title, subtitle, native } = navigation.state.params;
-
+    Keyboard.dismiss();
     if (content === '')
       alert(locale['new.noCompulsory']);
     else if (native && this._popup)
@@ -104,11 +104,12 @@ export class Compose extends Component {
   render() {
     const { location, navigation } = this.props;
     const { width, height } = Dimensions.get("window");
-    const headerMenu = !nTitle ? this._renderNewHeaderMenu({ width }) : this._renderReplyHeaderMenu({ width });
 
     const nTitle = navigation.getParam('title', null); // Non null == reply
     const nSubtitle = navigation.getParam('subtitle', null);
     const nNative = navigation.getParam('native', null);
+
+    const headerMenu = !nTitle ? this._renderNewHeaderMenu({ width }) : this._renderReplyHeaderMenu({ width });
 
     return (
       <Container>

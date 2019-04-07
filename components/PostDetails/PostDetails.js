@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Text, View, Content, Icon } from 'native-base';
-import { TouchableOpacity, TextInput } from 'react-native';
+import { TouchableOpacity, TextInput, Platform } from 'react-native';
 import PropTypes from "prop-types";
 import { format } from 'timeago.js';
 import Markdown from 'react-native-markdown-renderer';
@@ -32,7 +32,11 @@ class PostDetails extends Component {
     const hotStyle = temperature && temperature > hot ? styles.hot : null;
     const context = raw ?
       (<View style={styles.contentContainer}>
-        {selectableTextRenderer(content)}
+        {
+          Platform.OS === 'android'
+            ? selectableTextRenderer(content)
+            : selectableTextInputRenderer(content)
+        }
       </View>)
     :
       (<TouchableOpacity
@@ -84,7 +88,7 @@ class PostDetails extends Component {
   }
 }
 
-const selectableTextRenderer = (content) => {
+const selectableTextInputRenderer = (content) => {
   return (
     <TextInput
       style={styles.selectableText}
@@ -94,6 +98,12 @@ const selectableTextRenderer = (content) => {
     >
       {content}
     </TextInput>
+  );
+}
+
+const selectableTextRenderer = (content) => {
+  return (
+    <Text style={styles.selectableText} selectable={true}>{content}</Text>
   );
 }
 

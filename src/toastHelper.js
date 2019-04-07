@@ -1,5 +1,6 @@
 import { Toast } from 'native-base';
 import { localize } from 'hkufui/locale';
+import { gridBase } from 'hkufui/theme/grid';
 
 const locale = localize({ language: 'en', country: 'hk' });
 
@@ -19,9 +20,9 @@ export const show3s = ({ message, type }) => {
 }
 
 export const show2s = ({ message, type }) => {
-  show({ message, type, duration: 2000, bottom: 40 });
+  show({ message, type, duration: 2000, bottom: gridBase * 11 });
 }
 
 export const show1s = ({ message, type }) => {
-  show({ message, type, duration: 1000, bottom: 40, hideButton: true });
+  show({ message, type, duration: 1000, bottom: gridBase * 11, hideButton: true });
 }

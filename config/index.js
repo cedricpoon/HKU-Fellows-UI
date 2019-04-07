@@ -4,7 +4,7 @@ export const hotPostMinIndex = 5;
 
 export const persistStoreKey = 'hkufui.local';
 
-export const cipherKey = 'DoNotGoGentleIntoThatGoodNight';
+export const encodeKey = 'hkufui.deeplink.encodekey';
 
 const refNo = postId => `Ref No.: ${postId}`;
 export const email = {

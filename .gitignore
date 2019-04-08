@@ -57,3 +57,6 @@ buck-out/
 
 # Private mock information
 mock/private
+
+# build
+build/*

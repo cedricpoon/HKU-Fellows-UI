@@ -57,7 +57,10 @@ export class Post extends Component {
   _gotoLastPage = () => {
     const { comments } = this.props;
     this._postTabs.goToPage(comments.length - 1);
-    this.setState({ currentPage: comments.length - 1 });
+  }
+
+  _gotoFirstPage = () => {
+    this._postTabs.goToPage(0);
   }
 
   _onPostTabChange = ({i}) => {
@@ -140,7 +143,11 @@ export class Post extends Component {
           lastPage={!comments || currentPage === comments.length - 1 || comments.length === 0}
           onPageChangeThunk={(i) => {
             if (this._postTabs)
-              return () => { this._postTabs.goToPage(currentPage + i) };
+              return () => { switch (i) {
+                case 2:  this._gotoLastPage(); break;
+                case -2: this._gotoFirstPage(); break;
+                default: this._postTabs.goToPage(currentPage + i); break;
+              }};
           }}
           onRefresh={() => { onRefreshReplies(id) }}
           onReply={this._reply}

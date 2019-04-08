@@ -29,7 +29,7 @@ class PostFooter extends Component {
     return (
       <Footer>
         <FooterTab>
-          <Button transparent={firstPage} disabled={firstPage} onPress={onPageChangeThunk(-1)}>
+          <Button transparent={firstPage} disabled={firstPage} onPress={onPageChangeThunk(-1)} onLongPress={onPageChangeThunk(-2)}>
             <Icon name="arrow-left" type="MaterialCommunityIcons" />
           </Button>
           <Button onPress={onRefresh} transparent={!enableRefresh} disabled={!enableRefresh} >
@@ -41,7 +41,7 @@ class PostFooter extends Component {
           <Button onPress={this._share}>
             <Icon name="share-variant" type="MaterialCommunityIcons" />
           </Button>
-          <Button transparent={lastPage} disabled={lastPage} onPress={onPageChangeThunk(1)}>
+          <Button transparent={lastPage} disabled={lastPage} onPress={onPageChangeThunk(1)} onLongPress={onPageChangeThunk(2)}>
             <Icon name="arrow-right" type="MaterialCommunityIcons" />
           </Button>
         </FooterTab>

@@ -2,16 +2,17 @@
 User Interface of HKU Fellows
 
 ![](./sticker.png)
+## Installation
+1. Install all project dependencies `npm install`
+2. Install [React Native](https://facebook.github.io/react-native/) `npm install react-native -g`
+## Run
+1. Start [Metro Bundler](https://facebook.github.io/metro/) `npm start`
+2. Run the App in Android `npm run android` or iOS `npm run ios`
 ## Checkout
-1. Set `hku.cs.fyp18005.hkufui` as Bundle Identifier
-2. Deep linking of `react-navigation` should be custom set on both `Android` and `iOS`
-3. `react-native-splash-screen` should be custom set on both `Android` and `iOS`
-4. `react-native-firebase` should be customised on `Android` and `iOS` for push notification
-5. Icons should be customised
-## Work In Progress
-### To-do
-- [ ] Chrome like popup menu
-- [x] Drawer username and temperature
-### Known issue to-fix
-- [ ] Deep link to post won't stack
-- [ ] Wait for patch of enzyme on version 1.11
+- [x] Set `hku.cs.fyp18005.hkufui` as Bundle Identifier
+- [x] Deep linking of `react-navigation` should be custom set on both `Android` and `iOS`
+- [x] `react-native-splash-screen` should be custom set on both `Android` and `iOS`
+- [x] `react-native-firebase` should be customised on `Android` and `iOS` for push notification
+- [x] Icons should be customised
+## License
+[MIT.](./LICENSE)

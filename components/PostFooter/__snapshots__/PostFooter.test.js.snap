@@ -4,6 +4,7 @@ exports[`Testing PostFooter Component can reply 1`] = `
 <Styled(Footer)>
   <Styled(FooterTab)>
     <Styled(Button)
+      onLongPress={null}
       onPress={null}
     >
       <Styled(Icon)
@@ -39,6 +40,7 @@ exports[`Testing PostFooter Component can reply 1`] = `
       />
     </Styled(Button)>
     <Styled(Button)
+      onLongPress={null}
       onPress={null}
     >
       <Styled(Icon)
@@ -54,6 +56,7 @@ exports[`Testing PostFooter Component contains page change callback 1`] = `
 <Styled(Footer)>
   <Styled(FooterTab)>
     <Styled(Button)
+      onLongPress={[Function]}
       onPress={[Function]}
     >
       <Styled(Icon)
@@ -88,6 +91,7 @@ exports[`Testing PostFooter Component contains page change callback 1`] = `
       />
     </Styled(Button)>
     <Styled(Button)
+      onLongPress={[Function]}
       onPress={[Function]}
     >
       <Styled(Icon)
@@ -103,6 +107,7 @@ exports[`Testing PostFooter Component contains share payload 1`] = `
 <Styled(Footer)>
   <Styled(FooterTab)>
     <Styled(Button)
+      onLongPress={null}
       onPress={null}
     >
       <Styled(Icon)
@@ -137,6 +142,7 @@ exports[`Testing PostFooter Component contains share payload 1`] = `
       />
     </Styled(Button)>
     <Styled(Button)
+      onLongPress={null}
       onPress={null}
     >
       <Styled(Icon)
@@ -153,6 +159,7 @@ exports[`Testing PostFooter Component is in first page 1`] = `
   <Styled(FooterTab)>
     <Styled(Button)
       disabled={true}
+      onLongPress={null}
       onPress={null}
       transparent={true}
     >
@@ -188,6 +195,7 @@ exports[`Testing PostFooter Component is in first page 1`] = `
       />
     </Styled(Button)>
     <Styled(Button)
+      onLongPress={null}
       onPress={null}
     >
       <Styled(Icon)
@@ -203,6 +211,7 @@ exports[`Testing PostFooter Component is in last page 1`] = `
 <Styled(Footer)>
   <Styled(FooterTab)>
     <Styled(Button)
+      onLongPress={null}
       onPress={null}
     >
       <Styled(Icon)
@@ -238,6 +247,7 @@ exports[`Testing PostFooter Component is in last page 1`] = `
     </Styled(Button)>
     <Styled(Button)
       disabled={true}
+      onLongPress={null}
       onPress={null}
       transparent={true}
     >
@@ -254,6 +264,7 @@ exports[`Testing PostFooter Component renders as expected 1`] = `
 <Styled(Footer)>
   <Styled(FooterTab)>
     <Styled(Button)
+      onLongPress={null}
       onPress={null}
     >
       <Styled(Icon)
@@ -288,6 +299,7 @@ exports[`Testing PostFooter Component renders as expected 1`] = `
       />
     </Styled(Button)>
     <Styled(Button)
+      onLongPress={null}
       onPress={null}
     >
       <Styled(Icon)

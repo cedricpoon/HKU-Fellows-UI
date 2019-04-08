@@ -26,7 +26,7 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>fellows</string>
+			<string>hkufui.fellows</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>fellows</string>

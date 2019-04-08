@@ -87,8 +87,7 @@ export default class NotificationCenter extends Component {
   }
 
   render() {
-    const { children } = this.props;
-    return children;
+    return this.props.children;
   }
 }
 

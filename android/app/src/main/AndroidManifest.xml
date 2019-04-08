@@ -41,15 +41,23 @@
             android:windowSoftInputMode="adjustResize"
             android:screenOrientation="portrait"
             android:exported="true">
+            <!-- fellows://post/... -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
-
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-
                 <data
                     android:host="post"
                     android:scheme="fellows" />
+            </intent-filter>
+            <!-- https://hkufellows.ga/post/... -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https"
+                    android:host="hkufellows.ga"
+                    android:pathPrefix="/post" />
             </intent-filter>
         </activity>
 

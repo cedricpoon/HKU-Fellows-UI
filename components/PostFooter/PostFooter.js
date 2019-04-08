@@ -3,7 +3,7 @@ import { Share } from 'react-native';
 import PropTypes from 'prop-types';
 import { Footer, FooterTab, Button, Icon } from 'native-base';
 
-import { deepLink } from 'hkufui/config';
+import { universalLink } from 'hkufui/config';
 import appString from 'hkufui/app.json';
 
 class PostFooter extends Component {
@@ -16,7 +16,7 @@ class PostFooter extends Component {
     const _subtitle = subtitle ? ` · ${subtitle}` : '';
     try {
       await Share.share({
-        message: `[${appString.displayName}]\n${title}${_subtitle}\n${deepLink.prefix}${deepLink.post(sharePayload)}`
+        message: `[${appString.displayName}]\n${title}${_subtitle}\n${universalLink.domain}${universalLink.post(sharePayload)}`
       })
     } catch (error) {
       return;

@@ -8,6 +8,7 @@ import SplashScreen from 'react-native-splash-screen';
 import AppContainer from './AppContainer';
 import NotificationCenter from './NotificationCenter';
 import NavigationService from './NavigationService';
+import UniversalLink from './UniversalLink';
 import { deepLink } from 'hkufui/config';
 
 import { store, persistor } from './store';
@@ -24,12 +25,14 @@ export default class App extends Component {
           <PersistGate loading={null} persistor={persistor}>
             <Root>
               <StyleProvider style={getTheme()}>
-                <AppContainer
-                  ref={navigatorRef => {
-                    NavigationService.setTopLevelNavigator(navigatorRef);
-                  }}
-                  uriPrefix={deepLink.prefix}
-                />
+                <UniversalLink>
+                  <AppContainer
+                    ref={navigatorRef => {
+                      NavigationService.setTopLevelNavigator(navigatorRef);
+                    }}
+                    uriPrefix={deepLink.prefix}
+                  />
+                </UniversalLink>
               </StyleProvider>
             </Root>
           </PersistGate>

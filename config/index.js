@@ -16,8 +16,13 @@ export const email = {
 
 export const deepLink = {
   prefix: 'fellows://',
-  post: i => `post/${i}`
+  post: i => `post/${i}`,
 };
+
+export const universalLink = {
+  domain: 'https://hkufellows.ga/',
+  post: deepLink.post,
+}
 
 export const markdownTutorialLink = 'https://guides.github.com/features/mastering-markdown/';
 

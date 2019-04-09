@@ -52,6 +52,7 @@
 		8219D3E4224A5243003D7A03 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8219D3B6224A5243003D7A03 /* GoogleService-Info.plist */; };
 		8219D3E5224A5243003D7A03 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8219D3B6224A5243003D7A03 /* GoogleService-Info.plist */; };
 		8219D3E6224A5243003D7A03 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8219D3B6224A5243003D7A03 /* GoogleService-Info.plist */; };
+		82C25730225C703200E6857B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C2572F225C703200E6857B /* StoreKit.framework */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		84503E6D48804443A04C7DB8 /* libRNGestureHandler-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9D0DFD6DD44E009C05E6F6 /* libRNGestureHandler-tvOS.a */; };
 		94BC38FE2C044189B2C32F80 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5454B4557DD74D44AE61FF74 /* EvilIcons.ttf */; };
@@ -457,6 +458,7 @@
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		7A21475DF218B610AF6DCEF2 /* Pods-hkufui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hkufui.release.xcconfig"; path = "Target Support Files/Pods-hkufui/Pods-hkufui.release.xcconfig"; sourceTree = "<group>"; };
 		8219D3B6224A5243003D7A03 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		82C2572F225C703200E6857B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		82D07EDF224B6CEA00FAC8F0 /* hkufui.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = hkufui.entitlements; path = hkufui/hkufui.entitlements; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		837A4B595F90C6272B3FA80B /* Pods-hkufui-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hkufui-tvOS.release.xcconfig"; path = "Target Support Files/Pods-hkufui-tvOS/Pods-hkufui-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -503,6 +505,7 @@
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
 				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
+				82C25730225C703200E6857B /* StoreKit.framework in Frameworks */,
 				133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */,
 				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
 				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
@@ -670,6 +673,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				82C2572F225C703200E6857B /* StoreKit.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
@@ -963,6 +967,9 @@
 						DevelopmentTeam = YAUF5Q2F9J;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
 								enabled = 1;
 							};
 							com.apple.Keychain = {

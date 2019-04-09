@@ -5,6 +5,7 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start --reset-cache",
     "locally": "NODE_ENV=locally npm start -- --reset-cache",
+    "build": "./scripts/build-android.sh",
     "android": "./scripts/pre-android.sh && react-native run-android",
     "ios": "react-native run-ios",
     "ios-small": "react-native run-ios --simulator 'iPhone 4s'",

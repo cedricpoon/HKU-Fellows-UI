@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import { Linking } from 'react-native';
+import { Linking, Platform } from 'react-native';
 import PropTypes from 'prop-types';
 
 import { universalLink, deepLink } from 'hkufui/config';
@@ -21,13 +21,12 @@ export default class UniversalLink extends Component {
   }
 
   async componentDidMount() {
-    try {
-      const url = await Linking.getInitialURL();
-      if (url) {
+    if (Platform.OS === 'android') {
+      try {
+        const url = await Linking.getInitialURL();
         this._resetStackToProperRoute(url);
-      }
-    } catch (e) { /* ignored */ }
-
+      } catch (e) { /* ignored */ }
+    }
     Linking.addEventListener('url', this._appWokeUp);
   }
 

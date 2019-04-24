@@ -6,6 +6,8 @@ export const persistStoreKey = 'hkufui.local';
 
 export const encodeKey = 'hkufui.deeplink.encodekey';
 
+export const domain = 'hkufellows.xyz';
+
 const refNo = postId => `Ref No.: ${postId}`;
 export const email = {
   address:'fyp18005@cs.hku.hk',
@@ -20,7 +22,7 @@ export const deepLink = {
 };
 
 export const universalLink = {
-  domain: 'https://hkufellows.ga/',
+  domain: `https://${domain}/`,
   post: deepLink.post,
 }
 

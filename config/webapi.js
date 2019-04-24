@@ -1,8 +1,8 @@
-import { environment } from './index';
+import { environment, domain } from './index';
 
 const protocol = environment === 'locally' ? 'http' : 'https';
 
-const baseUrl = environment === 'locally' ? 'localhost:8080' : 'api.hkufellows.ga';
+const baseUrl = environment === 'locally' ? 'localhost:8080' : `api.${domain}`;
 
 export const login = {
   password: () => '/login/password',
